@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.navbar-brand {
+    color: #051630;
+    font-weight: bold;
+    margin-left: 15px; /* Separación del borde izquierdo */
+    font-size: 24px; /* Tamaño de fuente más grande */
+}
+
+.navbar-brand span {
+    color: #02dd68;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-right .btn-primary {
+    background-color: #051630;
+    color: #fff;
+}
+
+.navbar-right .btn-secondary {
+    background-color:transparent;
+    margin-left: 10px;
+    color: #02dd68;
+}
