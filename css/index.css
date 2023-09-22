@@ -3,6 +3,8 @@ body {
     padding: 0; /* Elimina el espacio de relleno predeterminado del cuerpo de la página */
 }
 
+/*--------------------------------NAVBAR---------------------*/
+
 .navbar-container {
     padding-top: 20px; /* Espacio desde la parte superior */
     margin: 0 auto; /* Centra el contenido horizontalmente */
@@ -50,6 +52,8 @@ body {
     color: #02dd68;
 }
 
+/*-----------------COLORS------------------*/
+
 .colors-section-title {
     padding-top: 50px;
     padding-bottom: 10px;
@@ -58,6 +62,7 @@ body {
 }
 
 .colors-section {
+
     display: flex;
     margin: 0 auto; /* Centra el contenido horizontalmente */
     max-width: 1720px; /* Ancho máximo del contenedor */
@@ -118,4 +123,38 @@ body {
 
 .circle-2 {
     background-color: #02dd68; /* Color 2 */
+}
+
+/*----------------------BUTTONS---------------------*/
+
+/* Estilos para los botones */
+.buttons-section {
+    padding: 20px;
+    text-align: center;
+    display: block;
+    margin-left: 30%;
+    width: 100%;
+    margin-top: -77px;
+    /*flex-direction: column;
+    align-items: center;*/
+}
+
+.btn-custom {
+    background-color: #051630;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+    width: 200px;
+}
+
+.btn-custom i {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+}
+.btn:hover{
+    color: white;
 }
