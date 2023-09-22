@@ -1,18 +1,34 @@
+body {
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo de la página */
+    padding: 0; /* Elimina el espacio de relleno predeterminado del cuerpo de la página */
+}
+
+.navbar-container {
+    padding-top: 20px; /* Espacio desde la parte superior */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    max-width: 1720px; /* Ancho máximo del contenedor */
+}
+
 .navbar {
-    background-color: #ffffff;
+    background: linear-gradient(to right, #ffffff 50%, #ccc); /* Degradado blanco a gris */
     border-radius: 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
+    padding-top: 20px; /* Espacio desde la parte superior */
+    margin-left: auto; /* Mueve el navbar hacia la derecha */
+    margin-right: auto; /* Mueve el navbar hacia la izquierda */
+   
 }
 
-.navbar-brand {
+.title-part{
     color: #051630;
     font-weight: bold;
     margin-left: 15px; /* Separación del borde izquierdo */
     font-size: 24px; /* Tamaño de fuente más grande */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.navbar-brand span {
+.title-part span {
     color: #02dd68;
 }
 
@@ -29,4 +45,43 @@
     background-color:transparent;
     margin-left: 10px;
     color: #02dd68;
+}
+
+.colors-section {
+    padding-top: 50px;
+}
+
+.navbar-title-color{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 15%;
+}
+
+.color-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.circle-1 {
+    background-color: #ff5733; /* Color 1 */
+}
+
+.circle-2 {
+    background-color: #33ff57; /* Color 2 */
 }
