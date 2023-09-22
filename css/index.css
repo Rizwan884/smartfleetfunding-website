@@ -155,6 +155,15 @@ body {
 .btn-secondary {
     background-color: #ccc;
 }
+#arrow-right{
+    width: 6%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#arrow-down{
+    width: 6%; 
+    background:#02dd68;
+}
 .btn:hover{
     color: white;
 }
