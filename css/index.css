@@ -19,6 +19,9 @@ body {
     margin-right: auto; /* Mueve el navbar hacia la izquierda */
    
 }
+.navbar-title{
+    margin-right: 10%;
+}
 
 .title-part{
     color: #051630;
