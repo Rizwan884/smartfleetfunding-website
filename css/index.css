@@ -216,4 +216,43 @@ body {
     height: auto;
     width: 100%;
 }
+.img-fluid2{
+    max-width: 100%;
+    padding-top: 10px;
+    height: auto;
+}
 
+.section-button{
+    margin-left: 44px;
+    padding-bottom: 10px;
+}
+
+#face{
+    background: #02dd68 ;
+    color: white;
+}
+#insta{
+    background: #02dd68 ;
+    color: white;
+}
+#link{
+    background: #02dd68 ;
+    color: white;
+}
+
+.section-button2{
+    margin-left: 44px;
+    padding-bottom: 10px;
+}
+#face2{
+    background: #051630 ;
+    color: white;
+}
+#insta2{
+    background: #051630 ;
+    color: white;
+}
+#link2{
+    background: #051630 ;
+    color: white;
+}
