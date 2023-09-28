@@ -54,12 +54,7 @@ body {
 
 /*-----------------COLORS------------------*/
 
-.colors-section-title {
-    padding-top: 50px;
-    padding-bottom: 10px;
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-    max-width: 1720px; /* Ancho máximo del contenedor */
-}
+
 
 .colors-section {
 
@@ -135,8 +130,6 @@ body {
     margin-left: 30%;
     width: 100%;
     margin-top: -77px;
-    /*flex-direction: column;
-    align-items: center;*/
 }
 
 .btn-custom {
@@ -152,8 +145,18 @@ body {
     margin-right: 10px;
 }
 
+.btn-primary {
+    display: block;
+    width: 66%;
+    margin-left: 80px;
+    background-color: #051630;
+}
+
 .btn-secondary {
-    background-color: #ccc;
+    display: block;
+    width: 66%;
+    margin-left: 80px;
+    background-color: grey;
 }
 #arrow-right{
     width: 6%;
@@ -167,3 +170,50 @@ body {
 .btn:hover{
     color: white;
 }
+/*----------------------TITLE---------------------*/
+.title-section{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    margin-left: 44px;
+    max-width: 1720px; /* Ancho máximo del contenedor */
+}
+
+/* Estilos para la sección TYPEFACE */
+.typeface-section {
+    margin-left: 44px;
+}
+
+.typeface-section h2 {
+    font-family: Montserrat, sans-serif; /* Establece la familia de fuentes */
+    font-weight: bold;
+    color: #051630;
+}
+
+.typeface-section p {
+    font-family: Montserrat, sans-serif; /* Establece la familia de fuentes */
+    font-size: 20px;
+    color: grey;
+    line-height: 10px;
+    margin-top: 5px;
+}
+
+.typeface-section h1, .typeface-section h2, .typeface-section h3, .typeface-section h4 {
+    margin-top: 5px;
+    font-weight: bold;
+    color: grey;
+}
+
+.typeface-section span {
+    color: black;
+}
+/*--------------------IMAGE-------------------------*/
+.image-section {
+    margin-left: 44px;
+}
+.img-fluid{
+    max-width: 200%;
+    height: auto;
+    width: 100%;
+}
+
