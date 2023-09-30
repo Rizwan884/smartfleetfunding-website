@@ -2,6 +2,10 @@ body {
     margin: 0; /* Elimina los márgenes predeterminados del cuerpo de la página */
     padding: 0; /* Elimina el espacio de relleno predeterminado del cuerpo de la página */
 }
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
 /*--------------------------------NAVBAR---------------------*/
 
@@ -230,14 +234,20 @@ body {
 #face{
     background: #02dd68 ;
     color: white;
+    width: 100px;
+    font-size: 30px;
 }
 #insta{
     background: #02dd68 ;
     color: white;
+    width: 100px;
+    font-size: 30px;
 }
 #link{
     background: #02dd68 ;
     color: white;
+    width: 100px;
+    font-size: 30px;
 }
 
 .section-button2{
@@ -247,12 +257,18 @@ body {
 #face2{
     background: #051630 ;
     color: white;
+    width: 100px;
+    font-size: 30px;
 }
 #insta2{
     background: #051630 ;
     color: white;
+    width: 100px;
+    font-size: 30px;
 }
 #link2{
     background: #051630 ;
     color: white;
+    width: 100px;
+    font-size: 30px;
 }
