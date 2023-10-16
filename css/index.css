@@ -129,11 +129,7 @@ body {
 /* Estilos para los botones */
 .buttons-section {
     padding: 20px;
-    text-align: center;
-    display: block;
-    margin-left: 30%;
-    width: 100%;
-    margin-top: -77px;
+    text-align: left;
 }
 
 .btn-custom {
