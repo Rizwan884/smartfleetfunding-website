@@ -212,26 +212,20 @@ body {
     color: black;
 }
 /*--------------------IMAGE-------------------------*/
-.image-section {
-    margin-left: 44px;
-}
-.img-fluid{
-    max-width: 200%;
-    height: auto;
-    width: 100%;
-}
+
 .img-fluid2{
-    max-width: 100%;
+    margin-left: 15px;
+    max-width: 80%;
     padding-top: 10px;
     height: auto;
 }
 #information{
-    background-image:url(../test2.jpg);
+    background-image:url(../sff-truck-driver.jpg);
     background-repeat: no-repeat;
     background-position: center; /* Center the image */
-    height: 100%;
-    max-width: 200%;
-    padding: 60px 0 60px 0;
+    background-size: cover;
+    max-width: 100%;
+    padding: 100px 0 100px 0;
     width: 100%;
 }
 #information-title{
