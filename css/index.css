@@ -214,23 +214,47 @@ body {
     color: black;
 }
 /*--------------------IMAGE-------------------------*/
-.image-section {
-    margin-left: 44px;
-}
-.img-fluid{
-    max-width: 200%;
-    height: auto;
-    width: 100%;
-}
+
 .img-fluid2{
-    max-width: 100%;
+    margin-left: 15px;
+    max-width: 80%;
     padding-top: 10px;
     height: auto;
 }
-
+#information{
+    background-image:url(../sff-truck-driver.jpg);
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover;
+    max-width: 100%;
+    padding: 100px 0 100px 0;
+    width: 100%;
+}
+#information-title{
+    margin-left: 50px; 
+    font-size: 1.5rem;
+    font-family: Montserrat, sans-serif;
+    color: grey;
+    align-items: center;
+}
+#information-text{
+    margin-left: 50px; 
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #051630;
+}
+#learn-more{
+    margin: 0 0 0 50px;
+    width:20%;
+}
+#learn-more:hover{
+    background:#051630;
+}
 .section-button{
     margin-left: 44px;
     padding-bottom: 10px;
+    
 }
 
 #face{
