@@ -63,10 +63,10 @@ body {
 
 /*-----------------COLORS------------------*/
 .colors-section {
-
     display: flex;
     margin: 0 auto; /* Centra el contenido horizontalmente */
     max-width: 1720px; /* Ancho máximo del contenedor */
+    margin-left: 44px;
 }
 
 
@@ -131,11 +131,7 @@ body {
 /* Estilos para los botones */
 .buttons-section {
     padding: 20px;
-    text-align: center;
-    display: block;
-    margin-left: 30%;
-    width: 100%;
-    margin-top: -77px;
+    text-align: left;
 }
 
 .btn-custom {
