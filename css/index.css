@@ -150,19 +150,23 @@ body {
     color: #fff;
     margin-right: 10px;
 }
-
-.btn-primary {
+#learn{
     display: block;
     width: 66%;
-    margin-left: 80px;
     background-color: #051630;
 }
-
-.btn-secondary {
+#contact{
     display: block;
     width: 66%;
-    margin-left: 80px;
     background-color: grey;
+}
+#learn, #started{
+    background:#02dd68;
+    color: #051630;
+}
+#contact{
+    background: #051630;
+    color: #fff;
 }
 #arrow-right{
     width: 6%;
@@ -176,7 +180,7 @@ body {
 .btn:hover{
     color: white;
 }
-/*----------------------TITLE---------------------*/
+/*----------------------TYPERFACE---------------------*/
 .title-section{
     padding-top: 50px;
     padding-bottom: 10px;
@@ -184,7 +188,6 @@ body {
     margin-left: 44px;
     max-width: 1720px; /* Ancho máximo del contenedor */
 }
-
 /* Estilos para la sección TYPEFACE */
 .typeface-section {
     margin-left: 44px;
