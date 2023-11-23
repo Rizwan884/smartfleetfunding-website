@@ -50,6 +50,33 @@
   background-color: #ffffff; /* Color blanco de fondo */
   padding: 20px; /* Ajusta según sea necesario */
 }
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: -50px;
+}
+
+.card-column {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-card {
+  width: 200px; /* Ajusta según sea necesario */
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 24px; /* Ajusta según sea necesario */
+  margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+
+/*--------------------------------------------------------*/
 
 .contact_slide{
   background:#02dd68;
