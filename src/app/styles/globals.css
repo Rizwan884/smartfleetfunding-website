@@ -65,15 +65,50 @@
 
 .custom-card {
   width: 200px; /* Ajusta según sea necesario */
+  perspective: 1000px; /* Establece la perspectiva para el efecto 3D */
+}
+.card-face {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.card-face-back {
+  transform: rotateY(180deg);
+}
+.custom-card:hover .card-face {
+  transform: rotateY(180deg);
+}
+.custom-card:not(:hover) .card-face {
+  transform: rotateY(0deg);
 }
 
 .card-body {
   text-align: center;
 }
 
-.card-icon {
+.card-icon, .card-text {
   font-size: 24px; /* Ajusta según sea necesario */
   margin-bottom: 10px; /* Ajusta según sea necesario */
+  backface-visibility: hidden;
+}
+.card-face-back .card-body {
+  color: white; /* Cambia el color del texto en la parte posterior si es necesario */
+}
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Aplica la animación a la clase hover */
+.custom-card:hover,
+.card-body:hover {
+  animation: flip 2s ease-in-out;
 }
 
 /*--------------------------------------------------------*/
