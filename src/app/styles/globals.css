@@ -38,6 +38,18 @@
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+/*-------------------------Cards------------------------------*/
+.gray-section {
+  flex: 1;
+  background-color: #dddddd; /* Color gris de fondo */
+  padding: 50px; /* Ajusta según sea necesario */
+}
+
+.white-section {
+  flex: 1;
+  background-color: #ffffff; /* Color blanco de fondo */
+  padding: 20px; /* Ajusta según sea necesario */
+}
 
 .contact_slide{
   background:#02dd68;

@@ -11,7 +11,6 @@ interface CarouselImageStyles {
 interface ButtonContainerStyles {
   position: string;
   top: string;
-  left: string;
   transform: string;
   textAlign: string;
 }
@@ -26,9 +25,8 @@ const carouselImage = {
 const buttonContainer = {
   position: "absolute",
   top: "50%", // Centra verticalmente
-  //   left: "50%", // Centra horizontalment
   transform: "translate(10%, -20%)", // Centra el contenido
-  textAlign: "center",
+  textAlign: "left",
 };
 
 export default function SFFslider() {
@@ -41,13 +39,13 @@ export default function SFFslider() {
             backgroundImage: 'url("images/sff-truck.jpg")',
           }}
         >
-          <div style={buttonContainer}>
+          <div style={buttonContainer} className="font-montserrat mx-4">
             <h1 className="text-start fs-3">
               Maximize your business's potential <br />
-              with Smart Fleet Funding
+              <strong>with Smart Fleet Funding</strong>
             </h1>
             <Button
-              className="contact_slide fw-bold mx-4 my-4 h-25 d-inline-block"
+              className="contact_slide fw-bold  my-4 h-25 d-inline-block"
               variant="btn btn-custom"
             >
               GET STARTED
@@ -62,27 +60,16 @@ export default function SFFslider() {
             backgroundImage: 'url("images/sff-truck-logistic.jpg")',
           }}
         >
-          <div style={buttonContainer}>
+          <div style={buttonContainer} className="font-montserrat mx-4">
             <h1 className="text-start fs-3">
             Your success, <strong>Our story</strong>
             </h1>
             <Button
-              className="contact_slide fw-bold mx-4 my-4 h-25 d-inline-block"
+              className="contact_slide fw-bold my-4 h-25 d-inline-block "
               variant="btn btn-custom"
             >
-              GET STARTED
+              Take the First Step
             </Button>
-            {/* <Button
-              className="cash_slide fw-bold mx-4 my-4 h-25 d-inline-block"
-              variant="btn btn-custom"
-            >
-              CASH NOW
-              <img
-                src="images/sff-arrow-right.jpg"
-                alt="arrorw"
-                className="arrow-image "
-              />
-            </Button> */}
           </div>
         </div>
       </Carousel.Item>
@@ -93,28 +80,17 @@ export default function SFFslider() {
             backgroundImage: 'url("images/sff-succes-story.jpg")',
           }}
         >
-          <div style={buttonContainer}>
-            <h1 className="text-start fs-3 font-montserrat">
+          <div style={buttonContainer}className="font-montserrat mx-4">
+            <h1 className="text-start fs-3">
               Let us be part of your <br /> 
               <strong>success story</strong>
             </h1>
             <Button
-              className="contact_slide fw-bold mx-4 my-4 h-25 d-inline-block"
+              className="contact_slide fw-bold my-4 h-25 d-inline-block"
               variant="btn btn-custom"
             >
               GET STARTED
             </Button>
-            {/* <Button
-              className="cash_slide fw-bold mx-4 my-4 h-25 d-inline-block"
-              variant="btn btn-custom"
-            >
-              CASH NOW
-              <img
-                src="images/sff-arrow-right.jpg"
-                alt="arrorw"
-                className="arrow-image "
-              />
-            </Button> */}
           </div>
         </div>
       </Carousel.Item>
