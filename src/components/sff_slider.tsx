@@ -64,8 +64,7 @@ export default function SFFslider() {
         >
           <div style={buttonContainer}>
             <h1 className="text-start fs-3">
-              Maximize your business's potential <br />
-              with Smart Fleet Funding
+            Your success, <strong>Our story</strong>
             </h1>
             <Button
               className="contact_slide fw-bold mx-4 my-4 h-25 d-inline-block"
@@ -95,9 +94,9 @@ export default function SFFslider() {
           }}
         >
           <div style={buttonContainer}>
-            <h1 className="text-start fs-3">
-              Maximize your business's potential <br />
-              with Smart Fleet Funding
+            <h1 className="text-start fs-3 font-montserrat">
+              Let us be part of your <br /> 
+              <strong>success story</strong>
             </h1>
             <Button
               className="contact_slide fw-bold mx-4 my-4 h-25 d-inline-block"

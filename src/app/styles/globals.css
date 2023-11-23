@@ -34,6 +34,10 @@
   min-width: 1rem!important;
 
 }
+/*-------------------------Fonts------------------------------*/
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .contact_slide{
   background:#02dd68;
