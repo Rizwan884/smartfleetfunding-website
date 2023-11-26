@@ -1,37 +1,124 @@
-import React from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import React from "react";
+import { Card, Container, Row, Col } from "react-bootstrap";
 export default function SFFcards() {
-    return (
-        <Container className="card-container">
-          <Row>
-            <Col className="card-column">
-              <Card className="custom-card">
-                <Card.Body className="card-body">
-                  {/* Icono (puedes usar un componente de icono aquí) */}
-                  <div className="card-icon">Icono 1</div>
-                  <Card.Text>Texto de la Card 1</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col className="card-column">
-              <Card className="custom-card">
-                <Card.Body className="card-body">
-                  {/* Icono (puedes usar un componente de icono aquí) */}
-                  <div className="card-icon">Icono 2</div>
-                  <Card.Text>Texto de la Card 2</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col className="card-column">
-              <Card className="custom-card">
-                <Card.Body className="card-body">
-                  {/* Icono (puedes usar un componente de icono aquí) */}
-                  <div className="card-icon">Icono 3</div>
-                  <Card.Text>Texto de la Card 3</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-      );
+  return (
+    <Container className="card-container">
+      <Row>
+        <Col className="card-column">
+          <div className="flip-container">
+            <div className="card">
+              <div className="front font-montserrat fw-600">
+                <div className="card-icon">
+                  <img
+                    className="icons"
+                    src="images/sff-clock-front.svg"
+                    alt=""
+                  />
+                </div>
+                <div className="card-text">FAST</div>
+                <div className="line-front"></div>
+                <div className="card-text-bottom  fw-400">
+                  Our tailored factoring <br /> solutions.
+                </div>
+              </div>
+              <div className="back font-montserrat fw-600">
+                <div className="card-icon-back">
+                  <img
+                    className="icons"
+                    src="images/sff-clock-back.svg"
+                    alt=""
+                  />
+                </div>
+                <div className="card-text-back ">FAST</div>
+                <div className="line-back"></div>
+                <div className="card-text-bottom-back fw-400">
+                  Our tailored factoring solutions swiftly optimize your cash
+                  flow,{" "}
+                  <strong>
+                    ensuring rapid growth in your business's profitability.
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col className="card-column">
+          <div className="flip-container">
+            <div className="card">
+              <div className="front font-montserrat fw-600">
+                <div className="card-icon">
+                  <img
+                    className="icons2"
+                    src="images/sff-easy-front.svg"
+                    alt=""
+                  />
+                </div>
+                <div className="card-text">EASY</div>
+                <div className="line-front"></div>
+                <div className="card-text-bottom fw-400">
+                  We simplify the accounts <br /> payable.
+                </div>
+              </div>
+              <div className="back font-montserrat fw-600">
+                <div className="card-icon-back">
+                  <img
+                    className="icons2"
+                    src="images/sff-easy-back.svg"
+                    alt=""
+                  />
+                </div>
+                <div className="card-text-back ">EASY</div>
+                <div className="line-back"></div>
+                <div className="card-text-bottom-back fw-400">
+                  We simplify the Accounts Payable and Receivable process,{" "}
+                  <strong>
+                    making it a breeze for you to focus on business growth.
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Col>
+        <Col className="card-column">
+          <div className="flip-container">
+            <div className="card">
+              <div className="front font-montserrat fw-600">
+                <div className="card-icon">
+                  <img
+                    className="icons2"
+                    src="images/sff-shield-front.svg"
+                    alt=""
+                  />
+                </div>
+                <div className="card-text ">SECURE</div>
+                <div className="line-front"></div>
+                <div className="card-text-bottom fw-400">
+                  The carries and Freight <br /> companies
+                </div>
+              </div>
+              <div className="back font-montserrat fw-600">
+                <div className="card-icon-back">
+                  <img
+                    className="icons2"
+                    src="images/sff-shield-back.svg"
+                    alt=""
+                  />
+                </div>
+                <div className="card-text-back ">SECURE</div>
+                <div className="line-back"></div>
+                <div className="card-text-bottom-back fw-400">
+                  The carriers and freight companies receive payment securely in
+                  as little as 12 hours,
+                  <strong>
+                    {" "}
+                    cultivating robust and trusting partnerships.
+                  </strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
