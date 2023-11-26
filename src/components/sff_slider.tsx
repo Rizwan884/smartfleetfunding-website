@@ -62,7 +62,7 @@ export default function SFFslider() {
         >
           <div style={buttonContainer} className="font-montserrat mx-4">
             <h1 className="text-start fs-3">
-            Your success, <strong>Our story</strong>
+              Your success, <strong>Our story</strong>
             </h1>
             <Button
               className="contact_slide fw-bold my-4 h-25 d-inline-block "
@@ -80,16 +80,16 @@ export default function SFFslider() {
             backgroundImage: 'url("images/sff-succes-story.jpg")',
           }}
         >
-          <div style={buttonContainer}className="font-montserrat mx-4">
+          <div style={buttonContainer} className="font-montserrat mx-4">
             <h1 className="text-start fs-3">
-              Let us be part of your <br /> 
+              Let us be part of your <br />
               <strong>success story</strong>
             </h1>
             <Button
               className="contact_slide fw-bold my-4 h-25 d-inline-block"
               variant="btn btn-custom"
             >
-              GET STARTED
+              CASH NOW
             </Button>
           </div>
         </div>

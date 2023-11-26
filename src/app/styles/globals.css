@@ -48,7 +48,7 @@
 .gray-section {
   flex: 1;
   background-color: #dddddd; /* Color gris de fondo */
-  padding: 50px; /* Ajusta según sea necesario */
+  padding: 100px; /* Ajusta según sea necesario */
 }
 
 .white-section {
@@ -63,7 +63,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin-top: -50px;
+  margin-top: -100px;
 }
 .card-column{
   display: flex;
