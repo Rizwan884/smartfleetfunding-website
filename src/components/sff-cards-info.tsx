@@ -1,12 +1,25 @@
 import React from "react";
-import { Card, Container, Row, Col, ListGroup } from "react-bootstrap";
+import { Card, Container, Row, Col, ListGroup, Button } from "react-bootstrap";
+const Image = {
+  // backgroundImage: 'url("images/sff-truck.jpg")',
+  backgroundSize: "cover",
+  backgroundPosition: "center center",
+  height: "400px", // Ajusta la altura según tus necesidades
+  position: "relative" as "relative",
+};
+const buttonContainer = {
+  position: "absolute",
+  top: "50%", // Centra verticalmente
+  transform: "translate(10%, -20%)", // Centra el contenido
+  textAlign: "left",
+};
 export default function SFFcards() {
   return (
     <Container>
       <h2 className="font-montserrat fw-bold ">
         Release the money from your <br /> outstanding invoices
       </h2>
-      <div className="line-front"></div>
+      <div className="line"></div>
       <Row className="pt-5">
         <Col className="card-column">
           <Card.Body>
