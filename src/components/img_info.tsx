@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Row, Col, ListGroup, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 const Image = {
   // backgroundImage: 'url("images/sff-truck.jpg")',
   backgroundSize: "cover",
@@ -13,7 +13,7 @@ const buttonContainer = {
   transform: "translate(200%, -20%)", // Centra el contenido
   textAlign: "right",
 };
-export default function SFFimgInfo() {
+export default function ImgInfo() {
   return (
     <div
       style={{

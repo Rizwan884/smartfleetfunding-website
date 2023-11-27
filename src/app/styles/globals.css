@@ -172,6 +172,14 @@
   background-color: #02DA68; /* Ajusta el color según sea necesario */
   margin-top: 5px; /* Ajusta según sea necesario */
 }
+.cards-size{
+  height: 100%;
+  width: auto;
+  margin: 10px;
+}
+.cards-title{
+  color: #02DA68;
+}
 /*--------------------------------------------------------*/
 
 .contact_slide{
@@ -189,4 +197,18 @@
 .cash_slide:hover{
   background:#FFFFFF;
   color: #051630;
+}
+
+.card-vmb{
+  color:white;
+}
+.card-vmb .body{
+  background: black;
+}
+.card-vmb:hover{
+  background-color: #051630;
+  background-image: none;
+}
+.card-vmb:hover .body{
+  color: #ffffff;
 }

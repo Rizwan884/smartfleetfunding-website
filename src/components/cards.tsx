@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
-export default function SFFcards() {
+export default function Cards() {
   return (
     <Container className="card-container">
       <Row>

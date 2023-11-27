@@ -29,7 +29,7 @@ const buttonContainer = {
   textAlign: "left",
 };
 
-export default function SFFslider() {
+export default function Slider() {
   return (
     <Carousel controls={false}>
       <Carousel.Item>
