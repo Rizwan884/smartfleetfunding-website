@@ -54,7 +54,7 @@
 .white-section {
   flex: 1;
   background-color: #ffffff; /* Color blanco de fondo */
-  padding: 20px; /* Ajusta según sea necesario */
+  padding: 100px; /* Ajusta según sea necesario */
 }
 /*-------------------------Cards------------------------------*/
 
@@ -164,6 +164,13 @@
   background-color: #02DA68; /* Ajusta el color según sea necesario */
   margin-top: 5px; /* Ajusta según sea necesario */
   margin-left: 10px;
+}
+/*-------------------------Cards-info------------------------------*/
+.line{
+  width: 60px; /* Ajusta según sea necesario */
+  height: 3px; /* Ajusta según sea necesario */
+  background-color: #02DA68; /* Ajusta el color según sea necesario */
+  margin-top: 5px; /* Ajusta según sea necesario */
 }
 /*--------------------------------------------------------*/
 
