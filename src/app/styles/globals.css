@@ -24,6 +24,9 @@
 .bg-green {
   background-color: var(--green)
 }
+.bg-img{
+  background-image: url("../../../public/images/background.jpg");
+}
 /*-------------------------NavBar-------------------------------*/
 #basic-nav-dropdown{
   min-width: 1rem;
@@ -166,6 +169,16 @@
   margin-left: 10px;
 }
 /*-------------------------Cards-info------------------------------*/
+.body-list{
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.bd-box{
+  border: 0px solid;
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 .line{
   width: 60px; /* Ajusta según sea necesario */
   height: 3px; /* Ajusta según sea necesario */
@@ -179,6 +192,23 @@
 }
 .cards-title{
   color: #02DA68;
+  font-weight: bold;
+  size: 32px;
+}
+/*----------------------------Hover----------------------------*/
+.card-hb{
+  color:white;
+}
+.card-hb .body{
+  background: black;
+}
+.card-hb:hover{
+  background-color: #051630;
+  background-image: none;
+}
+.card-hb:hover li{
+  color: #FFFFFF;
+  transition: transform 1s;
 }
 /*--------------------------------------------------------*/
 
@@ -197,18 +227,4 @@
 .cash_slide:hover{
   background:#FFFFFF;
   color: #051630;
-}
-
-.card-vmb{
-  color:white;
-}
-.card-vmb .body{
-  background: black;
-}
-.card-vmb:hover{
-  background-color: #051630;
-  background-image: none;
-}
-.card-vmb:hover .body{
-  color: #ffffff;
 }

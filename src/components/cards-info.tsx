@@ -21,29 +21,42 @@ export default function Cards() {
       </h2>
       <div className="line"></div>
       <Row className="pt-5">
-        <Col className="card-column">
+        <Col className="card-column ">
           <Card.Body>
             <ListGroup>
-              <ListGroup.Item>
-                <Card.Title>Full Fact</Card.Title>
-                <div className="cards-size body">
-                  We Address Your Challenges - <br />
-                  <p>
-                    From communication issues to confusing fees, we've got you
-                    covered.
-                  </p>
-                </div>
-                <div className="cards-size">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  cum blanditiis iure. Cum placeat doloribus modi, reiciendis
-                  dolorum laborum accusamus rem, minima ut voluptatibus sit
-                  veritatis! Accusantium sapiente fugit aut.
-                </div>
-                <div className="cards-size">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  cum blanditiis iure. Cum placeat doloribus modi, reiciendis
-                  dolorum laborum accusamus rem, minima ut voluptatibus sit
-                  veritatis! Accusantium sapiente fugit aut.
+              <ListGroup.Item className="bg-img body-list bd-box card-hb">
+                <Card.Title className="cards-title ">Full Fact</Card.Title>
+                <div className="cards-size ">
+                  <div>
+                    <p className="mb-0 fw-600 text-green">
+                      Premium factoring -
+                    </p>
+                    <li className="fw-400 text-dark-blue">Same day funding.</li>
+                  </div>
+                  <div>
+                    <p className="mb-0 fw-600 text-green">
+                      We Address Your Challenges -
+                    </p>
+                    <li className="fw-400 text-dark-blue">
+                      From communication issues to confusing fees, we've got you
+                      covered.
+                    </li>
+                  </div>
+                  <div>
+                    <p className="mb-0 fw-600 text-green">How We Assist -</p>
+                    <li className="fw-400 text-dark-blue">
+                      Always accessible, transparent, and rapid payments for
+                      smooth operations.
+                    </li>
+                  </div>
+                  <div>
+                    <p className="mb-0 fw-600 text-green">
+                      Connect with Our Advisors -
+                    </p>
+                    <li className="fw-400 text-dark-blue">
+                      You call! We answer!
+                    </li>
+                  </div>
                 </div>
               </ListGroup.Item>
             </ListGroup>
@@ -52,27 +65,51 @@ export default function Cards() {
         <Col className="card-column">
           <Card.Body>
             <ListGroup>
-              <ListGroup.Item>
-                <Card.Title className="cards-title ">
+              <ListGroup.Item className="bg-img body-list bd-box card-hb">
+                <Card.Title className="cards-title">
                   FES Pay/ InstaPay
                 </Card.Title>
                 <div className="cards-size">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  cum blanditiis iure. Cum placeat doloribus modi, reiciendis
-                  dolorum laborum accusamus rem, minima ut voluptatibus sit
-                  veritatis! Accusantium sapiente fugit aut.
-                </div>
-                <div className="cards-size">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  cum blanditiis iure. Cum placeat doloribus modi, reiciendis
-                  dolorum laborum accusamus rem, minima ut voluptatibus sit
-                  veritatis! Accusantium sapiente fugit aut.
-                </div>
-                <div className="cards-size">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  cum blanditiis iure. Cum placeat doloribus modi, reiciendis
-                  dolorum laborum accusamus rem, minima ut voluptatibus sit
-                  veritatis! Accusantium sapiente fugit aut.
+                  <div>
+                    <p className="mb-0 fw-600 text-green">
+                      Fast, Easy and Secure Payment -
+                    </p>
+                    <li className="fw-400 text-dark-blue">
+                      Guarantees payment in 12 business hours through a trusted
+                      broker alliance.
+                    </li>
+                  </div>
+                  <div>
+                    <p className="mb-0 fw-600 text-green">Benefits -</p>
+                    <li className="fw-400 text-dark-blue">
+                      Optimized Cash Flow.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      {" "}
+                      High Cash Advanced.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      No Originals Needed.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      24/7 Account Access.
+                    </li>
+                    <li className="fw-400 text-dark-blue"> Expert AR Team.</li>
+                    <li className="fw-400 text-dark-blue"> No contract.</li>
+                  </div>
+                  <div>
+                    <p className="mb-0 fw-600 text-green">FSupport -</p>
+                    <li className="fw-400 text-dark-blue">
+                      Dedicated account executive and 24/7 availability
+                      information.
+                    </li>
+                  </div>
+                  <div>
+                    <p className="mb-0 fw-600 text-green">Getting Started -</p>
+                    <li className="fw-400 text-dark-blue">
+                      Seamless for carriers with partnered brokers.
+                    </li>
+                  </div>
                 </div>
               </ListGroup.Item>
             </ListGroup>
@@ -81,25 +118,44 @@ export default function Cards() {
         <Col className="card-column">
           <Card.Body>
             <ListGroup>
-              <ListGroup.Item>
-                <Card.Title>Smart Fuel Card</Card.Title>
+              <ListGroup.Item className="bg-img body-list bd-box card-hb">
+                <Card.Title className="cards-title">Smart Fuel Card</Card.Title>
                 <div className="cards-size">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  cum blanditiis iure. Cum placeat doloribus modi, reiciendis
-                  dolorum laborum accusamus rem, minima ut voluptatibus sit
-                  veritatis! Accusantium sapiente fugit aut.
-                </div>
-                <div className="cards-size">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  cum blanditiis iure. Cum placeat doloribus modi, reiciendis
-                  dolorum laborum accusamus rem, minima ut voluptatibus sit
-                  veritatis! Accusantium sapiente fugit aut.
-                </div>
-                <div className="cards-size">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-                  cum blanditiis iure. Cum placeat doloribus modi, reiciendis
-                  dolorum laborum accusamus rem, minima ut voluptatibus sit
-                  veritatis! Accusantium sapiente fugit aut.
+                  <div>
+                    <p className="mb-0 fw-600 text-green">Smart Fuel card -</p>
+                    <li className="fw-400 text-dark-blue">
+                      Discounted fuel cards for major truck stops.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      {" "}
+                      Substantial fuel savings in USA and Canada.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      Competitive edge for trucking companies.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      Potential monthly savings*
+                      <br /> (*varies by fleet size and fuel use).
+                    </li>
+                  </div>
+                  <div>
+                    <p className="mb-0 fw-600 text-green">
+                      Smart Fuel card Advance -
+                    </p>
+                    <li className="fw-400 text-dark-blue">
+                      Alongside freight bill factoring Provides up to 50% of
+                      load value for fuel expenses.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      Verification required for load booking and pickup.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      Funds via direct deposit or loaded on fuel card.
+                    </li>
+                    <li className="fw-400 text-dark-blue">
+                      Additional advance available post-delivery.
+                    </li>
+                  </div>
                 </div>
               </ListGroup.Item>
             </ListGroup>
