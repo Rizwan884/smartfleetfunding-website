@@ -25,33 +25,46 @@ export default function Cards() {
           <Card.Body>
             <ListGroup>
               <ListGroup.Item className="bg-img body-list bd-box card-hb">
+                <div className="icon-cards" style={{ height: 70 }}>
+                  <img src="images/sff-factura.svg" alt="" />
+                </div>
                 <Card.Title className="cards-title ">Full Fact</Card.Title>
                 <div className="cards-size ">
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      Premium factoring -
+                      <img src="images/sff-point-front.svg" alt="" /> Premium
+                      factoring -
                     </p>
                     <li className="fw-400 text-dark-blue">Same day funding.</li>
+                    <div className="cards-line"></div>
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      We Address Your Challenges -
+                      <img src="images/sff-point-front.svg" alt="" /> We Address
+                      Your Challenges -
                     </p>
                     <li className="fw-400 text-dark-blue">
                       From communication issues to confusing fees, we've got you
                       covered.
                     </li>
+                    <div className="cards-line"></div>
                   </div>
                   <div>
-                    <p className="mb-0 fw-600 text-green">How We Assist -</p>
+                    <p className="mb-0 fw-600 text-green">
+                      {" "}
+                      <img src="images/sff-point-front.svg" alt="" /> How We
+                      Assist -
+                    </p>
                     <li className="fw-400 text-dark-blue">
                       Always accessible, transparent, and rapid payments for
                       smooth operations.
                     </li>
+                    <div className="cards-line"></div>
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      Connect with Our Advisors -
+                      <img src="images/sff-point-front.svg" alt="" /> Connect
+                      with Our Advisors -
                     </p>
                     <li className="fw-400 text-dark-blue">
                       You call! We answer!
@@ -66,21 +79,28 @@ export default function Cards() {
           <Card.Body>
             <ListGroup>
               <ListGroup.Item className="bg-img body-list bd-box card-hb">
+                <div className="icon-cards" style={{ height: 70 }}>
+                  <img src="images/sff-cash.svg" alt="" />
+                </div>
                 <Card.Title className="cards-title">
                   FES Pay/ InstaPay
                 </Card.Title>
                 <div className="cards-size">
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      Fast, Easy and Secure Payment -
+                      <img src="images/sff-point-front.svg" alt="" /> Fast, Easy
+                      and Secure Payment -
                     </p>
                     <li className="fw-400 text-dark-blue">
                       Guarantees payment in 12 business hours through a trusted
                       broker alliance.
                     </li>
+                    <div className="cards-line"></div>
                   </div>
                   <div>
-                    <p className="mb-0 fw-600 text-green">Benefits -</p>
+                    <p className="mb-0 fw-600 text-green">
+                      <img src="images/sff-point-front.svg" alt="" /> Benefits -
+                    </p>
                     <li className="fw-400 text-dark-blue">
                       Optimized Cash Flow.
                     </li>
@@ -96,16 +116,23 @@ export default function Cards() {
                     </li>
                     <li className="fw-400 text-dark-blue"> Expert AR Team.</li>
                     <li className="fw-400 text-dark-blue"> No contract.</li>
+                    <div className="cards-line"></div>
                   </div>
                   <div>
-                    <p className="mb-0 fw-600 text-green">FSupport -</p>
+                    <p className="mb-0 fw-600 text-green">
+                      <img src="images/sff-point-front.svg" alt="" /> FSupport -
+                    </p>
                     <li className="fw-400 text-dark-blue">
                       Dedicated account executive and 24/7 availability
                       information.
                     </li>
+                    <div className="cards-line"></div>
                   </div>
                   <div>
-                    <p className="mb-0 fw-600 text-green">Getting Started -</p>
+                    <p className="mb-0 fw-600 text-green">
+                      <img src="images/sff-point-front.svg" alt="" /> Getting
+                      Started -
+                    </p>
                     <li className="fw-400 text-dark-blue">
                       Seamless for carriers with partnered brokers.
                     </li>
@@ -119,10 +146,16 @@ export default function Cards() {
           <Card.Body>
             <ListGroup>
               <ListGroup.Item className="bg-img body-list bd-box card-hb">
+                <div className="icon-cards" style={{ height: 70 }}>
+                  <img src="images/sff-gas.svg" alt="" />
+                </div>
                 <Card.Title className="cards-title">Smart Fuel Card</Card.Title>
                 <div className="cards-size">
                   <div>
-                    <p className="mb-0 fw-600 text-green">Smart Fuel card -</p>
+                    <p className="mb-0 fw-600 text-green">
+                      <img src="images/sff-point-front.svg" alt="" /> Smart Fuel
+                      card -
+                    </p>
                     <li className="fw-400 text-dark-blue">
                       Discounted fuel cards for major truck stops.
                     </li>
@@ -137,9 +170,15 @@ export default function Cards() {
                       Potential monthly savings*
                       <br /> (*varies by fleet size and fuel use).
                     </li>
+                    <div className="cards-line"></div>
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
+                      <img
+                        className="points"
+                        src="images/sff-point-front.svg"
+                        alt=""
+                      />{" "}
                       Smart Fuel card Advance -
                     </p>
                     <li className="fw-400 text-dark-blue">

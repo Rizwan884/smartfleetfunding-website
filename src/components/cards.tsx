@@ -4,10 +4,10 @@ export default function Cards() {
   return (
     <Container className="card-container">
       <Row>
-        <Col className="card-column">
+        <Col xs={12} md={4} className="card-column">
           <div className="flip-container">
             <div className="card">
-              <div className="front font-montserrat fw-600">
+              <div className="front font-montserrat fw-600 d-flex flex-row flex-md-column">
                 <div className="card-icon">
                   <img
                     className="icons"
@@ -15,8 +15,10 @@ export default function Cards() {
                     alt=""
                   />
                 </div>
-                <div className="card-text">FAST</div>
-                <div className="line-front"></div>
+                <div className="d-flex flex-column align-items-end align-items-md-center">
+                  <div className="card-text">FAST</div>
+                  <div className="line-front"></div>
+                </div>
                 <div className="card-text-bottom  fw-400">
                   Our tailored factoring <br /> solutions.
                 </div>
@@ -42,7 +44,7 @@ export default function Cards() {
             </div>
           </div>
         </Col>
-        <Col className="card-column">
+        <Col xs={12} md={4} className="card-column">
           <div className="flip-container">
             <div className="card">
               <div className="front font-montserrat fw-600">
@@ -79,7 +81,7 @@ export default function Cards() {
             </div>
           </div>
         </Col>
-        <Col className="card-column">
+        <Col xs={12} md={4} className="card-column">
           <div className="flip-container">
             <div className="card">
               <div className="front font-montserrat fw-600">

@@ -8,9 +8,9 @@ const Image = {
   position: "relative" as "relative",
 };
 const buttonContainer = {
-  position: "absolute",
+  paddingTop: "90px",
   top: "50%", // Centra verticalmente
-  transform: "translate(200%, -20%)", // Centra el contenido
+  // transform: "translate(200%, -20%)", // Centra el contenido
   textAlign: "right",
 };
 export default function ImgInfo() {
@@ -21,10 +21,10 @@ export default function ImgInfo() {
         backgroundImage: 'url("images/sff-truck-driver.jpg")',
       }}
     >
-      <div style={buttonContainer} className="font-montserrat mx-4">
+      <div style={buttonContainer} className="font-montserrat pt-6 mx-5">
         <h1 className="text-end fw-bold fs-3">
           Interested in learning more? <br /> Give us a call today!
-          <div className="line"></div>
+          <div className="ms-auto line"></div>
         </h1>
         <div className="card-text-bottom fw-400">
           We’re here to answer all your questions and <br /> help you find the

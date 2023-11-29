@@ -6,6 +6,7 @@
   --green: #02dd68;
   --dark-green: #2b9958;
   --gray: #4D4D4D;
+  --gray-dark: #3F3E3E;
 
 }
 
@@ -21,21 +22,33 @@
   color: var(--green)
 }
 
+.text-gray-dark{
+  color: var(--gray-dark);
+}
+
 .bg-green {
   background-color: var(--green)
 }
+.bg-dark-blue{
+  background-color: var(--dark-blue)
+}
 .bg-img{
   background-image: url("../../../public/images/background.jpg");
+}
+
+.pt-6{
+  padding-top: 6rem !important;
 }
 /*-------------------------NavBar-------------------------------*/
 #basic-nav-dropdown{
   min-width: 1rem;
 }
-
+.nav-link.active{
+  color: var(--green) !important
+}
 /*-------------------------tamaños------------------------------*/
-.minWidth{
-  min-width: 1rem!important;
-
+.dropdown-menu{
+  min-width: 10px;
 }
 /*-------------------------Fonts------------------------------*/
 .font-montserrat {
@@ -71,7 +84,7 @@
 .card-column{
   display: flex;
   justify-content: space-evenly;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 .flip-container {
   background-color: transparent;
@@ -170,7 +183,7 @@
 }
 /*-------------------------Cards-info------------------------------*/
 .body-list{
-  min-height: 520px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -185,30 +198,51 @@
   background-color: #02DA68; /* Ajusta el color según sea necesario */
   margin-top: 5px; /* Ajusta según sea necesario */
 }
+.cards-line{
+  width: 95%; /* Ajusta según sea necesario */
+  height: 2px; /* Ajusta según sea necesario */
+  background-color: #3F3E3E26; /* Ajusta el color según sea necesario */
+  margin: 10px; /* Ajusta según sea necesario */
+}
 .cards-size{
   height: 100%;
   width: auto;
-  margin: 10px;
+  /* margin: 10px; */
 }
 .cards-title{
   color: #02DA68;
   font-weight: bold;
   size: 32px;
 }
+.icon-cards{
+  display: none;
+}
+.icon-cards:hover{
+  
+}
+.points{
+  background-image: url("../../../public/images/sff-point-front.svg");
+}
+.points:hover{
+  background-image: url("../../../public/images/sff-point.svg");
+}
 /*----------------------------Hover----------------------------*/
 .card-hb{
   color:white;
+  /* transition: background-color 0.4s ease-in-out; */
 }
-.card-hb .body{
-  background: black;
+.card-hb:hover .icon-cards{
+  display: block;
 }
 .card-hb:hover{
   background-color: #051630;
+  border: none;
   background-image: none;
+  transition: all 0.4s ease-in-out;
 }
 .card-hb:hover li{
   color: #FFFFFF;
-  transition: transform 1s;
+  transition: all 0.4s ease-in-out;
 }
 /*--------------------------------------------------------*/
 

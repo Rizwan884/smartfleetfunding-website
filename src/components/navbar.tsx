@@ -10,7 +10,7 @@ export default function SFFNavbar() {
   return (
     <>
       <div className="text-left p-2 px-5 bg-green">
-        <a className="text-white">Toll-Free: (888) 875-5506 |</a>
+        <a className="text-white">Toll-Free: (888) 875-5506 | </a>
         <a className="text-white">Send us a note |</a>
         <a className="text-white"> +1 (602) 754-8077</a>
       </div>
@@ -27,7 +27,7 @@ export default function SFFNavbar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className=" ms-auto">
+            <Nav className="ms-auto">
               <Nav.Link className="text-dark-blue fw-bold" href="#home">
                 HOME
               </Nav.Link>
@@ -36,29 +36,27 @@ export default function SFFNavbar() {
                   <span className="text-dark-blue fw-bold mx-1">SERVICES</span>
                 }
                 id="basic-nav-dropdown"
-                className="minWidth"
               >
                 <NavDropdown.Item href="#">Full Fact</NavDropdown.Item>
                 <NavDropdown.Item href="#">Instapay</NavDropdown.Item>
                 <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
                 <NavDropdown.Item href="#">Freight Broker</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="text-dark-blue fw-bold" href="#">
+              <Nav.Link className="text-dark-blue fw-bold" href="#faq">
                 FAQ
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-bold" href="#">
+              <Nav.Link className="text-dark-blue fw-bold" href="#aboutus">
                 ABOUT US
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-bold" href="#">
+              <Nav.Link className="text-dark-blue fw-bold" href="#blog">
                 BLOG
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-bold" href="#">
+              <Nav.Link className="text-dark-blue fw-bold" href="#contact">
                 CONTACT
               </Nav.Link>
               <NavDropdown
                 title={<span className="text-green fw-bold">ENG</span>}
                 id="basic-nav-dropdown"
-                className="minWidth"
               >
                 <NavDropdown.Item className="" href="#">
                   ESP
