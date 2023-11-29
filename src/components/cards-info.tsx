@@ -24,9 +24,19 @@ export default function Cards() {
         <Col className="card-column ">
           <Card.Body>
             <ListGroup>
-              <ListGroup.Item className="bg-img body-list bd-box card-hb">
-                <div className="icon-cards" style={{ height: 70 }}>
-                  <img src="images/sff-factura.svg" alt="" />
+              <ListGroup.Item
+                className="bg-img body-list bd-box card-hb"
+                style={{ lineHeight: "26px" }}
+              >
+                <div
+                  className="icon-cards"
+                  style={{ height: 60, margin: 10, marginTop: 0 }}
+                >
+                  <img
+                    style={{ width: "68px" }}
+                    src="images/sff-factura.svg"
+                    alt=""
+                  />
                 </div>
                 <Card.Title className="cards-title ">Full Fact</Card.Title>
                 <div className="cards-size ">
@@ -35,7 +45,9 @@ export default function Cards() {
                       <img src="images/sff-point-front.svg" alt="" /> Premium
                       factoring -
                     </p>
-                    <li className="fw-400 text-dark-blue">Same day funding.</li>
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Same day funding.
+                    </li>
                     <div className="cards-line"></div>
                   </div>
                   <div>
@@ -43,9 +55,9 @@ export default function Cards() {
                       <img src="images/sff-point-front.svg" alt="" /> We Address
                       Your Challenges -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      From communication issues to confusing fees, we've got you
-                      covered.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · From communication issues to confusing fees, we{"'"}ve
+                      got you covered.
                     </li>
                     <div className="cards-line"></div>
                   </div>
@@ -55,8 +67,8 @@ export default function Cards() {
                       <img src="images/sff-point-front.svg" alt="" /> How We
                       Assist -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      Always accessible, transparent, and rapid payments for
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Always accessible, transparent, and rapid payments for
                       smooth operations.
                     </li>
                     <div className="cards-line"></div>
@@ -66,8 +78,8 @@ export default function Cards() {
                       <img src="images/sff-point-front.svg" alt="" /> Connect
                       with Our Advisors -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      You call! We answer!
+                    <li className="list-group fw-400 text-dark-blue">
+                      · You call! We answer!
                     </li>
                   </div>
                 </div>
@@ -80,10 +92,14 @@ export default function Cards() {
             <ListGroup>
               <ListGroup.Item className="bg-img body-list bd-box card-hb">
                 <div className="icon-cards" style={{ height: 70 }}>
-                  <img src="images/sff-cash.svg" alt="" />
+                  <img
+                    style={{ width: "62px;" }}
+                    src="images/sff-cash.svg"
+                    alt=""
+                  />
                 </div>
                 <Card.Title className="cards-title">
-                  FES Pay/ InstaPay
+                  FES Pay/InstaPay
                 </Card.Title>
                 <div className="cards-size">
                   <div>
@@ -91,9 +107,9 @@ export default function Cards() {
                       <img src="images/sff-point-front.svg" alt="" /> Fast, Easy
                       and Secure Payment -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      Guarantees payment in 12 business hours through a trusted
-                      broker alliance.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Guarantees payment in 12 business hours through a
+                      trusted broker alliance.
                     </li>
                     <div className="cards-line"></div>
                   </div>
@@ -101,29 +117,35 @@ export default function Cards() {
                     <p className="mb-0 fw-600 text-green">
                       <img src="images/sff-point-front.svg" alt="" /> Benefits -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      Optimized Cash Flow.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Optimized Cash Flow.
                     </li>
-                    <li className="fw-400 text-dark-blue">
+                    <li className="list-group fw-400 text-dark-blue">
                       {" "}
-                      High Cash Advanced.
+                      · High Cash Advanced.
                     </li>
-                    <li className="fw-400 text-dark-blue">
-                      No Originals Needed.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · No Originals Needed.
                     </li>
-                    <li className="fw-400 text-dark-blue">
-                      24/7 Account Access.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · 24/7 Account Access.
                     </li>
-                    <li className="fw-400 text-dark-blue"> Expert AR Team.</li>
-                    <li className="fw-400 text-dark-blue"> No contract.</li>
+                    <li className="list-group fw-400 text-dark-blue">
+                      {" "}
+                      · Expert AR Team.
+                    </li>
+                    <li className="list-group fw-400 text-dark-blue">
+                      {" "}
+                      · No contract.
+                    </li>
                     <div className="cards-line"></div>
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> FSupport -
+                      <img src="images/sff-point-front.svg" alt="" /> Support -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      Dedicated account executive and 24/7 availability
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Dedicated account executive and 24/7 availability
                       information.
                     </li>
                     <div className="cards-line"></div>
@@ -133,8 +155,8 @@ export default function Cards() {
                       <img src="images/sff-point-front.svg" alt="" /> Getting
                       Started -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      Seamless for carriers with partnered brokers.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Seamless for carriers with partnered brokers.
                     </li>
                   </div>
                 </div>
@@ -147,7 +169,11 @@ export default function Cards() {
             <ListGroup>
               <ListGroup.Item className="bg-img body-list bd-box card-hb">
                 <div className="icon-cards" style={{ height: 70 }}>
-                  <img src="images/sff-gas.svg" alt="" />
+                  <img
+                    style={{ width: "90px" }}
+                    src="images/sff-gas.svg"
+                    alt=""
+                  />
                 </div>
                 <Card.Title className="cards-title">Smart Fuel Card</Card.Title>
                 <div className="cards-size">
@@ -156,18 +182,18 @@ export default function Cards() {
                       <img src="images/sff-point-front.svg" alt="" /> Smart Fuel
                       card -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      Discounted fuel cards for major truck stops.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Discounted fuel cards for major truck stops.
                     </li>
-                    <li className="fw-400 text-dark-blue">
+                    <li className="list-group fw-400 text-dark-blue">
                       {" "}
-                      Substantial fuel savings in USA and Canada.
+                      · Substantial fuel savings in USA and Canada.
                     </li>
-                    <li className="fw-400 text-dark-blue">
-                      Competitive edge for trucking companies.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Competitive edge for trucking companies.
                     </li>
-                    <li className="fw-400 text-dark-blue">
-                      Potential monthly savings*
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Potential monthly savings*
                       <br /> (*varies by fleet size and fuel use).
                     </li>
                     <div className="cards-line"></div>
@@ -179,20 +205,20 @@ export default function Cards() {
                         src="images/sff-point-front.svg"
                         alt=""
                       />{" "}
-                      Smart Fuel card Advance -
+                      Smart Fuel Advance -
                     </p>
-                    <li className="fw-400 text-dark-blue">
-                      Alongside freight bill factoring Provides up to 50% of
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Alongside freight bill factoring Provides up to 50% of
                       load value for fuel expenses.
                     </li>
-                    <li className="fw-400 text-dark-blue">
-                      Verification required for load booking and pickup.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Verification required for load booking and pickup.
                     </li>
-                    <li className="fw-400 text-dark-blue">
-                      Funds via direct deposit or loaded on fuel card.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Funds via direct deposit or loaded on fuel card.
                     </li>
-                    <li className="fw-400 text-dark-blue">
-                      Additional advance available post-delivery.
+                    <li className="list-group fw-400 text-dark-blue">
+                      · Additional advance available post-delivery.
                     </li>
                   </div>
                 </div>

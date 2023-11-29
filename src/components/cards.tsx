@@ -37,7 +37,7 @@ export default function Cards() {
                   Our tailored factoring solutions swiftly optimize your cash
                   flow,{" "}
                   <strong>
-                    ensuring rapid growth in your business's profitability.
+                    ensuring rapid growth in your business{"'"}s profitability.
                   </strong>
                 </div>
               </div>

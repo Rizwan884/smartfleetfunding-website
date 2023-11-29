@@ -19,6 +19,7 @@ export default function ImgInfo() {
       style={{
         ...Image,
         backgroundImage: 'url("images/sff-truck-driver.jpg")',
+        marginRight: "80px",
       }}
     >
       <div style={buttonContainer} className="font-montserrat pt-6 mx-5">
@@ -27,15 +28,15 @@ export default function ImgInfo() {
           <div className="ms-auto line"></div>
         </h1>
         <div className="card-text-bottom fw-400">
-          We’re here to answer all your questions and <br /> help you find the
-          best solutions for your <br /> trucking business.
+          We{"'"}re here to answer all your questions and <br /> help you find
+          the best solutions for your <br /> trucking business.
         </div>
 
         <Button
           className="contact_slide fw-bold  my-4 h-25 d-inline-block"
           variant="btn btn-custom"
         >
-          Let’s Talk
+          Let{"'"}s Talk
         </Button>
       </div>
     </div>

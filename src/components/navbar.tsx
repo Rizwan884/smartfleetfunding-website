@@ -28,12 +28,12 @@ export default function SFFNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link className="text-dark-blue fw-bold" href="#home">
+              <Nav.Link className="text-dark-blue fw-500" href="#home">
                 HOME
               </Nav.Link>
               <NavDropdown
                 title={
-                  <span className="text-dark-blue fw-bold mx-1">SERVICES</span>
+                  <span className="text-dark-blue fw-500 mx-1">SERVICES</span>
                 }
                 id="basic-nav-dropdown"
               >
@@ -42,20 +42,20 @@ export default function SFFNavbar() {
                 <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
                 <NavDropdown.Item href="#">Freight Broker</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="text-dark-blue fw-bold" href="#faq">
+              <Nav.Link className="text-dark-blue fw-500" href="#faq">
                 FAQ
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-bold" href="#aboutus">
+              <Nav.Link className="text-dark-blue fw-500" href="#aboutus">
                 ABOUT US
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-bold" href="#blog">
+              <Nav.Link className="text-dark-blue fw-500" href="#blog">
                 BLOG
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-bold" href="#contact">
+              <Nav.Link className="text-dark-blue fw-500" href="#contact">
                 CONTACT
               </Nav.Link>
               <NavDropdown
-                title={<span className="text-green fw-bold">ENG</span>}
+                title={<span className="text-green fw-500">ENG</span>}
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item className="" href="#">
