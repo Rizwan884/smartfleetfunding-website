@@ -31,7 +31,7 @@ const buttonContainer = {
 
 export default function Slider() {
   return (
-    <Carousel controls={false}>
+    <Carousel className="font-montserrat" controls={false}>
       <Carousel.Item>
         <div
           style={{
@@ -39,7 +39,7 @@ export default function Slider() {
             backgroundImage: 'url("images/sff-truck.jpg")',
           }}
         >
-          <div style={buttonContainer} className="font-montserrat mx-4">
+          <div style={buttonContainer} className="mx-4">
             <h1 className="text-start fs-3">
               Maximize your business's potential <br />
               <strong>with Smart Fleet Funding</strong>
@@ -60,7 +60,7 @@ export default function Slider() {
             backgroundImage: 'url("images/sff-truck-logistic.jpg")',
           }}
         >
-          <div style={buttonContainer} className="font-montserrat mx-4">
+          <div style={buttonContainer} className="mx-4">
             <h1 className="text-start fs-3">
               Your success, <strong>Our story</strong>
             </h1>
@@ -80,7 +80,7 @@ export default function Slider() {
             backgroundImage: 'url("images/sff-succes-story.jpg")',
           }}
         >
-          <div style={buttonContainer} className="font-montserrat mx-4">
+          <div style={buttonContainer} className=" mx-4">
             <h1 className="text-start fs-3">
               Let us be part of your <br />
               <strong>success story</strong>

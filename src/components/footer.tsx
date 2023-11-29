@@ -12,14 +12,14 @@ import {
 export default function Footer() {
   return (
     <>
-      <div className="row m-2">
+      <div className="font-montserrat row m-2">
         <div className="col-6">
           <div className="text-left m-5 p-5">
-            <h2 className="font-montserrat fw-bold ">
+            <h2 className=" fw-bold ">
               Explore the power of factoring <br /> with Smart Fleet Funding!
             </h2>
             <div className="line"></div>
-            <div className="card-text-bottom fs-5 font-montserrat fw-400">
+            <div className="card-text-bottom fs-5  fw-400">
               Watch this concise video to understand how your invoices can turn
               into immediate cash, allowing you to focus on what you do best -
               delivering goods.{" "}
@@ -38,19 +38,19 @@ export default function Footer() {
           ></iframe>
         </div>
       </div>
-      <footer className="bg-dark-blue text-light mt-5">
+      <footer className=" font-montserrat bg-dark-blue text-light mt-5">
         <Container className="py-3">
           <Navbar expand="lg">
             <Container>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav>
-                  <Nav.Link className="text-green fw-bold" href="#home">
+                  <Nav.Link className="text-green fw-500" href="#home">
                     HOME
                   </Nav.Link>
                   <NavDropdown
                     title={
-                      <span className="text-green fw-bold mx-1">SERVICES</span>
+                      <span className="text-green fw-500 mx-1">SERVICES</span>
                     }
                     id="basic-nav-dropdown"
                     className="minWidth"
@@ -60,16 +60,16 @@ export default function Footer() {
                     <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
                     <NavDropdown.Item href="#">Freight Broker</NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link className="text-green fw-bold" href="#faq">
+                  <Nav.Link className="text-green fw-500" href="#faq">
                     FAQ
                   </Nav.Link>
-                  <Nav.Link className="text-green fw-bold" href="#aboutus">
+                  <Nav.Link className="text-green fw-500" href="#aboutus">
                     ABOUT US
                   </Nav.Link>
-                  <Nav.Link className="text-green fw-bold" href="#blog">
+                  <Nav.Link className="text-green fw-500" href="#blog">
                     BLOG
                   </Nav.Link>
-                  <Nav.Link className="text-green fw-bold" href="#contact">
+                  <Nav.Link className="text-green fw-500" href="#contact">
                     CONTACT
                   </Nav.Link>
                 </Nav>
@@ -79,77 +79,6 @@ export default function Footer() {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          {/* <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="collapse navbar-collapse " id="navbarNav">
-                <ul className="navbar-nav ">
-                  <li className="nav-item mx-1">
-                    <a
-                      className="nav-link text-green fw-600 font-montserrat"
-                      aria-current="page"
-                      href="#"
-                    >
-                      HOME
-                    </a>
-                  </li>
-                  <li className="nav-item mx-1">
-                    <a
-                      className="nav-link text-green fw-600 font-montserrat "
-                      href="#"
-                    >
-                      SERVICES
-                    </a>
-                  </li>
-                  <li className="nav-item mx-1">
-                    <a
-                      className="nav-link text-green fw-600 font-montserrat "
-                      href="#"
-                    >
-                      FAQ
-                    </a>
-                  </li>
-                  <li className="nav-item mx-1">
-                    <a
-                      className="nav-link text-green fw-600 font-montserrat "
-                      href="#"
-                    >
-                      ABOUT US
-                    </a>
-                  </li>
-                  <li className="nav-item mx-1">
-                    <a
-                      className="nav-link text-green fw-600 font-montserrat "
-                      href="#"
-                    >
-                      BLOG
-                    </a>
-                  </li>
-                  <li className="nav-item mx-1">
-                    <a
-                      className="nav-link text-green fw-600 font-montserrat "
-                      href="#"
-                    >
-                      CONTACT
-                    </a>
-                  </li>
-                </ul>
-                <button className="btn bg-green text-green fw-600 ms-auto">
-                  CURIOUS TO LEARN MORE?
-                </button>
-              </div>
-            </div>
-          </nav> */}
         </Container>
         <div className="text-center py-5">
           <img
@@ -160,8 +89,30 @@ export default function Footer() {
             alt="SFF Logo"
           />
         </div>
-        <div className="text-left py-2 px-5 bg-green">
-          <p>&copy;2020 Smart Funding Team All Rights Reserved</p>
+        <div className=" font-montserrat d-flex position-relative justify-content-between align-items-center text-left py-3 px-5 bg-green">
+          <p style={{ margin: 0 }}>
+            &copy;2020 Smart Funding Team All Rights Reserved
+          </p>
+          <div
+            className="d-flex position-absolute"
+            style={{ right: "66px", top: "-17px" }}
+          >
+            <div>
+              <a href="#facebook">
+                <img src="images/sff-facebook.svg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#instagram">
+                <img src="images/sff-instagram.svg" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#linkedin">
+                <img src="images/sff-linkedin.svg" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </>

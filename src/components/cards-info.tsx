@@ -15,8 +15,8 @@ const buttonContainer = {
 };
 export default function Cards() {
   return (
-    <Container>
-      <h2 className="font-montserrat fw-bold ">
+    <Container className="font-montserrat">
+      <h2 className=" fw-bold ">
         Release the money from your <br /> outstanding invoices
       </h2>
       <div className="line"></div>

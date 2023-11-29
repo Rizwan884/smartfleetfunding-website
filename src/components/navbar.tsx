@@ -9,12 +9,12 @@ import { Span } from "next/dist/trace";
 export default function SFFNavbar() {
   return (
     <>
-      <div className="text-left p-2 px-5 bg-green">
+      <div className="font-montserrat text-left p-2 px-5 bg-green">
         <a className="text-white">Toll-Free: (888) 875-5506 | </a>
         <a className="text-white">Send us a note |</a>
         <a className="text-white"> +1 (602) 754-8077</a>
       </div>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="font-montserrat bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
             <img
