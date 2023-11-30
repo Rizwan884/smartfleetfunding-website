@@ -48,13 +48,11 @@ export default function Footer() {
                         <span className="text-green fw-500 mx-1">SERVICES</span>
                         <img
                           src="images/sff-arrow-down-green.svg"
-                          alt="Dropdown Icon"
                           style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
                         />
                       </>
                     }
                     id="basic-nav-dropdown"
-                    className="minWidth"
                   >
                     <NavDropdown.Item href="#">Full Fact</NavDropdown.Item>
                     <NavDropdown.Item href="#">Instapay</NavDropdown.Item>

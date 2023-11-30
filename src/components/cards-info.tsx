@@ -20,7 +20,7 @@ export default function Cards() {
         Release the money from your <br /> outstanding invoices
       </h2>
       <div className="line"></div>
-      <Row className="pt-5">
+      <Row className="pt-5" style={{ minHeight: "600px", maxHeight: "600px" }}>
         <Col className="card-column ">
           <Card.Body>
             <ListGroup>
@@ -56,8 +56,11 @@ export default function Cards() {
                       Your Challenges -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
-                      · From communication issues to confusing fees, we{"'"}ve
-                      got you covered.
+                      · From communication issues to{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        confusing fees, we{"'"}ve got you covered.
+                      </p>
                     </li>
                     <div className="cards-line"></div>
                   </div>
@@ -68,8 +71,10 @@ export default function Cards() {
                       Assist -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Always accessible, transparent, and rapid payments for
-                      smooth operations.
+                      · Always accessible, transparent, and{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        rapid payments for smooth operations.
+                      </p>
                     </li>
                     <div className="cards-line"></div>
                   </div>
@@ -108,8 +113,11 @@ export default function Cards() {
                       and Secure Payment -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Guarantees payment in 12 business hours through a
-                      trusted broker alliance.
+                      · Guarantees payment in 12 business{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        hours through a trusted broker alliance.
+                      </p>
                     </li>
                     <div className="cards-line"></div>
                   </div>
@@ -145,8 +153,11 @@ export default function Cards() {
                       <img src="images/sff-point-front.svg" alt="" /> Support -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Dedicated account executive and 24/7 availability
-                      information.
+                      · Dedicated account executive and 24/7{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        availability information.
+                      </p>
                     </li>
                     <div className="cards-line"></div>
                   </div>
@@ -156,7 +167,11 @@ export default function Cards() {
                       Started -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Seamless for carriers with partnered brokers.
+                      · Seamless for carriers with partnered{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        brokers.
+                      </p>
                     </li>
                   </div>
                 </div>
@@ -183,18 +198,33 @@ export default function Cards() {
                       card -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Discounted fuel cards for major truck stops.
+                      · Discounted fuel cards for major truck{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        stops.
+                      </p>
                     </li>
                     <li className="list-group fw-400 text-dark-blue">
                       {" "}
-                      · Substantial fuel savings in USA and Canada.
+                      · Substantial fuel savings in USA and{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        Canada.
+                      </p>
                     </li>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Competitive edge for trucking companies.
+                      · Competitive edge for trucking{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        companies.
+                      </p>
                     </li>
                     <li className="list-group fw-400 text-dark-blue">
                       · Potential monthly savings*
-                      <br /> (*varies by fleet size and fuel use).
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        (*varies by fleet size and fuel use).
+                      </p>
                     </li>
                     <div className="cards-line"></div>
                   </div>
@@ -208,17 +238,31 @@ export default function Cards() {
                       Smart Fuel Advance -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Alongside freight bill factoring Provides up to 50% of
-                      load value for fuel expenses.
+                      · Alongside freight bill factoring Provides{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        up to 50% of load value for fuel expenses.
+                      </p>
                     </li>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Verification required for load booking and pickup.
+                      · Verification required for load booking{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        and pickup.
+                      </p>
                     </li>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Funds via direct deposit or loaded on fuel card.
+                      · Funds via direct deposit or loaded on{" "}
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        {" "}
+                        fuel card.
+                      </p>
                     </li>
                     <li className="list-group fw-400 text-dark-blue">
-                      · Additional advance available post-delivery.
+                      · Additional advance available post-
+                      <p style={{ marginLeft: "7px", marginBottom: "0px" }}>
+                        delivery.
+                      </p>
                     </li>
                   </div>
                 </div>

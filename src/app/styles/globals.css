@@ -53,11 +53,18 @@
 /*-------------------------Botones (nav, footer, en general)------------------------------*/
 .dropdown-menu{
   min-width: 10px;
+  background: rgb(248, 248, 248);
 }
-.dropdown-item:active, .dropdown-item:hover{
+
+.dropdown-item:active{
   color: var(--green) !important;
-  background: none;
+  /* background: none; */
 }
+.dropdown-item:hover{
+  color: var(--green) !important;
+  background: var(--dark-blue)
+}
+
 .btn:hover{
   background:var(--green) !important;
   color: var(--dark-blue);
@@ -91,6 +98,7 @@
   transform: translate(10%, -20%);
   text-align: left;
 }
+
 .gray-section {
   flex: 1;
   background-color: #dddddd; /* Color gris de fondo */
@@ -101,6 +109,8 @@
   flex: 1;
   background-color: #ffffff; /* Color blanco de fondo */
   padding: 100px; /* Ajusta según sea necesario */
+  /* max-height: 936px;
+  min-height: 936px; */
 }
 /*-------------------------Cards------------------------------*/
 
@@ -170,6 +180,7 @@
 .list-group li {
   margin-left: 5px;
 }
+
 .icons{
   width: 54px;
   margin-bottom: 10px;
@@ -219,15 +230,19 @@
 /*-------------------------Cards-info------------------------------*/
 .body-list{
   min-height: 600px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
-  transition: min-height 0.2s ease-in-out;
+  transition: min-height 0.4s ease-in-out;
   gap: 30px;
   padding-top: 35px;
   padding-bottom: 35px;
-  max-height: 600px;
   overflow: hidden;
 }
+.list-group {
+  border-radius: 25px;
+}
+
 .bd-box{
   border: 0px solid;
   box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -272,7 +287,7 @@
 }
 .card-hb:hover .icon-cards{
   display: block;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.7s ease-in-out;
   margin-left: 8px;
 }
 .card-hb:hover .icon-cards:first-child img{
@@ -282,16 +297,16 @@
   background-color: #051630;
   border: none;
   background-image: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.7s ease-in-out;
   padding: 1.5rem 1rem;
   gap: 13px;
-  min-height: 635px;
-  max-height: 635px;
+  min-height: 642px;
+  max-height: 642px;
   
 }
 .card-hb:hover li{
   color: #FFFFFF;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 /*--------------------------------------------------------*/
 

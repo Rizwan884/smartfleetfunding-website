@@ -26,15 +26,15 @@ export default function SFFNavbar() {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link className="text-dark-blue fw-500" href="#home">
+          <Navbar.Collapse id="basic-navbar-nav ">
+            <Nav className="ms-auto fw-600">
+              <Nav.Link className="text-dark-blue " href="#home">
                 HOME
               </Nav.Link>
               <NavDropdown
                 title={
                   <>
-                    <span className="text-dark-blue fw-500 mx-1">SERVICES</span>
+                    <span className="text-dark-blue  mx-1">SERVICES</span>
                     <img
                       src="images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
@@ -49,22 +49,22 @@ export default function SFFNavbar() {
                 <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
                 <NavDropdown.Item href="#">Freight Broker</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="text-dark-blue fw-500" href="#faq">
+              <Nav.Link className="text-dark-blue " href="#faq">
                 FAQ
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-500" href="#aboutus">
+              <Nav.Link className="text-dark-blue " href="#aboutus">
                 ABOUT US
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-500" href="#blog">
+              <Nav.Link className="text-dark-blue " href="#blog">
                 BLOG
               </Nav.Link>
-              <Nav.Link className="text-dark-blue fw-500" href="#contact">
+              <Nav.Link className="text-dark-blue " href="#contact">
                 CONTACT
               </Nav.Link>
               <NavDropdown
                 title={
                   <>
-                    <span className="text-green fw-500">ENG</span>
+                    <span className="text-green ">ENG</span>
                     <img
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"

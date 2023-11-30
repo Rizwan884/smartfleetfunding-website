@@ -14,6 +14,7 @@ export default function ImgInfo() {
         ...Image,
         backgroundImage: 'url("images/sff-truck-driver.jpg")',
         marginRight: "80px",
+        marginTop: "40px",
       }}
     >
       <div className=" info-container font-montserrat pt-6 mx-5">
