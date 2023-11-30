@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollToTopButton from "../components/scroolTop";
 import {
   Button,
   Card,
@@ -12,7 +13,7 @@ import {
 export default function Footer() {
   return (
     <>
-      <div className="font-montserrat row m-2">
+      <div id="footer" className="font-montserrat row m-2">
         <div className="col-6">
           <div className="text-left m-5 p-5">
             <h2 className=" fw-bold ">
@@ -38,6 +39,7 @@ export default function Footer() {
           ></iframe>
         </div>
       </div>
+      <ScrollToTopButton />
       <footer className=" font-montserrat bg-dark-blue text-light mt-5">
         <Container className="py-3">
           <Navbar expand="lg">
@@ -73,6 +75,7 @@ export default function Footer() {
                     CONTACT
                   </Nav.Link>
                 </Nav>
+
                 <button className="btn bg-green text-dark-blue fw-600 ms-auto">
                   CURIOUS TO LEARN MORE?
                 </button>

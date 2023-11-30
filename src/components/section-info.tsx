@@ -7,12 +7,6 @@ const Image = {
   height: "400px", // Ajusta la altura según tus necesidades
   position: "relative" as "relative",
 };
-const buttonContainer = {
-  paddingTop: "90px",
-  top: "50%", // Centra verticalmente
-  // transform: "translate(200%, -20%)", // Centra el contenido
-  textAlign: "right",
-};
 export default function ImgInfo() {
   return (
     <div
@@ -22,7 +16,7 @@ export default function ImgInfo() {
         marginRight: "80px",
       }}
     >
-      <div style={buttonContainer} className="font-montserrat pt-6 mx-5">
+      <div className=" info-container font-montserrat pt-6 mx-5">
         <h1 className="text-end fw-bold fs-3">
           Interested in learning more? <br /> Give us a call today!
           <div className="ms-auto line"></div>

@@ -2,31 +2,17 @@ import { Carousel, Button } from "react-bootstrap";
 
 // Interfaz para describir los estilos personalizados
 interface CarouselImageStyles {
-  backgroundImage: string;
   backgroundSize: string;
   backgroundPosition: string;
   height: string;
   position: string;
 }
-interface ButtonContainerStyles {
-  position: string;
-  top: string;
-  transform: string;
-  textAlign: string;
-}
+
 const carouselImage = {
-  // backgroundImage: 'url("images/sff-truck.jpg")',
   backgroundSize: "cover",
   backgroundPosition: "center center",
   height: "400px", // Ajusta la altura según tus necesidades
   position: "relative" as "relative",
-};
-
-const buttonContainer = {
-  position: "absolute",
-  top: "50%", // Centra verticalmente
-  transform: "translate(10%, -20%)", // Centra el contenido
-  textAlign: "left",
 };
 
 export default function Slider() {
@@ -39,9 +25,9 @@ export default function Slider() {
             backgroundImage: 'url("images/sff-truck.jpg")',
           }}
         >
-          <div style={buttonContainer} className="mx-4">
+          <div className="slider-container slider-container mx-4">
             <h1 className="text-start fs-3">
-              Maximize your business's potential <br />
+              Maximize your business{"'"}s potential <br />
               <strong>with Smart Fleet Funding</strong>
             </h1>
             <Button
@@ -60,7 +46,7 @@ export default function Slider() {
             backgroundImage: 'url("images/sff-truck-logistic.jpg")',
           }}
         >
-          <div style={buttonContainer} className="mx-4">
+          <div className="slider-container slider-container mx-4">
             <h1 className="text-start fs-3">
               Your success, <strong>Our story</strong>
             </h1>
@@ -80,7 +66,7 @@ export default function Slider() {
             backgroundImage: 'url("images/sff-succes-story.jpg")',
           }}
         >
-          <div style={buttonContainer} className=" mx-4">
+          <div className=" slider-container mx-4">
             <h1 className="text-start fs-3">
               Let us be part of your <br />
               <strong>success story</strong>

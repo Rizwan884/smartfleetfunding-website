@@ -1,5 +1,5 @@
 @import "../../../node_modules/bootstrap";
-
+@import "montserrat.css";
 :root {
 /*----------------------------------------------------------*/
   --dark-blue: #051630;
@@ -9,6 +9,7 @@
   --gray-dark: #3F3E3E;
 
 }
+/*--------------------------------------------------------*/
 
 .text-dark-blue {
  color: var(--dark-blue) 
@@ -63,7 +64,19 @@
 .fw-600 {
  font-weight: 600;
 }
+
 /*------------------------Sections----------------------------*/
+.info-container{
+  padding-top: 90px;
+  top: 50%;
+  text-align: right;
+}
+.slider-container{
+  position: absolute;
+  top: 50%;
+  transform: translate(10%, -20%);
+  text-align: left;
+}
 .gray-section {
   flex: 1;
   background-color: #dddddd; /* Color gris de fondo */
@@ -283,4 +296,18 @@
 .cash_slide:hover{
   background:#FFFFFF;
   color: #051630;
+}
+/*-----------scroolTop-------------*/
+.scroll-to-top-button {
+
+  bottom: 20px;
+  right: 20px; 
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 200;
+}
+
+.scroll-to-top-button.visible {
+  opacity: 1;
 }
