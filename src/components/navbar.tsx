@@ -33,7 +33,14 @@ export default function SFFNavbar() {
               </Nav.Link>
               <NavDropdown
                 title={
-                  <span className="text-dark-blue fw-500 mx-1">SERVICES</span>
+                  <>
+                    <span className="text-dark-blue fw-500 mx-1">SERVICES</span>
+                    <img
+                      src="images/sff-arrow-down.svg"
+                      alt="Dropdown Icon"
+                      style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                    />
+                  </>
                 }
                 id="basic-nav-dropdown"
               >
@@ -55,7 +62,16 @@ export default function SFFNavbar() {
                 CONTACT
               </Nav.Link>
               <NavDropdown
-                title={<span className="text-green fw-500">ENG</span>}
+                title={
+                  <>
+                    <span className="text-green fw-500">ENG</span>
+                    <img
+                      src="images/sff-arrow-down-green.svg"
+                      alt="Dropdown Icon"
+                      style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                    />
+                  </>
+                }
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item className="" href="#">

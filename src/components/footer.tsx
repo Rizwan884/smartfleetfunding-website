@@ -1,14 +1,6 @@
 import React from "react";
 import ScrollToTopButton from "../components/scroolTop";
-import {
-  Button,
-  Card,
-  Container,
-  Nav,
-  NavDropdown,
-  Navbar,
-  Row,
-} from "react-bootstrap";
+import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
 export default function Footer() {
   return (
@@ -52,7 +44,14 @@ export default function Footer() {
                   </Nav.Link>
                   <NavDropdown
                     title={
-                      <span className="text-green fw-500 mx-1">SERVICES</span>
+                      <>
+                        <span className="text-green fw-500 mx-1">SERVICES</span>
+                        <img
+                          src="images/sff-arrow-down-green.svg"
+                          alt="Dropdown Icon"
+                          style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                        />
+                      </>
                     }
                     id="basic-nav-dropdown"
                     className="minWidth"
@@ -98,21 +97,33 @@ export default function Footer() {
           </p>
           <div
             className="d-flex position-absolute"
-            style={{ right: "66px", top: "-17px" }}
+            style={{ right: "66px", top: "-11px" }}
           >
             <div>
               <a href="#facebook">
-                <img src="images/sff-facebook.svg" alt="" />
+                <img
+                  style={{ width: "40px" }}
+                  src="images/sff-facebook.svg"
+                  alt=""
+                />
               </a>
             </div>
             <div>
               <a href="#instagram">
-                <img src="images/sff-instagram.svg" alt="" />
+                <img
+                  style={{ width: "40px" }}
+                  src="images/sff-instagram.svg"
+                  alt=""
+                />
               </a>
             </div>
             <div>
               <a href="#linkedin">
-                <img src="images/sff-linkedin.svg" alt="" />
+                <img
+                  style={{ width: "43px" }}
+                  src="images/sff-linkedin.svg"
+                  alt=""
+                />
               </a>
             </div>
           </div>

@@ -9,6 +9,9 @@
   --gray-dark: #3F3E3E;
 
 }
+.dropdown-toggle::after{
+  display: none;
+}
 /*--------------------------------------------------------*/
 
 .text-dark-blue {
@@ -45,20 +48,31 @@
   min-width: 1rem;
 }
 .nav-link.active{
-  color: var(--green) !important
+  color: var(--green) !important;
 }
-/*-------------------------tamaños------------------------------*/
+/*-------------------------Botones (nav, footer, en general)------------------------------*/
 .dropdown-menu{
   min-width: 10px;
+}
+.dropdown-item:active{
+  color: var(--green) !important;
+  background: none;
+}
+.btn:hover{
+  background:var(--green) !important;
+  color: var(--dark-blue);
 }
 /*-------------------------Fonts------------------------------*/
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+.fs-5{
+  font-size: 1.210rem !important;
+}
 .fw-400 {
   font-weight: 400;
  }
- .fw-500 {
+.fw-500 {
   font-weight: 500;
  }
 .fw-600 {
