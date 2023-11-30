@@ -8,7 +8,7 @@ export default function Footer() {
       <div id="footer" className="font-montserrat row m-2">
         <div className="col-6">
           <div className="text-left m-5 p-5">
-            <h2 className=" fw-bold ">
+            <h2 className="fs-3 fw-bold ">
               Explore the power of factoring <br /> with Smart Fleet Funding!
             </h2>
             <div className="line"></div>
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
         <div className=" font-montserrat d-flex position-relative justify-content-between align-items-center text-left py-3 px-5 bg-green">
           <p style={{ margin: 0 }}>
-            &copy;2020 Smart Funding Team All Rights Reserved
+            &copy;2023 Smart Funding Team All Rights Reserved
           </p>
           <div
             className="d-flex position-absolute"

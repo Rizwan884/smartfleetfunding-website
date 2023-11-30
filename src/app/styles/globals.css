@@ -47,14 +47,14 @@
 #basic-nav-dropdown{
   min-width: 1rem;
 }
-.nav-link.active{
+.nav-link.active, .nav-link:hover, span:hover{
   color: var(--green) !important;
 }
 /*-------------------------Botones (nav, footer, en general)------------------------------*/
 .dropdown-menu{
   min-width: 10px;
 }
-.dropdown-item:active{
+.dropdown-item:active, .dropdown-item:hover{
   color: var(--green) !important;
   background: none;
 }
