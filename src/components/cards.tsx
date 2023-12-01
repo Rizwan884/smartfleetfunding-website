@@ -8,7 +8,7 @@ export default function Cards() {
         <Col xs={12} md={4} className="card-column">
           <div className="flip-container">
             <div className="card">
-              <div className="front font-montserrat fw-600 d-flex flex-row flex-md-column">
+              <div className="front font-montserrat fw-600">
                 <div className="card-icon">
                   <Image
                     className="icons"
