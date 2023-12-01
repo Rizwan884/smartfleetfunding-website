@@ -42,8 +42,7 @@ const ScrollToTopButton = () => {
       } ${!isFixed ? "float-end" : ""} ${!isFixed ? "me-4" : ""}`}
       onClick={scrollToTop}
     >
-      {/* Puedes cambiar la ruta a tu propia imagen */}
-      <Image style={{ width: "30px" }} src="images/sff-arrow-up.svg" />
+      <Image style={{ width: "30px" }} src="images/sff-arrow-up.svg" alt="Arrow Up" />
     </div>
   );
 };
