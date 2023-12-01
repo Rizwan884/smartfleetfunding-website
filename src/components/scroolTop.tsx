@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Image from "react-bootstrap/Image";
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
@@ -43,7 +43,7 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
     >
       {/* Puedes cambiar la ruta a tu propia imagen */}
-      <img style={{ width: "30px" }} src="images/sff-arrow-up.svg" />
+      <Image style={{ width: "30px" }} src="images/sff-arrow-up.svg" />
     </div>
   );
 };

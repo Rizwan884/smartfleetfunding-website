@@ -36,9 +36,6 @@
 .bg-dark-blue{
   background-color: var(--dark-blue)
 }
-.bg-img{
-  background-image: url("../../../public/images/background.jpg");
-}
 
 .pt-6{
   padding-top: 6rem !important;
@@ -233,6 +230,7 @@
   max-height: 600px;
   display: flex;
   flex-direction: column;
+  background-image: url("../../../public/images/background.jpg");
   transition: min-height 0.4s ease-in-out;
   gap: 30px;
   padding-top: 35px;

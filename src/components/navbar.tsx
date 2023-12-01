@@ -17,7 +17,7 @@ export default function SFFNavbar() {
       <Navbar expand="lg" className="font-montserrat bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
-            <img
+            <Image
               src="images/sff-logo.png"
               width="174"
               height="54"
@@ -35,7 +35,7 @@ export default function SFFNavbar() {
                 title={
                   <>
                     <span className="text-dark-blue  mx-1">SERVICES</span>
-                    <img
+                    <Image
                       src="images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
                       style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
@@ -65,7 +65,7 @@ export default function SFFNavbar() {
                 title={
                   <>
                     <span className="text-green ">ENG</span>
-                    <img
+                    <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
                       style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
