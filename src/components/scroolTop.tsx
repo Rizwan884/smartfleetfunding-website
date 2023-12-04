@@ -19,7 +19,7 @@ const ScrollToTopButton = () => {
     const footer = document.getElementById("footer");
     const footerPosition = footer ? footer.offsetTop : 0;
 
-    setIsFixed(currentScrollPos < footerPosition - 300);
+    setIsFixed(currentScrollPos < footerPosition - 810);
     console.log(isFixed);
     console.log(isVisible);
   };
