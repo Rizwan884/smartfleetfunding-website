@@ -16,8 +16,8 @@ export default function SFFNavbar() {
       </div>
       <Navbar expand="lg" className="font-montserrat bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#home">
-            <img
+          <Navbar.Brand href="/">
+            <Image
               src="images/sff-logo.png"
               width="174"
               height="54"
@@ -28,14 +28,14 @@ export default function SFFNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="ms-auto fw-600">
-              <Nav.Link className="text-dark-blue " href="#home">
+              <Nav.Link className="text-dark-blue " href="/">
                 HOME
               </Nav.Link>
               <NavDropdown
                 title={
                   <>
                     <span className="text-dark-blue  mx-1">SERVICES</span>
-                    <img
+                    <Image
                       src="images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
                       style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
@@ -44,8 +44,8 @@ export default function SFFNavbar() {
                 }
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item href="#">Full Fact</NavDropdown.Item>
-                <NavDropdown.Item href="#">Instapay</NavDropdown.Item>
+                <NavDropdown.Item href="/full-fact">Full Fact</NavDropdown.Item>
+                <NavDropdown.Item href="/instapay">Instapay</NavDropdown.Item>
                 <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
                 <NavDropdown.Item href="#">Freight Broker</NavDropdown.Item>
               </NavDropdown>
@@ -65,7 +65,7 @@ export default function SFFNavbar() {
                 title={
                   <>
                     <span className="text-green ">ENG</span>
-                    <img
+                    <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
                       style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
