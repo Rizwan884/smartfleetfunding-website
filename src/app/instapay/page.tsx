@@ -5,24 +5,30 @@ import styles from "../app/styles/page.module.css";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banners from "@/components/banner";
-import Ideas from "@/components/ideas";
-import Help from "@/components/help";
-import SectionForm from "../../components/form";
-import TestimonialCarousel from "../../components/testimonial";
-import SectionAccordion from "../../components/section-accordion";
+import Welcome from "@/components/welcome";
+import Steps from "@/components/steps";
+import Benefits from "@/components/benefits";
+import FormInstapay from "@/components/form-instapay";
 
 export default function Instapay() {
   const title = (
     <p>
-      Full <strong>Factoring Solution</strong>
+      Fast, Easy and <strong>Secure Payment</strong>
     </p>
   );
 
   return (
     <>
       <Navbar />
-      <Banners title={title} backgroundImage="images/sff-full-facts.jpg" />
-
+      <Banners
+        hideIcons={true}
+        title={title}
+        backgroundImage="images/sff-full-facts.jpg"
+      />
+      <Welcome />
+      <Steps />
+      <Benefits />
+      <FormInstapay />
       <Footer />
     </>
   );

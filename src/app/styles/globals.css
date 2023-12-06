@@ -5,6 +5,7 @@
   --dark-blue: #051630;
   --white: #ffff;
   --white-gray:#D9D9D9;
+  --white-gray-shadow:#F3F3F3;
   --green: #02dd68;
   --dark-green: #2b9958;
   --gray: #4D4D4D;
@@ -53,6 +54,9 @@ body{
 .bg-grey-transparent{
   background-color: var(--gray-transparent)
 }
+.bg-white-shadow{
+  background-color: var(--white-gray-shadow)
+}
 .bg-img{
   background-image: url("../../../public/images/background.jpg");
 }
@@ -61,7 +65,7 @@ body{
   padding-top: 6rem !important;
 }
 .mb-6{
-  margin-bot: 6rem !important;
+  margin-bottom: 6rem !important;
 }
 .mt-6{
   margin-top: 6rem !important;
@@ -88,6 +92,10 @@ body{
   background: var(--dark-blue)
 }
 #form .btn{
+  background:var(--green) !important;
+  border-radius: 4px;
+}
+#form-instapay .btn{
   background:var(--green) !important;
   border-radius: 4px;
 }
@@ -411,8 +419,12 @@ body{
 .form-check-input[type=checkbox]{
   border-radius: 1.25em;
 }
-#message::placeholder,#phone::placeholder,#company::placeholder,#email::placeholder,#name::placeholder {
+#form #message::placeholder,#phone::placeholder,#company::placeholder,#email::placeholder,#name::placeholder {
   color: var(--white);
+  font-size: 11px;
+}
+#form-instapay #freight::placeholder, #comments::placeholder,#phone::placeholder,#company::placeholder,#email::placeholder,#name::placeholder {
+  color: var(--gray-dark);
   font-size: 11px;
 }
 .form-control:focus{

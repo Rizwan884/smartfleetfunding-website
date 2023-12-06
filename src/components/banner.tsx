@@ -33,19 +33,19 @@ export default function Banners({
           ) : (
             <div className="d-flex gap-3">
               <div>
-                <Image src="images/sff-ff-food.svg"></Image>
+                <Image alt="icons" src="images/sff-ff-food.svg"></Image>
               </div>
               <div>
                 {" "}
-                <Image src="images/sff-ff-tea.svg"></Image>
+                <Image alt="icons" src="images/sff-ff-tea.svg"></Image>
               </div>
               <div>
                 {" "}
-                <Image src="images/sff-ff-gift.svg"></Image>
+                <Image alt="icons" src="images/sff-ff-gift.svg"></Image>
               </div>
               <div>
                 {" "}
-                <Image src="images/sff-ff-gasoline.svg"></Image>
+                <Image alt="icons" src="images/sff-ff-gasoline.svg"></Image>
               </div>
             </div>
           )}
