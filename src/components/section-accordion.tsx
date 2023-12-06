@@ -4,7 +4,7 @@ export default function SectionAccordion() {
   return (
     <div className="container">
       <Accordion
-        style={{ marginTop: "10%", marginBottom: "12%" }}
+        style={{ marginTop: "10%", paddingBottom: "12%" }}
         defaultActiveKey="0"
       >
         <Accordion.Item eventKey="1">
