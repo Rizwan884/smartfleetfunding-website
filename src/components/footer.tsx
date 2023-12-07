@@ -6,34 +6,11 @@ import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 export default function Footer() {
   return (
     <>
-      <div id="footer" className="font-montserrat row m-2">
-        <div className="col-6">
-          <div className="text-left m-5 p-5">
-            <h2 className="fs-3 fw-bold ">
-              Explore the power of factoring <br /> with Smart Fleet Funding!
-            </h2>
-            <div className="line"></div>
-            <div className="card-text-bottom fs-5  fw-400">
-              Watch this concise video to understand how your invoices can turn
-              into immediate cash, allowing you to focus on what you do best -
-              delivering goods.{" "}
-              <strong className="text-gray-dark">
-                With over 30 years of experience, we{"'"}re here to guide you
-                through every step.
-              </strong>
-            </div>
-          </div>
-        </div>
-        <div className="col-5 embed-responsive embed-responsive-16by9  m-4 p-4 ">
-          <iframe
-            className="embed-responsive-item 0 mt-4 w-100 h-100 rounded-5"
-            src="https://www.youtube.com/embed/kGY6N9DL4Jw"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
       <ScrollToTopButton />
-      <footer className=" font-montserrat bg-dark-blue text-light mt-5">
+      <footer
+        id="footer"
+        className=" font-montserrat bg-dark-blue text-light mt-5"
+      >
         <Container className="py-3">
           <Navbar expand="lg">
             <Container>

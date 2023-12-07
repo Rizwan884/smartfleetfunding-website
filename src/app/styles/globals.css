@@ -3,12 +3,20 @@
 :root {
 /*----------------------------------------------------------*/
   --dark-blue: #051630;
+  --white: #ffff;
+  --white-gray:#D9D9D9;
   --green: #02dd68;
   --dark-green: #2b9958;
   --gray: #4D4D4D;
   --gray-dark: #3F3E3E;
+  --gray-white: #F3F3F380;
+  --gray-transparent: #D9D9D92E;
 
 }
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .dropdown-toggle::after{
   display: none;
 }
@@ -33,12 +41,30 @@
 .bg-green {
   background-color: var(--green)
 }
+.bg-white-gray{
+  background-color: var(--white-gray);
+}
 .bg-dark-blue{
   background-color: var(--dark-blue)
+}
+.bg-grey{
+  background-color: var(--gray-white)
+}
+.bg-grey-transparent{
+  background-color: var(--gray-transparent)
+}
+.bg-img{
+  background-image: url("../../../public/images/background.jpg");
 }
 
 .pt-6{
   padding-top: 6rem !important;
+}
+.mb-6{
+  margin-bottom: 6rem !important;
+}
+.mt-6{
+  margin-top: 6rem !important;
 }
 /*-------------------------NavBar-------------------------------*/
 #basic-nav-dropdown{
@@ -61,8 +87,11 @@
   color: var(--green) !important;
   background: var(--dark-blue)
 }
-
-.btn:hover{
+#form .btn{
+  background:var(--green) !important;
+  border-radius: 4px;
+}
+#form .btn:hover{
   background:var(--green) !important;
   color: var(--dark-blue);
 }
@@ -92,6 +121,12 @@
 .slider-container{
   position: absolute;
   top: 50%;
+  transform: translate(10%, -20%);
+  text-align: left;
+}
+.banner-container{
+  position: absolute;
+  top: 30%;
   transform: translate(10%, -20%);
   text-align: left;
 }
@@ -340,4 +375,124 @@
 
 .scroll-to-top-button.visible {
   opacity: 1;
+}
+/*----------------Ideas-----------------*/
+.line-idea{
+  width: auto;
+  height: 1px;
+  background-color: #3F3E3E80;
+  margin: 30px;
+  margin-top: 12px;
+}
+.idea-dots li {
+ color:red ;
+  border-color: #051630;
+}
+#idea-carrusel .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 60px;
+}
+#idea-carrusel .carousel-indicators [data-bs-target] {
+  background-color:var(--dark-blue);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+/*---------------Help-----------*/
+#help .card-text {
+  font-size: 18px;
+}
+/*------------form-------------*/
+.form-check-input[type=checkbox]{
+  border-radius: 1.25em;
+}
+#message::placeholder,#phone::placeholder,#company::placeholder,#email::placeholder,#name::placeholder {
+  color: var(--white);
+  font-size: 11px;
+}
+.form-control:focus{
+background: var(--gray-transparent);
+}
+/*-----------Testimonial---------*/
+#testimonial .carousel-control-prev-icon{
+  background-image: url("../../../public/images/sff-ttm-prev.svg");
+  width: 15%;
+}
+#testimonial .carousel-control-next-icon{
+  background-image: url("../../../public/images/sff-ttm-next.svg");
+  width: 15%;
+}
+#testimonial .carousel-control-prev, .carousel-control-next{
+  width: 5%;
+
+}
+#testimonial .carousel-inner{
+  overflow: visible;
+}
+#stars {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#stars p {
+  text-align: center;
+}
+
+#stars label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: var(--green);
+}
+
+input[type="radio"]:checked ~ label {
+  color: var(--green);
+}
+/*-----------Accordion-----------------*/
+.accordion-button{
+  font-weight: bold;
+  font-size: 20px;
+}
+.accordion-item{
+  border: none;
+  border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+  border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+.accordion-button:not(.collapsed){
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+.accordion-button:focus{
+  box-shadow: var(--white);
+}
+.accordion-button:not(.collapsed)::after{
+  background-image: url("../../../public/images/sff-hp-down.svg");
+}
+.accordion-button::after{
+  background-image: url("../../../public/images/sff-hp-down.svg");
 }

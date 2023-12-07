@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "react-bootstrap/Image";
+
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
@@ -12,24 +13,18 @@ const ScrollToTopButton = () => {
   };
 
   const handleScroll = () => {
-    // Mostrar el botón cuando el desplazamiento sea mayor que 100px
     const currentScrollPos = window.scrollY;
     setIsVisible(currentScrollPos > 200);
 
     const footer = document.getElementById("footer");
     const footerPosition = footer ? footer.offsetTop : 0;
 
-    setIsFixed(currentScrollPos < footerPosition - 300);
-    console.log(isFixed);
-    console.log(isVisible);
+    setIsFixed(currentScrollPos < footerPosition - 810);
   };
 
   useEffect(() => {
-    // Agregar un listener para el evento de desplazamiento
     window.addEventListener("scroll", handleScroll);
-    console.log(isFixed);
-    console.log(isVisible);
-    // Limpiar el listener cuando el componente se desmonta
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
