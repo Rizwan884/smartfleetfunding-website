@@ -17,28 +17,35 @@ export default function Steps() {
   ];
 
   return (
-    <section className="py-5 bg-white-shadow">
-      <Container>
-        <Row className="d-flex flex-column">
-          {steps.map((step, index) => (
-            <>
-              <div className="col">
-                <div className="me-3">
-                  <div className="step-number">{index + 1}</div>
+    <>
+      <section className="py-5 bg-white-shadow font-montserrat">
+        <Container>
+          <h1 className="fw-600 fs-2 mb-0 mx-4">How it works</h1>
+          <div
+            className="line mt-0 mb-6 mx-4 mt-1"
+            style={{ width: "3%" }}
+          ></div>
+          <Row className="d-flex flex-column" style={{ margin: "5%" }}>
+            {steps.map((step, index) => (
+              <div className="step-container" key={index}>
+                <div className="step-number position-relative">
+                  {index + 1}{" "}
+                  <div
+                    style={{
+                      width: 2,
+                    }}
+                    className="position-absolute"
+                  ></div>{" "}
+                </div>
+                <div className="step-content" style={{ fontSize: "20px" }}>
+                  <h3 className="fw-bold">{step.title}</h3>
+                  <p>{step.text}</p>
                 </div>
               </div>
-              <div className="col" key={index}>
-                <div className="d-flex">
-                  <div>
-                    <h3>{step.title}</h3>
-                    <p>{step.text}</p>
-                  </div>
-                </div>
-              </div>
-            </>
-          ))}
-        </Row>
-      </Container>
-    </section>
+            ))}
+          </Row>
+        </Container>
+      </section>
+    </>
   );
 }

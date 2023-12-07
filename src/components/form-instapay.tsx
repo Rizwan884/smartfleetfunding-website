@@ -22,13 +22,19 @@ export default function FormInstapay() {
         <div className="d-flex">
           {" "}
           <div className="w-50 text-white">
-            <form id="form-instapay" className="m-5" target="#">
+            <form
+              action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
+              method="POST"
+              id="form-instapay"
+              className="m-5"
+              target="#"
+            >
               <div className="row mb-3 ">
                 <div className="col">
                   <input
                     type="text"
                     className="form-control px-3 bg-grey-transparent text-white"
-                    id="name"
+                    id="fullname"
                     name="name"
                     placeholder="Full Name"
                   ></input>
@@ -37,7 +43,7 @@ export default function FormInstapay() {
                   <input
                     type="email"
                     className="form-control px-3 bg-grey-transparent text-white"
-                    id="email"
+                    id="fullemail"
                     name="email"
                     placeholder="Your E-Mail"
                   ></input>
@@ -48,7 +54,7 @@ export default function FormInstapay() {
                   <input
                     type="text"
                     className="form-control px-3 bg-grey-transparent text-white"
-                    id="company"
+                    id="fullcompany"
                     name="company"
                     placeholder="Company Name"
                   ></input>
@@ -57,7 +63,7 @@ export default function FormInstapay() {
                   <input
                     type="number"
                     className="form-control px-3 bg-grey-transparent text-white"
-                    id="phone"
+                    id="fullphone"
                     name="phone"
                     placeholder="Phone"
                   ></input>

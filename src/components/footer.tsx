@@ -50,7 +50,7 @@ export default function Footer() {
                   </Nav.Link>
                 </Nav>
 
-                <button className="btn bg-green text-dark-blue fw-600 ms-auto">
+                <button id="bottom-footer" className="btn bg-green text-dark-blue fw-600 ms-auto">
                   CURIOUS TO LEARN MORE?
                 </button>
               </Navbar.Collapse>

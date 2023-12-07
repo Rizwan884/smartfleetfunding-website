@@ -67,8 +67,20 @@ body{
 .mb-6{
   margin-bottom: 6rem !important;
 }
+.mb-7{
+  margin-bottom: 7rem !important;
+}
+.mb-8{
+  margin-bottom: 8rem !important;
+}
 .mt-6{
   margin-top: 6rem !important;
+}
+.mt-7{
+  margin-top: 7rem !important;
+}
+.mt-8{
+  margin-top: 8rem !important;
 }
 /*-------------------------NavBar-------------------------------*/
 #basic-nav-dropdown{
@@ -423,7 +435,7 @@ body{
   color: var(--white);
   font-size: 11px;
 }
-#form-instapay #freight::placeholder, #comments::placeholder,#phone::placeholder,#company::placeholder,#email::placeholder,#name::placeholder {
+#form-instapay #freight::placeholder, #comments::placeholder,#fullphone::placeholder,#fullcompany::placeholder,#fullemail::placeholder,#fullname::placeholder {
   color: var(--gray-dark);
   font-size: 11px;
 }
@@ -503,4 +515,36 @@ input[type="radio"]:checked ~ label {
 }
 .accordion-button::after{
   background-image: url("../../../public/images/sff-hp-down.svg");
+}
+/*----------steps----------*/
+.step-container {
+  display: flex;
+  margin-bottom: 20px;
+  border-left: 2px solid var(--dark-blue); 
+  padding-right: 20px;
+  padding-left:0px;
+  margin-top: -25px;
+  padding-bottom: 30px;
+}
+
+.step-container:nth-of-type(3){
+  border-left: none;
+}
+
+.step-number {
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  color: var(--green);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-left:-15px;
+}
+
+.step-content {
+  flex: 1;
 }

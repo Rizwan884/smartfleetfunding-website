@@ -1,10 +1,10 @@
 import Image from "react-bootstrap/Image";
 export default function Benefits() {
   return (
-    <div className="container mt-5 ">
-      <div>
+    <div className="container mt-7 font-montserrat">
+      <div className="d-flex flex-column align-items-center">
         <div
-          className="line fw-600"
+          className="line fw-600 mb-2 ms-3"
           style={{
             alignItems: "center",
             width: "40.9px",
@@ -14,19 +14,19 @@ export default function Benefits() {
           Benefits for Drivers
         </h1>
       </div>
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-6">
-          <div className="text-left m-5 p-5 d-flex align-items-center gap-2">
+          <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
             <Image
               style={{
-                marginTop: "-100px",
+                marginTop: "-110px",
                 marginRight: "10px",
                 width: "8%",
               }}
               alt="icon"
               src="images/sff-bff-dollar.svg"
             ></Image>
-            <div>
+            <div className="lh-sm">
               <h2 className="fs-3 fw-600 text-green ">Cash Flow control</h2>
               <div className="fs-5 fw-400">
                 Gain control over your finances, ensuring you have the resources
@@ -37,7 +37,7 @@ export default function Benefits() {
           </div>
         </div>
         <div className="col-6">
-          <div className="text-left m-5 p-5 d-flex align-items-center gap-2">
+          <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
             <Image
               style={{
                 marginTop: "-50px",
@@ -47,7 +47,7 @@ export default function Benefits() {
               alt="icon"
               src="images/sff-bff-hand.svg"
             ></Image>
-            <div>
+            <div className="lh-sm">
               <h2 className="fs-3 fw-600 text-green ">No Holdbacks</h2>
               <div className="fs-5 fw-400">
                 We advance 100% minus the Instapay fee.
@@ -58,17 +58,17 @@ export default function Benefits() {
       </div>
       <div className="row">
         <div className="col-6">
-          <div className="text-left m-5 p-5 d-flex align-items-center gap-2">
+          <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
             <Image
               style={{
-                marginTop: "-100px",
+                marginTop: "-80px",
                 marginRight: "10px",
                 width: "8%",
               }}
               alt="icon"
               src="images/sff-bff-check.svg"
             ></Image>
-            <div>
+            <div className="lh-sm">
               <h2 className="fs-3 fw-600 text-green ">
                 Access Anytime, Anywhere
               </h2>
@@ -80,17 +80,17 @@ export default function Benefits() {
           </div>
         </div>
         <div className="col-6">
-          <div className="text-left m-5 p-5 d-flex align-items-center gap-2">
+          <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
             <Image
               style={{
-                marginTop: "-100px",
+                marginTop: "-107px",
                 marginRight: "10px",
                 width: "8%",
               }}
               alt="icon"
               src="images/sff-bff-earphones.svg"
             ></Image>
-            <div>
+            <div className="lh-sm">
               <h2 className="fs-3 fw-600 text-green ">Professional Support</h2>
               <div className="fs-5 fw-400">
                 Our Accounts Receivable team is dedicated to working on your
