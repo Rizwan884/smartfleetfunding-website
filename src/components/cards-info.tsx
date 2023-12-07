@@ -1,18 +1,7 @@
 import React from "react";
+import Image from "react-bootstrap/Image";
 import { Card, Container, Row, Col, ListGroup, Button } from "react-bootstrap";
-const Image = {
-  // backgroundImage: 'url("images/sff-truck.jpg")',
-  backgroundSize: "cover",
-  backgroundPosition: "center center",
-  height: "400px", // Ajusta la altura según tus necesidades
-  position: "relative" as "relative",
-};
-const buttonContainer = {
-  position: "absolute",
-  top: "50%", // Centra verticalmente
-  transform: "translate(10%, -20%)", // Centra el contenido
-  textAlign: "left",
-};
+
 export default function Cards() {
   return (
     <Container className="font-montserrat">
@@ -25,14 +14,14 @@ export default function Cards() {
           <Card.Body>
             <ListGroup>
               <ListGroup.Item
-                className="bg-img body-list bd-box card-hb"
+                className="bg-Image body-list bd-box card-hb"
                 style={{ lineHeight: "26px" }}
               >
                 <div
                   className="icon-cards"
                   style={{ height: 60, margin: 10, marginTop: 0 }}
                 >
-                  <img
+                  <Image
                     style={{ width: "68px" }}
                     src="images/sff-factura.svg"
                     alt=""
@@ -42,7 +31,7 @@ export default function Cards() {
                 <div className="cards-size ">
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> Premium
+                      <Image src="images/sff-point-front.svg" alt="" /> Premium
                       factoring -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
@@ -52,8 +41,8 @@ export default function Cards() {
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> We Address
-                      Your Challenges -
+                      <Image src="images/sff-point-front.svg" alt="" /> We
+                      Address Your Challenges -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
                       · From communication issues to{" "}
@@ -67,7 +56,7 @@ export default function Cards() {
                   <div>
                     <p className="mb-0 fw-600 text-green">
                       {" "}
-                      <img src="images/sff-point-front.svg" alt="" /> How We
+                      <Image src="images/sff-point-front.svg" alt="" /> How We
                       Assist -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
@@ -80,7 +69,7 @@ export default function Cards() {
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> Connect
+                      <Image src="images/sff-point-front.svg" alt="" /> Connect
                       with Our Advisors -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
@@ -95,9 +84,9 @@ export default function Cards() {
         <Col className="card-column">
           <Card.Body>
             <ListGroup>
-              <ListGroup.Item className="bg-img body-list bd-box card-hb">
+              <ListGroup.Item className="bg-Image body-list bd-box card-hb">
                 <div className="icon-cards" style={{ height: 70 }}>
-                  <img
+                  <Image
                     style={{ width: "62px;" }}
                     src="images/sff-cash.svg"
                     alt=""
@@ -109,8 +98,8 @@ export default function Cards() {
                 <div className="cards-size">
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> Fast, Easy
-                      and Secure Payment -
+                      <Image src="images/sff-point-front.svg" alt="" /> Fast,
+                      Easy and Secure Payment -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
                       · Guarantees payment in 12 business{" "}
@@ -123,7 +112,8 @@ export default function Cards() {
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> Benefits -
+                      <Image src="images/sff-point-front.svg" alt="" /> Benefits
+                      -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
                       · Optimized Cash Flow.
@@ -150,7 +140,8 @@ export default function Cards() {
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> Support -
+                      <Image src="images/sff-point-front.svg" alt="" /> Support
+                      -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
                       · Dedicated account executive and 24/7{" "}
@@ -163,7 +154,7 @@ export default function Cards() {
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> Getting
+                      <Image src="images/sff-point-front.svg" alt="" /> Getting
                       Started -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
@@ -182,9 +173,9 @@ export default function Cards() {
         <Col className="card-column">
           <Card.Body>
             <ListGroup>
-              <ListGroup.Item className="bg-img body-list bd-box card-hb">
+              <ListGroup.Item className="bg-Image body-list bd-box card-hb">
                 <div className="icon-cards" style={{ height: 70 }}>
-                  <img
+                  <Image
                     style={{ width: "90px" }}
                     src="images/sff-gas.svg"
                     alt=""
@@ -194,8 +185,8 @@ export default function Cards() {
                 <div className="cards-size">
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img src="images/sff-point-front.svg" alt="" /> Smart Fuel
-                      card -
+                      <Image src="images/sff-point-front.svg" alt="" /> Smart
+                      Fuel card -
                     </p>
                     <li className="list-group fw-400 text-dark-blue">
                       · Discounted fuel cards for major truck{" "}
@@ -230,7 +221,7 @@ export default function Cards() {
                   </div>
                   <div>
                     <p className="mb-0 fw-600 text-green">
-                      <img
+                      <Image
                         className="points"
                         src="images/sff-point-front.svg"
                         alt=""

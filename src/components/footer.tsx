@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "react-bootstrap/Image";
 import ScrollToTopButton from "../components/scroolTop";
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 
@@ -23,9 +24,10 @@ export default function Footer() {
                     title={
                       <>
                         <span className="text-green fw-500 mx-1">SERVICES</span>
-                        <img
+                        <Image
                           src="images/sff-arrow-down-green.svg"
-                          style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                          style={{ width: "13px", height: "10px" }}
+                          alt="Arroe Down Green"
                         />
                       </>
                     }
@@ -58,7 +60,7 @@ export default function Footer() {
           </Navbar>
         </Container>
         <div className="text-center py-5">
-          <img
+          <Image
             src="images/sff-logo-footer.svg"
             width="174"
             height="54"
@@ -76,7 +78,7 @@ export default function Footer() {
           >
             <div>
               <a href="#facebook">
-                <img
+                <Image
                   style={{ width: "40px" }}
                   src="images/sff-facebook.svg"
                   alt=""
@@ -85,7 +87,7 @@ export default function Footer() {
             </div>
             <div>
               <a href="#instagram">
-                <img
+                <Image
                   style={{ width: "40px" }}
                   src="images/sff-instagram.svg"
                   alt=""
@@ -94,7 +96,7 @@ export default function Footer() {
             </div>
             <div>
               <a href="#linkedin">
-                <img
+                <Image
                   style={{ width: "43px" }}
                   src="images/sff-linkedin.svg"
                   alt=""

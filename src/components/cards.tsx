@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
+import { Container, Row, Col } from "react-bootstrap";
 export default function Cards() {
   return (
     <Container className="card-container">
@@ -7,9 +8,9 @@ export default function Cards() {
         <Col xs={12} md={4} className="card-column">
           <div className="flip-container">
             <div className="card">
-              <div className="front font-montserrat fw-600 d-flex flex-row flex-md-column">
+              <div className="front font-montserrat fw-600">
                 <div className="card-icon">
-                  <img
+                  <Image
                     className="icons"
                     src="images/sff-clock-front.svg"
                     alt=""
@@ -25,7 +26,7 @@ export default function Cards() {
               </div>
               <div className="back font-montserrat fw-600">
                 <div className="card-icon-back">
-                  <img
+                  <Image
                     className="icons"
                     src="images/sff-clock-back.svg"
                     alt=""
@@ -49,7 +50,7 @@ export default function Cards() {
             <div className="card">
               <div className="front font-montserrat fw-600">
                 <div className="card-icon">
-                  <img
+                  <Image
                     className="icons2"
                     src="images/sff-easy-front.svg"
                     alt=""
@@ -63,7 +64,7 @@ export default function Cards() {
               </div>
               <div className="back font-montserrat fw-600">
                 <div className="card-icon-back">
-                  <img
+                  <Image
                     className="icons2"
                     src="images/sff-easy-back.svg"
                     alt=""
@@ -86,7 +87,7 @@ export default function Cards() {
             <div className="card">
               <div className="front font-montserrat fw-600">
                 <div className="card-icon">
-                  <img
+                  <Image
                     className="icons2"
                     src="images/sff-shield-front.svg"
                     alt=""
@@ -100,7 +101,7 @@ export default function Cards() {
               </div>
               <div className="back font-montserrat fw-600">
                 <div className="card-icon-back">
-                  <img
+                  <Image
                     className="icons2"
                     src="images/sff-shield-back.svg"
                     alt=""
