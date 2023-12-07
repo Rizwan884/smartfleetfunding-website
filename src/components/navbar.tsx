@@ -14,11 +14,7 @@ export default function SFFNavbar() {
           Toll-Free: (888) 875-5506{" "}
         </a>
       </div>
-      <Navbar
-        expand="lg"
-        className="font-montserrat"
-        style={{ backgroundImage: "url(images/sff-navbar.svg)" }}
-      >
+      <Navbar expand="lg" className="font-montserrat nv-image">
         <Container>
           <Navbar.Brand href="/">
             <Image

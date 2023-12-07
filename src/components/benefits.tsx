@@ -3,13 +3,7 @@ export default function Benefits() {
   return (
     <div className="container mt-7 font-montserrat">
       <div className="d-flex flex-column align-items-center">
-        <div
-          className="line fw-600 mb-2 ms-3"
-          style={{
-            alignItems: "center",
-            width: "40.9px",
-          }}
-        ></div>
+        <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
         <h1 className="fw-600 fs-2 text-center  flex-column align-items-center gap-3">
           Benefits for Drivers
         </h1>
@@ -18,11 +12,7 @@ export default function Benefits() {
         <div className="col-6">
           <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
             <Image
-              style={{
-                marginTop: "-110px",
-                marginRight: "10px",
-                width: "8%",
-              }}
+              className="img-style"
               alt="icon"
               src="images/sff-bff-dollar.svg"
             ></Image>
@@ -39,11 +29,7 @@ export default function Benefits() {
         <div className="col-6">
           <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
             <Image
-              style={{
-                marginTop: "-50px",
-                marginRight: "10px",
-                width: "10%",
-              }}
+              className="img-style2"
               alt="icon"
               src="images/sff-bff-hand.svg"
             ></Image>
@@ -60,11 +46,7 @@ export default function Benefits() {
         <div className="col-6">
           <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
             <Image
-              style={{
-                marginTop: "-80px",
-                marginRight: "10px",
-                width: "8%",
-              }}
+              className="img-style3"
               alt="icon"
               src="images/sff-bff-check.svg"
             ></Image>
@@ -82,11 +64,7 @@ export default function Benefits() {
         <div className="col-6">
           <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
             <Image
-              style={{
-                marginTop: "-107px",
-                marginRight: "10px",
-                width: "8%",
-              }}
+              className="img-style4"
               alt="icon"
               src="images/sff-bff-earphones.svg"
             ></Image>
