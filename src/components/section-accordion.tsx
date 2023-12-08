@@ -29,7 +29,7 @@ export default function SectionAccordion({
         )}
 
         {items.map((item, key) => (
-          <Accordion.Item key={key} eventKey={`${item.eventKey}`}>
+          <Accordion.Item key={key} eventKey={item.eventKey.toString()}>
             <Accordion.Header className="fw-bold">
               {showIcons && (
                 <Image
