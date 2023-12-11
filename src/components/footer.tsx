@@ -2,7 +2,6 @@ import React from "react";
 import Image from "react-bootstrap/Image";
 import ScrollToTopButton from "../components/scroolTop";
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
-
 export default function Footer() {
   return (
     <>
@@ -25,9 +24,9 @@ export default function Footer() {
                       <>
                         <span className="text-green fw-500 mx-1">SERVICES</span>
                         <Image
+                          alt="down"
                           src="images/sff-arrow-down-green.svg"
                           style={{ width: "13px", height: "10px" }}
-                          alt="Arroe Down Green"
                         />
                       </>
                     }
@@ -52,7 +51,10 @@ export default function Footer() {
                   </Nav.Link>
                 </Nav>
 
-                <button className="btn bg-green text-dark-blue fw-600 ms-auto">
+                <button
+                  id="bottom-footer"
+                  className="btn bg-green text-dark-blue fw-600 ms-auto"
+                >
                   CURIOUS TO LEARN MORE?
                 </button>
               </Navbar.Collapse>
@@ -81,7 +83,7 @@ export default function Footer() {
                 <Image
                   style={{ width: "40px" }}
                   src="images/sff-facebook.svg"
-                  alt=""
+                  alt="facebook"
                 />
               </a>
             </div>
@@ -90,7 +92,7 @@ export default function Footer() {
                 <Image
                   style={{ width: "40px" }}
                   src="images/sff-instagram.svg"
-                  alt=""
+                  alt="instagram"
                 />
               </a>
             </div>
@@ -99,7 +101,7 @@ export default function Footer() {
                 <Image
                   style={{ width: "43px" }}
                   src="images/sff-linkedin.svg"
-                  alt=""
+                  alt="linkedin"
                 />
               </a>
             </div>

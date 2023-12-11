@@ -37,7 +37,11 @@ const ScrollToTopButton = () => {
       } ${!isFixed ? "float-end" : ""} ${!isFixed ? "me-4" : ""}`}
       onClick={scrollToTop}
     >
-      <Image style={{ width: "30px" }} src="images/sff-arrow-up.svg" alt="Arrow Up" />
+      <Image
+        alt="scroll"
+        style={{ width: "30px" }}
+        src="images/sff-arrow-up.svg"
+      ></Image>
     </div>
   );
 };

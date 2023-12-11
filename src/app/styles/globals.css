@@ -5,6 +5,7 @@
   --dark-blue: #051630;
   --white: #ffff;
   --white-gray:#D9D9D9;
+  --white-gray-shadow:#F3F3F3;
   --green: #02dd68;
   --dark-green: #2b9958;
   --gray: #4D4D4D;
@@ -53,6 +54,9 @@ body{
 .bg-grey-transparent{
   background-color: var(--gray-transparent)
 }
+.bg-white-shadow{
+  background-color: var(--white-gray-shadow)
+}
 .bg-img{
   background-image: url("../../../public/images/background.jpg");
 }
@@ -63,10 +67,28 @@ body{
 .mb-6{
   margin-bottom: 6rem !important;
 }
+.mb-7{
+  margin-bottom: 7rem !important;
+}
+.mb-8{
+  margin-bottom: 8rem !important;
+}
 .mt-6{
   margin-top: 6rem !important;
 }
+.mt-7{
+  margin-top: 7rem !important;
+}
+.mt-8{
+  margin-top: 8rem !important;
+}
+.w-3{
+  width: 3%;
+}
 /*-------------------------NavBar-------------------------------*/
+.nv-image{
+  background-image: url("/public/images/sff-navbar-bg.jpg");
+}
 #basic-nav-dropdown{
   min-width: 1rem;
 }
@@ -91,6 +113,10 @@ body{
   background:var(--green) !important;
   border-radius: 4px;
 }
+#form-instapay .btn{
+  background:var(--green) !important;
+  border-radius: 4px;
+}
 #form .btn:hover{
   background:var(--green) !important;
   color: var(--dark-blue);
@@ -99,8 +125,11 @@ body{
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+.f-1{
+
+}
 .fs-5{
-  font-size: 1.210rem !important;
+  font-size: 1.220rem !important;
 }
 .fw-400 {
   font-weight: 400;
@@ -415,8 +444,12 @@ body{
 .form-check-input[type=checkbox]{
   border-radius: 1.25em;
 }
-#message::placeholder,#phone::placeholder,#company::placeholder,#email::placeholder,#name::placeholder {
+#form #message::placeholder,#phone::placeholder,#company::placeholder,#email::placeholder,#name::placeholder {
   color: var(--white);
+  font-size: 11px;
+}
+#form-instapay #freight::placeholder, #comments::placeholder,#fullphone::placeholder,#fullcompany::placeholder,#fullemail::placeholder,#fullname::placeholder {
+  color: var(--gray-dark);
   font-size: 11px;
 }
 .form-control:focus{
@@ -474,6 +507,10 @@ input[type="radio"]:checked ~ label {
   color: var(--green);
 }
 /*-----------Accordion-----------------*/
+.accordion-mp{
+  margin-top: 10%;
+  padding-bottom: 12%;
+}
 .accordion-button{
   font-weight: bold;
   font-size: 20px;
@@ -495,4 +532,60 @@ input[type="radio"]:checked ~ label {
 }
 .accordion-button::after{
   background-image: url("../../../public/images/sff-hp-down.svg");
+}
+/*----------steps----------*/
+.step-container {
+  display: flex;
+  margin-bottom: 20px;
+  border-left: 2px solid var(--dark-blue); 
+  padding-right: 20px;
+  padding-left:0px;
+  margin-top: -25px;
+  padding-bottom: 30px;
+}
+
+.step-container:nth-of-type(3){
+  border-left: none;
+}
+
+.step-number {
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  color: var(--green);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-left:-15px;
+}
+
+.step-content {
+  flex: 1;
+}
+/*---------Benefits---------*/
+.width-bf{
+  width: 40.9px;
+}
+.img-style{
+  margin-top: -110px;
+  margin-right: 10px;
+  width: 8%;
+}
+.img-style2{
+  margin-top: -50px;
+  margin-right: 10px;
+  width: 10%;
+}
+.img-style3{
+  margin-top: -80px;
+  margin-right: 10px;
+  width: 8%;
+}
+.img-style4{
+  margin-top: -107px;
+  margin-right: 10px;
+  width: 8%;
 }
