@@ -61,6 +61,10 @@ body{
   background-image: url("../../../public/images/background.jpg");
 }
 
+.m-5{
+  margin: 5rem !important;
+}
+
 .pt-6{
   padding-top: 6rem !important;
 }
