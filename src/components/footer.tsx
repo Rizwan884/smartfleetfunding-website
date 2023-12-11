@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "react-bootstrap/Image";
 import ScrollToTopButton from "../components/scroolTop";
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
@@ -26,7 +27,7 @@ export default function Footer() {
                         <Image
                           alt="down"
                           src="images/sff-arrow-down-green.svg"
-                          style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                          style={{ width: "13px", height: "10px" }}
                         />
                       </>
                     }
