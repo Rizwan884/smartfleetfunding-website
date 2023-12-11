@@ -2,7 +2,6 @@ import React from "react";
 import Image from "react-bootstrap/Image";
 import ScrollToTopButton from "../components/scroolTop";
 import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
 export default function Footer() {
   return (
     <>
