@@ -60,6 +60,9 @@ body{
 .bg-img{
   background-image: url("../../../public/images/background.jpg");
 }
+.w-18rem{
+  width: 18rem !important;
+}
 
 .w-65{
   width: 65%;
