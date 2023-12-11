@@ -3,18 +3,9 @@ import Image from "next/image";
 export default function FormInstapay() {
   return (
     <>
-      <div
-        className=" mt-6 font-montserrat"
-        style={{
-          backgroundImage: "url(images/sff-form-instapay.jpg)",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className=" mt-6 font-montserrat fi-img">
         <div className="pt-5 px-5">
-          <h1
-            className="fw-600 fs-2 text-left fst-italic text-dark-blue"
-            style={{ width: "65%" }}
-          >
+          <h1 className="fw-600 fs-2 text-left fst-italic text-dark-blue w-65">
             Contact us today and let{"'"}s get you on the road to faster, more
             secure payments with Instapay.
           </h1>

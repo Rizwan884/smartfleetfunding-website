@@ -61,6 +61,10 @@ body{
   background-image: url("../../../public/images/background.jpg");
 }
 
+.w-65{
+  width: 65%;
+}
+
 .m-5{
   margin: 5rem !important;
 }
@@ -112,6 +116,10 @@ body{
 .dropdown-item:hover{
   color: var(--green) !important;
   background: var(--dark-blue)
+}
+.fi-img{
+  background-image: url("../../../public/images/sff-form-instapay.jpg");
+  background-size: cover;
 }
 #form .btn{
   background:var(--green) !important;
