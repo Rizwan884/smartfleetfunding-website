@@ -28,7 +28,7 @@ export default function Provides() {
                     width={20}
                     height={20}
                     className="mt-40"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="images/sff-fb-arrow-right-blue.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div>
@@ -45,7 +45,7 @@ export default function Provides() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="images/sff-fb-arrow-right-blue.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -59,7 +59,7 @@ export default function Provides() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="images/sff-fb-arrow-right-blue.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -73,7 +73,7 @@ export default function Provides() {
                     width={20}
                     height={20}
                     className="mt-40"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="images/sff-fb-arrow-right-blue.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="">
@@ -101,7 +101,7 @@ export default function Provides() {
                     width={20}
                     height={20}
                     className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="images/sff-fb-arrow-right-blue.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div>
@@ -115,7 +115,7 @@ export default function Provides() {
                     width={20}
                     height={20}
                     className="mt-50"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="images/sff-fb-arrow-right-blue.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -130,7 +130,7 @@ export default function Provides() {
                     width={20}
                     height={20}
                     className="mt-94"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="images/sff-fb-arrow-right-blue.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
