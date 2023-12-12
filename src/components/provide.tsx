@@ -18,7 +18,7 @@ export default function Provides() {
             <div className="container d-flex flex-column bg-white-shadow w-65 h-100">
               <Row className="m-2">
                 <div>
-                  <h1 className="fw-bold fs-3 mb-2 mt-2 w-75">For you</h1>
+                  <h1 className="fw-bold fs-3 mb-2 mt-2 w-75 ">For you</h1>
                 </div>
                 <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
                   <Image

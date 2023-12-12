@@ -97,7 +97,7 @@ export default function Needs() {
       </div>
       <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
-          <h1 className="f-500 fs-2 text-center align-items-center gap-3">
+          <h1 className="f-500 pb-5 fs-2 text-center align-items-center gap-3">
             What if you had more free time <br /> to{" "}
             <strong className="text-dark-blue f-bold">
               get more clients and carriers?
