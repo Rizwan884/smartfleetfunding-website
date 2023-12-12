@@ -6,6 +6,10 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banners from "@/components/banner";
 import Needs from "@/components/need";
+import Programs from "@/components/program";
+import Provides from "@/components/provide";
+import HelpYou from "@/components/help-you";
+import SectionForm from "../../components/form";
 
 export default function fullFact() {
   const title = (
@@ -13,6 +17,8 @@ export default function fullFact() {
       Freight <strong>Broker Program</strong>
     </p>
   );
+
+  const titleForm = "Drive Profits, Enhance Operations Get Started!";
 
   return (
     <>
@@ -23,6 +29,13 @@ export default function fullFact() {
         backgroundImage="images/sff-freight.jpg"
       />
       <Needs />
+      <Programs />
+      <Provides />
+      <HelpYou />
+      <SectionForm
+        titleForm={titleForm}
+        backgroundImage="images/sff-form-freight.jpg"
+      />
       <Footer />
     </>
   );

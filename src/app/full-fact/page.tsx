@@ -18,6 +18,8 @@ export default function fullFact() {
     </p>
   );
 
+  const titleForm = "Let's get started!";
+
   const accordionItems = [
     {
       title: "How long does it take to open an account?",
@@ -65,7 +67,10 @@ export default function fullFact() {
       <Banners title={title} backgroundImage="images/sff-full-facts.jpg" />
       <Ideas />
       <Help />
-      <SectionForm />
+      <SectionForm
+        titleForm={titleForm}
+        backgroundImage="images/sff-forms.jpg"
+      />
       <TestimonialCarousel />
       <SectionAccordion items={accordionItems} showIcons />
       <Footer />

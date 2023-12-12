@@ -1,5 +1,10 @@
 import Image from "next/image";
-export default function SectionForm() {
+type IProps = {
+  backgroundImage?: string;
+  titleForm?: string | undefined;
+};
+
+export default function SectionForm({ backgroundImage, titleForm }: IProps) {
   return (
     <>
       <div className="d-flex mt-6">
@@ -12,10 +17,10 @@ export default function SectionForm() {
             target="#"
           >
             <h1
-              className="fw-bold fs-2 text-left fst-italic"
+              className=" fs-2 text-left fst-italic"
               style={{ marginBottom: "30px" }}
             >
-              Let’s get started!
+              {titleForm}
               <div className="line "></div>
             </h1>
             <div className="row mb-3 ">
@@ -87,7 +92,7 @@ export default function SectionForm() {
         <div className="w-50">
           <div className="position-relative h-100">
             <Image
-              src="/images/sff-forms.jpg"
+              src={` ${backgroundImage ? backgroundImage : ""}`}
               style={{ objectFit: "cover" }}
               alt="form"
               fill

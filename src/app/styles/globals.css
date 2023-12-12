@@ -60,12 +60,22 @@ body{
 .bg-img{
   background-image: url("../../../public/images/background.jpg");
 }
+.w-3{
+  width: 3%;
+}
 .w-18rem{
   width: 18rem !important;
+}
+.w-20rem{
+  width: 20rem !important;
 }
 
 .w-65{
   width: 65%;
+}
+
+.w-30px{
+  width: 30px;
 }
 
 .m-5{
@@ -93,9 +103,16 @@ body{
 .mt-8{
   margin-top: 8rem !important;
 }
-.w-3{
-  width: 3%;
+.mt-54{
+  margin-top: -54px;
 }
+.mt-34{
+  margin-top: -34px;
+}
+.mt-94{
+  margin-top: -94px;
+}
+
 /*-------------------------NavBar-------------------------------*/
 .nv-image{
   background-image: url("/public/images/sff-navbar-bg.jpg");
@@ -603,4 +620,8 @@ input[type="radio"]:checked ~ label {
   margin-top: -107px;
   margin-right: 10px;
   width: 8%;
+}
+/*-------Programs---------------*/
+.line-programs{
+  border-bottom: 1px solid #B3B3B26E;
 }
