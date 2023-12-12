@@ -51,7 +51,7 @@ export default function SFFNavbar() {
                   Freight Broker
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="text-dark-blue " href="#faq">
+              <Nav.Link className="text-dark-blue " href="/faqs">
                 FAQ
               </Nav.Link>
               <Nav.Link className="text-dark-blue " href="#aboutus">
