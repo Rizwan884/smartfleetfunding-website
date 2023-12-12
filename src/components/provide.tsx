@@ -18,13 +18,16 @@ export default function Provides() {
             <div className="container d-flex flex-column bg-white-shadow w-65 h-100">
               <Row className="m-2">
                 <div>
-                  <h1 className="fw-bold fs-3 mb-2 mt-2 w-75 ">For you</h1>
+                  <h1 id="hover" className="fw-bold fs-3 mb-2 mt-2 w-75 ">
+                    {" "}
+                    <span className="sub-line">For</span> you
+                  </h1>
                 </div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                   <Image
                     width={20}
                     height={20}
-                    className="mt-54"
+                    className="mt-40"
                     src="images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
@@ -37,7 +40,7 @@ export default function Provides() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                   <Image
                     width={20}
                     height={20}
@@ -47,11 +50,11 @@ export default function Provides() {
                   ></Image>
                   <div className="mt-2">
                     <p className="ms-2 fs-5 fw-500">
-                      Peace of mind by streamlining <br /> your AP to carriers..
+                      Peace of mind by streamlining <br /> your AP to carriers.
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-1 align-items-center gap-2 line-programs">
+                <div className="d-flex mb-1 lh-sm align-items-center gap-2 line-programs">
                   <Image
                     width={20}
                     height={20}
@@ -65,11 +68,11 @@ export default function Provides() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2">
                   <Image
                     width={20}
                     height={20}
-                    className="mt-54"
+                    className="mt-40"
                     src="images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
@@ -88,14 +91,16 @@ export default function Provides() {
             <div className="container d-flex flex-column bg-white-shadow w-65 h-100">
               <Row className="m-2">
                 <div>
-                  <h1 className="fw-bold fs-3 mb-2 mt-2 w-75">
-                    For your carriers
+                  <h1 id="hover" className="fw-bold fs-3 mb-2 mt-2 w-75 ">
+                    {" "}
+                    <span className="sub-line">For</span> your carries
                   </h1>
                 </div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                   <Image
                     width={20}
                     height={20}
+                    className="mt-14"
                     src="images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
@@ -105,11 +110,11 @@ export default function Provides() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                   <Image
                     width={20}
                     height={20}
-                    className="mt-54"
+                    className="mt-50"
                     src="images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
@@ -120,7 +125,7 @@ export default function Provides() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2">
                   <Image
                     width={20}
                     height={20}

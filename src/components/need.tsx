@@ -20,7 +20,7 @@ export default function Needs() {
                 src="images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
-              <Card.Text className="fs-5">
+              <Card.Text className="fs-5 lh-sm mt-3">
                 <strong className="text-green">Optimizing</strong> your
                 operations
               </Card.Text>
@@ -33,7 +33,7 @@ export default function Needs() {
                 src="images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
-              <Card.Text className="fs-5">
+              <Card.Text className="fs-5 lh-sm mt-3">
                 <strong className="text-green">Attract carriers </strong> with
                 the right profile
               </Card.Text>
@@ -46,7 +46,7 @@ export default function Needs() {
                 src="images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
-              <Card.Text className="fs-5">
+              <Card.Text className="fs-5 lh-sm mt-3">
                 <strong className="text-green">Make your</strong> business more
                 profitable
               </Card.Text>
@@ -61,7 +61,7 @@ export default function Needs() {
                 src="images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
-              <Card.Text className="fs-5">
+              <Card.Text className="fs-5 lh-sm mt-3">
                 <strong className="text-green"> Access</strong> to immediate
                 capital
               </Card.Text>
@@ -74,7 +74,7 @@ export default function Needs() {
                 src="images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
-              <Card.Text className="fs-5">
+              <Card.Text className="fs-5 lh-sm mt-3">
                 <strong className="text-green">Accelerate accounts</strong>{" "}
                 receivable cycle
               </Card.Text>
@@ -87,7 +87,7 @@ export default function Needs() {
                 src="images/sff-fb-check.svg"
                 className="mb-4 w-30px"
               ></Image>
-              <Card.Text className="fs-5 ">
+              <Card.Text className="fs-5 lh-sm mt-3">
                 <strong className="text-green">Strengthen</strong> <br />
                 partnerships
               </Card.Text>
@@ -97,7 +97,7 @@ export default function Needs() {
       </div>
       <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
-          <h1 className="f-500 pb-5 fs-2 text-center align-items-center gap-3">
+          <h1 className="f-500 pb-5 fs-2rem text-center align-items-center gap-3">
             What if you had more free time <br /> to{" "}
             <strong className="text-dark-blue f-bold">
               get more clients and carriers?
