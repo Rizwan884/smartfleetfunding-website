@@ -47,7 +47,7 @@ export default function SFFNavbar() {
                 <NavDropdown.Item href="/full-fact">Full Fact</NavDropdown.Item>
                 <NavDropdown.Item href="/instapay">Instapay</NavDropdown.Item>
                 <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
-                <NavDropdown.Item href="/freight">
+                <NavDropdown.Item href="/freight-broker-program">
                   Freight Broker
                 </NavDropdown.Item>
               </NavDropdown>

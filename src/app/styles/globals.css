@@ -60,6 +60,28 @@ body{
 .bg-img{
   background-image: url("../../../public/images/background.jpg");
 }
+.w-3{
+  width: 3%;
+}
+.w-18rem{
+  width: 18rem !important;
+  height: 10rem !important;
+}
+.w-20rem{
+  width: 20rem !important;
+}
+
+.w-65{
+  width: 65%;
+}
+
+.w-30px{
+  width: 30px;
+}
+
+.m-5{
+  margin: 5rem !important;
+}
 
 .pt-6{
   padding-top: 6rem !important;
@@ -82,9 +104,23 @@ body{
 .mt-8{
   margin-top: 8rem !important;
 }
-.w-3{
-  width: 3%;
+.mt-14{
+  margin-top: -14px !important;
 }
+.mt-34{
+  margin-top: -34px;
+}
+.mt-40{
+  margin-top: -40px;
+}
+.mt-50{
+  margin-top: -50px;
+}
+
+.mt-94{
+  margin-top: -77px;
+}
+
 /*-------------------------NavBar-------------------------------*/
 .nv-image{
   background-image: url("/public/images/sff-navbar-bg.jpg");
@@ -109,6 +145,10 @@ body{
   color: var(--green) !important;
   background: var(--dark-blue)
 }
+.fi-img{
+  background-image: url("../../../public/images/sff-form-instapay.jpg");
+  background-size: cover;
+}
 #form .btn{
   background:var(--green) !important;
   border-radius: 4px;
@@ -130,6 +170,9 @@ body{
 }
 .fs-5{
   font-size: 1.220rem !important;
+}
+.fs-2rem{
+  font-size: 2.1rem !important;
 }
 .fw-400 {
   font-weight: 400;
@@ -588,4 +631,19 @@ input[type="radio"]:checked ~ label {
   margin-top: -107px;
   margin-right: 10px;
   width: 8%;
+}
+/*-------Programs---------------*/
+.line-program{
+  width: 40px;
+  height: 3px;
+  background-color: #02DA68;
+}
+.line-programs{
+  border-bottom: 1px solid #B3B3B26E;
+}
+.sub-line{
+  border-bottom: 2px solid var(--green);
+}
+#hover span:hover{
+  color: var(--dark-blue) !important;
 }

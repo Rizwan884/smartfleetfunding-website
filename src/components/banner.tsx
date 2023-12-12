@@ -26,7 +26,7 @@ export default function Banners({
           fluid
           alt="banner"
         />
-        ;
+
         <div className=" banner-container mx-4">
           {hideIcons ? (
             <div style={{ height: 88, width: 497 }}> </div>
@@ -50,7 +50,7 @@ export default function Banners({
             </div>
           )}
 
-          <div className="mt-4 line"></div>
+          <div className="mt-4 line font-montserrat"></div>
           {title && (
             <div>
               <h1 className="text-start fw-light fs-1 mt-2 text-white">

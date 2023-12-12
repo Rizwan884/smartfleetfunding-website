@@ -4,10 +4,10 @@ type IProps = {
   titleForm?: string | undefined;
 };
 
-export default function SectionForm({ backgroundImage, titleForm }: IProps) {
+export default function FormFreight({ backgroundImage, titleForm }: IProps) {
   return (
     <>
-      <div className="d-flex mt-6">
+      <div className="d-flex mt-6 pb-4">
         <div className="w-50 bg-dark-blue text-white">
           <form
             action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
@@ -17,7 +17,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
             target="#"
           >
             <h1
-              className=" fs-2 text-left fst-italic"
+              className="fw-normal fs-2 text-left fst-italic"
               style={{ marginBottom: "30px" }}
             >
               {titleForm}
@@ -35,22 +35,22 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
               </div>
               <div className="col">
                 <input
-                  type="email"
+                  type="text"
                   className="form-control px-3 bg-grey-transparent text-white"
-                  id="email"
-                  name="email"
-                  placeholder="Your E-Mail"
+                  id="company"
+                  name="company"
+                  placeholder="Company Name"
                 ></input>
               </div>
             </div>
             <div className="row mb-3">
               <div className="col">
                 <input
-                  type="text"
+                  type="email"
                   className="form-control px-3 bg-grey-transparent text-white"
-                  id="company"
-                  name="company"
-                  placeholder="Company Name"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
                 ></input>
               </div>
               <div className="col">
@@ -59,7 +59,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="phone"
                   name="phone"
-                  placeholder="Phone"
+                  placeholder="Phone Number"
                 ></input>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 id="message"
                 name="message"
                 rows={3}
-                placeholder="Description"
+                placeholder="How can we help?"
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
