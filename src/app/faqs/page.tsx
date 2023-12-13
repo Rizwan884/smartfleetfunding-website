@@ -8,7 +8,7 @@ import Footer from "../../components/footer";
 import SectionAccordion from "@/components/section-accordion";
 import Search from "@/components/search";
 
-export default function Instapay() {
+export default function Faqs() {
   const accordionInstaItems = [
     {
       title: "What is Freight Factoring?",

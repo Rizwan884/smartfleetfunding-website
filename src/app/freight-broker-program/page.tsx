@@ -11,7 +11,7 @@ import Provides from "@/components/provide";
 import HelpYou from "@/components/help-you";
 import SectionForm from "../../components/form";
 
-export default function fullFact() {
+export default function Freight() {
   const title = (
     <p>
       Freight <strong>Broker Program</strong>
