@@ -23,7 +23,10 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 1,
+      width: 18,
+      heiight: 26,
     },
     {
       title: "How does factoring work?",
@@ -39,7 +42,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
-
+      icon: "images/sff-search-arrow.svg",
       eventKey: 2,
     },
     {
@@ -54,6 +57,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 3,
     },
     {
@@ -70,6 +74,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 4,
     },
     {
@@ -84,6 +89,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 5,
     },
     {
@@ -96,6 +102,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 6,
     },
     {
@@ -108,6 +115,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 7,
     },
     {
@@ -121,6 +129,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 8,
     },
     {
@@ -136,6 +145,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 9,
     },
     {
@@ -151,6 +161,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 10,
     },
     {
@@ -165,6 +176,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 11,
     },
     {
@@ -179,6 +191,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 12,
     },
     {
@@ -192,6 +205,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 13,
     },
     {
@@ -205,6 +219,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 14,
     },
     {
@@ -251,6 +266,7 @@ export default function Instapay() {
           </li>
         </ul>
       ),
+      icon: "images/sff-search-arrow.svg",
       eventKey: 15,
     },
   ];
@@ -262,6 +278,9 @@ export default function Instapay() {
       <SectionAccordion
         items={accordionInstaItems}
         headTitle="Some questions"
+        showIcons
+        width={16}
+        height={28}
       />
       <Footer />
     </>

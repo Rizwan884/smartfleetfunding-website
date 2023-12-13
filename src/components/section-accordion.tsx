@@ -11,12 +11,16 @@ type IProps = {
   items: AccordionItem[];
   headTitle?: string;
   showIcons?: boolean;
+  height?: number;
+  width?: number;
 };
 
 export default function SectionAccordion({
   items,
   headTitle,
   showIcons = false,
+  height = 0,
+  width = 0,
 }: IProps) {
   return (
     <div className="container font-montserrat">
@@ -35,8 +39,8 @@ export default function SectionAccordion({
                 <Image
                   src={item.icon ? item.icon : ""}
                   alt="user"
-                  width={35}
-                  height={34}
+                  width={width}
+                  height={height}
                   style={{ marginRight: "15px" }}
                 ></Image>
               )}
