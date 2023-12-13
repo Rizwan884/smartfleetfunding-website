@@ -10,11 +10,12 @@ import Programs from "@/components/program";
 import Provides from "@/components/provide";
 import HelpYou from "@/components/help-you";
 import SectionForm from "../../components/form";
+import FormFreight from "@/components/form-freight";
 
 export default function Freight() {
   const title = (
     <p>
-      Freight <strong>Broker Program</strong>
+      Freight <strong className="fw-bold">Broker Program</strong>
     </p>
   );
 
@@ -32,7 +33,7 @@ export default function Freight() {
       <Programs />
       <Provides />
       <HelpYou />
-      <SectionForm
+      <FormFreight
         titleForm={titleForm}
         backgroundImage="images/sff-form-freight.jpg"
       />

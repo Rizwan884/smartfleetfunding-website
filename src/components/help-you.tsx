@@ -6,30 +6,30 @@ export default function HelpYou() {
       <Container className="mt-6 pt-5 font-montserrat">
         <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">How we help you</h1>
         <div className="line mt-0 mx-4 mt-1 w-3"></div>
-        <div className="container d-flex flex-column">
+        <div className="container d-flex flex-column pt-6">
           <Row className="m-2">
             <Image
               alt="img"
               width={200}
-              height={300}
+              height={270}
               src="images/sff-fb-rule.svg"
             ></Image>
           </Row>
         </div>
         <div className="row">
-          <div className="col d-flex justify-content-end h-100">
+          <div className="col-7 d-flex justify-content-end h-100">
             {" "}
-            <div className="card w-20rem">
+            <div className="card w-20rem me-5">
               <div className="card-body">
-                <h5 className="card-title fs-2 text-start fw-bold">
+                <h5 className="card-title fs-4 text-start fw-bold">
                   On Attraction & Retention
                 </h5>
                 <div className="line-programs"></div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                   <Image
                     width={20}
                     height={20}
-                    className="mt-54"
+                    className="mt-14"
                     src="images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
@@ -39,11 +39,11 @@ export default function HelpYou() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                   <Image
                     width={20}
                     height={20}
-                    className="mt-34"
+                    className="mt-50"
                     src="images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
@@ -53,7 +53,7 @@ export default function HelpYou() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-1 align-items-center gap-2 line-programs">
+                <div className="d-flex mb-1 lh-sm align-items-center gap-2">
                   <Image
                     width={20}
                     height={20}
@@ -70,30 +70,30 @@ export default function HelpYou() {
               </div>
             </div>
           </div>
-          <div className="col d-flex justify-content-end h-100">
+          <div className="col-4 d-flex justify-content-end h-100 ">
             {" "}
             <div className="card w-20rem">
               <div className="card-body">
-                <h5 className="card-title fs-3 text-start fw-bold">
-                  Handling AR/AP Needs
+                <h5 className="card-title fs-4 text-start fw-bold">
+                  Handling AR/AP <br /> Needs
                 </h5>
                 <div className="line-programs"></div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                   <Image
                     width={20}
                     height={20}
-                    className="mt-54"
+                    className="mt-50"
                     src="images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div>
-                    <p className="ms-2 mt-3 fs-6 fw-500 text-start">
+                    <p className="ms-2 mt-3 fs-5 fw-500 text-start">
                       Receiving collection calls from carriers and other debt
                       collectors.
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
+                <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                   <Image
                     width={20}
                     height={20}
@@ -107,7 +107,7 @@ export default function HelpYou() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-1 align-items-center gap-2 line-programs">
+                <div className="d-flex mb-1 lh-sm align-items-center gap-2 line-programs">
                   <Image
                     width={20}
                     height={20}
@@ -121,7 +121,7 @@ export default function HelpYou() {
                     </p>
                   </div>
                 </div>
-                <div className="d-flex mb-1 align-items-center gap-2 line-programs">
+                <div className="d-flex mb-1 lh-sm align-items-center gap-2">
                   <Image
                     width={20}
                     height={20}

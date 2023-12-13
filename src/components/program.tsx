@@ -8,13 +8,14 @@ export default function Programs() {
           <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">
             Your outcomes by joining our <br /> Freight Broker program
           </h1>
-          <div className="line mt-0 mx-4 mt-1 w-3"></div>
+          <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
           <div className="container d-flex flex-column">
             <Row className="m-2">
               <div className="d-flex mb-4 align-items-center gap-2 line-programs ">
                 <Image
                   width={20}
                   height={20}
+                  className="mt-34"
                   src="images/sff-fb-arrow-right.svg"
                   alt="testimonial-img"
                 ></Image>
@@ -22,7 +23,7 @@ export default function Programs() {
                   <h1 className="ms-2 mt-4 fs-5 fw-600">
                     Additional time to focus on your core business.
                   </h1>
-                  <ul>
+                  <ul className="fs-5">
                     <li>
                       Minimizing or even eliminating your company’s dedication
                       to Accounts Receivable and Accounts Payable.
