@@ -114,9 +114,16 @@ body{
 .mt-54{
   margin-top: -54px;
 }
-.mt-34{
-  margin-top: -34px;
+.mt-14{
+  margin-top: -14px !important;
 }
+.mt-40{
+  margin-top: -40px;
+}
+.mt-50{
+  margin-top: -50px;
+}
+
 .mt-94{
   margin-top: -77px;
 }
@@ -643,4 +650,14 @@ input[type="radio"]:checked ~ label {
 }
 .line-programs{
   border-bottom: 1px solid #B3B3B26E;
+}
+/*-------Search----------*/
+.bg-search{
+  background-image: url("../../../public/images/sff-search.jpg");
+}
+.sub-line{
+  border-bottom: 2px solid var(--green);
+}
+#hover span:hover{
+  color: var(--dark-blue) !important;
 }
