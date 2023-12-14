@@ -83,6 +83,10 @@ body{
   margin: 5rem !important;
 }
 
+.p-4rem{
+  padding: 4rem !important;
+}
+
 .pt-6{
   padding-top: 6rem !important;
 }
@@ -104,11 +108,14 @@ body{
 .mt-8{
   margin-top: 8rem !important;
 }
-.mt-14{
-  margin-top: -14px !important;
-}
 .mt-34{
   margin-top: -34px;
+}
+.mt-54{
+  margin-top: -54px;
+}
+.mt-14{
+  margin-top: -14px !important;
 }
 .mt-40{
   margin-top: -40px;
@@ -120,6 +127,9 @@ body{
 .mt-94{
   margin-top: -77px;
 }
+.mb-50{
+  margin-bottom: -50px;
+}
 
 /*-------------------------NavBar-------------------------------*/
 .nv-image{
@@ -128,7 +138,7 @@ body{
 #basic-nav-dropdown{
   min-width: 1rem;
 }
-.nav-link.active, .nav-link:hover, span:hover{
+.nav-link.active, .nav-link:hover, .nav-link:focus, span:hover{
   color: var(--green) !important;
 }
 /*-------------------------Botones (nav, footer, en general)------------------------------*/
@@ -640,6 +650,10 @@ input[type="radio"]:checked ~ label {
 }
 .line-programs{
   border-bottom: 1px solid #B3B3B26E;
+}
+/*-------Search----------*/
+.bg-search{
+  background-image: url("../../../public/images/sff-search.jpg");
 }
 .sub-line{
   border-bottom: 2px solid var(--green);

@@ -72,7 +72,12 @@ export default function fullFact() {
         backgroundImage="images/sff-forms.jpg"
       />
       <TestimonialCarousel />
-      <SectionAccordion items={accordionItems} showIcons />
+      <SectionAccordion
+        items={accordionItems}
+        showIcons
+        width={35}
+        height={34}
+      />
       <Footer />
     </>
   );

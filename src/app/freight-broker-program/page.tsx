@@ -12,7 +12,7 @@ import HelpYou from "@/components/help-you";
 import SectionForm from "../../components/form";
 import FormFreight from "@/components/form-freight";
 
-export default function fullFact() {
+export default function Freight() {
   const title = (
     <p>
       Freight <strong className="fw-bold">Broker Program</strong>
