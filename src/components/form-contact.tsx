@@ -7,8 +7,8 @@ type IProps = {
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
   return (
     <>
-      <div className="container d-flex mp-contact font-montserrat">
-        <div className="w-50 bg-white-gray">
+      <div className="container d-flex mp-contact font-montserrat ">
+        <div className="w-50">
           <div className="position-relative h-100">
             <Image
               src={` ${backgroundImage ? backgroundImage : ""}`}
@@ -16,10 +16,47 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
               alt="form"
               fill
             ></Image>
-            <h1 className="m-3 fs-3">
-              Contact us for{" "}
-              <strong>Fast, Easy and Secure Funding Solutions</strong>
-            </h1>
+            <div className="position-absolute">
+              <div className="container">
+                <h1 className="m-4 fs-3">
+                  Contact us for{" "}
+                  <strong>Fast, Easy and Secure Funding Solutions</strong>
+                </h1>
+                <div className="line-contact m-4"></div>
+                <div className="row ">
+                  <div className="text-left p-4 d-flex align-items-center gap-2">
+                    <Image
+                      className="img-style mt-1"
+                      alt="icon"
+                      width={30}
+                      height={30}
+                      src="images/sff-contact-phone.svg"
+                    ></Image>
+                    <div className="lh-sm">
+                      <h2 className="fs-3 fw-600 text-dark-blue mt-1">
+                        (888) 875-5506
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="row mt-14">
+                  <div className="text-left p-4 d-flex align-items-center gap-2">
+                    <Image
+                      className="img-style mt-1"
+                      alt="icon"
+                      width={30}
+                      height={30}
+                      src="images/sff-contact-mail.svg"
+                    ></Image>
+                    <div className="">
+                      <h2 className="fs-3 fw-600 text-dark-blue">
+                        info@smartfleetfunding.com
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="w-50 bg-dark-blue text-white">
@@ -27,7 +64,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
             action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
             method="POST"
             id="form"
-            className="m-5"
+            className="m-3rem"
             target="#"
           >
             <h1

@@ -10,11 +10,15 @@ import Contact from "@/components/contact";
 import FormContact from "@/components/form-contact";
 
 export default function AboutUs() {
+  const titleForm = "Let's get started!";
   return (
     <>
       <Navbar />
       <Contact />
-      <FormContact />
+      <FormContact
+        titleForm={titleForm}
+        backgroundImage="images/sff-contact.svg"
+      />
 
       <Footer />
     </>
