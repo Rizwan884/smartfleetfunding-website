@@ -171,6 +171,10 @@ body{
   background:var(--green) !important;
   color: var(--dark-blue);
 }
+#bottom-footer:hover{
+  background-color: var(--green);
+  color: var(--dark-blue);
+}
 /*-------------------------Fonts------------------------------*/
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
@@ -664,4 +668,14 @@ input[type="radio"]:checked ~ label {
 /*------------AboutUs--------------*/
 .al-left{
   align-items: start !important;
+}
+/*------------Contact---------------*/
+.p-contact{
+  padding-bottom: 24% !important;
+}
+
+.mp-contact{
+  margin-top: -100px;
+  padding-bottom: 12px;
+
 }
