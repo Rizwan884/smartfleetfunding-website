@@ -54,7 +54,7 @@ export default function SFFNavbar() {
               <Nav.Link className="text-dark-blue " href="/faqs">
                 FAQ
               </Nav.Link>
-              <Nav.Link className="text-dark-blue " href="#aboutus">
+              <Nav.Link className="text-dark-blue " href="/about-us">
                 ABOUT US
               </Nav.Link>
               <Nav.Link className="text-dark-blue " href="#blog">

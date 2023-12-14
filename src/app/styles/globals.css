@@ -661,3 +661,7 @@ input[type="radio"]:checked ~ label {
 #hover span:hover{
   color: var(--dark-blue) !important;
 }
+/*------------AboutUs--------------*/
+.al-left{
+  align-items: start !important;
+}
