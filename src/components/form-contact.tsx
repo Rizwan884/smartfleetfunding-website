@@ -7,7 +7,7 @@ type IProps = {
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
   return (
     <>
-      <div className="container d-flex mp-contact font-montserrat ">
+      <div className="container d-flex mp-contact font-montserrat pb-7rem ">
         <div className="w-50">
           <div className="position-relative h-100">
             <Image
@@ -20,7 +20,10 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
               <div className="container">
                 <h1 className="m-4 fs-3">
                   Contact us for{" "}
-                  <strong>Fast, Easy and Secure Funding Solutions</strong>
+                  <strong>
+                    Fast, Easy and <br />
+                    Secure Funding Solutions
+                  </strong>
                 </h1>
                 <div className="line-contact m-4"></div>
                 <div className="row ">
@@ -33,7 +36,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       src="images/sff-contact-phone.svg"
                     ></Image>
                     <div className="lh-sm">
-                      <h2 className="fs-3 fw-600 text-dark-blue mt-1">
+                      <h2 className="fs-4 fw-600 text-dark-blue mt-1">
                         (888) 875-5506
                       </h2>
                     </div>
@@ -44,12 +47,12 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     <Image
                       className="img-style mt-1"
                       alt="icon"
-                      width={30}
-                      height={30}
+                      width={28}
+                      height={28}
                       src="images/sff-contact-mail.svg"
                     ></Image>
                     <div className="">
-                      <h2 className="fs-3 fw-600 text-dark-blue">
+                      <h2 className="fs-4 mt-3 fw-600 text-dark-blue">
                         info@smartfleetfunding.com
                       </h2>
                     </div>
