@@ -28,6 +28,7 @@ export default function AboutUs() {
         hideIcons
         backgroundImage="images/sff-about-us.jpg"
       />
+
       <Know />
 
       <Footer />
