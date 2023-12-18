@@ -78,6 +78,9 @@ body{
 .w-30px{
   width: 30px;
 }
+.m-3rem{
+  margin: 3rem !important;
+}
 
 .m-5{
   margin: 5rem !important;
@@ -85,6 +88,10 @@ body{
 
 .p-4rem{
   padding: 4rem !important;
+}
+
+.pb-7rem{
+  padding-bottom: 7rem !important;
 }
 
 .pt-6{
@@ -169,6 +176,10 @@ body{
 }
 #form .btn:hover{
   background:var(--green) !important;
+  color: var(--dark-blue);
+}
+#bottom-footer:hover{
+  background-color: var(--green);
   color: var(--dark-blue);
 }
 /*-------------------------Fonts------------------------------*/
@@ -660,4 +671,21 @@ input[type="radio"]:checked ~ label {
 }
 #hover span:hover{
   color: var(--dark-blue) !important;
+}
+/*------------AboutUs--------------*/
+.al-left{
+  align-items: start !important;
+}
+/*------------Contact---------------*/
+.p-contact{
+  padding-bottom: 24% !important;
+}
+
+.mp-contact{
+  margin-top: -15rem;
+  padding-bottom: 12px;
+
+}
+.line-contact{
+  border-bottom: 1px solid var(--dark-blue);
 }
