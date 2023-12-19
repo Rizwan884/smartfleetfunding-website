@@ -50,10 +50,10 @@ export default function Banners({
             </div>
           )}
 
-          <div className="mt-4 line font-montserrat"></div>
+          <div className="mt-4 line"></div>
           {title && (
             <div>
-              <h1 className="text-start fw-light fs-1 mt-2 text-white">
+              <h1 className="text-start fw-light fs-1 mt-2 text-white font-montserrat">
                 {title}
               </h1>
             </div>
