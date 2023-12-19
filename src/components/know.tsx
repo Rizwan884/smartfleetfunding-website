@@ -11,29 +11,40 @@ export default function Know() {
           </h1>
         </div>
       </div>
-      <div className="card-container font-montserrat mt-5 h-100 flex-column w-100">
+      <div className="card-container font-montserrat mt-5 mb-5 h-100 flex-column w-100">
         <div className="row mb-3">
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-3 ms-auto text-dark-blue">
+              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
                 INNOVATION
-                <br /> <strong>FES - Pay</strong>
+                <br />
+                <p className="mt-1">
+                  <strong className="fs-5 pt-3">FES - Pay</strong>
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-3 ms-auto text-dark-blue">
+              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
                 EXPERIENCE
-                <br /> <strong>Over 30 Years</strong>
+                <br />{" "}
+                <p className="mt-1">
+                  <strong className="fs-5">Over 30 Years</strong>
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-3 ms-auto text-dark-blue">
+              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
                 GLOBAL
-                <br /> <strong>North America (Canada, USA, México)</strong>
+                <br />{" "}
+                <p className="mt-1">
+                  <strong className="fs-6">
+                    North America (Canada, USA, México)
+                  </strong>
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -41,38 +52,46 @@ export default function Know() {
         <div className="row ">
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-3 ms-auto text-dark-blue">
+              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
                 EMPOWERMENT
-                <br /> <strong>Helping Businesses Thrive</strong>
+                <br />{" "}
+                <p className="mt-1">
+                  <strong className="fs-5">Helping Businesses Thrive</strong>
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-3 ms-auto text-dark-blue">
+              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
                 COMMITMENT
-                <br /> <strong>Transparency</strong>
+                <br />{" "}
+                <p className="mt-1">
+                  <strong className="fs-5">Transparency</strong>
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-3 ms-auto text-dark-blue">
+              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
                 TECHNOLOGY
                 <br />{" "}
-                <strong>
-                  Integrations with major players in the industries we serve
-                </strong>
+                <p className="mt-1">
+                  <strong className="fs-6">
+                    Integrations with major players in the industries we serve
+                  </strong>
+                </p>
               </Card.Text>
             </Card.Body>
           </Card>
         </div>
       </div>
-      <div className="container pt-6 font-montserrat">
-        <div className="row line-programs pb-4">
+      <div className="container pt-6 pb-6 font-montserrat">
+        <div className="row line-programs pb-5">
           <div className="col-4">
             {" "}
-            <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">Who We Are</h1>
+            <h1 className="fw-bold fs-3 mb-0 mx-4 w-75">Who We Are</h1>
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
           </div>
           <div className="col-8">
@@ -87,10 +106,10 @@ export default function Know() {
             </strong>
           </div>
         </div>
-        <div className="row line-programs pt-4 pb-4">
+        <div className="row line-programs pt-5 pb-5">
           <div className="col-4">
             {" "}
-            <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">Our Commitment</h1>
+            <h1 className="fw-bold fs-3 mb-0 mx-4 w-75">Our Commitment</h1>
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
           </div>
           <div className="col-8">
@@ -106,12 +125,10 @@ export default function Know() {
             </strong>
           </div>
         </div>
-        <div className="row line-programs pt-4 pb-4">
+        <div className="row line-programs pt-5 pb-5">
           <div className="col-4">
             {" "}
-            <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">
-              Why Choose Smart Fleet Funding
-            </h1>
+            <h1 className="fw-bold fs-3 mb-0 mx-4 w-75">What Sets Us Apart</h1>
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
           </div>
           <div className="col-8">
@@ -126,10 +143,10 @@ export default function Know() {
             </strong>
           </div>
         </div>
-        <div className="row  pt-4 pb-5">
+        <div className="row  pt-5 pb-5">
           <div className="col-4">
             {" "}
-            <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">
+            <h1 className="fw-bold fs-3 mb-0 mx-4 w-75">
               Why Choose Smart Fleet Funding
             </h1>
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
@@ -142,9 +159,9 @@ export default function Know() {
             <strong>
               {" "}
               With us, you{"'"}re not just a client; you{"'"}re a valued partner
-              on the path to
+              <br />
+              on the path to success.
             </strong>
-            success.
           </div>
         </div>
       </div>
