@@ -54,13 +54,13 @@ export default function SFFNavbar() {
               <Nav.Link className="text-dark-blue " href="/faqs">
                 FAQ
               </Nav.Link>
-              <Nav.Link className="text-dark-blue " href="/about-us">
+              <Nav.Link className="text-dark-blue " href="/about">
                 ABOUT US
               </Nav.Link>
               <Nav.Link className="text-dark-blue " href="#blog">
                 BLOG
               </Nav.Link>
-              <Nav.Link className="text-dark-blue " href="/contact-us">
+              <Nav.Link className="text-dark-blue " href="/contact">
                 CONTACT
               </Nav.Link>
               <NavDropdown
