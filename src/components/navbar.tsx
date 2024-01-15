@@ -38,7 +38,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                      style={{ width: "13px", height: "10px" }}
                     />
                   </>
                 }
@@ -74,7 +74,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                      style={{ width: "13px", height: "10px" }}
                     />
                   </>
                 }
