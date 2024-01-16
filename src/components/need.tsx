@@ -6,13 +6,13 @@ export default function Needs() {
       <div className="container mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
-          <h1 className="fw-600 fs-2 text-center  flex  align-items-center gap-3">
+          <h1 className="fw-600 fs-2 text-center  text-dark-blue flex  align-items-center gap-3">
             What you need
           </h1>
         </div>
       </div>
       <div className="card-container font-montserrat mt-5 h-100 flex-column w-100">
-        <div className="row mb-3">
+        <div className="row mb-3 justify-content-center gap-3 gap-md-0">
           <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start">
               <Image
@@ -53,7 +53,7 @@ export default function Needs() {
             </Card.Body>
           </Card>
         </div>
-        <div className="row ">
+        <div className="row justify-content-center gap-3 gap-md-0 ">
           <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start">
               <Image
@@ -97,7 +97,7 @@ export default function Needs() {
       </div>
       <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
-          <h1 className="f-500 pb-5 fs-2rem text-center align-items-center gap-3">
+          <h1 className="f-500 pb-5 fs-2rem text-center align-items-center gap-3  text-dark-blue">
             What if you had more free time <br /> to{" "}
             <strong className="text-dark-blue f-bold">
               get more clients and carriers?
