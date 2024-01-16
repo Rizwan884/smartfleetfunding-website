@@ -16,6 +16,8 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .dropdown-toggle::after{
@@ -235,6 +237,13 @@ body{
   padding: 100px; /* Ajusta según sea necesario */
   /* max-height: 936px;
   min-height: 936px; */
+}
+/*-------------------------Sections Mobile------------------*/
+.banner-container-mobile{
+  position: absolute;
+  top: 30%;
+  transform: translate(10%, -20%);
+  text-align: left;
 }
 /*-------------------------Cards------------------------------*/
 
@@ -498,6 +507,40 @@ body{
   width: 6px;
   height: 6px;
   border-radius: 50%;
+}
+/*---------------Provider Mobile--------*/
+
+
+@media (max-width: 767px) {
+  #provider-carrusel .carousel-control-prev, .carousel-control-next{
+    width: 10%;
+  }
+  #provider-carrusel .carousel-control-next{
+    width: 10%;
+    top: -15px;
+  }
+  #provider-carrusel .carousel-control-prev-icon{
+    background-image: url("../../../public/images/sff-ttm-prev.svg");
+    width: 15%;
+  }
+  #provider-carrusel .carousel-control-next-icon{
+    background-image: url("../../../public/images/sff-ttm-next.svg");
+    width: 15%;
+  }
+  #provider-carrusel .carousel-indicators {
+    justify-content: center;
+    margin: auto;
+    margin-left: 0;
+  }
+  #provider-carrusel .carousel-indicators [data-bs-target] {
+    background-color:var(--white-gray);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  #provider-carrusel .carousel-indicators .active{
+    background-color:var(--green);
+  }
 }
 /*---------------Help-----------*/
 #help .card-text {

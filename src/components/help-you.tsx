@@ -17,7 +17,7 @@ export default function HelpYou() {
           </Row>
         </div>
         <div className="row">
-          <div className="col-7 d-flex justify-content-end h-100">
+          <div className="col-6 d-flex justify-content-end h-100">
             {" "}
             <div className="card w-20rem me-5">
               <div className="card-body">
@@ -70,7 +70,7 @@ export default function HelpYou() {
               </div>
             </div>
           </div>
-          <div className="col-4 d-flex justify-content-end h-100 ">
+          <div className="col-6 d-flex justify-content-end h-100 ">
             {" "}
             <div className="card w-20rem">
               <div className="card-body">

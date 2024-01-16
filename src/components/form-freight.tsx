@@ -7,8 +7,8 @@ type IProps = {
 export default function FormFreight({ backgroundImage, titleForm }: IProps) {
   return (
     <>
-      <div className="d-flex mt-6 pb-4">
-        <div className="w-50 bg-dark-blue text-white">
+      <div className="d-flex flex-column-reverse flex-md-row mt-6">
+        <div className="md-w-50 w-100 bg-dark-blue text-white">
           <form
             action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
             method="POST"
@@ -23,7 +23,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
               {titleForm}
               <div className="line "></div>
             </h1>
-            <div className="row mb-3 ">
+            <div className="row mb-3 flex-md-row flex-column">
               <div className="col">
                 <input
                   type="text"
@@ -43,7 +43,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                 ></input>
               </div>
             </div>
-            <div className="row mb-3">
+            <div className="row mb-3 flex-md-row flex-column">
               <div className="col">
                 <input
                   type="email"
@@ -89,14 +89,18 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
             </div>
           </form>
         </div>
-        <div className="w-50">
-          <div className="position-relative h-100">
+        <div className="md-w-50 w-100">
+          <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
             <Image
+              className="position-relative"
               src={backgroundImage ? backgroundImage : ""}
-              style={{ objectFit: "cover" }}
+              style={{
+                objectFit: "cover",
+              }}
               alt="form"
-              fill
-            />
+              layout="fill"
+              objectFit="cover"
+            ></Image>
           </div>
         </div>
       </div>
