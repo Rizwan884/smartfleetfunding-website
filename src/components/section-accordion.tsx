@@ -23,7 +23,7 @@ export default function SectionAccordion({
   width = 0,
 }: IProps) {
   return (
-    <div className="container font-montserrat">
+    <div className="container font-montserrat pt-2">
       <Accordion className="accordion-mp" defaultActiveKey="0">
         {headTitle && (
           <h2 className="fw-600 mb-5 ">

@@ -1,5 +1,6 @@
 @import "../../../node_modules/bootstrap";
 @import "montserrat.css";
+
 :root {
 /*----------------------------------------------------------*/
   --dark-blue: #051630;
@@ -99,6 +100,15 @@ body{
 .mb-6{
   margin-bottom: 6rem !important;
 }
+.ms-n2{
+  margin-left: -1.3rem;
+}
+
+.mt-n2{
+  margin-top: -1.3rem;
+}
+    
+   
 .mb-7{
   margin-bottom: 7rem !important;
 }
