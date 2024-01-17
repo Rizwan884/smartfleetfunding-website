@@ -64,7 +64,11 @@ export default function fullFact() {
   return (
     <>
       <Navbar />
-      <Banners title={title} backgroundImage="images/sff-full-facts.jpg" />
+      <Banners
+        title={title}
+        backgroundImage="images/sff-full-facts.jpg"
+        mobileBackgroundImage="images/sff-full-facts-mobile.jpg"
+      />
       <Ideas />
       <Help />
       <SectionForm

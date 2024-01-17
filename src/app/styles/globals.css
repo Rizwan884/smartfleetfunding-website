@@ -368,6 +368,19 @@ body{
   margin-top: 5px; /* Ajusta según sea necesario */
   margin-left: 10px;
 }
+/*-------------------------Cards-mobile---------------------------*/
+#carousel-mobile .carousel-indicators [data-bs-target] {
+  background-color: var(--dark-blue);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.cards-mobile {
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.2);
+}
 /*-------------------------Cards-info------------------------------*/
 .body-list{
   min-height: 600px;
@@ -513,6 +526,31 @@ body{
   height: 6px;
   border-radius: 50%;
 }
+/*-----------------Ideas Mobile---------------*/
+@media (min-width: 768px) {
+  #idea-carrusel .carousel-indicators {
+    justify-content: left;
+    margin-left: 60px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  #idea-carrusel .carousel-indicators {
+    justify-content: center;
+    margin: auto;
+    margin-left: 0;
+  }
+  #idea-carrusel .carousel-indicators [data-bs-target] {
+    background-color:var(--white-gray);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  #idea-carrusel .carousel-indicators .active{
+    background-color:var(--green);
+  }
+}
 /*---------------Help-----------*/
 #help .card-text {
   font-size: 18px;
@@ -583,6 +621,7 @@ label:hover ~ label {
 input[type="radio"]:checked ~ label {
   color: var(--green);
 }
+/*-----------Testimonial Mobile-------------*/
 /*-----------Accordion-----------------*/
 .accordion-mp{
   margin-top: 10%;
