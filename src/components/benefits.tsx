@@ -10,7 +10,7 @@ export default function Benefits() {
           </h1>
         </div>
         <div className="row mt-5">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
               <Image
                 className="img-style"
@@ -27,7 +27,7 @@ export default function Benefits() {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
               <Image
                 className="img-style2"
@@ -44,7 +44,7 @@ export default function Benefits() {
           </div>
         </div>
         <div className="row">
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
               <Image
                 className="img-style3"
@@ -62,7 +62,7 @@ export default function Benefits() {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-12 col-md-6">
             <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
               <Image
                 className="img-style4"
