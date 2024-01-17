@@ -7,6 +7,8 @@ import Footer from "../../components/footer";
 
 import SectionAccordion from "@/components/section-accordion";
 import Search from "@/components/search";
+import { useEffect } from "react";
+import { title } from "process";
 
 export default function Faqs() {
   const accordionInstaItems = [
@@ -269,8 +271,10 @@ export default function Faqs() {
       icon: "images/sff-search-arrow.svg",
       eventKey: 15,
     },
+  
   ];
 
+  
   return (
     <>
       <Navbar />

@@ -26,11 +26,25 @@ export default function SectionAccordion({
     <div className="container font-montserrat">
       <Accordion className="accordion-mp" defaultActiveKey="0">
         {headTitle && (
-          <h2 className="fw-600 mb-5 ">
+          <h2 className="fw-600 mb-5 p-5  ">
             {headTitle}
             <div className="line" style={{ width: "2.6%" }}></div>
           </h2>
         )}
+         <div className="d-flex flex-md-row mb-7 flex d-md-none d-block column-reverse   ms-auto h-75">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="..."
+              aria-label="Search"
+            ></input>
+            <button
+              className="btn bg-green text-dark-blue fw-bold"
+              type="submit"
+            >
+              Buscar
+            </button>
+          </div>
 
         {items.map((item, key) => (
           <Accordion.Item key={key} eventKey={item.eventKey.toString()}>
