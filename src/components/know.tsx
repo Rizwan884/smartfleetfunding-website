@@ -12,7 +12,7 @@ export default function Know() {
         </div>
       </div>
       <div className="card-container font-montserrat mt-5 mb-5 h-100 flex-column w-100">
-        <div className="row mb-3">
+        <div className="row mb-3 justify-content-center gap-3 gap-md-3">
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
               <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
@@ -49,7 +49,7 @@ export default function Know() {
             </Card.Body>
           </Card>
         </div>
-        <div className="row ">
+        <div className="row justify-content-center gap-3 gap-md-3 ">
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
               <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
@@ -89,12 +89,12 @@ export default function Know() {
       </div>
       <div className="container pt-6 pb-6 font-montserrat">
         <div className="row line-programs pb-5">
-          <div className="col-4">
+          <div className="col-md-4">
             {" "}
-            <h1 className="fw-bold fs-3 mb-0 mx-4 w-75">Who We Are</h1>
-            <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
+            <h1 className="fw-bold fs-3 mb-0   w-75">Who We Are</h1>
+            <div className="line-program mt-0 mb-3 mt-1 w-3"></div>
           </div>
-          <div className="col-8">
+          <div className="col-md-8">
             With over 30 years of experience in the factoring market, Smart
             Fleet Funding has been a key player in providing support and funding
             to various industries, with a particular focus on transportation.{" "}
@@ -107,12 +107,12 @@ export default function Know() {
           </div>
         </div>
         <div className="row line-programs pt-5 pb-5">
-          <div className="col-4">
+          <div className="col-md-4">
             {" "}
-            <h1 className="fw-bold fs-3 mb-0 mx-4 w-75">Our Commitment</h1>
-            <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
+            <h1 className="fw-bold fs-3 mb-0  w-75">Our Commitment</h1>
+            <div className="line-program mt-0 mb-3 mt-1 w-3"></div>
           </div>
-          <div className="col-8">
+          <div className="col-md-8">
             At Smart Fleet Funding, we{"'"}ve designed a system that simplifies
             the process of getting paid. Our mission is to remove the
             complexities and delays associated with unpaid invoices, turning
@@ -126,12 +126,12 @@ export default function Know() {
           </div>
         </div>
         <div className="row line-programs pt-5 pb-5">
-          <div className="col-4">
+          <div className="col-md-4">
             {" "}
-            <h1 className="fw-bold fs-3 mb-0 mx-4 w-75">What Sets Us Apart</h1>
-            <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
+            <h1 className="fw-bold fs-3 mb-0  w-75">What Sets Us Apart</h1>
+            <div className="line-program mt-0 mb-3 mt-1 w-3"></div>
           </div>
-          <div className="col-8">
+          <div className="col-md-8">
             Our dedication to innovation and building strong client
             relationships sets us apart. We prioritize financial accountability
             and transparency as the cornerstone of every successful business.
@@ -144,14 +144,14 @@ export default function Know() {
           </div>
         </div>
         <div className="row  pt-5 pb-5">
-          <div className="col-4">
+          <div className="col-md-4 ">
             {" "}
-            <h1 className="fw-bold fs-3 mb-0 mx-4 w-75">
+            <h1 className="fw-bold fs-3 mb-0 w-75">
               Why Choose Smart Fleet Funding
             </h1>
-            <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
+            <div className="line-program mt-0  mb-3 mt-1 w-3"></div>
           </div>
-          <div className="col-8">
+          <div className="col-md-8">
             Choosing Smart Fleet Funding means choosing a partner invested in
             your success. We specialize in tailoring funding solutions for
             trucking companies, enabling them to get paid faster and offering

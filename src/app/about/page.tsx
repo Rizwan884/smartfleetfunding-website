@@ -26,6 +26,7 @@ export default function AboutUs() {
       <Banners
         title={title}
         hideIcons
+        mobileBackgroundImage="images/sff-about-us-mobile.jpg"
         backgroundImage="images/sff-about-us.jpg"
       />
 
