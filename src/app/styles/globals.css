@@ -769,6 +769,13 @@ input[type="radio"]:checked ~ label {
 .accordion-button::after{
   background-image: url("../../../public/images/sff-hp-down.svg");
 }
+/*----------Accordin Mobile----------------------*/
+@media (max-width: 767px) {
+  .accordion-button{
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
 /*----------steps----------*/
 .step-container {
   display: flex;
