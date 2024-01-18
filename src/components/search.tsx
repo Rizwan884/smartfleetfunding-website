@@ -11,7 +11,7 @@ export default function Search() {
               FAQ
             </h1>
           </div>
-          <div className="d-flex flex-md-row mt-6 flex d-md-block d-none column-reverse   ms-auto h-75">
+          <div className="d-flex flex-md-row  flex d-md-flex d-none column-reverse   ms-auto h-75">
             <input
               className="form-control me-2"
               type="search"
