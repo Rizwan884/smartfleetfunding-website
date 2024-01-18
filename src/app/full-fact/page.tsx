@@ -13,8 +13,8 @@ import SectionAccordion from "../../components/section-accordion";
 
 export default function fullFact() {
   const title = (
-    <p>
-      Full <strong>Factoring Solution</strong>
+    <p className="font-montserrat">
+      Full <strong className="fw-600">Factoring Solution</strong>
     </p>
   );
 

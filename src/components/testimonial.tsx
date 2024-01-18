@@ -4,37 +4,37 @@ import Image from "react-bootstrap/Image";
 const TestimonialCarousel = () => {
   const testimonials = [
     {
-      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.",
+      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...",
       author: "Mark Tremblay",
-      position: "Ayudame Diomio",
+      position: "CTO",
       image: "images/sff-ttm-mark.svg",
     },
     {
-      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.",
+      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...",
       author: "William Tremblay",
       position: "CTO, Another Company",
       image: "images/sff-ttm-william.svg",
     },
     {
-      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.",
+      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...",
       author: "Keneth Brown",
       position: "COO, Third Company",
       image: "images/sff-ttm-keneth.svg",
     },
     {
-      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.",
+      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...",
       author: "Bob Brown",
       position: "CTO, Fourth Company",
       image: "images/sff-ttm-mark.svg",
     },
     {
-      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.",
+      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...",
       author: "Eva Johnson",
       position: "CMO, Fifth Company",
       image: "images/sff-ttm-william.svg",
     },
     {
-      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.",
+      text: "Lorem Ipsum dolorsit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...",
       author: "Alex Rodriguez",
       position: "CTO, Sixth Company",
       image: "images/sff-ttm-keneth.svg",
@@ -45,10 +45,10 @@ const TestimonialCarousel = () => {
     <>
       <Carousel
         id="testimonial"
-        style={{ marginTop: "100px", overflow: "visible" }}
-        indicators={false}
-        nextLabel=""
-        prevLabel=""
+        className="h-100 pb-2"
+        style={{ marginTop: "100px", overflow: "hidden" }}
+        indicators={true}
+        interval={5000}
       >
         {testimonials.map((testimonial, index) => (
           <Carousel.Item key={index}>
@@ -108,7 +108,7 @@ const TestimonialCarousel = () => {
                   .slice(index, index + 1)
                   .map((item, innerIndex) => (
                     <Col key={innerIndex} xs={12}>
-                      <Card style={{ border: "10px" }}>
+                      <Card className="w-75 mx-5" style={{ border: "10px" }}>
                         <Card.Body>
                           <Card.Text className="fs-6 text-start lh-sm">
                             {item.text}
