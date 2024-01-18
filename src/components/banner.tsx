@@ -30,7 +30,7 @@ export default function Banners({
           alt="banner"
         />
         {isMobile ? (
-          <div className=" banner-container">
+          <div className="banner-container mt-n2 ms-n2">
             <div className="mt-4 line"></div>
             {title && (
               <div className="w-100">

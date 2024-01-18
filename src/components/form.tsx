@@ -27,7 +27,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
               <div className="col ">
                 <input
                   type="text"
-                  className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-white"
+                  className="form-control mb-3 mb-md-0 px-3 bg-grey-transparent text-white"
                   id="name"
                   name="name"
                   placeholder="Full Name"
@@ -47,7 +47,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
               <div className="col">
                 <input
                   type="text"
-                  className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-white"
+                  className="form-control mb-3 mb-md-0 px-3 bg-grey-transparent text-white"
                   id="company"
                   name="company"
                   placeholder="Company Name"

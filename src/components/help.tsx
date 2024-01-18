@@ -4,7 +4,7 @@ export default function Help() {
   return (
     <>
       <div className="container mt-5 ">
-        <h1 className="fw-bold fs-2 text-center  flex-column align-items-center gap-3">
+        <h1 className="fw-bold fs-2 text-center pt-5 flex-column align-items-center gap-3">
           We help you by
           <div
             className="line"
@@ -236,6 +236,7 @@ export default function Help() {
                 style={{
                   border: "10px",
                   paddingBottom: "20px",
+                  height: "152px",
                 }}
               >
                 <Image
@@ -244,10 +245,6 @@ export default function Help() {
                     width: "15%",
                     marginTop: "-30px",
                     marginBottom: "20px",
-                    display: "block",
-
-                    marginLeft: "auto",
-                    marginRight: "auto",
                   }}
                   className="card-img-top"
                   alt="..."
