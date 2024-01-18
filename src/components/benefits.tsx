@@ -2,7 +2,7 @@ import Image from "react-bootstrap/Image";
 export default function Benefits() {
   return (
     <>
-      <div className="container mt-7 font-montserrat">
+      <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
           <h1 className="fw-600 fs-2 text-center  flex-column align-items-center gap-3">
@@ -11,7 +11,7 @@ export default function Benefits() {
         </div>
         <div className="row mt-5">
           <div className="col-12 col-md-6">
-            <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
+            <div className="text-left  p-5 d-flex align-items-center gap-2">
               <Image
                 className="img-style"
                 alt="icon"
@@ -28,7 +28,7 @@ export default function Benefits() {
             </div>
           </div>
           <div className="col-12 col-md-6">
-            <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
+            <div className="text-left  p-5 d-flex align-items-center gap-2">
               <Image
                 className="img-style2"
                 alt="icon"
@@ -45,7 +45,7 @@ export default function Benefits() {
         </div>
         <div className="row">
           <div className="col-12 col-md-6">
-            <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
+            <div className="text-left  p-5 d-flex align-items-center gap-2">
               <Image
                 className="img-style3"
                 alt="icon"
@@ -63,7 +63,7 @@ export default function Benefits() {
             </div>
           </div>
           <div className="col-12 col-md-6">
-            <div className="text-left mx-5 my-2 p-5 d-flex align-items-center gap-2">
+            <div className="text-left  p-5 d-flex align-items-center gap-2">
               <Image
                 className="img-style4"
                 alt="icon"

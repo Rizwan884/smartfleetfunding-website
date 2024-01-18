@@ -22,7 +22,7 @@ export default function Steps() {
         <Container>
           <h1 className="fw-600 fs-2 mb-0 mx-4">How it works</h1>
           <div className="line mt-0 mb-6 mx-4 mt-1 w-3"></div>
-          <Row className="d-flex flex-column m-5">
+          <Row className="d-flex flex-column m-5 m-3rem">
             {steps.map((step, index) => (
               <div className="step-container" key={index}>
                 <div className="step-number position-relative">
