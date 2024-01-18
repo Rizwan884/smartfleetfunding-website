@@ -30,7 +30,7 @@ export default function Banners({
           alt="banner"
         />
         {isMobile ? (
-          <div className=" banner-container">
+          <div className=" banner-container-mobile">
             {hideIcons ? (
               <div style={{ height: 88, width: 497 }}> </div>
             ) : (

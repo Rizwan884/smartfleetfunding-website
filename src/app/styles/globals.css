@@ -276,6 +276,12 @@ body{
   transform: translate(0%, -20%);
   text-align: left;
 }
+.banner-container-mobile{
+  position: absolute;
+  top: 30%;
+  transform: translate(8%, -76%);
+  text-align: left;
+}
 /*-------------------------Cards------------------------------*/
 
 .card-container {
@@ -805,6 +811,23 @@ input[type="radio"]:checked ~ label {
 .step-content {
   flex: 1;
 }
+/*---------Steps Mobile-----*/
+@media (max-width: 767px) {
+  .step-number {
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    color: var(--green);
+    width: 40px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-left: -21px;
+  }
+}
+
 /*---------Benefits---------*/
 .width-bf{
   width: 40.9px;
