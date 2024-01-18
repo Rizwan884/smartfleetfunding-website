@@ -79,6 +79,9 @@ body{
   .w-md-100{
     width: 100% !important;
   }
+  .w-md-2-line{
+    width: 10% !important;
+  }
  
 }
 
@@ -220,6 +223,12 @@ body{
 #bottom-footer:hover{
   background-color: var(--green);
   color: var(--dark-blue);
+}
+@media (max-width: 767px) {
+  .fi-img{
+    background-image: url("../../../public/images/sff-form-instapay-mobile.jpg");
+    background-size: cover;
+  }
 }
 /*-------------------------Fonts------------------------------*/
 .font-montserrat {
