@@ -20,18 +20,18 @@ export default function ImgInfo() {
               marginTop: "40px",
             }}
           ></div>
-          <div className="  font-montserrat pt-6 mx-5 mb-5">
-            <h1 className="text-start fw-bold fs-3">
+          <div className="  font-montserrat pt-2 mx-5 mb-5">
+            <h1 className="text-start fw-bold fs-4">
               Interested in learning more? <br /> Give us a call today!
-              <div className=" line"></div>
+              <div className="line"></div>
             </h1>
-            <div className="card-text-bottom fw-400">
-              We{"'"}re here to answer all your questions and <br /> help you
-              find the best solutions for your <br /> trucking business.
+            <div className="lh-sm card-text-bottom fw-400">
+              We{"'"}re here to answer all your questions and help you find the
+              best solutions for your trucking business.
             </div>
 
             <Button
-              className="contact_slide fw-bold  my-4 h-25 d-inline-block"
+              className="contact_slide fw-bold px-4 my-4 h-25 d-inline-block"
               variant="btn btn-custom"
             >
               Let{"'"}s Talk
@@ -39,18 +39,6 @@ export default function ImgInfo() {
           </div>
         </div>
       ) : (
-        // <div className="d-flex">
-        //   <div
-        //     style={{
-        //       ...Image,
-        //       backgroundImage: 'url("images/sff-truck-driver.jpg")',
-        //       marginRight: "80px",
-        //       marginTop: "40px",
-        //     }}
-        //   >
-
-        //   </div>
-        // </div>
         <div
           style={{
             ...Image,

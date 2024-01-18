@@ -9,32 +9,34 @@ export default function Cards() {
     <>
       {isMobile ? (
         <div className="font-montserrat">
-          <h2 className=" fw-bold text-center">
+          <h2 className="fs-5 fw-bold text-center">
             Release the money from your outstanding invoices
           </h2>
-          <div className="line"></div>
+          <div className="d-flex justify-content-center ">
+            <div className="line"></div>
+          </div>
           <Row className="pt-5">
             <Col className="card-column ">
               <Card.Body>
                 <ListGroup className="rounded-3">
                   <ListGroup.Item
-                    className="bg-Image body-list-mobile bd-box "
-                    style={{ lineHeight: "26px" }}
+                    className=" body-list-mobile bd-box "
+                    style={{ lineHeight: "20px" }}
                   >
                     <div className="d-flex">
                       <div className="icon-cards-mobile" style={{ height: 60 }}>
                         <Image
-                          style={{ width: "60px" }}
+                          style={{ width: "50px" }}
                           src="images/sff-factura.svg"
                           alt=""
                         />
                       </div>
                       <div>
-                        <Card.Title className="cards-title-mobile mx-5 ">
+                        <Card.Title className="cards-title-mobile mx-auto ">
                           Full Fact
                         </Card.Title>
                       </div>
-                      <div className="mx-auto">
+                      <div className="ms-auto">
                         <Image
                           style={{ width: "20px" }}
                           src="images/sff-arrow-right-mobile.svg"
@@ -50,23 +52,23 @@ export default function Cards() {
               <Card.Body>
                 <ListGroup className="rounded-3">
                   <ListGroup.Item
-                    className="bg-Image body-list-mobile bd-box "
+                    className=" body-list-mobile bd-box "
                     style={{ lineHeight: "26px" }}
                   >
                     <div className="d-flex">
                       <div className="icon-cards-mobile">
                         <Image
-                          style={{ width: "55px" }}
+                          style={{ width: "45px" }}
                           src="images/sff-cash.svg"
                           alt=""
                         />
                       </div>
                       <div>
-                        <Card.Title className="cards-title-mobile ">
+                        <Card.Title className="cards-title-mobile mx-2">
                           FES Pay/InstaPay
                         </Card.Title>
                       </div>
-                      <div className="mx-auto">
+                      <div className="ms-auto">
                         <Image
                           style={{ width: "20px" }}
                           src="images/sff-arrow-right-mobile.svg"
@@ -82,16 +84,16 @@ export default function Cards() {
               <Card.Body>
                 <ListGroup className="rounded-3">
                   <ListGroup.Item
-                    className="bg-Image body-list-mobile bd-box "
+                    className=" body-list-mobile bd-box "
                     style={{ lineHeight: "26px" }}
                   >
                     <div className="d-flex">
                       <div
                         className="icon-cards-mobile"
-                        style={{ marginTop: "-10px" }}
+                        style={{ marginTop: "1px" }}
                       >
                         <Image
-                          style={{ width: "68px" }}
+                          style={{ width: "58px" }}
                           src="images/sff-gas.svg"
                           alt=""
                         />
@@ -101,7 +103,7 @@ export default function Cards() {
                           Smart Fuel Card
                         </Card.Title>
                       </div>
-                      <div className="mx-auto">
+                      <div className="ms-auto">
                         <Image
                           style={{ width: "20px" }}
                           src="images/sff-arrow-right-mobile.svg"
@@ -129,7 +131,7 @@ export default function Cards() {
               <Card.Body>
                 <ListGroup>
                   <ListGroup.Item
-                    className="bg-Image body-list bd-box card-hb"
+                    className=" body-list bd-box card-hb"
                     style={{ lineHeight: "26px" }}
                   >
                     <div
@@ -199,7 +201,7 @@ export default function Cards() {
             <Col className="card-column">
               <Card.Body>
                 <ListGroup>
-                  <ListGroup.Item className="bg-Image body-list bd-box card-hb">
+                  <ListGroup.Item className=" body-list bd-box card-hb">
                     <div className="icon-cards" style={{ height: 70 }}>
                       <Image
                         style={{ width: "62px;" }}
@@ -288,7 +290,7 @@ export default function Cards() {
             <Col className="card-column">
               <Card.Body>
                 <ListGroup>
-                  <ListGroup.Item className="bg-Image body-list bd-box card-hb">
+                  <ListGroup.Item className=" body-list bd-box card-hb">
                     <div className="icon-cards" style={{ height: 70 }}>
                       <Image
                         style={{ width: "90px" }}
