@@ -868,6 +868,13 @@ input[type="radio"]:checked ~ label {
 .line-contact{
   border-bottom: 1px solid var(--dark-blue);
 }
+@media (max-width: 767px) {
+  .mp-contact{
+    margin-top: -10rem;
+    padding-bottom: 12px;
+  
+}
+}
 
 
 

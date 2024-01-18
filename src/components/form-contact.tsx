@@ -7,7 +7,7 @@ type IProps = {
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
   return (
     <>
-      <div className="container d-flex mt-1 flex-column flex-md-row mp-contact font-montserrat ">
+      <div className="container d-flex flex-column flex-md-row mp-contact font-montserrat ">
         <div className=" md-w-60  w-100">
           <div className="position-relative h-100">
             <Image
