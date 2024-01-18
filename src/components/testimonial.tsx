@@ -47,7 +47,7 @@ const TestimonialCarousel = () => {
         id="testimonial"
         className="h-100 pb-2"
         style={{ marginTop: "100px", overflow: "hidden" }}
-        indicators={true}
+        controls={true}
         interval={5000}
       >
         {testimonials.map((testimonial, index) => (

@@ -11,7 +11,7 @@ export default function Ideas() {
     <>
       <div className="container font-montserrat mt-5 mb-5 text-center text-md-start ">
         <h2 className="fw-600 ">PREMIUM FACTORING SERVICES</h2>
-        <p className="fw-500 fs-5">
+        <p className="fw-500 fs-5 pt-3">
           Same day payment* with preferential rates and personalized service,
           <strong> no penalty clauses or minimum amount.</strong>
         </p>
@@ -147,7 +147,7 @@ export default function Ideas() {
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-4 fw-400">
-                “<strong> I feel frustrated </strong> because some clients{" "}
+                “<strong>I feel frustrated </strong> because some clients{" "}
                 <strong>do not pay on time</strong> <br />
                 and I need immediate cashflow to operate.
               </h2>
@@ -179,7 +179,7 @@ export default function Ideas() {
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-4 fw-400">
-                “ I don{"'"}t understand{" "}
+                “I don{"'"}t understand{" "}
                 <strong>what my factor charges me</strong> <br /> and all these
                 hidden costs.
               </h2>

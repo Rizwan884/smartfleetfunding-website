@@ -106,12 +106,20 @@ body{
 .mb-6{
   margin-bottom: 6rem !important;
 }
+.ms-n1{
+  margin-left: -1.3rem;
+}
+
 .ms-n2{
   margin-left: -1.3rem;
 }
 
+
 .mt-n2{
   margin-top: -1.3rem;
+}
+.mt-n3{
+  margin-top: -2.3rem;
 }
     
    
@@ -666,7 +674,6 @@ background: var(--gray-transparent);
 }
 #testimonial .carousel-control-prev, .carousel-control-next{
   width: 5%;
-
 }
 #testimonial .carousel-inner{
   overflow: visible;
@@ -709,14 +716,19 @@ input[type="radio"]:checked ~ label {
 /*-----------Testimonial Mobile-------------*/
 
 @media (max-width: 767px) {
-  #testimonial .carousel-control-prev, .carousel-control-next{
-  display: none;
-  
+  #testimonial .carousel-control-prev-icon{
+    background-image: url("../../../public/images/sff-ttm-prev.svg");
+    width: 100%;
+    margin-left: 40%;
+  }
+  #testimonial .carousel-control-next-icon{
+    background-image: url("../../../public/images/sff-ttm-next.svg");
+    width: 100%;
+    margin-right: 40%;
   }
   #testimonial .carousel-indicators {
     justify-content: center;
     margin: auto;
-    position: static;
     padding-top: 20px;
     top: 100%;
   }
