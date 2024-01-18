@@ -13,7 +13,7 @@ import SectionAccordion from "@/components/section-accordion";
 
 export default function Instapay() {
   const title = (
-    <p>
+    <p className="w-75">
       Fast, Easy and <strong className="fw-bold">Secure Payment</strong>
     </p>
   );
@@ -104,6 +104,7 @@ export default function Instapay() {
         hideIcons={true}
         title={title}
         backgroundImage="images/sff-instapay.jpg"
+        mobileBackgroundImage="images/sff-instapay-mobile.jpg"
       />
       <Welcome />
       <Steps />

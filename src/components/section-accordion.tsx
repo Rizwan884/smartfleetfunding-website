@@ -23,12 +23,12 @@ export default function SectionAccordion({
   width = 0,
 }: IProps) {
   return (
-    <div className="container font-montserrat">
+    <div className="container font-montserrat pt-5 pt-md-2">
       <Accordion className="accordion-mp" defaultActiveKey="0">
         {headTitle && (
-          <h2 className="fw-600 mt-5 p-3  ">
+          <h2 className="fw-bold mb-5 ">
             {headTitle}
-            <div className="line" style={{ width: "2.6%" }}></div>
+            <div className="line w-md-2-line" style={{ width: "2.6%" }}></div>
           </h2>
         )}
         <div className="d-flex flex-md-row mb-6 flex d-md-none d-block column-reverse w-100  h-75">
