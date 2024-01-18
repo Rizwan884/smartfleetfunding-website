@@ -240,6 +240,14 @@ body{
   /* max-height: 936px;
   min-height: 936px; */
 }
+
+/*-------------------------Sections Mobile------------------*/
+.slider-container-mobile{
+  position: absolute;
+  top: 20%;
+  transform: translate(0%, -20%);
+  text-align: left;
+}
 /*-------------------------Cards------------------------------*/
 
 .card-container {
