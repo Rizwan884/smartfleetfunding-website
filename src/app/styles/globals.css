@@ -177,13 +177,18 @@ body{
   background:var(--green) !important;
   color: var(--dark-blue);
 }
-#bottom-footer{
-font-size: 13px;
-width: 100%;
-}
+
 #bottom-footer:hover{
   background-color: var(--green);
   color: var(--dark-blue);
+}
+
+/*-------------------------Botones Mobile (nav, footer, en general)---------------*/
+@media (max-width: 767px) {
+  #bottom-footer{
+    font-size: 13px;
+    width: 100%;
+    }
 }
 /*-------------------------Fonts------------------------------*/
 .font-montserrat {
