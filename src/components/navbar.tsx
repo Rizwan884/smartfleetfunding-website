@@ -25,29 +25,28 @@ export default function SFFNavbar() {
               alt="SFF Logo"
             />
           </Navbar.Brand>
-          <div
-            id="button-language"
-            className="d-flex d-md-none justify-content-end"
-          >
-            <NavDropdown
-              id="basic-nav-dropdown"
-              className="mx-auto"
-              title={
-                <>
-                  <span className="text-green fw-bold">ENG</span>
-                  <Image
-                    src="images/sff-arrow-down-green.svg"
-                    alt="Dropdown Icon"
-                    style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
-                  />
-                </>
-              }
-            >
-              <NavDropdown.Item href="#">ESP</NavDropdown.Item>
-            </NavDropdown>
+          <div className="d-flex align-items-center gap-3">
+            <div id="button-language" className="d-flex d-md-none gap-2">
+              <NavDropdown
+                id="basic-nav-dropdown"
+                className="mx-auto"
+                title={
+                  <>
+                    <span className="text-green fw-bold">ENG</span>
+                    <Image
+                      src="images/sff-arrow-down-green.svg"
+                      alt="Dropdown Icon"
+                      style={{ width: "13px", height: "10px" }}
+                    />
+                  </>
+                }
+              >
+                <NavDropdown.Item href="#">ESP</NavDropdown.Item>
+              </NavDropdown>
+            </div>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
           </div>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav ">
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto fw-600 text-end">
               <Nav.Link className="text-dark-blue " href="/">
                 HOME
@@ -103,7 +102,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                      style={{ width: "13px", height: "10px" }}
                     />
                   </>
                 }
