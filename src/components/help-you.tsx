@@ -1,5 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 export default function HelpYou() {
   return (
     <>
@@ -17,9 +20,9 @@ export default function HelpYou() {
           </Row>
         </div>
         <div className="row">
-          <div className="col-6 d-flex justify-content-end h-100">
+          <div className="col-6 d-flex  justify-content-end h-100">
             {" "}
-            <div className="card w-20rem me-5">
+            <div className="card w-20rem me-5 d-md-block d-none">
               <div className="card-body">
                 <h5 className="card-title fs-4 text-start fw-bold">
                   On Attraction & Retention
@@ -69,10 +72,62 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
+            <div className=" row dropdown mx-3 flex-column d-lg-none ">
+              <button className="btn btn-light  dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <h5 className="card-title fs-6 text-start fw-bold">
+                  On Attraction & <br /> Retention
+                </h5>
+              </button>
+              <ul className="dropdown-menu  " aria-labelledby="dropdownMenuButton2">
+                <li><a className="dropdown-item " href="#"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                  <Image
+                    width={20}
+                    height={20}
+                    className="mt-14"
+                    src="images/sff-fb-arrow-right.svg"
+                    alt="testimonial-img"
+                  ></Image>
+                  <div>
+                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                      Becoming <br /> more <br /> attractive to <br /> carriers.
+                    </p>
+                  </div>
+                </div></a></li>
+                <li><a className="dropdown-item" href="#"> <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                  <Image
+                    width={20}
+                    height={20}
+                    className="mt-50"
+                    src="images/sff-fb-arrow-right.svg"
+                    alt="testimonial-img"
+                  ></Image>
+                  <div className="mt-2">
+                    <p className="ms-2 fs-6 fw-30 text-start">
+                      Carriers <br /> won’t worry <br /> about their <br /> cash flow <br /> to operate.
+                    </p>
+                  </div>
+                </div></a></li>
+                <li><a className="dropdown-item" href="#"><div className="d-flex mb-1 lh-sm align-items-center gap-2">
+                  <Image
+                    width={20}
+                    height={20}
+                    className="mt-34"
+                    src="images/sff-fb-arrow-right.svg"
+                    alt="testimonial-img"
+                  ></Image>
+                  <div className="mt-2">
+                    <p className="ms-2 fs-6 fw-30 text-start">
+                      Carriers <br /> won’t need <br /> to make <br /> collection <br /> calls.
+                    </p>
+                  </div>
+                </div></a></li>
+              </ul>
+            </div>
           </div>
-          <div className="col-6 d-flex justify-content-end h-100 ">
+
+          <div className="col-6 d-flex  justify-content-end h-100 ">
             {" "}
-            <div className="card w-20rem">
+            <div className="card w-20rem d-md-block d-none">
               <div className="card-body">
                 <h5 className="card-title fs-4 text-start fw-bold">
                   Handling AR/AP <br /> Needs
@@ -136,6 +191,73 @@ export default function HelpYou() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className=" row dropdown mx-4 flex-column ml-4 d-lg-none ">
+              <button className="btn btn-light  dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <h5 className="card-title fs-6 text-start fw-bold">
+                  Handling AR/AP <br /> Needs
+                </h5>
+              </button>
+              <ul className="dropdown-menu  " aria-labelledby="dropdownMenuButton2">
+                <li><a className="dropdown-item " href="#"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                  <Image
+                    width={20}
+                    height={20}
+                    className="mt-50"
+                    src="images/sff-fb-arrow-right.svg"
+                    alt="testimonial-img"
+                  ></Image>
+                  <div>
+                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                      Receiving <br /> collection <br /> calls from <br /> carriers and <br /> other debt <br />
+                      collectors.
+                    </p>
+                  </div>
+                </div></a></li>
+                <li><a className="dropdown-item" href="#">  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                  <Image
+                    width={20}
+                    height={20}
+                    className="mt-34"
+                    src="images/sff-fb-arrow-right.svg"
+                    alt="testimonial-img"
+                  ></Image>
+                  <div className="mt-2">
+                    <p className="ms-2 fs-6 fw-30 text-start">
+                      Making <br /> collection <br /> calls to <br /> clients.
+                    </p>
+                  </div>
+                </div></a></li>
+                <li><a className="dropdown-item" href="#"><div className="d-flex mb-1 lh-sm align-items-center gap-2 line-programs">
+                  <Image
+                    width={20}
+                    height={20}
+                    className="mt-34"
+                    src="images/sff-fb-arrow-right.svg"
+                    alt="testimonial-img"
+                  ></Image>
+                  <div className="mt-2">
+                    <p className="ms-2 fs-6 fw-30 text-start">
+                      Handling <br /> AR/AP <br /> documentati <br /> on.
+                    </p>
+                  </div>
+                </div></a></li>
+                <li><a className="dropdown-item" href="#">
+                  <div className="d-flex mb-1 lh-sm align-items-center gap-2 line-programs">
+                  <Image
+                    width={20}
+                    height={20}
+                    className="mt-34"
+                    src="images/sff-fb-arrow-right.svg"
+                    alt="testimonial-img"
+                  ></Image>
+                  <div className="mt-2">
+                    <p className="ms-2 fs-6 fw-30 text-start">
+                    Stay on top <br /> of the <br /> company’s <br /> cash flow.
+                    </p>
+                  </div>
+                </div></a></li>
+              </ul>
             </div>
           </div>
         </div>
