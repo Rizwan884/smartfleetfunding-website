@@ -50,7 +50,7 @@ export default function SFFNavbar() {
             />
           </div>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto fw-600 text-start">
+            <Nav className="ms-auto fw-600 text-start align-items-md-center">
               <Nav.Link className="text-dark-blue px-3 py-4 fw-600 " href="/">
                 HOME
               </Nav.Link>

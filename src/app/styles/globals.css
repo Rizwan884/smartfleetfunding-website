@@ -193,9 +193,12 @@ img {
   min-width: 1rem;
   border: none !important;
 }
-.nav-item-nav .dropdown-menu {
-  border: none !important;
-  background-color: transparent;
+
+@media (max-width: 767px) {
+  .nav-item-nav .dropdown-menu {
+    border: none !important;
+    background-color: transparent;
+  }
 }
 .nav-link.active,
 .nav-link:hover,
