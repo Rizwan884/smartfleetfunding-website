@@ -15,7 +15,7 @@ export default function Needs() {
       </div>
       <div className="card-container font-montserrat mt-5 h-100 flex-column w-100">
         <div className="row mb-3 justify-content-center  gap-3 gap-md-auto">
-          <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -28,7 +28,7 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -41,7 +41,7 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -55,7 +55,7 @@ export default function Needs() {
             </Card.Body>
           </Card>
           
-            <Card className="mx-3 d-lg-none w-18rem bg-dark-blue text-white h-100">
+            <Card className="mx-3 d-lg-none w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -68,7 +68,7 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mx-3 d-lg-none w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 d-lg-none w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -81,7 +81,7 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mx-3 d-lg-none w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 d-lg-none w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start w-100">
               <Image
                 alt="icons"
@@ -98,7 +98,7 @@ export default function Needs() {
           
         </div>
         <div className="row justify-content-center gap-3 gap-md-auto   ">
-          <Card className="mx-3 d-md-block d-none w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 d-md-block d-none w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -111,7 +111,7 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mx-3 d-md-block d-none  w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 d-md-block d-none  w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -124,7 +124,7 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mx-3 d-md-block d-none w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 d-md-block d-none w-18rem bg-dark text-white h-100">
             <Card.Body className="text-start w-100">
               <Image
                 alt="icons"
