@@ -7,7 +7,7 @@ export default function Search() {
         <div className="d-flex flex-row  font-montserrat">
           <div className="d-flex flex-column ">
             <div className="line width-bf fw-600 mb-2 ms-1 align-item-center"></div>
-            <h1 className="fw-600 fs-2 text-left  flex  align-items-left gap-3">
+            <h1 className="fw-bold fs-2 text-left  flex  align-items-left gap-3">
               FAQ
             </h1>
           </div>

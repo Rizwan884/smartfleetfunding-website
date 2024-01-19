@@ -271,10 +271,8 @@ export default function Faqs() {
       icon: "images/sff-search-arrow.svg",
       eventKey: 15,
     },
-  
   ];
 
-  
   return (
     <>
       <Navbar />

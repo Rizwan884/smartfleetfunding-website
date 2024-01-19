@@ -55,7 +55,7 @@ export default function SectionAccordion({
                   style={{ marginRight: "15px" }}
                 ></Image>
               )}
-              {item.title}
+              <div id="title-mobile">{item.title}</div>
             </Accordion.Header>
             <Accordion.Body>{item.description}</Accordion.Body>
           </Accordion.Item>
