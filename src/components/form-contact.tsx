@@ -16,9 +16,9 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
               alt="form"
               fill
             ></Image>
-            <div className="position-relative">
+            <div className="position-relative ">
               <div className="container">
-                <h1 className="p-4 fs-3 position relative">
+                <h1 className="p-4 pt-5 mt-5  mt-md-0 fs-3 position relative text-center text-md-start">
                   Contact us for{" "}
                   <strong>
                     Fast, Easy and <br />
@@ -27,7 +27,10 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                 </h1>
                 <div className="line-contact m-4"></div>
                 <div className="row ">
-                  <div className="text-left p-4 d-flex align-items-center gap-2">
+                  <div
+                    className="text-left mt-3 mt-md-0 p-md-4 d-flex align-items-center gap-2 justify-content-center justify-content-md-start
+                  "
+                  >
                     <Image
                       className="img-style mt-1"
                       alt="icon"
@@ -35,15 +38,17 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       height={30}
                       src="images/sff-contact-phone.svg"
                     ></Image>
-                    <div className="lh-sm">
+                    <div className="lh-sm ">
                       <h2 className="fs-4 fw-600 text-dark-blue mt-1">
-                        (888) 875-5506
+                        <a className="remove-link-styles" href="tel:8888755506">
+                          (888) 875-5506
+                        </a>
                       </h2>
                     </div>
                   </div>
                 </div>
-                <div className="row mt-14">
-                  <div className="text-left p-4 d-flex align-items-center gap-2">
+                <div className="row mt-md-14">
+                  <div className="text-left mb-5 mb-md-0 p-2 p-md-4 d-flex align-items-center gap-2 justify-content-center justify-content-md-start">
                     <Image
                       className="img-style mt-1"
                       alt="icon"
@@ -53,7 +58,12 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     ></Image>
                     <div className="">
                       <h2 className="fs-4 mt-3 fw-600 text-dark-blue">
-                        info@smartfleetfunding.com
+                        <a
+                          className="remove-link-styles"
+                          href="mailto:ifo@smartfleetfunding.com"
+                        >
+                          info@smartfleetfunding.com
+                        </a>
                       </h2>
                     </div>
                   </div>
@@ -72,13 +82,13 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
             target="#"
           >
             <h1
-              className=" fs-2 text-left fst-italic"
+              className=" fs-2 d-flex flex-column align-items-center align-items-md-start pb-3 pb-md-0 fst-italic"
               style={{ marginBottom: "30px" }}
             >
               {titleForm}
-              <div className="line "></div>
+              <div className="line text-center text-md-left "></div>
             </h1>
-            <div className="row mb-3 flex-md-row flex-column">
+            <div className="row gap-2 gap-md-0 mb-2 mb-md-3 flex-md-row flex-column">
               <div className="col">
                 <input
                   type="text"
@@ -98,7 +108,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                 ></input>
               </div>
             </div>
-            <div className="row mb-3 flex-md-row flex-column">
+            <div className="row gap-2 gap-md-0 mb-3 flex-md-row flex-column">
               <div className="col">
                 <input
                   type="text"
