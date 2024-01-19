@@ -52,26 +52,33 @@ export default function SFFNavbar() {
               <NavDropdown
                 title={
                   <>
-                    <span className="text-dark-blue  mx-1">SERVICES</span>
                     <Image
                       src="images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
                       style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
                     />
+                    <span className="text-dark-blue ms-1">SERVICES</span>
                   </>
                 }
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item href="/full-fact.html">
-                  Full Fact
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/instapay.html">
-                  Instapay
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
-                <NavDropdown.Item href="/freight-broker-program.html">
-                  Freight Broker
-                </NavDropdown.Item>
+                <div className="d-flex flex-column">
+                  <NavDropdown.Item className="text-end" href="/full-fact.html">
+                    Full Fact
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className="text-end" href="/instapay.html">
+                    Instapay
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className="text-end" href="#">
+                    Fuel Card
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className="text-end"
+                    href="/freight-broker-program.html"
+                  >
+                    Freight Broker
+                  </NavDropdown.Item>
+                </div>
               </NavDropdown>
               <Nav.Link className="text-dark-blue " href="/faqs.html">
                 FAQ

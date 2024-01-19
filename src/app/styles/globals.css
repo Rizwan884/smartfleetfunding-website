@@ -186,6 +186,10 @@ body{
   #button-language{
         margin-left: 30%;
   }
+  .dropdown-menu {
+    width: auto;
+    margin-left: 60%;
+  }
  
 }
 /*-------------------------Fonts------------------------------*/
