@@ -14,19 +14,22 @@ export default function Footer() {
           className="font-montserrat bg-dark-blue text-light mt-5"
         >
           <Container className="py-3">
-            <Nav className="d-flex justify-content-between">
-              <Nav.Link className="text-green fw-500" href="#home">
+            <Nav className="d-flex flex-column gap-1 p-1">
+              <Nav.Link className="text-green fw-600" href="#home">
                 HOME
               </Nav.Link>
+              <hr className="w-93 m-0 mx-auto" />
               <NavDropdown
                 title={
                   <>
-                    <span className="text-green fw-500 mx-1">SERVICES</span>
-                    <Image
-                      alt="down"
-                      src="images/sff-arrow-down-green.svg"
-                      style={{ width: "13px", height: "10px" }}
-                    />
+                    <div className="d-flex justify-content-between align-items-center w-full">
+                      <span className="text-green fw-600">SERVICES</span>
+                      <Image
+                        alt="down"
+                        src="images/sff-arrow-down-green.svg"
+                        style={{ width: "13px", height: "10px" }}
+                      />
+                    </div>
                   </>
                 }
                 id="basic-nav-dropdown"
@@ -36,16 +39,20 @@ export default function Footer() {
                 <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
                 <NavDropdown.Item href="#">Freight Broker</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link className="text-green fw-500" href="#faq">
+              <hr className="w-93 m-0 mx-auto" />
+              <Nav.Link className="text-green fw-600" href="#faq">
                 FAQ
               </Nav.Link>
-              <Nav.Link className="text-green fw-500" href="#aboutus">
+              <hr className="w-93 m-0 mx-auto" />
+              <Nav.Link className="text-green fw-600" href="#aboutus">
                 ABOUT US
               </Nav.Link>
-              <Nav.Link className="text-green fw-500" href="#blog">
+              <hr className="w-93 m-0 mx-auto" />
+              <Nav.Link className="text-green fw-600" href="#blog">
                 BLOG
               </Nav.Link>
-              <Nav.Link className="text-green fw-500" href="#contact">
+              <hr className="w-93 m-0 mx-auto" />
+              <Nav.Link className="text-green fw-600" href="#contact">
                 CONTACT
               </Nav.Link>
             </Nav>
@@ -71,36 +78,39 @@ export default function Footer() {
             </div>
           </Container>
 
-          <div className="font-montserrat d-flex position-relative justify-content-between align-items-center text-left py-3 px-5 bg-green">
-            <p className="w-100 mx-auto" style={{ margin: 0, fontSize: 15 }}>
+          <div className="font-montserrat d-flex position-relative justify-content-between align-items-center text-left py-5 px-5 bg-green">
+            <p
+              className="w-100 mx-auto mt-2 text-center"
+              style={{ margin: 0, fontSize: 15 }}
+            >
               &copy;2023 Smart Funding Team All Rights Reserved
             </p>
             <div
               className="d-flex position-absolute"
-              style={{ right: "66px", top: "-11px" }}
+              style={{ right: "34%", top: "-11px" }}
             >
               <div>
-                <a href="#facebook">
+                <a className="d-block h-full" href="#facebook">
                   <Image
-                    style={{ width: "40px" }}
+                    style={{ width: "55px" }}
                     src="images/sff-facebook.svg"
                     alt="facebook"
                   />
                 </a>
               </div>
               <div>
-                <a href="#instagram">
+                <a className="d-block h-full" href="#instagram">
                   <Image
-                    style={{ width: "40px" }}
+                    style={{ width: "55px" }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
                 </a>
               </div>
               <div>
-                <a href="#linkedin">
+                <a className="d-block h-full" href="#linkedin">
                   <Image
-                    style={{ width: "43px" }}
+                    style={{ width: "55px", height: "47px" }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
                   />
