@@ -20,7 +20,7 @@ export default function Know() {
         </div>
       </div>
       <div className="card-container font-montserrat mt-5 mb-5 h-100 flex-column w-100">
-        <div className="row mb-3 justify-content-center gap-3 gap-md-3">
+        <div className="row px-0 mx-0 px-md-auto mx-md-auto mb-3 justify-content-center gap-3 gap-md-3">
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
               <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
@@ -57,7 +57,7 @@ export default function Know() {
             </Card.Body>
           </Card>
         </div>
-        <div className="row justify-content-center gap-3 gap-md-3 ">
+        <div className="row px-0 mx-0 px-md-auto mx-md-auto justify-content-center gap-3 gap-md-3 ">
           <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
             <Card.Body className="text-start">
               <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
