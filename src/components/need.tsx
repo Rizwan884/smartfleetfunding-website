@@ -3,9 +3,8 @@ import Image from "react-bootstrap/Image";
 
 export default function Needs() {
   return (
-    
     <>
-    <div className="container mt-7 font-montserrat">
+      <div className="container mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
           <h1 className="fw-600 fs-2 text-center  text-dark-blue flex  align-items-center gap-3">
@@ -14,7 +13,7 @@ export default function Needs() {
         </div>
       </div>
       <div className="card-container font-montserrat mt-5 h-100 flex-column w-100">
-        <div className="row mb-3 justify-content-center  gap-3 gap-md-auto">
+        <div className="row mx-0 px-0 px-md-auto mx-md-auto mb-3 justify-content-center  gap-3 gap-md-auto">
           <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start">
               <Image
@@ -54,8 +53,8 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          
-            <Card className="mx-3 d-lg-none w-18rem bg-dark-blue text-white h-100">
+
+          <Card className="mx-3 d-lg-none w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -94,10 +93,8 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          
-          
         </div>
-        <div className="row justify-content-center gap-3 gap-md-auto   ">
+        <div className="row mx-0 px-0 px-md-auto mx-md-auto justify-content-center gap-3 gap-md-auto   ">
           <Card className="mx-3 d-md-block d-none w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start">
               <Image
@@ -149,7 +146,6 @@ export default function Needs() {
           </h1>
         </div>
       </div>
-      
     </>
   );
 }

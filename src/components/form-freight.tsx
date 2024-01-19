@@ -23,7 +23,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
               {titleForm}
               <div className="line "></div>
             </h1>
-            <div className="row mb-3 flex-md-row flex-column">
+            <div className="row gap-2 gap-md-0 mb-2 mb-md-3 flex-md-row flex-column">
               <div className="col">
                 <input
                   type="text"
@@ -43,7 +43,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                 ></input>
               </div>
             </div>
-            <div className="row mb-3 flex-md-row flex-column">
+            <div className="row gap-2 gap-md-0 mb-3 flex-md-row flex-column">
               <div className="col">
                 <input
                   type="email"

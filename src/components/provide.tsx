@@ -14,7 +14,7 @@ export default function Provides() {
         </div>
       </div>
       {isMobile ? (
-        <Row className="font-montserrat">
+        <Row className="font-montserrat mx-0 px-0 px-md-auto mx-md-auto">
           <Col>
             <Carousel id="provider-carrusel" className="w-100" fade>
               <Carousel.Item>
