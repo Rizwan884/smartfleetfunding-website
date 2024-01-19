@@ -177,6 +177,10 @@ body{
   background:var(--green) !important;
   color: var(--dark-blue);
 }
+#bottom-footer{
+font-size: 13px;
+width: 100%;
+}
 #bottom-footer:hover{
   background-color: var(--green);
   color: var(--dark-blue);
