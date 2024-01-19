@@ -3,7 +3,7 @@ import Image from "react-bootstrap/Image";
 export default function Know() {
   return (
     <>
-      <div className="container mt-7 font-montserrat">
+      <div className="container px-5 px-md-auto mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
           <h1 className="d-md-block d-none fw-regular fs-2 text-center flex  align-items-center gap-3">
