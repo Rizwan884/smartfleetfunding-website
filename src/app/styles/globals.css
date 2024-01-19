@@ -184,7 +184,7 @@ body{
 /*-------------------------*/
 @media (max-width: 767px) {
   #button-language{
-    margin-left: 30%;
+    margin-left: 25%;
   }
   .dropdown-menu {
     width: auto;
