@@ -66,7 +66,7 @@ export default function Footer() {
                   CURIOUS TO LEARN MORE?
                 </button>
               </div>
-              <div className="text-center py-5">
+              <div className="text-center d-flex justify-content-center align-items-center w-50">
                 <Image
                   src="images/sff-logo-footer.svg"
                   width="174"
@@ -87,7 +87,7 @@ export default function Footer() {
             </p>
             <div
               className="d-flex position-absolute"
-              style={{ right: "34%", top: "-11px" }}
+              style={{ right: "34%", top: "-20px" }}
             >
               <div>
                 <a className="d-block h-full" href="#facebook">
