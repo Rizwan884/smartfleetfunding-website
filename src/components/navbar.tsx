@@ -32,7 +32,7 @@ export default function SFFNavbar() {
                 className="mx-auto"
                 title={
                   <>
-                    <span className="text-green fw-bold">ENG</span>
+                    <span className="text-green fw-bold mx-2">ENG</span>
                     <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
@@ -44,54 +44,81 @@ export default function SFFNavbar() {
                 <NavDropdown.Item href="#">ESP</NavDropdown.Item>
               </NavDropdown>
             </div>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              className="navbar-toggle-icon"
+            />
           </div>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto fw-600 text-end">
-              <Nav.Link className="text-dark-blue " href="/">
+            <Nav className="ms-auto fw-600 text-start">
+              <Nav.Link className="text-dark-blue px-3 py-4 fw-600 " href="/">
                 HOME
               </Nav.Link>
+              <hr className="text-dark m-0" />
               <NavDropdown
+                className="px-3 py-4 nav-item-nav"
                 title={
                   <>
+                    <span className="text-dark-blue ">SERVICES</span>{" "}
                     <Image
                       src="images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
                       style={{ width: "13px", height: "10px" }}
                     />
-                    <span className="text-dark-blue ms-1">SERVICES</span>
                   </>
                 }
                 id="basic-nav-dropdown"
               >
-                <div className="d-flex flex-column">
-                  <NavDropdown.Item className="text-end" href="/full-fact.html">
+                <div className="d-flex flex-column align-items-start gap-2 ">
+                  <NavDropdown.Item
+                    className="text-start text-dark"
+                    href="/full-fact.html"
+                  >
                     Full Fact
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="text-end" href="/instapay.html">
+                  <NavDropdown.Item
+                    className="text-start text-dark"
+                    href="/instapay.html"
+                  >
                     Instapay
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="text-end" href="#">
+                  <NavDropdown.Item className="text-start text-dark" href="#">
                     Fuel Card
                   </NavDropdown.Item>
                   <NavDropdown.Item
-                    className="text-end"
+                    className="text-start text-dark"
                     href="/freight-broker-program.html"
                   >
                     Freight Broker
                   </NavDropdown.Item>
                 </div>
               </NavDropdown>
-              <Nav.Link className="text-dark-blue " href="/faqs.html">
+              <hr className="text-dark m-0" />
+              <Nav.Link
+                className="text-dark-blue px-3 py-4 fw-600 "
+                href="/faqs.html"
+              >
                 FAQ
               </Nav.Link>
-              <Nav.Link className="text-dark-blue " href="/about.html">
+              <hr className="text-dark m-0" />
+              <Nav.Link
+                className="text-dark-blue px-3 py-4 fw-600 "
+                href="/about.html"
+              >
                 ABOUT US
               </Nav.Link>
-              <Nav.Link className="text-dark-blue " href="#blog">
+              <hr className="text-dark m-0" />
+              <Nav.Link
+                className="text-dark-blue px-3 py-4 fw-600 "
+                href="#blog"
+              >
                 BLOG
               </Nav.Link>
-              <Nav.Link className="text-dark-blue " href="/contact.html">
+              <hr className="text-dark m-0" />
+              <Nav.Link
+                className="text-dark-blue px-3 py-4 fw-600 "
+                href="/contact.html"
+              >
                 CONTACT
               </Nav.Link>
               <NavDropdown
