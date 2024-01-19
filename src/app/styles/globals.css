@@ -181,6 +181,13 @@ body{
   background-color: var(--green);
   color: var(--dark-blue);
 }
+/*-------------------------*/
+@media (max-width: 767px) {
+  #button-language{
+        margin-left: 30%;
+  }
+ 
+}
 /*-------------------------Fonts------------------------------*/
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;

@@ -25,8 +25,9 @@ export default function SFFNavbar() {
               alt="SFF Logo"
             />
           </Navbar.Brand>
-          <div className="d-flex justify-content-end ms-6">
+          <div id="button-language" className="d-flex justify-content-end">
             <NavDropdown
+              id="basic-nav-dropdown"
               className="mx-auto"
               title={
                 <>
@@ -38,11 +39,8 @@ export default function SFFNavbar() {
                   />
                 </>
               }
-              id="basic-nav-dropdown"
             >
-              <NavDropdown.Item className="" href="#">
-                ESP
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#">ESP</NavDropdown.Item>
             </NavDropdown>
           </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
