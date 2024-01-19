@@ -187,8 +187,8 @@ body{
     margin-left: 25%;
   }
   .dropdown-menu {
-    width: auto;
-    margin-left: -15%;
+    width: 35%;
+    margin-left: 65%;
   }
   .navbar-toggler:focus {
     box-shadow: 0 0 0 var(--gray-transparent);

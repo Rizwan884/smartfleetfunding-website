@@ -31,7 +31,7 @@ export default function SFFNavbar() {
           >
             <NavDropdown
               id="basic-nav-dropdown"
-              className="ms-auto"
+              className="mx-auto"
               title={
                 <>
                   <span className="text-green fw-bold">ENG</span>
