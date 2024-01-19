@@ -870,6 +870,13 @@ input[type="radio"]:checked ~ label {
   align-items: start !important;
 }
 /*------------Contact---------------*/
+
+@media (max-width: 767px) {
+  .fsm-4 {
+    font-size: calc(1.275rem + 0.3vw) !important;
+  }
+}
+
 .p-contact {
   padding-bottom: 24% !important;
 }
