@@ -6,8 +6,16 @@ export default function Know() {
       <div className="container mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
-          <h1 className="fw-regular fs-2 text-center   flex  align-items-center gap-3">
+          <h1 className="d-md-none fw-regular fs-2 text-center flex  align-items-center gap-3">
             Know more about <strong>Smart Fleet Funding</strong>
+          </h1>
+          <h1 className="d-md-none fw-regular fs-2 text-center flex  align-items-center gap-3">
+            Know more about{" "}
+            <strong>
+              {" "}
+              <br />
+              Smart Fleet Funding
+            </strong>
           </h1>
         </div>
       </div>

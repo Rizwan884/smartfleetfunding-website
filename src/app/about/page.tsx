@@ -15,7 +15,7 @@ import Know from "@/components/know";
 
 export default function AboutUs() {
   const title = (
-    <p>
+    <p className="text-dark-blue">
       About <strong className="fw-bold">Us</strong>
     </p>
   );
