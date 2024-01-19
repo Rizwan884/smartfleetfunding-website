@@ -25,9 +25,29 @@ export default function SFFNavbar() {
               alt="SFF Logo"
             />
           </Navbar.Brand>
+          <div className="d-flex justify-content-end ms-6">
+            <NavDropdown
+              className="mx-auto"
+              title={
+                <>
+                  <span className="text-green fw-bold">ENG</span>
+                  <Image
+                    src="images/sff-arrow-down-green.svg"
+                    alt="Dropdown Icon"
+                    style={{ width: "13px", height: "10px" }} // Ajusta el tamaño según tus necesidades
+                  />
+                </>
+              }
+              id="basic-nav-dropdown"
+            >
+              <NavDropdown.Item className="" href="#">
+                ESP
+              </NavDropdown.Item>
+            </NavDropdown>
+          </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav ">
-            <Nav className="ms-auto fw-600">
+            <Nav className="ms-auto fw-600 text-end">
               <Nav.Link className="text-dark-blue " href="/">
                 HOME
               </Nav.Link>
@@ -68,6 +88,7 @@ export default function SFFNavbar() {
                 CONTACT
               </Nav.Link>
               <NavDropdown
+                className="d-none d-md-flex"
                 title={
                   <>
                     <span className="text-green ">ENG</span>
