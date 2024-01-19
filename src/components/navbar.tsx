@@ -25,7 +25,10 @@ export default function SFFNavbar() {
               alt="SFF Logo"
             />
           </Navbar.Brand>
-          <div id="button-language" className="d-flex justify-content-end">
+          <div
+            id="button-language"
+            className="d-flex d-md-none justify-content-end"
+          >
             <NavDropdown
               id="basic-nav-dropdown"
               className="mx-auto"
