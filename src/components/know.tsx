@@ -5,7 +5,7 @@ export default function Know() {
     <>
       <div className="container px-5 px-md-auto mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
-          <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
+          <div className="line width-bf fw-600 mb-2 ms-md-3 align-item-center"></div>
           <h1 className="d-md-block d-none fw-regular fs-2 text-center flex  align-items-center gap-3">
             Know more about <strong>Smart Fleet Funding</strong>
           </h1>
@@ -95,7 +95,7 @@ export default function Know() {
           </Card>
         </div>
       </div>
-      <div className="container pt-6 pb-6 font-montserrat">
+      <div className="container px-5 px-md-auto pt-6 pb-6 font-montserrat">
         <div className="row line-programs pb-5">
           <div className="col-md-4">
             {" "}
