@@ -92,7 +92,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
         <div className="w-50">
           <div className="position-relative h-100">
             <Image
-              src={` ${backgroundImage ? backgroundImage : ""}`}
+              src={backgroundImage ? backgroundImage : ""}
               style={{ objectFit: "cover" }}
               alt="form"
               fill
