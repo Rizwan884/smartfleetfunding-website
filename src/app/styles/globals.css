@@ -191,6 +191,7 @@ body {
   }
 }
 }
+
 img {
   transition: transform ease-in-out 0.2s;
   -webkit-transition: transform ease-in-out 0.2s;
@@ -349,7 +350,6 @@ span:hover {
 
 @media (max-width: 767px) {
   .banner-container {
-    top: 75%;
     left: 5%;
   }
 }
