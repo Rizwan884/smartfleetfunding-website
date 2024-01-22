@@ -34,7 +34,7 @@ export default function Banners({
           <div className="banner-container mt-n3 ms-n3">
             <div className="mt-4 line"></div>
             {title && (
-              <div>
+              <div className="w-100">
                 <h1 className="text-start fw-light fs-1 mt-1 text-white font-montserrat">
                   {title}
                 </h1>

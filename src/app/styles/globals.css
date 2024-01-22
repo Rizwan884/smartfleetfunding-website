@@ -351,6 +351,7 @@ span:hover {
 @media (max-width: 767px) {
   .banner-container {
     left: 5%;
+    width: 80%;
   }
 }
 .gray-section {
