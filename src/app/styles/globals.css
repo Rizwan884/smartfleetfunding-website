@@ -16,10 +16,8 @@
   --gray-transparent: #D9D9D92E;
 
 }
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: auto;
-  padding: auto;
+body{
+  font-family: 'Montserrat', sans-serif;
 }
 
 .dropdown-toggle::after {
@@ -310,6 +308,12 @@ span:hover {
 .fs-2rem {
   font-size: 2.1rem !important;
 }
+
+@media (max-width: 767px) {
+  .fs-2rem {
+    font-size: 1.4rem !important;
+  }
+}
 .fw-400 {
   font-weight: 400;
 }
@@ -363,7 +367,7 @@ span:hover {
 .banner-container-mobile{
   position: absolute;
   top: 30%;
-  transform: translate(8%, -76%);
+  transform: translate(10%, 20%);
   text-align: left;
 }
 /*-------------------------Cards------------------------------*/
@@ -707,6 +711,40 @@ span:hover {
   width: 6px;
   height: 6px;
   border-radius: 50%;
+}
+/*---------------Provider Mobile--------*/
+
+
+@media (max-width: 767px) {
+  #provider-carrusel .carousel-control-prev, .carousel-control-next{
+    width: 10%;
+  }
+  #provider-carrusel .carousel-control-next{
+    width: 10%;
+    top: -15px;
+  }
+  #provider-carrusel .carousel-control-prev-icon{
+    background-image: url("../../../public/images/sff-ttm-prev.svg");
+    width: 15%;
+  }
+  #provider-carrusel .carousel-control-next-icon{
+    background-image: url("../../../public/images/sff-ttm-next.svg");
+    width: 15%;
+  }
+  #provider-carrusel .carousel-indicators {
+    justify-content: center;
+    margin: auto;
+    margin-left: 0;
+  }
+  #provider-carrusel .carousel-indicators [data-bs-target] {
+    background-color:var(--white-gray);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+  #provider-carrusel .carousel-indicators .active{
+    background-color:var(--green);
+  }
 }
 /*-----------------Ideas Mobile---------------*/
 @media (min-width: 768px) {
