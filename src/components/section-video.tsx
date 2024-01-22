@@ -4,7 +4,7 @@ export default function SectionVideo() {
   return (
     <>
       {isMobile ? (
-        <div className="font-montserrat bg-white-rgb row pb-5">
+        <div className="font-montserrat bg-white-rgb pb-5">
           <div className="">
             <div className="text-left mt-5 p-5">
               <h2 className="fs-5 fw-bold  text-center">
@@ -25,9 +25,9 @@ export default function SectionVideo() {
               </div>
             </div>
           </div>
-          <div className=" embed-responsive embed-responsive-16by9 m-0 p-5 ">
+          <div className=" embed-responsive embed-responsive-16by9 m-0 p-5">
             <iframe
-              className="shadow embed-responsive-item 0 mb-5 pb-1 w-100 h-100 rounded-5"
+              className="shadow embed-responsive-item 0 mb-5 pb-1 w-100 h-100 h-280 rounded-5"
               src="https://www.youtube.com/embed/kGY6N9DL4Jw"
               allowFullScreen
             ></iframe>

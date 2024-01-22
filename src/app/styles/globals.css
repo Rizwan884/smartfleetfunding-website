@@ -16,8 +16,8 @@
   --gray-transparent: #D9D9D92E;
 
 }
-body{
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 .dropdown-toggle::after {
@@ -26,15 +26,15 @@ body{
 /*--------------------------------------------------------*/
 
 .text-dark-blue {
- color: var(--dark-blue) 
+  color: var(--dark-blue);
 }
 
 .text-green {
-  color: var(--green)
- }
+  color: var(--green);
+}
 
-.text-green:hover{
-  color: var(--green)
+.text-green:hover {
+  color: var(--green);
 }
 
 .text-gray-dark {
@@ -42,7 +42,7 @@ body{
 }
 
 .bg-green {
-  background-color: var(--green)
+  background-color: var(--green);
 }
 .bg-white-gray {
   background-color: var(--white-gray)
@@ -80,10 +80,13 @@ body{
   .w-md-2-line{
     width: 10% !important;
   }
-
 }
 
-.w-3{
+.h-280 {
+  height: 280px !important;
+}
+
+.w-3 {
   width: 3%;
 }
 .w-18rem {
@@ -360,7 +363,7 @@ span:hover {
 /*-------------------------Sections Mobile------------------*/
 .slider-container-mobile {
   position: absolute;
-  top: 20%;
+  top: 40%;
   transform: translate(0%, -20%);
   text-align: left;
 }
@@ -544,7 +547,8 @@ span:hover {
 /*-------------------------CardsInfo-mobile------------------------*/
 .body-list-mobile {
   min-height: 100%;
-  max-height: 100px;
+  min-width: 280px;
+  max-height: 110px;
   display: flex;
   flex-direction: column;
   background: var(--dark-blue);
