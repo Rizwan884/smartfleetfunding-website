@@ -104,6 +104,7 @@ export default function Instapay() {
         hideIcons={true}
         title={title}
         backgroundImage="images/sff-instapay.jpg"
+        mobileBackgroundImage="images/sff-instapay-mobile.jpg"
       />
       <Welcome />
       <Steps />
