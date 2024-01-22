@@ -99,8 +99,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   objectFit: "cover",
                 }}
                 alt="form"
-                layout="fill"
-                objectFit="cover"
+                fill
               ></Image>
             </div>
           </div>
