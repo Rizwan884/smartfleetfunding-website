@@ -72,13 +72,13 @@ export default function SFFNavbar() {
                 <div className="d-flex flex-column align-items-start gap-2 ">
                   <NavDropdown.Item
                     className="text-start text-dark"
-                    href="/full-fact.html"
+                    href="/full-fact"
                   >
                     Full Fact
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className="text-start text-dark"
-                    href="/instapay.html"
+                    href="/instapay"
                   >
                     Instapay
                   </NavDropdown.Item>
@@ -87,7 +87,7 @@ export default function SFFNavbar() {
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className="text-start text-dark"
-                    href="/freight-broker-program.html"
+                    href="/freight-broker-program"
                   >
                     Freight Broker
                   </NavDropdown.Item>
@@ -96,14 +96,14 @@ export default function SFFNavbar() {
               <hr className="text-dark m-0" />
               <Nav.Link
                 className="text-dark-blue px-3 py-4 fw-600 "
-                href="/faqs.html"
+                href="/faqs"
               >
                 FAQ
               </Nav.Link>
               <hr className="text-dark m-0" />
               <Nav.Link
                 className="text-dark-blue px-3 py-4 fw-600 "
-                href="/about.html"
+                href="/about"
               >
                 ABOUT US
               </Nav.Link>
@@ -117,7 +117,7 @@ export default function SFFNavbar() {
               <hr className="text-dark m-0" />
               <Nav.Link
                 className="text-dark-blue px-3 py-4 fw-600 "
-                href="/contact.html"
+                href="/contact"
               >
                 CONTACT
               </Nav.Link>
