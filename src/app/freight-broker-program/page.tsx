@@ -28,6 +28,7 @@ export default function Freight() {
         title={title}
         hideIcons
         backgroundImage="images/sff-freight.jpg"
+        mobileBackgroundImage="images/sff-freight-mobile.jpg"
       />
       <Needs />
       <Programs />

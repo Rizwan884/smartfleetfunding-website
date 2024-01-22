@@ -5,26 +5,26 @@ export default function FormInstapay() {
     <>
       <div className=" mt-6 font-montserrat fi-img">
         <div className="pt-5 px-5">
-          <h1 className="fw-600 fs-2 text-left fst-italic text-dark-blue w-65">
+          <h1 className="fw-600 fs-2 text-center text-md-start fst-italic text-dark-blue w-100 w-md-65">
             Contact us today and let{"'"}s get you on the road to faster, more
             secure payments with Instapay.
           </h1>
         </div>
         <div className="d-flex">
           {" "}
-          <div className="w-50 text-white">
+          <div className="h-100 w-50 w-md-100 text-white">
             <form
               action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
               method="POST"
               id="form-instapay"
-              className="m-5"
+              className="mx-5 my-5 m-md-5"
               target="#"
             >
-              <div className="row mb-3 ">
+              <div className="row mb-3 flex-md-row flex-column ">
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control px-3 bg-grey-transparent text-white"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-white"
                     id="fullname"
                     name="name"
                     placeholder="Full Name"
@@ -40,11 +40,11 @@ export default function FormInstapay() {
                   ></input>
                 </div>
               </div>
-              <div className="row mb-3">
+              <div className="row mb-3 flex-md-row flex-column">
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control px-3 bg-grey-transparent text-white"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-white"
                     id="fullcompany"
                     name="company"
                     placeholder="Company Name"
@@ -60,8 +60,8 @@ export default function FormInstapay() {
                   ></input>
                 </div>
               </div>
-              <div className="row mb-3 ">
-                <div className="col-6">
+              <div className="row mb-3 flex-md-row flex-column ">
+                <div className="col-12 col-md-6">
                   <input
                     type="text"
                     className="form-control px-3 bg-grey-transparent text-white"
@@ -71,7 +71,7 @@ export default function FormInstapay() {
                   ></input>
                 </div>
               </div>
-              <div className="mb-3">
+              <div className="mb-3 ">
                 <textarea
                   className="form-control bg-grey-transparent text-white"
                   id="comments"
@@ -80,8 +80,8 @@ export default function FormInstapay() {
                   placeholder="Comments"
                 ></textarea>
               </div>
-              <div>
-                <button id="btn-insta" type="submit" className="btn fw-600">
+              <div className="text-end text-md-start">
+                <button id="btn-insta" type="submit" className="btn fw-600 ">
                   SEND
                 </button>
               </div>
