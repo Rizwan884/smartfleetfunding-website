@@ -20,17 +20,17 @@ export default function Steps() {
     <>
       <section className="py-5 bg-white-shadow font-montserrat">
         <Container>
-          <h1 className="fw-600 fs-2 mb-0 mx-4">How it works</h1>
+          <h1 className="fw-bold fs-2 mb-0 mx-4">How it works</h1>
           <div className="line mt-0 mb-6 mx-4 mt-1 w-3"></div>
-          <Row className="d-flex flex-column m-5">
+          <Row className="d-flex flex-column m-5 m-3rem">
             {steps.map((step, index) => (
               <div className="step-container" key={index}>
                 <div className="step-number position-relative">
                   {index + 1}{" "}
                 </div>
-                <div className="step-content fs-5">
+                <div className="lh-sm step-content fs-5">
                   <h3 className="fw-bold">{step.title}</h3>
-                  <p>{step.text}</p>
+                  <p className="fs-5">{step.text}</p>
                 </div>
               </div>
             ))}

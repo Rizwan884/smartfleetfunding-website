@@ -26,9 +26,9 @@ export default function SectionAccordion({
     <div className="container font-montserrat pt-5 pt-md-2">
       <Accordion className="accordion-mp" defaultActiveKey="0">
         {headTitle && (
-          <h2 className="fw-600 mb-5 ">
+          <h2 className="fw-bold mb-5 ">
             {headTitle}
-            <div className="line" style={{ width: "2.6%" }}></div>
+            <div className="line w-md-2-line" style={{ width: "2.6%" }}></div>
           </h2>
         )}
 

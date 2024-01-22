@@ -30,11 +30,11 @@ export default function Banners({
           alt="banner"
         />
         {isMobile ? (
-          <div className="banner-container mt-n3 ms-n3">
+          <div className="banner-container mt-n2 ms-n2 w-75">
             <div className="mt-4 line"></div>
             {title && (
               <div>
-                <h1 className="text-start fw-light fs-1 mt-1 text-white font-montserrat">
+                <h1 className="text-start fw-light fs-1 mt-2 text-white font-montserrat">
                   {title}
                 </h1>
               </div>
