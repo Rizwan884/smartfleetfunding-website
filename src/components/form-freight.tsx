@@ -98,8 +98,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                 objectFit: "cover",
               }}
               alt="form"
-              layout="fill"
-              objectFit="cover"
+              fill
             ></Image>
           </div>
         </div>
