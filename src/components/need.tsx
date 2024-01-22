@@ -1,18 +1,19 @@
 import { Card, Col, Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
+
 export default function Needs() {
   return (
     <>
       <div className="container mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
-          <h1 className="fw-600 fs-2 text-center  flex  align-items-center gap-3">
+          <h1 className="fw-600 fs-2 text-center  text-dark-blue flex  align-items-center gap-3">
             What you need
           </h1>
         </div>
       </div>
       <div className="card-container font-montserrat mt-5 h-100 flex-column w-100">
-        <div className="row mb-3">
+        <div className="row mx-0 px-0 px-md-auto mx-md-auto mb-3 justify-content-center  gap-3 gap-md-auto">
           <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start">
               <Image
@@ -52,9 +53,8 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-        </div>
-        <div className="row ">
-          <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
+
+          <Card className="mx-3 d-lg-none w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -67,7 +67,7 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 d-lg-none w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start">
               <Image
                 alt="icons"
@@ -80,7 +80,48 @@ export default function Needs() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mx-3 w-18rem bg-dark-blue text-white h-100">
+          <Card className="mx-3 d-lg-none w-18rem bg-dark-blue text-white h-100">
+            <Card.Body className="text-start w-100">
+              <Image
+                alt="icons"
+                src="images/sff-fb-check.svg"
+                className="mb-4 w-30px"
+              ></Image>
+              <Card.Text className="fs-5 lh-sm mt-3">
+                <strong className="text-green">Strengthen</strong> <br />
+                partnerships
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
+        <div className="row mx-0 px-0 px-md-auto mx-md-auto justify-content-center gap-3 gap-md-auto   ">
+          <Card className="mx-3 d-md-block d-none w-18rem bg-dark-blue text-white h-100">
+            <Card.Body className="text-start">
+              <Image
+                alt="icons"
+                src="images/sff-fb-check.svg"
+                className="w-30px mb-4"
+              ></Image>
+              <Card.Text className="fs-5 lh-sm mt-3">
+                <strong className="text-green"> Access</strong> to immediate
+                capital
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="mx-3 d-md-block d-none  w-18rem bg-dark-blue text-white h-100">
+            <Card.Body className="text-start">
+              <Image
+                alt="icons"
+                src="images/sff-fb-check.svg"
+                className="w-30px mb-4"
+              ></Image>
+              <Card.Text className="fs-5 lh-sm mt-3">
+                <strong className="text-green">Accelerate accounts</strong>{" "}
+                receivable cycle
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className="mx-3 d-md-block d-none w-18rem bg-dark-blue text-white h-100">
             <Card.Body className="text-start w-100">
               <Image
                 alt="icons"
@@ -97,7 +138,7 @@ export default function Needs() {
       </div>
       <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
-          <h1 className="f-500 pb-5 fs-2rem text-center align-items-center gap-3">
+          <h1 className="f-500 pb-5 fs-2rem  text-center align-items-center gap-3  text-dark-blue">
             What if you had more free time <br /> to{" "}
             <strong className="text-dark-blue f-bold">
               get more clients and carriers?

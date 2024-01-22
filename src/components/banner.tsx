@@ -30,9 +30,51 @@ export default function Banners({
           fluid
           alt="banner"
         />
-
         {isMobile ? (
-          <div className=" banner-container mt-n2">
+          <div className=" banner-container-mobile">
+            {hideIcons ? (
+              <div
+                className="d-none d-md-block"
+                style={{ height: 88, width: 497 }}
+              >
+                {" "}
+              </div>
+            ) : (
+              <div className="d-flex gap-1 ">
+                <div>
+                  <Image
+                    alt="icons"
+                    className="h-75"
+                    src="images/sff-ff-food.svg"
+                  ></Image>
+                </div>
+                <div>
+                  {" "}
+                  <Image
+                    alt="icons"
+                    className="h-75"
+                    src="images/sff-ff-tea.svg"
+                  ></Image>
+                </div>
+                <div>
+                  {" "}
+                  <Image
+                    alt="icons"
+                    className="h-75"
+                    src="images/sff-ff-gift.svg"
+                  ></Image>
+                </div>
+                <div>
+                  {" "}
+                  <Image
+                    alt="icons"
+                    className="h-75"
+                    src="images/sff-ff-gasoline.svg"
+                  ></Image>
+                </div>
+              </div>
+            )}
+
             <div className="mt-4 line"></div>
             {title && (
               <div>
@@ -45,7 +87,7 @@ export default function Banners({
         ) : (
           <div className=" banner-container mx-4">
             {hideIcons ? (
-              <div style={{ height: 88, width: -497 }}> </div>
+              <div style={{ height: 88, width: 497 }}> </div>
             ) : (
               <div className="d-flex gap-3">
                 <div>

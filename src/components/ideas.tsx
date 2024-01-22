@@ -3,15 +3,15 @@ import Image from "react-bootstrap/Image";
 const carouselIdea = {
   backgroundSize: "cover",
   backgroundPosition: "center center",
-  height: "400px", // Ajusta la altura según tus necesidades
+  height: "400px",
   position: "relative" as "relative",
 };
 export default function Ideas() {
   return (
     <>
-      <div className="container font-montserrat mt-5 mb-5 ">
+      <div className="container font-montserrat mt-5 mb-5 text-center text-md-start ">
         <h2 className="fw-600 ">PREMIUM FACTORING SERVICES</h2>
-        <p className="fw-500 fs-5">
+        <p className="fw-500 fs-5 pt-3">
           Same day payment* with preferential rates and personalized service,
           <strong> no penalty clauses or minimum amount.</strong>
         </p>
@@ -28,7 +28,7 @@ export default function Ideas() {
             }}
           >
             <div className="mt-5 mx-4">
-              <h1 className="text-start fs-3 fw-600 ms-4">
+              <h1 className="text-start fs-3 fw-600 ms-4 d-none d-sm-block">
                 Does this sound familiar to you?
                 <div
                   className="line"
@@ -61,7 +61,7 @@ export default function Ideas() {
             }}
           >
             <div className="mt-5 mx-4">
-              <h1 className="text-start fs-3 fw-600 ms-4">
+              <h1 className="text-start fs-3 fw-600 ms-4 d-none d-sm-block">
                 Does this sound familiar to you?
                 <div
                   className="line"
@@ -95,7 +95,7 @@ export default function Ideas() {
             }}
           >
             <div className="mt-5 mx-4">
-              <h1 className="text-start fs-2 fw-600 ms-4">
+              <h1 className="text-start fs-2 fw-600 ms-4 d-none d-sm-block">
                 Does this sound familiar to you?
                 <div
                   className="line"
@@ -129,7 +129,7 @@ export default function Ideas() {
             }}
           >
             <div className="mt-5 mx-4">
-              <h1 className="text-start fs-2 fw-600 ms-4">
+              <h1 className="text-start fs-2 fw-600 ms-4 d-none d-sm-block">
                 Does this sound familiar to you?
                 <div
                   className="line"
@@ -147,7 +147,7 @@ export default function Ideas() {
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-4 fw-400">
-                “<strong> I feel frustrated </strong> because some clients{" "}
+                “<strong>I feel frustrated </strong> because some clients{" "}
                 <strong>do not pay on time</strong> <br />
                 and I need immediate cashflow to operate.
               </h2>
@@ -161,7 +161,7 @@ export default function Ideas() {
             }}
           >
             <div className="mt-5 mx-4">
-              <h1 className="text-start fs-2 fw-600 ms-4">
+              <h1 className="text-start fs-2 fw-600 ms-4 d-none d-sm-block">
                 Does this sound familiar to you?
                 <div
                   className="line"
@@ -179,7 +179,7 @@ export default function Ideas() {
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-4 fw-400">
-                “ I don{"'"}t understand{" "}
+                “I don{"'"}t understand{" "}
                 <strong>what my factor charges me</strong> <br /> and all these
                 hidden costs.
               </h2>
