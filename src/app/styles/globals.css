@@ -10,10 +10,11 @@
   --white-gray-shadow: #f3f3f3;
   --green: #02dd68;
   --dark-green: #2b9958;
-  --gray: #4d4d4d;
-  --gray-dark: #3f3e3e;
-  --gray-white: #f3f3f380;
-  --gray-transparent: #d9d9d92e;
+  --gray: #4D4D4D;
+  --gray-dark: #3F3E3E;
+  --gray-white: #F3F3F380;
+  --gray-transparent: #D9D9D92E;
+
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -27,15 +28,15 @@ body {
 /*--------------------------------------------------------*/
 
 .text-dark-blue {
-  color: var(--dark-blue);
+ color: var(--dark-blue) 
 }
 
 .text-green {
-  color: var(--green);
-}
+  color: var(--green)
+ }
 
-.text-green:hover {
-  color: var(--green);
+.text-green:hover{
+  color: var(--green)
 }
 
 .text-gray-dark {
@@ -43,28 +44,28 @@ body {
 }
 
 .bg-green {
-  background-color: var(--green);
+  background-color: var(--green)
 }
 .bg-white-gray {
-  background-color: var(--white-gray);
+  background-color: var(--white-gray)
 }
 .bg-white-rgb {
-  background-color: var(--white-gray-rgb);
+  background-color: var(--white-gray-rgb)
 }
 .bg-dark-blue {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-blue)
 }
 .bg-grey {
-  background-color: var(--gray-white);
+  background-color: var(--gray-white)
 }
 .bg-grey-transparent {
-  background-color: var(--gray-transparent);
+  background-color: var(--gray-transparent)
 }
 .bg-white-shadow {
-  background-color: var(--white-gray-shadow);
+  background-color: var(--white-gray-shadow)
 }
 .bg-img {
-  background-image: url("../../../public/images/background.jpg");
+  background-image: url("../../../public/images/background.jpg")
 }
 .w-3 {
   width: 3%;
@@ -160,10 +161,68 @@ body {
 
 /*-------------------------NavBar-------------------------------*/
 .nv-image {
+@media (max-width: 767px) {
+  .dropdown-menu {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .dropdown-item {
+    padding: 0px !important;
+    padding-left: 7px !important;
+  }
+}
+img {
+  transition: transform ease-in-out 0.2s;
+  -webkit-transition: transform ease-in-out 0.2s;
+  -moz-transition: transform ease-in-out 0.2s;
+  -ms-transition: transform ease-in-out 0.2s;
+  -o-transition: transform ease-in-out 0.2s;
+}
+.show > img {
+  transform: rotate(180deg);
+  transition: all ease-in 0.2s;
+  -webkit-transition: all ease-in 0.2s;
+  -moz-transition: all ease-in 0.2s;
+  -ms-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+}
+.navbar-toggler span {
+  transform: rotate(270deg);
+  transition: all ease-in 0.2s;
+  -webkit-transition: all ease-in 0.2s;
+  -moz-transition: all ease-in 0.2s;
+  -ms-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+}
+.collapsed span {
+  transform: rotate(180deg);
+  transition: all ease-in 0.2s;
+  -webkit-transition: all ease-in 0.2s;
+  -moz-transition: all ease-in 0.2s;
+  -ms-transition: all ease-in 0.2s;
+  -o-transition: all ease-in 0.2s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.nv-image {
   background-image: url("/public/images/sff-navbar-bg.jpg");
 }
 #basic-nav-dropdown {
   min-width: 1rem;
+  border: none !important;
+}
+
+@media (max-width: 767px) {
+  .nav-item-nav .dropdown-menu {
+    border: none !important;
+    background-color: transparent;
+  }
 }
 .nav-link.active,
 .nav-link:hover,
@@ -183,7 +242,7 @@ span:hover {
 }
 .dropdown-item:hover {
   color: var(--green) !important;
-  background: var(--dark-blue);
+  background: var(--dark-blue)
 }
 .fi-img {
   background-image: url("../../../public/images/sff-form-instapay.jpg");
@@ -204,6 +263,16 @@ span:hover {
 #bottom-footer:hover {
   background-color: var(--green);
   color: var(--dark-blue);
+}
+/*-------------------------*/
+@media (max-width: 767px) {
+  .dropdown-menu {
+    width: 35%;
+    margin-left: 65%;
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 var(--gray-transparent);
+  }
 }
 /*-------------------------Fonts------------------------------*/
 .font-montserrat {
@@ -888,6 +957,7 @@ input[type="radio"]:checked ~ label {
 .line-contact {
   border-bottom: 1px solid var(--dark-blue);
 }
+
 @media (max-width: 767px) {
   .mp-contact {
     margin-top: -10rem;
