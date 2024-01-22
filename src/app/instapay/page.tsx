@@ -13,7 +13,7 @@ import SectionAccordion from "@/components/section-accordion";
 
 export default function Instapay() {
   const title = (
-    <p className="w-75">
+    <p>
       Fast, Easy and <strong className="fw-bold">Secure Payment</strong>
     </p>
   );
