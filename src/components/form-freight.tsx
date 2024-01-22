@@ -93,7 +93,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
           <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
             <Image
               className="position-relative"
-              src={backgroundImage ? backgroundImage : ""}
+              src={`${backgroundImage ? backgroundImage : ""}`}
               style={{
                 objectFit: "cover",
               }}

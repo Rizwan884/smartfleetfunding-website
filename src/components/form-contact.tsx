@@ -11,7 +11,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         <div className=" md-w-60  w-100">
           <div className="position-relative h-100">
             <Image
-              src={` ${backgroundImage ? backgroundImage : ""}`}
+              src={`${backgroundImage || ""}`}
               style={{ objectFit: "cover" }}
               alt="form"
               fill
