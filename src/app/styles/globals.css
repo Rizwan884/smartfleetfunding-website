@@ -180,16 +180,16 @@ body {
 
 /*-------------------------NavBar-------------------------------*/
 .nv-image {
-@media (max-width: 767px) {
-  .dropdown-menu {
-    width: 100% !important;
-    margin-left: 0px !important;
+  @media (max-width: 767px) {
+    .dropdown-menu {
+      width: 100% !important;
+      margin-left: 0 !important;
+    }
+    .dropdown-item {
+      padding: 0 !important;
+      padding-left: 7px !important;
+    }
   }
-  .dropdown-item {
-    padding: 0px !important;
-    padding-left: 7px !important;
-  }
-}
 }
 
 img {
