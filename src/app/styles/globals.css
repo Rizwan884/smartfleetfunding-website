@@ -294,8 +294,7 @@ span:hover {
 /*-------------------------*/
 @media (max-width: 767px) {
   .dropdown-menu {
-    width: 35%;
-    margin-left: 65%;
+    width: 100%;
   }
   .navbar-toggler:focus {
     box-shadow: 0 0 0 var(--gray-transparent);

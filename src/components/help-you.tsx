@@ -1,7 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import Dropdown from 'react-bootstrap/Dropdown';
-
+import Dropdown from "react-bootstrap/Dropdown";
 
 export default function HelpYou() {
   return (
@@ -19,7 +18,7 @@ export default function HelpYou() {
             ></Image>
           </Row>
         </div>
-        <div className="row">
+        <div className="row pb-5">
           <div className="col-6 d-flex  justify-content-end h-100">
             {" "}
             <div className="card w-20rem me-5 d-md-block d-none">
@@ -72,57 +71,65 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
-
             <Dropdown className=" row  mx-3 flex-column d-lg-none ">
               <Dropdown.Toggle variant="light" id="dropdown-basic">
-              <h5 className="card-title fs-6 text-start fw-bold">
+                <h5 className="card-title fs-6 text-start fw-bold">
                   On Attraction & <br /> Retention
                 </h5>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                  <Image
-                    width={20}
-                    height={20}
-                    className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
-                    alt="testimonial-img"
-                  ></Image>
-                  <div>
-                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                      Becoming <br /> more <br /> attractive to <br /> carriers.
-                    </p>
+                <Dropdown.Item href="#/action-1">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                    <Image
+                      width={20}
+                      height={20}
+                      className="mt-14"
+                      src="images/sff-fb-arrow-right.svg"
+                      alt="testimonial-img"
+                    ></Image>
+                    <div>
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                        Becoming <br /> more <br /> attractive to <br />{" "}
+                        carriers.
+                      </p>
+                    </div>
                   </div>
-                </div></Dropdown.Item>
-                <Dropdown.Item href="#/action-2"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                  <Image
-                    width={20}
-                    height={20}
-                    className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
-                    alt="testimonial-img"
-                  ></Image>
-                  <div>
-                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                    Carriers <br /> won’t worry <br /> about their <br /> cash flow <br /> to operate.
-                    </p>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-2">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                    <Image
+                      width={20}
+                      height={20}
+                      className="mt-14"
+                      src="images/sff-fb-arrow-right.svg"
+                      alt="testimonial-img"
+                    ></Image>
+                    <div>
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                        Carriers <br /> won’t worry <br /> about their <br />{" "}
+                        cash flow <br /> to operate.
+                      </p>
+                    </div>
                   </div>
-                </div></Dropdown.Item>
-                <Dropdown.Item href="#/action-3"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                  <Image
-                    width={20}
-                    height={20}
-                    className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
-                    alt="testimonial-img"
-                  ></Image>
-                  <div>
-                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                    Carriers <br /> won’t need <br /> to make <br /> collection <br /> calls.
-                    </p>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-3">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                    <Image
+                      width={20}
+                      height={20}
+                      className="mt-14"
+                      src="images/sff-fb-arrow-right.svg"
+                      alt="testimonial-img"
+                    ></Image>
+                    <div>
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                        Carriers <br /> won’t need <br /> to make <br />{" "}
+                        collection <br /> calls.
+                      </p>
+                    </div>
                   </div>
-                </div></Dropdown.Item>
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
@@ -194,72 +201,81 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
-           
-            <Dropdown className=" row  mx-4 flex-column ml-4 d-lg-none " >
+            <Dropdown className=" row  mx-4 flex-column ml-4 d-lg-none ">
               <Dropdown.Toggle variant="light" id="dropdown-basic">
-              <h5 className="card-title fs-6 text-start fw-bold">
-              Handling AR/AP <br /> Needs
+                <h5 className="card-title fs-6 text-start fw-bold">
+                  Handling AR/AP <br /> Needs
                 </h5>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                  <Image
-                    width={20}
-                    height={20}
-                    className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
-                    alt="testimonial-img"
-                  ></Image>
-                  <div>
-                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                    Receiving <br /> collection <br /> calls from <br /> carriers and <br /> other debt <br />
-                      collectors.
-                    </p>
+                <Dropdown.Item href="#/action-1">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                    <Image
+                      width={20}
+                      height={20}
+                      className="mt-14"
+                      src="images/sff-fb-arrow-right.svg"
+                      alt="testimonial-img"
+                    ></Image>
+                    <div>
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                        Receiving <br /> collection <br /> calls from <br />{" "}
+                        carriers and <br /> other debt <br />
+                        collectors.
+                      </p>
+                    </div>
                   </div>
-                </div></Dropdown.Item>
-                <Dropdown.Item href="#/action-2"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                  <Image
-                    width={20}
-                    height={20}
-                    className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
-                    alt="testimonial-img"
-                  ></Image>
-                  <div>
-                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                    Making <br /> collection <br /> calls to <br /> clients.
-                    </p>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-2">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                    <Image
+                      width={20}
+                      height={20}
+                      className="mt-14"
+                      src="images/sff-fb-arrow-right.svg"
+                      alt="testimonial-img"
+                    ></Image>
+                    <div>
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                        Making <br /> collection <br /> calls to <br /> clients.
+                      </p>
+                    </div>
                   </div>
-                </div></Dropdown.Item>
-                <Dropdown.Item href="#/action-3"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                  <Image
-                    width={20}
-                    height={20}
-                    className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
-                    alt="testimonial-img"
-                  ></Image>
-                  <div>
-                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                    Handling <br /> AR/AP <br /> documentati <br /> on.
-                    </p>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-3">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                    <Image
+                      width={20}
+                      height={20}
+                      className="mt-14"
+                      src="images/sff-fb-arrow-right.svg"
+                      alt="testimonial-img"
+                    ></Image>
+                    <div>
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                        Handling <br /> AR/AP <br /> documentati <br /> on.
+                      </p>
+                    </div>
                   </div>
-                </div></Dropdown.Item>
-                <Dropdown.Item href="#/action-3"><div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                  <Image
-                    width={20}
-                    height={20}
-                    className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
-                    alt="testimonial-img"
-                  ></Image>
-                  <div>
-                    <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                    Stay on top <br /> of the <br /> company’s <br /> cash flow.
-                    </p>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-3">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                    <Image
+                      width={20}
+                      height={20}
+                      className="mt-14"
+                      src="images/sff-fb-arrow-right.svg"
+                      alt="testimonial-img"
+                    ></Image>
+                    <div>
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                        Stay on top <br /> of the <br /> company’s <br /> cash
+                        flow.
+                      </p>
+                    </div>
                   </div>
-                </div></Dropdown.Item>
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
