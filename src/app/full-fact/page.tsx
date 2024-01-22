@@ -71,10 +71,7 @@ export default function fullFact() {
       />
       <Ideas />
       <Help />
-      <SectionForm
-        titleForm={titleForm}
-        backgroundImage="images/sff-forms.jpg"
-      />
+      <SectionForm titleForm={titleForm} />
       <TestimonialCarousel />
       <SectionAccordion
         items={accordionItems}
