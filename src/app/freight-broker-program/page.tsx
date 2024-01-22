@@ -34,10 +34,7 @@ export default function Freight() {
       <Programs />
       <Provides />
       <HelpYou />
-      <FormFreight
-        titleForm={titleForm}
-        backgroundImage="images/sff-form-freight.jpg"
-      />
+      <FormFreight titleForm={titleForm} />
       <Footer />
     </>
   );
