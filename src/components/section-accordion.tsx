@@ -26,14 +26,29 @@ export default function SectionAccordion({
     <div className="container font-montserrat pt-5 pt-md-2">
       <Accordion className="accordion-mp" defaultActiveKey="0">
         {headTitle && (
-          <h2 className="fw-bold mb-5 ">
+          <h2 className="px-3 fw-bold mb-5 ">
             {headTitle}
             <div className="line w-md-2-line" style={{ width: "2.6%" }}></div>
           </h2>
         )}
+        <div className="px-3 d-flex flex-md-row mb-6 flex d-md-none d-block column-reverse w-100  h-75">
+          <input
+            className="form-control me-2"
+            type="search"
+            placeholder="..."
+            aria-label="Search"
+          ></input>
+          <button className="btn bg-green text-dark-blue fw-bold" type="submit">
+            Buscar
+          </button>
+        </div>
 
         {items.map((item, key) => (
-          <Accordion.Item key={key} eventKey={item.eventKey.toString()}>
+          <Accordion.Item
+            className="py-2"
+            key={key}
+            eventKey={item.eventKey.toString()}
+          >
             <Accordion.Header className="fw-bold">
               {showIcons && (
                 <Image
@@ -44,7 +59,7 @@ export default function SectionAccordion({
                   style={{ marginRight: "15px" }}
                 ></Image>
               )}
-              {item.title}
+              <div id="title-mobile">{item.title}</div>
             </Accordion.Header>
             <Accordion.Body>{item.description}</Accordion.Body>
           </Accordion.Item>

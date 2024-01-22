@@ -3,15 +3,15 @@ import Image from "next/image";
 export default function Search() {
   return (
     <>
-      <div className="p-4rem mb-50 bg-search ">
-        <div className="d-flex flex-row  font-montserrat">
-          <div className="d-flex flex-column">
+      <div className="pt-5 px-4 px-md-5 pb-4 pb-md-5 mb-50 bg-search ">
+        <div className="d-flex flex-row  font-montserrat mt-3 ms-1 m-md-3">
+          <div className="d-flex flex-column ">
             <div className="line width-bf fw-600 mb-2 ms-1 align-item-center"></div>
-            <h1 className="fw-600 fs-2 text-left  flex  align-items-left gap-3">
+            <h1 className="fw-bold fs-2 text-left  flex  align-items-left gap-3">
               FAQ
             </h1>
           </div>
-          <div className="d-flex ms-auto h-75">
+          <div className="d-flex flex-md-row  flex d-md-flex d-none column-reverse   ms-auto h-75">
             <input
               className="form-control me-2"
               type="search"
