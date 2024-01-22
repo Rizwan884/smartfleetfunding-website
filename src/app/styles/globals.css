@@ -346,6 +346,12 @@ span:hover {
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .banner-container {
+    top: 75%;
+    left: 5%;
+  }
+}
 .gray-section {
   flex: 1;
   background-color: #dddddd; /* Color gris de fondo */

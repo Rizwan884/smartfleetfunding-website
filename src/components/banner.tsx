@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import { useMediaQuery } from "react-responsive";
+
 type IProps = {
   title?: JSX.Element;
   backgroundImage?: string;
