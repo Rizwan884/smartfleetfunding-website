@@ -28,7 +28,7 @@ export default function SectionVideo() {
           <div className=" embed-responsive embed-responsive-16by9 m-0 p-5">
             <iframe
               className="shadow embed-responsive-item 0 mb-5 pb-1 w-100 h-100 h-280 rounded-5"
-              src="https://www.youtube.com/embed/kGY6N9DL4Jw"
+              src="https://www.youtube.com/embed/k2DVZun_AEY?si=wbtUsCmF9gatmdY9"
               allowFullScreen
             ></iframe>
           </div>
@@ -55,7 +55,7 @@ export default function SectionVideo() {
           <div className="col-5 embed-responsive embed-responsive-16by9  m-4 p-4 ">
             <iframe
               className="embed-responsive-item 0 mt-4 w-100 h-100 rounded-5"
-              src="https://www.youtube.com/embed/kGY6N9DL4Jw"
+              src="https://www.youtube.com/embed/k2DVZun_AEY?si=wbtUsCmF9gatmdY9"
               allowFullScreen
             ></iframe>
           </div>
