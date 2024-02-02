@@ -1,16 +1,16 @@
 "use client";
-import Image from "next/image";
-import styles from "../app/styles/page.module.css";
-
+import { useState } from "react";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-
-import SectionAccordion from "@/components/section-accordion";
-import Search from "@/components/search";
-import { useEffect } from "react";
-import { title } from "process";
+import FaqAccordion from "../../components/faq-accordion";
+import Search from "../../components/search";
 
 export default function Faqs() {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = (term: string) => {
+    setSearchTerm(term);
+  };
   const accordionInstaItems = [
     {
       title: "What is Freight Factoring?",
@@ -276,13 +276,15 @@ export default function Faqs() {
   return (
     <>
       <Navbar />
-      <Search />
-      <SectionAccordion
+      <Search onSearch={handleSearch} />
+      <FaqAccordion
         items={accordionInstaItems}
         headTitle="Some questions"
         showIcons
         width={16}
         height={28}
+        searchTerm={searchTerm}
+        onSearch={handleSearch}
       />
       <Footer />
     </>

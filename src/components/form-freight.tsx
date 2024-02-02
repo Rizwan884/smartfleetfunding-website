@@ -73,15 +73,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
-              <div>
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="language"
-                  name="language"
-                ></input>
-                <label className="form-check-label">Spanish</label>
-              </div>
+              <div></div>
 
               <button type="submit" className="btn fw-600">
                 SEND

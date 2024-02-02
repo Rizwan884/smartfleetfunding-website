@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import ScrollToTopButton from "../components/scroolTop";
-import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
 export default function Footer() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -34,17 +34,19 @@ export default function Footer() {
                 }
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item href="#">Full Fact</NavDropdown.Item>
-                <NavDropdown.Item href="#">Instapay</NavDropdown.Item>
-                <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
+                <NavDropdown.Item href="/full-fact">Full Fact</NavDropdown.Item>
+                <NavDropdown.Item href="/instapay">Instapay</NavDropdown.Item>
+                <NavDropdown.Item href="/freight-broker-program">
+                  Fuel Card
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#">Freight Broker</NavDropdown.Item>
               </NavDropdown>
               <hr className="w-93 m-0 mx-auto" />
-              <Nav.Link className="text-green fw-600" href="#faq">
+              <Nav.Link className="text-green fw-600" href="/faqs">
                 FAQ
               </Nav.Link>
               <hr className="w-93 m-0 mx-auto" />
-              <Nav.Link className="text-green fw-600" href="#aboutus">
+              <Nav.Link className="text-green fw-600" href="/about">
                 ABOUT US
               </Nav.Link>
               <hr className="w-93 m-0 mx-auto" />
@@ -52,19 +54,20 @@ export default function Footer() {
                 BLOG
               </Nav.Link>
               <hr className="w-93 m-0 mx-auto" />
-              <Nav.Link className="text-green fw-600" href="#contact">
+              <Nav.Link className="text-green fw-600" href="/contact">
                 CONTACT
               </Nav.Link>
             </Nav>
 
             <div className="d-flex">
               <div className="py-5 mx-3">
-                <button
+                <Button
+                  href="/contact"
                   id="bottom-footer"
                   className="btn bg-green text-dark-blue fw-600 mt-3"
                 >
                   CURIOUS TO LEARN MORE?
-                </button>
+                </Button>
               </div>
               <div className="text-center d-flex justify-content-center align-items-center w-50">
                 <Image
@@ -87,10 +90,13 @@ export default function Footer() {
             </p>
             <div
               className="d-flex position-absolute"
-              style={{ right: "34%", top: "-20px" }}
+              style={{ right: "28%", top: "-20px" }}
             >
               <div>
-                <a className="d-block h-full" href="#facebook">
+                <a
+                  className="d-block h-full"
+                  href="https://www.facebook.com/SmartFleetFunding/"
+                >
                   <Image
                     style={{ width: "55px" }}
                     src="images/sff-facebook.svg"
@@ -99,7 +105,10 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <a className="d-block h-full" href="#instagram">
+                <a
+                  className="d-block h-full"
+                  href="https://www.instagram.com/smartfleetfunding/"
+                >
                   <Image
                     style={{ width: "55px" }}
                     src="images/sff-instagram.svg"
@@ -108,10 +117,25 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <a className="d-block h-full" href="#linkedin">
+                <a
+                  className="d-block h-full"
+                  href="https://www.linkedin.com/company/smart-fleet-funding/"
+                >
                   <Image
                     style={{ width: "55px", height: "47px" }}
                     src="images/sff-linkedin.svg"
+                    alt="linkedin"
+                  />
+                </a>
+              </div>
+              <div>
+                <a
+                  className="d-block h-full"
+                  href="https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                >
+                  <Image
+                    style={{ width: "55px", height: "47px" }}
+                    src="images/sff-youtube.svg"
                     alt="linkedin"
                   />
                 </a>
@@ -130,7 +154,7 @@ export default function Footer() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav>
-                    <Nav.Link className="text-green fw-500" href="#home">
+                    <Nav.Link className="text-green fw-500" href="/">
                       HOME
                     </Nav.Link>
                     <NavDropdown
@@ -148,33 +172,38 @@ export default function Footer() {
                       }
                       id="basic-nav-dropdown"
                     >
-                      <NavDropdown.Item href="#">Full Fact</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Instapay</NavDropdown.Item>
+                      <NavDropdown.Item href="/full-fact">
+                        Full Fact
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="/instapay">
+                        Instapay
+                      </NavDropdown.Item>
                       <NavDropdown.Item href="#">Fuel Card</NavDropdown.Item>
-                      <NavDropdown.Item href="#">
+                      <NavDropdown.Item href="/freight-broker-program">
                         Freight Broker
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link className="text-green fw-500" href="#faq">
+                    <Nav.Link className="text-green fw-500" href="/faqs">
                       FAQ
                     </Nav.Link>
-                    <Nav.Link className="text-green fw-500" href="#aboutus">
+                    <Nav.Link className="text-green fw-500" href="/about">
                       ABOUT US
                     </Nav.Link>
                     <Nav.Link className="text-green fw-500" href="#blog">
                       BLOG
                     </Nav.Link>
-                    <Nav.Link className="text-green fw-500" href="#contact">
+                    <Nav.Link className="text-green fw-500" href="/contact">
                       CONTACT
                     </Nav.Link>
                   </Nav>
 
-                  <button
+                  <Button
+                    href="/contact"
                     id="bottom-footer"
                     className="btn bg-green text-dark-blue fw-600 ms-auto"
                   >
                     CURIOUS TO LEARN MORE?
-                  </button>
+                  </Button>
                 </Navbar.Collapse>
               </Container>
             </Navbar>
@@ -197,7 +226,7 @@ export default function Footer() {
               style={{ right: "66px", top: "-11px" }}
             >
               <div>
-                <a href="#facebook">
+                <a href="https://www.facebook.com/SmartFleetFunding/">
                   <Image
                     style={{ width: "40px" }}
                     src="images/sff-facebook.svg"
@@ -206,20 +235,32 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <a href="#instagram">
+                <a href="https://www.instagram.com/smartfleetfunding/">
                   <Image
-                    style={{ width: "40px" }}
+                    style={{ width: "39px" }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
                 </a>
               </div>
               <div>
-                <a href="#linkedin">
+                <a href="https://www.linkedin.com/company/smart-fleet-funding/">
                   <Image
                     style={{ width: "43px" }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
+                  />
+                </a>
+              </div>
+              <div>
+                <a
+                  className="d-block h-full"
+                  href="https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                >
+                  <Image
+                    style={{ width: "44px" }}
+                    src="images/sff-youtube.svg"
+                    alt="youtube"
                   />
                 </a>
               </div>

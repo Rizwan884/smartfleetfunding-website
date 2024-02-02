@@ -82,7 +82,7 @@ export default function Ideas() {
                 “I could get better rates{" "}
                 <strong className="mx-2">
                   <br />
-                  but penalty clauses or a contract makes it a difficult.
+                  but penalty clauses or a contract makes it a difficult.”
                 </strong>
               </h2>
             </div>
@@ -95,7 +95,7 @@ export default function Ideas() {
             }}
           >
             <div className="mt-5 mx-4">
-              <h1 className="text-start fs-2 fw-600 ms-4 d-none d-sm-block">
+              <h1 className="text-start fs-3 fw-600 ms-4 d-none d-sm-block">
                 Does this sound familiar to you?
                 <div
                   className="line"
@@ -112,11 +112,8 @@ export default function Ideas() {
                 style={{ width: "38px" }}
               ></Image>
               <div className="line-idea"></div>
-              <h2 className="mx-4 fs-4 fw-400">
-                “
-                <strong className="mx-2">
-                  I{"'"}m tired of collecting and paying bills
-                </strong>{" "}
+              <h2 className="mx-4 fs-3 fw-400">
+                “<strong>I{"'"}m tired of collecting and paying bills</strong>{" "}
                 <br /> to have cash flow.”
               </h2>
             </div>
@@ -146,10 +143,10 @@ export default function Ideas() {
                 style={{ width: "38px" }}
               ></Image>
               <div className="line-idea"></div>
-              <h2 className="mx-4 fs-4 fw-400">
+              <h2 className="mx-4 fs-3 fw-400">
                 “<strong>I feel frustrated </strong> because some clients{" "}
                 <strong>do not pay on time</strong> <br />
-                and I need immediate cashflow to operate.
+                and I need immediate cashflow to operate.”
               </h2>
             </div>
           </div>
@@ -178,10 +175,10 @@ export default function Ideas() {
                 style={{ width: "38px" }}
               ></Image>
               <div className="line-idea"></div>
-              <h2 className="mx-4 fs-4 fw-400">
+              <h2 className="mx-4 fs-3 fw-400">
                 “I don{"'"}t understand{" "}
                 <strong>what my factor charges me</strong> <br /> and all these
-                hidden costs.
+                hidden costs.”
               </h2>
             </div>
           </div>

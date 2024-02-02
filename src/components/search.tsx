@@ -1,32 +1,47 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-export default function Search() {
+import { useState, ChangeEvent } from "react";
+
+interface SearchProps {
+  onSearch: (term: string) => void;
+}
+
+export default function Search({ onSearch }: SearchProps) {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = () => {
+    onSearch(searchTerm.trim());
+  };
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value);
+  };
+
   return (
-    <>
-      <div className="pt-5 px-4 px-md-5 pb-4 pb-md-5 mb-50 bg-search ">
-        <div className="d-flex flex-row  font-montserrat mt-3 ms-1 m-md-3">
-          <div className="d-flex flex-column ">
-            <div className="line width-bf fw-600 mb-2 ms-1 align-item-center"></div>
-            <h1 className="fw-bold fs-2 text-left  flex  align-items-left gap-3">
-              FAQ
-            </h1>
-          </div>
-          <div className="d-flex flex-md-row  flex d-md-flex d-none column-reverse   ms-auto h-75">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="..."
-              aria-label="Search"
-            ></input>
-            <button
-              className="btn bg-green text-dark-blue fw-bold"
-              type="submit"
-            >
-              Buscar
-            </button>
-          </div>
+    <div className="pt-5 px-4 px-md-5 pb-4 pb-md-5 mb-50 bg-search">
+      <div className="d-flex flex-row font-montserrat mt-3 ms-1 m-md-3">
+        <div className="d-flex flex-column">
+          <div className="line width-bf fw-600 mb-2 ms-1 align-item-center"></div>
+          <h1 className="fw-bold fs-2 text-left flex align-items-left gap-3">
+            FAQ
+          </h1>
+        </div>
+        <div className="d-flex flex-md-row flex d-md-flex d-none column-reverse ms-auto h-75">
+          <input
+            className="form-control me-2"
+            type="search"
+            placeholder="..."
+            aria-label="Search"
+            value={searchTerm}
+            onChange={handleChange}
+          />
+          <button
+            className="btn bg-green text-dark-blue fw-bold"
+            type="button"
+            onClick={handleSearch}
+          >
+            Buscar
+          </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }

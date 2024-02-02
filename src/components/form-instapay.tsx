@@ -12,7 +12,7 @@ export default function FormInstapay() {
         </div>
         <div className="d-flex">
           {" "}
-          <div className="h-100 w-50 w-md-100 text-white">
+          <div className="h-100 w-50 w-md-100 text-dark-blue">
             <form
               action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
               method="POST"
@@ -24,7 +24,7 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-white"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
                     id="fullname"
                     name="name"
                     placeholder="Full Name"
@@ -33,7 +33,7 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="email"
-                    className="form-control px-3 bg-grey-transparent text-white"
+                    className="form-control px-3 bg-grey-transparent text-dark-blue"
                     id="fullemail"
                     name="email"
                     placeholder="Your E-Mail"
@@ -44,7 +44,7 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-white"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
                     id="fullcompany"
                     name="company"
                     placeholder="Company Name"
@@ -53,7 +53,7 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="number"
-                    className="form-control px-3 bg-grey-transparent text-white"
+                    className="form-control px-3 bg-grey-transparent text-dark-blue"
                     id="fullphone"
                     name="phone"
                     placeholder="Phone"
@@ -64,7 +64,7 @@ export default function FormInstapay() {
                 <div className="col-12 col-md-6">
                   <input
                     type="text"
-                    className="form-control px-3 bg-grey-transparent text-white"
+                    className="form-control px-3 bg-grey-transparent text-dark-blue"
                     id="freight"
                     name="freight"
                     placeholder="Freight broker"
@@ -73,7 +73,7 @@ export default function FormInstapay() {
               </div>
               <div className="mb-3 ">
                 <textarea
-                  className="form-control bg-grey-transparent text-white"
+                  className="form-control bg-grey-transparent text-dark-blue"
                   id="comments"
                   name="comments"
                   rows={3}
