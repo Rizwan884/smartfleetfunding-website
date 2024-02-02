@@ -27,16 +27,9 @@ export default function Provides() {
                       </h1>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                      <Image
-                        width={20}
-                        height={20}
-                        className="mt-40"
-                        src="images/sff-fb-arrow-right-blue.svg"
-                        alt="testimonial-img"
-                      ></Image>
                       <div>
-                        <p className="ms-2 mt-3 fs-5 fw-500">
-                          Instant access to your profits <br />
+                        <p className="ms-2 mt-3 fs-6 fw-500 w-100">
+                          Instant access to your profits{" "}
                           <strong className="fst-italic">
                             (Customer Invoice less Carrier Invoice.)
                           </strong>
@@ -44,47 +37,24 @@ export default function Provides() {
                       </div>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                      <Image
-                        width={20}
-                        height={20}
-                        className="mt-34"
-                        src="images/sff-fb-arrow-right-blue.svg"
-                        alt="testimonial-img"
-                      ></Image>
                       <div className="mt-2">
-                        <p className="ms-2 fs-5 fw-500">
-                          Peace of mind by streamlining <br /> your AP to
-                          carriers.
+                        <p className="ms-2 fs-6 fw-500 w-100">
+                          Peace of mind by streamlining your AP to carriers.
                         </p>
                       </div>
                     </div>
                     <div className="d-flex mb-1 lh-sm align-items-center gap-2 line-programs">
-                      <Image
-                        width={20}
-                        height={20}
-                        className="mt-34"
-                        src="images/sff-fb-arrow-right-blue.svg"
-                        alt="testimonial-img"
-                      ></Image>
                       <div className="mt-2">
-                        <p className="ms-2 fs-5 fw-500">
-                          Quick payment to your carriers <br /> (12 business
-                          hours.)
+                        <p className="ms-2 fs-6 fw-500 w-100">
+                          Quick payment to your carriers (12 business hours.)
                         </p>
                       </div>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2">
-                      <Image
-                        width={20}
-                        height={20}
-                        className="mt-40"
-                        src="images/sff-fb-arrow-right-blue.svg"
-                        alt="testimonial-img"
-                      ></Image>
                       <div className="">
-                        <p className="ms-2 mt-4 fs-5 fw-500 ">
-                          Time to focus on growing your <br /> business by
-                          letting us handle <br /> your accounts receivable.
+                        <p className="ms-2 mt-4 fs-6 fw-500 w-100">
+                          Time to focus on growing your business by letting us
+                          handle your accounts receivable.
                         </p>
                       </div>
                     </div>
@@ -101,44 +71,23 @@ export default function Provides() {
                       </h1>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                      <Image
-                        width={20}
-                        height={20}
-                        className="mt-14"
-                        src="images/sff-fb-arrow-right-blue.svg"
-                        alt="testimonial-img"
-                      ></Image>
                       <div>
-                        <p className="ms-2 mt-4 fs-5 fw-500">
+                        <p className="ms-2 mt-4 fs-6 fw-500 w-100">
                           Access to immediate capital for their cash flow needs.
                         </p>
                       </div>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                      <Image
-                        width={20}
-                        height={20}
-                        className="mt-50"
-                        src="images/sff-fb-arrow-right-blue.svg"
-                        alt="testimonial-img"
-                      ></Image>
                       <div className="mt-2">
-                        <p className="ms-2 fs-5 fw-500">
+                        <p className="ms-2 fs-6 fw-500 w-100">
                           Efficiency by taking away their burden of invoice
                           collection and follow ups.
                         </p>
                       </div>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2">
-                      <Image
-                        width={20}
-                        height={20}
-                        className="mt-94"
-                        src="images/sff-fb-arrow-right-blue.svg"
-                        alt="testimonial-img"
-                      ></Image>
                       <div className="mt-2">
-                        <p className="ms-2 fs-5 fw-500">
+                        <p className="ms-2 fs-6 fw-500 w-100">
                           Access to discounts and payment programs in key
                           suppliers because they work with you.
                         </p>
