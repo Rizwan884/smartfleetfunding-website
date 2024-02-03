@@ -14,7 +14,7 @@ import FormFreight from "@/components/form-freight";
 
 export default function Freight() {
   const title = (
-    <p>
+    <p className="font-montserrat text-dark-blue">
       Freight <strong className="fw-bold">Broker Program</strong>
     </p>
   );

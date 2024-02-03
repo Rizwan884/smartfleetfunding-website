@@ -35,6 +35,7 @@ export default function Slider() {
                 </h1>
                 <div className="mt-5">
                   <Button
+                    href="tel:+18302097589"
                     className="contact_slide fw-bold  my-4 h-25 d-inline-block"
                     variant="btn btn-custom"
                   >
@@ -56,6 +57,7 @@ export default function Slider() {
                   Your success, <strong>Our story</strong>
                 </h1>
                 <Button
+                  href="mailto:nluna@smartfleetfunding.com"
                   className="contact_slide fw-bold my-4 h-25 d-inline-block "
                   variant="btn btn-custom"
                 >
@@ -77,6 +79,7 @@ export default function Slider() {
                   <strong>success story</strong>
                 </h1>
                 <Button
+                  href="mailto:dbiojo@smartfleetfunding.com"
                   className="contact_slide fw-bold my-4 h-25 d-inline-block"
                   variant="btn btn-custom"
                 >
@@ -101,6 +104,7 @@ export default function Slider() {
                   <strong>with Smart Fleet Funding</strong>
                 </h1>
                 <Button
+                  href="tel:+18302097589"
                   className="contact_slide fw-bold  my-4 h-25 d-inline-block"
                   variant="btn btn-custom"
                 >
@@ -121,6 +125,7 @@ export default function Slider() {
                   Your success, <strong>Our story</strong>
                 </h1>
                 <Button
+                  href="mailto:nluna@smartfleetfunding.com"
                   className="contact_slide fw-bold my-4 h-25 d-inline-block "
                   variant="btn btn-custom"
                 >
@@ -142,6 +147,7 @@ export default function Slider() {
                   <strong>success story</strong>
                 </h1>
                 <Button
+                  href="mailto:dbiojo@smartfleetfunding.com"
                   className="contact_slide fw-bold my-4 h-25 d-inline-block"
                   variant="btn btn-custom"
                 >

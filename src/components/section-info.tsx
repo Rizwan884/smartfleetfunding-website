@@ -31,6 +31,7 @@ export default function ImgInfo() {
             </div>
 
             <Button
+              href="tel:+18888755506"
               className="contact_slide fw-bold px-4 my-4 h-25 d-inline-block"
               variant="btn btn-custom"
             >
@@ -58,6 +59,7 @@ export default function ImgInfo() {
             </div>
 
             <Button
+              href="tel:+18888755506"
               className="contact_slide fw-bold  my-4 h-25 d-inline-block"
               variant="btn btn-custom"
             >

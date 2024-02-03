@@ -8,7 +8,7 @@ export default function HelpYou() {
       <Container className="mt-6 pt-5 font-montserrat">
         <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">How we help you</h1>
         <div className="line mt-0 mx-4 mt-1 w-3"></div>
-        <div className="container d-flex flex-column pt-6">
+        <div className="container d-flex flex-column pt-5">
           <Row className="m-2">
             <Image
               alt="img"

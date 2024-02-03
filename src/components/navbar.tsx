@@ -10,8 +10,19 @@ export default function SFFNavbar() {
   return (
     <>
       <div className="font-montserrat text-left p-2 px-5 bg-green">
-        <a className="text-white" style={{ marginLeft: "4rem" }}>
-          Toll-Free: (888) 875-5506{" "}
+        <a
+          href="tel:+18888755506"
+          className="text-white"
+          style={{ marginLeft: "4rem" }}
+        >
+          Toll-Free: +1 (888) 875-5506{" "}
+        </a>
+        <a
+          href="https://wa.me/18302097589"
+          className="text-white"
+          style={{ marginLeft: "0.5rem" }}
+        >
+          WhatsApp: +1 (830) 209-7589{" "}
         </a>
       </div>
       <Navbar expand="lg" className="font-montserrat nv-image">

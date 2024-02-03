@@ -349,7 +349,6 @@ span:hover {
 
 @media (max-width: 767px) {
   .banner-container {
-    left: 5%;
     width: 80%;
   }
 }
@@ -371,7 +370,7 @@ span:hover {
 .slider-container-mobile {
   position: absolute;
   top: 40%;
-  transform: translate(0%, -20%);
+  transform: translate(-2%, -60%);
   text-align: left;
 }
 .banner-container-mobile{
@@ -1058,7 +1057,7 @@ input[type="radio"]:checked ~ label {
 }
 
 .p-contact {
-  padding-bottom: 24% !important;
+  padding-bottom: 22% !important;
 }
 
 .mp-contact {
@@ -1071,7 +1070,7 @@ input[type="radio"]:checked ~ label {
 
 @media (max-width: 767px) {
   .mp-contact {
-    margin-top: -10rem;
+    margin-top: -9rem;
     padding-bottom: 12px;
   }
 }
