@@ -93,7 +93,7 @@ export default function SFFNavbar() {
                   >
                     Instapay
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="text-start text-dark" href="#">
+                  <NavDropdown.Item className="text-start text-dark" href="/fuel-card">
                     Fuel Card
                   </NavDropdown.Item>
                   <NavDropdown.Item
