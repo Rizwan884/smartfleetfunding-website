@@ -4,26 +4,27 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
+import Link from "next/link";
 import { Span } from "next/dist/trace";
 
 export default function SFFNavbar() {
   return (
     <>
       <div className="font-montserrat text-left p-2 px-5 bg-green">
-        <a
+        <Link
           href="tel:+18888755506"
           className="text-white"
           style={{ marginLeft: "4rem" }}
         >
           Toll-Free: +1 (888) 875-5506{" "}
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://wa.me/18302097589"
           className="text-white"
           style={{ marginLeft: "0.5rem" }}
         >
           WhatsApp: +1 (830) 209-7589{" "}
-        </a>
+        </Link>
       </div>
       <Navbar expand="lg" className="font-montserrat nv-image">
         <Container>
@@ -93,7 +94,10 @@ export default function SFFNavbar() {
                   >
                     Instapay
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="text-start text-dark" href="/fuel-card">
+                  <NavDropdown.Item
+                    className="text-start text-dark"
+                    href="/fuel-card"
+                  >
                     Fuel Card
                   </NavDropdown.Item>
                   <NavDropdown.Item

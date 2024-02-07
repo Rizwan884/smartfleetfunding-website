@@ -34,7 +34,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     I{"'"}m considering applying for the Fuel Card
                   </option>
                   <option className="bg-dark-blue text-white" value="1">
-                    I{"'"}like more information about the Fuel Card
+                    I{"'"}d like more information about the Fuel Card
                   </option>
                   <option className="bg-dark-blue text-white" value="2">
                     I have questions about the Fuel Card
