@@ -26,13 +26,13 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
             <div className="row mb-3 flex-md-row flex-column">
               <div className="mb-3">
                 <select
-                  className="form-select "
+                  className="form-select  bg-grey-transparent text-white"
                   aria-label="Default select example"
-                >
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
+                > 
+                  <option className="bg-dark-blue text-white"  selected>Open this select menu</option>
+                  <option className="bg-dark-blue text-white" value="1">One</option>
+                  <option className="bg-dark-blue text-white" value="2">Two</option>
+                  <option className=" bg-dark-blue  text-white" value="3">Three</option>
                 </select>
                 {/* <textarea
                   className="form-control bg-grey-transparent text-white"

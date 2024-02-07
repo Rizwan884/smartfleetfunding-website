@@ -178,6 +178,8 @@ body {
   margin-bottom: -50px;
 }
 
+
+
 /*-------------------------NavBar-------------------------------*/
 .nv-image {
   @media (max-width: 767px) {
@@ -1079,3 +1081,4 @@ input[type="radio"]:checked ~ label {
   text-decoration: none;
   color: var(--dark-blue);
 }
+
