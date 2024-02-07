@@ -26,21 +26,26 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
             <div className="row mb-3 flex-md-row flex-column">
               <div className="mb-3">
                 <select
+                  id="form-fuel-card"
                   className="form-select  bg-grey-transparent text-white"
                   aria-label="Default select example"
-                > 
-                  <option className="bg-dark-blue text-white"  selected>Open this select menu</option>
-                  <option className="bg-dark-blue text-white" value="1">One</option>
-                  <option className="bg-dark-blue text-white" value="2">Two</option>
-                  <option className=" bg-dark-blue  text-white" value="3">Three</option>
+                >
+                  <option className="bg-dark-blue text-white" selected>
+                    I{"'"}m considering applying for the Fuel Card
+                  </option>
+                  <option className="bg-dark-blue text-white" value="1">
+                    I{"'"}like more information about the Fuel Card
+                  </option>
+                  <option className="bg-dark-blue text-white" value="2">
+                    I have questions about the Fuel Card
+                  </option>
+                  <option className=" bg-dark-blue  text-white" value="3">
+                    I{"'"}m already a Fuel Card holder and need assistance
+                  </option>
+                  <option className=" bg-dark-blue  text-white" value="3">
+                    I want to learn about other services offered
+                  </option>
                 </select>
-                {/* <textarea
-                  className="form-control bg-grey-transparent text-white"
-                  id="message"
-                  name="message"
-                  rows={3}
-                  placeholder="Description"
-                ></textarea> */}
               </div>
               <div className="col ">
                 <input

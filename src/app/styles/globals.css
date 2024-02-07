@@ -811,6 +811,10 @@ span:hover {
 .form-control:focus {
   background: var(--gray-transparent);
 }
+
+#form-fuel-card, .form-select {
+  --bs-form-select-bg-img: url(../../../public/images/sff-arrow-down-fuel.svg) !important;
+}
 /*-----------Testimonial---------*/
 #testimonial .carousel-item .card {
   width: 350px;
