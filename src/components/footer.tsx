@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "react-bootstrap/Image";
 import ScrollToTopButton from "../components/scroolTop";
 import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
@@ -93,52 +94,72 @@ export default function Footer() {
               style={{ right: "28%", top: "-20px" }}
             >
               <div>
-                <a
-                  className="d-block h-full"
-                  href="https://www.facebook.com/SmartFleetFunding/"
+                <Link
+                  href=""
+                  passHref={true}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open("https://www.facebook.com/SmartFleetFunding/");
+                  }}
                 >
                   <Image
-                    style={{ width: "55px" }}
+                    style={{ width: "40px" }}
                     src="images/sff-facebook.svg"
                     alt="facebook"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a
-                  className="d-block h-full"
-                  href="https://www.instagram.com/smartfleetfunding/"
+                <Link
+                  href=""
+                  passHref={true}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open("https://www.instagram.com/smartfleetfunding/");
+                  }}
                 >
                   <Image
-                    style={{ width: "55px" }}
+                    style={{ width: "39px" }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a
-                  className="d-block h-full"
-                  href="https://www.linkedin.com/company/smart-fleet-funding/"
+                <Link
+                  href=""
+                  passHref={true}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(
+                      "https://www.linkedin.com/company/smart-fleet-funding/"
+                    );
+                  }}
                 >
                   <Image
-                    style={{ width: "55px", height: "47px" }}
+                    style={{ width: "43px" }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a
-                  className="d-block h-full"
-                  href="https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                <Link
+                  href=""
+                  passHref={true}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(
+                      "https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                    );
+                  }}
                 >
                   <Image
-                    style={{ width: "55px", height: "47px" }}
+                    style={{ width: "44px" }}
                     src="images/sff-youtube.svg"
-                    alt="linkedin"
+                    alt="youtube"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -226,43 +247,72 @@ export default function Footer() {
               style={{ right: "66px", top: "-11px" }}
             >
               <div>
-                <a href="https://www.facebook.com/SmartFleetFunding/">
+                <Link
+                  href=""
+                  passHref={true}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open("https://www.facebook.com/SmartFleetFunding/");
+                  }}
+                >
                   <Image
                     style={{ width: "40px" }}
                     src="images/sff-facebook.svg"
                     alt="facebook"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://www.instagram.com/smartfleetfunding/">
+                <Link
+                  href=""
+                  passHref={true}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open("https://www.instagram.com/smartfleetfunding/");
+                  }}
+                >
                   <Image
                     style={{ width: "39px" }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://www.linkedin.com/company/smart-fleet-funding/">
+                <Link
+                  href=""
+                  passHref={true}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(
+                      "https://www.linkedin.com/company/smart-fleet-funding/"
+                    );
+                  }}
+                >
                   <Image
                     style={{ width: "43px" }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a
-                  className="d-block h-full"
-                  href="https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                <Link
+                  href=""
+                  passHref={true}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(
+                      "https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                    );
+                  }}
                 >
                   <Image
                     style={{ width: "44px" }}
                     src="images/sff-youtube.svg"
                     alt="youtube"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

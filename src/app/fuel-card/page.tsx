@@ -1,25 +1,20 @@
 "use client";
-import Image from "next/image";
-import styles from "../app/styles/page.module.css";
 import CardsFuel from "@/components/cards-fuel";
 import Road from "@/components/road";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+import FuelCardSections from "../../components/fuel-card-section";
 import Banners from "@/components/banner";
-import Ideas from "@/components/ideas";
-import Help from "@/components/help";
-import SectionForm from "../../components/form";
-import TestimonialCarousel from "../../components/testimonial";
-import SectionAccordion from "../../components/section-accordion";
+import FormFuelCard from "@/components/form-fuel-card";
 
 export default function fuelCard() {
   const title = (
-    <p className="font-montserrat text-dark-blue">
-      Over The Road <strong className="fw-600">Fuel Card</strong>
+    <p className="font-montserrat text-white">
+      Over The Road <strong className="fw-bold">Fuel Card</strong>
     </p>
   );
 
-  const titleForm = "Let's get started!";
+  const titleForm = "Start Saving with the Smart Fleet Funding Fuel Card!";
 
   const accordionItems = [
     {
@@ -66,20 +61,15 @@ export default function fuelCard() {
     <>
       <Navbar />
       <Banners
+        hideIcons
         title={title}
-        backgroundImage="images/sff-full-facts.jpg"
-        mobileBackgroundImage="images/sff-full-facts-mobile.jpg"
+        backgroundImage="images/sff-fuel-card.jpg"
+        mobileBackgroundImage="images/sff-fuel-card-mobile.jpg"
       />
-      
-         <Road/>
-         <CardsFuel/>
-
-      <SectionAccordion
-        items={accordionItems}
-        showIcons
-        width={35}
-        height={34}
-      />
+      <Road />
+      <CardsFuel />
+      <FuelCardSections />
+      <FormFuelCard titleForm={titleForm} />
       <Footer />
     </>
   );
