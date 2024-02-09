@@ -15,6 +15,11 @@ import Know from "@/components/know";
 
 export default function AboutUs() {
   const title = (
+    <p className="font-montserrat">
+      About <strong className="fw-bold">Us</strong>
+    </p>
+  );
+  const titleMobile = (
     <p className="text-dark-blue">
       About <strong className="fw-bold">Us</strong>
     </p>
@@ -25,6 +30,7 @@ export default function AboutUs() {
       <Navbar />
       <Banners
         title={title}
+        titleMobile={titleMobile}
         hideIcons
         mobileBackgroundImage="images/sff-about-us-mobile.jpg"
         backgroundImage="images/sff-about-us.jpg"

@@ -23,6 +23,15 @@ export default function BlogPage() {
         "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
       imageSrc: "images/blog2.jpg",
     },
+    {
+      id: 3,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/blog2.jpg",
+    },
   ];
   return (
     <>

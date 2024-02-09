@@ -91,7 +91,7 @@ export default function Footer() {
             </p>
             <div
               className="d-flex position-absolute"
-              style={{ right: "28%", top: "-20px" }}
+              style={{ width: "69%", right: "0%", top: "-20px" }}
             >
               <div>
                 <Link

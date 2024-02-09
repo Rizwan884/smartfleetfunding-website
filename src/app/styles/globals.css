@@ -72,6 +72,12 @@ body {
   .m-3rem{
     margin: 3rem !important;
   }
+  .mt-n5{
+    margin-top: -6.3rem;
+  }
+  .mb-n5{
+    margin-bottom: -6.3rem;
+  }
 }
 @media (max-width: 767px) {
   .w-md-100{
@@ -788,12 +794,17 @@ span:hover {
   font-size: 18px;
 }
 /*------------form-------------*/
+.form-check{
+  padding-left: 0.7em !important;
+}
 .form-check-input[type="checkbox"] {
   border-radius: 1.25em;
 }
+.form-check-label {
+  color: var(--green);
+}
 .form-check-label:hover {
-  color: inherit;
-  
+  color: var(--green);
 }
 #form #message::placeholder,
 #phone::placeholder,

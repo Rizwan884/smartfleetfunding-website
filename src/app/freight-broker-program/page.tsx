@@ -14,11 +14,15 @@ import FormFreight from "@/components/form-freight";
 
 export default function Freight() {
   const title = (
+    <p className="font-montserrat">
+      Freight <strong className="fw-bold">Broker Program</strong>
+    </p>
+  );
+  const titleMobile = (
     <p className="font-montserrat text-dark-blue">
       Freight <strong className="fw-bold">Broker Program</strong>
     </p>
   );
-
   const titleForm = "Drive Profits, Enhance Operations Get Started!";
 
   return (
@@ -26,6 +30,7 @@ export default function Freight() {
       <Navbar />
       <Banners
         title={title}
+        titleMobile={titleMobile}
         hideIcons
         backgroundImage="images/sff-freight.jpg"
         mobileBackgroundImage="images/sff-freight-mobile.jpg"

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import FormCheckInput from "react-bootstrap/esm/FormCheckInput";
+import Link from "next/link";
+
 type IProps = {
   backgroundImage?: string;
   titleForm?: string | undefined;
@@ -8,7 +8,7 @@ type IProps = {
 export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   return (
     <>
-      <div className="d-flex font-montserrat flex-column-reverse flex-md-row mt-6">
+      <div className="d-flex font-montserrat flex-column-reverse flex-md-row mt-6 pb-4">
         <div className="md-w-50 w-100 bg-dark-blue text-white">
           <form
             action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
@@ -96,18 +96,35 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 placeholder="Description"
               ></textarea>
             </div>
-            <div className="col form-check">
 
-              <input className="form-check-input"  type="checkbox" value="" id="flexCheckDefault" />
-              <label className="form-check-label" htmlFor="flexCheckDefault">
-                Acept Our <strong>Privacy Policy</strong>
-              </label>
-
-            </div>
-
-           
             <div className=" col mb-3 form-check d-flex justify-content-between">
-              <div></div>
+              <div>
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    className="form-check-label"
+                    htmlFor="flexCheckDefault"
+                  >
+                    Acept Our{" "}
+                    <Link
+                      href=""
+                      className="text-decoration-none text-green"
+                      passHref={true}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open("/privacy");
+                      }}
+                    >
+                      <strong>Privacy Policy</strong>
+                    </Link>
+                  </label>
+                </div>
+              </div>
 
               <button type="submit" className="btn fw-600">
                 SEND
