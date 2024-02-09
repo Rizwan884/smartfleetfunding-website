@@ -7,7 +7,7 @@ type IProps = {
 export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   return (
     <>
-      <div className="d-flex flex-column-reverse flex-md-row mt-6">
+      <div className="d-flex font-montserrat flex-column-reverse flex-md-row mt-6">
         <div className="md-w-50 w-100 bg-dark-blue text-white">
           <form
             action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"

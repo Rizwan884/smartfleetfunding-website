@@ -125,7 +125,7 @@ export default function SFFNavbar() {
               <hr className="text-dark m-0" />
               <Nav.Link
                 className="text-dark-blue px-3 py-4 fw-600 "
-                href="#blog"
+                href="/blog"
               >
                 BLOG
               </Nav.Link>

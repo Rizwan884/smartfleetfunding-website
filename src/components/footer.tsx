@@ -16,7 +16,7 @@ export default function Footer() {
         >
           <Container className="py-3">
             <Nav className="d-flex flex-column gap-1 p-1">
-              <Nav.Link className="text-green fw-600" href="#home">
+              <Nav.Link className="text-green fw-600" href="/">
                 HOME
               </Nav.Link>
               <hr className="w-93 m-0 mx-auto" />

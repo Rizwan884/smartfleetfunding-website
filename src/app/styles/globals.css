@@ -1085,4 +1085,7 @@ input[type="radio"]:checked ~ label {
   text-decoration: none;
   color: var(--dark-blue);
 }
-
+/*----------------------Blog-------------*/
+#blog .card-text {
+  font-size: 18px;
+}

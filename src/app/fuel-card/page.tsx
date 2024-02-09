@@ -13,7 +13,6 @@ export default function fuelCard() {
       Over The Road <strong className="fw-bold">Fuel Card</strong>
     </p>
   );
-
   const titleForm = "Start Saving with the Smart Fleet Funding Fuel Card!";
 
   const accordionItems = [
