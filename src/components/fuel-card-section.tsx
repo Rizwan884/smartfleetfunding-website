@@ -2,8 +2,12 @@ import Cards from "./cards";
 import CardsInfo from "./cards-info";
 import ImgInfo from "./section-info";
 import SectionAccordion from "./section-accordion";
+import Ideas from "./ideas";
 export default function FuelCardSections() {
+
+  
   const accordionItems = [
+
     {
       title: "Convenience",
       description:
@@ -40,9 +44,15 @@ export default function FuelCardSections() {
       eventKey: 5,
     },
   ];
+
   return (
     <>
-      <SectionAccordion items={accordionItems} width={35} height={34} />
+    <div className="container font-montserrat mt-5 text-center text-md-start ">
+        <p className="fw-500 fs-5 pt-3">
+        The Smart Fleet Funding Over The Road Fuel Card also provides you with huge benefits so you can stop worrying and start focusing on growing your business!
+        </p>
+      </div>
+      <SectionAccordion  items={accordionItems} width={35} height={34} />
     </>
   );
 }

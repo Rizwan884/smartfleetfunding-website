@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FormCheckInput from "react-bootstrap/esm/FormCheckInput";
 type IProps = {
   backgroundImage?: string;
   titleForm?: string | undefined;
@@ -95,7 +96,17 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 placeholder="Description"
               ></textarea>
             </div>
-            <div className="mb-3 form-check d-flex justify-content-between">
+            <div className="col form-check">
+
+              <input className="form-check-input"  type="checkbox" value="" id="flexCheckDefault" />
+              <label className="form-check-label" htmlFor="flexCheckDefault">
+                Acept Our <strong>Privacy Policy</strong>
+              </label>
+
+            </div>
+
+           
+            <div className=" col mb-3 form-check d-flex justify-content-between">
               <div></div>
 
               <button type="submit" className="btn fw-600">

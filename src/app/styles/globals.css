@@ -791,6 +791,10 @@ span:hover {
 .form-check-input[type="checkbox"] {
   border-radius: 1.25em;
 }
+.form-check-label:hover {
+  color: inherit;
+  
+}
 #form #message::placeholder,
 #phone::placeholder,
 #company::placeholder,

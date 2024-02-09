@@ -14,7 +14,7 @@ export default function Road() {
                   width={350}
                   height={350}
                   objectFit="cover"
-                  src="/images/sff-road-fuel-card.jpg"
+                  src="/images/sff-road-fuel-card-small.jpg"
                 />
               </div>
               <div className="d-flex justify-content-center pb-3">

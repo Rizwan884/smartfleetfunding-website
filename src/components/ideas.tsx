@@ -1,4 +1,5 @@
 import { Button, Carousel } from "react-bootstrap";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "react-bootstrap/Image";
 const carouselIdea = {
   backgroundSize: "cover",
@@ -6,12 +7,14 @@ const carouselIdea = {
   height: "400px",
   position: "relative" as "relative",
 };
+
 export default function Ideas() {
   return (
     <>
       <div className="container font-montserrat mt-5 mb-5 text-center text-md-start ">
         <h2 className="fw-600 ">PREMIUM FACTORING SERVICES</h2>
         <p className="fw-500 fs-5 pt-3">
+          
           Same day payment* with preferential rates and personalized service,
           <strong> no penalty clauses or minimum amount.</strong>
         </p>
