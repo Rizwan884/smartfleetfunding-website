@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FormEvent } from "react";
 
 type IProps = {
   backgroundImage?: string;
@@ -6,17 +7,23 @@ type IProps = {
 };
 
 export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const response = await fetch(
+      "https://1170027-sb1.extforms.netsuite.com/app/site/crm/externalleadpage.nl?compid=1170027_SB1",
+      {
+        method: "POST",
+        body: formData,
+      }
+    ); // Handle response if necessary
+    console.log(await response.json());
+  }
   return (
     <>
       <div className="d-flex font-montserrat flex-column-reverse flex-md-row mt-6 pb-4">
         <div className="md-w-50 w-100 bg-dark-blue text-white">
-          <form
-            action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
-            method="POST"
-            id="form"
-            className="m-5"
-            target="#"
-          >
+          <form id="form" className="m-5" onSubmit={onSubmit}>
             <h1
               className=" fs-2 text-left fst-italic"
               style={{ marginBottom: "30px" }}
