@@ -28,7 +28,7 @@ export default function Footer() {
                       <Image
                         alt="down"
                         src="images/sff-arrow-down-green.svg"
-                        style={{ width: "13px", height: "10px" }}
+                        className="w-13 h-10"
                       />
                     </div>
                   </>
@@ -51,9 +51,9 @@ export default function Footer() {
                 ABOUT US
               </Nav.Link>
               <hr className="w-93 m-0 mx-auto" />
-              <Nav.Link className="text-green fw-600" href="#blog">
+              {/* <Nav.Link className="text-green fw-600" href="#blog">
                 BLOG
-              </Nav.Link>
+              </Nav.Link> */}
               <hr className="w-93 m-0 mx-auto" />
               <Nav.Link className="text-green fw-600" href="/contact">
                 CONTACT
@@ -194,9 +194,9 @@ export default function Footer() {
                     <Nav.Link className="text-green fw-500" href="/about">
                       ABOUT US
                     </Nav.Link>
-                    <Nav.Link className="text-green fw-500" href="#blog">
+                    {/* <Nav.Link className="text-green fw-500" href="#blog">
                       BLOG
-                    </Nav.Link>
+                    </Nav.Link> */}
                     <Nav.Link className="text-green fw-500" href="/contact">
                       CONTACT
                     </Nav.Link>
