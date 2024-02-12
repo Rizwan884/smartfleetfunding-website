@@ -8,7 +8,7 @@ export default function Road() {
         <div className="font-montserrat bg-white-rgb w-100 pb-5">
           <div className="">
             <div className="text-left  p-5">
-              <div className=" w-100 mx-auto">
+              <div className=" w-100 ms-n1">
                 <Image
                   alt="img"
                   width={350}

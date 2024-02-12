@@ -10,7 +10,7 @@ export default function Help() {
             className="line"
             style={{
               marginLeft: "40%",
-              marginTop: "0",
+              marginTop: "10px",
               width: "40.9px",
               marginBottom: "10%",
             }}

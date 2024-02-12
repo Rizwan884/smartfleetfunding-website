@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
+import React, { useState } from 'react';
 import Dropdown from "react-bootstrap/Dropdown";
 
 export default function HelpYou() {
@@ -71,14 +72,15 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
-            <Dropdown className=" row  mx-3 flex-column d-lg-none ">
+
+            <Dropdown className=" row  mx-3 flex-column d-lg-none" >
               <Dropdown.Toggle variant="light" id="dropdown-basic">
                 <h5 className="card-title fs-6 text-start fw-bold">
                   On Attraction & <br /> Retention
                 </h5>
               </Dropdown.Toggle>
 
-              <Dropdown.Menu>
+              <Dropdown.Menu >
                 <Dropdown.Item href="#/action-1">
                   <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                     <Image
@@ -89,7 +91,7 @@ export default function HelpYou() {
                       alt="testimonial-img"
                     ></Image>
                     <div>
-                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start ">
                         Becoming <br /> more <br /> attractive to <br />{" "}
                         carriers.
                       </p>
@@ -201,7 +203,7 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
-            <Dropdown className=" row  mx-4 flex-column ml-4 d-lg-none ">
+            <Dropdown  className=" row  mx-4 flex-column ml-4 d-lg-none ">
               <Dropdown.Toggle variant="light" id="dropdown-basic">
                 <h5 className="card-title fs-6 text-start fw-bold">
                   Handling AR/AP <br /> Needs
