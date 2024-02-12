@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 type IProps = {
   backgroundImage?: string;
   titleForm?: string | undefined;
@@ -73,7 +74,30 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
-              <div></div>
+              <div>
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    className="form-check-label"
+                    htmlFor="flexCheckDefault"
+                  >
+                    Acept Our{" "}
+                    <Link
+                      href="/privacy"
+                      target="_blank"
+                      className="text-decoration-none text-green"
+                      passHref={true}
+                    >
+                      <strong>Privacy Policy</strong>
+                    </Link>
+                  </label>
+                </div>
+              </div>
 
               <button type="submit" className="btn fw-600">
                 SEND

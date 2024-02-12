@@ -95,12 +95,9 @@ export default function Footer() {
             >
               <div>
                 <Link
-                  href=""
+                  href="https://www.facebook.com/SmartFleetFunding/"
+                  target="_blank"
                   passHref={true}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open("https://www.facebook.com/SmartFleetFunding/");
-                  }}
                 >
                   <Image
                     style={{ width: "40px" }}
@@ -111,12 +108,9 @@ export default function Footer() {
               </div>
               <div>
                 <Link
-                  href=""
+                  href="https://www.instagram.com/smartfleetfunding/"
+                  target="_blank"
                   passHref={true}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open("https://www.instagram.com/smartfleetfunding/");
-                  }}
                 >
                   <Image
                     style={{ width: "39px" }}
@@ -127,14 +121,9 @@ export default function Footer() {
               </div>
               <div>
                 <Link
-                  href=""
+                  href="https://www.linkedin.com/company/smart-fleet-funding/"
+                  target="_blank"
                   passHref={true}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open(
-                      "https://www.linkedin.com/company/smart-fleet-funding/"
-                    );
-                  }}
                 >
                   <Image
                     style={{ width: "43px" }}
@@ -145,14 +134,9 @@ export default function Footer() {
               </div>
               <div>
                 <Link
-                  href=""
+                  href="https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                  target="_blank"
                   passHref={true}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open(
-                      "https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
-                    );
-                  }}
                 >
                   <Image
                     style={{ width: "44px" }}
@@ -248,12 +232,9 @@ export default function Footer() {
             >
               <div>
                 <Link
-                  href=""
+                  href="https://www.facebook.com/SmartFleetFunding/"
+                  target="_blank"
                   passHref={true}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open("https://www.facebook.com/SmartFleetFunding/");
-                  }}
                 >
                   <Image
                     style={{ width: "40px" }}
@@ -264,12 +245,9 @@ export default function Footer() {
               </div>
               <div>
                 <Link
-                  href=""
+                  href="https://www.instagram.com/smartfleetfunding/"
+                  target="_blank"
                   passHref={true}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open("https://www.instagram.com/smartfleetfunding/");
-                  }}
                 >
                   <Image
                     style={{ width: "39px" }}
@@ -280,14 +258,9 @@ export default function Footer() {
               </div>
               <div>
                 <Link
-                  href=""
+                  href="https://www.linkedin.com/company/smart-fleet-funding/"
+                  target="_blank"
                   passHref={true}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open(
-                      "https://www.linkedin.com/company/smart-fleet-funding/"
-                    );
-                  }}
                 >
                   <Image
                     style={{ width: "43px" }}
@@ -298,14 +271,9 @@ export default function Footer() {
               </div>
               <div>
                 <Link
-                  href=""
+                  href="https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                  target="_blank"
                   passHref={true}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open(
-                      "https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
-                    );
-                  }}
                 >
                   <Image
                     style={{ width: "44px" }}
