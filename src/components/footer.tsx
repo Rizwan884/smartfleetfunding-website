@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "react-bootstrap/Image";
 import ScrollToTopButton from "../components/scroolTop";
 import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
@@ -15,7 +16,7 @@ export default function Footer() {
         >
           <Container className="py-3">
             <Nav className="d-flex flex-column gap-1 p-1">
-              <Nav.Link className="text-green fw-600" href="#home">
+              <Nav.Link className="text-green fw-600" href="/">
                 HOME
               </Nav.Link>
               <hr className="w-93 m-0 mx-auto" />
@@ -27,7 +28,7 @@ export default function Footer() {
                       <Image
                         alt="down"
                         src="images/sff-arrow-down-green.svg"
-                        style={{ width: "13px", height: "10px" }}
+                        className="w-13 h-10"
                       />
                     </div>
                   </>
@@ -50,9 +51,9 @@ export default function Footer() {
                 ABOUT US
               </Nav.Link>
               <hr className="w-93 m-0 mx-auto" />
-              <Nav.Link className="text-green fw-600" href="#blog">
+              {/* <Nav.Link className="text-green fw-600" href="#blog">
                 BLOG
-              </Nav.Link>
+              </Nav.Link> */}
               <hr className="w-93 m-0 mx-auto" />
               <Nav.Link className="text-green fw-600" href="/contact">
                 CONTACT
@@ -90,55 +91,59 @@ export default function Footer() {
             </p>
             <div
               className="d-flex position-absolute"
-              style={{ right: "28%", top: "-20px" }}
+              style={{ width: "69%", right: "0%", top: "-20px" }}
             >
               <div>
-                <a
-                  className="d-block h-full"
+                <Link
                   href="https://www.facebook.com/SmartFleetFunding/"
+                  target="_blank"
+                  passHref={true}
                 >
                   <Image
-                    style={{ width: "55px" }}
+                    style={{ width: "40px" }}
                     src="images/sff-facebook.svg"
                     alt="facebook"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a
-                  className="d-block h-full"
+                <Link
                   href="https://www.instagram.com/smartfleetfunding/"
+                  target="_blank"
+                  passHref={true}
                 >
                   <Image
-                    style={{ width: "55px" }}
+                    style={{ width: "39px" }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a
-                  className="d-block h-full"
+                <Link
                   href="https://www.linkedin.com/company/smart-fleet-funding/"
+                  target="_blank"
+                  passHref={true}
                 >
                   <Image
-                    style={{ width: "55px", height: "47px" }}
+                    style={{ width: "43px" }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a
-                  className="d-block h-full"
+                <Link
                   href="https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                  target="_blank"
+                  passHref={true}
                 >
                   <Image
-                    style={{ width: "55px", height: "47px" }}
+                    style={{ width: "44px" }}
                     src="images/sff-youtube.svg"
-                    alt="linkedin"
+                    alt="youtube"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -189,9 +194,9 @@ export default function Footer() {
                     <Nav.Link className="text-green fw-500" href="/about">
                       ABOUT US
                     </Nav.Link>
-                    <Nav.Link className="text-green fw-500" href="#blog">
+                    {/* <Nav.Link className="text-green fw-500" href="#blog">
                       BLOG
-                    </Nav.Link>
+                    </Nav.Link> */}
                     <Nav.Link className="text-green fw-500" href="/contact">
                       CONTACT
                     </Nav.Link>
@@ -226,43 +231,56 @@ export default function Footer() {
               style={{ right: "66px", top: "-11px" }}
             >
               <div>
-                <a href="https://www.facebook.com/SmartFleetFunding/">
+                <Link
+                  href="https://www.facebook.com/SmartFleetFunding/"
+                  target="_blank"
+                  passHref={true}
+                >
                   <Image
                     style={{ width: "40px" }}
                     src="images/sff-facebook.svg"
                     alt="facebook"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://www.instagram.com/smartfleetfunding/">
+                <Link
+                  href="https://www.instagram.com/smartfleetfunding/"
+                  target="_blank"
+                  passHref={true}
+                >
                   <Image
                     style={{ width: "39px" }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="https://www.linkedin.com/company/smart-fleet-funding/">
+                <Link
+                  href="https://www.linkedin.com/company/smart-fleet-funding/"
+                  target="_blank"
+                  passHref={true}
+                >
                   <Image
                     style={{ width: "43px" }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
                   />
-                </a>
+                </Link>
               </div>
               <div>
-                <a
-                  className="d-block h-full"
+                <Link
                   href="https://www.youtube.com/channel/UC-R--cLmpofPy6PJJ9T2wgw"
+                  target="_blank"
+                  passHref={true}
                 >
                   <Image
                     style={{ width: "44px" }}
                     src="images/sff-youtube.svg"
                     alt="youtube"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

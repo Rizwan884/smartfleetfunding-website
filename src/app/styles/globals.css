@@ -72,6 +72,12 @@ body {
   .m-3rem{
     margin: 3rem !important;
   }
+  .mt-n5{
+    margin-top: -6.3rem;
+  }
+  .mb-n5{
+    margin-bottom: -6.3rem;
+  }
 }
 @media (max-width: 767px) {
   .w-md-100{
@@ -177,6 +183,8 @@ body {
 .mb-50 {
   margin-bottom: -50px;
 }
+
+
 
 /*-------------------------NavBar-------------------------------*/
 .nv-image {
@@ -786,8 +794,17 @@ span:hover {
   font-size: 18px;
 }
 /*------------form-------------*/
+.form-check{
+  padding-left: 0.7em !important;
+}
 .form-check-input[type="checkbox"] {
   border-radius: 1.25em;
+}
+.form-check-label {
+  color: var(--green);
+}
+.form-check-label:hover {
+  color: var(--green);
 }
 #form #message::placeholder,
 #phone::placeholder,
@@ -808,6 +825,10 @@ span:hover {
 }
 .form-control:focus {
   background: var(--gray-transparent);
+}
+
+#form-fuel-card, .form-select {
+  --bs-form-select-bg-img: url(../../../public/images/sff-arrow-down-fuel.svg) !important;
 }
 /*-----------Testimonial---------*/
 #testimonial .carousel-item .card {
@@ -1078,4 +1099,8 @@ input[type="radio"]:checked ~ label {
   font-style: none;
   text-decoration: none;
   color: var(--dark-blue);
+}
+/*----------------------Blog-------------*/
+#blog .card-text {
+  font-size: 18px;
 }

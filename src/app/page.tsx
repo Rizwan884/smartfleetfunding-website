@@ -5,6 +5,7 @@ import Slider from "../components/slider";
 import CardsSections from "../components/cards_sections";
 import Footer from "../components/footer";
 import SectionVideo from "../components/section-video";
+import Privacy from "./privacy/page";
 export default function Home() {
   return (
     <>

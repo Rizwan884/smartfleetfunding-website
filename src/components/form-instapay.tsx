@@ -1,5 +1,6 @@
 import { url } from "inspector";
 import Image from "next/image";
+import Link from "next/link";
 export default function FormInstapay() {
   return (
     <>
@@ -80,8 +81,33 @@ export default function FormInstapay() {
                   placeholder="Comments"
                 ></textarea>
               </div>
-              <div className="text-end text-md-start">
-                <button id="btn-insta" type="submit" className="btn fw-600 ">
+              <div className=" col mb-3 form-check d-flex justify-content-between">
+                <div>
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      className="form-check-label"
+                      htmlFor="flexCheckDefault"
+                    >
+                      Acept Our{" "}
+                      <Link
+                        href="/privacy"
+                        target="_blank"
+                        className="text-decoration-none text-green"
+                        passHref={true}
+                      >
+                        <strong>Privacy Policy</strong>
+                      </Link>
+                    </label>
+                  </div>
+                </div>
+
+                <button type="submit" className="btn fw-600">
                   SEND
                 </button>
               </div>

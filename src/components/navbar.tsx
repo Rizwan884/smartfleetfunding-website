@@ -4,26 +4,19 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
+import Link from "next/link";
 import { Span } from "next/dist/trace";
 
 export default function SFFNavbar() {
   return (
     <>
       <div className="font-montserrat text-left p-2 px-5 bg-green">
-        <a
-          href="tel:+18888755506"
-          className="text-white"
-          style={{ marginLeft: "4rem" }}
-        >
+        <Link href="tel:+18888755506" className="text-white ms-2">
           Toll-Free: +1 (888) 875-5506{" "}
-        </a>
-        <a
-          href="https://wa.me/18302097589"
-          className="text-white"
-          style={{ marginLeft: "0.5rem" }}
-        >
+        </Link>
+        <Link href="https://wa.me/18302097589" className="text-white ms-2">
           WhatsApp: +1 (830) 209-7589{" "}
-        </a>
+        </Link>
       </div>
       <Navbar expand="lg" className="font-montserrat nv-image">
         <Container>
@@ -47,7 +40,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }}
+                      className="w-13 h-10"
                     />
                   </>
                 }
@@ -74,7 +67,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }}
+                      className="w-13 h-10"
                     />
                   </>
                 }
@@ -93,7 +86,10 @@ export default function SFFNavbar() {
                   >
                     Instapay
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="text-start text-dark" href="#">
+                  <NavDropdown.Item
+                    className="text-start text-dark"
+                    href="/fuel-card"
+                  >
                     Fuel Card
                   </NavDropdown.Item>
                   <NavDropdown.Item
@@ -119,12 +115,9 @@ export default function SFFNavbar() {
                 ABOUT US
               </Nav.Link>
               <hr className="text-dark m-0" />
-              <Nav.Link
-                className="text-dark-blue px-3 py-4 fw-600 "
-                href="#blog"
-              >
+              {/* <Nav.Link className="text-dark-blue px-3 py-4 fw-600 " href="#">
                 BLOG
-              </Nav.Link>
+              </Nav.Link> */}
               <hr className="text-dark m-0" />
               <Nav.Link
                 className="text-dark-blue px-3 py-4 fw-600 "
@@ -140,7 +133,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }}
+                      className="w-13 h-10"
                     />
                   </>
                 }

@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 type IProps = {
   title?: JSX.Element;
+  titleMobile?: JSX.Element;
   backgroundImage?: string;
   mobileBackgroundImage?: string;
   hideIcons?: boolean;
@@ -11,6 +12,7 @@ type IProps = {
 
 export default function Banners({
   title,
+  titleMobile,
   backgroundImage,
   mobileBackgroundImage,
   hideIcons = false,
@@ -35,8 +37,8 @@ export default function Banners({
             <div className="mt-4 line"></div>
             {title && (
               <div className="w-100">
-                <h1 className="text-start fw-light fs-1 mt-1 text-white font-montserrat">
-                  {title}
+                <h1 className="text-start fw-light fs-1  text-white font-montserrat">
+                  {titleMobile}
                 </h1>
               </div>
             )}

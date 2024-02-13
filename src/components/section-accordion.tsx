@@ -50,7 +50,9 @@ export default function SectionAccordion({
               )}
               <div id="title-mobile">{item.title}</div>
             </Accordion.Header>
-            <Accordion.Body>{item.description}</Accordion.Body>
+            <Accordion.Body className="text-start">
+              {item.description}
+            </Accordion.Body>
           </Accordion.Item>
         ))}
       </Accordion>

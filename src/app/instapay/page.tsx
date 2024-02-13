@@ -17,6 +17,11 @@ export default function Instapay() {
       Fast, Easy and <strong className="fw-bold">Secure Payment</strong>
     </p>
   );
+  const titleMobile = (
+    <p>
+      Fast, Easy and <strong className="fw-bold">Secure Payment</strong>
+    </p>
+  );
   const accordionInstaItems = [
     {
       title: "What Are the Conditions for Instapay?",
@@ -103,6 +108,7 @@ export default function Instapay() {
       <Banners
         hideIcons={true}
         title={title}
+        titleMobile={titleMobile}
         backgroundImage="images/sff-instapay.jpg"
         mobileBackgroundImage="images/sff-instapay-mobile.jpg"
       />

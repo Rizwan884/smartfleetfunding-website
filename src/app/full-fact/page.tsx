@@ -13,6 +13,11 @@ import SectionAccordion from "../../components/section-accordion";
 
 export default function fullFact() {
   const title = (
+    <p className="font-montserrat">
+      Full <strong className="fw-bold">Factoring Solution</strong>
+    </p>
+  );
+  const titleMobile = (
     <p className="font-montserrat text-dark-blue">
       Full <strong className="fw-600">Factoring Solution</strong>
     </p>
@@ -66,6 +71,7 @@ export default function fullFact() {
       <Navbar />
       <Banners
         title={title}
+        titleMobile={titleMobile}
         backgroundImage="images/sff-full-facts.jpg"
         mobileBackgroundImage="images/sff-full-facts-mobile.jpg"
       />

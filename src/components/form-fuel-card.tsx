@@ -1,14 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
+
 type IProps = {
   backgroundImage?: string;
   titleForm?: string | undefined;
 };
 
-export default function SectionForm({ backgroundImage, titleForm }: IProps) {
+export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   return (
     <>
-      <div className="d-flex flex-column-reverse flex-md-row mt-6">
+      <div className="d-flex font-montserrat flex-column-reverse flex-md-row mt-6 pb-4">
         <div className="md-w-50 w-100 bg-dark-blue text-white">
           <form
             action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
@@ -25,6 +25,29 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
               <div className="line "></div>
             </h1>
             <div className="row mb-3 flex-md-row flex-column">
+              <div className="mb-3">
+                <select
+                  id="form-fuel-card"
+                  className="form-select  bg-grey-transparent text-white"
+                  aria-label="Default select example"
+                >
+                  <option className="bg-dark-blue text-white" selected>
+                    I{"'"}m considering applying for the Fuel Card
+                  </option>
+                  <option className="bg-dark-blue text-white" value="1">
+                    I{"'"}d like more information about the Fuel Card
+                  </option>
+                  <option className="bg-dark-blue text-white" value="2">
+                    I have questions about the Fuel Card
+                  </option>
+                  <option className=" bg-dark-blue  text-white" value="3">
+                    I{"'"}m already a Fuel Card holder and need assistance
+                  </option>
+                  <option className=" bg-dark-blue  text-white" value="3">
+                    I want to learn about other services offered
+                  </option>
+                </select>
+              </div>
               <div className="col ">
                 <input
                   type="text"
@@ -73,7 +96,8 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 placeholder="Description"
               ></textarea>
             </div>
-            <div className="mb-3 form-check d-flex justify-content-between">
+
+            <div className=" col mb-3 form-check d-flex justify-content-between">
               <div>
                 <div className="form-check">
                   <input
@@ -113,7 +137,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 style={{
                   objectFit: "cover",
                 }}
-                src="images/sff-form.jpg"
+                src="images/sff-fuel-card-form.jpg"
                 alt="form"
               />
             </div>
