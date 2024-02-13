@@ -186,7 +186,7 @@ const TestimonialCarousel = () => {
                                               groupIndex * 3 + innerIndex
                                             }`}
                                             value={star}
-                                            checked={star === 2}
+                                            checked={star === 1}
                                           />
                                           <label
                                             htmlFor={`radio${star}-${

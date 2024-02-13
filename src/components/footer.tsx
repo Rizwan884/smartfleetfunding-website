@@ -65,7 +65,8 @@ export default function Footer() {
                 <Button
                   href="/contact"
                   id="bottom-footer"
-                  className="btn bg-green text-dark-blue fw-600 mt-3"
+                  variant="btn btn-custom"
+                  className=" bg-green text-dark-blue fw-600 mt-3"
                 >
                   CURIOUS TO LEARN MORE?
                 </Button>
@@ -221,7 +222,8 @@ export default function Footer() {
                   <Button
                     href="/contact"
                     id="bottom-footer"
-                    className="btn bg-green text-dark-blue fw-600 ms-auto"
+                    variant="btn btn-custom"
+                    className=" bg-green text-dark-blue fw-600 ms-auto"
                   >
                     CURIOUS TO LEARN MORE?
                   </Button>
