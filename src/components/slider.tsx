@@ -138,7 +138,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-succes-story.jpg")',
+                backgroundImage: 'url("images/sff-succes-story.webp")',
               }}
             >
               <div className=" slider-container mx-4">

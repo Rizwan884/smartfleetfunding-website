@@ -137,7 +137,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 style={{
                   objectFit: "cover",
                 }}
-                src="images/sff-fuel-card-form.jpg"
+                src="images/sff-fuel-card-form.webp"
                 alt="form"
               />
             </div>
