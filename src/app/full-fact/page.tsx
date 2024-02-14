@@ -73,7 +73,7 @@ export default function fullFact() {
         title={title}
         titleMobile={titleMobile}
         backgroundImage="images/sff-full-facts.webp"
-        mobileBackgroundImage="images/sff-full-facts-mobile.jpg"
+        mobileBackgroundImage="images/sff-full-facts-mobile.webp"
       />
       <Ideas />
       <Help />
