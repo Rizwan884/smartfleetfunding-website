@@ -28,8 +28,8 @@ export default function fuelCard() {
         hideIcons
         title={title}
         titleMobile={titleMobile}
-        backgroundImage="images/sff-fuel-card.jpg"
-        mobileBackgroundImage="images/sff-fuel-card-mobile.jpg"
+        backgroundImage="images/sff-fuel-card.webp"
+        mobileBackgroundImage="images/sff-fuel-card-mobile.webp"
       />
       <Road />
       <CardsFuel />

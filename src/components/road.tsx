@@ -12,7 +12,7 @@ export default function Road() {
               width={350}
               height={350}
               objectFit="cover"
-              src="/images/sff-road-fuel-card-small.jpg"
+              src="/images/sff-road-fuel-card-small.webp"
             />
           </div>
           <div className="d-flex justify-content-center pb-3">
@@ -57,7 +57,7 @@ export default function Road() {
             width={500}
             height={400}
             objectFit="cover"
-            src="/images/sff-road-fuel-card.jpg"
+            src="/images/sff-road-fuel-card.webp"
           />
         </div>
       </div>

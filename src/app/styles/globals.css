@@ -1104,3 +1104,7 @@ input[type="radio"]:checked ~ label {
 #blog .card-text {
   font-size: 18px;
 }
+/*----------------Modal------------*/
+.modal-content{
+  background-color: var(--dark-blue) !important;
+}

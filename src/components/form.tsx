@@ -86,7 +86,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Acept Our{" "}
+                    Accept Our{" "}
                     <Link
                       href="/privacy"
                       target="_blank"
@@ -113,7 +113,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 style={{
                   objectFit: "cover",
                 }}
-                src="images/sff-form.jpg"
+                src="images/sff-form.webp"
                 alt="form"
               />
             </div>

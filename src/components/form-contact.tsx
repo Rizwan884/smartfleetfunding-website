@@ -151,7 +151,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Acept Our{" "}
+                    Accept Our{" "}
                     <Link
                       href="/privacy"
                       target="_blank"
