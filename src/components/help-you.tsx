@@ -73,33 +73,16 @@ export default function HelpYou() {
               </div>
             </div>
 
-            <Dropdown className=" row  mx-3 flex-column d-lg-none" >
+            <Dropdown className="row mx-3 flex-column d-lg-none">
               <Dropdown.Toggle variant="light" id="dropdown-basic">
                 <h5 className="card-title fs-6 text-start fw-bold">
-                  On Attraction & <br /> Retention
+                  On Attraction & <br/> Retention
                 </h5>
               </Dropdown.Toggle>
 
-              <Dropdown.Menu >
+              <Dropdown.Menu>
                 <Dropdown.Item href="#/action-1">
-                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
-                    <Image
-                      width={20}
-                      height={20}
-                      className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
-                      alt="testimonial-img"
-                    ></Image>
-                    <div>
-                      <p className="ms-2 mt-3 fs-6 fw-30 text-start ">
-                        Becoming <br /> more <br /> attractive to <br />{" "}
-                        carriers.
-                      </p>
-                    </div>
-                  </div>
-                </Dropdown.Item>
-                <Dropdown.Item href="#/action-2">
-                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs">
                     <Image
                       width={20}
                       height={20}
@@ -109,8 +92,25 @@ export default function HelpYou() {
                     ></Image>
                     <div>
                       <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                        Carriers <br /> won’t worry <br /> about their <br />{" "}
-                        cash flow <br /> to operate.
+                        Becoming <br/> more <br/> attractive to <br/>{" "}
+                        carriers.
+                      </p>
+                    </div>
+                  </div>
+                </Dropdown.Item>
+                <Dropdown.Item href="#/action-2">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs">
+                    <Image
+                      width={20}
+                      height={20}
+                      className="mt-14"
+                      src="images/sff-fb-arrow-right.svg"
+                      alt="testimonial-img"
+                    ></Image>
+                    <div>
+                      <p className="ms-2 mt-3 fs-6 fw-30 text-start">
+                        Carriers <br/> won’t worry <br/> about their <br/>{" "}
+                        cash flow <br/> to operate.
                       </p>
                     </div>
                   </div>
