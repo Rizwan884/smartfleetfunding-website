@@ -72,7 +72,7 @@ export default function fullFact() {
       <Banners
         title={title}
         titleMobile={titleMobile}
-        backgroundImage="images/sff-full-facts.jpg"
+        backgroundImage="images/sff-full-facts.webp"
         mobileBackgroundImage="images/sff-full-facts-mobile.jpg"
       />
       <Ideas />

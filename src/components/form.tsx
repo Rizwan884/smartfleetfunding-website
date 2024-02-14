@@ -113,7 +113,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 style={{
                   objectFit: "cover",
                 }}
-                src="images/sff-form.jpg"
+                src="images/sff-form.webp"
                 alt="form"
               />
             </div>
