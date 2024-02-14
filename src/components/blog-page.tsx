@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "react-bootstrap/Image";
 import { Container, Row, Col, Carousel, Button, Card } from "react-bootstrap";
 import { useMediaQuery } from "react-responsive";
+import Pagination from 'react-bootstrap/Pagination';
 
 type BlogItem = {
   id?: number;
@@ -49,51 +50,78 @@ export default function Blog({ blogs }: IProps) {
           <>
             {isMobile ? (
               <Row className="mt-5 ">
-              {blogs.map((blog, index) => (
-                <Col
-                  key={index}
-                  md={4}
-                  className="mb-4 pb-3"
-                >
-                  <div className="card" style={{ border: "10px" }} onClick={() => handleBlogClick(blog)}>
-                    {blog.imageSrc && (
-                      <Image
-                        src={blog.imageSrc}
-                        style={{
-                          width: "100%",
-                          marginTop: "-21px",
-                          marginBottom: "20px",
-                        }}
-                        className="card-img-top"
-                        alt="..."
-                      />
-                    )}
-                    <div className="card-body">
-                      {blog.title && (
-                        <h1 className="text-start fw-light fs-2 mt-1 mb-3 text-dark-blue font-montserrat">
-                          {blog.title}
-                        </h1>
+                {blogs.map((blog, index) => (
+                  <Col
+                    key={index}
+                    md={4}
+                    className="mb-5 pb-3 px-5"
+                  >
+                    <div className="card" style={{ border: "10px" }} onClick={() => handleBlogClick(blog)}>
+                      <div className="card-header">
+                        <a href="" className="btn green-card fs-6 text-dark-blue font-montserrat " style={{ position: 'absolute', bottom: '93%', left: '19%', transform: 'translateX(-50%)', zIndex: 1 }}>
+                          Financial Tips
+                        </a>
+
+                      </div>
+                      {blog.imageSrc && (
+                        <Image
+                          src={blog.imageSrc}
+                          style={{
+                            width: "100%",
+                            marginTop: "-21px",
+                            marginBottom: "20px",
+                          }}
+                          className="card-img-top"
+                          alt="..."
+                        />
                       )}
-                      {blog.description && (
-                        <p className="text-start fw-light fs-4 mt-1 text-dark-blue font-montserrat">
-                          {blog.description}
+                      <div className="card-body">
+                        <div className="row">
+                          <div className="col text-start">
+                            <p className="card-text"><small className="text-muted font-montserrat text-claro fs-6 ">20 Nov</small></p>
+                          </div>
+                          <div className="col text-end ">
+                            <p className="card-text"><small className="text-muted font-montserrat fs-6">2024</small></p>
+                          </div>
+                        </div>
+                        <br />
+                        {blog.title && (
+                          <h1 className="text-start fw-light fs-2 mt-1 mb-3 text-dark-blue font-montserrat">
+                            {blog.title}
+                          </h1>
+                        )}
+                        {blog.description && (
+                          <p className="text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
+                            {blog.description}
+                          </p>
+                        )}
+                        <p className=" text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
+                          Leer mas...
                         </p>
-                      )}
-                      <p className="text-start fw-light fs-4 mt-1 text-dark-blue font-montserrat">
-                        hola 
-                      </p>
+                      </div>
                     </div>
-                  </div>
-                </Col>
-              ))}
-            </Row>
+                  </Col>
+                ))}
+                <div className="pe-5 px-5 ">
+                  <Pagination className="px-3">
+                    <Pagination.Prev />
+                    <Pagination.Item>{1}</Pagination.Item>
+                    <Pagination.Item>{2}</Pagination.Item>
+                    <Pagination.Item>{3}</Pagination.Item>
+                    <Pagination.Item>{4}</Pagination.Item>
+                    <Pagination.Item>{5}</Pagination.Item>
+                    <Pagination.Item>{6}</Pagination.Item>
+                    <Pagination.Next />
+                  </Pagination>
+                </div>
+              </Row>
             ) : (
               <Row className="mt-5">
                 {blogs.map((blog, index) => (
                   <Col
                     key={index}
                     md={4}
-                    className="mb-4"
+                    className="mb-5  "
                     onClick={() => handleBlogClick(blog)}
                   >
                     <div className="card" style={{ border: "10px" }}>
@@ -110,6 +138,15 @@ export default function Blog({ blogs }: IProps) {
                         />
                       )}
                       <div className="card-body">
+                        <div className="row">
+                          <div className="col text-start">
+                            <p className="card-text"><small className="text-muted font-montserrat text-claro">20 Nov</small></p>
+                          </div>
+                          <div className="col text-end ">
+                            <p className="card-text"><small className="text-muted font-montserrat">2024</small></p>
+                          </div>
+                        </div>
+                        <br />
                         {blog.title && (
                           <h1 className="text-start fw-bold fs-4 mx-2 mt-1 mb-3 text-dark-blue font-montserrat">
                             {blog.title}
@@ -120,6 +157,10 @@ export default function Blog({ blogs }: IProps) {
                             {blog.description}
                           </p>
                         )}
+
+                        <p className=" text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
+                          Leer mas...
+                        </p>
                       </div>
                     </div>
                   </Col>
