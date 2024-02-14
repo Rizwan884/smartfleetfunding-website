@@ -103,7 +103,7 @@ export default function Blog({ blogs }: IProps) {
                   </Col>
                 ))}
                 <div className="pe-5 px-5 ">
-                  <Pagination className="px-3">
+                  <Pagination className="px-3 pagination bg-transparent">
                     <Pagination.Prev />
                     <Pagination.Item>{1}</Pagination.Item>
                     <Pagination.Item>{2}</Pagination.Item>

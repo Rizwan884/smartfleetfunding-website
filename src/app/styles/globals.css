@@ -591,6 +591,13 @@ span:hover {
   background-color: #04D667;
 }
 
+.pagination {
+  background-color: transparent;
+}
+.pagination .page-link {
+ color:#04D667;
+}
+
 /*-------------------------Cards-info------------------------------*/
 .body-list {
   min-height: 600px;
