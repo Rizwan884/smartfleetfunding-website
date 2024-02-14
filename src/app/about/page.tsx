@@ -32,8 +32,8 @@ export default function AboutUs() {
         title={title}
         titleMobile={titleMobile}
         hideIcons
-        mobileBackgroundImage="images/sff-about-us-mobile.jpg"
-        backgroundImage="images/sff-about-us.jpg"
+        mobileBackgroundImage="images/sff-about-us-mobile.webp"
+        backgroundImage="images/sff-about-us.webp"
       />
 
       <Know />
