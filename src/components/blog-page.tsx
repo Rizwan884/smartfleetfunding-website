@@ -25,13 +25,17 @@ export default function Blog({ blogs }: IProps) {
   };
   return (
     <>
-      <div className="container mt-7 font-montserrat">
-        <div className="d-flex flex-column align-items-left">
-          <h1 className="fw-bold fs-2 text-dark-blue flex gap-3">BLOG</h1>
-          <div className="line width-bf mb-2 align-item-center"></div>
+      <div className="pt-5 px-4 px-md-5 pb-4 pb-md-5 mb-50 bg-search">
+        <div className="d-flex flex-row font-montserrat mt-3 ms-1 m-md-3">
+          <div className="d-flex flex-column">
+            <div className="line width-bf fw-600 mb-2 ms-1 align-item-center"></div>
+            <h1 className="fw-bold fs-2 text-left flex align-items-left gap-3">
+              BLOG
+            </h1>
+          </div>
         </div>
       </div>
-      <div id="blog" className="container mt-sm-1 mb-sm-2 mt-5 mb-6">
+      <div id="blog" className="container pt-6 pb-5 mt-sm-1 mb-sm-2 mt-5 mb-6">
         {selectedBlog ? (
           <div>
             <Button variant="primary" onClick={handleBackButtonClick}>
