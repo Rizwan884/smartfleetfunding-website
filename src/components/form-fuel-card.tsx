@@ -110,15 +110,12 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Acept Our{" "}
+                    Accept Our{" "}
                     <Link
-                      href=""
+                      href="/privacy"
+                      target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open("/privacy");
-                      }}
                     >
                       <strong>Privacy Policy</strong>
                     </Link>
@@ -140,7 +137,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 style={{
                   objectFit: "cover",
                 }}
-                src="images/sff-fuel-card-form.jpg"
+                src="images/sff-fuel-card-form.webp"
                 alt="form"
               />
             </div>
