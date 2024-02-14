@@ -95,7 +95,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck.jpg")',
+                backgroundImage: 'url("images/sff-truck.webp")',
               }}
             >
               <div className="slider-container slider-container mx-4">
@@ -117,7 +117,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck-logistic.jpg")',
+                backgroundImage: 'url("images/sff-truck-logistic.webp")',
               }}
             >
               <div className="slider-container slider-container mx-4">

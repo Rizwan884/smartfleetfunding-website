@@ -33,7 +33,7 @@ export default function Freight() {
         titleMobile={titleMobile}
         hideIcons
         backgroundImage="images/sff-freight.jpg"
-        mobileBackgroundImage="images/sff-freight-mobile.jpg"
+        mobileBackgroundImage="images/sff-freight-mobile.webp"
       />
       <Needs />
       <Programs />

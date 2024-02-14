@@ -29,7 +29,7 @@ export default function fuelCard() {
         title={title}
         titleMobile={titleMobile}
         backgroundImage="images/sff-fuel-card.jpg"
-        mobileBackgroundImage="images/sff-fuel-card-mobile.jpg"
+        mobileBackgroundImage="images/sff-fuel-card-mobile.webp"
       />
       <Road />
       <CardsFuel />
