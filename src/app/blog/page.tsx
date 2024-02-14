@@ -9,10 +9,12 @@ export default function BlogPage() {
       id: 1,
       title: "Cómo mejorar la productividad en el trabajo desde casa",
       description:
-        "Consejos y trucos para ser más productivo mientras trabajas desde casa.",
+        "Consejos y trucos para ser más productivo mientras trabajas desde casa. ",
       content:
         "Consejos y trucos para ser más productivo mientras trabajas desde casa. y mucho más",
-      imageSrc: "images/blog1.jpg",
+      imageSrc: "images/sff-blog-img.jpg",
+      with: 20,
+      height: 28,
     },
     {
       id: 2,
@@ -21,7 +23,7 @@ export default function BlogPage() {
         "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
       content:
         "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
-      imageSrc: "images/blog2.jpg",
+      imageSrc: "images/sff-blog-img.jpg",
     },
     {
       id: 3,
@@ -30,7 +32,37 @@ export default function BlogPage() {
         "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
       content:
         "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
-      imageSrc: "images/blog2.jpg",
+      imageSrc: "images/sff-blog-img.jpg",
+    },
+
+    {
+      id: 4,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
+    },
+
+    {
+      id: 5,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
+    },
+
+    {
+      id: 6,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
     },
   ];
   return (

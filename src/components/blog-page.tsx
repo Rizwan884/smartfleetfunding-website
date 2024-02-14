@@ -7,6 +7,7 @@ type BlogItem = {
   id?: number;
   title?: string | JSX.Element;
   description?: string;
+  more?: string;
   content?: string;
   imageSrc?: string;
 };
@@ -47,51 +48,45 @@ export default function Blog({ blogs }: IProps) {
         ) : (
           <>
             {isMobile ? (
-              <Carousel
-                controls={false}
-                indicators={true}
-                interval={null}
-                touch={true}
-                className="pb-5 pt-5"
-              >
-                {blogs.map((blog, index) => (
-                  <Carousel.Item
-                    key={index}
-                    className="p-2 pt-5"
-                    onClick={() => handleBlogClick(blog)}
-                  >
-                    <div
-                      className="cards-mobile h-100 w-auto mx-3"
-                      style={{
-                        border: "10px",
-                        paddingBottom: "20px",
-                        height: "152px",
-                      }}
-                    >
-                      {blog.imageSrc && (
-                        <Image
-                          src={blog.imageSrc}
-                          style={{
-                            width: "15%",
-                            marginTop: "-30px",
-                            marginBottom: "20px",
-                          }}
-                          className="card-img-top"
-                          alt="..."
-                        />
+              <Row className="mt-5 ">
+              {blogs.map((blog, index) => (
+                <Col
+                  key={index}
+                  md={4}
+                  className="mb-4 pb-3"
+                >
+                  <div className="card" style={{ border: "10px" }} onClick={() => handleBlogClick(blog)}>
+                    {blog.imageSrc && (
+                      <Image
+                        src={blog.imageSrc}
+                        style={{
+                          width: "100%",
+                          marginTop: "-21px",
+                          marginBottom: "20px",
+                        }}
+                        className="card-img-top"
+                        alt="..."
+                      />
+                    )}
+                    <div className="card-body">
+                      {blog.title && (
+                        <h1 className="text-start fw-light fs-2 mt-1 mb-3 text-dark-blue font-montserrat">
+                          {blog.title}
+                        </h1>
                       )}
-                      <div className="card-body ">
-                        {blog.title && (
-                          <h1 className="text-start fw-light fs-2 mt-1 mb-3 text-dark-blue font-montserrat">
-                            {blog.title}
-                          </h1>
-                        )}
-                        <p className="card-text">{blog.description}</p>
-                      </div>
+                      {blog.description && (
+                        <p className="text-start fw-light fs-4 mt-1 text-dark-blue font-montserrat">
+                          {blog.description}
+                        </p>
+                      )}
+                      <p className="text-start fw-light fs-4 mt-1 text-dark-blue font-montserrat">
+                        hola 
+                      </p>
                     </div>
-                  </Carousel.Item>
-                ))}
-              </Carousel>
+                  </div>
+                </Col>
+              ))}
+            </Row>
             ) : (
               <Row className="mt-5">
                 {blogs.map((blog, index) => (
@@ -106,7 +101,7 @@ export default function Blog({ blogs }: IProps) {
                         <Image
                           src={blog.imageSrc}
                           style={{
-                            width: "15%",
+                            width: "100%",
                             marginTop: "-21px",
                             marginBottom: "20px",
                           }}
@@ -116,12 +111,12 @@ export default function Blog({ blogs }: IProps) {
                       )}
                       <div className="card-body">
                         {blog.title && (
-                          <h1 className="text-start fw-light fs-2 mt-1 mb-3 text-dark-blue font-montserrat">
+                          <h1 className="text-start fw-bold fs-4 mx-2 mt-1 mb-3 text-dark-blue font-montserrat">
                             {blog.title}
                           </h1>
                         )}
                         {blog.description && (
-                          <p className="text-start fw-light fs-4 mt-1 text-dark-blue font-montserrat">
+                          <p className="text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
                             {blog.description}
                           </p>
                         )}
