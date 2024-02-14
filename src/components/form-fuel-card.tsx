@@ -110,7 +110,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Acept Our{" "}
+                    Accept Our{" "}
                     <Link
                       href="/privacy"
                       target="_blank"
