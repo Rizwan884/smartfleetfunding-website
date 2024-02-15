@@ -13,6 +13,8 @@ export default function BlogPage() {
       content:
         "Consejos y trucos para ser más productivo mientras trabajas desde casa. y mucho más",
       imageSrc: "images/sff-blog-img.jpg",
+      desktopSrc: "images/sff-blog-img-web.jpg",
+
       with: 20,
       height: 28,
     },

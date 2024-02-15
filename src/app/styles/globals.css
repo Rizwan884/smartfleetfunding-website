@@ -595,7 +595,12 @@ span:hover {
   background-color: transparent;
 }
 .pagination .page-link {
+  border: none;
  color:#04D667;
+
+}
+.text-gre {
+  color: #04D667 ;
 }
 
 /*-------------------------Cards-info------------------------------*/

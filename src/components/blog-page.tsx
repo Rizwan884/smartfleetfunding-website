@@ -11,6 +11,7 @@ type BlogItem = {
   more?: string;
   content?: string;
   imageSrc?: string;
+  desktopSrc?: string;
 };
 type IProps = {
   blogs: BlogItem[];
@@ -39,12 +40,49 @@ export default function Blog({ blogs }: IProps) {
       </div>
       <div id="blog" className="container pt-6 pb-5 mt-sm-1 mb-sm-2 mt-5 mb-6">
         {selectedBlog ? (
-          <div>
-            <Button variant="primary" onClick={handleBackButtonClick}>
+          <div className="">
+            {selectedBlog.imageSrc && (
+              <div className="banner-image" style={{ marginTop: isMobile? "-71px": "-20px"}} >
+                <Image
+                  src={selectedBlog.imageSrc}
+                  style={{
+                    width: "100%",
+                    marginBottom: "20px",
+                  }}
+                  className="card-img-top d-flex"
+                  alt="..."
+                />
+              </div>
+            )}
+
+            <div className="row mb-5 mt-2">
+              <div className="col text-start">
+                <p className="card-text"><small className=" text-gre font-montserrat ms-2 fs-6 ">Financial tips</small></p>
+              </div>
+              <div className="col text-end ">
+                <p className="card-text"><small className="text-muted font-montserrat me-2 fs-6">20 Nov . 2024</small></p>
+              </div>
+            </div>
+
+            <h1 className=" mb-3 ms-2 me-2 fs-2">{selectedBlog.title}</h1>
+            <p className=" ms-2 me-2 fs-6">{selectedBlog.content}</p>
+            <div className="d-flex justify-content-center mt-5">
+              <Button className="ms-5 me-2 border border-dark " variant="white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-left me-2" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                </svg>
+                Previous Post
+              </Button>
+              <Button className="ms-2 me-5 green-card " variant="">
+                Next Post
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg>
+              </Button>
+            </div>
+            <Button className="mt-5 ms-2 me-2 bg-dark-blue text-light" style={{marginTop:'10%'}}  onClick={handleBackButtonClick}>
               Back
             </Button>
-            <h1>{selectedBlog.title}</h1>
-            <p>{selectedBlog.content}</p>
           </div>
         ) : (
           <>
@@ -57,8 +95,8 @@ export default function Blog({ blogs }: IProps) {
                     className="mb-5 pb-3 px-5"
                   >
                     <div className="card" style={{ border: "10px" }} onClick={() => handleBlogClick(blog)}>
-                      <div className="card-header">
-                        <a href="" className="btn green-card fs-6 text-dark-blue font-montserrat " style={{ position: 'absolute', bottom: '93%', left: '19%', transform: 'translateX(-50%)', zIndex: 1 }}>
+                      <div className=" flex-column me-5 d-flex justify-content-start">
+                        <a href="" className="btn green-card fs-6 text-dark-blue font-montserrat " style={{ marginBottom: '-1rem', transform: 'translateX(-50%)', zIndex: 1 }}>
                           Financial Tips
                         </a>
 
@@ -102,8 +140,8 @@ export default function Blog({ blogs }: IProps) {
                     </div>
                   </Col>
                 ))}
-                <div className="pe-5 px-5 ">
-                  <Pagination className="px-3 pagination bg-transparent">
+                <div className="d-flex justify-content-center">
+                  <Pagination className="pagination bg-transparent">
                     <Pagination.Prev />
                     <Pagination.Item>{1}</Pagination.Item>
                     <Pagination.Item>{2}</Pagination.Item>
@@ -125,6 +163,11 @@ export default function Blog({ blogs }: IProps) {
                     onClick={() => handleBlogClick(blog)}
                   >
                     <div className="card" style={{ border: "10px" }}>
+                      <div className="flex-column me-5 d-flex justify-content-start">
+                        <a href="" className="btn green-card me-5 fs-6 text-dark-blue font-montserrat " style={{ marginBottom: '-1rem', transform: 'translateX(-50%)', zIndex: 1 }}>
+                          Financial Tips
+                        </a>
+                      </div>
                       {blog.imageSrc && (
                         <Image
                           src={blog.imageSrc}
@@ -165,6 +208,18 @@ export default function Blog({ blogs }: IProps) {
                     </div>
                   </Col>
                 ))}
+                <div className=" d-flex justify-content-center ">
+                  <Pagination className=" pagination bg-transparent">
+                    <Pagination.Prev />
+                    <Pagination.Item>{1}</Pagination.Item>
+                    <Pagination.Item>{2}</Pagination.Item>
+                    <Pagination.Item>{3}</Pagination.Item>
+                    <Pagination.Item>{4}</Pagination.Item>
+                    <Pagination.Item>{5}</Pagination.Item>
+                    <Pagination.Item>{6}</Pagination.Item>
+                    <Pagination.Next />
+                  </Pagination>
+                </div>
               </Row>
             )}
           </>
