@@ -29,7 +29,7 @@ export default function BlogPage() {
     },
     {
       id: 3,
-      title: "Los beneficios de practicar mindfulness",
+      title: "Cómo mejorar la productividad en el trabajo",
       description:
         "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
       content:

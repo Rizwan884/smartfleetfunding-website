@@ -18,14 +18,28 @@ type IProps = {
 };
 export default function Blog({ blogs }: IProps) {
   const isMobile = useMediaQuery({ maxWidth: 767 });
-  const [selectedBlog, setSelectedBlog] = useState<BlogItem | null>(null);
-  const handleBlogClick = (blog: BlogItem) => {
-    setSelectedBlog(blog);
+  const [selectedBlogIndex, setSelectedBlogIndex] = useState<number | null>(null);
+  const handleBlogClick = (index: number) => {
+    setSelectedBlogIndex(index);
   };
 
   const handleBackButtonClick = () => {
-    setSelectedBlog(null);
+    setSelectedBlogIndex(null);
   };
+
+  const handlePreviousPostClick = () => {
+    if(selectedBlogIndex !== null && selectedBlogIndex > 0) {
+      setSelectedBlogIndex(selectedBlogIndex -1);
+    }
+  };
+
+  const handleNextPostClick = () => {
+    if(selectedBlogIndex !== null && selectedBlogIndex > 0) {
+      setSelectedBlogIndex(selectedBlogIndex +1);
+    }
+  };
+
+
   return (
     <>
       <div className="pt-5 px-4 px-md-5 pb-4 pb-md-5 mb-50 bg-search">
@@ -39,12 +53,12 @@ export default function Blog({ blogs }: IProps) {
         </div>
       </div>
       <div id="blog" className="container pt-6 pb-5 mt-sm-1 mb-sm-2 mt-5 mb-6">
-        {selectedBlog ? (
+        {selectedBlogIndex != null ? (
           <div className="">
-            {selectedBlog.imageSrc && (
+            {blogs[selectedBlogIndex].imageSrc && (
               <div className="banner-image" style={{ marginTop: isMobile? "-71px": "-20px"}} >
                 <Image
-                  src={selectedBlog.imageSrc}
+                  src={blogs[selectedBlogIndex].imageSrc}
                   style={{
                     width: "100%",
                     marginBottom: "20px",
@@ -64,16 +78,16 @@ export default function Blog({ blogs }: IProps) {
               </div>
             </div>
 
-            <h1 className=" mb-3 ms-2 me-2 fs-2">{selectedBlog.title}</h1>
-            <p className=" ms-2 me-2 fs-6">{selectedBlog.content}</p>
+            <h1 className=" mb-3 ms-2 me-2 fs-2">{blogs[selectedBlogIndex].title}</h1>
+            <p className=" ms-2 me-2 fs-6">{blogs[selectedBlogIndex].content}</p>
             <div className="d-flex justify-content-center mt-5">
-              <Button className="ms-5 me-2 border border-dark " variant="white">
+              <Button className="ms-5 me-2 border border-dark " variant="white" onClick={handlePreviousPostClick}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-left me-2" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
                 </svg>
                 Previous Post
               </Button>
-              <Button className="ms-2 me-5 green-card " variant="">
+              <Button className="ms-2 me-5 green-card " variant=""onClick={handleNextPostClick}>
                 Next Post
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right ms-2" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
@@ -94,7 +108,7 @@ export default function Blog({ blogs }: IProps) {
                     md={4}
                     className="mb-5 pb-3 px-5"
                   >
-                    <div className="card" style={{ border: "10px" }} onClick={() => handleBlogClick(blog)}>
+                    <div className="card" style={{ border: "10px" }} onClick={() => handleBlogClick(index)}>
                       <div className=" flex-column me-5 d-flex justify-content-start">
                         <a href="" className="btn green-card fs-6 text-dark-blue font-montserrat " style={{ marginBottom: '-1rem', transform: 'translateX(-50%)', zIndex: 1 }}>
                           Financial Tips
@@ -160,7 +174,7 @@ export default function Blog({ blogs }: IProps) {
                     key={index}
                     md={4}
                     className="mb-5  "
-                    onClick={() => handleBlogClick(blog)}
+                    onClick={() => handleBlogClick(index)}
                   >
                     <div className="card" style={{ border: "10px" }}>
                       <div className="flex-column me-5 d-flex justify-content-start">
