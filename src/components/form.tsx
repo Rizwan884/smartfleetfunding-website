@@ -1,10 +1,22 @@
-import Image from "next/image";
+import { FormEvent } from "react";
 type IProps = {
   backgroundImage?: string;
   titleForm?: string | undefined;
 };
 
 export default function SectionForm({ backgroundImage, titleForm }: IProps) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const response = await fetch(
+      "https://1170027-sb1.extforms.netsuite.com/app/site/crm/externalleadpage.nl?compid=1170027_SB1",
+      {
+        method: "POST",
+        body: formData,
+      }
+    ); // Handle response if necessary
+    console.log(await response.json());
+  }
   return (
     <>
       <div className="d-flex flex-column-reverse flex-md-row mt-6">
