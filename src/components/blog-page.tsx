@@ -37,14 +37,17 @@ export default function Blog({ blogs }: IProps) {
   };
 
   const handlePreviousPostClick = () => {
-    if (selectedBlogIndex !== null && selectedBlogIndex > 0) {
-      setSelectedBlogIndex(selectedBlogIndex - 1);
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      setSelectedBlogIndex(null);
     }
   };
 
   const handleNextPostClick = () => {
-    if (selectedBlogIndex !== null && selectedBlogIndex < blogs.length - 1) {
-      setSelectedBlogIndex(selectedBlogIndex + 1);
+    const maxPage = Math.ceil(blogs.length / blogsPerPage);
+    if (currentPage < maxPage) {
+      setCurrentPage(currentPage + 1);
+      setSelectedBlogIndex(null);
     }
   };
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
