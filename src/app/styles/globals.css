@@ -821,7 +821,7 @@ span:hover {
 #fullemail::placeholder,
 #fullname::placeholder {
   color: var(--gray-dark);
-  font-size: 11px;
+  font-size: 13px;
 }
 .form-control:focus {
   background: var(--gray-transparent);
