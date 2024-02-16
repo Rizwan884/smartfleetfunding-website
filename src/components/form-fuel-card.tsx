@@ -119,13 +119,10 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   >
                     Acept Our{" "}
                     <Link
-                      href=""
+                      href="/privacy"
+                      target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open("/privacy");
-                      }}
                     >
                       <strong>Privacy Policy</strong>
                     </Link>

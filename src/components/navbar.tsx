@@ -11,18 +11,10 @@ export default function SFFNavbar() {
   return (
     <>
       <div className="font-montserrat text-left p-2 px-5 bg-green">
-        <Link
-          href="tel:+18888755506"
-          className="text-white"
-          style={{ marginLeft: "4rem" }}
-        >
+        <Link href="tel:+18888755506" className="text-white ms-2">
           Toll-Free: +1 (888) 875-5506{" "}
         </Link>
-        <Link
-          href="https://wa.me/18302097589"
-          className="text-white"
-          style={{ marginLeft: "0.5rem" }}
-        >
+        <Link href="https://wa.me/18302097589" className="text-white ms-2">
           WhatsApp: +1 (830) 209-7589{" "}
         </Link>
       </div>
@@ -48,7 +40,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }}
+                      className="w-13 h-10"
                     />
                   </>
                 }
@@ -75,7 +67,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }}
+                      className="w-13 h-10"
                     />
                   </>
                 }
@@ -123,9 +115,9 @@ export default function SFFNavbar() {
                 ABOUT US
               </Nav.Link>
               <hr className="text-dark m-0" />
-              <Nav.Link className="text-dark-blue px-3 py-4 fw-600 " href="#">
+              {/* <Nav.Link className="text-dark-blue px-3 py-4 fw-600 " href="#">
                 BLOG
-              </Nav.Link>
+              </Nav.Link> */}
               <hr className="text-dark m-0" />
               <Nav.Link
                 className="text-dark-blue px-3 py-4 fw-600 "
@@ -141,7 +133,7 @@ export default function SFFNavbar() {
                     <Image
                       src="images/sff-arrow-down-green.svg"
                       alt="Dropdown Icon"
-                      style={{ width: "13px", height: "10px" }}
+                      className="w-13 h-10"
                     />
                   </>
                 }
