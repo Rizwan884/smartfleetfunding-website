@@ -180,13 +180,11 @@ export default function Blog({ blogs }: IProps) {
                         <div className=" flex-column d-flex justify-content-start">
                           <Button
                             href=""
-                            variant="btn w-50 h-auto btn-custom"
-                            className="green-card fs-6 fw-600 text-dark-blue font-montserrat position-absolute"
+                            variant="btn w-auto ms-auto h-auto btn-custom"
+                            className="green-card fs-6 fw-600 text-dark-blue font-montserrat position-absolute start-0"
                             style={{
-                              right: "15%",
                               top: "-5%",
                               marginBottom: "-1rem",
-                              transform: "translateX(-70%)",
                               zIndex: 1,
                             }}
                           >
@@ -268,16 +266,14 @@ export default function Blog({ blogs }: IProps) {
                   >
                     <div className="card w-100" style={{ border: "10px" }}>
                       <div className="d-flex flex-column ms-5">
-                        <div className=" flex-columnd-flex justify-content-start">
+                        <div className="justify-content-start">
                           <Button
                             href=""
-                            variant="btn w-50 h-auto btn-custom"
-                            className=" green-card fs-6 fw-600 text-dark-blue font-montserrat align-self-start position-absolute"
+                            variant="btn w-auto ms-auto h-auto btn-custom"
+                            className=" green-card fs-6 fw-600 text-dark-blue font-montserrat position-absolute start-0"
                             style={{
-                              right: "0%",
                               top: "-5%",
                               marginBottom: "-1rem",
-                              transform: "translateX(-100%)",
                               zIndex: 1,
                             }}
                           >
