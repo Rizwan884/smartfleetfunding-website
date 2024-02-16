@@ -21,13 +21,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
     <>
       <div className="d-flex flex-column-reverse flex-md-row mt-6">
         <div className="md-w-50 w-100 bg-dark-blue text-white">
-          <form
-            action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
-            method="POST"
-            id="form"
-            className="m-5"
-            target="#"
-          >
+          <form onSubmit={onSubmit} id="form" className="m-5">
             <h1
               className="fw-normal fs-2 text-left fst-italic"
               style={{ marginBottom: "30px" }}

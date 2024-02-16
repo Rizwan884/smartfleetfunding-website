@@ -25,11 +25,9 @@ export default function FormInstapay() {
           {" "}
           <div className="h-100 w-50 w-md-100 text-dark-blue">
             <form
-              action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
-              method="POST"
+              onSubmit={onSubmit}
               id="form-instapay"
               className="mx-5 my-5 m-md-5"
-              target="#"
             >
               <div className="row mb-3 flex-md-row flex-column ">
                 <div className="col">

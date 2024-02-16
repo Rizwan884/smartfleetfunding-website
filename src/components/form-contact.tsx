@@ -87,13 +87,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         </div>
 
         <div className="md-w-50 w-100  bg-dark-blue text-white">
-          <form
-            action="https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false"
-            method="POST"
-            id="form"
-            className="m-3rem"
-            target="#"
-          >
+          <form onSubmit={onSubmit} id="form" className="m-3rem">
             <h1
               className=" fs-2 d-flex flex-column align-items-center align-items-md-start pb-3 pb-md-0 fst-italic"
               style={{ marginBottom: "30px" }}
