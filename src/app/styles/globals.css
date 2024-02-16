@@ -590,6 +590,9 @@ span:hover {
 .green-card {
   background-color: #04D667;
 }
+.green-card:hover {
+  background-color: #04D667;
+}
 
 .pagination {
   background-color: transparent;

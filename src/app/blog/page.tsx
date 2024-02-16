@@ -14,6 +14,8 @@ export default function BlogPage() {
         "Consejos y trucos para ser más productivo mientras trabajas desde casa. y mucho más",
       imageSrc: "images/sff-blog-img.jpg",
       desktopSrc: "images/sff-blog-img-web.jpg",
+      date: "20 Nov 2024",
+      type: "Financial Tips",
 
       with: 20,
       height: 28,
@@ -26,6 +28,8 @@ export default function BlogPage() {
       content:
         "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
       imageSrc: "images/sff-blog-img.jpg",
+      date: "18 Nov 2024",
+      type: "Fuel Card Tips",
     },
     {
       id: 3,
@@ -35,6 +39,8 @@ export default function BlogPage() {
       content:
         "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
       imageSrc: "images/sff-blog-img.jpg",
+      date: "30 Ene 2024",
+      type: "Instapay Tips",
     },
 
     {
@@ -45,6 +51,8 @@ export default function BlogPage() {
       content:
         "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
       imageSrc: "images/sff-blog-img.jpg",
+      date: "5 Nov 2024",
+      type: "Freight Tips",
     },
 
     {
@@ -55,6 +63,8 @@ export default function BlogPage() {
       content:
         "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
       imageSrc: "images/sff-blog-img.jpg",
+      date: "10 Nov 2024",
+      type: "Faq Tips",
     },
 
     {
@@ -65,6 +75,8 @@ export default function BlogPage() {
       content:
         "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
       imageSrc: "images/sff-blog-img.jpg",
+      date: "21 Nov 2024",
+      type: "prueba",
     },
   ];
   return (
