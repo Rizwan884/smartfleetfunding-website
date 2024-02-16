@@ -138,7 +138,7 @@ export default function Needs() {
         <div className="mx-2 text-center">
           <Button
             href="/"
-            className="contact_slide fw-bold fs-4 me-5 my-4 h-25  d-inline-block"
+            className="contact_slide fw-bold fs-4 me-5 my-4 h-25 d-inline-block"
             variant="btn btn-custom"
           >
             Let{"'"}s Talk

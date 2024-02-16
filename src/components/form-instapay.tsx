@@ -91,14 +91,14 @@ export default function FormInstapay() {
                       id="flexCheckDefault"
                     />
                     <label
-                      className="form-check-label"
+                      className="form-check-label text-dark-blue"
                       htmlFor="flexCheckDefault"
                     >
                       Accept Our{" "}
                       <Link
-                        href="/privacy"
-                        target="_blank"
-                        className="text-decoration-none text-green"
+                        href=""
+                        // target="_blank"
+                        className="text-decoration-none text-dark-blue"
                         passHref={true}
                       >
                         <strong>Privacy Policy</strong>
