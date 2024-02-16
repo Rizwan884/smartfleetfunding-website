@@ -43,10 +43,7 @@ export default function Blog({ blogs }: IProps) {
   };
 
   const handleNextPostClick = () => {
-    if (
-      selectedBlogIndex !== null &&
-      selectedBlogIndex < blogs.length - 1
-    ) {
+    if (selectedBlogIndex !== null && selectedBlogIndex < blogs.length - 1) {
       setSelectedBlogIndex(selectedBlogIndex + 1);
     }
   };
@@ -84,7 +81,7 @@ export default function Blog({ blogs }: IProps) {
               </div>
             )}
 
-            <div className="row mb-5 mt-2">
+            <div className="row mb-4 mt-2">
               <div className="col text-start">
                 <p className="card-text">
                   <small className=" text-gre font-montserrat ms-2 fs-6 ">
@@ -100,7 +97,25 @@ export default function Blog({ blogs }: IProps) {
                 </p>
               </div>
             </div>
-
+            <Button
+              className="mb-2"
+              variant="white"
+              onClick={handleBackButtonClick}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                className="bi bi-arrow-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                />
+              </svg>
+            </Button>
             <h1 className=" mb-3 ms-2 me-2 fs-2">
               {blogs[selectedBlogIndex].title}
             </h1>
@@ -149,13 +164,6 @@ export default function Blog({ blogs }: IProps) {
                 </svg>
               </Button>
             </div>
-            <Button
-              className="mt-5 ms-2 me-2 bg-dark-blue text-light"
-              style={{ marginTop: "10%" }}
-              onClick={handleBackButtonClick}
-            >
-              Back
-            </Button>
           </div>
         ) : (
           <>
@@ -173,7 +181,7 @@ export default function Blog({ blogs }: IProps) {
                           <Button
                             href=""
                             variant="btn w-50 h-auto btn-custom"
-                            className="green-card fs-6 text-dark-blue font-montserrat position-absolute"
+                            className="green-card fs-6 fw-600 text-dark-blue font-montserrat position-absolute"
                             style={{
                               right: "15%",
                               top: "-5%",
@@ -207,13 +215,6 @@ export default function Blog({ blogs }: IProps) {
                               </small>
                             </p>
                           </div>
-                          <div className="col text-end ">
-                            <p className="card-text">
-                              <small className="text-muted font-montserrat fs-6">
-                                {blog.date}
-                              </small>
-                            </p>
-                          </div>
                         </div>
                         <br />
                         {blog.title && (
@@ -235,13 +236,24 @@ export default function Blog({ blogs }: IProps) {
                 ))}
                 <div className="d-flex justify-content-center">
                   <Pagination className="pagination bg-transparent">
-                    <Pagination.Prev onClick={() => paginate(currentPage - 1)} />
-                    {Array.from({ length: Math.ceil(blogs.length / blogsPerPage) }, (_, i) => (
-                      <Pagination.Item key={i + 1} active={i + 1 === currentPage} onClick={() => paginate(i + 1)}>
-                        {i + 1}
-                      </Pagination.Item>
-                    ))}
-                    <Pagination.Next onClick={() => paginate(currentPage + 1)} />
+                    <Pagination.Prev
+                      onClick={() => paginate(currentPage - 1)}
+                    />
+                    {Array.from(
+                      { length: Math.ceil(blogs.length / blogsPerPage) },
+                      (_, i) => (
+                        <Pagination.Item
+                          key={i + 1}
+                          active={i + 1 === currentPage}
+                          onClick={() => paginate(i + 1)}
+                        >
+                          {i + 1}
+                        </Pagination.Item>
+                      )
+                    )}
+                    <Pagination.Next
+                      onClick={() => paginate(currentPage + 1)}
+                    />
                   </Pagination>
                 </div>
               </Row>
@@ -260,7 +272,7 @@ export default function Blog({ blogs }: IProps) {
                           <Button
                             href=""
                             variant="btn w-50 h-auto btn-custom"
-                            className=" green-card  fs-6 text-dark-blue font-montserrat align-self-start position-absolute"
+                            className=" green-card fs-6 fw-600 text-dark-blue font-montserrat align-self-start position-absolute"
                             style={{
                               right: "0%",
                               top: "-5%",
@@ -289,14 +301,7 @@ export default function Blog({ blogs }: IProps) {
                         <div className="row">
                           <div className="col text-start">
                             <p className="card-text">
-                              <small className="text-muted font-montserrat text-claro">
-                                {blog.date}
-                              </small>
-                            </p>
-                          </div>
-                          <div className="col text-end ">
-                            <p className="card-text">
-                              <small className="text-muted font-montserrat">
+                              <small className="text-muted m-2 font-montserrat text-claro">
                                 {blog.date}
                               </small>
                             </p>
@@ -309,12 +314,12 @@ export default function Blog({ blogs }: IProps) {
                           </h1>
                         )}
                         {blog.description && (
-                          <p className="text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
+                          <p className="text-start fw-light fs-6 mt-1 m-2 text-dark-blue font-montserrat">
                             {blog.description}
                           </p>
                         )}
 
-                        <p className=" text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
+                        <p className=" text-start fw-light fs-6 mt-1 m-2 text-dark-blue font-montserrat">
                           Leer mas...
                         </p>
                       </div>
@@ -322,14 +327,25 @@ export default function Blog({ blogs }: IProps) {
                   </Col>
                 ))}
                 <div className=" d-flex justify-content-center ">
-                <Pagination className="pagination bg-transparent">
-                    <Pagination.Prev onClick={() => paginate(currentPage - 1)} />
-                    {Array.from({ length: Math.ceil(blogs.length / blogsPerPage) }, (_, i) => (
-                      <Pagination.Item key={i + 1} active={i + 1 === currentPage} onClick={() => paginate(i + 1)}>
-                        {i + 1}
-                      </Pagination.Item>
-                    ))}
-                    <Pagination.Next onClick={() => paginate(currentPage + 1)} />
+                  <Pagination className="pagination bg-transparent">
+                    <Pagination.Prev
+                      onClick={() => paginate(currentPage - 1)}
+                    />
+                    {Array.from(
+                      { length: Math.ceil(blogs.length / blogsPerPage) },
+                      (_, i) => (
+                        <Pagination.Item
+                          key={i + 1}
+                          active={i + 1 === currentPage}
+                          onClick={() => paginate(i + 1)}
+                        >
+                          {i + 1}
+                        </Pagination.Item>
+                      )
+                    )}
+                    <Pagination.Next
+                      onClick={() => paginate(currentPage + 1)}
+                    />
                   </Pagination>
                 </div>
               </Row>
