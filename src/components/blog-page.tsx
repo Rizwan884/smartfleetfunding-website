@@ -61,7 +61,7 @@ export default function Blog({ blogs }: IProps) {
           </div>
         </div>
       </div>
-      <div id="blog" className="container pt-6 pb-5 mt-sm-1 mb-sm-2 mt-5 mb-6">
+      <div id="blog" className="container pt-6 pb-5 mt-sm-1 mb-sm-2 mt-5 mb-5">
         {selectedBlogIndex != null ? (
           <div className="">
             {blogs[selectedBlogIndex].imageSrc && (
