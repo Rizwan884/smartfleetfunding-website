@@ -600,6 +600,7 @@ span:hover {
 .pagination .page-link {
   border: none;
  color:#04D667;
+ background-color: transparent;
 
 }
 .text-gre {

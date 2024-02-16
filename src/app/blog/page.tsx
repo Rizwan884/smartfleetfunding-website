@@ -78,6 +78,78 @@ export default function BlogPage() {
       date: "21 Nov 2024",
       type: "prueba",
     },
+
+    {
+      id: 7,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
+      date: "03 Sep 2024",
+      type: "Financial tip",
+    },
+
+    {
+      id: 8,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
+      date: "14 Nov 2024",
+      type: "prueba",
+    },
+
+    {
+      id: 9,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
+      date: "21 Nov 2024",
+      type: "Faq Tips",
+    },
+
+    {
+      id: 10,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
+      date: "26 Nov 2024",
+      type: "prueba",
+    },
+
+    {
+      id: 11,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
+      date: "06 Dec 2024",
+      type: "promocional",
+    },
+
+    {
+      id: 12,
+      title: "Los beneficios de practicar mindfulness",
+      description:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general.",
+      content:
+        "Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.",
+      imageSrc: "images/sff-blog-img.jpg",
+      date: "21 Feb 2024",
+      type: "test",
+    },    
   ];
   return (
     <>

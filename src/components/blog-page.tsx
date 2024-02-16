@@ -23,6 +23,11 @@ export default function Blog({ blogs }: IProps) {
   const [selectedBlogIndex, setSelectedBlogIndex] = useState<number | null>(
     null
   );
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const blogsPerPage = 6;
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = blogs.slice(indexOfFirstBlog, indexOfLastBlog);
   const handleBlogClick = (index: number) => {
     setSelectedBlogIndex(index);
   };
@@ -40,11 +45,12 @@ export default function Blog({ blogs }: IProps) {
   const handleNextPostClick = () => {
     if (
       selectedBlogIndex !== null &&
-      selectedBlogIndex < blogs.length - 1 // Verifica que no estemos en el último artículo
+      selectedBlogIndex < blogs.length - 1
     ) {
       setSelectedBlogIndex(selectedBlogIndex + 1);
     }
   };
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
     <>
@@ -155,25 +161,30 @@ export default function Blog({ blogs }: IProps) {
           <>
             {isMobile ? (
               <Row className="mt-5 ">
-                {blogs.map((blog, index) => (
+                {currentBlogs.map((blog, index) => (
                   <Col key={index} md={4} className="mb-5 pb-3 px-5">
                     <div
                       className="card"
                       style={{ border: "10px" }}
-                      onClick={() => handleBlogClick(index)}
+                      onClick={() => handleBlogClick(index + indexOfFirstBlog)}
                     >
-                      <div className=" flex-column me-5 d-flex justify-content-start">
-                        <a
-                          href=""
-                          className="btn green-card fs-6 text-dark-blue font-montserrat "
-                          style={{
-                            marginBottom: "-1rem",
-                            transform: "translateX(-50%)",
-                            zIndex: 1,
-                          }}
-                        >
-                          {blog.type}
-                        </a>
+                      <div className="d-flex flex-column me-5 ">
+                        <div className=" flex-column d-flex justify-content-start">
+                          <Button
+                            href=""
+                            variant="btn w-50 h-auto btn-custom"
+                            className="green-card fs-6 text-dark-blue font-montserrat position-absolute"
+                            style={{
+                              right: "15%",
+                              top: "-5%",
+                              marginBottom: "-1rem",
+                              transform: "translateX(-70%)",
+                              zIndex: 1,
+                            }}
+                          >
+                            {blog.type}
+                          </Button>
+                        </div>
                       </div>
                       {blog.imageSrc && (
                         <Image
@@ -192,14 +203,14 @@ export default function Blog({ blogs }: IProps) {
                           <div className="col text-start">
                             <p className="card-text">
                               <small className="text-muted font-montserrat text-claro fs-6 ">
-                                20 Nov
+                                {blog.date}
                               </small>
                             </p>
                           </div>
                           <div className="col text-end ">
                             <p className="card-text">
                               <small className="text-muted font-montserrat fs-6">
-                                2024
+                                {blog.date}
                               </small>
                             </p>
                           </div>
@@ -224,39 +235,43 @@ export default function Blog({ blogs }: IProps) {
                 ))}
                 <div className="d-flex justify-content-center">
                   <Pagination className="pagination bg-transparent">
-                    <Pagination.Prev />
-                    <Pagination.Item>{1}</Pagination.Item>
-                    <Pagination.Item>{2}</Pagination.Item>
-                    <Pagination.Item>{3}</Pagination.Item>
-                    <Pagination.Item>{4}</Pagination.Item>
-                    <Pagination.Item>{5}</Pagination.Item>
-                    <Pagination.Item>{6}</Pagination.Item>
-                    <Pagination.Next />
+                    <Pagination.Prev onClick={() => paginate(currentPage - 1)} />
+                    {Array.from({ length: Math.ceil(blogs.length / blogsPerPage) }, (_, i) => (
+                      <Pagination.Item key={i + 1} active={i + 1 === currentPage} onClick={() => paginate(i + 1)}>
+                        {i + 1}
+                      </Pagination.Item>
+                    ))}
+                    <Pagination.Next onClick={() => paginate(currentPage + 1)} />
                   </Pagination>
                 </div>
               </Row>
             ) : (
               <Row className="mt-5">
-                {blogs.map((blog, index) => (
+                {currentBlogs.map((blog, index) => (
                   <Col
                     key={index}
                     md={4}
                     className="mb-5  "
-                    onClick={() => handleBlogClick(index)}
+                    onClick={() => handleBlogClick(index + indexOfFirstBlog)}
                   >
                     <div className="card w-100" style={{ border: "10px" }}>
-                      <div className="d-flex justify-content-start">
-                        <a
-                          href=""
-                          className="btn green-card  fs-6 text-dark-blue font-montserrat align-self-start "
-                          style={{
-                            marginBottom: "-1rem",
-                            transform: "translateX(-100%)",
-                            zIndex: 1,
-                          }}
-                        >
-                          {blog.type}
-                        </a>
+                      <div className="d-flex flex-column ms-5">
+                        <div className=" flex-columnd-flex justify-content-start">
+                          <Button
+                            href=""
+                            variant="btn w-50 h-auto btn-custom"
+                            className=" green-card  fs-6 text-dark-blue font-montserrat align-self-start position-absolute"
+                            style={{
+                              right: "0%",
+                              top: "-5%",
+                              marginBottom: "-1rem",
+                              transform: "translateX(-100%)",
+                              zIndex: 1,
+                            }}
+                          >
+                            {blog.type}
+                          </Button>
+                        </div>
                       </div>
                       {blog.imageSrc && (
                         <Image
@@ -275,14 +290,14 @@ export default function Blog({ blogs }: IProps) {
                           <div className="col text-start">
                             <p className="card-text">
                               <small className="text-muted font-montserrat text-claro">
-                                20 Nov
+                                {blog.date}
                               </small>
                             </p>
                           </div>
                           <div className="col text-end ">
                             <p className="card-text">
                               <small className="text-muted font-montserrat">
-                                2024
+                                {blog.date}
                               </small>
                             </p>
                           </div>
@@ -307,15 +322,14 @@ export default function Blog({ blogs }: IProps) {
                   </Col>
                 ))}
                 <div className=" d-flex justify-content-center ">
-                  <Pagination className=" pagination bg-transparent">
-                    <Pagination.Prev />
-                    <Pagination.Item>{1}</Pagination.Item>
-                    <Pagination.Item>{2}</Pagination.Item>
-                    <Pagination.Item>{3}</Pagination.Item>
-                    <Pagination.Item>{4}</Pagination.Item>
-                    <Pagination.Item>{5}</Pagination.Item>
-                    <Pagination.Item>{6}</Pagination.Item>
-                    <Pagination.Next />
+                <Pagination className="pagination bg-transparent">
+                    <Pagination.Prev onClick={() => paginate(currentPage - 1)} />
+                    {Array.from({ length: Math.ceil(blogs.length / blogsPerPage) }, (_, i) => (
+                      <Pagination.Item key={i + 1} active={i + 1 === currentPage} onClick={() => paginate(i + 1)}>
+                        {i + 1}
+                      </Pagination.Item>
+                    ))}
+                    <Pagination.Next onClick={() => paginate(currentPage + 1)} />
                   </Pagination>
                 </div>
               </Row>
