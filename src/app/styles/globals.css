@@ -594,15 +594,7 @@ span:hover {
   background-color: #04D667;
 }
 
-.pagination {
-  background-color: transparent;
-}
-.pagination .page-link {
-  border: none;
- color:#04D667;
- background-color: transparent;
 
-}
 .text-gre {
   color: #04D667 ;
 }
@@ -1124,3 +1116,20 @@ input[type="radio"]:checked ~ label {
 #blog .card-text {
   font-size: 18px;
 }
+.pagination {
+  background-color: transparent;
+}
+.pagination .page-link {
+  border: none;
+ color:var(--dark-blue);
+ background-color: transparent;
+
+}
+.page-link.active, .active > .page-link {
+  color:var(--green);
+}
+.page-link:focus{
+  box-shadow: none;
+}
+
+

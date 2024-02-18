@@ -31,26 +31,34 @@ export default function Blog({ blogs }: IProps) {
   const handleBlogClick = (index: number) => {
     setSelectedBlogIndex(index);
   };
-
+  /*-------------------Botones Next, Prev and Back---------------------*/
   const handleBackButtonClick = () => {
     setSelectedBlogIndex(null);
   };
 
   const handlePreviousPostClick = () => {
+    if (selectedBlogIndex !== null && selectedBlogIndex > 0) {
+      setSelectedBlogIndex(selectedBlogIndex - 1);
+    }
+  };
+  const handleNextPostClick = () => {
+    if (selectedBlogIndex !== null && selectedBlogIndex < blogs.length - 1) {
+      setSelectedBlogIndex(selectedBlogIndex + 1);
+    }
+  };
+  /*-------------------------Pagination-------------------------*/
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+  const handlePreviousPageClick = () => {
     if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-      setSelectedBlogIndex(null);
+      paginate(currentPage - 1);
     }
   };
 
-  const handleNextPostClick = () => {
-    const maxPage = Math.ceil(blogs.length / blogsPerPage);
-    if (currentPage < maxPage) {
-      setCurrentPage(currentPage + 1);
-      setSelectedBlogIndex(null);
+  const handleNextPageClick = () => {
+    if (currentPage < Math.ceil(blogs.length / blogsPerPage)) {
+      paginate(currentPage + 1);
     }
   };
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
     <>
@@ -67,13 +75,13 @@ export default function Blog({ blogs }: IProps) {
       <div id="blog" className="container pt-6 pb-5 mt-sm-1 mb-sm-2 mt-5 mb-5">
         {selectedBlogIndex != null ? (
           <div className="">
-            {blogs[selectedBlogIndex].imageSrc && (
+            {blogs[selectedBlogIndex].desktopSrc && (
               <div
                 className="banner-image"
                 style={{ marginTop: isMobile ? "-71px" : "-20px" }}
               >
                 <Image
-                  src={blogs[selectedBlogIndex].imageSrc}
+                  src={blogs[selectedBlogIndex].desktopSrc}
                   style={{
                     width: "100%",
                     marginBottom: "20px",
@@ -237,9 +245,7 @@ export default function Blog({ blogs }: IProps) {
                 ))}
                 <div className="d-flex justify-content-center">
                   <Pagination className="pagination bg-transparent">
-                    <Pagination.Prev
-                      onClick={() => paginate(currentPage - 1)}
-                    />
+                    <Pagination.Prev onClick={handlePreviousPageClick} />
                     {Array.from(
                       { length: Math.ceil(blogs.length / blogsPerPage) },
                       (_, i) => (
@@ -252,9 +258,7 @@ export default function Blog({ blogs }: IProps) {
                         </Pagination.Item>
                       )
                     )}
-                    <Pagination.Next
-                      onClick={() => paginate(currentPage + 1)}
-                    />
+                    <Pagination.Next onClick={handleNextPageClick} />
                   </Pagination>
                 </div>
               </Row>
@@ -284,7 +288,8 @@ export default function Blog({ blogs }: IProps) {
                           </Button>
                         </div>
                       </div>
-                      {blog.imageSrc && (
+
+                      {blog.imageSrc && ( // Imagenes de las cartas principales del blog
                         <Image
                           src={blog.imageSrc}
                           style={{
@@ -325,11 +330,9 @@ export default function Blog({ blogs }: IProps) {
                     </div>
                   </Col>
                 ))}
-                <div className=" d-flex justify-content-center ">
+                <div className="d-flex justify-content-center">
                   <Pagination className="pagination bg-transparent">
-                    <Pagination.Prev
-                      onClick={() => paginate(currentPage - 1)}
-                    />
+                    <Pagination.Prev onClick={handlePreviousPageClick} />
                     {Array.from(
                       { length: Math.ceil(blogs.length / blogsPerPage) },
                       (_, i) => (
@@ -342,9 +345,7 @@ export default function Blog({ blogs }: IProps) {
                         </Pagination.Item>
                       )
                     )}
-                    <Pagination.Next
-                      onClick={() => paginate(currentPage + 1)}
-                    />
+                    <Pagination.Next onClick={handleNextPageClick} />
                   </Pagination>
                 </div>
               </Row>
