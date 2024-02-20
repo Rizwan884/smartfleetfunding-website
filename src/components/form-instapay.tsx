@@ -1,16 +1,16 @@
+import Link from "next/link";
 import { FormEvent } from "react";
 export default function FormInstapay() {
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const response = await fetch(
-      "https://1170027-sb1.extforms.netsuite.com/app/site/crm/externalleadpage.nl?compid=1170027_SB1",
+      "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
       {
         method: "POST",
         body: formData,
       }
-    ); // Handle response if necessary
-    console.log(await response.json());
+    );
   }
   return (
     <>
@@ -29,6 +29,12 @@ export default function FormInstapay() {
               id="form-instapay"
               className="mx-5 my-5 m-md-5"
             >
+              <input
+                id="form-name"
+                name="form-name"
+                value="instapay"
+                type="hidden"
+              ></input>
               <div className="row mb-3 flex-md-row flex-column ">
                 <div className="col">
                   <input
@@ -36,6 +42,7 @@ export default function FormInstapay() {
                     className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
                     id="fullname"
                     name="name"
+                    required
                     placeholder="Full Name"
                   ></input>
                 </div>
@@ -45,6 +52,7 @@ export default function FormInstapay() {
                     className="form-control px-3 bg-grey-transparent text-dark-blue"
                     id="fullemail"
                     name="email"
+                    required
                     placeholder="Your E-Mail"
                   ></input>
                 </div>
@@ -56,6 +64,7 @@ export default function FormInstapay() {
                     className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
                     id="fullcompany"
                     name="company"
+                    required
                     placeholder="Company Name"
                   ></input>
                 </div>
@@ -65,6 +74,7 @@ export default function FormInstapay() {
                     className="form-control px-3 bg-grey-transparent text-dark-blue"
                     id="fullphone"
                     name="phone"
+                    required
                     placeholder="Phone"
                   ></input>
                 </div>
@@ -76,6 +86,7 @@ export default function FormInstapay() {
                     className="form-control px-3 bg-grey-transparent text-dark-blue"
                     id="freight"
                     name="freight"
+                    required
                     placeholder="Freight broker"
                   ></input>
                 </div>
@@ -85,6 +96,7 @@ export default function FormInstapay() {
                   className="form-control bg-grey-transparent text-dark-blue"
                   id="comments"
                   name="comments"
+                  required
                   rows={3}
                   placeholder="Comments"
                 ></textarea>

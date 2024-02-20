@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FormEvent } from "react";
 type IProps = {
   backgroundImage?: string;
@@ -10,7 +11,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const response = await fetch(
-      "https://1170027-sb1.extforms.netsuite.com/app/site/crm/externalleadpage.nl?compid=1170027_SB1",
+      "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
       {
         method: "POST",
         body: formData,
@@ -88,6 +89,12 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
 
         <div className="md-w-50 w-100  bg-dark-blue text-white">
           <form onSubmit={onSubmit} id="form" className="m-3rem">
+            <input
+              id="form-name"
+              name="form-name"
+              value="contact"
+              type="hidden"
+            ></input>
             <h1
               className=" fs-2 d-flex flex-column align-items-center align-items-md-start pb-3 pb-md-0 fst-italic"
               style={{ marginBottom: "30px" }}
@@ -102,6 +109,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="name"
                   name="name"
+                  required
                   placeholder="Full Name"
                 ></input>
               </div>
@@ -111,6 +119,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="email"
                   name="email"
+                  required
                   placeholder="Your E-Mail"
                 ></input>
               </div>
@@ -122,6 +131,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="company"
                   name="company"
+                  required
                   placeholder="Company Name"
                 ></input>
               </div>
@@ -131,6 +141,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="phone"
                   name="phone"
+                  required
                   placeholder="Phone"
                 ></input>
               </div>
@@ -140,6 +151,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                 className="form-control bg-grey-transparent text-white"
                 id="message"
                 name="message"
+                required
                 rows={3}
                 placeholder="Description"
               ></textarea>
