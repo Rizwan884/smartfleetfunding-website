@@ -801,10 +801,10 @@ span:hover {
   border-radius: 1.25em;
 }
 .form-check-label {
-  color: var(--dark-blue);
+  color: var(--green);
 }
 .form-check-label:hover {
-  color: var(--dark-blue);
+  color: var(--green);
 }
 #form #message::placeholder,
 #phone::placeholder,

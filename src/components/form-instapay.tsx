@@ -91,7 +91,7 @@ export default function FormInstapay() {
                       id="flexCheckDefault"
                     />
                     <label
-                      className="form-check-label text-dark-blue"
+                      className="text-dark-blue"
                       htmlFor="flexCheckDefault"
                     >
                       Accept Our{" "}
