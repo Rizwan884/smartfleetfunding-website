@@ -2,15 +2,17 @@ export default function Privacy() {
   return (
     <div className="font-montserrat">
       <div className="container">
-        <h1 className="text-center">Privacy Policy Smart Fleet Website</h1>
+        <h1 className="text-center">
+          Privacy Policy Smart Fleet Funding Website
+        </h1>
         <p className="container">
           Our Privacy Policy was last updated and posted on January 6, 2021. It
-          governs the privacy terms of our website, located at
-          www.smartfleetfunding.com, sub-domains, and any associated web-based
-          and mobile applications (collectively, {'"Website"'}), as owned and
-          operated by Smart Fleet. Any capitalized terms not defined in
-          our Privacy Policy, have the meaning as specified in our Terms of
-          Service.
+          governs the privacy terms of our Website, located at
+          https://smartfleetfunding.com, sub-domains, and any associated
+          web-based and mobile applications (collectively, {'"Website"'}), as
+          owned and operated by Smart Fleet Funding Inc.. Any capitalized terms
+          not defined in our Privacy Policy, have the meaning as specified in
+          our Terms of Service.
           <br />
           <br />
           Your privacy is very important to us. Accordingly, we have developed
@@ -20,7 +22,7 @@ export default function Privacy() {
           website, you agree to the collection and use of information in
           accordance with this policy. Unless otherwise defined in this Privacy
           Policy, terms used in this Privacy Policy have the same meanings as in
-          our Terms and Conditions, accessible at www.smartfleetfunding.com.
+          our Terms and Conditions, accessible at https://smartfleetfunding.com.
           The following outlines our privacy policy.
           <ul className="mt-3">
             <li>
@@ -61,24 +63,24 @@ export default function Privacy() {
             </li>
           </ul>
           <h3 className="mt-4 fw-600">Your Privacy</h3>
-          Smart Fleet follows all legal requirements to protect your
-          privacy. Our Privacy Policy is a legal statement that explains how we
-          may collect information from you, how we may share your information,
-          and how you can limit our sharing of your information. We utilize the
-          Personal Data you offer in a way that is consistent with this Personal
-          privacy Policy. If you provide Personal Data for a particular reason,
-          we could make use of the Personal Data in connection with the reason
-          for which it was provided. For example, registration info sent when
-          developing your account, might be used to suggest products to you
-          based on past acquisitions. We might use your Personal Data to offer
-          access to services on the Website and monitor your use of such
-          services. Smart Fleet may also utilize your Personal Data and
-          various other personally non-identifiable info gathered through the
-          Website to assist us with improving the material and functionality of
-          the Website, to comprehend our users much better, and to improve our
-          services. You will see terms in our Privacy Policy that are
-          capitalized. These terms have meanings as described in the Definitions
-          section below.
+          Smart Fleet Funding Inc. follows all legal requirements to protect
+          your privacy. Our Privacy Policy is a legal statement that explains
+          how we may collect information from you, how we may share your
+          information, and how you can limit our sharing of your information. We
+          utilize the Personal Data you offer in a way that is consistent with
+          this Personal privacy Policy. If you provide Personal Data for a
+          particular reason, we could make use of the Personal Data in
+          connection with the reason for which it was provided. For example,
+          registration info sent when developing your account, might be used to
+          suggest products to you based on past acquisitions. We might use your
+          Personal Data to offer access to services on the Website and monitor
+          your use of such services. Smart Fleet Funding Inc. may also utilize
+          your Personal Data and various other personally non-identifiable info
+          gathered through the Website to assist us with improving the material
+          and functionality of the Website, to comprehend our users much better,
+          and to improve our services. You will see terms in our Privacy Policy
+          that are capitalized. These terms have meanings as described in the
+          Definitions section below.
           <h3 className="mt-4 fw-600">Definitions</h3>
           {'"Non-Personal Information"'} is information that is not personally
           identifiable to you and that we automatically collect when you access
@@ -155,17 +157,18 @@ export default function Privacy() {
           Under the Child{"'"}s Online Privacy Security Act, no Website operator
           can require, as a condition to involvement in an activity, that a
           child younger than 13 years of age divulge more details than is
-          reasonably required. Smart Fleet abides by this demand.
-          Smart Fleet just collects information willingly offered; no
-          information is gathered passively. children under 13 can submit only
-          their email address when sending us an email in our {"Contact Us"}{" "}
-          area. Smart Fleet makes use of the email address to respond
-          to a one-time demand from a child under 13 and afterwards deletes the
-          email address. In case Smart Fleet collects and maintains
-          personal information relating to a child under 13, the parent may send
-          out an email to us to review, alter and/or erase such info as well as
-          to decline to enable any additional collection or use of the child
-          {"'"}s information.
+          reasonably required. Smart Fleet Funding Inc. abides by this demand.
+          Smart Fleet Funding Inc. just collects information willingly offered;
+          no information is gathered passively. children under 13 can submit
+          only their email address when sending us an email in our{" "}
+          {"Contact Us"}
+          area. Smart Fleet Funding Inc. makes use of the email address to
+          respond to a one-time demand from a child under 13 and afterwards
+          deletes the email address. In case Smart Fleet Funding Inc. collects
+          and maintains personal information relating to a child under 13, the
+          parent may send out an email to us to review, alter and/or erase such
+          info as well as to decline to enable any additional collection or use
+          of the child{"'"}s information.
           <br />
           <h3 className="mt-4 fw-600">How We Use Your Information</h3>
           We use the information we receive from you as follows:
@@ -210,8 +213,8 @@ export default function Privacy() {
               Legal Terms; (d) necessary to protect us from legal action or
               claims from third parties including you and/or other Members;
               and/or (e) necessary to protect the legal rights, personal/real
-              property, or personal safety of Smart Fleet ., our Users,
-              employees, and affiliates.
+              property, or personal safety of Smart Fleet Funding Inc., our
+              Users, employees, and affiliates.
             </li>
           </ul>
           <h3 className="mt-4 fw-600">Opt-Out</h3>
