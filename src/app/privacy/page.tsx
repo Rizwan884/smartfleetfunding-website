@@ -2,15 +2,13 @@ export default function Privacy() {
   return (
     <div className="font-montserrat">
       <div className="container">
-        <h1 className="text-center">
-          Privacy Policy Virtual Professional Website
-        </h1>
+        <h1 className="text-center">Privacy Policy Smart Fleet Website</h1>
         <p className="container">
           Our Privacy Policy was last updated and posted on January 6, 2021. It
           governs the privacy terms of our website, located at
-          www.virtualprofessional.ca, sub-domains, and any associated web-based
+          www.smartfleetfunding.com, sub-domains, and any associated web-based
           and mobile applications (collectively, {'"Website"'}), as owned and
-          operated by Virtual Professional. Any capitalized terms not defined in
+          operated by Smart Fleet. Any capitalized terms not defined in
           our Privacy Policy, have the meaning as specified in our Terms of
           Service.
           <br />
@@ -22,7 +20,7 @@ export default function Privacy() {
           website, you agree to the collection and use of information in
           accordance with this policy. Unless otherwise defined in this Privacy
           Policy, terms used in this Privacy Policy have the same meanings as in
-          our Terms and Conditions, accessible at www.virtualprofessional.ca.
+          our Terms and Conditions, accessible at www.smartfleetfunding.com.
           The following outlines our privacy policy.
           <ul className="mt-3">
             <li>
@@ -63,7 +61,7 @@ export default function Privacy() {
             </li>
           </ul>
           <h3 className="mt-4 fw-600">Your Privacy</h3>
-          Virtual Professional follows all legal requirements to protect your
+          Smart Fleet follows all legal requirements to protect your
           privacy. Our Privacy Policy is a legal statement that explains how we
           may collect information from you, how we may share your information,
           and how you can limit our sharing of your information. We utilize the
@@ -74,7 +72,7 @@ export default function Privacy() {
           developing your account, might be used to suggest products to you
           based on past acquisitions. We might use your Personal Data to offer
           access to services on the Website and monitor your use of such
-          services. Virtual Professional may also utilize your Personal Data and
+          services. Smart Fleet may also utilize your Personal Data and
           various other personally non-identifiable info gathered through the
           Website to assist us with improving the material and functionality of
           the Website, to comprehend our users much better, and to improve our
@@ -157,13 +155,13 @@ export default function Privacy() {
           Under the Child{"'"}s Online Privacy Security Act, no Website operator
           can require, as a condition to involvement in an activity, that a
           child younger than 13 years of age divulge more details than is
-          reasonably required. Virtual Professional abides by this demand.
-          Virtual Professional just collects information willingly offered; no
+          reasonably required. Smart Fleet abides by this demand.
+          Smart Fleet just collects information willingly offered; no
           information is gathered passively. children under 13 can submit only
           their email address when sending us an email in our {"Contact Us"}{" "}
-          area. Virtual Professional makes use of the email address to respond
+          area. Smart Fleet makes use of the email address to respond
           to a one-time demand from a child under 13 and afterwards deletes the
-          email address. In case Virtual Professional collects and maintains
+          email address. In case Smart Fleet collects and maintains
           personal information relating to a child under 13, the parent may send
           out an email to us to review, alter and/or erase such info as well as
           to decline to enable any additional collection or use of the child
@@ -212,7 +210,7 @@ export default function Privacy() {
               Legal Terms; (d) necessary to protect us from legal action or
               claims from third parties including you and/or other Members;
               and/or (e) necessary to protect the legal rights, personal/real
-              property, or personal safety of Virtual Professional ., our Users,
+              property, or personal safety of Smart Fleet ., our Users,
               employees, and affiliates.
             </li>
           </ul>
