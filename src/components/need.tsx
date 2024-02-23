@@ -145,7 +145,7 @@ export default function Needs() {
           </Button>
           <Button
             href="https://outlook.office365.com/owa/calendar/WebPageSales@smartfleetfunding.com/bookings/ "
-            className="contact_slide fw-bold fs-4  my-4 h-25 d-inline-block "
+            className="contact_slide fw-bold fs-4  my-4 h-25 d-inline-block"
             variant="btn btn-custom"
           >
             Schedule a meeting

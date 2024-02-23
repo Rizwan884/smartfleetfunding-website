@@ -6,15 +6,7 @@ export default function Help() {
       <div className="container mt-5 ">
         <h1 className="fw-bold fs-2 text-center pt-5 flex-column align-items-center gap-3">
           We help you by
-          <div
-            className="line"
-            style={{
-              marginLeft: "40%",
-              marginTop: "10px",
-              width: "40.9px",
-              marginBottom: "10%",
-            }}
-          ></div>
+          <div className="line help-line"></div>
         </h1>
       </div>
       <div id="help" className="container mt-sm-1 mb-sm-2 mt-5 mb-6">

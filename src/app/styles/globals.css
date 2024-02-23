@@ -793,6 +793,12 @@ span:hover {
 #help .card-text {
   font-size: 18px;
 }
+.help-line{
+  margin-left: 40%;
+  margin-top: 10px;
+  width: 40.9px;
+  margin-bottom: 10%;
+}
 /*------------form-------------*/
 .form-check{
   padding-left: 0.7em !important;

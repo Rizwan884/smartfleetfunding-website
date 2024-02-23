@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 
 export default function HelpYou() {
@@ -72,11 +72,10 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
-
             <Dropdown className="row mx-3 flex-column d-lg-none">
               <Dropdown.Toggle variant="light" id="dropdown-basic">
                 <h5 className="card-title fs-6 text-start fw-bold">
-                  On Attraction & <br/> Retention
+                  On Attraction & <br /> Retention
                 </h5>
               </Dropdown.Toggle>
 
@@ -92,7 +91,7 @@ export default function HelpYou() {
                     ></Image>
                     <div>
                       <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                        Becoming <br/> more <br/> attractive to <br/>{" "}
+                        Becoming <br /> more <br /> attractive to <br />{" "}
                         carriers.
                       </p>
                     </div>
@@ -109,8 +108,8 @@ export default function HelpYou() {
                     ></Image>
                     <div>
                       <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                        Carriers <br/> won’t worry <br/> about their <br/>{" "}
-                        cash flow <br/> to operate.
+                        Carriers <br /> won’t worry <br /> about their <br />{" "}
+                        cash flow <br /> to operate.
                       </p>
                     </div>
                   </div>
@@ -203,7 +202,7 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
-            <Dropdown  className=" row  mx-4 flex-column ml-4 d-lg-none ">
+            <Dropdown className="row  mx-4 flex-column ml-4 d-lg-none">
               <Dropdown.Toggle variant="light" id="dropdown-basic">
                 <h5 className="card-title fs-6 text-start fw-bold">
                   Handling AR/AP <br /> Needs
