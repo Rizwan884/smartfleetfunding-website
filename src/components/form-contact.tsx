@@ -16,8 +16,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         method: "POST",
         body: formData,
       }
-    ); // Handle response if necessary
-    console.log(await response.json());
+    );
   }
   return (
     <>

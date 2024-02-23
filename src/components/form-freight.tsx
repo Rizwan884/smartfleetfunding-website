@@ -15,8 +15,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
         method: "POST",
         body: formData,
       }
-    ); // Handle response if necessary
-    console.log(await response.json());
+    );
   }
   return (
     <>
