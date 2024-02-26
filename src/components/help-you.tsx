@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
+import React, { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 
 export default function HelpYou() {
@@ -71,7 +72,7 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
-            <Dropdown className=" row  mx-3 flex-column d-lg-none ">
+            <Dropdown className="row mx-3 flex-column d-lg-none">
               <Dropdown.Toggle variant="light" id="dropdown-basic">
                 <h5 className="card-title fs-6 text-start fw-bold">
                   On Attraction & <br /> Retention
@@ -80,7 +81,7 @@ export default function HelpYou() {
 
               <Dropdown.Menu>
                 <Dropdown.Item href="#/action-1">
-                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs">
                     <Image
                       width={20}
                       height={20}
@@ -97,7 +98,7 @@ export default function HelpYou() {
                   </div>
                 </Dropdown.Item>
                 <Dropdown.Item href="#/action-2">
-                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
+                  <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs">
                     <Image
                       width={20}
                       height={20}
@@ -201,7 +202,7 @@ export default function HelpYou() {
                 </div>
               </div>
             </div>
-            <Dropdown className=" row  mx-4 flex-column ml-4 d-lg-none ">
+            <Dropdown className="row  mx-4 flex-column ml-4 d-lg-none">
               <Dropdown.Toggle variant="light" id="dropdown-basic">
                 <h5 className="card-title fs-6 text-start fw-bold">
                   Handling AR/AP <br /> Needs
