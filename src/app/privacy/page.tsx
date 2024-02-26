@@ -10,7 +10,7 @@ export default function Privacy() {
           governs the privacy terms of our Website, located at
           https://smartfleetfunding.com, sub-domains, and any associated
           web-based and mobile applications (collectively, {'"Website"'}), as
-          owned and operated by Smart Fleet Funding Inc.. Any capitalized terms
+          owned and operated by Smart Fleet Funding Inc. Any capitalized terms
           not defined in our Privacy Policy, have the meaning as specified in
           our Terms of Service.
           <br />

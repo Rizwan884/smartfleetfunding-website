@@ -8,7 +8,7 @@ export default function Programs() {
       {isMobile ? (
         <section className="py-5 bg-white-shadow font-montserrat">
           <Container>
-            <h1 className="fw-bold fs-2 mb-0 mx-4 w-100">
+            <h1 className="fw-bold  fs-3 mb-0 mx-4 w-100">
               Your outcomes by joining our Freight Broker program
             </h1>
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>

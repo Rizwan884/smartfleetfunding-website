@@ -66,7 +66,7 @@ export default function Footer() {
                   href="/contact"
                   id="bottom-footer"
                   variant="btn btn-custom"
-                  className=" bg-green text-dark-blue fw-600 mt-3"
+                  className="bg-green text-dark-blue fw-600 mt-3"
                 >
                   CURIOUS TO LEARN MORE?
                 </Button>
@@ -114,7 +114,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{ width: "39px" }}
+                    style={{width: "39px" }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
@@ -127,7 +127,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{ width: "43px" }}
+                    style={{width: "43px" }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
                   />
@@ -140,7 +140,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{ width: "44px" }}
+                    style={{width: "44px" }}
                     src="images/sff-youtube.svg"
                     alt="youtube"
                   />
@@ -207,7 +207,7 @@ export default function Footer() {
                     href="/contact"
                     id="bottom-footer"
                     variant="btn btn-custom"
-                    className=" bg-green text-dark-blue fw-600 ms-auto"
+                    className="bg-green text-dark-blue fw-600 ms-auto"
                   >
                     CURIOUS TO LEARN MORE?
                   </Button>
