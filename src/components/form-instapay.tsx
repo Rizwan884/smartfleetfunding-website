@@ -116,8 +116,8 @@ export default function FormInstapay() {
                     >
                       Accept Our{" "}
                       <Link
-                        href=""
-                        // target="_blank"
+                        href="/privacy"
+                        target="_blank"
                         className="text-decoration-none text-dark-blue"
                         passHref={true}
                       >

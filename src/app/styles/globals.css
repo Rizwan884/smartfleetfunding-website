@@ -28,6 +28,9 @@ body {
 .text-dark-blue {
   color: var(--dark-blue);
 }
+.text-dark-blue:hover {
+  color: var(--dark-blue);
+}
 
 .text-green {
   color: var(--green);
