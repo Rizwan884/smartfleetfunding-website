@@ -62,6 +62,10 @@ body {
 .bg-grey-transparent {
   background-color: var(--gray-transparent)
 }
+.bg-grey-transparent-instapay {
+  background-color: #4544442e;
+}
+
 .bg-white-shadow {
   background-color: var(--white-gray-shadow)
 }

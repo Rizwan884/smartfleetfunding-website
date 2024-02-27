@@ -74,7 +74,7 @@ export default function SectionVideo() {
           <div className="col-6">
             <div className="text-left m-5 p-5">
               <h2 className="fs-3 fw-bold ">
-                Explore the power of factoring <br /> with Smart Fleet Funding!
+                Explore the power of factoring with Smart Fleet Funding!
               </h2>
               <div className="line"></div>
               <div className="card-text-bottom fs-5  fw-400">

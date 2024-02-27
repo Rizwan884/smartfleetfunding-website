@@ -39,7 +39,7 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent-instapay text-dark-blue"
                     id="fullname"
                     name="name"
                     required
@@ -49,7 +49,7 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="email"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
                     id="fullemail"
                     name="email"
                     required
@@ -61,7 +61,7 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent-instapay text-dark-blue"
                     id="fullcompany"
                     name="company"
                     required
@@ -71,7 +71,7 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="number"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
                     id="fullphone"
                     name="phone"
                     required
@@ -83,7 +83,7 @@ export default function FormInstapay() {
                 <div className="col-12 col-md-6">
                   <input
                     type="text"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
                     id="freight"
                     name="freight"
                     required
@@ -93,7 +93,7 @@ export default function FormInstapay() {
               </div>
               <div className="mb-3 ">
                 <textarea
-                  className="form-control bg-grey-transparent text-dark-blue"
+                  className="form-control bg-grey-transparent-instapay text-dark-blue"
                   id="comments"
                   name="comments"
                   required

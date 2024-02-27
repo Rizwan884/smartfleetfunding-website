@@ -7,7 +7,11 @@ export default function Cards() {
   return (
     <>
       {isMobile ? (
-        <Carousel id="carousel-mobile" className="font-montserrat card-container " controls={true}>
+        <Carousel
+          id="carousel-mobile"
+          className="font-montserrat card-container "
+          controls={true}
+        >
           <Carousel.Item>
             <Col xs={12} md={4} className="card-column">
               <div className="mobile-card">
@@ -195,7 +199,7 @@ export default function Cards() {
                     <div className="card-text ">SECURE</div>
                     <div className="line-front"></div>
                     <div className="card-text-bottom fw-400">
-                      The carries and Freight <br /> companies
+                      The carriers and Freight <br /> companies
                     </div>
                   </div>
                   <div className="back font-montserrat fw-600">
