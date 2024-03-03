@@ -225,7 +225,7 @@ export default function Footer() {
           </div>
           <div className=" font-montserrat d-flex position-relative justify-content-between align-items-center text-left py-3 px-5 bg-green">
             <p style={{ margin: 0 }}>
-              &copy;2023 Smart Funding Team All Rights Reserved
+              &copy;2024 Smart Funding Team All Rights Reserved
             </p>
             <div
               className="d-flex position-absolute"
