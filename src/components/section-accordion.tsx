@@ -1,26 +1,26 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "next/image";
-import { Accordion } from "react-bootstrap";
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import Image from 'next/image'
+import { Accordion } from 'react-bootstrap'
 type AccordionItem = {
-  title?: string;
-  description?: string | JSX.Element;
-  icon?: string | StaticImport;
-  eventKey: number;
-};
+  title?: string
+  description?: string | JSX.Element
+  icon?: string | StaticImport
+  eventKey: number
+}
 type IProps = {
-  items: AccordionItem[];
-  headTitle?: string;
-  showIcons?: boolean;
-  height?: number;
-  width?: number;
-};
+  items: AccordionItem[]
+  headTitle?: string
+  showIcons?: boolean
+  height?: number
+  width?: number
+}
 
 export default function SectionAccordion({
   items,
   headTitle,
   showIcons = false,
   height = 0,
-  width = 0,
+  width = 0
 }: IProps) {
   return (
     <div className="container font-montserrat pt-5 pt-md-2">
@@ -28,7 +28,7 @@ export default function SectionAccordion({
         {headTitle && (
           <h2 className="px-3 fw-bold mb-5 ">
             {headTitle}
-            <div className="line w-md-2-line" style={{ width: "2.6%" }}></div>
+            <div className="line w-md-2-line" style={{ width: '2.6%' }}></div>
           </h2>
         )}
 
@@ -41,11 +41,11 @@ export default function SectionAccordion({
             <Accordion.Header className="fw-bold">
               {showIcons && (
                 <Image
-                  src={item.icon ? item.icon : ""}
+                  src={item.icon ? item.icon : ''}
                   alt="user"
                   width={width}
                   height={height}
-                  style={{ marginRight: "15px" }}
+                  style={{ marginRight: '15px' }}
                 ></Image>
               )}
               <div id="title-mobile">{item.title}</div>
@@ -57,5 +57,5 @@ export default function SectionAccordion({
         ))}
       </Accordion>
     </div>
-  );
+  )
 }

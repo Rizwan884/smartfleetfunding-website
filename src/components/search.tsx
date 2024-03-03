@@ -1,19 +1,19 @@
-import { useState, ChangeEvent } from "react";
+import { ChangeEvent, useState } from 'react'
 
 interface SearchProps {
-  onSearch: (term: string) => void;
+  onSearch: (term: string) => void
 }
 
 export default function Search({ onSearch }: SearchProps) {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('')
 
   const handleSearch = () => {
-    onSearch(searchTerm.trim());
-  };
+    onSearch(searchTerm.trim())
+  }
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(e.target.value);
-  };
+    setSearchTerm(e.target.value)
+  }
 
   return (
     <div className="pt-5 px-4 px-md-5 pb-4 pb-md-5 mb-50 bg-search">
@@ -43,5 +43,5 @@ export default function Search({ onSearch }: SearchProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }

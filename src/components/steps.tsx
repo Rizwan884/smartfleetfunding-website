@@ -1,20 +1,20 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from 'react-bootstrap'
 
 export default function Steps() {
   const steps = [
     {
-      title: "Swift Payment Process",
-      text: "With Instapay, you'll receive your hard-earned money in as little as 12 business hours. No more waiting, no more delays, no contracts, no hidden fees.",
+      title: 'Swift Payment Process',
+      text: "With Instapay, you'll receive your hard-earned money in as little as 12 business hours. No more waiting, no more delays, no contracts, no hidden fees."
     },
     {
-      title: "Streamlined Verification",
-      text: "The partnership between Smart Fleet Funding and a selected group of Freight Brokers means a hassle-free process. Just submit your invoices, and we'll handle the rest. It is that simple!",
+      title: 'Streamlined Verification',
+      text: "The partnership between Smart Fleet Funding and a selected group of Freight Brokers means a hassle-free process. Just submit your invoices, and we'll handle the rest. It is that simple!"
     },
     {
-      title: "Fast and Secure",
-      text: "Instapay is not only quick but also secure. Your funds are directly deposited into your bank account, ensuring a safe and seamless transaction.",
-    },
-  ];
+      title: 'Fast and Secure',
+      text: 'Instapay is not only quick but also secure. Your funds are directly deposited into your bank account, ensuring a safe and seamless transaction.'
+    }
+  ]
 
   return (
     <>
@@ -26,7 +26,7 @@ export default function Steps() {
             {steps.map((step, index) => (
               <div className="step-container" key={index}>
                 <div className="step-number position-relative">
-                  {index + 1}{" "}
+                  {index + 1}{' '}
                 </div>
                 <div className="lh-sm step-content fs-5">
                   <h3 className="fw-bold">{step.title}</h3>
@@ -38,5 +38,5 @@ export default function Steps() {
         </Container>
       </section>
     </>
-  );
+  )
 }

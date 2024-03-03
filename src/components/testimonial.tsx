@@ -1,6 +1,6 @@
-import React from "react";
-import { Carousel, Card, Container, Row, Col } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
+import React from 'react'
+import { Card, Carousel, Col, Container, Row } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
 const TestimonialCarousel = () => {
   const testimonials = [
     {
@@ -12,8 +12,8 @@ const TestimonialCarousel = () => {
         </>
       ),
       author: "Alfred's Refrigerated Transport",
-      position: "Date of experience: November 20, 2023",
-      image: "images/sff-ttm-mark.svg",
+      position: 'Date of experience: November 20, 2023',
+      image: 'images/sff-ttm-mark.svg'
     },
     {
       text: (
@@ -23,9 +23,9 @@ const TestimonialCarousel = () => {
           Good Customer Service and Quick payment processing
         </>
       ),
-      author: "Sdl Freight Systems - CAD",
-      position: "Date of experience: November 20, 2023",
-      image: "images/sff-ttm-mark.svg",
+      author: 'Sdl Freight Systems - CAD',
+      position: 'Date of experience: November 20, 2023',
+      image: 'images/sff-ttm-mark.svg'
     },
     {
       text: (
@@ -35,15 +35,15 @@ const TestimonialCarousel = () => {
           ONTIME PAYMENT EVERY TIME
         </>
       ),
-      author: "Net Freight System Inc – CAD",
-      position: "Date of experience: November 01, 2023",
-      image: "images/sff-ttm-keneth.svg",
+      author: 'Net Freight System Inc – CAD',
+      position: 'Date of experience: November 01, 2023',
+      image: 'images/sff-ttm-keneth.svg'
     },
     {
-      text: "Piola mad this exsprence fantastic.",
-      author: "DS cooperation",
-      position: "Date of experience: December 20, 2023",
-      image: "images/sff-ttm-mark.svg",
+      text: 'Piola mad this exsprence fantastic.',
+      author: 'DS cooperation',
+      position: 'Date of experience: December 20, 2023',
+      image: 'images/sff-ttm-mark.svg'
     },
     {
       text: (
@@ -53,9 +53,9 @@ const TestimonialCarousel = () => {
           Great, thank you very much.
         </>
       ),
-      author: "Bronpe LLC",
-      position: "Date of experience: January 11, 2024",
-      image: "images/sff-ttm-william.svg",
+      author: 'Bronpe LLC',
+      position: 'Date of experience: January 11, 2024',
+      image: 'images/sff-ttm-william.svg'
     },
     {
       text: (
@@ -65,15 +65,15 @@ const TestimonialCarousel = () => {
           They are pretty fast in paying , totally recommend.
         </>
       ),
-      author: "Tata Logistics Ltd",
-      position: "Date of experience: November 22, 2023",
-      image: "images/sff-ttm-keneth.svg",
+      author: 'Tata Logistics Ltd',
+      position: 'Date of experience: November 22, 2023',
+      image: 'images/sff-ttm-keneth.svg'
     },
     {
-      text: "Having very quick response for payment",
-      author: "Supersonic Transport Ltd",
-      position: "Date of experience: December 18, 2023",
-      image: "images/sff-ttm-mark.svg",
+      text: 'Having very quick response for payment',
+      author: 'Supersonic Transport Ltd',
+      position: 'Date of experience: December 18, 2023',
+      image: 'images/sff-ttm-mark.svg'
     },
     {
       text: (
@@ -84,9 +84,9 @@ const TestimonialCarousel = () => {
           RATE.
         </>
       ),
-      author: "Masab Logistics Inc – CAD",
-      position: "Date of experience: November 13, 2023",
-      image: "images/sff-ttm-keneth.svg",
+      author: 'Masab Logistics Inc – CAD',
+      position: 'Date of experience: November 13, 2023',
+      image: 'images/sff-ttm-keneth.svg'
     },
     {
       text: (
@@ -96,9 +96,9 @@ const TestimonialCarousel = () => {
           Fast payments
         </>
       ),
-      author: "Pr Transport",
-      position: "Date of experience: January 11, 2024",
-      image: "images/sff-ttm-keneth.svg",
+      author: 'Pr Transport',
+      position: 'Date of experience: January 11, 2024',
+      image: 'images/sff-ttm-keneth.svg'
     },
     {
       text: (
@@ -112,9 +112,9 @@ const TestimonialCarousel = () => {
           Great job​ Great results
         </>
       ),
-      author: "C-Level Trucking LLC",
-      position: "Date of experience: November 07, 2023",
-      image: "images/sff-ttm-mark.svg",
+      author: 'C-Level Trucking LLC',
+      position: 'Date of experience: November 07, 2023',
+      image: 'images/sff-ttm-mark.svg'
     },
     {
       text: (
@@ -126,18 +126,18 @@ const TestimonialCarousel = () => {
           clear instructions, communication and fast pay.
         </>
       ),
-      author: "Anonymous Hot Shot",
-      position: "Date of experience: November 16, 2023",
-      image: "images/sff-ttm-mark.svg",
-    },
-  ];
+      author: 'Anonymous Hot Shot',
+      position: 'Date of experience: November 16, 2023',
+      image: 'images/sff-ttm-mark.svg'
+    }
+  ]
 
   return (
     <>
       <Carousel
         id="testimonial"
         className="h-100 pb-2"
-        style={{ marginTop: "100px", overflow: "hidden" }}
+        style={{ marginTop: '100px', overflow: 'hidden' }}
         controls={true}
         interval={5000}
       >
@@ -152,7 +152,7 @@ const TestimonialCarousel = () => {
                       <Col key={groupIndex * 3 + innerIndex} md={4}>
                         <Card
                           className="w-100 h-100"
-                          style={{ border: "10px" }}
+                          style={{ border: '10px' }}
                         >
                           <Card.Body>
                             <Card.Text className="fs-6 text-start lh-sm">
@@ -163,7 +163,7 @@ const TestimonialCarousel = () => {
                                 src={item.image}
                                 alt="testimonial-img"
                                 className="img-fluid"
-                                style={{ maxWidth: "100%", height: "auto" }}
+                                style={{ maxWidth: '100%', height: 'auto' }}
                               />
                               <div className="mt-4">
                                 <Card.Title className="text-start ms-2">
@@ -212,7 +212,7 @@ const TestimonialCarousel = () => {
                     .slice(groupIndex * 3, groupIndex * 3 + 1)
                     .map((item, innerIndex) => (
                       <Col key={groupIndex * 3 + innerIndex} xs={12}>
-                        <Card className="w-75 mx-5" style={{ border: "10px" }}>
+                        <Card className="w-75 mx-5" style={{ border: '10px' }}>
                           <Card.Body>
                             <Card.Text className="fs-6 text-start lh-sm">
                               {item.text}
@@ -222,7 +222,7 @@ const TestimonialCarousel = () => {
                                 src={item.image}
                                 alt="testimonial-img"
                                 className="img-fluid"
-                                style={{ maxWidth: "100%", height: "auto" }}
+                                style={{ maxWidth: '100%', height: 'auto' }}
                               />
                               <div className="mt-4">
                                 <Card.Title className="text-start ms-2">
@@ -272,7 +272,7 @@ const TestimonialCarousel = () => {
         )}
       </Carousel>
     </>
-  );
-};
+  )
+}
 
-export default TestimonialCarousel;
+export default TestimonialCarousel

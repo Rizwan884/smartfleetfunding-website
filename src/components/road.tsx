@@ -1,7 +1,7 @@
-import { useMediaQuery } from "react-responsive";
-import Image from "next/image";
+import Image from 'next/image'
+import { useMediaQuery } from 'react-responsive'
 export default function Road() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       <div className="d-md-none">
@@ -62,5 +62,5 @@ export default function Road() {
         </div>
       </div>
     </>
-  );
+  )
 }

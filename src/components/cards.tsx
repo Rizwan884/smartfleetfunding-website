@@ -1,13 +1,16 @@
-import React from "react";
-import Image from "react-bootstrap/Image";
-import { Container, Row, Col, Carousel, Button } from "react-bootstrap";
-import { useMediaQuery } from "react-responsive";
+import { Carousel, Col, Container, Row } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
+import { useMediaQuery } from 'react-responsive'
 export default function Cards() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       {isMobile ? (
-        <Carousel id="carousel-mobile" className="font-montserrat card-container " controls={true}>
+        <Carousel
+          id="carousel-mobile"
+          className="font-montserrat card-container "
+          controls={true}
+        >
           <Carousel.Item>
             <Col xs={12} md={4} className="card-column">
               <div className="mobile-card">
@@ -28,7 +31,7 @@ export default function Cards() {
                     </div>
                     <div className="card-text-bottom-back fw-400 mt-3">
                       Our tailored factoring solutions swiftly optimize your
-                      cash flow,{" "}
+                      cash flow,{' '}
                       <strong>
                         ensuring rapid growth in your business{"'"}s
                         profitability.
@@ -58,7 +61,7 @@ export default function Cards() {
                       </div>
                     </div>
                     <div className="card-text-bottom-back fw-400 mt-3">
-                      We simplify the Accounts Payable and Receivable process,{" "}
+                      We simplify the Accounts Payable and Receivable process,{' '}
                       <strong>
                         making it a breeze for you to focus on business growth.
                       </strong>
@@ -90,7 +93,7 @@ export default function Cards() {
                       The carriers and freight companies receive payment
                       securely in as little as 12 hours,
                       <strong>
-                        {" "}
+                        {' '}
                         cultivating robust and trusting partnerships.
                       </strong>
                     </div>
@@ -134,7 +137,7 @@ export default function Cards() {
                     <div className="line-back"></div>
                     <div className="card-text-bottom-back fw-400">
                       Our tailored factoring solutions swiftly optimize your
-                      cash flow,{" "}
+                      cash flow,{' '}
                       <strong>
                         ensuring rapid growth in your business{"'"}s
                         profitability.
@@ -172,7 +175,7 @@ export default function Cards() {
                     <div className="card-text-back ">EASY</div>
                     <div className="line-back"></div>
                     <div className="card-text-bottom-back fw-400">
-                      We simplify the Accounts Payable and Receivable process,{" "}
+                      We simplify the Accounts Payable and Receivable process,{' '}
                       <strong>
                         making it a breeze for you to focus on business growth.
                       </strong>
@@ -212,7 +215,7 @@ export default function Cards() {
                       The carriers and freight companies receive payment
                       securely in as little as 12 hours,
                       <strong>
-                        {" "}
+                        {' '}
                         cultivating robust and trusting partnerships.
                       </strong>
                     </div>
@@ -224,5 +227,5 @@ export default function Cards() {
         </Container>
       )}
     </>
-  );
+  )
 }

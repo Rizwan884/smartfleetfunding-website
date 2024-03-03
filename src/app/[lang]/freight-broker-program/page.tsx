@@ -1,29 +1,26 @@
-"use client";
-import Image from "next/image";
-import styles from "../app/styles/page.module.css";
+'use client'
 
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
-import Banners from "@/components/banner";
-import Needs from "@/components/need";
-import Programs from "@/components/program";
-import Provides from "@/components/provide";
-import HelpYou from "@/components/help-you";
-import SectionForm from "../../components/form";
-import FormFreight from "@/components/form-freight";
+import Banners from '@/components/banner'
+import FormFreight from '@/components/form-freight'
+import HelpYou from '@/components/help-you'
+import Needs from '@/components/need'
+import Programs from '@/components/program'
+import Provides from '@/components/provide'
+import Footer from '../../../components/footer'
+import Navbar from '../../../components/navbar'
 
 export default function Freight() {
   const title = (
     <p className="font-montserrat">
       Freight <strong className="fw-bold">Broker Program</strong>
     </p>
-  );
+  )
   const titleMobile = (
     <p className="font-montserrat text-dark-blue">
       Freight <strong className="fw-bold">Broker Program</strong>
     </p>
-  );
-  const titleForm = "Drive Profits, Enhance Operations Get Started!";
+  )
+  const titleForm = 'Drive Profits, Enhance Operations Get Started!'
 
   return (
     <>
@@ -42,5 +39,5 @@ export default function Freight() {
       <FormFreight titleForm={titleForm} />
       <Footer />
     </>
-  );
+  )
 }

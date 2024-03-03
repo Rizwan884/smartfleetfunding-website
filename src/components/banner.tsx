@@ -1,30 +1,29 @@
-import { Button } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
-import { useMediaQuery } from "react-responsive";
+import Image from 'react-bootstrap/Image'
+import { useMediaQuery } from 'react-responsive'
 
 type IProps = {
-  title?: JSX.Element;
-  titleMobile?: JSX.Element;
-  backgroundImage?: string;
-  mobileBackgroundImage?: string;
-  hideIcons?: boolean;
-};
+  title?: JSX.Element
+  titleMobile?: JSX.Element
+  backgroundImage?: string
+  mobileBackgroundImage?: string
+  hideIcons?: boolean
+}
 
 export default function Banners({
   title,
   titleMobile,
   backgroundImage,
   mobileBackgroundImage,
-  hideIcons = false,
+  hideIcons = false
 }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 650 });
+  const isMobile = useMediaQuery({ maxWidth: 650 })
   return (
     <>
       <div
         style={{
-          height: "auto",
-          maxWidth: "100%",
-          position: "relative",
+          height: 'auto',
+          maxWidth: '100%',
+          position: 'relative'
         }}
       >
         <Image
@@ -53,15 +52,15 @@ export default function Banners({
                   <Image alt="icons" src="images/sff-ff-food.svg"></Image>
                 </div>
                 <div>
-                  {" "}
+                  {' '}
                   <Image alt="icons" src="images/sff-ff-tea.svg"></Image>
                 </div>
                 <div>
-                  {" "}
+                  {' '}
                   <Image alt="icons" src="images/sff-ff-gift.svg"></Image>
                 </div>
                 <div>
-                  {" "}
+                  {' '}
                   <Image alt="icons" src="images/sff-ff-gasoline.svg"></Image>
                 </div>
               </div>
@@ -79,5 +78,5 @@ export default function Banners({
         )}
       </div>
     </>
-  );
+  )
 }

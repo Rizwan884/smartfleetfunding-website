@@ -1,16 +1,16 @@
-import Link from "next/link";
-import { FormEvent } from "react";
+import Link from 'next/link'
+import { FormEvent } from 'react'
 export default function FormInstapay() {
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget)
     const response = await fetch(
-      "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
+      'https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false',
       {
-        method: "POST",
-        body: formData,
+        method: 'POST',
+        body: formData
       }
-    );
+    )
   }
   return (
     <>
@@ -22,7 +22,7 @@ export default function FormInstapay() {
           </h1>
         </div>
         <div className="d-flex">
-          {" "}
+          {' '}
           <div className="h-100 w-50 w-md-100 text-dark-blue">
             <form
               onSubmit={onSubmit}
@@ -114,7 +114,7 @@ export default function FormInstapay() {
                       className="text-dark-blue"
                       htmlFor="flexCheckDefault"
                     >
-                      Accept Our{" "}
+                      Accept Our{' '}
                       <Link
                         href="/privacy"
                         target="_blank"
@@ -136,5 +136,5 @@ export default function FormInstapay() {
         </div>
       </div>
     </>
-  );
+  )
 }

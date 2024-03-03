@@ -1,13 +1,13 @@
-import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
-import Image from "next/image";
-import Modal from "react-bootstrap/Modal";
+import Image from 'next/image'
+import { useState } from 'react'
+import Modal from 'react-bootstrap/Modal'
+import { useMediaQuery } from 'react-responsive'
 export default function SectionVideo() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  const [showModal, setShowModal] = useState(false);
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const [showModal, setShowModal] = useState(false)
 
-  const openModal = () => setShowModal(true);
-  const closeModal = () => setShowModal(false);
+  const openModal = () => setShowModal(true)
+  const closeModal = () => setShowModal(false)
   return (
     <>
       {isMobile ? (
@@ -24,7 +24,7 @@ export default function SectionVideo() {
               <div className="lh-sm card-text-bottom fs-6 mx-auto text-center mt-5 fw-500">
                 Watch this concise video to understand how your invoices can
                 turn into immediate cash, allowing you to focus on what you do
-                best - delivering goods.{" "}
+                best - delivering goods.{' '}
                 <strong className="text-gray-dark">
                   With over 30 years of experience, we{"'"}re here to guide you
                   through every step.
@@ -80,7 +80,7 @@ export default function SectionVideo() {
               <div className="card-text-bottom fs-5  fw-400">
                 Watch this concise video to understand how your invoices can
                 turn into immediate cash, allowing you to focus on what you do
-                best - delivering goods.{" "}
+                best - delivering goods.{' '}
                 <strong className="text-gray-dark">
                   With over 30 years of experience, we{"'"}re here to guide you
                   through every step.
@@ -127,5 +127,5 @@ export default function SectionVideo() {
         </div>
       )}
     </>
-  );
+  )
 }

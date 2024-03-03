@@ -1,22 +1,22 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "next/image";
-import { useState } from "react";
-import { Accordion } from "react-bootstrap";
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import Image from 'next/image'
+import { useState } from 'react'
+import { Accordion } from 'react-bootstrap'
 type AccordionItem = {
-  title?: string;
-  description?: string | JSX.Element;
-  icon?: string | StaticImport;
-  eventKey: number;
-};
+  title?: string
+  description?: string | JSX.Element
+  icon?: string | StaticImport
+  eventKey: number
+}
 type IProps = {
-  items: AccordionItem[];
-  headTitle?: string;
-  showIcons?: boolean;
-  height?: number;
-  width?: number;
-  searchTerm: string;
-  onSearch: (term: string) => void;
-};
+  items: AccordionItem[]
+  headTitle?: string
+  showIcons?: boolean
+  height?: number
+  width?: number
+  searchTerm: string
+  onSearch: (term: string) => void
+}
 
 export default function FaqAccordion({
   items,
@@ -25,23 +25,23 @@ export default function FaqAccordion({
   height = 0,
   width = 0,
   searchTerm,
-  onSearch,
+  onSearch
 }: IProps) {
-  const [localSearchTerm, setLocalSearchTerm] = useState("");
+  const [localSearchTerm, setLocalSearchTerm] = useState('')
 
   const handleLocalSearch = () => {
-    onSearch(localSearchTerm.trim());
-  };
+    onSearch(localSearchTerm.trim())
+  }
   const filteredItems = items.filter((item) =>
     item.title?.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  )
   return (
     <div className="container font-montserrat pt-5 pt-md-2">
       <Accordion className="accordion-mp" defaultActiveKey="0">
         {headTitle && (
           <h2 className="px-3 fw-bold mb-5 ">
             {headTitle}
-            <div className="line w-md-2-line" style={{ width: "2.6%" }}></div>
+            <div className="line w-md-2-line" style={{ width: '2.6%' }}></div>
           </h2>
         )}
         <div className="px-3 d-flex flex-md-row mb-6 flex d-md-none d-block column-reverse w-100  h-75">
@@ -70,11 +70,11 @@ export default function FaqAccordion({
             <Accordion.Header className="fw-bold">
               {showIcons && (
                 <Image
-                  src={item.icon ? item.icon : ""}
+                  src={item.icon ? item.icon : ''}
                   alt="user"
                   width={width}
                   height={height}
-                  style={{ marginRight: "15px" }}
+                  style={{ marginRight: '15px' }}
                 ></Image>
               )}
               <div id="title-mobile">{item.title}</div>
@@ -84,5 +84,5 @@ export default function FaqAccordion({
         ))}
       </Accordion>
     </div>
-  );
+  )
 }

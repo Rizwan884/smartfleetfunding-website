@@ -1,22 +1,22 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FormEvent } from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import { FormEvent } from 'react'
 type IProps = {
-  backgroundImage?: string;
-  titleForm?: string | undefined;
-};
+  backgroundImage?: string
+  titleForm?: string | undefined
+}
 
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget)
     const response = await fetch(
-      "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
+      'https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false',
       {
-        method: "POST",
-        body: formData,
+        method: 'POST',
+        body: formData
       }
-    );
+    )
   }
   return (
     <>
@@ -24,15 +24,15 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         <div className=" md-w-60  w-100">
           <div className="position-relative h-100">
             <Image
-              src={`${backgroundImage || ""}`}
-              style={{ objectFit: "cover" }}
+              src={`${backgroundImage || ''}`}
+              style={{ objectFit: 'cover' }}
               alt="form"
               fill
             ></Image>
             <div className="position-relative ">
               <div className="container">
                 <h1 className="p-4 pt-5 mt-5  mt-md-0 fs-3 position relative text-center text-md-start">
-                  Contact us for{" "}
+                  Contact us for{' '}
                   <strong>
                     Fast, Easy and <br />
                     Secure Funding Solutions
@@ -96,7 +96,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
             ></input>
             <h1
               className=" fs-2 d-flex flex-column align-items-center align-items-md-start pb-3 pb-md-0 fst-italic"
-              style={{ marginBottom: "30px" }}
+              style={{ marginBottom: '30px' }}
             >
               {titleForm}
               <div className="line text-center text-md-left "></div>
@@ -168,7 +168,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{" "}
+                    Accept Our{' '}
                     <Link
                       href="/privacy"
                       target="_blank"
@@ -189,5 +189,5 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         </div>
       </div>
     </>
-  );
+  )
 }

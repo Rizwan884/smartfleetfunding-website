@@ -1,8 +1,8 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
+import Image from 'next/image'
+import { Container, Row } from 'react-bootstrap'
+import { useMediaQuery } from 'react-responsive'
 export default function Programs() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       {isMobile ? (
@@ -138,5 +138,5 @@ export default function Programs() {
         </section>
       )}
     </>
-  );
+  )
 }

@@ -1,30 +1,28 @@
-"use client";
-import Image from "next/image";
-import styles from "../app/styles/page.module.css";
+'use client'
 
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
-import Banners from "@/components/banner";
-import Welcome from "@/components/welcome";
-import Steps from "@/components/steps";
-import Benefits from "@/components/benefits";
-import FormInstapay from "@/components/form-instapay";
-import SectionAccordion from "@/components/section-accordion";
+import Banners from '@/components/banner'
+import Benefits from '@/components/benefits'
+import FormInstapay from '@/components/form-instapay'
+import SectionAccordion from '@/components/section-accordion'
+import Steps from '@/components/steps'
+import Welcome from '@/components/welcome'
+import Footer from '../../../components/footer'
+import Navbar from '../../../components/navbar'
 
 export default function Instapay() {
   const title = (
     <p>
       Fast, Easy and <strong className="fw-bold">Secure Payment</strong>
     </p>
-  );
+  )
   const titleMobile = (
     <p>
       Fast, Easy and <strong className="fw-bold">Secure Payment</strong>
     </p>
-  );
+  )
   const accordionInstaItems = [
     {
-      title: "What Are the Conditions for Instapay?",
+      title: 'What Are the Conditions for Instapay?',
       description: (
         <ul>
           <li>
@@ -37,10 +35,10 @@ export default function Instapay() {
           </li>
         </ul>
       ),
-      eventKey: 1,
+      eventKey: 1
     },
     {
-      title: "Are There Any Hidden Fees?",
+      title: 'Are There Any Hidden Fees?',
       description: (
         <ul>
           <li>
@@ -50,10 +48,10 @@ export default function Instapay() {
         </ul>
       ),
 
-      eventKey: 2,
+      eventKey: 2
     },
     {
-      title: "What Documents Do I Need to Submit?",
+      title: 'What Documents Do I Need to Submit?',
       description: (
         <ul>
           <li>
@@ -62,10 +60,10 @@ export default function Instapay() {
           </li>
         </ul>
       ),
-      eventKey: 3,
+      eventKey: 3
     },
     {
-      title: "How Is the Service Personalized?",
+      title: 'How Is the Service Personalized?',
       description: (
         <ul>
           <li>
@@ -74,10 +72,10 @@ export default function Instapay() {
           </li>
         </ul>
       ),
-      eventKey: 4,
+      eventKey: 4
     },
     {
-      title: "Do I need to switch companies in order to benefit with Instapay?",
+      title: 'Do I need to switch companies in order to benefit with Instapay?',
       description: (
         <ul>
           <li>
@@ -86,10 +84,10 @@ export default function Instapay() {
           </li>
         </ul>
       ),
-      eventKey: 5,
+      eventKey: 5
     },
     {
-      title: "Would I have a credit limit ?",
+      title: 'Would I have a credit limit ?',
       description: (
         <ul>
           <li>
@@ -98,9 +96,9 @@ export default function Instapay() {
           </li>
         </ul>
       ),
-      eventKey: 6,
-    },
-  ];
+      eventKey: 6
+    }
+  ]
 
   return (
     <>
@@ -122,5 +120,5 @@ export default function Instapay() {
       />
       <Footer />
     </>
-  );
+  )
 }

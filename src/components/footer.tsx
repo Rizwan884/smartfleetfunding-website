@@ -1,11 +1,10 @@
-import React from "react";
-import Link from "next/link";
-import Image from "react-bootstrap/Image";
-import ScrollToTopButton from "../components/scroolTop";
-import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
-import { useMediaQuery } from "react-responsive";
+import Link from 'next/link'
+import { Button, Container, Nav, NavDropdown, Navbar } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
+import { useMediaQuery } from 'react-responsive'
+import ScrollToTopButton from '../components/scroolTop'
 export default function Footer() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       <ScrollToTopButton />
@@ -92,7 +91,7 @@ export default function Footer() {
             </p>
             <div
               className="d-flex position-absolute"
-              style={{ width: "69%", right: "0%", top: "-20px" }}
+              style={{ width: '69%', right: '0%', top: '-20px' }}
             >
               <div>
                 <Link
@@ -101,7 +100,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{ width: "40px" }}
+                    style={{ width: '40px' }}
                     src="images/sff-facebook.svg"
                     alt="facebook"
                   />
@@ -114,7 +113,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{width: "39px" }}
+                    style={{ width: '39px' }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
@@ -127,7 +126,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{width: "43px" }}
+                    style={{ width: '43px' }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
                   />
@@ -140,7 +139,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{width: "44px" }}
+                    style={{ width: '44px' }}
                     src="images/sff-youtube.svg"
                     alt="youtube"
                   />
@@ -172,7 +171,7 @@ export default function Footer() {
                           <Image
                             alt="down"
                             src="images/sff-arrow-down-green.svg"
-                            style={{ width: "13px", height: "10px" }}
+                            style={{ width: '13px', height: '10px' }}
                           />
                         </>
                       }
@@ -230,7 +229,7 @@ export default function Footer() {
             </p>
             <div
               className="d-flex position-absolute"
-              style={{ right: "66px", top: "-11px" }}
+              style={{ right: '66px', top: '-11px' }}
             >
               <div>
                 <Link
@@ -239,7 +238,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{ width: "40px" }}
+                    style={{ width: '40px' }}
                     src="images/sff-facebook.svg"
                     alt="facebook"
                   />
@@ -252,7 +251,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{ width: "39px" }}
+                    style={{ width: '39px' }}
                     src="images/sff-instagram.svg"
                     alt="instagram"
                   />
@@ -265,7 +264,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{ width: "43px" }}
+                    style={{ width: '43px' }}
                     src="images/sff-linkedin.svg"
                     alt="linkedin"
                   />
@@ -278,7 +277,7 @@ export default function Footer() {
                   passHref={true}
                 >
                   <Image
-                    style={{ width: "44px" }}
+                    style={{ width: '44px' }}
                     src="images/sff-youtube.svg"
                     alt="youtube"
                   />
@@ -289,5 +288,5 @@ export default function Footer() {
         </footer>
       )}
     </>
-  );
+  )
 }

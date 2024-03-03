@@ -1,8 +1,8 @@
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
-import { useMediaQuery } from "react-responsive";
+import { Card } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
+import { useMediaQuery } from 'react-responsive'
 export default function CardsFuel() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       {isMobile ? (
@@ -132,5 +132,5 @@ export default function CardsFuel() {
         </div>
       )}
     </>
-  );
+  )
 }

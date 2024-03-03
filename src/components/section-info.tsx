@@ -1,13 +1,12 @@
-import React from "react";
-import { Button } from "react-bootstrap";
-import { useMediaQuery } from "react-responsive";
+import { Button } from 'react-bootstrap'
+import { useMediaQuery } from 'react-responsive'
 const Image = {
-  backgroundSize: "cover",
-  backgroundPosition: "center center",
-  height: "500px",
-};
+  backgroundSize: 'cover',
+  backgroundPosition: 'center center',
+  height: '500px'
+}
 export default function ImgInfo() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       {isMobile ? (
@@ -17,7 +16,7 @@ export default function ImgInfo() {
             style={{
               ...Image,
               backgroundImage: 'url("images/sff-truck-driver-vertical.webp")',
-              marginTop: "40px",
+              marginTop: '40px'
             }}
           ></div>
           <div className="  font-montserrat pt-2 mx-5 mb-5">
@@ -44,8 +43,8 @@ export default function ImgInfo() {
           style={{
             ...Image,
             backgroundImage: 'url("images/sff-truck-driver.webp")',
-            marginRight: "80px",
-            marginTop: "40px",
+            marginRight: '80px',
+            marginTop: '40px'
           }}
         >
           <div className=" info-container font-montserrat pt-6 mx-5">
@@ -69,5 +68,5 @@ export default function ImgInfo() {
         </div>
       )}
     </>
-  );
+  )
 }
