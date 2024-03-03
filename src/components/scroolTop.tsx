@@ -40,7 +40,7 @@ const ScrollToTopButton = () => {
       <Image
         alt="scroll"
         style={{ width: '30px' }}
-        src="images/sff-arrow-up.svg"
+        src="/images/sff-arrow-up.svg"
       ></Image>
     </div>
   )

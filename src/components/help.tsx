@@ -16,7 +16,7 @@ export default function Help() {
               {' '}
               <div className="card " style={{ border: '10px' }}>
                 <Image
-                  src="images/sff-hp-1.svg"
+                  src="/images/sff-hp-1.svg"
                   style={{
                     width: '15%',
                     marginTop: '-21px',
@@ -40,7 +40,7 @@ export default function Help() {
               {' '}
               <div className="card " style={{ border: '10px' }}>
                 <Image
-                  src="images/sff-hp-2.svg"
+                  src="/images/sff-hp-2.svg"
                   style={{
                     width: '15%',
                     marginTop: '-21px',
@@ -64,7 +64,7 @@ export default function Help() {
               {' '}
               <div className="card " style={{ border: '10px' }}>
                 <Image
-                  src="images/sff-hp-3.svg"
+                  src="/images/sff-hp-3.svg"
                   style={{
                     width: '15%',
                     marginTop: '-21px',
@@ -90,7 +90,7 @@ export default function Help() {
               {' '}
               <div className="card " style={{ border: '10px' }}>
                 <Image
-                  src="images/sff-hp-4.svg"
+                  src="/images/sff-hp-4.svg"
                   style={{
                     width: '15%',
                     marginTop: '-21px',
@@ -116,7 +116,7 @@ export default function Help() {
               {' '}
               <div className="card " style={{ border: '10px' }}>
                 <Image
-                  src="images/sff-hp-5.svg"
+                  src="/images/sff-hp-5.svg"
                   style={{
                     width: '15%',
                     marginTop: '-21px',
@@ -140,7 +140,7 @@ export default function Help() {
               {' '}
               <div className="card " style={{ border: '10px' }}>
                 <Image
-                  src="images/sff-hp-6.svg"
+                  src="/images/sff-hp-6.svg"
                   style={{
                     width: '15%',
                     marginTop: '-21px',
@@ -169,7 +169,7 @@ export default function Help() {
               {' '}
               <div className="card " style={{ border: '10px' }}>
                 <Image
-                  src="images/sff-hp-7.svg"
+                  src="/images/sff-hp-7.svg"
                   style={{
                     width: '15%',
                     marginTop: '-21px',
@@ -192,7 +192,7 @@ export default function Help() {
               {' '}
               <div className="card " style={{ border: '10px' }}>
                 <Image
-                  src="images/sff-hp-8.svg"
+                  src="/images/sff-hp-8.svg"
                   style={{
                     width: '15%',
                     marginTop: '-21px',
@@ -232,7 +232,7 @@ export default function Help() {
                 }}
               >
                 <Image
-                  src="images/sff-hp-1.svg"
+                  src="/images/sff-hp-1.svg"
                   style={{
                     width: '15%',
                     marginTop: '-30px',
@@ -257,7 +257,7 @@ export default function Help() {
                 style={{ border: '10px', paddingBottom: '20px' }}
               >
                 <Image
-                  src="images/sff-hp-2.svg"
+                  src="/images/sff-hp-2.svg"
                   style={{
                     width: '15%',
                     marginTop: '-30px',
@@ -283,7 +283,7 @@ export default function Help() {
                 style={{ border: '10px', paddingBottom: '20px' }}
               >
                 <Image
-                  src="images/sff-hp-3.svg"
+                  src="/images/sff-hp-3.svg"
                   style={{
                     width: '15%',
                     marginTop: '-30px',
@@ -309,7 +309,7 @@ export default function Help() {
                 style={{ border: '10px', paddingBottom: '20px' }}
               >
                 <Image
-                  src="images/sff-hp-4.svg"
+                  src="/images/sff-hp-4.svg"
                   style={{
                     width: '15%',
                     marginTop: '-30px',
@@ -337,7 +337,7 @@ export default function Help() {
                 style={{ border: '10px', paddingBottom: '20px' }}
               >
                 <Image
-                  src="images/sff-hp-5.svg"
+                  src="/images/sff-hp-5.svg"
                   style={{
                     width: '15%',
                     marginTop: '-30px',
@@ -363,7 +363,7 @@ export default function Help() {
                 style={{ border: '10px', paddingBottom: '20px' }}
               >
                 <Image
-                  src="images/sff-hp-6.svg"
+                  src="/images/sff-hp-6.svg"
                   style={{
                     width: '15%',
                     marginTop: '-30px',
@@ -389,7 +389,7 @@ export default function Help() {
                 style={{ border: '10px', paddingBottom: '20px' }}
               >
                 <Image
-                  src="images/sff-hp-7.svg"
+                  src="/images/sff-hp-7.svg"
                   style={{
                     width: '15%',
                     marginTop: '-30px',
@@ -414,7 +414,7 @@ export default function Help() {
                 style={{ border: '10px', paddingBottom: '20px' }}
               >
                 <Image
-                  src="images/sff-hp-8.svg"
+                  src="/images/sff-hp-8.svg"
                   style={{
                     width: '15%',
                     marginTop: '-30px',

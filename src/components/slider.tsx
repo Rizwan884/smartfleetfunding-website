@@ -25,7 +25,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck-mobile.webp")'
+                backgroundImage: 'url("/images/sff-truck-mobile.webp")'
               }}
             >
               <div className="slider-container-mobile mx-4">
@@ -49,7 +49,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck-logistic-mobile.webp")'
+                backgroundImage: 'url("/images/sff-truck-logistic-mobile.webp")'
               }}
             >
               <div className="slider-container-mobile mx-4">
@@ -70,7 +70,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-succes-story-mobile.webp")'
+                backgroundImage: 'url("/images/sff-succes-story-mobile.webp")'
               }}
             >
               <div className=" slider-container-mobile mx-4">
@@ -95,7 +95,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck.webp")'
+                backgroundImage: 'url("/images/sff-truck.webp")'
               }}
             >
               <div className="slider-container slider-container mx-4">
@@ -117,7 +117,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck-logistic.webp")'
+                backgroundImage: 'url("/images/sff-truck-logistic.webp")'
               }}
             >
               <div className="slider-container slider-container mx-4">
@@ -138,7 +138,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-succes-story.webp")'
+                backgroundImage: 'url("/images/sff-succes-story.webp")'
               }}
             >
               <div className=" slider-container mx-4">

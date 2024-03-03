@@ -41,7 +41,7 @@ export default function Ideas() {
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
                 style={{ width: '38px' }}
               ></Image>
@@ -74,7 +74,7 @@ export default function Ideas() {
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
                 style={{ width: '38px' }}
               ></Image>
@@ -108,7 +108,7 @@ export default function Ideas() {
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
                 style={{ width: '38px' }}
               ></Image>
@@ -139,7 +139,7 @@ export default function Ideas() {
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
                 style={{ width: '38px' }}
               ></Image>
@@ -171,7 +171,7 @@ export default function Ideas() {
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
                 style={{ width: '38px' }}
               ></Image>

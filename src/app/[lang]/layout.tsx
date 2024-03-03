@@ -1,7 +1,7 @@
+import { I18nProvider } from '@/context/I18nProvider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
-import { I18nProvider } from '@/context/I18nProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -47,9 +47,10 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children, params: { lang }
+  children,
+  params: { lang }
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode
   params: { lang: string }
 }) {
   return (
@@ -58,6 +59,5 @@ export default function RootLayout({
         <body className={inter.className}>{children}</body>
       </html>
     </I18nProvider>
-
   )
 }

@@ -8,7 +8,9 @@ let locales = ['en-US', 'es']
 function getLocale(request: NextRequest) {
   let headers = {
     'accept-language':
-      request.headers.get('accept-language') || 'en-US,en;q=0.5'
+      request.cookies.get('lang')?.value ||
+      request.headers.get('accept-language') ||
+      'en-US,en;q=0.5'
   }
   let languages = new Negotiator({ headers }).languages()
   let defaultLocale = 'en-US'
@@ -16,15 +18,22 @@ function getLocale(request: NextRequest) {
   return match(languages, locales, defaultLocale)
 }
 
-// TODO: Save locale in cookies
 export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
-  const pathnameHasLocale = locales.some(
+  const pathnameLocale = locales.find(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   )
 
-  if (pathnameHasLocale) return
+  if (pathnameLocale) {
+    const response = NextResponse.next()
+    response.cookies.set({
+      name: 'lang',
+      value: pathnameLocale,
+      path: '/'
+    })
+    return response
+  }
 
   // Redirect if there is no locale
   const locale = getLocale(request)
@@ -37,7 +46,7 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next)
-    '/((?!_next).*)'
+    '/((?!api|_next/static|_next/image|favicon.ico|images|fonts).*)'
     // Optional: only run on root (/) URL
     // '/'
   ]

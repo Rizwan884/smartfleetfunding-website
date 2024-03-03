@@ -30,7 +30,7 @@ export default function Cards() {
                         >
                           <Image
                             style={{ width: '50px' }}
-                            src="images/sff-factura.svg"
+                            src="/images/sff-factura.svg"
                             alt=""
                           />
                         </div>
@@ -42,7 +42,7 @@ export default function Cards() {
                         <div className="ms-auto">
                           <Image
                             style={{ width: '20px' }}
-                            src="images/sff-arrow-right-mobile.svg"
+                            src="/images/sff-arrow-right-mobile.svg"
                             alt=""
                           />
                         </div>
@@ -64,7 +64,7 @@ export default function Cards() {
                         <div className="icon-cards-mobile">
                           <Image
                             style={{ width: '45px' }}
-                            src="images/sff-cash.svg"
+                            src="/images/sff-cash.svg"
                             alt=""
                           />
                         </div>
@@ -76,7 +76,7 @@ export default function Cards() {
                         <div className="ms-auto">
                           <Image
                             style={{ width: '20px' }}
-                            src="images/sff-arrow-right-mobile.svg"
+                            src="/images/sff-arrow-right-mobile.svg"
                             alt=""
                           />
                         </div>
@@ -101,7 +101,7 @@ export default function Cards() {
                         >
                           <Image
                             style={{ width: '58px' }}
-                            src="images/sff-gas.svg"
+                            src="/images/sff-gas.svg"
                             alt=""
                           />
                         </div>
@@ -113,7 +113,7 @@ export default function Cards() {
                         <div className="ms-auto">
                           <Image
                             style={{ width: '20px' }}
-                            src="images/sff-arrow-right-mobile.svg"
+                            src="/images/sff-arrow-right-mobile.svg"
                             alt=""
                           />
                         </div>
@@ -148,7 +148,7 @@ export default function Cards() {
                     >
                       <Image
                         style={{ width: '68px' }}
-                        src="images/sff-factura.svg"
+                        src="/images/sff-factura.svg"
                         alt=""
                       />
                     </div>
@@ -156,7 +156,7 @@ export default function Cards() {
                     <div className="cards-size ">
                       <div>
                         <p className="mb-0 fw-600 text-green">
-                          <Image src="images/sff-point-front.svg" alt="" />{' '}
+                          <Image src="/images/sff-point-front.svg" alt="" />{' '}
                           Premium factoring -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -166,7 +166,7 @@ export default function Cards() {
                       </div>
                       <div>
                         <p className="mb-0 fw-600 text-green">
-                          <Image src="images/sff-point-front.svg" alt="" /> We
+                          <Image src="/images/sff-point-front.svg" alt="" /> We
                           Address Your Challenges -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -181,7 +181,7 @@ export default function Cards() {
                       <div>
                         <p className="mb-0 fw-600 text-green">
                           {' '}
-                          <Image src="images/sff-point-front.svg" alt="" /> How
+                          <Image src="/images/sff-point-front.svg" alt="" /> How
                           We Assist -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -194,7 +194,7 @@ export default function Cards() {
                       </div>
                       <div>
                         <p className="mb-0 fw-600 text-green">
-                          <Image src="images/sff-point-front.svg" alt="" />{' '}
+                          <Image src="/images/sff-point-front.svg" alt="" />{' '}
                           Connect with Our Advisors -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -213,7 +213,7 @@ export default function Cards() {
                     <div className="icon-cards" style={{ height: 70 }}>
                       <Image
                         style={{ width: '62px;' }}
-                        src="images/sff-cash.svg"
+                        src="/images/sff-cash.svg"
                         alt=""
                       />
                     </div>
@@ -223,7 +223,7 @@ export default function Cards() {
                     <div className="cards-size">
                       <div>
                         <p className="mb-0 fw-600 text-green">
-                          <Image src="images/sff-point-front.svg" alt="" />{' '}
+                          <Image src="/images/sff-point-front.svg" alt="" />{' '}
                           Fast, Easy and Secure Payment -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -237,7 +237,7 @@ export default function Cards() {
                       </div>
                       <div>
                         <p className="mb-0 fw-600 text-green">
-                          <Image src="images/sff-point-front.svg" alt="" />{' '}
+                          <Image src="/images/sff-point-front.svg" alt="" />{' '}
                           Benefits -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -265,7 +265,7 @@ export default function Cards() {
                       </div>
                       <div>
                         <p className="mb-0 fw-600 text-green">
-                          <Image src="images/sff-point-front.svg" alt="" />{' '}
+                          <Image src="/images/sff-point-front.svg" alt="" />{' '}
                           Support -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -279,7 +279,7 @@ export default function Cards() {
                       </div>
                       <div>
                         <p className="mb-0 fw-600 text-green">
-                          <Image src="images/sff-point-front.svg" alt="" />{' '}
+                          <Image src="/images/sff-point-front.svg" alt="" />{' '}
                           Getting Started -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -302,7 +302,7 @@ export default function Cards() {
                     <div className="icon-cards" style={{ height: 70 }}>
                       <Image
                         style={{ width: '90px' }}
-                        src="images/sff-gas.svg"
+                        src="/images/sff-gas.svg"
                         alt=""
                       />
                     </div>
@@ -312,7 +312,7 @@ export default function Cards() {
                     <div className="cards-size">
                       <div>
                         <p className="mb-0 fw-600 text-green">
-                          <Image src="images/sff-point-front.svg" alt="" />{' '}
+                          <Image src="/images/sff-point-front.svg" alt="" />{' '}
                           Smart Fuel card -
                         </p>
                         <li className="list-group fw-400 text-dark-blue">
@@ -350,7 +350,7 @@ export default function Cards() {
                         <p className="mb-0 fw-600 text-green">
                           <Image
                             className="points"
-                            src="images/sff-point-front.svg"
+                            src="/images/sff-point-front.svg"
                             alt=""
                           />{' '}
                           Smart Fuel Advance -

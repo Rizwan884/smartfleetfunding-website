@@ -72,7 +72,7 @@ export default function Programs() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-5">
@@ -96,7 +96,7 @@ export default function Programs() {
                   <Image
                     width={20}
                     height={20}
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -109,7 +109,7 @@ export default function Programs() {
                   <Image
                     width={20}
                     height={20}
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -123,7 +123,7 @@ export default function Programs() {
                   <Image
                     width={20}
                     height={20}
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">

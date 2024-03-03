@@ -26,7 +26,7 @@ export default function Footer() {
                       <span className="text-green fw-600">SERVICES</span>
                       <Image
                         alt="down"
-                        src="images/sff-arrow-down-green.svg"
+                        src="/images/sff-arrow-down-green.svg"
                         className="w-13 h-10"
                       />
                     </div>
@@ -72,7 +72,7 @@ export default function Footer() {
               </div>
               <div className="text-center d-flex justify-content-center align-items-center w-50">
                 <Image
-                  src="images/sff-logo-footer.svg"
+                  src="/images/sff-logo-footer.svg"
                   width="174"
                   height="54"
                   className="d-inline-block align-top"
@@ -101,7 +101,7 @@ export default function Footer() {
                 >
                   <Image
                     style={{ width: '40px' }}
-                    src="images/sff-facebook.svg"
+                    src="/images/sff-facebook.svg"
                     alt="facebook"
                   />
                 </Link>
@@ -114,7 +114,7 @@ export default function Footer() {
                 >
                   <Image
                     style={{ width: '39px' }}
-                    src="images/sff-instagram.svg"
+                    src="/images/sff-instagram.svg"
                     alt="instagram"
                   />
                 </Link>
@@ -127,7 +127,7 @@ export default function Footer() {
                 >
                   <Image
                     style={{ width: '43px' }}
-                    src="images/sff-linkedin.svg"
+                    src="/images/sff-linkedin.svg"
                     alt="linkedin"
                   />
                 </Link>
@@ -140,7 +140,7 @@ export default function Footer() {
                 >
                   <Image
                     style={{ width: '44px' }}
-                    src="images/sff-youtube.svg"
+                    src="/images/sff-youtube.svg"
                     alt="youtube"
                   />
                 </Link>
@@ -170,7 +170,7 @@ export default function Footer() {
                           </span>
                           <Image
                             alt="down"
-                            src="images/sff-arrow-down-green.svg"
+                            src="/images/sff-arrow-down-green.svg"
                             style={{ width: '13px', height: '10px' }}
                           />
                         </>
@@ -216,7 +216,7 @@ export default function Footer() {
           </Container>
           <div className="text-center py-5">
             <Image
-              src="images/sff-logo-footer.svg"
+              src="/images/sff-logo-footer.svg"
               width="174"
               height="54"
               className="d-inline-block align-top"
@@ -239,7 +239,7 @@ export default function Footer() {
                 >
                   <Image
                     style={{ width: '40px' }}
-                    src="images/sff-facebook.svg"
+                    src="/images/sff-facebook.svg"
                     alt="facebook"
                   />
                 </Link>
@@ -252,7 +252,7 @@ export default function Footer() {
                 >
                   <Image
                     style={{ width: '39px' }}
-                    src="images/sff-instagram.svg"
+                    src="/images/sff-instagram.svg"
                     alt="instagram"
                   />
                 </Link>
@@ -265,7 +265,7 @@ export default function Footer() {
                 >
                   <Image
                     style={{ width: '43px' }}
-                    src="images/sff-linkedin.svg"
+                    src="/images/sff-linkedin.svg"
                     alt="linkedin"
                   />
                 </Link>
@@ -278,7 +278,7 @@ export default function Footer() {
                 >
                   <Image
                     style={{ width: '44px' }}
-                    src="images/sff-youtube.svg"
+                    src="/images/sff-youtube.svg"
                     alt="youtube"
                   />
                 </Link>

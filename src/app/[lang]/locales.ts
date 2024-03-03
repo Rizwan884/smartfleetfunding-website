@@ -6,8 +6,8 @@ interface ILocale {
 }
 
 const locales: ILocale = {
-  "en-US": enUS,
-  "es": es,
+  'en-US': enUS,
+  es: es
 }
 
 export const getLocale = (lang: string) => locales[lang]

@@ -128,7 +128,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
               style={{
                 objectFit: 'cover'
               }}
-              src="images/sff-form-freight.webp"
+              src="/images/sff-form-freight.webp"
               alt="form"
             />
           </div>

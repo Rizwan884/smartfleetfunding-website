@@ -15,7 +15,7 @@ export default function Benefits() {
               <Image
                 className="img-style"
                 alt="icon"
-                src="images/sff-bff-dollar.svg"
+                src="/images/sff-bff-dollar.svg"
               ></Image>
               <div className="lh-sm">
                 <h2 className="fs-3 fw-600 text-green ">Cash Flow control</h2>
@@ -32,7 +32,7 @@ export default function Benefits() {
               <Image
                 className="img-style2"
                 alt="icon"
-                src="images/sff-bff-hand.svg"
+                src="/images/sff-bff-hand.svg"
               ></Image>
               <div className="lh-sm">
                 <h2 className="fs-3 fw-600 text-green ">No Holdbacks</h2>
@@ -49,7 +49,7 @@ export default function Benefits() {
               <Image
                 className="img-style3"
                 alt="icon"
-                src="images/sff-bff-check.svg"
+                src="/images/sff-bff-check.svg"
               ></Image>
               <div className="lh-sm">
                 <h2 className="fs-3 fw-600 text-green ">
@@ -67,7 +67,7 @@ export default function Benefits() {
               <Image
                 className="img-style4"
                 alt="icon"
-                src="images/sff-bff-earphones.svg"
+                src="/images/sff-bff-earphones.svg"
               ></Image>
               <div className="lh-sm">
                 <h2 className="fs-3 fw-600 text-green ">

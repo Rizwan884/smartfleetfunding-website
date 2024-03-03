@@ -20,7 +20,7 @@ export default function Cards() {
                       <div className="card-icon">
                         <Image
                           className="icons"
-                          src="images/sff-clock-front.svg"
+                          src="/images/sff-clock-front.svg"
                           alt=""
                         />
                       </div>
@@ -51,7 +51,7 @@ export default function Cards() {
                       <div className="card-icon">
                         <Image
                           className="icons2"
-                          src="images/sff-easy-front.svg"
+                          src="/images/sff-easy-front.svg"
                           alt=""
                         />
                       </div>
@@ -80,7 +80,7 @@ export default function Cards() {
                       <div className="card-icon">
                         <Image
                           className="icons2"
-                          src="images/sff-shield-front.svg"
+                          src="/images/sff-shield-front.svg"
                           alt=""
                         />
                       </div>
@@ -113,7 +113,7 @@ export default function Cards() {
                     <div className="card-icon">
                       <Image
                         className="icons"
-                        src="images/sff-clock-front.svg"
+                        src="/images/sff-clock-front.svg"
                         alt=""
                       />
                     </div>
@@ -129,7 +129,7 @@ export default function Cards() {
                     <div className="card-icon-back">
                       <Image
                         className="icons"
-                        src="images/sff-clock-back.svg"
+                        src="/images/sff-clock-back.svg"
                         alt=""
                       />
                     </div>
@@ -154,7 +154,7 @@ export default function Cards() {
                     <div className="card-icon">
                       <Image
                         className="icons2"
-                        src="images/sff-easy-front.svg"
+                        src="/images/sff-easy-front.svg"
                         alt=""
                       />
                     </div>
@@ -168,7 +168,7 @@ export default function Cards() {
                     <div className="card-icon-back">
                       <Image
                         className="icons2"
-                        src="images/sff-easy-back.svg"
+                        src="/images/sff-easy-back.svg"
                         alt=""
                       />
                     </div>
@@ -191,7 +191,7 @@ export default function Cards() {
                     <div className="card-icon">
                       <Image
                         className="icons2"
-                        src="images/sff-shield-front.svg"
+                        src="/images/sff-shield-front.svg"
                         alt=""
                       />
                     </div>
@@ -205,7 +205,7 @@ export default function Cards() {
                     <div className="card-icon-back">
                       <Image
                         className="icons2"
-                        src="images/sff-shield-back.svg"
+                        src="/images/sff-shield-back.svg"
                         alt=""
                       />
                     </div>

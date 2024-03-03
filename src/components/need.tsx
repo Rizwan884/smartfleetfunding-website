@@ -18,7 +18,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -31,7 +31,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -44,7 +44,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -58,7 +58,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -71,7 +71,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -84,7 +84,7 @@ export default function Needs() {
             <Card.Body className="text-start w-100">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="i/mages/sff-fb-check.svg"
                 className="mb-4 w-30px"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -99,7 +99,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -112,7 +112,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -125,7 +125,7 @@ export default function Needs() {
             <Card.Body className="text-start w-100">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="mb-4 w-30px"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">

@@ -1,11 +1,11 @@
+import LanguageSwitcher from '@/components/LanguageSwitcher'
+import { useI18nProvider } from '@/context/I18nProvider'
 import Link from 'next/link'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Navbar from 'react-bootstrap/Navbar'
-import { useI18nProvider } from '@/context/I18nProvider'
-import LanguageSwitcher from '@/components/LanguageSwitcher'
 
 export default function SFFNavbar() {
   const { t } = useI18nProvider()
@@ -23,7 +23,7 @@ export default function SFFNavbar() {
         <Container>
           <Navbar.Brand href="/">
             <Image
-              src="images/sff-logo.png"
+              src="/images/sff-logo.png"
               width="174"
               height="54"
               className="d-inline-block align-top"
@@ -51,7 +51,7 @@ export default function SFFNavbar() {
                   <>
                     <span className="text-dark-blue ">{t.navbar.services}</span>{' '}
                     <Image
-                      src="images/sff-arrow-down.svg"
+                      src="/images/sff-arrow-down.svg"
                       alt="Dropdown Icon"
                       className="w-13 h-10"
                     />

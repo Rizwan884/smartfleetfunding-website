@@ -15,7 +15,7 @@ export default function ImgInfo() {
             className=""
             style={{
               ...Image,
-              backgroundImage: 'url("images/sff-truck-driver-vertical.webp")',
+              backgroundImage: 'url("/images/sff-truck-driver-vertical.webp")',
               marginTop: '40px'
             }}
           ></div>
@@ -42,7 +42,7 @@ export default function ImgInfo() {
         <div
           style={{
             ...Image,
-            backgroundImage: 'url("images/sff-truck-driver.webp")',
+            backgroundImage: 'url("/images/sff-truck-driver.webp")',
             marginRight: '80px',
             marginTop: '40px'
           }}

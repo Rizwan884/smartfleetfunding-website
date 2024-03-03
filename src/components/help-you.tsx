@@ -14,7 +14,7 @@ export default function HelpYou() {
               alt="img"
               width={200}
               height={270}
-              src="images/sff-fb-rule.svg"
+              src="/images/sff-fb-rule.svg"
             ></Image>
           </Row>
         </div>
@@ -32,7 +32,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div>
@@ -46,7 +46,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-50"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -60,7 +60,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -85,7 +85,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -102,7 +102,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -119,7 +119,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -147,7 +147,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-50"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div>
@@ -162,7 +162,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -176,7 +176,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -190,7 +190,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -215,7 +215,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -233,7 +233,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -249,7 +249,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -265,7 +265,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
