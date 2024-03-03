@@ -1,8 +1,9 @@
+import { IJSON } from '@/utils/types'
 import enUS from '../../locales/en.json'
 import es from '../../locales/es.json'
 
 interface ILocale {
-  [lang: string]: any
+  [lang: string]: IJSON
 }
 
 const locales: ILocale = {

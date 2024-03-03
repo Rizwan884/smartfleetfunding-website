@@ -1,18 +1,12 @@
 import { Button, Carousel } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
 // Interfaz para describir los estilos personalizados
-interface CarouselImageStyles {
-  backgroundSize: string
-  backgroundPosition: string
-  height: string
-  position: string
-}
 
 const carouselImage = {
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
   height: '400px', // Ajusta la altura según tus necesidades
-  position: 'relative' as 'relative'
+  position: 'relative' as const
 }
 
 export default function Slider() {

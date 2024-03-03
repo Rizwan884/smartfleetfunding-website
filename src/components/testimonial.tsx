@@ -48,7 +48,7 @@ const TestimonialCarousel = () => {
     {
       text: (
         <>
-          Great​
+          Great
           <br />
           Great, thank you very much.
         </>
@@ -60,7 +60,7 @@ const TestimonialCarousel = () => {
     {
       text: (
         <>
-          They are pretty fast in paying​
+          They are pretty fast in paying
           <br />
           They are pretty fast in paying , totally recommend.
         </>
@@ -78,7 +78,7 @@ const TestimonialCarousel = () => {
     {
       text: (
         <>
-          GOOD JOB FOR ONTIME PAYMENT​
+          GOOD JOB FOR ONTIME PAYMENT
           <br />
           GOOD JOB FOR ONTIME PAYMENT. NEED TO DECREASE PERCENTAGE TO LOWER
           RATE.
@@ -91,7 +91,7 @@ const TestimonialCarousel = () => {
     {
       text: (
         <>
-          Good company , fast payments​
+          Good company , fast payments
           <br />
           Fast payments
         </>
@@ -105,11 +105,11 @@ const TestimonialCarousel = () => {
         <>
           I WOULD USE THIS PAYMENT SYSTEM AGAIN
           <br />
-          Turned all the paperwork in as needed on a Sunday.​ on Monday morning
-          I received an email that paperwork was accepted. Tuesday around 3 pm
-          the funds hit my account.
+          Turned all the paperwork in as needed on a Sunday. On Monday morning I
+          received an email that paperwork was accepted. Tuesday around 3 pm the
+          funds hit my account.
           <br />
-          Great job​ Great results
+          Great job Great results
         </>
       ),
       author: 'C-Level Trucking LLC',

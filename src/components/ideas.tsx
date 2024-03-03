@@ -1,10 +1,11 @@
 import { Carousel } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
+
 const carouselIdea = {
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
   height: '400px',
-  position: 'relative' as 'relative'
+  position: 'relative' as const
 }
 
 export default function Ideas() {

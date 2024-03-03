@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { FormEvent } from 'react'
+import Image from 'react-bootstrap/Image'
 
 type IProps = {
   backgroundImage?: string
@@ -10,7 +11,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
-    const response = await fetch(
+    await fetch(
       'https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false',
       {
         method: 'POST',
@@ -149,7 +150,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
         <div className="md-w-50 w-100">
           <div className="position-relative h-100">
             <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
-              <img
+              <Image
                 className="w-100 h-100"
                 style={{
                   objectFit: 'cover'
