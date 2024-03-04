@@ -1,27 +1,62 @@
 import Link from "next/link";
 import { FormEvent } from "react";
+import React, { useState } from "react";
 type IProps = {
   backgroundImage?: string;
   titleForm?: string | undefined;
 };
 
 export default function SectionForm({ backgroundImage, titleForm }: IProps) {
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+  // State variable to hold form values
+  const [formData, setFormData] = useState<{ [key: string]: string }>({
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    message: "",
+  });
+
+  // Function to handle form submission
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const response = await fetch(
+    // Access form data object
+    console.log("Form Data:", formData);
+    // You can perform further actions here, such as sending data to a server
+    const formDatas = new FormData(event.currentTarget);
+    const response = fetch(
       "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
       {
         method: "POST",
-        body: formData,
+        body: formDatas,
       }
     );
-  }
+  };
+
+  // Function to handle input changes
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    // Update form data state with new value
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  // async function onSubmit(event: FormEvent<HTMLFormElement>) {
+  //   event.preventDefault();
+  //   const formData = new FormData(event.currentTarget);
+  //   const response = await fetch(
+  //     "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
+  //     {
+  //       method: "POST",
+  //       body: formData,
+  //     }
+  //   );
+  // }
   return (
     <>
       <div className="d-flex flex-column-reverse flex-md-row mt-6">
         <div className="md-w-50 w-100 bg-dark-blue text-white">
-          <form onSubmit={onSubmit} id="form" className="m-5">
+          <form onSubmit={handleSubmit} id="form" className="m-5">
             <input
               id="form-name"
               name="form-name"
@@ -32,7 +67,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
               className=" fs-2 text-left fst-italic"
               style={{ marginBottom: "30px" }}
             >
-              {titleForm}
+              Form Title
               <div className="line "></div>
             </h1>
             <div className="row mb-3 flex-md-row flex-column">
@@ -42,6 +77,8 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   className="form-control mb-3 mb-md-0 px-3 bg-grey-transparent text-white"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   required
                   placeholder="Full Name"
                 ></input>
@@ -52,6 +89,8 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   required
                   placeholder="Your E-Mail"
                 ></input>
@@ -64,6 +103,8 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   className="form-control mb-3 mb-md-0 px-3 bg-grey-transparent text-white"
                   id="company"
                   name="company"
+                  value={formData.company}
+                  onChange={handleInputChange}
                   required
                   placeholder="Company Name"
                 ></input>
@@ -74,6 +115,8 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="phone"
                   name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   required
                   placeholder="Phone"
                 ></input>
@@ -84,6 +127,8 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 className="form-control bg-grey-transparent text-white"
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleInputChange}
                 required
                 rows={3}
                 placeholder="Description"
@@ -102,7 +147,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Acept Our{" "}
+                    Accept Our{" "}
                     <Link
                       href="/privacy"
                       target="_blank"
