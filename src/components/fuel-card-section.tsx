@@ -1,46 +1,42 @@
-import Cards from "./cards";
-import CardsInfo from "./cards-info";
-import ImgInfo from "./section-info";
-import SectionAccordion from "./section-accordion";
-import Ideas from "./ideas";
+import SectionAccordion from './section-accordion'
 export default function FuelCardSections() {
   const accordionItems = [
     {
-      title: "Convenience",
+      title: 'Convenience',
       description:
-        "Accepted at over 99% of fuel locations in the U.S. and over 1,200 locations in Canada.",
+        'Accepted at over 99% of fuel locations in the U.S. and over 1,200 locations in Canada.',
 
-      eventKey: 1,
+      eventKey: 1
     },
     {
-      title: "Control",
+      title: 'Control',
       description:
-        "Control how much your drivers spend and what they buy with policy based limits. Secure 2-party authentication through the WEX Card Control mobile app to eliminate card-skimming fraud.",
+        'Control how much your drivers spend and what they buy with policy based limits. Secure 2-party authentication through the WEX Card Control mobile app to eliminate card-skimming fraud.',
 
-      eventKey: 2,
+      eventKey: 2
     },
     {
-      title: "Compliance",
+      title: 'Compliance',
       description:
-        "Controls at the point of purchase that prompt for important information necessary for fuel tax compliance and robust transaction details.",
+        'Controls at the point of purchase that prompt for important information necessary for fuel tax compliance and robust transaction details.',
 
-      eventKey: 3,
+      eventKey: 3
     },
     {
-      title: "Cost Savings",
+      title: 'Cost Savings',
       description:
-        "Cash price or less with fuel discounts at over 1,500 U.S. truck stop sites, fuel management and access to Cash Services, plus FREE Online Account Management, and more!",
+        'Cash price or less with fuel discounts at over 1,500 U.S. truck stop sites, fuel management and access to Cash Services, plus FREE Online Account Management, and more!',
 
-      eventKey: 4,
+      eventKey: 4
     },
     {
-      title: "Customer Support",
+      title: 'Customer Support',
       description:
-        "24/7/365 always available Customer Care with language line for all.",
+        '24/7/365 always available Customer Care with language line for all.',
 
-      eventKey: 5,
-    },
-  ];
+      eventKey: 5
+    }
+  ]
 
   return (
     <>
@@ -58,5 +54,5 @@ export default function FuelCardSections() {
         </p>
       </div>
     </>
-  );
+  )
 }
