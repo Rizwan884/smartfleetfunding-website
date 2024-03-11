@@ -119,5 +119,42 @@
         "locale": "en-US"
       }
     ]
+  },
+  "home": {
+    "cards": [
+      {
+        "title": "FAST",
+        "shortDescription": "Our tailored factoring solutions.",
+        "regular": "Our tailored factoring solutions swiftly optimize your cash flow, ",
+        "strong": "ensuring rapid growth in your business's profitability.",
+        "icon": "/images/sff-clock-back.svg"
+      },
+      {
+        "title": "EASY",
+        "shortDescription":"",
+        "regular": "We simplify the Accounts Payable and Receivable process, ",
+        "strong": "making it a breeze for you to focus on business growth.",
+        "icon": ""
+      },
+      {
+        "title": "SECURE",
+        "shortDescription":"",
+        "regular": "The carriers and freight companies receive payment securely in as little as 12 hours, ",
+        "strong": "cultivating robust and trusting partnerships.",
+        "icon": ""
+      }
+    ]
+  },
+  "instapay": {
+    "accordionItems" : [
+      {
+        "title": "What Are the Conditions for Instapay?",
+        "items": [
+          "The FB that you are hauling for must be a member of our Instapay Network.",
+          "Load has to be completed and paperwork has to be submmited to instapay@smartfleetfunding.com instead of the Freight Broker."
+        ],
+        "eventKey": 1
+      }
+    ]
   }
 }
