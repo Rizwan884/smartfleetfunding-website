@@ -75,8 +75,8 @@ export default function Slider() {
             >
               <div className=" slider-container-mobile mx-4">
                 <h1 className="text-start fs-3">
-                  Let us be part of your <br />
-                  <strong>success story</strong>
+                Let's navigate the road ahead together.  <br />
+                  <strong>Drive your carrier business to new heights</strong>
                 </h1>
                 <Button
                   href="mailto:dbiojo@smartfleetfunding.com"
@@ -143,8 +143,8 @@ export default function Slider() {
             >
               <div className=" slider-container mx-4">
                 <h1 className="text-start fs-3">
-                  Let us be part of your <br />
-                  <strong>success story</strong>
+                Let's navigate the road ahead together.  <br />
+                  <strong>Drive your carrier business to new heights</strong>
                 </h1>
                 <Button
                   href="mailto:dbiojo@smartfleetfunding.com"
