@@ -92,16 +92,16 @@ export default function SectionVideo() {
             <a href="#" onClick={openModal} className="position-relative">
               <Image
                 className="rounded-5"
-                src="/images/sff-video-banner.webp"
+                src="/images/sff-banner-video.webp"
                 alt="Previsualización"
                 width={550}
-                height={400}
+                height={300}
               />
               <div className="position-absolute top-50 start-50 translate-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="64"
-                  height="64"
+                  width="50"
+                  height="50"
                   className="bi bi-play-circle-fill"
                   viewBox="0 0 16 16"
                 >
