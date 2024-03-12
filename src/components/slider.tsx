@@ -73,8 +73,8 @@ export default function Slider() {
                 backgroundImage: 'url("images/sff-succes-story-mobile.webp")',
               }}
             >
-              <div className=" slider-container-mobile mx-4">
-                <h1 className="text-start fs-3">
+              <div className=" slider-container-mobile mx-4 mt-5">
+                <h1 className="text-start fs-4">
                 Let's navigate the road ahead together.  <br />
                   <strong>Drive your carrier business to new heights</strong>
                 </h1>
