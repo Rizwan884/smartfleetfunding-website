@@ -1,6 +1,8 @@
 import { Carousel } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
+import { useI18nProvider } from '@/context/I18nProvider'
 export default function Help() {
+  const { t } = useI18nProvider()
   return (
     <>
       <div className="container mt-5 ">

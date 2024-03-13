@@ -311,7 +311,57 @@
         "descripcion": "“No entiendo lo que",
         "strong": " me cobra mi factor y todos estos costes ocultos.”"
       }
-    ]
+    ],
+  "helptittle": "We help you by",
+  "helpcards": [
+    {
+      "icon": "/images/sff-hp-1.svg",
+      "strong": "Always being there for you:",
+      "descripcion": "you call, we answer!"
+    },
+    {
+      
+      "icon": "/images/sff-hp-2.svg",
+      "strong": "Transparency and honesty:",
+      "descripcion": "Our lockdown clause is service, simple flat fee, no penalties."
+    },
+    {
+      
+      "icon": "/images/sff-hp-3.svg",
+      "strong": "Money in your pocket instantly:",
+      "descripcion": "At lower rates: receive money for your loads in less than 12 business hours via direct deposit/ACH."
+    },
+    {
+      
+      "icon": "/images/sff-hp-4.svg",
+      "strong": "More time for yourself:",
+      "descripcion": "Stop worrying about collecting from your brokers and shippers, and reduce your short payments, charge-backs and headaches."
+    },
+    {
+      
+      "icon": "/images/sff-hp-5.svg",
+      "strong": "Empowering you with control:",
+      "descripcion": "online access to reports and valuable information about your loads."
+    },
+    {
+      
+      "icon": "/images/sff-hp-6.svg",
+      "strong": "Smooth operations:",
+      "descripcion": "Monitor all your loads in your portfolio. If any issues require your attention, we promptly inform you."
+    },
+    {
+      
+      "icon": "/images/sff-hp-7.svg",
+      "strong": "Informed decisions about your prospects:",
+      "descripcion": "Free credit checks."
+    },
+    {
+      
+      "icon": "/images/sff-hp-8.svg",
+      "strong": "Personalized Financial Guidance:",
+      "descripcion": "Our account executives offer tailored financial solutions for your carrier business."
+    }
+  ]
 
   },
   "instapay": {
