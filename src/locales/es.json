@@ -60,53 +60,15 @@
       "· Potential monthly savings* varies by fleet size and fuel use": ". El potencial de ahorro mensual* varía en función del tamaño de la flota y del consumo de combustible.",
       "Smart Fuel Advance -": "Smart Fuel Advance -",
       "· Alongside freight bill factoring Provides up to 50% of load value for fuel expenses. ": ". Junto con el factoring de facturas de flete Proporciona hasta el 50% del valor de la carga para gastos de combustible.",
-      "· Verification required for load booking and pickup.":". Verificación necesaria para la reserva y recogida de la carga.",
+      "· Verification required for load booking and pickup.": ". Verificación necesaria para la reserva y recogida de la carga.",
       "· Funds via direct deposit or loaded on  fuel card. ": ". Fondos mediante depósito directo o cargados en la tarjeta de combustible.",
       "· Additional advance available post delivery.": ". Anticipo adicional disponible tras la entrega."
     },
-    "imaginfo":{
+    "imaginfo": {
       "Interested in learning more? Give us a call today!": "¿Quiere saber más? Llámenos hoy mismo.",
       "we re here to answer all your questions and help you find the best solutions for your trucking business.": "estamos aquí para responder a todas sus preguntas y ayudarle a encontrar las mejores soluciones para su negocio de transporte por carretera.",
       "Lets Talk": "Hablemos"
     }
-  },
-  "sectionvideo": {
-    "Explore the power of factoring with Smart Fleet Funding!": "¡Explore el poder del factoring con Smart Fleet Funding!",
-    "Watch this concise video to understand how your invoices can turn into immediate cash, allowing you to focus on what you do best - delivering goods. With over 30 years of experience, were here to guide you through every step.": "Vea este conciso vídeo para comprender cómo sus facturas pueden convertirse en efectivo inmediato, permitiéndole centrarse en lo que mejor sabe hacer: entregar mercancías. Con más de 30 años de experiencia, estamos aquí para guiarle en cada paso."
-  },
-  "footer": {
-    "HOME": "INICIO",
-    "SERVICES": "SERVICIOS",
-    "Full Fact": "Full Fact",
-    "Instapay": "Instapay",
-    "Freight Broke": " Freight Broke",
-    "FAQ": "FAQ",
-    "ABOUT US": "SOBRE NOOSOTROS",
-    "CONTACT": "CONTACTO",
-    "CURIOUS TO LEARN MORE?": "¿TIENE CURIOSIDAD POR SABER MÁS?"
-  },
-  "know": {
-    "Know more about Smart Fleet Funding": "Más información sobre Smart Fleet Funding",
-    "INNOVATION": "INNOVACIÓN",
-    "FES - Pay": "FES - Pago",
-    "EXPERIENCE": "EXPERIENCIA",
-    "Over 30 Years": "Más de 30 años",
-    "GLOBAL": "GLOBAL",
-    "North America (Canada, USA, México)": "Norte America (Canada, USA, México)",
-    "EMPOWERMENT": "EMPODERAMIENTO",
-    "Helping Businesses Thrive": "Ayudar a las empresas a prosperar",
-    "COMMITMENT": "COMPROMISO",
-    "Transparency": "Transparencia",
-    "TECHNOLOGY": "TECNOLOGÍA",
-    "Integrations with major players in the industries we serve": "Integraciones con los principales actores de las industrias a las que servimos",
-    "Who We Are": "Quiénes somos",
-    "With over 30 years of experience in the factoring market, Smart Fleet Funding has been a key player in providing support and funding to various industries, with a particular focus on transportation.": "Con más de 30 años de experiencia en el mercado del factoring, Smart Fleet Funding ha sido un actor clave en la prestación de apoyo y financiación a diversas industrias, con un enfoque particular en el transporte.",
-    "We have a proven track record of successfully running the Instapay Program (FES Pay) for major Freight Brokers in North America. Currently, we proudly serve clients across all of North America.": "Contamos con un historial probado de gestión con éxito del programa Instapay (FES Pay) para los principales agentes de carga de Norteamérica. En la actualidad, prestamos servicio a clientes de toda Norteamérica.",
-    "Our Commitment": "Nuestro compromiso",
-    "At Smart Fleet Funding, weve designed a system that simplifies the process of getting paid. Our mission is to remove the complexities and delays associated with unpaid invoices, turning them into immediate cash with a simple click.": "En Smart Fleet Funding, hemos diseñado un sistema que simplifica el proceso de cobro. Nuestra misión es eliminar las complejidades y los retrasos asociados a las facturas impagadas, convirtiéndolas en efectivo inmediato con un simple clic.",
-    "We understand that steady cash-flow is crucial for any business to thrive, and were dedicated to ensuring our clients success.": "Entendemos que el flujo de caja constante es crucial para que cualquier negocio prospere, y nos dedicamos a garantizar el éxito de nuestros clientes.",
-    "": ""
-
   },
   "languages": {
     "current": {
@@ -123,30 +85,193 @@
   "home": {
     "cards": [
       {
-        "title": "FAST",
-        "shortDescription": "Our tailored factoring solutions.",
-        "regular": "Our tailored factoring solutions swiftly optimize your cash flow, ",
-        "strong": "ensuring rapid growth in your business's profitability.",
-        "icon": "/images/sff-clock-back.svg"
+        "title": "RAPIDO",
+        "shortDescription": "Nuestras soluciones de factoring a medida.",
+        "regular": "Nuestras soluciones de factoring a medida optimizan rápidamente su tesorería, ",
+        "strong": "garantizando un rápido crecimiento de la rentabilidad de su empresa.",
+        "icon": "/images/sff-clock-front.svg",
+        "iconback": "/images/sff-clock-back.svg"
       },
       {
-        "title": "EASY",
-        "shortDescription":"",
-        "regular": "We simplify the Accounts Payable and Receivable process, ",
-        "strong": "making it a breeze for you to focus on business growth.",
-        "icon": ""
+        "title": "FACIL",
+        "shortDescription": "Simplificamos las cuentas por pagar.",
+        "regular": "Simplificamos el proceso de cuentas a pagar y a cobrar, ",
+        "strong": "para que pueda centrarse en el crecimiento de su negocio.",
+        "icon": "/images/sff-easy-front.svg",
+        "iconback": "/images/sff-easy-back.svg"
       },
       {
-        "title": "SECURE",
-        "shortDescription":"",
-        "regular": "The carriers and freight companies receive payment securely in as little as 12 hours, ",
-        "strong": "cultivating robust and trusting partnerships.",
-        "icon": ""
+        "title": "SEGURO",
+        "shortDescription": "Las empresas de transporte y carga",
+        "regular": "Los transportistas y las empresas de transporte reciben el pago de forma segura en tan sólo 12 horas, ",
+        "strong": "cultivar asociaciones sólidas y de confianza.",
+        "icon": "/images/sff-shield-front.svg",
+        "iconback": "/images/sff-shield-back.svg"
+      }
+    ],
+    "carinfo": [
+      {
+        "title": "Full Fact",
+        "sections": [
+          {
+            "heading": "Premium factoring -",
+            "items": [
+              "· Same day funding."
+            ]
+          },
+          {
+            "heading": "We Address Your Challenges -",
+            "items": [
+              "· From communication issues to",
+              " confusing fees, we've got you covered."
+            ]
+          },
+          {
+            "heading": "How We Assist -",
+            "items": [
+              "· Always accessible, transparent, and",
+              " rapid payments for smooth operations."
+            ]
+          },
+          {
+            "heading": "Connect with Our Advisors -",
+            "items": [
+              "· You call! We answer!"
+            ]
+          }
+        ],
+        "icon": "/images/sff-point-front.svg",
+        "iconback": "/images/sff-factura.svg"
+      },
+      {
+        "title": "FES Pay/InstaPay",
+        "sections": [
+          {
+            "heading": "Fast, Easy and Secure Payment -",
+            "items": [
+              "· Guarantees payment in 12 business",
+              "hours through a trusted broker alliance."
+            ]
+          },
+          {
+            "heading": "Benefits -",
+            "items": [
+              "· Optimized Cash Flow.",
+              "· High Cash Advanced.",
+              "· No Originals Needed.",
+              "· 24/7 Account Access.",
+              "· Expert AR Team.",
+              "· No contract."
+            ]
+          },
+          {
+            "heading": " Support -",
+            "items": [
+              "· Dedicated account executive and 24/7",
+              "availability information."
+            ]
+          },
+          {
+            "heading": " Getting Started -",
+            "items": [
+              "· Seamless for carriers with partnered",
+              "brokers."
+            ]
+          }
+        ],
+        "icon": "/images/sff-point-front.svg",
+        "iconback": "/images/sff-cash.svg"
+      },
+      {
+        "title": "Smart Fuel Card",
+        "sections": [
+          {
+            "heading": "Smart Fuel card -",
+            "items": [
+              "· Discounted fuel cards for major truck",
+              "stops.",
+              "· Substantial fuel savings in USA and",
+              "Canada.",
+              "· Competitive edge for trucking",
+              "companies.",
+              "· Potential monthly savings*",
+              " (*varies by fleet size and fuel use)."
+            ]
+          },
+          {
+            "heading": "Smart Fuel Advance -",
+            "items": [
+              "· Alongside freight bill factoring Provides",
+              "up to 50% of load value for fuel expenses.",
+              "· Verification required for load booking",
+              "and pickup.",
+              "· Funds via direct deposit or loaded on",
+              "fuel card.",
+              "· Additional advance available post-",
+              "delivery."
+            ]
+          }
+        ],
+        "icon": "/images/sff-point-front.svg",
+        "iconback": "/images/sff-gas.svg"
+      }
+    ],
+    "sectionvideo": [
+      {
+        "title": "¡Explore el poder del factoring con Smart Fleet Funding!",
+        "descripcion": "Vea este conciso vídeo para comprender cómo sus facturas pueden convertirse en efectivo inmediato, permitiéndole centrarse en lo que mejor sabe hacer: entregar mercancías.",
+        "strong": "Con más de 30 años de experiencia, estamos aquí para guiarle en cada paso."
+      }
+    ],
+    "footer": [
+      {
+        "home": "INICIO",
+        "services": "SERVICIOS",
+        "fullfact": "Full Fact",
+        "instapay": "Instapay",
+        "freightbroke": " Freight Broke",
+        "fuelcard": "Fuel Card",
+        "faq": "FAQ",
+        "aboutus": "SOBRE NOOSOTROS",
+        "contact": "CONTACTO",
+        "curious": "¿TIENE CURIOSIDAD POR SABER MÁS?"
+      }
+    ],
+    "sectioninfo":[
+      {
+        "title": "¿Quiere saber más? Llámenos hoy mismo.",
+        "descripcion": "Estamos aquí para responder a todas sus preguntas y ayudarle a encontrar las mejores soluciones para su negocio de transporte por carretera.",
+        "button": "Hablemos"
+      }
+    ],
+    "slider": [
+      {
+        "title": "Maximice el potencial de su empresa",
+        "strong": "con Smart Fleet Funding",
+        "button": "COMENZAR",
+        "image": "/images/sff-truck.webp",
+        "imagemobile": "/images/sff-truck-mobile.webp"
+      },
+      {
+        "title": "Tu éxito,",
+        "strong": "Nuestra historia",
+        "button": " Dé el primer paso",
+        "image": "/images/sff-truck-logistic.webp",
+        "imagemobile": "/images/sff-truck-logistic-mobile.webp"
+
+      },
+      {
+        "title": "Permítanos formar parte de su",
+        "strong": "caso de éxito",
+        "button": "EFECTIVO AHORA",
+        "image": "/images/sff-succes-story.webp",
+        "imagemobile": "/images/sff-succes-story-mobile.webp"
       }
     ]
+
   },
   "instapay": {
-    "accordionItems" : [
+    "accordionItems": [
       {
         "title": "What Are the Conditions for Instapay?",
         "items": [
