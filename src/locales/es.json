@@ -216,11 +216,17 @@
         "iconback": "/images/sff-gas.svg"
       }
     ],
+    "headercardinfo": [
+      {
+        "header": "Libere el dinero de sus",
+        "descripcion": "facturas pendientes"
+      }
+    ],
     "sectionvideo": [
       {
         "title": "¡Explore el poder del factoring con Smart Fleet Funding!",
         "descripcion": "Vea este conciso vídeo para comprender cómo sus facturas pueden convertirse en efectivo inmediato, permitiéndole centrarse en lo que mejor sabe hacer: entregar mercancías.",
-        "strong": "Con más de 30 años de experiencia, estamos aquí para guiarle en cada paso."
+        "strong": " Con más de 30 años de experiencia, estamos aquí para guiarle en cada paso."
       }
     ],
     "footer": [
@@ -232,7 +238,7 @@
         "freightbroke": " Freight Broke",
         "fuelcard": "Fuel Card",
         "faq": "FAQ",
-        "aboutus": "SOBRE NOOSOTROS",
+        "aboutus": "NOSOTROS",
         "contact": "CONTACTO",
         "curious": "¿TIENE CURIOSIDAD POR SABER MÁS?"
       }
@@ -240,7 +246,9 @@
     "sectioninfo":[
       {
         "title": "¿Quiere saber más? Llámenos hoy mismo.",
-        "descripcion": "Estamos aquí para responder a todas sus preguntas y ayudarle a encontrar las mejores soluciones para su negocio de transporte por carretera.",
+        "descripcion": "Estamos aquí para responder a todas sus preguntas",
+        "linebreak": "y ayudarle a encontrar las mejores soluciones para su",
+        "breaktext": "negocio de transporte por carretera.",
         "button": "Hablemos"
       }
     ],

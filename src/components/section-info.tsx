@@ -9,6 +9,8 @@ const Image = {
 type ICard = {
   title: string
   descripcion: string
+  linebreak: string
+  breaktext: string
   button: string
 }
 export default function ImgInfo() {
@@ -58,15 +60,16 @@ export default function ImgInfo() {
           }}
         >
           {t.home.sectioninfo.map(
-            ({ title, descripcion, button }: ICard, key: number) => (
+            ({ title, descripcion, button,linebreak,breaktext }: ICard, key: number) => (
               <div className=" info-container font-montserrat pt-6 mx-5">
                 <h1 className="text-end fw-bold fs-3">
                   {title}
                   <div className="ms-auto line"></div>
                 </h1>
                 <div className="card-text-bottom fw-400">
-                  We{"'"}re here to answer all your questions and <br /> help
-                  you find the best solutions for your <br /> trucking business.
+                  {descripcion} <br />
+                  {linebreak} <br />
+                  {breaktext}
                 </div>
 
                 <Button

@@ -21,7 +21,7 @@ export default function Cards() {
       {isMobile ? (
         <div className="font-montserrat">
           <h2 className="fs-5 fw-bold text-center">
-            Release the money from your outstanding invoices
+          {t.home.headercardinfo[0].header} {t.home.headercardinfo[0].descripcion}
           </h2>
           <div className="d-flex justify-content-center ">
             <div className="line"></div>
@@ -140,7 +140,8 @@ export default function Cards() {
       ) : (
         <Container className="font-montserrat">
           <h2 className=" fw-bold text-left">
-            Release the money from your <br /> outstanding invoices
+          {t.home.headercardinfo[0].header} <br />
+          {t.home.headercardinfo[0].descripcion}
           </h2>
           <div className="line"></div>
           <Row
