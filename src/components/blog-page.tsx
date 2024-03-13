@@ -130,9 +130,13 @@ export default function Blog({ blogs }: IProps) {
             <h1 className=" mb-3 ms-2 me-2 fs-2">
               {blogs[selectedBlogIndex].title}
             </h1>
-            <p className=" ms-2 me-2 fs-6">
-              {blogs[selectedBlogIndex].content}
-            </p>
+            {blogs[selectedBlogIndex].content
+              .split("\n")
+              .map((paragraph, index) => (
+                <p key={index} className="ms-2 me-2 fs-6">
+                  {paragraph}
+                </p>
+              ))}
             <div className="d-flex justify-content-center mt-5">
               <Button
                 className="ms-5 me-2 border border-dark "
