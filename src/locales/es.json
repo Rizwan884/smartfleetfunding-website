@@ -278,6 +278,42 @@
     ]
 
   },
+  "fullcard": {
+    "header": [
+      {
+        "title": "SERVICIOS PREMIUM DE FACTORING",
+        "descripcion": "Pago en el mismo día* con tarifas preferentes y servicio personalizado,",
+        "strong": "sin cláusulas de penalización ni importe mínimo."
+      }
+    ],
+    "carruzel": [
+      {
+        "title": "¿Te suena familiar?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "“Llamo a mi empresa de factoring y",
+        "strong": "no me cogen el teléfono.”"
+      },
+      {
+        "title": "¿Te suena familiar?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "“Podría conseguir mejores tarifas",
+        "strong": "pero las cláusulas de penalización o un contrato lo dificultan.”"
+      },
+      {
+        "title": "¿Te suena familiar?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "Me siento frustrado porque algunos clientes",
+        "strong": "no pagan a tiempo y necesito liquidez inmediata para funcionar.”"
+      },
+      {
+        "title": "¿Te suena familiar?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "“No entiendo lo que",
+        "strong": " me cobra mi factor y todos estos costes ocultos.”"
+      }
+    ]
+
+  },
   "instapay": {
     "accordionItems": [
       {
