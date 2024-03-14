@@ -6,70 +6,6 @@
     "aboutUs": "NOSOTROS",
     "contact": "CONTACTO"
   },
-  "slider": {
-    "maximice": "Maximice el potencial de su negocio con Smart Fleet Funding",
-    "GET_STARTED": "COMIENZA",
-    "Our_story": "Su éxito, Nuestra historia",
-    "Take the First Step": "Dé el primer paso",
-    "Let us be part of your success story": "Permítanos formar parte de su historia de éxito",
-    "CASH NOW": "EFECTIVO AHORA"
-  },
-  "cardsections": {
-    "FES PAY": "PAGO FES",
-    "cards": {
-      "FAST": "RAPIDO",
-      "Our tailored factoring solutions swiftly optimize your cash flow,ensuring rapid growth in your businesss profitability.": "Nuestras soluciones de factoring a medida optimizan rápidamente su tesorería, garantizando un rápido crecimiento de la rentabilidad de su empresa.",
-      "EASY": "FACIL",
-      "We simplify the Accounts Payable and Receivable process, making it a breeze for you to focus on business growth.": "Simplificamos el proceso de Cuentas a Pagar y a Cobrar, para que pueda centrarse en el crecimiento de su negocio.",
-      "SECURE": "SEGURO",
-      "The carriers and freight companies receive payment securely in as little as 12 hours, cultivating robust and trusting partnerships.": "Los transportistas y las empresas de transporte reciben el pago de forma segura en tan sólo 12 horas, lo que permite establecer relaciones sólidas y de confianza.",
-      "Our tailored factoring solutions.": "Nuestras soluciones de factoring a medida.",
-      "We simplify the accounts payable.": "Simplificamos las cuentas por pagar.",
-      "The carries and Freight companies": "Las empresas de transporte y carga"
-    },
-    "cardsinfo": {
-      "Release the money from your outstanding invoices": "Libere el dinero de sus facturas pendientes",
-      "Full Fact": "Información completa",
-      "FES Pay/InstaPay": "FES Pay/InstaPay",
-      "Smart Fuel Card": "Tarjeta inteligente de combustible",
-      " Premium factoring -": "Factoring de primas -",
-      "· Same day funding.": ". Financiación en el mismo día.",
-      "We Address Your Challenges -": "Abordamos sus retos -",
-      "· From communication issues to confusing fees, weve got you covered.": ". Desde problemas de comunicación hasta tarifas confusas, le tenemos cubierto.",
-      "How We Assist -": "Cómo le ayudamos -",
-      "· Always accessible, transparent, and rapid payments for smooth operations.": ". Pagos siempre accesibles, transparentes y rápidos para unas operaciones fluidas.",
-      "Connect with Our Advisors -": "Conecte con nuestros asesores -",
-      "· You call! We answer!": ". Usted llama. Nosotros respondemos.",
-      "Fast, Easy and Secure Payment -": "Pago rápido, fácil y seguro -",
-      "· Guarantees payment in 12 business  hours through a trusted broker alliance.": "Garantiza el pago en 12 horas laborables a través de una alianza de intermediarios de confianza.",
-      "Benefits -": "Beneficios -",
-      "· Optimized Cash Flow.": ". Flujo de caja optimizado.",
-      "· High Cash Advanced.": ". Alto Efectivo Avanzado.",
-      "· No Originals Needed.": ". No se necesitan originales.",
-      "· 24/7 Account Access.": ". Acceso a la cuenta 24/7.",
-      "· Expert AR Team.": ". Equipo experto en RA.",
-      "· No contract.": ". Sin contrato.",
-      " Support -": "Soporte -",
-      "· Dedicated account executive and 24/7 availability information": ". Ejecutivo de cuentas dedicado e información sobre disponibilidad 24 horas al día, 7 días a la semana",
-      "Getting Started -": "Primeros pasos -",
-      "· Seamless for carriers with partnered  brokers.": ". Sin fisuras para los transportistas con corredores asociados.",
-      "Smart Fuel card -": "Tarjeta inteligente de combustible -",
-      "· Discounted fuel cards for major truck stops.": ". Tarjetas de combustible con descuento para las principales paradas de camiones.",
-      "· Substantial fuel savings in USA and Canada.": ". Ahorro sustancial de combustible en EE.UU. y Canadá.",
-      "· Competitive edge for trucking companies. ": ". Ventaja competitiva para las empresas de transporte por carretera.",
-      "· Potential monthly savings* varies by fleet size and fuel use": ". El potencial de ahorro mensual* varía en función del tamaño de la flota y del consumo de combustible.",
-      "Smart Fuel Advance -": "Smart Fuel Advance -",
-      "· Alongside freight bill factoring Provides up to 50% of load value for fuel expenses. ": ". Junto con el factoring de facturas de flete Proporciona hasta el 50% del valor de la carga para gastos de combustible.",
-      "· Verification required for load booking and pickup.": ". Verificación necesaria para la reserva y recogida de la carga.",
-      "· Funds via direct deposit or loaded on  fuel card. ": ". Fondos mediante depósito directo o cargados en la tarjeta de combustible.",
-      "· Additional advance available post delivery.": ". Anticipo adicional disponible tras la entrega."
-    },
-    "imaginfo": {
-      "Interested in learning more? Give us a call today!": "¿Quiere saber más? Llámenos hoy mismo.",
-      "we re here to answer all your questions and help you find the best solutions for your trucking business.": "estamos aquí para responder a todas sus preguntas y ayudarle a encontrar las mejores soluciones para su negocio de transporte por carretera.",
-      "Lets Talk": "Hablemos"
-    }
-  },
   "languages": {
     "current": {
       "title": "ESP",
@@ -312,54 +248,139 @@
         "strong": " me cobra mi factor y todos estos costes ocultos.”"
       }
     ],
-  "helptittle": "We help you by",
+  "helptittle": "Nosotros le ayudamos",
   "helpcards": [
     {
       "icon": "/images/sff-hp-1.svg",
-      "strong": "Always being there for you:",
-      "descripcion": "you call, we answer!"
+      "strong": "Siempre a tu lado:",
+      "descripcion": "usted llama, nosotros respondemos"
     },
     {
       
       "icon": "/images/sff-hp-2.svg",
-      "strong": "Transparency and honesty:",
-      "descripcion": "Our lockdown clause is service, simple flat fee, no penalties."
+      "strong": "Transparencia y honradez:",
+      "descripcion": "Nuestra cláusula de bloqueo es el servicio, tarifa plana simple, sin penalizaciones."
     },
     {
       
       "icon": "/images/sff-hp-3.svg",
-      "strong": "Money in your pocket instantly:",
-      "descripcion": "At lower rates: receive money for your loads in less than 12 business hours via direct deposit/ACH."
+      "strong": "Dinero en el bolsillo al instante:",
+      "descripcion": "Con tarifas más bajas: reciba el dinero de sus cargas en menos de 12 horas laborables mediante depósito directo/ACH."
     },
     {
       
       "icon": "/images/sff-hp-4.svg",
-      "strong": "More time for yourself:",
-      "descripcion": "Stop worrying about collecting from your brokers and shippers, and reduce your short payments, charge-backs and headaches."
+      "strong": "Más tiempo para ti:",
+      "descripcion": "Deje de preocuparse por cobrar a sus intermediarios y transportistas, y reduzca los pagos aplazados, las devoluciones y los quebraderos de cabeza."
     },
     {
       
       "icon": "/images/sff-hp-5.svg",
-      "strong": "Empowering you with control:",
-      "descripcion": "online access to reports and valuable information about your loads."
+      "strong": "Te damos el control:",
+      "descripcion": "acceso en línea a informes e información valiosa sobre sus cargas."
     },
     {
       
       "icon": "/images/sff-hp-6.svg",
-      "strong": "Smooth operations:",
-      "descripcion": "Monitor all your loads in your portfolio. If any issues require your attention, we promptly inform you."
+      "strong": "Operaciones fluidas:",
+      "descripcion": "Supervise todas las cargas de su cartera. Si hay algún problema que requiera su atención, le informamos rápidamente."
     },
     {
       
       "icon": "/images/sff-hp-7.svg",
-      "strong": "Informed decisions about your prospects:",
-      "descripcion": "Free credit checks."
+      "strong": "Decisiones informadas sobre sus clientes potenciales:",
+      "descripcion": "Verificaciones de crédito gratuitas."
     },
     {
       
       "icon": "/images/sff-hp-8.svg",
-      "strong": "Personalized Financial Guidance:",
-      "descripcion": "Our account executives offer tailored financial solutions for your carrier business."
+      "strong": "Orientación financiera personalizada:",
+      "descripcion": "Nuestros ejecutivos de cuentas ofrecen soluciones financieras a medida para su empresa de transporte."
+    }
+  ],
+  "form": [
+    {
+      "name": "Nombre Completo",
+      "email": "Tu e-mail",
+      "company": "Empresa",
+      "phone": "Telefono",
+      "descripcion": "Descripcion",
+      "check": "Acepte nuestra ",
+      "strong": "política de privacidad",
+      "button": "ENVIAR"
+    }
+  ],
+  "testimonials": [
+    {
+      "title": "Buena atención al cliente y rapidez en el pago.",
+      "descripcion": " Buen servicio de atención al cliente y tramitación rápida de los pagos",
+      "author": "Sdl Freight Systems - CAD",
+      "position": "Date of experience: November 20, 2023",
+      "image": "/images/sff-ttm-mark.svg"
+
+    },
+    {
+      "title": "PAGO",
+      "descripcion": " PAGO PUNTUAL EN TODO MOMENTO",
+      "author": "Net Freight System Inc – CAD",
+      "position": "Date of experience: November 01, 2023",
+      "image": "/images/sff-ttm-keneth.svg"
+    },
+    {
+      "title": "Piola mad this exsprence fantastic.",
+      "descripcion": "",
+      "author": "DS cooperation",
+      "position": "Date of experience: December 20, 2023",
+      "image": "/images/sff-ttm-mark.svg" 
+    },
+    {
+      "title": "Great",
+      "descripcion": " Great, thank you very much.",
+      "author": "Bronpe LLC",
+      "position": "Date of experience: January 11, 2024",
+      "image": "/images/sff-ttm-william.svg"
+    },
+    {
+      "title": "They are pretty fast in paying",
+      "descripcion": "They are pretty fast in paying , totally recommend.",
+      "author": "Tata Logistics Ltd",
+      "position": "Date of experience: November 22, 2023",
+      "image": "/images/sff-ttm-keneth.svg"
+    },
+    {
+      "title": "Having very quick response for payment",
+      "descripcion": "",
+      "author": "Supersonic Transport Ltd",
+      "position": "Date of experience: December 18, 2023",
+      "image": "/images/sff-ttm-mark.svg"
+    },
+    {
+      "title": "GOOD JOB FOR ONTIME PAYMENT",
+      "descripcion": "GOOD JOB FOR ONTIME PAYMENT. NEED TO DECREASE PERCENTAGE TO LOWER RATE.",
+      "author": "Masab Logistics Inc – CAD",
+      "position": "Date of experience: November 13, 2023",
+      "image": "/images/sff-ttm-keneth.svg"
+    },
+    {
+      "title": "Good company , fast payments",
+      "descripcion": " Fast payments",
+      "author": "Pr Transport",
+      "position": "Date of experience: January 11, 2024",
+      "image": "/images/sff-ttm-keneth.svg"
+    },
+    {
+      "title": "I WOULD USE THIS PAYMENT SYSTEM AGAIN",
+      "descripcion": "Turned all the paperwork in as needed on a Sunday. On Monday morning I received an email that paperwork was accepted. Tuesday around 3 pm the funds hit my account. Great job Great results",
+      "author": "C-Level Trucking LLC",
+      "position": "Date of experience: November 07, 2023",
+      "image": "/images/sff-ttm-mark.svg"
+    },
+    {
+      "title": "Fast and Easy",
+      "descripcion": "Weve had a lot of issues with TAFS and were highly satisfied and surprised with the fast service with Smart Fleet. We appreciated the clear instructions, communication and fast pay.",
+      "author": "Anonymous Hot Shot",
+      "position": "Date of experience: November 16, 2023",
+      "image": "/images/sff-ttm-mark.svg"
     }
   ]
 

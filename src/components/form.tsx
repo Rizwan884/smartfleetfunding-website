@@ -1,12 +1,14 @@
 import Link from 'next/link'
 import { FormEvent } from 'react'
 import Image from 'react-bootstrap/Image'
+import { useI18nProvider } from '@/context/I18nProvider'
 type IProps = {
   backgroundImage?: string
   titleForm?: string | undefined
 }
 
 export default function SectionForm({ backgroundImage, titleForm }: IProps) {
+  const { t } = useI18nProvider()
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
@@ -44,7 +46,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   id="name"
                   name="name"
                   required
-                  placeholder="Full Name"
+                  placeholder={t.fullcard.form[0].name}
                 ></input>
               </div>
               <div className="col">
@@ -54,7 +56,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   id="email"
                   name="email"
                   required
-                  placeholder="Your E-Mail"
+                  placeholder={t.fullcard.form[0].email}
                 ></input>
               </div>
             </div>
@@ -66,7 +68,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   id="company"
                   name="company"
                   required
-                  placeholder="Company Name"
+                  placeholder={t.fullcard.form[0].company}
                 ></input>
               </div>
               <div className="col">
@@ -76,7 +78,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   id="phone"
                   name="phone"
                   required
-                  placeholder="Phone"
+                  placeholder={t.fullcard.form[0].phone}
                 ></input>
               </div>
             </div>
@@ -87,7 +89,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 name="message"
                 required
                 rows={3}
-                placeholder="Description"
+                placeholder={t.fullcard.form[0].descripcion}
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
@@ -103,21 +105,21 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{' '}
+                    {t.fullcard.form[0].check}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>Privacy Policy</strong>
+                      <strong>{t.fullcard.form[0].strong}</strong>
                     </Link>
                   </label>
                 </div>
               </div>
 
               <button type="submit" className="btn fw-600">
-                SEND
+              {t.fullcard.form[0].button}
               </button>
             </div>
           </form>
