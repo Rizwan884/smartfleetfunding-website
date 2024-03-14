@@ -6,7 +6,6 @@ type IProps = {
 };
 
 export default function SectionForm({ backgroundImage, titleForm }: IProps) {
-  // State variable to hold form values
   const [formData, setFormData] = useState<{ [key: string]: string }>({
     name: "",
     email: "",
@@ -52,17 +51,6 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
       [name]: value,
     }));
   };
-  // async function onSubmit(event: FormEvent<HTMLFormElement>) {
-  //   event.preventDefault();
-  //   const formData = new FormData(event.currentTarget);
-  //   const response = await fetch(
-  //     "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
-  //     {
-  //       method: "POST",
-  //       body: formData,
-  //     }
-  //   );
-  // }
   return (
     <>
       <div className="d-flex flex-column-reverse flex-md-row mt-6">

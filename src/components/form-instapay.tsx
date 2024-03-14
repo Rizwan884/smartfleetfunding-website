@@ -1,17 +1,52 @@
 import Link from "next/link";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 export default function FormInstapay() {
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+  const [formData, setFormData] = useState<{ [key: string]: string }>({
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    freightBroker: "",
+    comments: "",
+  });
+
+  // Function to handle form submission
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-    const response = await fetch(
-      "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
-      {
+
+    try {
+      const response = await fetch("/api/submitForm", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        console.log("response status: " + response.status);
+      } else {
+        console.error("Failed to submit form", response);
       }
-    );
-  }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
+  // Function to handle input changes
+  const handleInputChange = (
+    event:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    // Update form data state with new value
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
   return (
     <>
       <div className=" mt-6 font-montserrat fi-img">
@@ -25,7 +60,7 @@ export default function FormInstapay() {
           {" "}
           <div className="h-100 w-50 w-md-100 text-dark-blue">
             <form
-              onSubmit={onSubmit}
+              onSubmit={handleSubmit}
               id="form-instapay"
               className="mx-5 my-5 m-md-5"
             >
@@ -40,8 +75,10 @@ export default function FormInstapay() {
                   <input
                     type="text"
                     className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
-                    id="fullname"
+                    id="name"
                     name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
                     required
                     placeholder="Full Name"
                   ></input>
@@ -50,8 +87,10 @@ export default function FormInstapay() {
                   <input
                     type="email"
                     className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="fullemail"
+                    id="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
                     required
                     placeholder="Your E-Mail"
                   ></input>
@@ -62,8 +101,10 @@ export default function FormInstapay() {
                   <input
                     type="text"
                     className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
-                    id="fullcompany"
+                    id="company"
                     name="company"
+                    value={formData.company}
+                    onChange={handleInputChange}
                     required
                     placeholder="Company Name"
                   ></input>
@@ -72,8 +113,10 @@ export default function FormInstapay() {
                   <input
                     type="number"
                     className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="fullphone"
+                    id="phone"
                     name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
                     required
                     placeholder="Phone"
                   ></input>
@@ -84,8 +127,10 @@ export default function FormInstapay() {
                   <input
                     type="text"
                     className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="freight"
-                    name="freight"
+                    id="freightBroker"
+                    name="freightBroker"
+                    value={formData.freightBroker}
+                    onChange={handleInputChange}
                     required
                     placeholder="Freight broker"
                   ></input>
@@ -96,6 +141,8 @@ export default function FormInstapay() {
                   className="form-control bg-grey-transparent text-dark-blue"
                   id="comments"
                   name="comments"
+                  value={formData.comments}
+                  onChange={handleInputChange}
                   required
                   rows={3}
                   placeholder="Comments"
