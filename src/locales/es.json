@@ -51,9 +51,7 @@
         "sections": [
           {
             "heading": "Premium factoring -",
-            "items": [
-              "· Same day funding."
-            ]
+            "items": ["· Same day funding."]
           },
           {
             "heading": "We Address Your Challenges -",
@@ -71,9 +69,7 @@
           },
           {
             "heading": "Connect with Our Advisors -",
-            "items": [
-              "· You call! We answer!"
-            ]
+            "items": ["· You call! We answer!"]
           }
         ],
         "icon": "/images/sff-point-front.svg",
@@ -109,10 +105,7 @@
           },
           {
             "heading": " Getting Started -",
-            "items": [
-              "· Seamless for carriers with partnered",
-              "brokers."
-            ]
+            "items": ["· Seamless for carriers with partnered", "brokers."]
           }
         ],
         "icon": "/images/sff-point-front.svg",
@@ -179,7 +172,7 @@
         "curious": "¿TIENE CURIOSIDAD POR SABER MÁS?"
       }
     ],
-    "sectioninfo":[
+    "sectioninfo": [
       {
         "title": "¿Quiere saber más? Llámenos hoy mismo.",
         "descripcion": "Estamos aquí para responder a todas sus preguntas",
@@ -202,7 +195,6 @@
         "button": " Dé el primer paso",
         "image": "/images/sff-truck-logistic.webp",
         "imagemobile": "/images/sff-truck-logistic-mobile.webp"
-
       },
       {
         "title": "Permítanos formar parte de su",
@@ -212,7 +204,6 @@
         "imagemobile": "/images/sff-succes-story-mobile.webp"
       }
     ]
-
   },
   "fullcard": {
     "header": [
@@ -248,152 +239,289 @@
         "strong": " me cobra mi factor y todos estos costes ocultos.”"
       }
     ],
-  "helptittle": "Nosotros le ayudamos",
-  "helpcards": [
-    {
-      "icon": "/images/sff-hp-1.svg",
-      "strong": "Siempre a tu lado:",
-      "descripcion": "usted llama, nosotros respondemos"
-    },
-    {
-      
-      "icon": "/images/sff-hp-2.svg",
-      "strong": "Transparencia y honradez:",
-      "descripcion": "Nuestra cláusula de bloqueo es el servicio, tarifa plana simple, sin penalizaciones."
-    },
-    {
-      
-      "icon": "/images/sff-hp-3.svg",
-      "strong": "Dinero en el bolsillo al instante:",
-      "descripcion": "Con tarifas más bajas: reciba el dinero de sus cargas en menos de 12 horas laborables mediante depósito directo/ACH."
-    },
-    {
-      
-      "icon": "/images/sff-hp-4.svg",
-      "strong": "Más tiempo para ti:",
-      "descripcion": "Deje de preocuparse por cobrar a sus intermediarios y transportistas, y reduzca los pagos aplazados, las devoluciones y los quebraderos de cabeza."
-    },
-    {
-      
-      "icon": "/images/sff-hp-5.svg",
-      "strong": "Te damos el control:",
-      "descripcion": "acceso en línea a informes e información valiosa sobre sus cargas."
-    },
-    {
-      
-      "icon": "/images/sff-hp-6.svg",
-      "strong": "Operaciones fluidas:",
-      "descripcion": "Supervise todas las cargas de su cartera. Si hay algún problema que requiera su atención, le informamos rápidamente."
-    },
-    {
-      
-      "icon": "/images/sff-hp-7.svg",
-      "strong": "Decisiones informadas sobre sus clientes potenciales:",
-      "descripcion": "Verificaciones de crédito gratuitas."
-    },
-    {
-      
-      "icon": "/images/sff-hp-8.svg",
-      "strong": "Orientación financiera personalizada:",
-      "descripcion": "Nuestros ejecutivos de cuentas ofrecen soluciones financieras a medida para su empresa de transporte."
-    }
-  ],
-  "form": [
-    {
-      "name": "Nombre Completo",
-      "email": "Tu e-mail",
-      "company": "Empresa",
-      "phone": "Telefono",
-      "descripcion": "Descripcion",
-      "check": "Acepte nuestra ",
-      "strong": "política de privacidad",
-      "button": "ENVIAR"
-    }
-  ],
-  "testimonials": [
-    {
-      "title": "Buena atención al cliente y rapidez en el pago.",
-      "descripcion": " Buen servicio de atención al cliente y tramitación rápida de los pagos",
-      "author": "Sdl Freight Systems - CAD",
-      "position": "Date of experience: November 20, 2023",
-      "image": "/images/sff-ttm-mark.svg"
-
-    },
-    {
-      "title": "PAGO",
-      "descripcion": " PAGO PUNTUAL EN TODO MOMENTO",
-      "author": "Net Freight System Inc – CAD",
-      "position": "Date of experience: November 01, 2023",
-      "image": "/images/sff-ttm-keneth.svg"
-    },
-    {
-      "title": "Piola mad this exsprence fantastic.",
-      "descripcion": "",
-      "author": "DS cooperation",
-      "position": "Date of experience: December 20, 2023",
-      "image": "/images/sff-ttm-mark.svg" 
-    },
-    {
-      "title": "Great",
-      "descripcion": " Great, thank you very much.",
-      "author": "Bronpe LLC",
-      "position": "Date of experience: January 11, 2024",
-      "image": "/images/sff-ttm-william.svg"
-    },
-    {
-      "title": "They are pretty fast in paying",
-      "descripcion": "They are pretty fast in paying , totally recommend.",
-      "author": "Tata Logistics Ltd",
-      "position": "Date of experience: November 22, 2023",
-      "image": "/images/sff-ttm-keneth.svg"
-    },
-    {
-      "title": "Having very quick response for payment",
-      "descripcion": "",
-      "author": "Supersonic Transport Ltd",
-      "position": "Date of experience: December 18, 2023",
-      "image": "/images/sff-ttm-mark.svg"
-    },
-    {
-      "title": "GOOD JOB FOR ONTIME PAYMENT",
-      "descripcion": "GOOD JOB FOR ONTIME PAYMENT. NEED TO DECREASE PERCENTAGE TO LOWER RATE.",
-      "author": "Masab Logistics Inc – CAD",
-      "position": "Date of experience: November 13, 2023",
-      "image": "/images/sff-ttm-keneth.svg"
-    },
-    {
-      "title": "Good company , fast payments",
-      "descripcion": " Fast payments",
-      "author": "Pr Transport",
-      "position": "Date of experience: January 11, 2024",
-      "image": "/images/sff-ttm-keneth.svg"
-    },
-    {
-      "title": "I WOULD USE THIS PAYMENT SYSTEM AGAIN",
-      "descripcion": "Turned all the paperwork in as needed on a Sunday. On Monday morning I received an email that paperwork was accepted. Tuesday around 3 pm the funds hit my account. Great job Great results",
-      "author": "C-Level Trucking LLC",
-      "position": "Date of experience: November 07, 2023",
-      "image": "/images/sff-ttm-mark.svg"
-    },
-    {
-      "title": "Fast and Easy",
-      "descripcion": "Weve had a lot of issues with TAFS and were highly satisfied and surprised with the fast service with Smart Fleet. We appreciated the clear instructions, communication and fast pay.",
-      "author": "Anonymous Hot Shot",
-      "position": "Date of experience: November 16, 2023",
-      "image": "/images/sff-ttm-mark.svg"
-    }
-  ]
-
-  },
-  "instapay": {
+    "helptittle": "Nosotros le ayudamos",
+    "helpcards": [
+      {
+        "icon": "/images/sff-hp-1.svg",
+        "strong": "Siempre a tu lado:",
+        "descripcion": "usted llama, nosotros respondemos"
+      },
+      {
+        "icon": "/images/sff-hp-2.svg",
+        "strong": "Transparencia y honradez:",
+        "descripcion": "Nuestra cláusula de bloqueo es el servicio, tarifa plana simple, sin penalizaciones."
+      },
+      {
+        "icon": "/images/sff-hp-3.svg",
+        "strong": "Dinero en el bolsillo al instante:",
+        "descripcion": "Con tarifas más bajas: reciba el dinero de sus cargas en menos de 12 horas laborables mediante depósito directo/ACH."
+      },
+      {
+        "icon": "/images/sff-hp-4.svg",
+        "strong": "Más tiempo para ti:",
+        "descripcion": "Deje de preocuparse por cobrar a sus intermediarios y transportistas, y reduzca los pagos aplazados, las devoluciones y los quebraderos de cabeza."
+      },
+      {
+        "icon": "/images/sff-hp-5.svg",
+        "strong": "Te damos el control:",
+        "descripcion": "acceso en línea a informes e información valiosa sobre sus cargas."
+      },
+      {
+        "icon": "/images/sff-hp-6.svg",
+        "strong": "Operaciones fluidas:",
+        "descripcion": "Supervise todas las cargas de su cartera. Si hay algún problema que requiera su atención, le informamos rápidamente."
+      },
+      {
+        "icon": "/images/sff-hp-7.svg",
+        "strong": "Decisiones informadas sobre sus clientes potenciales:",
+        "descripcion": "Verificaciones de crédito gratuitas."
+      },
+      {
+        "icon": "/images/sff-hp-8.svg",
+        "strong": "Orientación financiera personalizada:",
+        "descripcion": "Nuestros ejecutivos de cuentas ofrecen soluciones financieras a medida para su empresa de transporte."
+      }
+    ],
+    "form": [
+      {
+        "name": "Nombre Completo",
+        "email": "Tu e-mail",
+        "company": "Empresa",
+        "phone": "Telefono",
+        "descripcion": "Descripcion",
+        "check": "Acepte nuestra ",
+        "strong": "política de privacidad",
+        "button": "ENVIAR"
+      }
+    ],
+    "testimonials": [
+      {
+        "title": "Buena atención al cliente y rapidez en el pago.",
+        "descripcion": " Buen servicio de atención al cliente y tramitación rápida de los pagos",
+        "author": "Sdl Freight Systems - CAD",
+        "position": "Date of experience: November 20, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      },
+      {
+        "title": "PAGO",
+        "descripcion": " PAGO PUNTUAL EN TODO MOMENTO",
+        "author": "Net Freight System Inc – CAD",
+        "position": "Date of experience: November 01, 2023",
+        "image": "/images/sff-ttm-keneth.svg"
+      },
+      {
+        "title": "Piola hizo que esta experiencia fuera fantástica.",
+        "descripcion": "",
+        "author": "DS cooperation",
+        "position": "Date of experience: December 20, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      },
+      {
+        "title": "Genial",
+        "descripcion": "Genial, muchas gracias.",
+        "author": "Bronpe LLC",
+        "position": "Date of experience: January 11, 2024",
+        "image": "/images/sff-ttm-william.svg"
+      },
+      {
+        "title": "Son bastante rápidos en pagar",
+        "descripcion": "Son bastante rápidos en el pago, totalmente recomendable.",
+        "author": "Tata Logistics Ltd",
+        "position": "Date of experience: November 22, 2023",
+        "image": "/images/sff-ttm-keneth.svg"
+      },
+      {
+        "title": "Tener una respuesta muy rápida para el pago",
+        "descripcion": "",
+        "author": "Supersonic Transport Ltd",
+        "position": "Date of experience: December 18, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      },
+      {
+        "title": "BUEN TRABAJO PARA EL PAGO PUNTUAL",
+        "descripcion": "BUEN TRABAJO PARA EL PAGO PUNTUAL. NECESIDAD DE DISMINUIR EL PORCENTAJE PARA BAJAR LA TASA.",
+        "author": "Masab Logistics Inc – CAD",
+        "position": "Date of experience: November 13, 2023",
+        "image": "/images/sff-ttm-keneth.svg"
+      },
+      {
+        "title": "Buena empresa, pagos rápidos",
+        "descripcion": " Pagos rápidos",
+        "author": "Pr Transport",
+        "position": "Date of experience: January 11, 2024",
+        "image": "/images/sff-ttm-keneth.svg"
+      },
+      {
+        "title": "VOLVERÍA A UTILIZAR ESTE SISTEMA DE PAGO",
+        "descripcion": "Entregué toda la documentación necesaria un domingo. El lunes por la mañana recibí un correo electrónico informándome de que la documentación había sido aceptada. El martes sobre las 3 de la tarde los fondos llegaron a mi cuenta. Gran trabajo Grandes resultados",
+        "author": "C-Level Trucking LLC",
+        "position": "Date of experience: November 07, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      },
+      {
+        "title": "Rápido y sencillo",
+        "descripcion": "Hemos tenido muchos problemas con TAFS y estamos muy satisfechos y sorprendidos con el rápido servicio de Smart Fleet. Apreciamos las instrucciones claras, la comunicación y el pago rápido.",
+        "author": "Anonymous Hot Shot",
+        "position": "Date of experience: November 16, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      }
+    ],
     "accordionItems": [
       {
-        "title": "What Are the Conditions for Instapay?",
-        "items": [
-          "The FB that you are hauling for must be a member of our Instapay Network.",
-          "Load has to be completed and paperwork has to be submmited to instapay@smartfleetfunding.com instead of the Freight Broker."
+        "title": "¿Cuánto se tarda en abrir una cuenta?",
+        "description": "La apertura de una cuenta suele tardar entre 1 y 2 días laborables, una vez que se ha proporcionado y verificado toda la documentación necesaria.",
+        " icon": "/images/sff-acr-user.svg",
+        "eventKey": 1
+      },
+      {
+        "title": "How long does it take for invoice payments to be processed?",
+        "description": "¿Cuánto tarda en procesarse el pago de las facturas?",
+        " icon": "/images/sff-acr-dollar.svg",
+        "eventKey": 2
+      },
+      {
+        "title": "¿Cómo presento mis facturas?",
+        "description": "Puede enviar sus facturas por correo electrónico a invoices@smartfleetfunding.com. Asegúrate de incluir todos los datos y documentos necesarios en un formato legible. (Así se hace)",
+        " icon": "/images/sff-acr-book.svg",
+        "eventKey": 3
+      },
+      {
+        "title": "¿Cuál es la tarifa típica por factura y qué ventajas obtengo por pagar esa tarifa?",
+        "description": "La tarifa típica por factura depende de los detalles específicos de su acuerdo. Esta tarifa cubre el coste de los servicios de factoring y le garantiza que recibirá el pago puntualmente. Además, al pagar esta comisión, usted se beneficia de un flujo de caja más ágil, una carga administrativa reducida al eliminar el cobro de sus cuentas por cobrar, la recepción y aplicación de los pagos, la revisión y gestión eficaz de la antigüedad de sus cuentas, la elaboración de informes de crédito sobre sus clientes potenciales y muchas otras actividades cotidianas relacionadas con el funcionamiento. Nosotros gestionamos y usted se centra en hacer crecer su negocio.",
+        " icon": "images/sff-acr-hand.svg",
+        "eventKey": 4
+      }
+    ],
+    "pagetittle": "Full",
+    "pagestrong": "Factoring Solution"
+  },
+  "instapay": {
+    "pagetittle": "Pago rápido,",
+    "pagestrong": "fácil y seguro",
+    "welcometittle": "BIENVENIDO A INSTAPAY",
+    "welcomedescripcion": "Pagos acelerados para conductores En Smart Fleet Funding, entendemos que cada milla cuenta. Por eso hemos introducido Instapay, un programa exclusivo diseñado pensando en conductores como usted. Instapay le asegura un pago más rápido, proporcionándole la flexibilidad financiera que necesita para un viaje más tranquilo.",
+    "stepstittle": "Cómo funciona",
+    "steps": [
+      {
+        "title": "Proceso de pago rápido",
+        "text": "Con Instapay, recibirá el dinero que tanto le ha costado ganar en tan sólo 12 horas laborables. Se acabaron las esperas, los retrasos, los contratos y las comisiones ocultas."
+      },
+      {
+        "title": "Verificación simplificada",
+        "text": "La asociación entre Smart Fleet Funding y un selecto grupo de agentes de carga se traduce en un proceso sin complicaciones. Sólo tiene que presentar sus facturas y nosotros nos encargamos del resto. Así de sencillo."
+      },
+      {
+        
+        "title": "Rápido y seguro",
+        "text": "Instapay no sólo es rápido, sino también seguro. Sus fondos se depositan directamente en su cuenta bancaria, lo que garantiza una transacción segura y sin problemas."
+      }
+    ],
+    "Benefits": [
+      {
+        "tittle": "Control del flujo de caja",
+        "descripcion": "Gane control sobre sus finanzas, asegurándose de que dispone de los recursos que necesita para combustible, mantenimiento y mucho más, exactamente cuando los necesita.",
+        "icon": "/images/sff-bff-dollar.svg"
+      },
+      {
+        "tittle": "Sin retenciones",
+        "descripcion": "Adelantamos el 100% menos la comisión de Instapay.",
+        "icon": "/images/sff-bff-hand.svg"
+      }
+    ],
+    "Benefitstwo": [
+      {
+        "tittle": "Acceso en cualquier momento y lugar",
+        "descripcion": "Instapay le da la libertad de acceder a sus fondos desde dondequiera que le lleve su viaje.",
+        "icon": "/images/sff-bff-check.svg"
+      },
+      {
+        "tittle": "Apoyo profesional",
+        "descripcion": "Nuestro equipo de Cuentas por Cobrar se dedica a trabajar en su nombre, asegurándose de que recibe todos los beneficios de nuestro servicio.",
+        "icon": "/images/sff-bff-earphones.svg"
+      }
+    ],
+    "form": [
+      {
+        "title": " Póngase en contacto con nosotros hoy mismo y le ayudaremos a realizar pagos más rápidos y seguros con Instapay.",
+        "name": "Nombre Completo",
+        "email": "Tu e-mail",
+        "company": "Empresa",
+        "phone": "Telefono",
+        "broker": "Freight broker",
+        "comments": "Comentarios",
+        "check": "Acepte nuestra ",
+        "strong": "política de privacidad",
+        "button": "ENVIAR"
+      }
+    ],
+    "accordiontittle":"Lista de preguntas que pueden surgir",
+    "accordionItems": [
+      {
+        "title": "¿Cuáles son las condiciones de Instapay?",
+        "descripcion": [
+          "La FB para la que transporta debe ser miembro de nuestra Red Instapay.",
+          "La carga debe completarse y el papeleo debe enviarse a instapay@smartfleetfunding.com en lugar de al agente de carga."
         ],
         "eventKey": 1
+      },
+      {
+        "title": "¿Hay comisiones ocultas?",
+        "descripcion": [
+          " En absoluto. Instapay opera con una estructura transparente de tarifa plana, asegurando que usted sabe exactamente qué esperar."
+        ],
+        "eventKey": 2
+      },
+      {
+        "title": "¿Qué documentos debo presentar?",
+        "descripcion": [
+          "Presentar factura, confirmación del transportista, BOL propiedad firmado y accesorialls o lumper recibos."
+        ],
+        "eventKey": 3
+      },
+      {
+        "title": "¿Cómo se personaliza el servicio?",
+        "descripcion": [
+          " A cada conductor se le asigna un ejecutivo de cuentas dedicado, lo que garantiza que reciba el apoyo personalizado que se merece."
+        ],
+        "eventKey": 4
+      },
+      {
+        "title": "¿Tengo que cambiar de compañía para beneficiarme con Instapay?",
+        "descripcion": [
+          "Requerir carta de liberación para el agente de carga particular que participa en el programa instapay."
+        ],
+        "eventKey": 5
+      },
+      {
+        "title": "¿Tendría un límite de crédito?",
+        "descripcion": [
+          "No, con el agente de carga participante no hay límites de crédito"
+        ],
+        "eventKey": 6
+      }
+    ]
+  },
+  "fuelcard": {
+    "pagetittle": "Over The Road",
+    "pagetittlestrong": "Fuel Card",
+    "road": [
+      {
+        "title": "La tarjeta Smart Fleet Funding Over The Road Fuel Card es un programa de repostaje de flotas ofrecido exclusivamente a los clientes de Smart Fleet Funding.",
+        "descripcion": "Ayuda a sus clientes a controlar el gasto en combustible en el volátil mercado actual del combustible con descuentos negociados, avisos proactivos, gestión del combustible y herramientas avanzadas de generación de informes. Como cliente de Smart Fleet Funding al utilizar nuestra Fuel Card en lugar de su tarjeta de crédito o débito, obtendrá increíbles ahorros en sus compras de combustible y mantenimiento con:"
+      }
+    ],
+    "cardsfuel": [
+      {
+        "icon": "/images/sff-transaction-fuel.svg",
+        "strong": "Bajas comisiones por transacción en sus compras de combustible y mantenimiento en Canadá y EE.UU."
+      },
+      {
+        "icon": "/images/sff-cash-price-fuel.svg",
+        "strong": "PRECIO EN EFECTIVO en el surtidor cada vez que pase por caja en más de 14.000 paradas de camiones y centros de servicio de Canadá y EE.UU." 
+      },
+      {
+        "icon": "/images/sff-fuel.svg",
+        "strong": "Importantes descuentos en combustible en TA/Petro y en más de 1.200 establecimientos independientes y de pequeñas cadenas."
       }
     ]
   }

@@ -1,5 +1,7 @@
 import Image from 'next/image'
+import { useI18nProvider } from '@/context/I18nProvider'
 export default function Road() {
+  const { t } = useI18nProvider()
   return (
     <>
       <div className="d-md-none">
@@ -17,17 +19,11 @@ export default function Road() {
             <div className="line"></div>
           </div>
           <h2 className="fs-6 fw-bold w-100 text-center">
-            The Smart Fleet Funding Over The Road Fuel Card is a fleet fueling
-            program offered exclusively to Smart Fleet Funding customers
+            {t.fuelcard.road[0].title}
           </h2>
 
           <div className="lh-sm card-text-bottom fs-6 mx-auto text-center mt-5 fw-500">
-            It helps its customers control fuel spending in today’s volatile
-            fuel market with negotiated discounts, proactive notices, fuel
-            management, and advanced reporting tools. As Smart Fleet Funding
-            customer when you use our Fuel Card instead of your credit or debit
-            card, you’ll get incredible savings on your fuel and maintenance
-            purchases with:
+            {t.fuelcard.road[0].descripcion}
           </div>
         </div>
       </div>
@@ -35,17 +31,11 @@ export default function Road() {
         <div className="col-7">
           <div className="text-left m-5 p-5">
             <h2 className="fs-4 fw-bold ">
-              The Smart Fleet Funding Over The Road Fuel Card is a fleet fueling
-              program offered exclusively to Smart Fleet Funding customers.
+              {t.fuelcard.road[0].title}
             </h2>
             <div className="line"></div>
             <div className="card-text-bottom fs-5  fw-400">
-              It helps its customers control fuel spending in today’s volatile
-              fuel market with negotiated discounts, proactive notices, fuel
-              management, and advanced reporting tools. As Smart Fleet Funding
-              customer when you use our Fuel Card instead of your credit or
-              debit card, you’ll get incredible savings on your fuel and
-              maintenance purchases with:
+            {t.fuelcard.road[0].descripcion}
             </div>
           </div>
         </div>
