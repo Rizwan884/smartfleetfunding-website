@@ -59,7 +59,7 @@ export default function SectionVideo() {
             <Modal size="lg" show={showModal} onHide={closeModal} centered>
               <Modal.Body className=" bg-dark-blue p-0 d-flex align-self-center">
                 <iframe
-                  src="https://www.youtube.com/embed/k2DVZun_AEY?si=wbtUsCmF9gatmdY9"
+                  src="https://www.youtube.com/embed/aRyiUJ4aneM?si=7YRI_tSSHRM6Ylgf"
                   width="420"
                   height="360"
                   title="National Truck Drive Appreciation Week 2023 - Smart Fleet"
@@ -115,7 +115,7 @@ export default function SectionVideo() {
             <Modal size="lg" show={showModal} onHide={closeModal} centered>
               <Modal.Body className=" bg-dark-blue p-0 d-flex align-self-center">
                 <iframe
-                  src="https://www.youtube.com/embed/TlELNgBoqx8?si=Ls7LZz2wN2N0pEso"
+                  src="https://www.youtube.com/embed/aRyiUJ4aneM?si=7YRI_tSSHRM6Ylgf"
                   width="720"
                   height="360"
                   title="National Truck Drive Appreciation Week 2023 - Smart Fleet"
