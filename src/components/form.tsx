@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FormEvent } from "react";
 import React, { useState } from "react";
 type IProps = {
   backgroundImage?: string;
@@ -17,23 +16,35 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
   });
 
   // Function to handle form submission
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Access form data object
-    console.log("Form Data:", formData);
-    // You can perform further actions here, such as sending data to a server
-    const formDatas = new FormData(event.currentTarget);
-    const response = fetch(
-      "https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false",
-      {
+
+    try {
+      const response = await fetch("/api/submitForm", {
         method: "POST",
-        body: formDatas,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        console.log("response status: " + response.status);
+      } else {
+        console.error("Failed to submit form", response);
       }
-    );
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   // Function to handle input changes
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (
+    event:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
     const { name, value } = event.target;
     // Update form data state with new value
     setFormData((prevData) => ({
@@ -58,8 +69,8 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
         <div className="md-w-50 w-100 bg-dark-blue text-white">
           <form onSubmit={handleSubmit} id="form" className="m-5">
             <input
-              id="form-name"
-              name="form-name"
+              id="form-full-fact"
+              name="form-full-fact"
               value="full-fact"
               type="hidden"
             ></input>
@@ -67,7 +78,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
               className=" fs-2 text-left fst-italic"
               style={{ marginBottom: "30px" }}
             >
-              Form Title
+              {titleForm}
               <div className="line "></div>
             </h1>
             <div className="row mb-3 flex-md-row flex-column">
