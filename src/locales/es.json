@@ -737,6 +737,181 @@
         ]
       }
     ]
-    }
+    },
+    "formfullname": "Nombre Completo",
+    "formemail": "Tu email",
+    "formcompany": "Empresa",
+    "formphone": "Telefono",
+    "formmessage": "¿Cómo podemos ayudarle?",
+    "formcheck": "Acepte Nuestra",
+    "formbreak": " política de privacidad",
+    "formbutton": "ENVIAR"
+  },
+  "faqs": {
+    "accordionInstaItems": [
+      {
+        "title": "¿Qué es el Factoring de Flete?",
+        "descriptions": [
+          "Es un servicio financiero diseñado específicamente para empresas de transporte y camiones. Permite a estas empresas convertir sus facturas de flete impagas en capital de trabajo inmediato. Smart Fleet Funding compra estas facturas a una tasa descontada, lo que le permite mantener el flujo de efectivo y concentrarse en hacer crecer su negocio."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 1,
+        "width": 18,
+        "height": 26
+      },
+      {
+        "title": "¿Cómo funciona el factoring?",
+        "descriptions": [
+          "¡Con Smart Fleet Funding, es fácil! Una vez que se registre y su cuenta sea aprobada, envíenos una factura, su carta de porte firmada y una confirmación de tarifa una vez que entregue una carga subiéndolos a través de su portal de cliente o nuestra aplicación móvil. Una vez que los recibamos, hasta el 98% de los fondos involucrados se transferirán a su cuenta bancaria dentro de las 24 horas posteriores a la presentación."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 2
+      },
+      {
+        "title": "¿Quién puede beneficiarse de los servicios de factoring de Smart Fleet Funding?",
+        "descriptions": [
+          "Nuestros servicios están diseñados para empresas de transporte y camiones pequeñas y medianas, propietarios-operadores y negocios de transporte. Si genera facturas para transportistas o corredores confiables, podemos ayudarlo a estabilizar el flujo de efectivo y facilitar el crecimiento."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 3
+      },
+      {
+        "title": "¿Qué diferencia a Smart Fleet Funding de otras empresas de factoring?",
+        "descriptions": [
+          "Smart Fleet Funding se distingue por su servicio personalizado, tarifas competitivas y un profundo entendimiento de los desafíos únicos que enfrentan las empresas de transporte y camiones. Nuestro equipo está comprometido a proporcionar soluciones flexibles que satisfagan las necesidades específicas de su negocio."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 4
+      },
+      {
+        "title": "¿El factoring está disponible solo para empresas con cierto nivel de ingresos?",
+        "descriptions": [
+          "El factoring es adecuado para empresas de diversos tamaños, desde startups hasta grandes empresas. Se trata más de la solvencia de sus clientes."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 5
+      },
+      {
+        "title": "¿El factoring afectará mi relación con mis clientes?",
+        "descriptions": [
+          "El factoring puede mejorar las relaciones con los clientes al garantizar que tenga los recursos para entregar productos o servicios a tiempo."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 6
+      },
+      {
+        "title": "¿Cuáles son los criterios para calificar para los servicios de factoring?",
+        "descriptions": [
+          "Por lo general, las empresas de factoring evalúan la solvencia de sus clientes y la calidad de sus facturas."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 7
+      },
+      {
+        "title": "¿El factoring puede ayudar con problemas de flujo de efectivo?",
+        "descriptions": [
+          "Absolutamente. El factoring proporciona una inyección inmediata de efectivo, que puede ayudar a las empresas a cubrir gastos operativos, nóminas y otras obligaciones financieras."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 8
+      },
+      {
+        "title": "¿Existen contratos a largo plazo o tarifas ocultas?",
+        "descriptions": [
+          "Creemos en la transparencia. Smart Fleet Funding ofrece términos flexibles sin tarifas ocultas. Trabajamos con usted para crear un acuerdo de factoring que se adapte a los requisitos de su negocio. No está obligado a contratos a largo plazo, lo que le brinda la libertad de facturar tanto o tan poco como necesite."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 9
+      },
+      {
+        "title": "¿Cómo difieren el factoring con recurso y sin recurso y cuál es más adecuado para mi negocio?",
+        "descriptions": [
+          "El factoring con recurso significa que la empresa es responsable de cualquier factura impaga, mientras que el factoring sin recurso significa que la empresa de factoring asume el riesgo de impago. La elección depende de su tolerancia al riesgo y la solvencia de sus clientes."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 10
+      },
+      {
+        "title": "¿Qué medidas toman las empresas de factoring para garantizar la solvencia de mis clientes antes de aprobar una factura para su financiamiento?",
+        "descriptions": [
+          "Las empresas de factoring realizan verificaciones de crédito a sus clientes para evaluar su capacidad de pago. Esto ayuda a determinar la tasa de anticipo y reduce el riesgo de impago."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 11
+      },
+      {
+        "title": "¿Cómo impacta el proceso de factoring en las relaciones con los clientes y su percepción de mi negocio?",
+        "descriptions": [
+          "El factoring es una práctica financiera común, y muchas empresas lo ven como un signo de estabilidad. Garantiza que tenga los recursos para cumplir con los pedidos de manera oportuna, lo que puede mejorar su reputación."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 12
+      },
+      {
+        "title": "¿Qué métodos de pago aceptan para las transacciones de factoring?",
+        "descriptions": [
+          "Actualmente, solo aceptamos pagos mediante cheques y depósitos directos (EFT-ACH). Esto garantiza un proceso de transacción seguro y eficiente."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 13
+      },
+      {
+        "title": "¿En qué monedas se pueden realizar los pagos?",
+        "descriptions": [
+          "Tenemos cuentas tanto en dólares canadienses (CAD) como en dólares estadounidenses (USD) para brindar opciones de pago flexibles que satisfagan las necesidades de nuestros clientes."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 14
+      },
+      {
+        "title": "¿Existen servicios o recursos adicionales proporcionados por empresas de factoring para ayudarme a gestionar mi flujo de efectivo de manera más efectiva?",
+        "descriptions": [
+          "Sí, además de nuestros servicios de factoring, Smart Fleet Funding ofrece una variedad de recursos y servicios complementarios para apoyar su negocio:",
+          "Programa de Tarjeta de Combustible: Brindamos acceso a un programa de tarjeta de combustible que ofrece descuentos en compras de combustible en las principales paradas de camiones en todo el país. Esto le ayuda a ahorrar dinero en uno de sus gastos operativos más significativos.",
+          "Asistencia de Seguros: Podemos conectarlo con proveedores de seguros de buena reputación que se especializan en seguros comerciales de transporte. Esto garantiza que tenga la cobertura que necesita para operar su negocio de manera segura y cumplir con las regulaciones de la industria.",
+          "Atención al Cliente: Nuestro equipo de atención al cliente dedicado está disponible para ayudarlo con cualquier pregunta o inquietud que pueda tener. Ya sea sobre su cuenta de factoring, tarjeta de combustible o seguro, estamos aquí para ayudarlo.",
+          "Experiencia en la Industria: Nuestro equipo tiene un amplio conocimiento de la industria del transporte y puede brindar información valiosa y consejos sobre las mejores prácticas para gestionar su flujo de efectivo, optimizar rutas y mejorar la eficiencia operativa."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 15
+      }
+    ],
+    "faqtitle": "Algunas preguntas"
+  },
+  "about": {
+    "cards": [
+      {
+        "title": "INNOVACIÓN",
+        "text": "FES - Pagar",
+        "icon": "/images/fes-pay-icon.svg"
+      },
+      {
+        "title": "EXPERIENCIA",
+        "text": "Más de 30 años",
+        "icon": "/images/experience-icon.svg"
+      },
+      {
+        "title": "GLOBAL",
+        "text": "América del Norte (Canadá, EE. UU., México)",
+        "icon": "/images/global-icon.svg"
+      }
+    ],
+    "cardstwo": [
+      {
+        "title": "EMPODERAMIENTO",
+        "text": "Ayudando a las empresas a prosperar",
+        "icon": "/images/empowerment-icon.svg"
+      },
+      {
+        "title": "COMPROMISO",
+        "text": "Transparencia",
+        "icon": "/images/commitment-icon.svg"
+      },
+      {
+        "title": "TECNOLOGÍA",
+        "text": "Integraciones con actores principales en las industrias que servimos",
+        "icon": "/images/technology-icon.svg"
+      }
+    ]
   }
 }

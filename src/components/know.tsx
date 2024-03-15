@@ -1,5 +1,7 @@
 import { Card } from 'react-bootstrap'
+import { useI18nProvider } from '@/context/I18nProvider'
 export default function Know() {
+  const { t } = useI18nProvider()
   return (
     <>
       <div className="container px-5 px-md-auto mt-7 font-montserrat">
@@ -20,79 +22,35 @@ export default function Know() {
       </div>
       <div className="card-container font-montserrat mt-5 mb-5 h-100 flex-column w-100">
         <div className="row px-0 mx-0 px-md-auto mx-md-auto mb-3 justify-content-center gap-3 gap-md-3">
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                INNOVATION
-                <br />
-                <p className="mt-1">
-                  <strong className="fs-5 pt-3">FES - Pay</strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                EXPERIENCE
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-5">Over 30 Years</strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                GLOBAL
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-6">
-                    North America (Canada, USA, México)
-                  </strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+        {t.about.cards.map((card, index) => (
+            <Card key={index} className="mx-3 w-18rem bg-white text-white h-100 al-left">
+              <Card.Body className="text-start">
+                <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
+                  {card.title}
+                  <br />
+                  <p className="mt-1">
+                    <strong className="fs-5 pt-3">{card.text}</strong>
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          ))}
         </div>
         <div className="row px-0 mx-0 px-md-auto mx-md-auto justify-content-center gap-3 gap-md-3 ">
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                EMPOWERMENT
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-5">Helping Businesses Thrive</strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                COMMITMENT
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-5">Transparency</strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                TECHNOLOGY
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-6">
-                    Integrations with major players in the industries we serve
-                  </strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </div>
+        {t.about.cardstwo.map((card, index) => (
+            <Card key={index} className="mx-3 w-18rem bg-white text-white h-100 al-left">
+              <Card.Body className="text-start">
+                <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
+                  {card.title}
+                  <br />
+                  <p className="mt-1">
+                    <strong className="fs-5">{card.text}</strong>
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          ))}
+        </div> 
       </div>
       <div className="container px-5 px-md-auto pt-6 pb-6 font-montserrat">
         <div className="row line-programs pb-5">

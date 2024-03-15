@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { FormEvent } from 'react'
 import Image from 'react-bootstrap/Image'
+import { useI18nProvider } from '@/context/I18nProvider'
 type IProps = {
   backgroundImage?: string
   titleForm?: string | undefined
@@ -18,6 +19,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
       }
     )
   }
+  const { t } = useI18nProvider()
   return (
     <>
       <div className="d-flex flex-column-reverse flex-md-row mt-6">
@@ -44,7 +46,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   id="name"
                   name="name"
                   required
-                  placeholder="Full Name"
+                  placeholder={t.freightbroker.formfullname}
                 ></input>
               </div>
               <div className="col">
@@ -54,7 +56,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   id="company"
                   name="company"
                   required
-                  placeholder="Company Name"
+                  placeholder={t.freightbroker.formcompany}
                 ></input>
               </div>
             </div>
@@ -66,7 +68,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   id="email"
                   name="email"
                   required
-                  placeholder="Email Address"
+                  placeholder={t.freightbroker.formemail}
                 ></input>
               </div>
               <div className="col">
@@ -76,7 +78,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   id="phone"
                   name="phone"
                   required
-                  placeholder="Phone Number"
+                  placeholder={t.freightbroker.formphone}
                 ></input>
               </div>
             </div>
@@ -87,7 +89,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                 name="message"
                 required
                 rows={3}
-                placeholder="How can we help?"
+                placeholder={t.freightbroker.formmessage}
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
@@ -103,21 +105,21 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{' '}
+                    {t.freightbroker.formcheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>Privacy Policy</strong>
+                      <strong>{t.freightbroker.formbreak}</strong>
                     </Link>
                   </label>
                 </div>
               </div>
 
               <button type="submit" className="btn fw-600">
-                SEND
+              {t.freightbroker.formbutton}
               </button>
             </div>
           </form>

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Accordion } from 'react-bootstrap'
 type AccordionItem = {
   title?: string
-  description?: string | JSX.Element
+  descriptions?: string[] | JSX.Element
   icon?: string | StaticImport
   eventKey: number
 }
@@ -79,7 +79,12 @@ export default function FaqAccordion({
               )}
               <div id="title-mobile">{item.title}</div>
             </Accordion.Header>
-            <Accordion.Body>{item.description}</Accordion.Body>
+            <Accordion.Body>
+              {item.descriptions &&
+                item.descriptions.map((desc, index) => (
+                  <li key={index}>{desc}</li>
+                ))}
+                </Accordion.Body>
           </Accordion.Item>
         ))}
       </Accordion>
