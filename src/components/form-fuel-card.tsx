@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { FormEvent } from 'react'
 import Image from 'react-bootstrap/Image'
+import { useI18nProvider } from '@/context/I18nProvider'
 
 type IProps = {
   backgroundImage?: string
@@ -19,6 +20,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
       }
     )
   }
+  const { t } = useI18nProvider()
   return (
     <>
       <div className="d-flex font-montserrat flex-column-reverse flex-md-row mt-6 pb-4">
@@ -44,21 +46,11 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   id="form-fuel-card"
                   className="form-select  bg-grey-transparent text-white"
                 >
-                  <option className="bg-dark-blue text-white" selected>
-                    I{"'"}m considering applying for the Fuel Card
-                  </option>
-                  <option className="bg-dark-blue text-white" value="1">
-                    I{"'"}d like more information about the Fuel Card
-                  </option>
-                  <option className="bg-dark-blue text-white" value="2">
-                    I have questions about the Fuel Card
-                  </option>
-                  <option className=" bg-dark-blue  text-white" value="3">
-                    I{"'"}m already a Fuel Card holder and need assistance
-                  </option>
-                  <option className=" bg-dark-blue  text-white" value="3">
-                    I want to learn about other services offered
-                  </option>
+                  {t.fuelcard.formselectsoptions.map((option, index) => (
+                    <option key={index} className="bg-dark-blue text-white" value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div className="col ">
@@ -68,7 +60,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   id="name"
                   name="name"
                   required
-                  placeholder="Full Name"
+                  placeholder={t.fuelcard.formfullname}
                 ></input>
               </div>
               <div className="col">
@@ -78,7 +70,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   id="email"
                   name="email"
                   required
-                  placeholder="Your E-Mail"
+                  placeholder={t.fuelcard.formemail}
                 ></input>
               </div>
             </div>
@@ -90,7 +82,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   id="company"
                   name="company"
                   required
-                  placeholder="Company Name"
+                  placeholder={t.fuelcard.formcompany}
                 ></input>
               </div>
               <div className="col">
@@ -100,7 +92,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   id="phone"
                   name="phone"
                   required
-                  placeholder="Phone"
+                  placeholder={t.fuelcard.formphone}
                 ></input>
               </div>
             </div>
@@ -111,7 +103,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 name="message"
                 required
                 rows={3}
-                placeholder="Description"
+                placeholder={t.fuelcard.formmessage}
               ></textarea>
             </div>
 
@@ -128,21 +120,21 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{' '}
+                    {t.fuelcard.formcheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>Privacy Policy</strong>
+                      <strong>{t.fuelcard.formbreak}</strong>
                     </Link>
                   </label>
                 </div>
               </div>
 
               <button type="submit" className="btn fw-600">
-                SEND
+              {t.fuelcard.formbutton}
               </button>
             </div>
           </form>

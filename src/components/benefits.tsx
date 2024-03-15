@@ -13,7 +13,7 @@ export default function Benefits() {
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
           <h1 className="fw-600 fs-2 text-center  flex-column align-items-center gap-3">
-            Benefits for Drivers
+            {t.instapay.benefitstitle}
           </h1>
         </div>
         <div className="row mt-5">

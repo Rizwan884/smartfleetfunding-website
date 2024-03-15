@@ -21,7 +21,7 @@ export default function fuelCard() {
       <strong className="fw-bold">{t.fuelcard.pagetittlestrong}</strong>
     </p>
   )
-  const titleForm = 'Start Saving with the Smart Fleet Funding Fuel Card!'
+  const titleForm = t.fuelcard.formtitle;
 
   return (
     <>
