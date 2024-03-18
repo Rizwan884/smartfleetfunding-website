@@ -8,14 +8,14 @@ export default function Know() {
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-md-3 align-item-center"></div>
           <h1 className="d-md-block d-none fw-regular fs-2 text-center flex  align-items-center gap-3">
-            Know more about <strong>Smart Fleet Funding</strong>
+            {t.about.knowtitle} <strong>{t.about.knowstrong}</strong>
           </h1>
           <h1 className="d-md-none  fw-regular fs-2 text-center flex  align-items-center gap-3">
-            Know more about{' '}
+          {t.about.knowtitle}{' '}
             <strong>
               {' '}
               <br />
-              Smart Fleet Funding
+              {t.about.knowstrong}
             </strong>
           </h1>
         </div>
@@ -40,7 +40,7 @@ export default function Know() {
         {t.about.cardstwo.map((card, index) => (
             <Card key={index} className="mx-3 w-18rem bg-white text-white h-100 al-left">
               <Card.Body className="text-start">
-                <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
+                <Card.Text className="fs-6 lh-sm mt-2 ms-auto text-dark-blue">
                   {card.title}
                   <br />
                   <p className="mt-1">
@@ -53,7 +53,22 @@ export default function Know() {
         </div> 
       </div>
       <div className="container px-5 px-md-auto pt-6 pb-6 font-montserrat">
-        <div className="row line-programs pb-5">
+      {t.about.knowsection.map((know, index) => (
+            <div key={index} className={`row pt-5 pb-5 ${index !== t.about.knowsection.length - 1 ? 'line-programs' : ''}`}>
+            <div className="col-md-4">
+              {' '}
+              <h1 className="fw-bold fs-3 mb-0  w-75">{know.title}</h1>
+              <div className="line-program mt-0 mb-3 mt-1 w-3"></div>
+            </div>
+            <div className="col-md-8">
+              {know.descripcion}
+              <strong>
+                {know.strong}
+              </strong>
+            </div>
+          </div>
+          ))}
+        {/* <div className="row line-programs pb-5">
           <div className="col-md-4">
             {' '}
             <h1 className="fw-bold fs-3 mb-0   w-75">Who We Are</h1>
@@ -128,7 +143,7 @@ export default function Know() {
               on the path to success.
             </strong>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )

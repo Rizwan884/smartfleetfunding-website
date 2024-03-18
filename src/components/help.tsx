@@ -10,6 +10,7 @@ type ICard = {
 export default function Help() {
   const { t } = useI18nProvider()
   const [helpcards, setHelpCards] = useState<ICard[]>([]); 
+  const [helpcardstwo, setHelpCardsTwo] = useState<ICard[]>([]); 
   useEffect(() => {
     const helpCardsData: ICard[] = t.fullcard.helpcards.map((card: any) => ({
       icon: card.icon,
@@ -18,6 +19,14 @@ export default function Help() {
     }));
     setHelpCards(helpCardsData);
   }, [t]);
+  useEffect(() => {
+    const helpCardsDataTwo: ICard[] = t.fullcard.helpcardstwo.map((card: any) => ({
+      icon: card.icon,
+      strong: card.strong,
+      descripcion: card.descripcion,
+    }));
+    setHelpCardsTwo(helpCardsDataTwo);
+  }, [t]);
   return (
     <>
       <Container className="font-montserrat container mt-5">
@@ -25,10 +34,26 @@ export default function Help() {
         <div className="line help-line"></div>
         <Container id='help' className='mt-sm-1 mb-sm-2 mt-5 mb-6'>
         <div className="d-none d-md-block">
-        <Row className="pt-5 mt-5">
+        <Row className="mt-5">
           {helpcards.map((card, index) => (
             <Col key={index} className=" col-4 mt-3 mb-3 d-flex justify-content-center">
               <Card style={{ width: '18rem', border: '10px' }}>
+                <Card.Body>
+                  <Image src={card.icon} style={{ width: '15%', marginTop:'-21px', marginBottom: '20px' }} className="card-img-top" alt="" />
+                  <Card.Text>
+                    <strong>{card.strong}</strong>
+                    <br />
+                    {card.descripcion}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        <Row className="mt-5" style={{ justifyContent: 'center', marginBottom: '13%' }}>
+          {helpcardstwo.map((card, index) => (
+            <Col key={index} className=" col-4 d-flex justify-content-center">
+              <Card style={{border: '10px' }}>
                 <Card.Body>
                   <Image src={card.icon} style={{ width: '15%', marginTop:'-21px', marginBottom: '20px' }} className="card-img-top" alt="" />
                   <Card.Text>

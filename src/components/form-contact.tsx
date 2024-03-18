@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FormEvent } from 'react'
+import { useI18nProvider } from '@/context/I18nProvider'
 type IProps = {
   backgroundImage?: string
   titleForm?: string | undefined
 }
 
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
+  const { t } = useI18nProvider()
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
@@ -32,10 +34,10 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
             <div className="position-relative ">
               <div className="container">
                 <h1 className="p-4 pt-5 mt-5  mt-md-0 fs-3 position relative text-center text-md-start">
-                  Contact us for{' '}
+                 {t.contact.contacttitleform}{' '}
                   <strong>
-                    Fast, Easy and <br />
-                    Secure Funding Solutions
+                   {t.contact.contacttitlestrong} <br />
+                    {t.contact.contacttitlebreak}
                   </strong>
                 </h1>
                 <div className="line-contact m-4"></div>
@@ -109,7 +111,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   id="name"
                   name="name"
                   required
-                  placeholder="Full Name"
+                  placeholder={t.contact.formname}
                 ></input>
               </div>
               <div className="col">
@@ -119,7 +121,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   id="email"
                   name="email"
                   required
-                  placeholder="Your E-Mail"
+                  placeholder={t.contact.formemail}
                 ></input>
               </div>
             </div>
@@ -131,7 +133,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   id="company"
                   name="company"
                   required
-                  placeholder="Company Name"
+                  placeholder={t.contact.formcompany}
                 ></input>
               </div>
               <div className="col">
@@ -141,7 +143,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   id="phone"
                   name="phone"
                   required
-                  placeholder="Phone"
+                  placeholder={t.contact.formphone}
                 ></input>
               </div>
             </div>
@@ -152,7 +154,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                 name="message"
                 required
                 rows={3}
-                placeholder="Description"
+                placeholder={t.contact.formmessage}
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
@@ -168,21 +170,21 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{' '}
+                    {t.contact.formcheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>Privacy Policy</strong>
+                      <strong>{t.contact.formbreak}</strong>
                     </Link>
                   </label>
                 </div>
               </div>
 
-              <button type="submit" className="btn fw-600">
-                SEND
+              <button type="submit" className="btn fw-600 me-1 ">
+              {t.contact.formbutton}
               </button>
             </div>
           </form>

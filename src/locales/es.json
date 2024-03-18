@@ -270,7 +270,9 @@
         "icon": "/images/sff-hp-6.svg",
         "strong": "Operaciones fluidas:",
         "descripcion": "Supervise todas las cargas de su cartera. Si hay algún problema que requiera su atención, le informamos rápidamente."
-      },
+      }
+    ],
+    "helpcardstwo": [
       {
         "icon": "/images/sff-hp-7.svg",
         "strong": "Decisiones informadas sobre sus clientes potenciales:",
@@ -311,7 +313,7 @@
       },
       {
         "title": "Piola hizo que esta experiencia fuera fantástica.",
-        "descripcion": "",
+        "descripcion": "genial",
         "author": "DS cooperation",
         "position": "Date of experience: December 20, 2023",
         "image": "/images/sff-ttm-mark.svg"
@@ -369,29 +371,30 @@
     "accordionItems": [
       {
         "title": "¿Cuánto se tarda en abrir una cuenta?",
-        "description": "La apertura de una cuenta suele tardar entre 1 y 2 días laborables, una vez que se ha proporcionado y verificado toda la documentación necesaria.",
+        "descripcion": "La apertura de una cuenta suele tardar entre 1 y 2 días laborables, una vez que se ha proporcionado y verificado toda la documentación necesaria.",
         " icon": "/images/sff-acr-user.svg",
         "eventKey": 1
       },
       {
-        "title": "How long does it take for invoice payments to be processed?",
-        "description": "¿Cuánto tarda en procesarse el pago de las facturas?",
+        "title": "¿Cuánto tarda en procesarse el pago de las facturas?",
+        "descripcion": "¿Cuánto tarda en procesarse el pago de las facturas?",
         " icon": "/images/sff-acr-dollar.svg",
         "eventKey": 2
       },
       {
         "title": "¿Cómo presento mis facturas?",
-        "description": "Puede enviar sus facturas por correo electrónico a invoices@smartfleetfunding.com. Asegúrate de incluir todos los datos y documentos necesarios en un formato legible. (Así se hace)",
+        "descripcion": "Puede enviar sus facturas por correo electrónico a invoices@smartfleetfunding.com. Asegúrate de incluir todos los datos y documentos necesarios en un formato legible. (Así se hace)",
         " icon": "/images/sff-acr-book.svg",
         "eventKey": 3
       },
       {
         "title": "¿Cuál es la tarifa típica por factura y qué ventajas obtengo por pagar esa tarifa?",
-        "description": "La tarifa típica por factura depende de los detalles específicos de su acuerdo. Esta tarifa cubre el coste de los servicios de factoring y le garantiza que recibirá el pago puntualmente. Además, al pagar esta comisión, usted se beneficia de un flujo de caja más ágil, una carga administrativa reducida al eliminar el cobro de sus cuentas por cobrar, la recepción y aplicación de los pagos, la revisión y gestión eficaz de la antigüedad de sus cuentas, la elaboración de informes de crédito sobre sus clientes potenciales y muchas otras actividades cotidianas relacionadas con el funcionamiento. Nosotros gestionamos y usted se centra en hacer crecer su negocio.",
-        " icon": "images/sff-acr-hand.svg",
+        "descripcion": "La tarifa típica por factura depende de los detalles específicos de su acuerdo. Esta tarifa cubre el coste de los servicios de factoring y le garantiza que recibirá el pago puntualmente. Además, al pagar esta comisión, usted se beneficia de un flujo de caja más ágil, una carga administrativa reducida al eliminar el cobro de sus cuentas por cobrar, la recepción y aplicación de los pagos, la revisión y gestión eficaz de la antigüedad de sus cuentas, la elaboración de informes de crédito sobre sus clientes potenciales y muchas otras actividades cotidianas relacionadas con el funcionamiento. Nosotros gestionamos y usted se centra en hacer crecer su negocio.",
+        " icon": "/images/sff-acr-hand.svg",
         "eventKey": 4
       }
     ],
+    "titleform": "¡Empecemos!",
     "pagetittle": "Full",
     "pagestrong": "Factoring Solution"
   },
@@ -528,35 +531,35 @@
     "fuelcardsection": [
       {
         "title": "Conveniencia",
-        "description": [
+        "descripcion": [
           "Aceptado en más del 99% de las estaciones de servicio de EE.UU. y en más de 1.200 de Canadá."
         ],
         "eventKey": 1
       },
       {
         "title": "Control",
-        "description": [
+        "descripcion": [
           "Controle cuánto gastan sus conductores y qué compran con límites basados en políticas. Autenticación segura de 2 partes a través de la aplicación móvil WEX Card Control para eliminar el fraude de robo de tarjetas."
         ],
         "eventKey": 2
       },
       {
         "title": "Cumplimiento",
-        "description": [
+        "descripcion": [
           "Controles en el punto de compra que solicitan información importante necesaria para el cumplimiento de los impuestos sobre el combustible y detalles sólidos de las transacciones."
         ],
         "eventKey": 3
       },
       {
         "title": "Ahorro de costes",
-        "description": [
+        "descripcion": [
           "Precio en efectivo o menos con descuentos en combustible en más de 1.500 paradas de camiones de EE.UU., gestión de combustible y acceso a Cash Services, además de gestión de cuenta online GRATUITA, ¡y mucho más!"
         ],
         "eventKey": 4
       },
       {
         "title": "Atención al cliente",
-        "description": [
+        "descripcion": [
           "Atención al cliente siempre disponible 24 horas al día, 7 días a la semana, 365 días al año, con línea de idiomas para todos."
         ],
         "eventKey": 5
@@ -695,44 +698,44 @@
     ],
     "providetitle": "Lo que ofrecemos",
     "helpyou": {
-      "title": "How we help you",
+      "title": "Cómo le ayudamos",
     "image": "/images/sff-fb-rule.svg",
     "items": [
       {
-        "title": "On Attraction & Retention",
+        "title": "Atracción y retención",
         "details": [
           {
             "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Becoming more attractive to carriers."
+            "text": "Ser más atractivos para los transportistas."
           },
           {
             "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Carriers won’t worry about their cash flow to operate."
+            "text": "Los transportistas no se preocuparán por su liquidez para operar."
           },
           {
             "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Carriers won’t need to make collection calls."
+            "text": "Los transportistas no tendrán que hacer llamadas de cobro."
           }
         ]
       },
       {
-        "title": "Handling AR/AP Needs",
+        "title": "Gestiona necesidades AR/AP",
         "details": [
           {
             "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Receiving collection calls from carriers and other debt collectors."
+            "text": "Recibir llamadas de cobro de transportistas y otros cobradores de deudas."
           },
           {
             "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Making collection calls to clients."
+            "text": "Realización de llamadas de cobro a clientes."
           },
           {
             "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Handling AR/AP documentation."
+            "text": "Gestión de la documentación AR/AP."
           },
           {
             "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Stay on top of the company’s cash flow."
+            "text": "Manténgase al tanto de la tesorería de la empresa."
           }
         ]
       }
@@ -879,6 +882,10 @@
     "faqtitle": "Algunas preguntas"
   },
   "about": {
+    "pagetitle": "Sobre",
+    "pagestrong": "Nosotros",
+    "knowtitle": "Más información sobre",
+    "knowstrong": "Smart Fleet Funding",
     "cards": [
       {
         "title": "INNOVACIÓN",
@@ -912,6 +919,43 @@
         "text": "Integraciones con actores principales en las industrias que servimos",
         "icon": "/images/technology-icon.svg"
       }
+    ],
+    "knowsection": [
+      {
+        "title": "Quiénes somos",
+        "descripcion": "Con más de 30 años de experiencia en el mercado del factoring, Smart Fleet Funding ha sido un actor clave en la prestación de apoyo y financiación a diversas industrias, con un enfoque particular en el transporte.",
+        "strong": "Tenemos un historial probado de éxito en la gestión del programa Instapay (FES Pay) para los principales agentes de carga de Norteamérica. En la actualidad, prestamos servicio a clientes de toda Norteamérica."
+      },
+      {
+        "title": "Nuestro compromiso",
+        "descripcion": "En Smart Fleet Funding, hemos diseñado un sistema que simplifica el proceso de cobro. Nuestra misión es eliminar las complejidades y los retrasos asociados a las facturas impagadas, convirtiéndolas en efectivo inmediato con un simple clic.",
+        "strong": "Entendemos que un flujo de caja constante es crucial para que cualquier negocio prospere, y nos dedicamos a garantizar el éxito de nuestros clientes."
+      },
+      {
+        "title": "Lo que nos diferencia",
+        "descripcion": "Nuestra dedicación a la innovación y al establecimiento de relaciones sólidas con los clientes nos distingue. Damos prioridad a la responsabilidad financiera y a la transparencia como piedra angular del éxito de toda empresa. Cada cliente, independientemente de su tamaño, recibe nuestra máxima atención.",
+        "strong": "Buscamos continuamente nuevas formas de agilizar los procesos, garantizando que cada cliente se sienta valorado y priorizado."
+      },
+      {
+        "title": "Por qué elegir Smart Fleet Funding",
+        "descripcion": "Elegir Smart Fleet Funding significa elegir un socio que invierte en su éxito. Nos especializamos en soluciones de financiación a medida para empresas de transporte por carretera, lo que les permite cobrar más rápido y ofrecer importantes descuentos para aumentar la rentabilidad.",
+        "strong": "Con nosotros, usted no es sólo un cliente; es un socio valioso en el camino hacia el éxito."
+      }
     ]
+  },
+  "contact": {
+    "titleform": "¡Empecemos!",
+    "contacttitle": "Estamos aquí para ayudarle. Hablemos",
+    "contacttitleform": "Póngase en contacto con nosotros",
+    "contacttitlestrong": "Soluciones de financiación ",
+    "contacttitlebreak": "rápidas, fáciles y seguras",
+    "formname": "Nombre completo",
+    "formemail": "Tu email",
+    "formcompany": "Empresa",
+    "formphone": "Telefono",
+    "formmessage": "Descripcion",
+    "formcheck": "Acepte Nuestra",
+    "formbreak": " política de privacidad",
+    "formbutton": "ENVIAR"
   }
 }

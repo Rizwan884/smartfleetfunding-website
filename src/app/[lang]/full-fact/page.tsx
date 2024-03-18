@@ -23,7 +23,7 @@ export default function fullFact() {
     </p>
   )
 
-  const titleForm = "Let's get started!"
+  const titleForm = t.fullcard.titleform
 
   const accordionItems = t.fullcard.accordionItems
 

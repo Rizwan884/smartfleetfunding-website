@@ -90,7 +90,9 @@ const TestimonialCarousel = () => {
                         <Card className="w-75 mx-5" style={{ border: '10px' }}>
                           <Card.Body>
                             <Card.Text className="fs-6 text-start lh-sm">
-                              {item.title} <br />
+                            <h3>{item.title}</h3>
+                            </Card.Text>
+                            <Card.Text className="fs-6 text-start lh-sm">
                               {item.descripcion}
                             </Card.Text>
                             <div className="d-flex align-items-center gap-2">

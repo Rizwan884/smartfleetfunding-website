@@ -7,7 +7,7 @@ export default function HelpYou() {
   return (
     <>
       <Container className="mt-6 pt-5 font-montserrat">
-        <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">How we help you</h1>
+        <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">{t.freightbroker.helpyou.title}</h1>
         <div className="line mt-0 mx-4 mt-1 w-3"></div>
         <div className="container d-flex flex-column pt-5">
           <Row className="m-2">
@@ -44,7 +44,7 @@ export default function HelpYou() {
               </div>
               <Dropdown className="row mx-3 flex-column d-lg-none">
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
-                  <h5 className="card-title fs-6 text-start fw-bold">{section.title}</h5>
+                  <h5 className="card-title fs-6 text-start fw-bold" style={{ zIndex: '1', wordWrap: 'break-word' }}>{section.title}</h5>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
