@@ -1,6 +1,6 @@
-import Cards from "./cards";
-import CardsInfo from "./cards-info";
-import ImgInfo from "./section-info";
+import Cards from './cards'
+import CardsInfo from './cards-info'
+import ImgInfo from './section-info'
 export default function CardsSections() {
   return (
     <>
@@ -13,5 +13,5 @@ export default function CardsSections() {
       </div>
       <ImgInfo />
     </>
-  );
+  )
 }

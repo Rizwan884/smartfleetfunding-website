@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "home": "INICIO",
+    "services": "SERVICIOS",
+    "faq": "PREGUNTAS FRECUENTES",
+    "aboutUs": "NOSOTROS",
+    "contact": "CONTACTO"
+  },
+  "languages": {
+    "current": {
+      "title": "ESP",
+      "locale": "es"
+    },
+    "available": [
+      {
+        "title": "ENG",
+        "locale": "en-US"
+      }
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+
 export default function FormInstapay() {
   const [formData, setFormData] = useState<{ [key: string]: string }>({
     name: "",
@@ -57,7 +58,7 @@ export default function FormInstapay() {
           </h1>
         </div>
         <div className="d-flex">
-          {" "}
+          {' '}
           <div className="h-100 w-50 w-md-100 text-dark-blue">
             <form
               onSubmit={handleSubmit}
@@ -158,14 +159,14 @@ export default function FormInstapay() {
                       id="flexCheckDefault"
                     />
                     <label
-                      className="form-check-label"
+                      className="text-dark-blue"
                       htmlFor="flexCheckDefault"
                     >
-                      Acept Our{" "}
+                      Accept Our{' '}
                       <Link
                         href="/privacy"
                         target="_blank"
-                        className="text-decoration-none text-green"
+                        className="text-decoration-none text-dark-blue"
                         passHref={true}
                       >
                         <strong>Privacy Policy</strong>
@@ -183,5 +184,5 @@ export default function FormInstapay() {
         </div>
       </div>
     </>
-  );
+  )
 }

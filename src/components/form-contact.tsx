@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+
 type IProps = {
-  backgroundImage?: string;
-  titleForm?: string | undefined;
-};
+  backgroundImage?: string
+  titleForm?: string | undefined
+}
 
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
   const [formData, setFormData] = useState<{ [key: string]: string }>({
@@ -58,15 +59,15 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         <div className=" md-w-60  w-100">
           <div className="position-relative h-100">
             <Image
-              src={`${backgroundImage || ""}`}
-              style={{ objectFit: "cover" }}
+              src={`${backgroundImage || ''}`}
+              style={{ objectFit: 'cover' }}
               alt="form"
               fill
             ></Image>
             <div className="position-relative ">
               <div className="container">
                 <h1 className="p-4 pt-5 mt-5  mt-md-0 fs-3 position relative text-center text-md-start">
-                  Contact us for{" "}
+                  Contact us for{' '}
                   <strong>
                     Fast, Easy and <br />
                     Secure Funding Solutions
@@ -83,7 +84,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       alt="icon"
                       width={30}
                       height={30}
-                      src="images/sff-contact-phone.svg"
+                      src="/images/sff-contact-phone.svg"
                     ></Image>
                     <div className="lh-sm ">
                       <h2 className="fs-4 fw-600 text-dark-blue mt-1">
@@ -101,7 +102,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       alt="icon"
                       width={28}
                       height={28}
-                      src="images/sff-contact-mail.svg"
+                      src="/images/sff-contact-mail.svg"
                     ></Image>
                     <div className="">
                       <h2 className="fs-4 mt-3 fw-600 text-dark-blue">
@@ -130,7 +131,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
             ></input>
             <h1
               className=" fs-2 d-flex flex-column align-items-center align-items-md-start pb-3 pb-md-0 fst-italic"
-              style={{ marginBottom: "30px" }}
+              style={{ marginBottom: '30px' }}
             >
               {titleForm}
               <div className="line text-center text-md-left "></div>
@@ -212,7 +213,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Acept Our{" "}
+                    Accept Our{' '}
                     <Link
                       href="/privacy"
                       target="_blank"
@@ -233,5 +234,5 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         </div>
       </div>
     </>
-  );
+  )
 }

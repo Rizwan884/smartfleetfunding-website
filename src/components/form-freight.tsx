@@ -1,9 +1,11 @@
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import Image from "next/image"
+
 type IProps = {
-  backgroundImage?: string;
-  titleForm?: string | undefined;
-};
+  backgroundImage?: string
+  titleForm?: string | undefined
+}
 
 export default function FormFreight({ backgroundImage, titleForm }: IProps) {
   const [formData, setFormData] = useState<{ [key: string]: string }>({
@@ -64,7 +66,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
             ></input>
             <h1
               className="fw-normal fs-2 text-left fst-italic"
-              style={{ marginBottom: "30px" }}
+              style={{ marginBottom: '30px' }}
             >
               {titleForm}
               <div className="line "></div>
@@ -146,7 +148,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Acept Our{" "}
+                    Accept Our{' '}
                     <Link
                       href="/privacy"
                       target="_blank"
@@ -166,18 +168,18 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
           </form>
         </div>
         <div className="md-w-50 w-100">
-          <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
-            <img
+          <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+            <Image
               className="w-100 h-100"
               style={{
-                objectFit: "cover",
+                objectFit: 'cover'
               }}
-              src="images/sff-form-freight.jpg"
+              src={backgroundImage || '/images/sff-form-freight.webp'}
               alt="form"
             />
           </div>
         </div>
       </div>
     </>
-  );
+  )
 }

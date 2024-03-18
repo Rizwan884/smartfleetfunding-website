@@ -28,6 +28,9 @@ body {
 .text-dark-blue {
   color: var(--dark-blue);
 }
+.text-dark-blue:hover {
+  color: var(--dark-blue);
+}
 
 .text-green {
   color: var(--green);
@@ -240,7 +243,7 @@ img {
   -o-transform: rotate(180deg);
 }
 .nv-image {
-  background-image: url("/public/images/sff-navbar-bg.jpg");
+  background-image: url("/images/sff-navbar-bg.jpg");
 }
 #basic-nav-dropdown {
   min-width: 1rem;
@@ -793,6 +796,12 @@ span:hover {
 #help .card-text {
   font-size: 18px;
 }
+.help-line{
+  margin-left: 40%;
+  margin-top: 10px;
+  width: 40.9px;
+  margin-bottom: 10%;
+}
 /*------------form-------------*/
 .form-check{
   padding-left: 0.7em !important;
@@ -821,7 +830,7 @@ span:hover {
 #fullemail::placeholder,
 #fullname::placeholder {
   color: var(--gray-dark);
-  font-size: 11px;
+  font-size: 13px;
 }
 .form-control:focus {
   background: var(--gray-transparent);
@@ -1103,4 +1112,8 @@ input[type="radio"]:checked ~ label {
 /*----------------------Blog-------------*/
 #blog .card-text {
   font-size: 18px;
+}
+/*----------------Modal------------*/
+.modal-content{
+  background-color: var(--dark-blue) !important;
 }

@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
+import Image from "next/image"
 
 type IProps = {
-  backgroundImage?: string;
-  titleForm?: string | undefined;
-};
+  backgroundImage?: string
+  titleForm?: string | undefined
+}
 
 export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   const [formData, setFormData] = useState<{ [key: string]: string }>({
@@ -74,7 +75,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
             ></input>
             <h1
               className=" fs-2 text-left fst-italic"
-              style={{ marginBottom: "30px" }}
+              style={{ marginBottom: '30px' }}
             >
               {titleForm}
               <div className="line "></div>
@@ -201,7 +202,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Acept Our{" "}
+                    Accept Our{' '}
                     <Link
                       href="/privacy"
                       target="_blank"
@@ -228,13 +229,13 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
         </div>
         <div className="md-w-50 w-100">
           <div className="position-relative h-100">
-            <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
-              <img
+            <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+              <Image
                 className="w-100 h-100"
                 style={{
-                  objectFit: "cover",
+                  objectFit: 'cover'
                 }}
-                src="images/sff-fuel-card-form.jpg"
+                src={backgroundImage || '/images/sff-fuel-card-form.webp'}
                 alt="form"
               />
             </div>
@@ -242,5 +243,5 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
         </div>
       </div>
     </>
-  );
+  )
 }
