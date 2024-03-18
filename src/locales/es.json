@@ -372,25 +372,25 @@
       {
         "title": "¿Cuánto se tarda en abrir una cuenta?",
         "descripcion": "La apertura de una cuenta suele tardar entre 1 y 2 días laborables, una vez que se ha proporcionado y verificado toda la documentación necesaria.",
-        " icon": "/images/sff-acr-user.svg",
+        "icon": "/images/sff-acr-user.svg",
         "eventKey": 1
       },
       {
         "title": "¿Cuánto tarda en procesarse el pago de las facturas?",
         "descripcion": "¿Cuánto tarda en procesarse el pago de las facturas?",
-        " icon": "/images/sff-acr-dollar.svg",
+        "icon": "/images/sff-acr-dollar.svg",
         "eventKey": 2
       },
       {
         "title": "¿Cómo presento mis facturas?",
         "descripcion": "Puede enviar sus facturas por correo electrónico a invoices@smartfleetfunding.com. Asegúrate de incluir todos los datos y documentos necesarios en un formato legible. (Así se hace)",
-        " icon": "/images/sff-acr-book.svg",
+        "icon": "/images/sff-acr-book.svg",
         "eventKey": 3
       },
       {
         "title": "¿Cuál es la tarifa típica por factura y qué ventajas obtengo por pagar esa tarifa?",
         "descripcion": "La tarifa típica por factura depende de los detalles específicos de su acuerdo. Esta tarifa cubre el coste de los servicios de factoring y le garantiza que recibirá el pago puntualmente. Además, al pagar esta comisión, usted se beneficia de un flujo de caja más ágil, una carga administrativa reducida al eliminar el cobro de sus cuentas por cobrar, la recepción y aplicación de los pagos, la revisión y gestión eficaz de la antigüedad de sus cuentas, la elaboración de informes de crédito sobre sus clientes potenciales y muchas otras actividades cotidianas relacionadas con el funcionamiento. Nosotros gestionamos y usted se centra en hacer crecer su negocio.",
-        " icon": "/images/sff-acr-hand.svg",
+        "icon": "/images/sff-acr-hand.svg",
         "eventKey": 4
       }
     ],

@@ -2,8 +2,11 @@ import Image from 'next/image'
 import { Container, Row } from 'react-bootstrap'
 import Dropdown from 'react-bootstrap/Dropdown'
 import { useI18nProvider } from '@/context/I18nProvider'
+
 export default function HelpYou() {
   const { t } = useI18nProvider()
+  
+
   return (
     <>
       <Container className="mt-6 pt-5 font-montserrat">
@@ -44,11 +47,11 @@ export default function HelpYou() {
               </div>
               <Dropdown className="row mx-3 flex-column d-lg-none">
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
-                  <h5 className="card-title fs-6 text-start fw-bold" style={{ zIndex: '1', wordWrap: 'break-word' }}>{section.title}</h5>
+                  <h5 className="card-title text-wrap fs-6 text-start fw-bold" style={{ zIndex: '1', wordWrap: 'break-word' }}>{section.title}</h5>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  {section.details.map((detail, idx) => (
+                  {section.details.map((detail:any, idx: number) => (
                     <Dropdown.Item key={idx} href="#/action-1">
                       <div className={`d-flex mb-4 lh-sm align-items-center gap-2 ${idx !== section.details.length - 1 ? 'line-programs' : ''}`}>
                         <Image
