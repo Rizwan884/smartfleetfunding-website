@@ -1,23 +1,58 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { FormEvent } from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+
 type IProps = {
   backgroundImage?: string
   titleForm?: string | undefined
 }
 
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    const formData = new FormData(event.currentTarget)
-    await fetch(
-      'https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false',
-      {
-        method: 'POST',
-        body: formData
+  const [formData, setFormData] = useState<{ [key: string]: string }>({
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    message: "",
+  });
+
+  // Function to handle form submission
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch("/api/submitForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        console.log("response status: " + response.status);
+      } else {
+        console.error("Failed to submit form", response);
       }
-    )
-  }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
+  // Function to handle input changes
+  const handleInputChange = (
+    event:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    // Update form data state with new value
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
   return (
     <>
       <div className="container d-flex flex-column flex-md-row mp-contact font-montserrat ">
@@ -87,7 +122,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         </div>
 
         <div className="md-w-50 w-100  bg-dark-blue text-white">
-          <form onSubmit={onSubmit} id="form" className="m-3rem">
+          <form onSubmit={handleSubmit} id="form" className="m-3rem">
             <input
               id="form-name"
               name="form-name"
@@ -108,6 +143,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   required
                   placeholder="Full Name"
                 ></input>
@@ -118,6 +155,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   required
                   placeholder="Your E-Mail"
                 ></input>
@@ -130,6 +169,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="company"
                   name="company"
+                  value={formData.company}
+                  onChange={handleInputChange}
                   required
                   placeholder="Company Name"
                 ></input>
@@ -140,6 +181,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="phone"
                   name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   required
                   placeholder="Phone"
                 ></input>
@@ -150,6 +193,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                 className="form-control bg-grey-transparent text-white"
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleInputChange}
                 required
                 rows={3}
                 placeholder="Description"
