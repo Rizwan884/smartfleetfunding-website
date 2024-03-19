@@ -623,138 +623,346 @@
         "icon": "/images/sff-fb-check.svg"
       },
       {
-        "title": "Atraer a los transportistas",
-        "descripcion": " el perfil adecuado",
+        "title": "Attracting carriers",
+        "descripcion": " with the right profile",
         "icon": "/images/sff-fb-check.svg"
       },
       {
-        "title": "Haz que",
-        "descripcion": " negocio más rentable",
+        "title": "Make your",
+        "descripcion": " businesses more profitable",
         "icon": "/images/sff-fb-check.svg"
       }
     ],
     "needstwo": [
       {
-        "title": "Acceda a",
-        "descripcion": " al capital inmediato",
+        "title": "Access",
+        "descripcion": " to immediate capital ",
         "icon": "/images/sff-fb-check.svg"
       },
       {
-        "title": "Acelerar las cuentas",
-        "descripcion": " ciclo de cobro",
+        "title": "Accelerate accountss",
+        "descripcion": " receivable cycle",
         "icon": "/images/sff-fb-check.svg"
       },
       {
-        "title": "Fortalezca",
-        "descripcion": " asociaciones",
+        "title": "Strengthen",
+        "descripcion": " partnerships",
         "icon": "/images/sff-fb-check.svg"
       }
     ],
-    "needsbutton": "Hablemos",
-    "needsbuttontwo": "Programar una reunión",
-    "needsfinaltext": "¿Y si tuvieras más tiempo libre para",
-    "needsfinaltextstrong": "conseguir más clientes y transportistas?",
-    "programtitle": "Sus resultados al unirse a nuestro programa de agentes de carga",
-    "programtitleweb": "Sus resultados al unirse a nuestro",
-    "programtitlewebbreak": " programa de agentes de carga",
+    "needsbutton": "Let's talk",
+    "needsbuttontwo": "Schedule a meeting",
+    "needsfinaltext": "What if you had more free time to",
+    "needsfinaltextstrong": "get more clients and carriers?",
+    "programtitle": "Your outcomes by joining our Freight Forwarder Program",
+    "programtitleweb": "Your outcomes by joining our",
+    "programtitlewebbreak": " Freight Forwarder Program",
     "programs": [
       {
-        "title": "Tiempo adicional para centrarse en su actividad principal.",
+        "title": "Additional time to focus on your core business.",
         "items": [
-          "Minimizar o incluso eliminar la dedicación de su empresa a las Cuentas por Cobrar y Cuentas por Pagar.",
-          "Disminuir el número de llamadas de seguimiento para cobrar y las llamadas entrantes de transportistas y empresas de factoring sobre sus pagos."
+          "Minimize or even eliminate your company's dedication to Accounts Receivable and Accounts Payable.",
+          "Decrease the number of follow-up calls to collect and incoming calls from carriers and factoring companies about their payments."
         ],
         "icon": "/images/sff-fb-arrow-right.svg"
       },
       {
-        "title": "Acceso a costes reducidos de capital y explotación.",
+        "title": "Access to reduced costs of capital & operation.",
         "items": [],
         "icon": "/images/sff-fb-arrow-right.svg"
       },
       {
-        "title": "Posicione su empresa al mismo nivel que los mayores brokers de Norteamérica ofreciendo Pagos Rápidos.",
+        "title": "Position your company at the same level as the biggest brokers in North America by offering Fast Payouts.",
         "items": [],
         "icon": "/images/sff-fb-arrow-right.svg"
       },
       {
-        "title": "Más transportistas deseando trabajar para usted.",
+        "title": "More carriers wishing to work for you.",
         "items": [],
         "icon": "/images/sff-fb-arrow-right.svg"
       }
     ],
     "provide": [
       {
-        "title": "Para ti",
+        "title": "For you",
         "items": [
-          "Acceso instantáneo a sus beneficios (Factura del cliente menos Factura del transportista.)",
-          "Tranquilidad al agilizar su PA a los transportistas.",
-          "Pago rápido a sus transportistas (12 horas laborables.)",
-          "Es hora de que se centre en hacer crecer su negocio dejando que nosotros nos encarguemos de sus cuentas por cobrar."
+          "Instant access to your profits (Customer invoice less Carrier invoice).",
+          "Peace of mind by streamlining your PA to carriers.",
+          "Quick payment to your carriers (12 business hours).",
+          "Time to focus on growing your business by letting us handle your accounts receivable."
         ],
         "icon": "/images/sff-fb-arrow-right-blue.svg"
       },
       {
-        "title": "Para sus transportistas",
+        "title": "For your carriers",
         "items": [
-          "Acceso a capital inmediato para sus necesidades de tesorería.",
-          "Eficacia al eliminarles la carga del cobro de facturas y el seguimiento.",
-          "Acceso a descuentos y programas de pago en proveedores clave porque trabajan con usted."
+          "Access to immediate capital for your cash flow needs.",
+          "Efficiency by taking away their burden of invoice collection and follow-ups.",
+          "Access to discounts and payment programs at key suppliers because they work with you."
         ],
         "icon": "/images/sff-fb-arrow-right-blue.svg"
       }
     ],
-    "providetitle": "Lo que ofrecemos",
+    "providetitle": "What we provide",
     "helpyou": {
-      "title": "Cómo le ayudamos",
+      "title": "How we help you",
       "image": "/images/sff-fb-rule.svg",
       "items": [
         {
-          "title": "Atracción y retención",
+          "title": "On Attraction & Retention",
           "details": [
             {
               "icon": "/images/sff-fb-arrow-right.svg",
-              "text": "Ser más atractivos para los transportistas."
+              "text": "Becoming more attractive to carriers."
             },
             {
               "icon": "/images/sff-fb-arrow-right.svg",
-              "text": "Los transportistas no se preocuparán por su liquidez para operar."
+              "text": "Carriers won't worry about their cash flow to operate."
             },
             {
               "icon": "/images/sff-fb-arrow-right.svg",
-              "text": "Los transportistas no tendrán que hacer llamadas de cobro."
+              "text": "Carriers won't need to make collection calls."
             }
           ]
         },
         {
-          "title": "Gestiona necesidades AR/AP",
+          "title": "Handling AR/AP Needs",
           "details": [
             {
               "icon": "/images/sff-fb-arrow-right.svg",
-              "text": "Recibir llamadas de cobro de transportistas y otros cobradores de deudas."
+              "text": "Receive collection calls from carriers and other debt collectors."
             },
             {
               "icon": "/images/sff-fb-arrow-right.svg",
-              "text": "Realización de llamadas de cobro a clientes."
+              "text": "Making collection calls to clients."
             },
             {
               "icon": "/images/sff-fb-arrow-right.svg",
-              "text": "Gestión de la documentación AR/AP."
+              "text": "Handling  AR/AP documentation."
             },
             {
               "icon": "/images/sff-fb-arrow-right.svg",
-              "text": "Manténgase al tanto de la tesorería de la empresa."
+              "text": "Stay on top of the company's cash flow."
             }
           ]
         }
       ]
     },
-    "formfullname": "Nombre Completo",
-    "formemail": "Tu email",
-    "formcompany": "Empresa",
-    "formphone": "Telefono",
-    "formmessage": "¿Cómo podemos ayudarle?",
-    "formcheck": "Acepte Nuestra",
-    "formbreak": " política de privacidad",
-    "formbutton": "ENVIAR"
+    "formfullname": "Full Name",
+    "formemail": "E-mail address",
+    "formcompany": "Company",
+    "formphone": "Phone",
+    "formmessage": "How can we help you?",
+    "formcheck": "Accept Our",
+    "formbreak": " Privacy Policy",
+    "formbutton": "SEND"
+  },
+  "faqs": {
+    "accordionInstaItems": [
+      {
+        "title": "What is Freight Factoring?",
+        "descriptions": [
+          "It is a financial service designed specifically for transportation and trucking companies. It allows these companies to convert their unpaid freight invoices into immediate working capital. Smart Fleet Funding purchases these invoices at a discounted rate, allowing you to maintain cash flow and focus on growing your business."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 1,
+        "width": 18,
+        "height": 26
+      },
+      {
+        "title": "How does factoring work?",
+        "descriptions": [
+          "With Smart Fleet Funding, it's easy! Once you register and your account is approved, send us an invoice, your signed bill of lading, and rate confirmation once you deliver a load by uploading them through your client portal or our mobile app. Once we receive them, up to 98% of the funds involved will be transferred to your bank account within 24 hours of submission."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 2
+      },
+      {
+        "title": "Who can benefit from Smart Fleet Funding's factoring services?",
+        "descriptions": [
+          "Our services are designed for small and medium-sized transportation and trucking companies, owner-operators, and transportation businesses. If you generate invoices for reliable carriers or brokers, we can help stabilize cash flow and facilitate growth."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 3
+      },
+      {
+        "title": "What sets Smart Fleet Funding apart from other factoring companies?",
+        "descriptions": [
+          "Smart Fleet Funding stands out for its personalized service, competitive rates, and deep understanding of the unique challenges faced by transportation and trucking companies. Our team is committed to providing flexible solutions that meet the specific needs of your business."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 4
+      },
+      {
+        "title": "Is factoring available only for companies with a certain level of revenue?",
+        "descriptions": [
+          "Factoring is suitable for companies of various sizes, from startups to large enterprises. It's more about the creditworthiness of your customers."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 5
+      },
+      {
+        "title": "Will factoring affect my relationship with my customers?",
+        "descriptions": [
+          "Factoring can improve customer relationships by ensuring that you have the resources to deliver products or services on time."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 6
+      },
+      {
+        "title": "What are the criteria to qualify for factoring services?",
+        "descriptions": [
+          "Typically, factoring companies evaluate the creditworthiness of your customers and the quality of your invoices."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 7
+      },
+      {
+        "title": "Can factoring help with cash flow issues?",
+        "descriptions": [
+          "Absolutely. Factoring provides an immediate cash injection, which can help companies cover operating expenses, payroll, and other financial obligations."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 8
+      },
+      {
+        "title": "Are there long-term contracts or hidden fees?",
+        "descriptions": [
+          "We believe in transparency. Smart Fleet Funding offers flexible terms with no hidden fees. We work with you to create a factoring agreement that meets your business requirements. You're not bound to long-term contracts, giving you the freedom to invoice as much or as little as you need."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 9
+      },
+      {
+        "title": "How does recourse and non-recourse factoring differ, and which is more suitable for my business?",
+        "descriptions": [
+          "Recourse factoring means that the company is responsible for any unpaid invoices, while non-recourse factoring means that the factoring company assumes the risk of non-payment. The choice depends on your risk tolerance and the creditworthiness of your customers."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 10
+      },
+      {
+        "title": "What steps do factoring companies take to ensure the creditworthiness of my customers before approving an invoice for funding?",
+        "descriptions": [
+          "Factoring companies conduct credit checks on your customers to assess their ability to pay. This helps determine the advance rate and reduces the risk of non-payment."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 11
+      },
+      {
+        "title": "How does the factoring process impact customer relationships and their perception of my business?",
+        "descriptions": [
+          "Factoring is a common financial practice, and many businesses see it as a sign of stability. It ensures that you have the resources to fulfill orders in a timely manner, which can enhance your reputation."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 12
+      },
+      {
+        "title": "What payment methods do you accept for factoring transactions?",
+        "descriptions": [
+          "Currently, we only accept payments via checks and direct deposits (EFT-ACH). This ensures a secure and efficient transaction process."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 13
+      },
+      {
+        "title": "In what currencies can payments be made?",
+        "descriptions": [
+          "We have accounts in both Canadian dollars (CAD) and US dollars (USD) to provide flexible payment options that meet the needs of our clients."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 14
+      },
+      {
+        "title": "Are there additional services or resources provided by factoring companies to help me manage my cash flow more effectively?",
+        "descriptions": [
+          "Yes, in addition to our factoring services, Smart Fleet Funding offers a variety of complementary resources and services to support your business:",
+          "Fuel Card Program: We provide access to a fuel card program that offers discounts on fuel purchases at major truck stops nationwide. This helps you save money on one of your most significant operating expenses.",
+          "Insurance Assistance: We can connect you with reputable insurance providers specializing in transportation commercial insurance. This ensures that you have the coverage you need to operate your business safely and comply with industry regulations.",
+          "Customer Support: Our dedicated customer support team is available to assist you with any questions or concerns you may have. Whether it's about your factoring account, fuel card, or insurance, we're here to help.",
+          "Industry Expertise: Our team has extensive knowledge of the transportation industry and can provide valuable insights and advice on best practices for managing cash flow, optimizing routes, and improving operational efficiency."
+        ],
+        "icon": "/images/sff-search-arrow.svg",
+        "eventKey": 15
+      }
+    ],
+    "faqtitle": "Some questions"
+  },
+  "about": {
+    "pagetitle": "About",
+    "pagestrong": "Us",
+    "knowtitle": "Know more about",
+    "knowstrong": "Smart Fleet Funding",
+    "cards": [
+      {
+        "title": "INNOVATION",
+        "text": "FES - Pay",
+        "icon": "/images/fes-pay-icon.svg"
+      },
+      {
+        "title": "EXPERIENCE",
+        "text": "Over 30 years",
+        "icon": "/images/experience-icon.svg"
+      },
+      {
+        "title": "GLOBAL",
+        "text": "North America (Canadá, EE. UU., México)",
+        "icon": "/images/global-icon.svg"
+      }
+    ],
+    "cardstwo": [
+      {
+        "title": "EMPOWERMENT",
+        "text": "Helping businesses thrive",
+        "icon": "/images/empowerment-icon.svg"
+      },
+      {
+        "title": "COMMITMENT",
+        "text": "Transparency",
+        "icon": "/images/commitment-icon.svg"
+      },
+      {
+        "title": "TECHNOLOGY",
+        "text": "Integrations with key players in the industries we serve",
+        "icon": "/images/technology-icon.svg"
+      }
+    ],
+    "knowsection": [
+      {
+        "title": "Who we are",
+        "descripcion": "With over 30 years of experience in the factoring market, Smart Fleet Funding has been a key player in providing support and financing to various industries, with a particular focus on transportation.",
+        "strong": "We have a proven track record of success in managing the Instapay (FES Pay) program for leading freight agents in North America. Currently, we serve clients throughout North America."
+      },
+      {
+        "title": "Our commitment",
+        "descripcion": "At Smart Fleet Funding we've designed a system that simplifies the collection process. Our mission is to remove the complexities and delays associated with unpaid invoices turning them into immediate cash with a single click.",
+        "strong": "We understand that a steady cash-flow is crucial for any business to thrive, and we are dedicated to ensuring the success of our client's success."
+      },
+      {
+        "title": "What sets us apart",
+        "descripcion": "Our dedication to innovation and building strong customer relationships sets us apart. We prioritize financial accountability and transparency as the cornerstone of every successful business. Each client, regardless of size, receives our utmost attention.",
+        "strong": "We continually seek new ways to expedite processes, ensuring that every client feels valued and prioritized."
+      },
+      {
+        "title": "Why choose Smart Fleet Funding",
+        "descripcion": "Choosing Smart Fleet Funding means choosing a partner who invests in your success. We specialize in tailored financing solutions for trucking companies, enabling them to get paid faster and offering significant discounts to boost profitability.",
+        "strong": "With us, you're not just a customer; you're a valuable partner on the path to success."
+      }
+    ]
+  },
+  "contact": {
+    "titleform": "Let's get started!",
+    "contacttitle": "We're here to help. Let's talk",
+    "contacttitleform": "Contact us for",
+    "contacttitlestrong": "Fast, easy, and secure",
+    "contacttitlebreak": "funding solutions",
+    "formname": "Full Name",
+    "formemail": "Your E-mail",
+    "formcompany": "Company",
+    "formphone": "Phone",
+    "formmessage": "Description",
+    "formcheck": "Accept Our",
+    "formbreak": " privacy policy",
+    "formbutton": "SEND"
   }
 }
