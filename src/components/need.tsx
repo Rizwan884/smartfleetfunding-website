@@ -29,7 +29,7 @@ export default function Needs() {
               >
                 <Card.Body className="text-start">
                   <Image alt="icons" src={icon} className="w-30px mb-4"></Image>
-                  <Card.Text className="fs-5 lh-sm mt-3">
+                  <Card.Text className="fs-5 lh-sm mt-1">
                     <strong className="text-green">{title}</strong>
                     {descripcion}
                   </Card.Text>

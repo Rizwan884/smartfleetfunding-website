@@ -25,34 +25,736 @@
         "shortDescription": "Our tailored factoring solutions.",
         "regular": "Our tailored factoring solutions swiftly optimize your cash flow, ",
         "strong": "ensuring rapid growth in your business's profitability.",
-        "icon": "/images/sff-clock-back.svg"
+        "icon": "/images/sff-clock-front.svg",
+        "iconback": "/images/sff-clock-back.svg"
       },
       {
         "title": "EASY",
-        "shortDescription":"",
+        "shortDescription": "We simplify the accounts payable",
         "regular": "We simplify the Accounts Payable and Receivable process, ",
         "strong": "making it a breeze for you to focus on business growth.",
-        "icon": ""
+        "icon": "/images/sff-easy-front.svg",
+        "iconback": "/images/sff-easy-back.svg"
       },
       {
         "title": "SECURE",
-        "shortDescription":"",
+        "shortDescription": "The carries and Freight companies",
         "regular": "The carriers and freight companies receive payment securely in as little as 12 hours, ",
         "strong": "cultivating robust and trusting partnerships.",
-        "icon": ""
+        "icon": "/images/sff-shield-front.svg",
+        "iconback": "/images/sff-shield-back.svg"
+      }
+    ],
+    "carinfo": [
+      {
+        "title": "Full Fact",
+        "sections": [
+          {
+            "heading": "Premium factoring -",
+            "items": [
+              "· Same day funding."
+            ]
+          },
+          {
+            "heading": "We Address Your Challenges -",
+            "items": [
+              "· From communication issues to",
+              " confusing fees, we've got you covered."
+            ]
+          },
+          {
+            "heading": "How We Assist -",
+            "items": [
+              "· Always accessible, transparent, and",
+              " rapid payments for smooth operations."
+            ]
+          },
+          {
+            "heading": "Connect with Our Advisors -",
+            "items": [
+              "· You call! We answer!"
+            ]
+          }
+        ],
+        "icon": "/images/sff-point-front.svg",
+        "iconback": "/images/sff-factura.svg"
+      },
+      {
+        "title": "FES Pay/InstaPay",
+        "sections": [
+          {
+            "heading": "Fast, Easy and Secure Payment -",
+            "items": [
+              "· Guarantees payment in 12 business",
+              "hours through a trusted broker alliance."
+            ]
+          },
+          {
+            "heading": "Benefits -",
+            "items": [
+              "· Optimized Cash Flow.",
+              "· High Cash Advanced.",
+              "· No Originals Needed.",
+              "· 24/7 Account Access.",
+              "· Expert AR Team.",
+              "· No contract."
+            ]
+          },
+          {
+            "heading": " Support -",
+            "items": [
+              "· Dedicated account executive and 24/7",
+              "availability information."
+            ]
+          },
+          {
+            "heading": " Getting Started -",
+            "items": [
+              "· Seamless for carriers with partnered",
+              "brokers."
+            ]
+          }
+        ],
+        "icon": "/images/sff-point-front.svg",
+        "iconback": "/images/sff-cash.svg"
+      },
+      {
+        "title": "Smart Fuel Card",
+        "sections": [
+          {
+            "heading": "Smart Fuel card -",
+            "items": [
+              "· Discounted fuel cards for major truck",
+              "stops.",
+              "· Substantial fuel savings in USA and",
+              "Canada.",
+              "· Competitive edge for trucking",
+              "companies.",
+              "· Potential monthly savings*",
+              " (*varies by fleet size and fuel use)."
+            ]
+          },
+          {
+            "heading": "Smart Fuel Advance -",
+            "items": [
+              "· Alongside freight bill factoring Provides",
+              "up to 50% of load value for fuel expenses.",
+              "· Verification required for load booking",
+              "and pickup.",
+              "· Funds via direct deposit or loaded on",
+              "fuel card.",
+              "· Additional advance available post-",
+              "delivery."
+            ]
+          }
+        ],
+        "icon": "/images/sff-point-front.svg",
+        "iconback": "/images/sff-gas.svg"
+      }
+    ],
+    "headercardinfo": [
+      {
+        "header": "Release the money from your",
+        "descripcion": "outstanding invoices"
+      }
+    ],
+    "sectionvideo": [
+      {
+        "title": "Explore the power of factoring with Smart Fleet Funding!",
+        "descripcion": "Watch this concise video to understand how your invoices can be converted into immediate cash, allowing you to focus on what you do best: delivering goods.",
+        "strong": "  With over 30 years of experience, we're here to guide you every step of the way."
+      }
+    ],
+    "footer": [
+      {
+        "home": "HOME",
+        "services": "SERVICES",
+        "fullfact": "Full Fact",
+        "instapay": "Instapay",
+        "freightbroke": " Freight Broke",
+        "fuelcard": "Fuel Card",
+        "faq": "FAQ",
+        "aboutus": "ABOUT US",
+        "contact": "CONTACT",
+        "curious": "CURIOUS TO LEARN MORE?"
+      }
+    ],
+    "sectioninfo": [
+      {
+        "title": "Interested in learning more? Give us a call today.",
+        "descripcion": "We are here to answer all your questions and",
+        "linebreak": "and help you find the best solutions for your",
+        "breaktext": "trucking business.",
+        "button": "Let's talk"
+      }
+    ],
+    "slider": [
+      {
+        "title": "Maximize your company's potential",
+        "strong": "with Smart Fleet Funding",
+        "button": "GET STARTED",
+        "image": "/images/sff-truck.webp",
+        "imagemobile": "/images/sff-truck-mobile.webp"
+      },
+      {
+        "title": "Your success,",
+        "strong": "Our story",
+        "button": " Take the first step",
+        "image": "/images/sff-truck-logistic.webp",
+        "imagemobile": "/images/sff-truck-logistic-mobile.webp"
+      },
+      {
+        "title": "Let us be part of your",
+        "strong": "success story",
+        "button": "CASH NOW",
+        "image": "/images/sff-succes-story.webp",
+        "imagemobile": "/images/sff-succes-story-mobile.webp"
       }
     ]
   },
-  "instapay": {
-    "accordionItems" : [
+  "fullcard": {
+    "header": [
       {
-        "title": "What Are the Conditions for Instapay?",
-        "items": [
-          "The FB that you are hauling for must be a member of our Instapay Network.",
-          "Load has to be completed and paperwork has to be submmited to instapay@smartfleetfunding.com instead of the Freight Broker."
+        "title": "PREMIUM FACTORING SERVICES",
+        "descripcion": "Same day payment* with preferential rates and personalized service,",
+        "strong": "no penalty clauses and no minimum amount."
+      }
+    ],
+    "carruzel": [
+      {
+        "title": "Does this sound familiar to you?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "“I call my factoring company and",
+        "strong": "they don't answer my phone.”"
+      },
+      {
+        "title": "Does this sound familiar to you?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "“I could get better rates",
+        "strong": "but penalty clauses or a contract make this difficult.”"
+      },
+      {
+        "title": "Does this sound familiar to you?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "I am tired of collecting and paying bills",
+        "strong": "to have cash flow”"
+      },
+      {
+        "title": "Does this sound familiar to you?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "I feel frustrated because some clients",
+        "strong": "do not pay on time and I need immediate cashflow to operate”"
+      },
+      {
+        "title": "Does this sound familiar to you?",
+        "icon": "/images/sff-ff-icon.svg",
+        "descripcion": "“I don't understand",
+        "strong": " what my factor charges me and all these hidden costs.”"
+      }
+    ],
+    "helptittle": "We help you by",
+    "helpcards": [
+      {
+        "icon": "/images/sff-hp-1.svg",
+        "strong": "Always being by your side:",
+        "descripcion": "you call, we answer!"
+      },
+      {
+        "icon": "/images/sff-hp-2.svg",
+        "strong": "Transparency and honesty:",
+        "descripcion": "Our lockdown clause is the service, simple flat fee, no penalties."
+      },
+      {
+        "icon": "/images/sff-hp-3.svg",
+        "strong": "Money in your pocket instantly:",
+        "descripcion": "At lower rates: receive your money for your loads in less than 12 business hours via direct deposit/ACH."
+      },
+      {
+        "icon": "/images/sff-hp-4.svg",
+        "strong": "More time for yourself:",
+        "descripcion": "Stop worrying about collecting from your brokers and brokers, and shippers and reduce your short payments, charge-backs and headaches."
+      },
+      {
+        "icon": "/images/sff-hp-5.svg",
+        "strong": "Empowering you with control:",
+        "descripcion": "online access to valuable reports and information about your loads."
+      },
+      {
+        "icon": "/images/sff-hp-6.svg",
+        "strong": "Smooth operations:",
+        "descripcion": "Monitor all the loads in your portfolio. If any issues require your attention, we promptly inform you."
+      }
+    ],
+    "helpcardstwo": [
+      {
+        "icon": "/images/sff-hp-7.svg",
+        "strong": "Informed decisions about your prospects:",
+        "descripcion": "Free credit checks."
+      },
+      {
+        "icon": "/images/sff-hp-8.svg",
+        "strong": "Personalized financial guidance:",
+        "descripcion": "Our account executives offer tailored financial solutions for your carrier bussiness."
+      }
+    ],
+    "form": [
+      {
+        "name": "Full Name",
+        "email": "Your E-mail",
+        "company": "Company Name",
+        "phone": "Phone",
+        "descripcion": "Description",
+        "check": "Accept our ",
+        "strong": " Privacy policy",
+        "button": "SEND"
+      }
+    ],
+    "testimonials": [
+      {
+        "title": "Good customer service and fast payment.",
+        "descripcion": " Good customer service and fast payment processing",
+        "author": "Sdl Freight Systems - CAD",
+        "position": "Date of experience: November 20, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      },
+      {
+        "title": "PAYMENT",
+        "descripcion": " TIMELY PAYMENT AT ALL TIMES",
+        "author": "Net Freight System Inc – CAD",
+        "position": "Date of experience: November 01, 2023",
+        "image": "/images/sff-ttm-keneth.svg"
+      },
+      {
+        "title": "Piola made this experience fantastic.",
+        "descripcion": "Great",
+        "author": "DS cooperation",
+        "position": "Date of experience: December 20, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      },
+      {
+        "title": "Great",
+        "descripcion": "Great, thank you.",
+        "author": "Bronpe LLC",
+        "position": "Date of experience: January 11, 2024",
+        "image": "/images/sff-ttm-william.svg"
+      },
+      {
+        "title": "They are quite quick to pay",
+        "descripcion": "They are quite fast in the payment, totally recommendable.",
+        "author": "Tata Logistics Ltd",
+        "position": "Date of experience: November 22, 2023",
+        "image": "/images/sff-ttm-keneth.svg"
+      },
+      {
+        "title": "Have a very fast response for payment",
+        "descripcion": "",
+        "author": "Supersonic Transport Ltd",
+        "position": "Date of experience: December 18, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      },
+      {
+        "title": "Have a very fast response for payment",
+        "descripcion": "GOOD JOB FOR TIMELY PAYMENT. NEED TO DECREASE THE PERCENTAGE TO LOWER THE RATE.",
+        "author": "Masab Logistics Inc – CAD",
+        "position": "Date of experience: November 13, 2023",
+        "image": "/images/sff-ttm-keneth.svg"
+      },
+      {
+        "title": "Good company, fast payments",
+        "descripcion": " Fast payments",
+        "author": "Pr Transport",
+        "position": "Date of experience: January 11, 2024",
+        "image": "/images/sff-ttm-keneth.svg"
+      },
+      {
+        "title": "I WOULD USE THIS PAYMENT SYSTEM AGAIN",
+        "descripcion": "I submitted all the necessary documentation on a Sunday. On Monday morning I received an email informing me that the documentation had been accepted. On Tuesday around 3pm the funds arrived in my account. Great job Great results",
+        "author": "C-Level Trucking LLC",
+        "position": "Date of experience: November 07, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      },
+      {
+        "title": "Fast and easy",
+        "descripcion": "We have had many problems with TAFS and have been very pleased and surprised with Smart Fleet's prompt service. We appreciate the clear instructions, communication and prompt payment.",
+        "author": "Anonymous Hot Shot",
+        "position": "Date of experience: November 16, 2023",
+        "image": "/images/sff-ttm-mark.svg"
+      }
+    ],
+    "accordionItems": [
+      {
+        "title": "How long does it take to open an account?",
+        "descripcion": "Opening an account usually takes 1 to 2 business days, once all the necessary documentation has been provided and verified.",
+        "icon": "/images/sff-acr-user.svg",
+        "eventKey": 1
+      },
+      {
+        "title": "How long does it take for invoice payment to be processed?",
+        "descripcion": "Our aim is same-day funding, which means we process and payout your invoices on the day of receipt. However, depending on invoice confirmation and credit review, it may take up to 24 hours or longer",
+        "icon": "/images/sff-acr-dollar.svg",
+        "eventKey": 2
+      },
+      {
+        "title": "How do I submit my invoices?",
+        "descripcion": "You can email your invoices to invoices@smartfleetfunding.com. Be sure to include all the necessary data and documents in a readable format ( This is how).",
+        "icon": "/images/sff-acr-book.svg",
+        "eventKey": 3
+      },
+      {
+        "title": "What is the typical rate per invoice and what benefits do I receive for paying that rate?",
+        "descripcion": "The typical fee per invoice depends on the specific details of your agreement. This fee covers the cost of factoring services and ensures that you receive timely payment. In addition, by paying this fee, you benefit from streamlined cash flow, reduced administrative burden by eliminating the collection of your receivables, receipt and application of payments, efficient review and management of the aging of your accounts, credit reporting on your leads, and many other day-to-day operational activities. We manage and you focus on growing your business.",
+        "icon": "/images/sff-acr-hand.svg",
+        "eventKey": 4
+      }
+    ],
+    "titleform": "Let's get started!",
+    "pagetittle": "Full",
+    "pagestrong": "Factoring Solution"
+  },
+  "instapay": {
+    "pagetittle": "Fast, Easy and",
+    "pagestrong": "Secure Payment",
+    "welcometittle": "WELCOME TO INSTAPAY",
+    "welcomedescripcion": "Accelerated Payments for Drivers At Smart Fleet Funding, we understand that every mile counts. That's why we've introduced Instapay, a unique program designed with drivers like you in mind. Instapay ensures faster payment, giving you the financial flexibility you need for a smoother ride.",
+    "stepstittle": "How it works",
+    "steps": [
+      {
+        "title": "Swift payment process",
+        "text": "With Instapay, you will receive your hard-earned money in just 12 business hours. No more waiting, no more delays, no more contracts, no more hidden fees."
+      },
+      {
+        "title": "Streamlined verification",
+        "text": "the partnership beetween Smart Fleet Funding and a select group of freight brokers means a hassle-free process. Just submit your invoices and we'll take care of the rest. It's that simple."
+      },
+      {
+        "title": "Fast and secure",
+        "text": "Instapay is not only quick, but also secure. Your funds are deposited directly into your bank account, ensuring a safe and seamless transaction."
+      }
+    ],
+    "Benefits": [
+      {
+        "tittle": "Cash flow control",
+        "descripcion": "Gain control over your finances ensuring you have the resources you need for fuel, maintenance and more, exactly when you need them.",
+        "icon": "/images/sff-bff-dollar.svg"
+      },
+      {
+        "tittle": "No holdbacks",
+        "descripcion": "We advance 100% minus the Instapay fee.",
+        "icon": "/images/sff-bff-hand.svg"
+      }
+    ],
+    "Benefitstwo": [
+      {
+        "tittle": "Access anytime, Anywhere",
+        "descripcion": "Instapay gives you the freedom to access your funds from wherever your travels take you.",
+        "icon": "/images/sff-bff-check.svg"
+      },
+      {
+        "tittle": "Professional support",
+        "descripcion": "Our Accounts Receivable team is dedicated to working on your behalf, ensuring you receive the full benefits of our service.",
+        "icon": "/images/sff-bff-earphones.svg"
+      }
+    ],
+    "benefitstitle": "Benefits for drivers",
+    "form": [
+      {
+        "title": " Contact us today and let us get you on the road to faster, more secure payments with Instapay.",
+        "name": "Full Name",
+        "email": "Your E-mail",
+        "company": "Company Name",
+        "phone": "Phone",
+        "broker": "Freight broker",
+        "comments": "Comments",
+        "check": "Accept our ",
+        "strong": " Privacy policy",
+        "button": "SEND"
+      }
+    ],
+    "accordiontittle": "List of questions that may arise",
+    "accordionItems": [
+      {
+        "title": "What are the conditions for Instapay?",
+        "descripcion": [
+          "The FB you are transporting for must be a member of our Instapay Network.",
+          "The load should be completed and the paperwork sent to instapay@smartfleetfunding.com instead of the freight broker."
         ],
         "eventKey": 1
+      },
+      {
+        "title": "Are there any hidden fees?",
+        "descripcion": [
+          " Absolutely not. Instapay operates on a transparent flat fee structure, ensuring that you know exactly what to expect."
+        ],
+        "eventKey": 2
+      },
+      {
+        "title": "What documents do I need to submit?",
+        "descripcion": [
+          "Submit invoice, confirmation BOL property signed  and accessorialls or lumper receipts."
+        ],
+        "eventKey": 3
+      },
+      {
+        "title": "How is the service personalized?",
+        "descripcion": [
+          " Each driver is assigned a dedicated account executive, ensuring that they receive the personalized support they deserve."
+        ],
+        "eventKey": 4
+      },
+      {
+        "title": "Do I need to switch companies in order to benefit from Instapay?",
+        "descripcion": [
+          "Require letter of release for the particular freight forwarder participating in the instapay program."
+        ],
+        "eventKey": 5
+      },
+      {
+        "title": "Would I have a credit limit?",
+        "descripcion": [
+          "No, with the participating freight forwarder there are no credit limits."
+        ],
+        "eventKey": 6
       }
     ]
+  },
+  "fuelcard": {
+    "pagetittle": "Over The Road",
+    "pagetittlestrong": "Fuel Card",
+    "road": [
+      {
+        "title": "The Smart Fleet Funding Over The Road Fuel Card is a fleet refueling program offered exclusively to Smart Fleet Funding customers.",
+        "descripcion": "It helps your customers control fuel spending in today's volatile fuel market with negotiated discounts, proactive notices, fuel management, and advanced reporting tools, As a Smart Fleet Funding customer when you use our Fuel Card instead of your credit or debit card, you will get incredible savings on your fuel and maintenance purchases with:"
+      }
+    ],
+    "cardsfuel": [
+      {
+        "icon": "/images/sff-transaction-fuel.svg",
+        "strong": "Low transaction fees on your fuel and maintenance purchases in Canada and the U.S."
+      },
+      {
+        "icon": "/images/sff-cash-price-fuel.svg",
+        "strong": "CASH PRICE at the pump every time you swipe at over 14,000 truck stops and service centers across Canada and the United States."
+      },
+      {
+        "icon": "/images/sff-fuel.svg",
+        "strong": "Significant fuel discounts at TA/Petro and over 1,200 independent and small chain locations."
+      }
+    ],
+    "fuelcardsection": [
+      {
+        "title": "Convenience",
+        "descripcion": [
+          "Accepted at over 99% of fuel locations in the U.S. and more than 1,200 locations in Canada."
+        ],
+        "eventKey": 1
+      },
+      {
+        "title": "Control",
+        "descripcion": [
+          "Control how much your drivers spend and what they buy with policy-based limits. Secure 2-party authentication through the WEX Card Control mobile app to eliminate card theft fraud."
+        ],
+        "eventKey": 2
+      },
+      {
+        "title": "Compliance",
+        "descripcion": [
+          "Controls at the point of purchase that prompt for important information necessary for fuel tax compliance and robust transaction details."
+        ],
+        "eventKey": 3
+      },
+      {
+        "title": "Cost savings",
+        "descripcion": [
+          "Cash price or less with fuel discounts at over 1,500 U.S. truck stops, fuel management and access to Cash Services, plus FREE online account management, and much more!"
+        ],
+        "eventKey": 4
+      },
+      {
+        "title": "Customer support",
+        "descripcion": [
+          "24/7/365 always available Customer Care with a language line for all."
+        ],
+        "eventKey": 5
+      }
+    ],
+    "fuelcardsectiontitle": "The Smart Fleet Funding Over The Road Fuel Card also provides you with huge benefits so you can stop worrying and start focusing on growing your business.",
+    "fuelcardsectiondescription": "*Cash price may vary by merchant location. WEX, Inc. makes no guarantee of cash price and is not responsible for variations. See complete program details.",
+    "formtitle": "Start saving with the Smart Fleet Funding fuel card!",
+    "formselectsoptions": [
+      {
+        "label": "I am considering applying for the Fuel Card",
+        "value": "1"
+      },
+      {
+        "label": "I'd like more information about the fuel card",
+        "value": "2"
+      },
+      {
+        "label": "I have questions about the Fuel Card",
+        "value": "3"
+      },
+      {
+        "label": "I'm already a Fuel Card holder and I need assistance.",
+        "value": "4"
+      },
+      {
+        "label": "I want to learn about other services offered",
+        "value": "5"
+      }
+    ],
+    "formfullname": "Full Name",
+    "formemail": "Your E-mail",
+    "formcompany": "Company Name",
+    "formphone": "Phone",
+    "formmessage": "Description",
+    "formcheck": "Acept Our",
+    "formbreak": " Privacy Policy",
+    "formbutton": "SEND"
+  },
+  "freightbroker": {
+    "pagetitle": "Freight",
+    "titlestrong": "Broker Program",
+    "titleform": "Drive profits, enhance operations Get started!",
+    "needstitle": "What you need",
+    "needs": [
+      {
+        "title": "Optimizing",
+        "descripcion": " your operations",
+        "icon": "/images/sff-fb-check.svg"
+      },
+      {
+        "title": "Atraer a los transportistas",
+        "descripcion": " el perfil adecuado",
+        "icon": "/images/sff-fb-check.svg"
+      },
+      {
+        "title": "Haz que",
+        "descripcion": " negocio más rentable",
+        "icon": "/images/sff-fb-check.svg"
+      }
+    ],
+    "needstwo": [
+      {
+        "title": "Acceda a",
+        "descripcion": " al capital inmediato",
+        "icon": "/images/sff-fb-check.svg"
+      },
+      {
+        "title": "Acelerar las cuentas",
+        "descripcion": " ciclo de cobro",
+        "icon": "/images/sff-fb-check.svg"
+      },
+      {
+        "title": "Fortalezca",
+        "descripcion": " asociaciones",
+        "icon": "/images/sff-fb-check.svg"
+      }
+    ],
+    "needsbutton": "Hablemos",
+    "needsbuttontwo": "Programar una reunión",
+    "needsfinaltext": "¿Y si tuvieras más tiempo libre para",
+    "needsfinaltextstrong": "conseguir más clientes y transportistas?",
+    "programtitle": "Sus resultados al unirse a nuestro programa de agentes de carga",
+    "programtitleweb": "Sus resultados al unirse a nuestro",
+    "programtitlewebbreak": " programa de agentes de carga",
+    "programs": [
+      {
+        "title": "Tiempo adicional para centrarse en su actividad principal.",
+        "items": [
+          "Minimizar o incluso eliminar la dedicación de su empresa a las Cuentas por Cobrar y Cuentas por Pagar.",
+          "Disminuir el número de llamadas de seguimiento para cobrar y las llamadas entrantes de transportistas y empresas de factoring sobre sus pagos."
+        ],
+        "icon": "/images/sff-fb-arrow-right.svg"
+      },
+      {
+        "title": "Acceso a costes reducidos de capital y explotación.",
+        "items": [],
+        "icon": "/images/sff-fb-arrow-right.svg"
+      },
+      {
+        "title": "Posicione su empresa al mismo nivel que los mayores brokers de Norteamérica ofreciendo Pagos Rápidos.",
+        "items": [],
+        "icon": "/images/sff-fb-arrow-right.svg"
+      },
+      {
+        "title": "Más transportistas deseando trabajar para usted.",
+        "items": [],
+        "icon": "/images/sff-fb-arrow-right.svg"
+      }
+    ],
+    "provide": [
+      {
+        "title": "Para ti",
+        "items": [
+          "Acceso instantáneo a sus beneficios (Factura del cliente menos Factura del transportista.)",
+          "Tranquilidad al agilizar su PA a los transportistas.",
+          "Pago rápido a sus transportistas (12 horas laborables.)",
+          "Es hora de que se centre en hacer crecer su negocio dejando que nosotros nos encarguemos de sus cuentas por cobrar."
+        ],
+        "icon": "/images/sff-fb-arrow-right-blue.svg"
+      },
+      {
+        "title": "Para sus transportistas",
+        "items": [
+          "Acceso a capital inmediato para sus necesidades de tesorería.",
+          "Eficacia al eliminarles la carga del cobro de facturas y el seguimiento.",
+          "Acceso a descuentos y programas de pago en proveedores clave porque trabajan con usted."
+        ],
+        "icon": "/images/sff-fb-arrow-right-blue.svg"
+      }
+    ],
+    "providetitle": "Lo que ofrecemos",
+    "helpyou": {
+      "title": "Cómo le ayudamos",
+      "image": "/images/sff-fb-rule.svg",
+      "items": [
+        {
+          "title": "Atracción y retención",
+          "details": [
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Ser más atractivos para los transportistas."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Los transportistas no se preocuparán por su liquidez para operar."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Los transportistas no tendrán que hacer llamadas de cobro."
+            }
+          ]
+        },
+        {
+          "title": "Gestiona necesidades AR/AP",
+          "details": [
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Recibir llamadas de cobro de transportistas y otros cobradores de deudas."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Realización de llamadas de cobro a clientes."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Gestión de la documentación AR/AP."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Manténgase al tanto de la tesorería de la empresa."
+            }
+          ]
+        }
+      ]
+    },
+    "formfullname": "Nombre Completo",
+    "formemail": "Tu email",
+    "formcompany": "Empresa",
+    "formphone": "Telefono",
+    "formmessage": "¿Cómo podemos ayudarle?",
+    "formcheck": "Acepte Nuestra",
+    "formbreak": " política de privacidad",
+    "formbutton": "ENVIAR"
   }
 }
