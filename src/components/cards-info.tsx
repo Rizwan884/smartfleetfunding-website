@@ -151,7 +151,7 @@ export default function Cards() {
             {t.home.carinfo.map(
               ({ title, sections, icon, iconback }: ICard, key: number) => (
                 <Col className="card-column " style={{ width: '300px' }}>
-                  <Card.Body>
+                  <Card.Body style={{fontSize: '15px', overflowY: 'auto'}} >
                     <ListGroup>
                       <ListGroup.Item className="body-list bd-box card-hb">
                         <div className="icon-cards" style={{ height: 70 }}>
