@@ -1074,9 +1074,18 @@ input[type="radio"]:checked ~ label {
   justify-content: center;
   width: 55%;
 }
-.bg-button .mt-2 {
-  margin-top: 0; 
+@media (max-width: 767px) {
+  .bg-button {
+    height: auto;
+    padding: 30px 10px;
+    width: 100%;
+  }
+  .contact_slide:nth-child(1) { 
+    margin-top: 10px;
+    margin-left: 35px;
+  }
 }
+
 /*-------Search----------*/
 .bg-search {
   background-image: url("../../../public/images/sff-search.jpg");
@@ -1085,11 +1094,6 @@ input[type="radio"]:checked ~ label {
   .hide-background-mobile {
     background-image: none;
     background-color: #e9e9e97d;
-  }
-  .bg-button {
-    height: auto;
-    padding: 30px;
-    width: 100%;
   }
 }
 .sub-line {

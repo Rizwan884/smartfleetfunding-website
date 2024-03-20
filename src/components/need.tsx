@@ -145,6 +145,10 @@ export default function Needs() {
             className="contact_slide fw-bold fs-4 me-5 my-4 d-inline-block"
             variant="btn btn-custom"
           >
+            <Image 
+            alt="icon"
+            src="/images/sff-message-button-freight-broker.svg"
+            className="me-3"/>
             Let{"'"}s Talk
           </Button>
           <Button
@@ -152,6 +156,10 @@ export default function Needs() {
             className="contact_slide fw-bold fs-4 my-4 d-inline-block"
             variant="btn btn-custom"
           >
+            <Image 
+            alt="icon"
+            src="/images/sff-user-button-freight-broker.svg"
+            className="me-3 mb-1"/>
             Schedule a meeting
           </Button>
           </div>
