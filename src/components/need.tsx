@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 
@@ -135,21 +136,25 @@ export default function Needs() {
             </Card.Body>
           </Card>
         </div>
-        <div className="mx-2 text-center">
+        <br />
+        <br />
+        <div className="mx-2 text-center mt-5 bg-button ">
+          <div className="mt-3">
           <Button
             href="tel:+18302097589"
-            className="contact_slide fw-bold fs-4 me-5 my-4 h-25 d-inline-block"
+            className="contact_slide fw-bold fs-4 me-5 my-4 d-inline-block"
             variant="btn btn-custom"
           >
             Let{"'"}s Talk
           </Button>
           <Button
             href="https://outlook.office365.com/owa/calendar/WebPageSales@smartfleetfunding.com/bookings/ "
-            className="contact_slide fw-bold fs-4  my-4 h-25 d-inline-block"
+            className="contact_slide fw-bold fs-4 my-4 d-inline-block"
             variant="btn btn-custom"
           >
             Schedule a meeting
           </Button>
+          </div>
         </div>
       </div>
       <div className="container mt-7 pb-5 font-montserrat">
