@@ -24,11 +24,11 @@ export default function Instapay() {
   );
   const accordionInstaItems = [
     {
-      title: "What Are the Conditions for Instapay?",
+      title: "What Are the Conditions for FES Pay?",
       description: (
         <ul>
           <li>
-            The FB that you are hauling for must be a member of our Instapay
+            The FB that you are hauling for must be a member of our FES Pay
             Network.
           </li>
           <li>
