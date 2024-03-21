@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { FormEvent } from 'react'
-import Image from 'react-bootstrap/Image'
+import Link from "next/link";
+import { useState } from "react";
+import Image from "next/image"
 import { useI18nProvider } from '@/context/I18nProvider'
 
 type IProps = {
@@ -9,23 +9,66 @@ type IProps = {
 }
 
 export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    const formData = new FormData(event.currentTarget)
-    await fetch(
-      'https://flow.zoho.com/785473680/flow/webhook/incoming?zapikey=1001.1efe7f16cde72a5dc615d742476cc36e.fe77873c5c71e0bc95b7b8bb11dddbb8&isdebug=false',
-      {
-        method: 'POST',
-        body: formData
+  const [formData, setFormData] = useState<{ [key: string]: string }>({
+    option: "0",
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    message: "",
+  });
+
+  // Function to handle form submission
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log(formData);
+    try {
+      const response = await fetch("/api/submitForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully");
+        console.log("response status: " + response.status);
+      } else {
+        console.error("Failed to submit form", response);
       }
-    )
-  }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
+  // Function to handle input changes
+  const handleInputChange = (
+    event: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = event.target;
+
+    // Verificar si el evento es para un select
+    const newValue =
+      event.target instanceof HTMLSelectElement
+        ? value
+        : event.currentTarget.value;
+
+    // Update form data state with new value
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: newValue,
+    }));
+  };
+
   const { t } = useI18nProvider()
   return (
     <>
       <div className="d-flex font-montserrat flex-column-reverse flex-md-row mt-6 pb-4">
         <div className="md-w-50 w-100 bg-dark-blue text-white">
-          <form id="form" className="m-5" onSubmit={onSubmit}>
+          <form id="form" className="m-5" onSubmit={handleSubmit}>
             <input
               id="form-name"
               name="form-name"
@@ -43,7 +86,9 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
               <div className="mb-3">
                 <select
                   required
-                  id="form-fuel-card"
+                  id="option"
+                  name="option"
+                  
                   className="form-select  bg-grey-transparent text-white"
                 >
                   {t.fuelcard.formselectsoptions.map((option, index) => (
@@ -59,6 +104,8 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   className="form-control mb-3 mb-md-0 px-3 bg-grey-transparent text-white"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   required
                   placeholder={t.fuelcard.formfullname}
                 ></input>
@@ -69,6 +116,8 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   required
                   placeholder={t.fuelcard.formemail}
                 ></input>
@@ -81,6 +130,8 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   className="form-control mb-3 mb-md-0 px-3 bg-grey-transparent text-white"
                   id="company"
                   name="company"
+                  value={formData.company}
+                  onChange={handleInputChange}
                   required
                   placeholder={t.fuelcard.formcompany}
                 ></input>
@@ -91,6 +142,8 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   className="form-control px-3 bg-grey-transparent text-white"
                   id="phone"
                   name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
                   required
                   placeholder={t.fuelcard.formphone}
                 ></input>
@@ -101,6 +154,8 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 className="form-control bg-grey-transparent text-white"
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleInputChange}
                 required
                 rows={3}
                 placeholder={t.fuelcard.formmessage}
@@ -133,9 +188,15 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 </div>
               </div>
 
-              <button type="submit" className="btn fw-600">
-              {t.fuelcard.formbutton}
-              </button>
+              {formData.option === "0" ? (
+                <button type="submit" className="btn fw-600" disabled>
+                  SEND
+                </button>
+              ) : (
+                <button type="submit" className="btn fw-600">
+                {t.fuelcard.formbutton}
+                </button>
+              )}
             </div>
           </form>
         </div>
