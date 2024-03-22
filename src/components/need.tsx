@@ -48,7 +48,6 @@ export default function Needs() {
                   <Card.Text className="fs-5 lh-sm mt-3">
                     <strong className="text-green">{title}</strong>
                     {descripcion}{' '}
-                    {/* Aquí debería ser descripcion en lugar de descripcion */}
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -67,7 +66,6 @@ export default function Needs() {
                   <Card.Text className="fs-5 lh-sm mt-3">
                     <strong className="text-green">{title}</strong>
                     {descripcion}{' '}
-                    {/* Aquí debería ser descripcion en lugar de descripcion */}
                   </Card.Text>
                 </Card.Body>
               </Card>

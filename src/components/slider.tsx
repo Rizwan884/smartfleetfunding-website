@@ -1,11 +1,11 @@
 import { useI18nProvider } from '@/context/I18nProvider'
 import { Button, Carousel } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
-// Interfaz para describir los estilos personalizados
+// Interface for describing custom styles
 const carouselImage = {
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
-  height: '400px', // Ajusta la altura según tus necesidades
+  height: '400px', 
   position: 'relative' as const
 }
 type ICard = {
