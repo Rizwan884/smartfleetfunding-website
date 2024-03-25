@@ -198,7 +198,7 @@ export default function Cards() {
                     <div className="card-text ">SECURE</div>
                     <div className="line-front"></div>
                     <div className="card-text-bottom fw-400">
-                      The carries and Freight <br /> companies
+                      The carriers and Freight <br /> companies
                     </div>
                   </div>
                   <div className="back font-montserrat fw-600">

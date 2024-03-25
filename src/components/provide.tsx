@@ -67,7 +67,7 @@ export default function Provides() {
                     <div>
                       <h1 id="hover" className="fw-bold fs-3 mb-2 mt-2 w-75 ">
                         {' '}
-                        <span className="sub-line">For</span> your carries
+                        <span className="sub-line">For</span> your carriers
                       </h1>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
@@ -183,7 +183,7 @@ export default function Provides() {
                   <div>
                     <h1 id="hover" className="fw-bold fs-3 mb-2 mt-2 w-75 ">
                       {' '}
-                      <span className="sub-line">For</span> your carries
+                      <span className="sub-line">For</span> your carriers
                     </h1>
                   </div>
                   <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">

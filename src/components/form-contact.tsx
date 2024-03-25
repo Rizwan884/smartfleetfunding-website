@@ -89,7 +89,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     <div className="lh-sm ">
                       <h2 className="fs-4 fw-600 text-dark-blue mt-1">
                         <a className="remove-link-styles" href="tel:8888755506">
-                          (888) 875-5506
+                          +1 (888) 875-5506
                         </a>
                       </h2>
                     </div>
