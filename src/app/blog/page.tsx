@@ -19,8 +19,8 @@ export default function BlogPage() {
       By partnering with Smart Fleet Funding, freight brokers can maximize profitability and drive business growth. With improved cash flow management, brokers can take advantage of new opportunities, expand their client base, and invest in technology and resources to stay ahead of the competition.
       In today's competitive freight brokerage industry, effective cash flow management is essential for success. Smart Fleet Funding offers brokers the tools and support they need to navigate financial challenges and achieve their business goals. With tailored financial solutions and expert guidance, Smart Fleet Funding is the partner of choice for brokers seeking to unlock their full potential and thrive in the dynamic world of logistics.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-navi-financial-mobile.jpg",
+      desktopSrc: "images/sff-blogs-navi-financial-desktop.jpg",
       date: "20 Nov 2024",
       type: "For brokers",
 
@@ -38,8 +38,8 @@ export default function BlogPage() {
       Smart Fleet Funding serves as a strategic partner for brokers seeking to maximize profits and enhance financial agility. With a range of funding options tailored to the unique needs of the logistics sector, Smart Fleet Funding empowers brokers to optimize cash flow, streamline operations, and seize growth opportunities.
       With improved financial stability and access to capital, brokers can fuel growth initiatives, invest in technology and infrastructure upgrades, and explore new market opportunities. Smart Fleet Funding empowers brokers to innovate, adapt to market trends, and position themselves for long-term success in the dynamic logistics industry
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-max-profit-mobile.jpg",
+      desktopSrc: "images/sff-blogs-max-profit-desktop.jpg",
       date: "18 Nov 2024",
       type: "For brokers",
     },
@@ -55,8 +55,8 @@ export default function BlogPage() {
       Financial collaboration between brokers and Smart Fleet Funding is the catalyst for transformation in the logistics industry. Through collaborative efforts, brokers gain access to flexible funding options, streamlined financial processes and expert guidance that drives efficiency and profitability in your operations and those of your carriers
       The Freight Broker Program by Smart Fleet Funding, provide brokers with the capital they need to fuel growth initiatives, expand their client base, and invest in innovation. Whether it's funding for operational expenses, technology upgrades, or business expansion, brokers can rely on Smart Fleet Funding to provide timely and reliable financial support. 
       The partnership between brokers and Smart Fleet Funding is a testament to the transformative power of collaboration in the logistics industry. Through strategic partnerships, brokers gain access to the resources, expertise, and support they need to thrive in a competitive market environment. Together, brokers and Smart Fleet Funding unleash the full potential of their partnership, driving success and driving success and prosperity in the Logistics and freight world.`,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-power-partner-mobile.jpg",
+      desktopSrc: "images/sff-blogs-power-partner-desktop.jpg",
       date: "30 Ene 2024",
       type: "For brokers",
     },
@@ -84,8 +84,8 @@ export default function BlogPage() {
         
         Smart Fleet Funding's impact on carriers extends far beyond financing – it's about driving transformation and unlocking new possibilities for success. By providing carriers with the financial resources, support, and guidance they need, Smart Fleet Funding revolutionizes the road ahead, empowering carriers to navigate the path to prosperity with confidence.
         `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-revolution-road-mobile.jpg",
+      desktopSrc: "images/sff-blogs-revolution-road-desktop.jpg",
       date: "5 Nov 2024",
       type: "For Carriers",
     },
@@ -102,8 +102,8 @@ export default function BlogPage() {
       With Smart Fleet Funding, carriers gain access to a range of financing options designed to unlock their growth potential. Whether they need immediate cash flow relief or long-term funding for fleet expansion, we provide the resources and support carriers need to drive success.
       Smart Fleet Funding empowers carriers to achieve financial agility and drive success in the competitive transportation industry. With tailored cash flow solutions, transparent processes, and dedicated support, we are committed to helping carriers thrive and grow their businesses. Discover how Smart Fleet Funding can elevate your carrier operations and streamline your path to success.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-effor-financial-mobile.jpg",
+      desktopSrc: "images/sff-blogs-effor-financial-desktop.jpg",
       date: "10 Nov 2024",
       type: "For Carriers",
     },
@@ -119,8 +119,8 @@ export default function BlogPage() {
       Freight factoring with Smart Fleet Funding offers carriers a secure way to access immediate cash flow by leveraging their accounts receivable. With our rigorous security measures and dedicated support team, truckers can trust that their assets are protected throughout the factoring process, allowing them to focus on delivering freight and driving profitability.
       Smart Fleet Funding is committed to supporting carriers on their journey to success by providing secure financing solutions tailored to their needs. With our focus on transparency, reliability, and security, we empower truckers to navigate the challenges of the trucking industry with confidence and peace of mind. Secure your journey with Smart Fleet Funding and unlock the path to long-term success.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-secure-journey-mobile.jpg",
+      desktopSrc: "images/sff-blogs-secure-journey-desktop.jpg",
       date: "21 Nov 2024",
       type: "For Carriers",
     },
@@ -136,8 +136,8 @@ export default function BlogPage() {
         As a leading provider of financial solutions for the logistics industry, Smart Fleet Funding is committed to supporting dispatchers in their quest for excellence. Whether it's providing guidance on invoice processing, offering flexible funding options, or delivering personalized support, we are here to help dispatchers navigate the complexities of cash flow management with ease.
         Dispatchers play a vital role in the success of logistics operations, and having a solid understanding of financial principles is essential for excelling in their roles. With Smart Fleet Funding as their trusted partner, dispatchers can access valuable financial education resources and innovative solutions to manage cash flow effectively and drive success in their dispatching endeavors.
         `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-dispat-excellence-mobile.jpg",
+      desktopSrc: "images/sff-blogs-dispat-excellence-desktop.jpg",
       date: "03 Sep 2024",
       type: "For Dispatchers",
     },
@@ -153,8 +153,8 @@ export default function BlogPage() {
       At Smart Fleet Funding, we believe in fostering partnerships that drive mutual growth. By aligning with dispatchers and offering tailored financial support, we pave the way for their business expansion. Whether it's scaling operations, investing in technology, or expanding their client base, our solutions enable dispatchers to chart a path towards sustained growth and prosperity.
       Smart dispatchers understand that financial acumen is essential for navigating the intricacies of the logistics industry. With Smart Fleet Funding as their ally, dispatchers can leverage tailored financial solutions to streamline operations, maximize profitability, and fuel business growth. Embrace smart finances with Smart Fleet Funding and unlock the path to success in logistics.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-smart-dispatches-mobile.jpg",
+      desktopSrc: "images/sff-blogs-smart-dispatches-desktop.jpg",
       date: "14 Nov 2024",
       type: "For Dispatchers",
     },
@@ -170,8 +170,8 @@ export default function BlogPage() {
       By partnering with Smart Fleet Funding, dispatchers gain access to a range of benefits that give them a competitive edge in the industry. From streamlined processes and transparent fee structures to dedicated support and flexible funding options, Smart Fleet Funding enables dispatchers to overcome financial obstacles and focus on growing their businesses.
       Smart Fleet Funding plays a crucial role in empowering dispatchers with the financial resources and support they need to succeed in the logistics industry. With tailored financial solutions, transparent processes, and dedicated support, Smart Fleet Funding enables dispatchers to achieve financial stability, drive efficiency, and seize growth opportunities. Partner with Smart Fleet Funding and embark on a journey towards financial empowerment and success in logistics.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-empowering-dispatchers-mobile.jpg",
+      desktopSrc: "images/sff-blogs-empowering-dispatchers-desktop.jpg",
       date: "21 Nov 2024",
       type: "For Dispatchers",
     },
@@ -187,8 +187,8 @@ export default function BlogPage() {
       Financial management goes beyond simply balancing the books – it involves strategic decision-making and long-term planning. With a solid understanding of financial principles, logistics professionals can optimize cash flow, minimize risks, and seize opportunities for growth. Smart Fleet Funding offers insights and strategies to help professionals master financial management and achieve their business objectives.
       Financial education is a powerful tool that empowers logistics professionals to take control of their financial futures. By investing in financial literacy and education, professionals can make informed decisions, mitigate risks, and drive business growth. Smart Fleet Funding is committed to supporting professionals in their journey towards financial mastery, offering educational resources and guidance to help them succeed in the dynamic world of logistics.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-mastering-money-mobile.jpg",
+      desktopSrc: "images/sff-blogs-mastering-money-desktop.jpg",
       date: "26 Nov 2024",
       type: "For Financial Education",
     },
@@ -203,8 +203,8 @@ export default function BlogPage() {
       Cash flow is the lifeblood of any logistics operation, and understanding how to manage it effectively is essential for success. Smart Fleet Funding offers cash flow education programs that help logistics professionals optimize cash flow, minimize risks, and maximize profitability. With our guidance, professionals can take control of their finances and drive business growth.
       Financial education is essential for success in the logistics industry, and Smart Fleet Funding is committed to empowering logistics professionals with the knowledge and tools they need to thrive. Whether it's understanding logistics finance, mastering cash flow management, or maximizing profitability, our educational initiatives provide a solid foundation for success in the dynamic world of logistics.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-the-dollars-sense-mobile.jpg",
+      desktopSrc: "images/sff-blogs-the-dollars-sense-desktop.jpg",
       date: "06 Dec 2024",
       type: "For Financial Education",
     },
@@ -220,8 +220,8 @@ export default function BlogPage() {
       Effective money management is crucial for success in logistics. Smart Fleet Funding offers practical tips and strategies for optimizing cash flow, reducing expenses, and maximizing profitability. Whether it's negotiating better rates with carriers or implementing cost-saving measures, our resources help professionals take control of their finances and achieve their business goals.
       Financial education is a powerful tool for success in the logistics industry, and Smart Fleet Funding is committed to empowering professionals with the knowledge and skills they need to thrive. By providing accessible resources and practical guidance, we help logistics professionals make smart money moves that drive efficiency, profitability, and growth.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-smart-money-moves-mobile.jpg",
+      desktopSrc: "images/sff-blogs-smart-money-moves-desktop.jpg",
       date: "21 Feb 2024",
       type: "For Financial Education",
     },
@@ -239,10 +239,10 @@ export default function BlogPage() {
       Cash flow mastery is a game-changer for brokers, carriers, and dispatchers in the logistics industry. With Smart Fleet Funding by their side, professionals can achieve financial stability, fuel growth, and unlock new opportunities for success. Partner with Smart Fleet Funding today and take control of your cash flow for a brighter future in logistics.
       Keywords: cash flow importance, logistics cash flow, Smart Fleet Funding and cash flow.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-cash-flow-mastery-mobile.jpg",
+      desktopSrc: "images/sff-blogs-cash-flow-mastery-desktop.jpg",
       date: "03 Sep 2024",
-      type: "For Financial Education",
+      type: "For Cashflow Importance",
     },
     {
       id: 14,
@@ -258,10 +258,10 @@ export default function BlogPage() {
       In the world of transportation logistics, healthy cash flow is not just a financial metric – it's a critical determinant of success and sustainability. By prioritizing cash flow management and leveraging the expertise of partners like Smart Fleet Funding, transportation companies can navigate challenges, seize opportunities, and chart a course towards long-term prosperity in the dynamic and competitive logistics industry.
       Keywords: healthy cash flow, logistics success, importance of cash flow in transportation.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-driving-success-mobile.jpg",
+      desktopSrc: "images/sff-blogs-driving-success-desktop.jpg",
       date: "14 Nov 2024",
-      type: "For Financial Education",
+      type: "For Cashflow Importance",
     },
     {
       id: 15,
@@ -276,10 +276,10 @@ export default function BlogPage() {
       From humble beginnings to soaring heights, the journey to success in transportation logistics is marked by countless twists, turns, and triumphs. At Smart Fleet Funding, we're honored to be a part of our clients' stories, and we look forward to continuing to empower success, one cash flow victory at a time.
       Keywords: success stories, cash flow testimonials, Smart Fleet Funding success.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-cash-flow-chronicles-mobile.jpg",
+      desktopSrc: "images/sff-blogs-cash-flow-chronicles-desktop.jpg",
       date: "21 Nov 2024",
-      type: "For Financial Education",
+      type: "For Cashflow Importance",
     },
     {
       id: 16,
@@ -319,8 +319,8 @@ export default function BlogPage() {
       By prioritizing financial wellness and leveraging the expertise of partners like Smart Fleet Funding, brokers, carriers, and dispatchers can embark on a journey towards financial stability, security, and success. With the right strategies and support in place, the road to financial wellness becomes not just a destination, but a pathway to a brighter and more prosperous future in the world of logistics.
       Keywords: financial wellness, logistics financial health, Smart Fleet Funding for financial well-being.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-the-road-financial-mobile.jpg",
+      desktopSrc: "images/sff-blogs-the-road-financial-desktop.jpg",
       date: "06 Dec 2024",
       type: "General Financial Tips",
     },
@@ -345,8 +345,8 @@ export default function BlogPage() {
       Keywords: budgeting tips, logistics finance, Truckers, Smart Fleet Funding budgeting.
       
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-smart-budgeting-mobile.jpg",
+      desktopSrc: "images/sff-blogs-smart-budgeting-desktop.jpg",
       date: "21 Feb 2024",
       type: "General Financial Tips",
     },
@@ -370,8 +370,8 @@ export default function BlogPage() {
       With Smart Fleet Funding's expertise and support, trucking businesses can transform financial challenges into stepping stones for success. By partnering with a trusted financial partner, like Smart Fleet Funding, trucking companies can navigate the complexities of the industry with confidence, turning red into green and achieving their business goals.      
       Keywords: financial challenges, success stories, Truck business, trucking business growth, overcoming financial hurdles.
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-from-red-to-green-mobile.jpg",
+      desktopSrc: "images/sff-blogs-from-red-to-green-desktop.jpg",
       date: "21 Feb 2024",
       type: "General Financial Tips",
     },
@@ -390,8 +390,8 @@ export default function BlogPage() {
       In an industry as competitive and dynamic as logistics, investing in financial education is a strategic move that can yield significant returns for your business. By partnering with Smart Fleet Funding and prioritizing financial literacy, logistics professionals can position themselves for long-term success and prosperity in the ever-evolving landscape of the industry.
       Keywords: ROI in logistics finance, investing in financial education, Smart Fleet Funding returns.      
       `,
-      imageSrc: "images/sff-blog-img.jpg",
-      desktopSrc: "images/sff-blog-full.jpg",
+      imageSrc: "images/sff-blogs-investing-your-future-mobile.jpg",
+      desktopSrc: "images/sff-blogs-investing-your-future-desktop.jpg",
       date: "21 Feb 2024",
       type: "General Financial Tips",
     }
