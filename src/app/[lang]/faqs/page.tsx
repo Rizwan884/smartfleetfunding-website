@@ -1,19 +1,19 @@
-"use client";
-import { useState } from "react";
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
-import FaqAccordion from "../../components/faq-accordion";
-import Search from "../../components/search";
+'use client'
+import { useState } from 'react'
+import FaqAccordion from '../../../components/faq-accordion'
+import Footer from '../../../components/footer'
+import Navbar from '../../../components/navbar'
+import Search from '../../../components/search'
 
 export default function Faqs() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('')
 
   const handleSearch = (term: string) => {
-    setSearchTerm(term);
-  };
+    setSearchTerm(term)
+  }
   const accordionInstaItems = [
     {
-      title: "What is Freight Factoring?",
+      title: 'What is Freight Factoring?',
       description: (
         <ul>
           <li>
@@ -25,13 +25,13 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
+      icon: 'images/sff-search-arrow.svg',
       eventKey: 1,
       width: 18,
-      heiight: 26,
+      heiight: 26
     },
     {
-      title: "How does factoring work?",
+      title: 'How does factoring work?',
       description: (
         <ul>
           <li>
@@ -44,8 +44,8 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 2,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 2
     },
     {
       title: "Who can benefit from Smart Fleet Funding's factoring services?",
@@ -59,12 +59,12 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 3,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 3
     },
     {
       title:
-        "What sets Smart Fleet Funding apart from other factoring companies?",
+        'What sets Smart Fleet Funding apart from other factoring companies?',
       description: (
         <ul>
           <li>
@@ -76,12 +76,12 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 4,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 4
     },
     {
       title:
-        "Is factoring only available for businesses with a certain level of revenue?",
+        'Is factoring only available for businesses with a certain level of revenue?',
       description: (
         <ul>
           <li>
@@ -91,11 +91,11 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 5,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 5
     },
     {
-      title: "Will factoring affect my relationship with my customers?",
+      title: 'Will factoring affect my relationship with my customers?',
       description: (
         <ul>
           <li>
@@ -104,11 +104,11 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 6,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 6
     },
     {
-      title: "What are the criteria for qualifying for factoring services?",
+      title: 'What are the criteria for qualifying for factoring services?',
       description: (
         <ul>
           <li>
@@ -117,11 +117,11 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 7,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 7
     },
     {
-      title: "Can factoring help with cash flow problems?",
+      title: 'Can factoring help with cash flow problems?',
       description: (
         <ul>
           <li>
@@ -131,11 +131,11 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 8,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 8
     },
     {
-      title: "Are there any long-term contracts or hidden fees?",
+      title: 'Are there any long-term contracts or hidden fees?',
       description: (
         <ul>
           <li>
@@ -147,12 +147,12 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 9,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 9
     },
     {
       title:
-        "How do recourse and non-recourse factoring differ, and which is more suitable for my business?",
+        'How do recourse and non-recourse factoring differ, and which is more suitable for my business?',
       description: (
         <ul>
           <li>
@@ -163,12 +163,12 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 10,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 10
     },
     {
       title:
-        "What steps do factoring companies take to ensure the creditworthiness of my clients before approving an invoice for funding?",
+        'What steps do factoring companies take to ensure the creditworthiness of my clients before approving an invoice for funding?',
       description: (
         <ul>
           <li>
@@ -178,12 +178,12 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 11,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 11
     },
     {
       title:
-        "How does the factoring process impact customer relationships and their perceptions of my business?",
+        'How does the factoring process impact customer relationships and their perceptions of my business?',
       description: (
         <ul>
           <li>
@@ -193,11 +193,11 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 12,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 12
     },
     {
-      title: "What payment methods do you accept for factoring transactions?",
+      title: 'What payment methods do you accept for factoring transactions?',
       description: (
         <ul>
           <li>
@@ -207,11 +207,11 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 13,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 13
     },
     {
-      title: "In which currencies can payments be made?",
+      title: 'In which currencies can payments be made?',
       description: (
         <ul>
           <li>
@@ -221,12 +221,12 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 14,
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 14
     },
     {
       title:
-        "Are there any additional services or resources provided by factoring companies to help me manage my cash flow more effectively?",
+        'Are there any additional services or resources provided by factoring companies to help me manage my cash flow more effectively?',
       description: (
         <ul>
           <li>
@@ -235,7 +235,7 @@ export default function Faqs() {
             your business:
             <ul
               className="mt-2"
-              style={{ listStyleType: "upper-alpha", marginLeft: "1em" }}
+              style={{ listStyleType: 'upper-alpha', marginLeft: '1em' }}
             >
               <li>
                 <strong className="fw-bold">Fuel Card Program:</strong> We
@@ -268,10 +268,10 @@ export default function Faqs() {
           </li>
         </ul>
       ),
-      icon: "images/sff-search-arrow.svg",
-      eventKey: 15,
-    },
-  ];
+      icon: 'images/sff-search-arrow.svg',
+      eventKey: 15
+    }
+  ]
 
   return (
     <>
@@ -288,5 +288,5 @@ export default function Faqs() {
       />
       <Footer />
     </>
-  );
+  )
 }

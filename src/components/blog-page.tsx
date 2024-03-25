@@ -1,28 +1,28 @@
-import React, { useState } from "react";
-import Image from "react-bootstrap/Image";
-import { Container, Row, Col, Carousel, Button, Card } from "react-bootstrap";
-import { useMediaQuery } from "react-responsive";
+import { useState } from 'react'
+import { Button, Carousel, Col, Row } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
+import { useMediaQuery } from 'react-responsive'
 
 type BlogItem = {
-  id?: number;
-  title?: string | JSX.Element;
-  description?: string;
-  content?: string;
-  imageSrc?: string;
-};
+  id?: number
+  title?: string | JSX.Element
+  description?: string
+  content?: string
+  imageSrc?: string
+}
 type IProps = {
-  blogs: BlogItem[];
-};
+  blogs: BlogItem[]
+}
 export default function Blog({ blogs }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  const [selectedBlog, setSelectedBlog] = useState<BlogItem | null>(null);
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const [selectedBlog, setSelectedBlog] = useState<BlogItem | null>(null)
   const handleBlogClick = (blog: BlogItem) => {
-    setSelectedBlog(blog);
-  };
+    setSelectedBlog(blog)
+  }
 
   const handleBackButtonClick = () => {
-    setSelectedBlog(null);
-  };
+    setSelectedBlog(null)
+  }
   return (
     <>
       <div className="container mt-7 font-montserrat">
@@ -59,18 +59,18 @@ export default function Blog({ blogs }: IProps) {
                     <div
                       className="cards-mobile h-100 w-auto mx-3"
                       style={{
-                        border: "10px",
-                        paddingBottom: "20px",
-                        height: "152px",
+                        border: '10px',
+                        paddingBottom: '20px',
+                        height: '152px'
                       }}
                     >
                       {blog.imageSrc && (
                         <Image
                           src={blog.imageSrc}
                           style={{
-                            width: "15%",
-                            marginTop: "-30px",
-                            marginBottom: "20px",
+                            width: '15%',
+                            marginTop: '-30px',
+                            marginBottom: '20px'
                           }}
                           className="card-img-top"
                           alt="..."
@@ -97,14 +97,14 @@ export default function Blog({ blogs }: IProps) {
                     className="mb-4"
                     onClick={() => handleBlogClick(blog)}
                   >
-                    <div className="card" style={{ border: "10px" }}>
+                    <div className="card" style={{ border: '10px' }}>
                       {blog.imageSrc && (
                         <Image
                           src={blog.imageSrc}
                           style={{
-                            width: "15%",
-                            marginTop: "-21px",
-                            marginBottom: "20px",
+                            width: '15%',
+                            marginTop: '-21px',
+                            marginBottom: '20px'
                           }}
                           className="card-img-top"
                           alt="..."
@@ -131,5 +131,5 @@ export default function Blog({ blogs }: IProps) {
         )}
       </div>
     </>
-  );
+  )
 }

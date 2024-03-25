@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Accordion } from "react-bootstrap";
 export default function Welcome() {
   return (
     <div className="container font-montserrat pt-5 pb-5">
@@ -14,5 +12,5 @@ export default function Welcome() {
         </p>
       </div>
     </div>
-  );
+  )
 }

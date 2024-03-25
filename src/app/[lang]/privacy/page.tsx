@@ -27,7 +27,7 @@ export default function Privacy() {
           <ul className="mt-3">
             <li>
               Before or at the time of collecting personal information, we will
-              identify the purposes for which information is being collected.{" "}
+              identify the purposes for which information is being collected.{' '}
             </li>
             <li>
               We will collect and use personal information solely with the
@@ -50,13 +50,13 @@ export default function Privacy() {
               should be accurate, complete, and up-to-date.
             </li>
             <li>
-              {" "}
+              {' '}
               We will protect personal information by reasonable security
               safeguards against loss or theft, as well as unauthorized access,
               disclosure, copying, use or modification.
             </li>
             <li>
-              {" "}
+              {' '}
               We will make readily available to customers information about our
               policies and practices relating to the management of personal
               information.
@@ -107,7 +107,7 @@ export default function Privacy() {
           <b></b>
           <ul>
             <li>
-              {" "}
+              {' '}
               <h4 className="mt-4 fw-600"> Cookies</h4>
               Our Website uses {'"Cookies"'} to identify the areas of our
               website that you have visited. A Cookie is a small piece of data
@@ -160,8 +160,8 @@ export default function Privacy() {
           reasonably required. Smart Fleet Funding Inc. abides by this demand.
           Smart Fleet Funding Inc. just collects information willingly offered;
           no information is gathered passively. children under 13 can submit
-          only their email address when sending us an email in our{" "}
-          {"Contact Us"}
+          only their email address when sending us an email in our{' '}
+          {'Contact Us'}
           area. Smart Fleet Funding Inc. makes use of the email address to
           respond to a one-time demand from a child under 13 and afterwards
           deletes the email address. In case Smart Fleet Funding Inc. collects
@@ -259,13 +259,13 @@ export default function Privacy() {
           post, by email, or by any method we determine. The method we chose is
           at our sole discretion. We will also change the {
             '"Last Updated"'
-          }{" "}
+          }{' '}
           date at the beginning of this Privacy Policy. Any changes we make to
           our Privacy Policy are effective as of this Last Updated date and
           replace any prior Privacy Policies.
           <h3 className="mt-4 fw-600">
             Questions About Our Privacy Practices or This Privacy Policy
-          </h3>{" "}
+          </h3>{' '}
           We are committed to conducting our business in accordance with these
           principles to ensure that the confidentiality of personal information
           is protected and maintained. If you have any questions about our
@@ -273,5 +273,5 @@ export default function Privacy() {
         </p>
       </div>
     </div>
-  );
+  )
 }

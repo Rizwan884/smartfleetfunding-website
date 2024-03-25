@@ -1,7 +1,6 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import React, { useState } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
+import Image from 'next/image'
+import { Container, Row } from 'react-bootstrap'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 export default function HelpYou() {
   return (
@@ -15,13 +14,13 @@ export default function HelpYou() {
               alt="img"
               width={200}
               height={270}
-              src="images/sff-fb-rule.svg"
+              src="/images/sff-fb-rule.svg"
             ></Image>
           </Row>
         </div>
         <div className="row pb-5">
           <div className="col-6 d-flex  justify-content-end h-100">
-            {" "}
+            {' '}
             <div className="card w-20rem me-5 d-md-block d-none">
               <div className="card-body">
                 <h5 className="card-title fs-4 text-start fw-bold">
@@ -33,7 +32,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-14"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div>
@@ -47,7 +46,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-50"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -61,7 +60,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -86,12 +85,12 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
                       <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                        Becoming <br /> more <br /> attractive to <br />{" "}
+                        Becoming <br /> more <br /> attractive to <br />{' '}
                         carriers.
                       </p>
                     </div>
@@ -103,12 +102,12 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
                       <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                        Carriers <br /> won’t worry <br /> about their <br />{" "}
+                        Carriers <br /> won’t worry <br /> about their <br />{' '}
                         cash flow <br /> to operate.
                       </p>
                     </div>
@@ -120,12 +119,12 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
                       <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                        Carriers <br /> won’t need <br /> to make <br />{" "}
+                        Carriers <br /> won’t need <br /> to make <br />{' '}
                         collection <br /> calls.
                       </p>
                     </div>
@@ -136,7 +135,7 @@ export default function HelpYou() {
           </div>
 
           <div className="col-6 d-flex  justify-content-end h-100 ">
-            {" "}
+            {' '}
             <div className="card w-20rem d-md-block d-none">
               <div className="card-body">
                 <h5 className="card-title fs-4 text-start fw-bold">
@@ -148,7 +147,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-50"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div>
@@ -163,7 +162,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -177,7 +176,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -191,7 +190,7 @@ export default function HelpYou() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -216,12 +215,12 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
                       <p className="ms-2 mt-3 fs-6 fw-30 text-start">
-                        Receiving <br /> collection <br /> calls from <br />{" "}
+                        Receiving <br /> collection <br /> calls from <br />{' '}
                         carriers and <br /> other debt <br />
                         collectors.
                       </p>
@@ -234,7 +233,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -250,7 +249,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -266,7 +265,7 @@ export default function HelpYou() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right.svg"
+                      src="/images/sff-fb-arrow-right.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -283,5 +282,5 @@ export default function HelpYou() {
         </div>
       </Container>
     </>
-  );
+  )
 }

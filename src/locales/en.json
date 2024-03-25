@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "home": "HOME",
+    "services": "SERVICES",
+    "faq": "FAQ",
+    "aboutUs": "ABOUT US",
+    "contact": "CONTACT"
+  },
+  "languages": {
+    "current": {
+      "title": "ENG",
+      "locale": "en-US"
+    },
+    "available": [
+      {
+        "title": "SPA",
+        "locale": "es"
+      }
+    ]
+  }
+}

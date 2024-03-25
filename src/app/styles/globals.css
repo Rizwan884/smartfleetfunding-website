@@ -247,7 +247,7 @@ img {
   -o-transform: rotate(180deg);
 }
 .nv-image {
-  background-image: url("/public/images/sff-navbar-bg.jpg");
+  background-image: url("/images/sff-navbar-bg.jpg");
 }
 #basic-nav-dropdown {
   min-width: 1rem;

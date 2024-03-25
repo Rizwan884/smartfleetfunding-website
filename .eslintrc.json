@@ -1,3 +1,26 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["import", "@typescript-eslint", "prettier", "unused-imports"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "rules": {
+    "no-console": 1,
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-empty-function": "off",
+    "react/react-in-jsx-scope": "off",
+    "tailwindcss/no-custom-classname": ["off"]
+  }
 }

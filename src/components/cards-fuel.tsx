@@ -1,8 +1,8 @@
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
-import { useMediaQuery } from "react-responsive";
+import { Card } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
+import { useMediaQuery } from 'react-responsive'
 export default function CardsFuel() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       {isMobile ? (
@@ -13,7 +13,7 @@ export default function CardsFuel() {
                 <div className="w-75">
                   <Image
                     alt="icons"
-                    src="images/sff-transaction-fuel.svg"
+                    src="/images/sff-transaction-fuel.svg"
                     className="w-75 h-100"
                   />
                 </div>
@@ -32,7 +32,7 @@ export default function CardsFuel() {
                 <div className="w-75">
                   <Image
                     alt="icons"
-                    src="images/sff-cash-price-fuel.svg"
+                    src="/images/sff-cash-price-fuel.svg"
                     className="w-75 h-100"
                   />
                 </div>
@@ -51,7 +51,7 @@ export default function CardsFuel() {
                 <div className="w-75">
                   <Image
                     alt="icons"
-                    src="images/sff-fuel.svg"
+                    src="/images/sff-fuel.svg"
                     className="w-75 h-100"
                   />
                 </div>
@@ -75,7 +75,7 @@ export default function CardsFuel() {
                 <div className="w-25px me-3">
                   <Image
                     alt="icons"
-                    src="images/sff-transaction-fuel.svg"
+                    src="/images/sff-transaction-fuel.svg"
                     className="w-75 h-100"
                   />
                 </div>
@@ -95,7 +95,7 @@ export default function CardsFuel() {
                 <div className="w-25px me-4">
                   <Image
                     alt="icons"
-                    src="images/sff-cash-price-fuel.svg"
+                    src="/images/sff-cash-price-fuel.svg"
                     className="w-100 h-100"
                   />
                 </div>
@@ -114,7 +114,7 @@ export default function CardsFuel() {
                 <div className="w-25px me-3">
                   <Image
                     alt="icons"
-                    src="images/sff-fuel.svg"
+                    src="/images/sff-fuel.svg"
                     className="w-75 h-100"
                   />
                 </div>
@@ -132,5 +132,5 @@ export default function CardsFuel() {
         </div>
       )}
     </>
-  );
+  )
 }
