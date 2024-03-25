@@ -1,22 +1,16 @@
-import { Carousel, Button } from "react-bootstrap";
-import { useMediaQuery } from "react-responsive";
+import { Button, Carousel } from 'react-bootstrap'
+import { useMediaQuery } from 'react-responsive'
 // Interfaz para describir los estilos personalizados
-interface CarouselImageStyles {
-  backgroundSize: string;
-  backgroundPosition: string;
-  height: string;
-  position: string;
-}
 
 const carouselImage = {
-  backgroundSize: "cover",
-  backgroundPosition: "center center",
-  height: "400px", // Ajusta la altura según tus necesidades
-  position: "relative" as "relative",
-};
+  backgroundSize: 'cover',
+  backgroundPosition: 'center center',
+  height: '400px', // Ajusta la altura según tus necesidades
+  position: 'relative' as const
+}
 
 export default function Slider() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       {isMobile ? (
@@ -25,7 +19,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck-mobile.jpg")',
+                backgroundImage: 'url("/images/sff-truck-mobile.webp")'
               }}
             >
               <div className="slider-container-mobile mx-4">
@@ -49,7 +43,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck-logistic-mobile.jpg")',
+                backgroundImage: 'url("/images/sff-truck-logistic-mobile.webp")'
               }}
             >
               <div className="slider-container-mobile mx-4">
@@ -70,13 +64,13 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-succes-story-mobile.jpg")',
+                backgroundImage: 'url("/images/sff-succes-story-mobile.webp")'
               }}
             >
-              <div className=" slider-container-mobile mx-4">
-                <h1 className="text-start fs-3">
-                  Let us be part of your <br />
-                  <strong>success story</strong>
+              <div className=" slider-container-mobile mx-4 mt-5">
+                <h1 className="text-start fs-4">
+                Let's navigate the road ahead together.  <br />
+                  <strong>Drive your carrier business to new heights</strong>
                 </h1>
                 <Button
                   href="mailto:dbiojo@smartfleetfunding.com"
@@ -95,7 +89,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck.jpg")',
+                backgroundImage: 'url("/images/sff-truck.webp")'
               }}
             >
               <div className="slider-container slider-container mx-4">
@@ -117,7 +111,7 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-truck-logistic.jpg")',
+                backgroundImage: 'url("/images/sff-truck-logistic.webp")'
               }}
             >
               <div className="slider-container slider-container mx-4">
@@ -138,13 +132,13 @@ export default function Slider() {
             <div
               style={{
                 ...carouselImage,
-                backgroundImage: 'url("images/sff-succes-story.jpg")',
+                backgroundImage: 'url("/images/sff-succes-story.webp")'
               }}
             >
               <div className=" slider-container mx-4">
                 <h1 className="text-start fs-3">
-                  Let us be part of your <br />
-                  <strong>success story</strong>
+                Let's navigate the road ahead together.  <br />
+                  <strong>Drive your carrier business to new heights</strong>
                 </h1>
                 <Button
                   href="mailto:dbiojo@smartfleetfunding.com"
@@ -159,5 +153,5 @@ export default function Slider() {
         </Carousel>
       )}
     </>
-  );
+  )
 }

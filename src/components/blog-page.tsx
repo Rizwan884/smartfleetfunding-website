@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Image from "react-bootstrap/Image";
-import { Container, Row, Col, Carousel, Button, Card } from "react-bootstrap";
-import { useMediaQuery } from "react-responsive";
+import { useState } from 'react'
+import { Button, Carousel, Col, Row } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
+import { useMediaQuery } from 'react-responsive'
 import Pagination from "react-bootstrap/Pagination";
 
 type BlogItem = {
@@ -16,8 +16,8 @@ type BlogItem = {
   desktopSrc?: string;
 };
 type IProps = {
-  blogs: BlogItem[];
-};
+  blogs: BlogItem[]
+}
 export default function Blog({ blogs }: IProps) {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const [selectedBlogIndex, setSelectedBlogIndex] = useState<number | null>(
@@ -33,8 +33,8 @@ export default function Blog({ blogs }: IProps) {
   };
   /*-------------------Botones Next, Prev and Back---------------------*/
   const handleBackButtonClick = () => {
-    setSelectedBlogIndex(null);
-  };
+    setSelectedBlogIndex(null)
+  }
 
   const handlePreviousPostClick = () => {
     if (selectedBlogIndex !== null && selectedBlogIndex > 0) {
@@ -275,7 +275,7 @@ export default function Blog({ blogs }: IProps) {
                     className="mb-5  "
                     onClick={() => handleBlogClick(index + indexOfFirstBlog)}
                   >
-                    <div className="card w-100" style={{ border: "10px" }}>
+                    <div className="card w-100" style={{ border: '10px' }}>
                       <div className="d-flex flex-column ms-5">
                         <div className="justify-content-start">
                           <Button
@@ -358,5 +358,5 @@ export default function Blog({ blogs }: IProps) {
         )}
       </div>
     </>
-  );
+  )
 }

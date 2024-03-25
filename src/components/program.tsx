@@ -1,14 +1,14 @@
-import { Col, Container, Row } from "react-bootstrap";
-import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
+import Image from 'next/image'
+import { Container, Row } from 'react-bootstrap'
+import { useMediaQuery } from 'react-responsive'
 export default function Programs() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       {isMobile ? (
         <section className="py-5 bg-white-shadow font-montserrat">
           <Container>
-            <h1 className="fw-bold fs-2 mb-0 mx-4 w-100">
+            <h1 className="fw-bold  fs-3 mb-0 mx-4 w-100">
               Your outcomes by joining our Freight Broker program
             </h1>
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
@@ -72,7 +72,7 @@ export default function Programs() {
                     width={20}
                     height={20}
                     className="mt-34"
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-5">
@@ -96,7 +96,7 @@ export default function Programs() {
                   <Image
                     width={20}
                     height={20}
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -109,7 +109,7 @@ export default function Programs() {
                   <Image
                     width={20}
                     height={20}
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -123,7 +123,7 @@ export default function Programs() {
                   <Image
                     width={20}
                     height={20}
-                    src="images/sff-fb-arrow-right.svg"
+                    src="/images/sff-fb-arrow-right.svg"
                     alt="testimonial-img"
                   ></Image>
                   <div className="mt-2">
@@ -138,5 +138,5 @@ export default function Programs() {
         </section>
       )}
     </>
-  );
+  )
 }

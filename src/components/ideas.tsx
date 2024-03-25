@@ -1,12 +1,12 @@
-import { Button, Carousel } from "react-bootstrap";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import Image from "react-bootstrap/Image";
+import { Carousel } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
+
 const carouselIdea = {
-  backgroundSize: "cover",
-  backgroundPosition: "center center",
-  height: "400px",
-  position: "relative" as "relative",
-};
+  backgroundSize: 'cover',
+  backgroundPosition: 'center center',
+  height: '400px',
+  position: 'relative' as const
+}
 
 export default function Ideas() {
   return (
@@ -14,7 +14,6 @@ export default function Ideas() {
       <div className="container font-montserrat mt-5 mb-5 text-center text-md-start ">
         <h2 className="fw-600 ">PREMIUM FACTORING SERVICES</h2>
         <p className="fw-500 fs-5 pt-3">
-          
           Same day payment* with preferential rates and personalized service,
           <strong> no penalty clauses or minimum amount.</strong>
         </p>
@@ -27,7 +26,7 @@ export default function Ideas() {
         <Carousel.Item className="bg-grey">
           <div
             style={{
-              ...carouselIdea,
+              ...carouselIdea
             }}
           >
             <div className="mt-5 mx-4">
@@ -36,16 +35,16 @@ export default function Ideas() {
                 <div
                   className="line"
                   style={{
-                    marginTop: "0",
-                    width: "40.9px",
+                    marginTop: '0',
+                    width: '40.9px'
                   }}
                 ></div>
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
-                style={{ width: "38px" }}
+                style={{ width: '38px' }}
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-3 fw-400">
@@ -60,7 +59,7 @@ export default function Ideas() {
         <Carousel.Item className="bg-grey">
           <div
             style={{
-              ...carouselIdea,
+              ...carouselIdea
             }}
           >
             <div className="mt-5 mx-4">
@@ -69,20 +68,20 @@ export default function Ideas() {
                 <div
                   className="line"
                   style={{
-                    marginTop: "0",
-                    width: "40.9px",
+                    marginTop: '0',
+                    width: '40.9px'
                   }}
                 ></div>
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
-                style={{ width: "38px" }}
+                style={{ width: '38px' }}
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-3 fw-400">
-                “I could get better rates{" "}
+                “I could get better rates{' '}
                 <strong className="mx-2">
                   <br />
                   but penalty clauses or a contract makes it a difficult.”
@@ -94,7 +93,7 @@ export default function Ideas() {
         <Carousel.Item className="bg-grey">
           <div
             style={{
-              ...carouselIdea,
+              ...carouselIdea
             }}
           >
             <div className="mt-5 mx-4">
@@ -103,20 +102,20 @@ export default function Ideas() {
                 <div
                   className="line"
                   style={{
-                    marginTop: "0",
-                    width: "40.9px",
+                    marginTop: '0',
+                    width: '40.9px'
                   }}
                 ></div>
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
-                style={{ width: "38px" }}
+                style={{ width: '38px' }}
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-3 fw-400">
-                “<strong>I{"'"}m tired of collecting and paying bills</strong>{" "}
+                “<strong>I{"'"}m tired of collecting and paying bills</strong>{' '}
                 <br /> to have cash flow.”
               </h2>
             </div>
@@ -125,7 +124,7 @@ export default function Ideas() {
         <Carousel.Item className="bg-grey">
           <div
             style={{
-              ...carouselIdea,
+              ...carouselIdea
             }}
           >
             <div className="mt-5 mx-4">
@@ -134,20 +133,20 @@ export default function Ideas() {
                 <div
                   className="line"
                   style={{
-                    marginTop: "0",
-                    width: "40.9px",
+                    marginTop: '0',
+                    width: '40.9px'
                   }}
                 ></div>
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
-                style={{ width: "38px" }}
+                style={{ width: '38px' }}
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-3 fw-400">
-                “<strong>I feel frustrated </strong> because some clients{" "}
+                “<strong>I feel frustrated </strong> because some clients{' '}
                 <strong>do not pay on time</strong> <br />
                 and I need immediate cashflow to operate.”
               </h2>
@@ -157,7 +156,7 @@ export default function Ideas() {
         <Carousel.Item className="bg-grey">
           <div
             style={{
-              ...carouselIdea,
+              ...carouselIdea
             }}
           >
             <div className="mt-5 mx-4">
@@ -166,20 +165,20 @@ export default function Ideas() {
                 <div
                   className="line"
                   style={{
-                    marginTop: "0",
-                    width: "40.9px",
+                    marginTop: '0',
+                    width: '40.9px'
                   }}
                 ></div>
               </h1>
               <Image
                 className="mt-5 mx-4"
-                src="images/sff-ff-icon.svg"
+                src="/images/sff-ff-icon.svg"
                 alt=""
-                style={{ width: "38px" }}
+                style={{ width: '38px' }}
               ></Image>
               <div className="line-idea"></div>
               <h2 className="mx-4 fs-3 fw-400">
-                “I don{"'"}t understand{" "}
+                “I don{"'"}t understand{' '}
                 <strong>what my factor charges me</strong> <br /> and all these
                 hidden costs.”
               </h2>
@@ -188,5 +187,5 @@ export default function Ideas() {
         </Carousel.Item>
       </Carousel>
     </>
-  );
+  )
 }

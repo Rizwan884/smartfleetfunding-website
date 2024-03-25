@@ -1,8 +1,8 @@
-import { Col, Container, Row, Carousel } from "react-bootstrap";
-import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
+import Image from 'next/image'
+import { Carousel, Col, Container, Row } from 'react-bootstrap'
+import { useMediaQuery } from 'react-responsive'
 export default function Provides() {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
       <div className="container mt-7 pb-5 font-montserrat">
@@ -22,14 +22,14 @@ export default function Provides() {
                   <Row className="m-2">
                     <div>
                       <h1 id="hover" className="fw-bold fs-3 mb-2 mt-2 w-75 ">
-                        {" "}
+                        {' '}
                         <span className="sub-line">For</span> you
                       </h1>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
                       <div>
                         <p className="ms-2 mt-3 fs-6 fw-500 w-100">
-                          Instant access to your profits{" "}
+                          Instant access to your profits{' '}
                           <strong className="fst-italic">
                             (Customer Invoice less Carrier Invoice.)
                           </strong>
@@ -66,8 +66,8 @@ export default function Provides() {
                   <Row className="m-2">
                     <div>
                       <h1 id="hover" className="fw-bold fs-3 mb-2 mt-2 w-75 ">
-                        {" "}
-                        <span className="sub-line">For</span> your carries
+                        {' '}
+                        <span className="sub-line">For</span> your carriers
                       </h1>
                     </div>
                     <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
@@ -107,7 +107,7 @@ export default function Provides() {
                 <Row className="m-2">
                   <div>
                     <h1 id="hover" className="fw-bold fs-3 mb-2 mt-2 w-75 ">
-                      {" "}
+                      {' '}
                       <span className="sub-line">For</span> you
                     </h1>
                   </div>
@@ -116,7 +116,7 @@ export default function Provides() {
                       width={20}
                       height={20}
                       className="mt-40"
-                      src="images/sff-fb-arrow-right-blue.svg"
+                      src="/images/sff-fb-arrow-right-blue.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -133,7 +133,7 @@ export default function Provides() {
                       width={20}
                       height={20}
                       className="mt-34"
-                      src="images/sff-fb-arrow-right-blue.svg"
+                      src="/images/sff-fb-arrow-right-blue.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div className="mt-2">
@@ -148,7 +148,7 @@ export default function Provides() {
                       width={20}
                       height={20}
                       className="mt-34"
-                      src="images/sff-fb-arrow-right-blue.svg"
+                      src="/images/sff-fb-arrow-right-blue.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div className="mt-2">
@@ -163,7 +163,7 @@ export default function Provides() {
                       width={20}
                       height={20}
                       className="mt-40"
-                      src="images/sff-fb-arrow-right-blue.svg"
+                      src="/images/sff-fb-arrow-right-blue.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div className="">
@@ -177,13 +177,13 @@ export default function Provides() {
               </div>
             </div>
             <div className="col">
-              {" "}
+              {' '}
               <div className="container d-flex flex-column bg-white-shadow w-65 h-100">
                 <Row className="m-2">
                   <div>
                     <h1 id="hover" className="fw-bold fs-3 mb-2 mt-2 w-75 ">
-                      {" "}
-                      <span className="sub-line">For</span> your carries
+                      {' '}
+                      <span className="sub-line">For</span> your carriers
                     </h1>
                   </div>
                   <div className="d-flex mb-4 lh-sm align-items-center gap-2 line-programs ">
@@ -191,7 +191,7 @@ export default function Provides() {
                       width={20}
                       height={20}
                       className="mt-14"
-                      src="images/sff-fb-arrow-right-blue.svg"
+                      src="/images/sff-fb-arrow-right-blue.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div>
@@ -205,7 +205,7 @@ export default function Provides() {
                       width={20}
                       height={20}
                       className="mt-50"
-                      src="images/sff-fb-arrow-right-blue.svg"
+                      src="/images/sff-fb-arrow-right-blue.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div className="mt-2">
@@ -220,7 +220,7 @@ export default function Provides() {
                       width={20}
                       height={20}
                       className="mt-94"
-                      src="images/sff-fb-arrow-right-blue.svg"
+                      src="/images/sff-fb-arrow-right-blue.svg"
                       alt="testimonial-img"
                     ></Image>
                     <div className="mt-2">
@@ -237,5 +237,5 @@ export default function Provides() {
         </Container>
       )}
     </>
-  );
+  )
 }

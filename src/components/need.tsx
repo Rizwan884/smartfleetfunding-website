@@ -1,5 +1,6 @@
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
+import { url } from "inspector";
+import { Button, Card } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
 
 export default function Needs() {
   return (
@@ -18,7 +19,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -31,7 +32,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -44,7 +45,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -58,7 +59,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -71,11 +72,11 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
-                <strong className="text-green">Accelerate accounts</strong>{" "}
+                <strong className="text-green">Accelerate accounts</strong>{' '}
                 receivable cycle
               </Card.Text>
             </Card.Body>
@@ -84,7 +85,7 @@ export default function Needs() {
             <Card.Body className="text-start w-100">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="i/mages/sff-fb-check.svg"
                 className="mb-4 w-30px"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -99,7 +100,7 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -112,11 +113,11 @@ export default function Needs() {
             <Card.Body className="text-start">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="w-30px mb-4"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
-                <strong className="text-green">Accelerate accounts</strong>{" "}
+                <strong className="text-green">Accelerate accounts</strong>{' '}
                 receivable cycle
               </Card.Text>
             </Card.Body>
@@ -125,7 +126,7 @@ export default function Needs() {
             <Card.Body className="text-start w-100">
               <Image
                 alt="icons"
-                src="images/sff-fb-check.svg"
+                src="/images/sff-fb-check.svg"
                 className="mb-4 w-30px"
               ></Image>
               <Card.Text className="fs-5 lh-sm mt-3">
@@ -135,27 +136,39 @@ export default function Needs() {
             </Card.Body>
           </Card>
         </div>
-        <div className="mx-2">
+        <br />
+        <br />
+        <div className="mx-2 text-center mt-5 bg-button ">
+          <div className="mt-3">
           <Button
-            href="/"
-            className="contact_slide fw-bold fs-4 me-5 my-4 h-25 d-inline-block"
+            href="tel:+18302097589"
+            className="contact_slide fw-bold fs-4 me-5 my-4 d-inline-block"
             variant="btn btn-custom"
           >
+            <Image 
+            alt="icon"
+            src="/images/sff-message-button-freight-broker.svg"
+            className="me-3"/>
             Let{"'"}s Talk
           </Button>
           <Button
             href="https://outlook.office365.com/owa/calendar/WebPageSales@smartfleetfunding.com/bookings/ "
-            className="contact_slide fw-bold fs-4  my-4 h-25 d-inline-block"
+            className="contact_slide fw-bold fs-4 my-4 d-inline-block"
             variant="btn btn-custom"
           >
+            <Image 
+            alt="icon"
+            src="/images/sff-user-button-freight-broker.svg"
+            className="me-3 mb-1"/>
             Schedule a meeting
           </Button>
+          </div>
         </div>
       </div>
       <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <h1 className="f-500 pb-5 fs-2rem  text-center align-items-center gap-3  text-dark-blue">
-            What if you had more free time <br /> to{" "}
+            What if you had more free time <br /> to{' '}
             <strong className="text-dark-blue f-bold">
               get more clients and carriers?
             </strong>
@@ -163,5 +176,5 @@ export default function Needs() {
         </div>
       </div>
     </>
-  );
+  )
 }
