@@ -9,7 +9,168 @@ export interface II18nContext {
 }
 
 const I18nContext = createContext<II18nContext>({
-  t: {}
+  t: {
+    navbar: {
+      home: '',
+      services: '',
+      faq: '',
+      aboutUs: '',
+      contact: ''
+    },
+    languages: {
+      current: { title: '', locale: '' },
+      available: []
+    },
+    home: {
+      cards: [
+        {
+          title: '',
+          shortDescription: '',
+          regular: '',
+          strong: '',
+          icon: '',
+          iconback: ''
+        }
+      ],
+      carinfo: [
+        {
+          title: '',
+          sections: [{ heading: '', items: [] }],
+          icon: '',
+          iconback: ''
+        }
+      ],
+      headercardinfo: [{ header: '', descripcion: '' }],
+      sectionvideo: [{ title: '', descripcion: '', strong: '' }],
+      footer: [
+        {
+          home: '',
+          services: '',
+          fullfact: '',
+          instapay: '',
+          freightbroke: '',
+          fuelcard: '',
+          faq: '',
+          aboutus: '',
+          contact: '',
+          curious: ''
+        }
+      ],
+      sectioninfo: [
+        {
+          title: '',
+          descripcion: '',
+          linebreak: '',
+          breaktext: '',
+          button: ''
+        }
+      ],
+      slider: [
+        { title: '', strong: '', button: '', image: '', imagemobile: '' }
+      ]
+    },
+    fullcard: {
+      header: [],
+      carruzel: [],
+      helptittle: '',
+      helpcards: [],
+      helpcardstwo: [],
+      form: [],
+      testimonials: [],
+      accordionItems: [],
+      titleform: '',
+      pagetittle: '',
+      pagestrong: ''
+    },
+    instapay: {
+      pagetittle: '',
+      pagestrong: '',
+      welcometittle: '',
+      welcomedescripcion: '',
+      stepstittle: '',
+      steps: [],
+      Benefits: [],
+      Benefitstwo: [],
+      benefitstitle: '',
+      form: [],
+      accordiontittle: '',
+      accordionItems: []
+    },
+    fuelcard: {
+      pagetittle: '',
+      pagetittlestrong: '',
+      road: [],
+      cardsfuel: [],
+      fuelcardsection: [],
+      fuelcardsectiontitle: '',
+      fuelcardsectiondescription: '',
+      formtitle: '',
+      formselectsoptions: [],
+      formfullname: '',
+      formemail: '',
+      formcompany: '',
+      formphone: '',
+      formmessage: '',
+      formcheck: '',
+      formbreak: '',
+      formbutton: ''
+    },
+    freightbroker: {
+      pagetitle: '',
+      titlestrong: '',
+      titleform: '',
+      needstitle: '',
+      needs: [],
+      needstwo: [],
+      needsbutton: '',
+      needsbuttontwo: '',
+      needsfinaltext: '',
+      needsfinaltextstrong: '',
+      programtitle: '',
+      programtitleweb: '',
+      programtitlewebbreak: '',
+      programs: [],
+      provide: [],
+      providetitle: '',
+      helpyou: { title: '', image: '', items: [] },
+      formfullname: '',
+      formemail: '',
+      formcompany: '',
+      formphone: '',
+      formmessage: '',
+      formcheck: '',
+      formbreak: '',
+      formbutton: ''
+    },
+    faqs: {
+      accordionInstaItems: [],
+      faqtitle: ''
+    },
+    about: {
+      pagetitle: '',
+      pagestrong: '',
+      knowtitle: '',
+      knowstrong: '',
+      cards: [],
+      cardstwo: [],
+      knowsection: []
+    },
+    contact: {
+      titleform: '',
+      contacttitle: '',
+      contacttitleform: '',
+      contacttitlestrong: '',
+      contacttitlebreak: '',
+      formname: '',
+      formemail: '',
+      formcompany: '',
+      formphone: '',
+      formmessage: '',
+      formcheck: '',
+      formbreak: '',
+      formbutton: ''
+    }
+  }
 })
 
 export const useI18nProvider = (): II18nContext => useContext(I18nContext)

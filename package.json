@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "prettier-format": "prettier --config .prettierrc '**/*.(js|ts|tsx|json)' --write",
     "prettier-check": "prettier --config .prettierrc '**/*.(js|ts|tsx|json)' --check"
   },
@@ -35,8 +35,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^5.1.2",
     "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^9.0.11",
     "next": "^14.0.3",
-    "husky": "4",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
     "typescript": "^5"
