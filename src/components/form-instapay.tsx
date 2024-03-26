@@ -76,8 +76,8 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
-                    id="name"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="fullname"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
@@ -88,8 +88,8 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="email"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="email"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="fullemail"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
@@ -102,8 +102,8 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
-                    id="company"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="fullcompany"
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
@@ -114,8 +114,8 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="number"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="phone"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="fullphone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
@@ -128,9 +128,9 @@ export default function FormInstapay() {
                 <div className="col-12 col-md-6">
                   <input
                     type="text"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="freightBroker"
-                    name="freightBroker"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="freight"
+                    name="freight"
                     value={formData.freightBroker}
                     onChange={handleInputChange}
                     required
@@ -140,7 +140,7 @@ export default function FormInstapay() {
               </div>
               <div className="mb-3 ">
                 <textarea
-                  className="form-control bg-grey-transparent text-dark-blue"
+                  className="form-control bg-grey-transparent-instapay text-dark-blue"
                   id="comments"
                   name="comments"
                   value={formData.comments}

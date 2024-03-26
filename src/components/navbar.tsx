@@ -69,9 +69,9 @@ export default function SFFNavbar() {
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className="text-start text-dark"
-                    href="/instapay"
+                    href="/fespay"
                   >
-                    Instapay
+                    Fespay
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className="text-start text-dark"

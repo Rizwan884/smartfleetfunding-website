@@ -62,6 +62,10 @@ body {
 .bg-grey-transparent {
   background-color: var(--gray-transparent)
 }
+.bg-grey-transparent-instapay {
+  background-color: #4544442e;
+}
+
 .bg-white-shadow {
   background-color: var(--white-gray-shadow)
 }
@@ -1058,6 +1062,30 @@ input[type="radio"]:checked ~ label {
 .line-programs {
   border-bottom: 1px solid #b3b3b26e;
 }
+
+/*----------Needs---------------*/
+.bg-button{
+  background-image: url("../../../public/images/sff-freight-broker-bg-buttons.jpg");
+  background-size: cover;
+  background-position: center; 
+  height: 190px; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+@media (max-width: 767px) {
+  .bg-button {
+    height: auto;
+    padding: 30px 10px;
+    width: 100%;
+  }
+  .contact_slide:nth-child(1) { 
+    margin-top: 10px;
+    margin-left: 35px;
+  }
+}
+
 /*-------Search----------*/
 .bg-search {
   background-image: url("../../../public/images/sff-search.jpg");
