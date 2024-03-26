@@ -51,7 +51,7 @@ export default function SectionAccordion({
               <div id="title-mobile">{item.title}</div>
             </Accordion.Header>
             <Accordion.Body className="text-start">
-            {Array.isArray(item.descripcion) ? (
+              {Array.isArray(item.descripcion) ? (
                 <ul>
                   {item.descripcion.map((line, index) => (
                     <li key={index}>{line}</li>

@@ -1,8 +1,8 @@
-import SectionAccordion from './section-accordion'
 import { useI18nProvider } from '@/context/I18nProvider'
+import SectionAccordion from './section-accordion'
 export default function FuelCardSections() {
   const { t } = useI18nProvider()
-  const accordionItems = t.fuelcard.fuelcardsection;
+  const accordionItems = t.fuelcard.fuelcardsection
 
   return (
     <>

@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive'
 const carouselImage = {
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
-  height: '400px', 
+  height: '400px',
   position: 'relative' as const
 }
 type ICard = {

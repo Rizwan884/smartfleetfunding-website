@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Image from 'next/image'
 export default function Road() {
   const { t } = useI18nProvider()
   return (
@@ -30,12 +30,10 @@ export default function Road() {
       <div className="d-none d-md-flex font-montserrat row m-2">
         <div className="col-7">
           <div className="text-left m-5 p-5">
-            <h2 className="fs-4 fw-bold ">
-              {t.fuelcard.road[0].title}
-            </h2>
+            <h2 className="fs-4 fw-bold ">{t.fuelcard.road[0].title}</h2>
             <div className="line"></div>
             <div className="card-text-bottom fs-5  fw-400">
-            {t.fuelcard.road[0].descripcion}
+              {t.fuelcard.road[0].descripcion}
             </div>
           </div>
         </div>

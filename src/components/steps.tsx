@@ -1,5 +1,5 @@
-import { Container, Row } from 'react-bootstrap'
 import { useI18nProvider } from '@/context/I18nProvider'
+import { Container, Row } from 'react-bootstrap'
 export default function Steps() {
   const { t } = useI18nProvider()
   const steps = t.instapay.steps

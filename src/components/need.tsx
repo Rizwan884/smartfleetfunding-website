@@ -92,9 +92,9 @@ export default function Needs() {
       <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <h1 className="f-500 pb-5 fs-2rem  text-center align-items-center gap-3  text-dark-blue">
-          {t.freightbroker.needsfinaltext} <br />
+            {t.freightbroker.needsfinaltext} <br />
             <strong className="text-dark-blue f-bold">
-            {t.freightbroker.needsfinaltextstrong}
+              {t.freightbroker.needsfinaltextstrong}
             </strong>
           </h1>
         </div>

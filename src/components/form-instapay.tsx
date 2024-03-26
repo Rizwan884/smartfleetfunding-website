@@ -1,41 +1,41 @@
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link'
+import { useState } from 'react'
 
 import { useI18nProvider } from '@/context/I18nProvider'
 export default function FormInstapay() {
   const { t } = useI18nProvider()
   const [formData, setFormData] = useState<{ [key: string]: string }>({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    freightBroker: "",
-    comments: "",
-  });
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    freightBroker: '',
+    comments: ''
+  })
 
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
+      const response = await fetch('/api/submitForm', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData),
-      });
+        body: JSON.stringify(formData)
+      })
 
       if (response.ok) {
-        console.log("Form submitted successfully");
-        console.log("response status: " + response.status);
+        console.log('Form submitted successfully')
+        console.log('response status: ' + response.status)
       } else {
-        console.error("Failed to submit form", response);
+        console.error('Failed to submit form', response)
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error('Error submitting form:', error)
     }
-  };
+  }
 
   // Function to handle input changes
   const handleInputChange = (
@@ -43,13 +43,13 @@ export default function FormInstapay() {
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     // Update form data state with new value
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
-    }));
-  };
+      [name]: value
+    }))
+  }
   return (
     <>
       <div className=" mt-6 font-montserrat fi-img">
@@ -177,7 +177,7 @@ export default function FormInstapay() {
                 </div>
 
                 <button type="submit" className="btn fw-600">
-                {t.instapay.form[0].button}
+                  {t.instapay.form[0].button}
                 </button>
               </div>
             </form>

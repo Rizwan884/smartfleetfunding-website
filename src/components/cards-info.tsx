@@ -21,7 +21,8 @@ export default function Cards() {
       {isMobile ? (
         <div className="font-montserrat">
           <h2 className="fs-5 fw-bold text-center">
-          {t.home.headercardinfo[0].header} {t.home.headercardinfo[0].descripcion}
+            {t.home.headercardinfo[0].header}{' '}
+            {t.home.headercardinfo[0].descripcion}
           </h2>
           <div className="d-flex justify-content-center ">
             <div className="line"></div>
@@ -140,8 +141,8 @@ export default function Cards() {
       ) : (
         <Container className="font-montserrat">
           <h2 className=" fw-bold text-left">
-          {t.home.headercardinfo[0].header} <br />
-          {t.home.headercardinfo[0].descripcion}
+            {t.home.headercardinfo[0].header} <br />
+            {t.home.headercardinfo[0].descripcion}
           </h2>
           <div className="line"></div>
           <Row
@@ -150,8 +151,12 @@ export default function Cards() {
           >
             {t.home.carinfo.map(
               ({ title, sections, icon, iconback }: ICard, key: number) => (
-                <Col className="card-column " style={{ width: '300px' }}>
-                  <Card.Body style={{fontSize: '15px', overflowY: 'auto'}} >
+                <Col
+                  key={key}
+                  className="card-column "
+                  style={{ width: '300px' }}
+                >
+                  <Card.Body style={{ fontSize: '15px', overflowY: 'auto' }}>
                     <ListGroup>
                       <ListGroup.Item className="body-list bd-box card-hb">
                         <div className="icon-cards" style={{ height: 70 }}>

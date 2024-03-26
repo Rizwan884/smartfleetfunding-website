@@ -1,5 +1,5 @@
-import Image from 'react-bootstrap/Image'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Image from 'react-bootstrap/Image'
 type ICard = {
   tittle: string
   descripcion: string
@@ -17,30 +17,34 @@ export default function Benefits() {
           </h1>
         </div>
         <div className="row mt-5">
-        {t.instapay.Benefits.map(({ tittle, descripcion, icon }: ICard, key: number) => (
-          <div key={key} className="col-12 col-md-6">
-            <div className="text-left p-5 d-flex align-items-center gap-2">
-              <Image className="img-style" alt="icon" src={icon}></Image>
-              <div className="lh-sm">
-                <h2 className="fs-3 fw-600 text-green ">{tittle}</h2>
-                <div className="fs-5 fw-400">{descripcion}</div>
+          {t.instapay.Benefits.map(
+            ({ tittle, descripcion, icon }: ICard, key: number) => (
+              <div key={key} className="col-12 col-md-6">
+                <div className="text-left p-5 d-flex align-items-center gap-2">
+                  <Image className="img-style" alt="icon" src={icon}></Image>
+                  <div className="lh-sm">
+                    <h2 className="fs-3 fw-600 text-green ">{tittle}</h2>
+                    <div className="fs-5 fw-400">{descripcion}</div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            )
+          )}
         </div>
         <div className="row">
-        {t.instapay.Benefitstwo.map(({ tittle, descripcion, icon }: ICard, key: number) => (
-          <div key={key} className="col-12 col-md-6">
-            <div className="text-left p-5 d-flex align-items-center gap-2">
-              <Image className="img-style" alt="icon" src={icon}></Image>
-              <div className="lh-sm">
-                <h2 className="fs-3 fw-600 text-green ">{tittle}</h2>
-                <div className="fs-5 fw-400">{descripcion}</div>
+          {t.instapay.Benefitstwo.map(
+            ({ tittle, descripcion, icon }: ICard, key: number) => (
+              <div key={key} className="col-12 col-md-6">
+                <div className="text-left p-5 d-flex align-items-center gap-2">
+                  <Image className="img-style" alt="icon" src={icon}></Image>
+                  <div className="lh-sm">
+                    <h2 className="fs-3 fw-600 text-green ">{tittle}</h2>
+                    <div className="fs-5 fw-400">{descripcion}</div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            )
+          )}
         </div>
       </div>
     </>

@@ -20,7 +20,7 @@ export default function SectionVideo() {
         <div className="font-montserrat bg-white-rgb pb-5">
           {t.home.sectionvideo.map(
             ({ title, descripcion, strong }: ICard, key: number) => (
-              <div className="">
+              <div key={key} className="">
                 <div className="text-left mt-5 p-5">
                   <h2 className="fs-5 fw-bold  text-center">{title}</h2>
                   <div className="d-flex justify-content-center">
@@ -76,7 +76,7 @@ export default function SectionVideo() {
         <div className="font-montserrat row m-2">
           {t.home.sectionvideo.map(
             ({ title, descripcion, strong }: ICard, key: number) => (
-              <div className="col-6">
+              <div key={key} className="col-6">
                 <div className="text-left m-5 p-5">
                   <h2 className="fs-3 fw-bold ">{title}</h2>
                   <div className="line"></div>

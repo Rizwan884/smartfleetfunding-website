@@ -9,6 +9,7 @@ type ICard = {
   regular: string
   strong: string
   icon: string
+  iconback: string
 }
 export default function Cards() {
   const isMobile = useMediaQuery({ maxWidth: 767 })

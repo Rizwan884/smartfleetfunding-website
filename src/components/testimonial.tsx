@@ -90,7 +90,7 @@ const TestimonialCarousel = () => {
                         <Card className="w-75 mx-5" style={{ border: '10px' }}>
                           <Card.Body>
                             <Card.Text className="fs-6 text-start lh-sm">
-                            <h3>{item.title}</h3>
+                              <h3>{item.title}</h3>
                             </Card.Text>
                             <Card.Text className="fs-6 text-start lh-sm">
                               {item.descripcion}
@@ -149,7 +149,6 @@ const TestimonialCarousel = () => {
           )
         )}
       </Carousel>
-
     </>
   )
 }

@@ -1,4 +1,4 @@
-import { useI18nProvider } from "@/context/I18nProvider"
+import { useI18nProvider } from '@/context/I18nProvider'
 export default function Contact() {
   const { t } = useI18nProvider()
   return (

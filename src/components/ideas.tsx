@@ -1,6 +1,6 @@
+import { useI18nProvider } from '@/context/I18nProvider'
 import { Carousel } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
-import { useI18nProvider } from '@/context/I18nProvider'
 
 const carouselIdea = {
   backgroundSize: 'cover',
@@ -32,42 +32,40 @@ export default function Ideas() {
         controls={false}
       >
         {t.fullcard.carruzel.map(
-            ({ title, descripcion, strong, icon }: ICard, key: number) => (
-              <Carousel.Item key={key} className="bg-grey">
-          <div
-            style={{
-              ...carouselIdea
-            }}
-          >
-            <div className="mt-5 mx-4">
-              <h1 className="text-start fs-3 fw-600 ms-4 d-none d-sm-block">
-                {title}
-                <div
-                  className="line"
-                  style={{
-                    marginTop: '0',
-                    width: '40.9px'
-                  }}
-                ></div>
-              </h1>
-              <Image
-                className="mt-5 mx-4"
-                src={icon}
-                alt=""
-                style={{ width: '38px' }}
-              ></Image>
-              <div className="line-idea"></div>
-              <h2 className="mx-4 fs-3 fw-400">
-                {descripcion}
-                <strong className="mx-2">
-                  {strong}
-                </strong>
-              </h2>
-            </div>
-          </div>
-        </Carousel.Item>
-            )
-          )}
+          ({ title, descripcion, strong, icon }: ICard, key: number) => (
+            <Carousel.Item key={key} className="bg-grey">
+              <div
+                style={{
+                  ...carouselIdea
+                }}
+              >
+                <div className="mt-5 mx-4">
+                  <h1 className="text-start fs-3 fw-600 ms-4 d-none d-sm-block">
+                    {title}
+                    <div
+                      className="line"
+                      style={{
+                        marginTop: '0',
+                        width: '40.9px'
+                      }}
+                    ></div>
+                  </h1>
+                  <Image
+                    className="mt-5 mx-4"
+                    src={icon}
+                    alt=""
+                    style={{ width: '38px' }}
+                  ></Image>
+                  <div className="line-idea"></div>
+                  <h2 className="mx-4 fs-3 fw-400">
+                    {descripcion}
+                    <strong className="mx-2">{strong}</strong>
+                  </h2>
+                </div>
+              </div>
+            </Carousel.Item>
+          )
+        )}
       </Carousel>
     </>
   )

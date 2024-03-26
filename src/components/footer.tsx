@@ -44,7 +44,7 @@ export default function Footer() {
                 }: ICard,
                 key: number
               ) => (
-                <Nav className="d-flex flex-column gap-1 p-1">
+                <Nav key={key} className="d-flex flex-column gap-1 p-1">
                   <Nav.Link className="text-green fw-600" href="/">
                     {home}
                   </Nav.Link>
@@ -210,7 +210,7 @@ export default function Footer() {
                       }: ICard,
                       key: number
                     ) => (
-                      <Nav>
+                      <Nav key={key}>
                         <Nav.Link className="text-green fw-500" href="/">
                           {home}
                         </Nav.Link>

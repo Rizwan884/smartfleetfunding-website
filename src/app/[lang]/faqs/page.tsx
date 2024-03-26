@@ -1,10 +1,10 @@
 'use client'
+import { useI18nProvider } from '@/context/I18nProvider'
 import { useState } from 'react'
 import FaqAccordion from '../../../components/faq-accordion'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 import Search from '../../../components/search'
-import { useI18nProvider } from '@/context/I18nProvider'
 
 export default function Faqs() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -13,7 +13,7 @@ export default function Faqs() {
     setSearchTerm(term)
   }
   const { t } = useI18nProvider()
-  const accordionInstaItems = t.faqs.accordionInstaItems;
+  const accordionInstaItems = t.faqs.accordionInstaItems
 
   return (
     <>

@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 
 import { useI18nProvider } from '@/context/I18nProvider'
 type IProps = {
@@ -11,36 +11,36 @@ type IProps = {
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
   const { t } = useI18nProvider()
   const [formData, setFormData] = useState<{ [key: string]: string }>({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    message: "",
-  });
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    message: ''
+  })
 
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
+      const response = await fetch('/api/submitForm', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData),
-      });
+        body: JSON.stringify(formData)
+      })
 
       if (response.ok) {
-        console.log("Form submitted successfully");
-        console.log("response status: " + response.status);
+        console.log('Form submitted successfully')
+        console.log('response status: ' + response.status)
       } else {
-        console.error("Failed to submit form", response);
+        console.error('Failed to submit form', response)
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error('Error submitting form:', error)
     }
-  };
+  }
 
   // Function to handle input changes
   const handleInputChange = (
@@ -48,13 +48,13 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     // Update form data state with new value
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
-    }));
-  };
+      [name]: value
+    }))
+  }
   return (
     <>
       <div className="container d-flex flex-column flex-md-row mp-contact font-montserrat ">
@@ -69,9 +69,9 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
             <div className="position-relative ">
               <div className="container">
                 <h1 className="p-4 pt-5 mt-5  mt-md-0 fs-3 position relative text-center text-md-start">
-                 {t.contact.contacttitleform}{' '}
+                  {t.contact.contacttitleform}{' '}
                   <strong>
-                   {t.contact.contacttitlestrong} <br />
+                    {t.contact.contacttitlestrong} <br />
                     {t.contact.contacttitlebreak}
                   </strong>
                 </h1>
@@ -229,7 +229,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
               </div>
 
               <button type="submit" className="btn fw-600 me-1 ">
-              {t.contact.formbutton}
+                {t.contact.formbutton}
               </button>
             </div>
           </form>

@@ -1,14 +1,14 @@
 'use client'
 
-import Footer from '../../../components/footer'
-import Navbar from '../../../components/navbar'
-import { useI18nProvider } from '@/context/I18nProvider'
 import Contact from '@/components/contact'
 import FormContact from '@/components/form-contact'
+import { useI18nProvider } from '@/context/I18nProvider'
+import Footer from '../../../components/footer'
+import Navbar from '../../../components/navbar'
 
 export default function AboutUs() {
   const { t } = useI18nProvider()
-  const titleForm = t.contact.titleform;
+  const titleForm = t.contact.titleform
   return (
     <>
       <Navbar />
