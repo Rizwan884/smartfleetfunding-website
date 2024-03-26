@@ -65,7 +65,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
               style={{ objectFit: 'cover' }}
               alt="form"
               fill
-            ></Image>
+            />
             <div className="position-relative ">
               <div className="container">
                 <h1 className="p-4 pt-5 mt-5  mt-md-0 fs-3 position relative text-center text-md-start">
@@ -87,7 +87,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       width={30}
                       height={30}
                       src="/images/sff-contact-phone.svg"
-                    ></Image>
+                      fill
+                    />
                     <div className="lh-sm ">
                       <h2 className="fs-4 fw-600 text-dark-blue mt-1">
                         <a className="remove-link-styles" href="tel:8888755506">
@@ -105,7 +106,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       width={28}
                       height={28}
                       src="/images/sff-contact-mail.svg"
-                    ></Image>
+                      fill
+                    />
                     <div className="">
                       <h2 className="fs-4 mt-3 fw-600 text-dark-blue">
                         <a

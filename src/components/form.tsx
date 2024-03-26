@@ -179,6 +179,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 }}
                 src={backgroundImage || '/images/sff-form.webp'}
                 alt="form"
+                fill
               />
             </div>
           </div>
