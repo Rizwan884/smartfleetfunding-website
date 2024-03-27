@@ -87,7 +87,6 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       width={30}
                       height={30}
                       src="/images/sff-contact-phone.svg"
-                      fill
                     />
                     <div className="lh-sm ">
                       <h2 className="fs-4 fw-600 text-dark-blue mt-1">
@@ -106,7 +105,6 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       width={28}
                       height={28}
                       src="/images/sff-contact-mail.svg"
-                      fill
                     />
                     <div className="">
                       <h2 className="fs-4 mt-3 fw-600 text-dark-blue">

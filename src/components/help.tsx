@@ -42,9 +42,9 @@ export default function Help() {
               {helpcards.map((card, index) => (
                 <Col
                   key={index}
-                  className=" col-4 mt-3 mb-3 d-flex justify-content-center"
+                  className="col-4 mt-3 mb-3 d-flex justify-content-center"
                 >
-                  <Card style={{ width: '18rem', border: '10px' }}>
+                  <Card style={{ border: '10px' }}>
                     <Card.Body>
                       <Image
                         src={card.icon}

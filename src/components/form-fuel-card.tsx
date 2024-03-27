@@ -213,7 +213,8 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 }}
                 src={backgroundImage || '/images/sff-fuel-card-form.webp'}
                 alt="form"
-                fill
+                width={1920}
+                height={1080}
               />
             </div>
           </div>

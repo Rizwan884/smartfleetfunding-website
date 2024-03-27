@@ -2,12 +2,12 @@
 
 import Banners from '@/components/banner'
 import Benefits from '@/components/benefits'
+import Footer from '@/components/footer'
 import FormInstapay from '@/components/form-instapay'
+import Navbar from '@/components/navbar'
 import SectionAccordion from '@/components/section-accordion'
 import Steps from '@/components/steps'
 import Welcome from '@/components/welcome'
-import Footer from '../../../components/footer'
-import Navbar from '../../../components/navbar'
 
 export default function Instapay() {
   const title = (
@@ -107,8 +107,8 @@ export default function Instapay() {
         hideIcons={true}
         title={title}
         titleMobile={titleMobile}
-        backgroundImage="images/sff-instapay.webp"
-        mobileBackgroundImage="images/sff-instapay-mobile.webp"
+        backgroundImage="/images/sff-instapay.webp"
+        mobileBackgroundImage="/images/sff-instapay-mobile.webp"
       />
       <Welcome />
       <Steps />

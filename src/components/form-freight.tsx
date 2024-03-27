@@ -178,7 +178,8 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
               }}
               src={backgroundImage || '/images/sff-form-freight.webp'}
               alt="form"
-              fill
+              width={1920}
+              height={1080}
             />
           </div>
         </div>
