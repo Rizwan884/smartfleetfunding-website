@@ -48,11 +48,11 @@ interface SectionVideo {
   strong: string
 }
 
-interface Footer {
+export interface Footer {
   home: string
   services: string
   fullfact: string
-  instapay: string
+  fespay: string
   freightbroke: string
   fuelcard: string
   faq: string
@@ -319,7 +319,6 @@ export type IJSON = {
     formbreak: string
     formbutton: string
   }
-
   faqs: {
     accordionInstaItems: AccordionInstaItem[]
     faqtitle: string
@@ -333,7 +332,6 @@ export type IJSON = {
     cardstwo: Card[]
     knowsection: KnowSection[]
   }
-
   contact: {
     titleform: string
     contacttitle: string

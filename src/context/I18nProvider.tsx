@@ -47,7 +47,7 @@ const I18nContext = createContext<II18nContext>({
           home: '',
           services: '',
           fullfact: '',
-          instapay: '',
+          fespay: '',
           freightbroke: '',
           fuelcard: '',
           faq: '',
