@@ -1,6 +1,7 @@
-import Link from "next/link";
-import { useState } from "react";
-import Image from "next/image"
+import { useI18nProvider } from '@/context/I18nProvider'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 
 type IProps = {
   backgroundImage?: string
@@ -9,37 +10,37 @@ type IProps = {
 
 export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   const [formData, setFormData] = useState<{ [key: string]: string }>({
-    option: "0",
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    message: "",
-  });
+    option: '0',
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    message: ''
+  })
 
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    console.log(formData);
+    event.preventDefault()
+    console.log(formData)
     try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
+      const response = await fetch('/api/submitForm', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData),
-      });
+        body: JSON.stringify(formData)
+      })
 
       if (response.ok) {
-        console.log("Form submitted successfully");
-        console.log("response status: " + response.status);
+        console.log('Form submitted successfully')
+        console.log('response status: ' + response.status)
       } else {
-        console.error("Failed to submit form", response);
+        console.error('Failed to submit form', response)
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error('Error submitting form:', error)
     }
-  };
+  }
 
   // Function to handle input changes
   const handleInputChange = (
@@ -47,21 +48,22 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >
   ) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
 
     // Verificar si el evento es para un select
     const newValue =
       event.target instanceof HTMLSelectElement
         ? value
-        : event.currentTarget.value;
+        : event.currentTarget.value
 
     // Update form data state with new value
     setFormData((prevData) => ({
       ...prevData,
-      [name]: newValue,
-    }));
-  };
+      [name]: newValue
+    }))
+  }
 
+  const { t } = useI18nProvider()
   return (
     <>
       <div className="d-flex font-montserrat flex-column-reverse flex-md-row mt-6 pb-4">
@@ -87,42 +89,16 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   id="option"
                   name="option"
                   className="form-select  bg-grey-transparent text-white"
-                  value={formData.option}
-                  defaultValue=""
-                  onChange={handleInputChange}
                 >
-                  {" "}
-                  <option>Select a option</option>
-                  <option
-                    className="bg-dark-blue text-white"
-                    value="I'm considering applying for the Fuel Card"
-                  >
-                    I{"'"}m considering applying for the Fuel Card
-                  </option>
-                  <option
-                    className="bg-dark-blue text-white"
-                    value="I'd like more information about the Fuel Card"
-                  >
-                    I{"'"}d like more information about the Fuel Card
-                  </option>
-                  <option
-                    className="bg-dark-blue text-white"
-                    value="I have questions about the Fuel Card"
-                  >
-                    I have questions about the Fuel Card
-                  </option>
-                  <option
-                    className=" bg-dark-blue  text-white"
-                    value="I'm already a Fuel Card holder and need assistance"
-                  >
-                    I{"'"}m already a Fuel Card holder and need assistance
-                  </option>
-                  <option
-                    className=" bg-dark-blue  text-white"
-                    value="I want to learn about other services offered"
-                  >
-                    I want to learn about other services offered
-                  </option>
+                  {t.fuelcard.formselectsoptions.map((option, index) => (
+                    <option
+                      key={index}
+                      className="bg-dark-blue text-white"
+                      value={option.value}
+                    >
+                      {option.label}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div className="col ">
@@ -134,7 +110,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  placeholder="Full Name"
+                  placeholder={t.fuelcard.formfullname}
                 ></input>
               </div>
               <div className="col">
@@ -146,7 +122,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  placeholder="Your E-Mail"
+                  placeholder={t.fuelcard.formemail}
                 ></input>
               </div>
             </div>
@@ -160,7 +136,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   value={formData.company}
                   onChange={handleInputChange}
                   required
-                  placeholder="Company Name"
+                  placeholder={t.fuelcard.formcompany}
                 ></input>
               </div>
               <div className="col">
@@ -172,7 +148,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  placeholder="Phone"
+                  placeholder={t.fuelcard.formphone}
                 ></input>
               </div>
             </div>
@@ -185,7 +161,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 onChange={handleInputChange}
                 required
                 rows={3}
-                placeholder="Description"
+                placeholder={t.fuelcard.formmessage}
               ></textarea>
             </div>
 
@@ -202,26 +178,26 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{' '}
+                    {t.fuelcard.formcheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>Privacy Policy</strong>
+                      <strong>{t.fuelcard.formbreak}</strong>
                     </Link>
                   </label>
                 </div>
               </div>
 
-              {formData.option === "0" ? (
+              {formData.option === '0' ? (
                 <button type="submit" className="btn fw-600" disabled>
                   SEND
                 </button>
               ) : (
                 <button type="submit" className="btn fw-600">
-                  SEND
+                  {t.fuelcard.formbutton}
                 </button>
               )}
             </div>
@@ -237,6 +213,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 }}
                 src={backgroundImage || '/images/sff-fuel-card-form.webp'}
                 alt="form"
+                fill
               />
             </div>
           </div>

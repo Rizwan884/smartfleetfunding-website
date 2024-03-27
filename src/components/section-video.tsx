@@ -1,37 +1,40 @@
+import { useI18nProvider } from '@/context/I18nProvider'
 import Image from 'next/image'
 import { useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import { useMediaQuery } from 'react-responsive'
+type ICard = {
+  title: string
+  descripcion: string
+  strong: string
+}
 export default function SectionVideo() {
   const isMobile = useMediaQuery({ maxWidth: 767 })
   const [showModal, setShowModal] = useState(false)
-
+  const { t } = useI18nProvider()
   const openModal = () => setShowModal(true)
   const closeModal = () => setShowModal(false)
   return (
     <>
       {isMobile ? (
         <div className="font-montserrat bg-white-rgb pb-5">
-          <div className="">
-            <div className="text-left mt-5 p-5">
-              <h2 className="fs-5 fw-bold  text-center">
-                Explore the power of factoring with Smart Fleet Funding!
-              </h2>
-              <div className="d-flex justify-content-center">
-                <div className="line"></div>
-              </div>
+          {t.home.sectionvideo.map(
+            ({ title, descripcion, strong }: ICard, key: number) => (
+              <div key={key} className="">
+                <div className="text-left mt-5 p-5">
+                  <h2 className="fs-5 fw-bold  text-center">{title}</h2>
+                  <div className="d-flex justify-content-center">
+                    <div className="line"></div>
+                  </div>
 
-              <div className="lh-sm card-text-bottom fs-6 mx-auto text-center mt-5 fw-500">
-                Watch this concise video to understand how your invoices can
-                turn into immediate cash, allowing you to focus on what you do
-                best - delivering goods.{' '}
-                <strong className="text-gray-dark">
-                  With over 30 years of experience, we{"'"}re here to guide you
-                  through every step.
-                </strong>
+                  <div className="lh-sm card-text-bottom fs-6 mx-auto text-center mt-5 fw-500">
+                    {descripcion}
+                    <strong className="text-gray-dark">{strong}</strong>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            )
+          )}
           <div className="col-5 embed-responsive embed-responsive-16by9  m-4 p-4 rounded-3">
             <a href="#" onClick={openModal} className="position-relative">
               <Image
@@ -71,23 +74,20 @@ export default function SectionVideo() {
         </div>
       ) : (
         <div className="font-montserrat row m-2">
-          <div className="col-6">
-            <div className="text-left m-5 p-5">
-              <h2 className="fs-3 fw-bold ">
-                Explore the power of factoring with Smart Fleet Funding!
-              </h2>
-              <div className="line"></div>
-              <div className="card-text-bottom fs-5  fw-400">
-                Watch this concise video to understand how your invoices can
-                turn into immediate cash, allowing you to focus on what you do
-                best - delivering goods.{' '}
-                <strong className="text-gray-dark">
-                  With over 30 years of experience, we{"'"}re here to guide you
-                  through every step.
-                </strong>
+          {t.home.sectionvideo.map(
+            ({ title, descripcion, strong }: ICard, key: number) => (
+              <div key={key} className="col-6">
+                <div className="text-left m-5 p-5">
+                  <h2 className="fs-3 fw-bold ">{title}</h2>
+                  <div className="line"></div>
+                  <div className="card-text-bottom fs-5  fw-400">
+                    {descripcion}
+                    <strong className="text-gray-dark">{strong}</strong>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            )
+          )}
           <div className="col-5 align-self-center m-4 p-4 rounded-3">
             <a href="#" onClick={openModal} className="position-relative">
               <Image

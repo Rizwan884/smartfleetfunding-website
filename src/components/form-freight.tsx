@@ -1,7 +1,8 @@
-import Link from "next/link";
-import { useState } from "react";
-import Image from "next/image"
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 
+import { useI18nProvider } from '@/context/I18nProvider'
 type IProps = {
   backgroundImage?: string
   titleForm?: string | undefined
@@ -9,36 +10,36 @@ type IProps = {
 
 export default function FormFreight({ backgroundImage, titleForm }: IProps) {
   const [formData, setFormData] = useState<{ [key: string]: string }>({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    message: "",
-  });
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    message: ''
+  })
 
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
+      const response = await fetch('/api/submitForm', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData),
-      });
+        body: JSON.stringify(formData)
+      })
 
       if (response.ok) {
-        console.log("Form submitted successfully");
-        console.log("response status: " + response.status);
+        console.log('Form submitted successfully')
+        console.log('response status: ' + response.status)
       } else {
-        console.error("Failed to submit form", response);
+        console.error('Failed to submit form', response)
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error('Error submitting form:', error)
     }
-  };
+  }
 
   // Function to handle input changes
   const handleInputChange = (
@@ -46,13 +47,14 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     // Update form data state with new value
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
-    }));
-  };
+      [name]: value
+    }))
+  }
+  const { t } = useI18nProvider()
   return (
     <>
       <div className="d-flex flex-column-reverse flex-md-row mt-6">
@@ -81,7 +83,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  placeholder="Full Name"
+                  placeholder={t.freightbroker.formfullname}
                 ></input>
               </div>
               <div className="col">
@@ -93,7 +95,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   value={formData.company}
                   onChange={handleInputChange}
                   required
-                  placeholder="Company Name"
+                  placeholder={t.freightbroker.formcompany}
                 ></input>
               </div>
             </div>
@@ -107,7 +109,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  placeholder="Email Address"
+                  placeholder={t.freightbroker.formemail}
                 ></input>
               </div>
               <div className="col">
@@ -119,7 +121,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  placeholder="Phone Number"
+                  placeholder={t.freightbroker.formphone}
                 ></input>
               </div>
             </div>
@@ -132,7 +134,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                 onChange={handleInputChange}
                 required
                 rows={3}
-                placeholder="How can we help?"
+                placeholder={t.freightbroker.formmessage}
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
@@ -148,21 +150,21 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{' '}
+                    {t.freightbroker.formcheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>Privacy Policy</strong>
+                      <strong>{t.freightbroker.formbreak}</strong>
                     </Link>
                   </label>
                 </div>
               </div>
 
               <button type="submit" className="btn fw-600">
-                SEND
+                {t.freightbroker.formbutton}
               </button>
             </div>
           </form>
@@ -176,6 +178,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
               }}
               src={backgroundImage || '/images/sff-form-freight.webp'}
               alt="form"
+              fill
             />
           </div>
         </div>

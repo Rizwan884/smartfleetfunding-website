@@ -1,155 +1,84 @@
+import { useI18nProvider } from '@/context/I18nProvider'
 import { Button, Carousel } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
-// Interfaz para describir los estilos personalizados
-
+// Interface for describing custom styles
 const carouselImage = {
   backgroundSize: 'cover',
   backgroundPosition: 'center center',
-  height: '400px', // Ajusta la altura según tus necesidades
+  height: '400px',
   position: 'relative' as const
 }
-
+type ICard = {
+  title: string
+  strong: string
+  button: string
+  image: string
+  imagemobile: string
+}
 export default function Slider() {
   const isMobile = useMediaQuery({ maxWidth: 767 })
+  const { t } = useI18nProvider()
   return (
     <>
       {isMobile ? (
         <Carousel className="font-montserrat" controls={false}>
-          <Carousel.Item>
-            <div
-              style={{
-                ...carouselImage,
-                backgroundImage: 'url("/images/sff-truck-mobile.webp")'
-              }}
-            >
-              <div className="slider-container-mobile mx-4">
-                <h1 className="text-start fs-4">
-                  Maximize your business{"'"}s potential <br />
-                  <strong>with Smart Fleet Funding</strong>
-                </h1>
-                <div className="mt-5">
-                  <Button
-                    href="tel:+18302097589"
-                    className="contact_slide fw-bold  my-4 h-25 d-inline-block"
-                    variant="btn btn-custom"
-                  >
-                    GET STARTED
-                  </Button>
+          {t.home.slider.map(
+            ({ title, strong, button, imagemobile }: ICard, key: number) => (
+              <Carousel.Item key={key}>
+                <div
+                  style={{
+                    ...carouselImage,
+                    backgroundImage: `url("${imagemobile}")`
+                  }}
+                >
+                  <div className="slider-container-mobile mx-4">
+                    <h1 className="text-start fs-4">
+                      {title} <br />
+                      <strong>{strong}</strong>
+                    </h1>
+                    <div className="mt-5">
+                      <Button
+                        href="tel:+18302097589"
+                        className="contact_slide fw-bold  my-4 h-25 d-inline-block"
+                        variant="btn btn-custom"
+                      >
+                        {button}
+                      </Button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div
-              style={{
-                ...carouselImage,
-                backgroundImage: 'url("/images/sff-truck-logistic-mobile.webp")'
-              }}
-            >
-              <div className="slider-container-mobile mx-4">
-                <h1 className="text-start fs-3">
-                  Your success, <strong>Our story</strong>
-                </h1>
-                <Button
-                  href="mailto:nluna@smartfleetfunding.com"
-                  className="contact_slide fw-bold my-4 h-25 d-inline-block "
-                  variant="btn btn-custom"
-                >
-                  Take the First Step
-                </Button>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div
-              style={{
-                ...carouselImage,
-                backgroundImage: 'url("/images/sff-succes-story-mobile.webp")'
-              }}
-            >
-              <div className=" slider-container-mobile mx-4 mt-5">
-                <h1 className="text-start fs-4">
-                Let's navigate the road ahead together.  <br />
-                  <strong>Drive your carrier business to new heights</strong>
-                </h1>
-                <Button
-                  href="mailto:dbiojo@smartfleetfunding.com"
-                  className="contact_slide fw-bold my-4 h-25 d-inline-block"
-                  variant="btn btn-custom"
-                >
-                  CASH NOW
-                </Button>
-              </div>
-            </div>
-          </Carousel.Item>
+              </Carousel.Item>
+            )
+          )}
         </Carousel>
       ) : (
         <Carousel className="font-montserrat" controls={false}>
-          <Carousel.Item>
-            <div
-              style={{
-                ...carouselImage,
-                backgroundImage: 'url("/images/sff-truck.webp")'
-              }}
-            >
-              <div className="slider-container slider-container mx-4">
-                <h1 className="text-start fs-3">
-                  Maximize your business{"'"}s potential <br />
-                  <strong>with Smart Fleet Funding</strong>
-                </h1>
-                <Button
-                  href="tel:+18302097589"
-                  className="contact_slide fw-bold  my-4 h-25 d-inline-block"
-                  variant="btn btn-custom"
+          {t.home.slider.map(
+            ({ title, strong, button, image }: ICard, key: number) => (
+              <Carousel.Item key={key}>
+                <div
+                  style={{
+                    ...carouselImage,
+                    backgroundImage: `url("${image}")`
+                  }}
                 >
-                  GET STARTED
-                </Button>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div
-              style={{
-                ...carouselImage,
-                backgroundImage: 'url("/images/sff-truck-logistic.webp")'
-              }}
-            >
-              <div className="slider-container slider-container mx-4">
-                <h1 className="text-start fs-3">
-                  Your success, <strong>Our story</strong>
-                </h1>
-                <Button
-                  href="mailto:nluna@smartfleetfunding.com"
-                  className="contact_slide fw-bold my-4 h-25 d-inline-block "
-                  variant="btn btn-custom"
-                >
-                  Take the First Step
-                </Button>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div
-              style={{
-                ...carouselImage,
-                backgroundImage: 'url("/images/sff-succes-story.webp")'
-              }}
-            >
-              <div className=" slider-container mx-4">
-                <h1 className="text-start fs-3">
-                Let's navigate the road ahead together.  <br />
-                  <strong>Drive your carrier business to new heights</strong>
-                </h1>
-                <Button
-                  href="mailto:dbiojo@smartfleetfunding.com"
-                  className="contact_slide fw-bold my-4 h-25 d-inline-block"
-                  variant="btn btn-custom"
-                >
-                  CASH NOW
-                </Button>
-              </div>
-            </div>
-          </Carousel.Item>
+                  <div className="slider-container slider-container mx-4">
+                    <h1 className="text-start fs-3">
+                      {title} <br />
+                      <strong>{strong}</strong>
+                    </h1>
+                    <Button
+                      href="tel:+18302097589"
+                      className="contact_slide fw-bold  my-4 h-25 d-inline-block"
+                      variant="btn btn-custom"
+                    >
+                      {button}
+                    </Button>
+                  </div>
+                </div>
+              </Carousel.Item>
+            )
+          )}
         </Carousel>
       )}
     </>

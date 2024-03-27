@@ -9,6 +9,7 @@ import Navbar from 'react-bootstrap/Navbar'
 
 export default function SFFNavbar() {
   const { t } = useI18nProvider()
+
   return (
     <>
       <div className="font-montserrat text-left p-2 px-5 bg-green">

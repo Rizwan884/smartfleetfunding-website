@@ -1,44 +1,46 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 
+import { useI18nProvider } from '@/context/I18nProvider'
 type IProps = {
   backgroundImage?: string
   titleForm?: string | undefined
 }
 
 export default function FormContact({ backgroundImage, titleForm }: IProps) {
+  const { t } = useI18nProvider()
   const [formData, setFormData] = useState<{ [key: string]: string }>({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    message: "",
-  });
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    message: ''
+  })
 
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
+      const response = await fetch('/api/submitForm', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData),
-      });
+        body: JSON.stringify(formData)
+      })
 
       if (response.ok) {
-        console.log("Form submitted successfully");
-        console.log("response status: " + response.status);
+        console.log('Form submitted successfully')
+        console.log('response status: ' + response.status)
       } else {
-        console.error("Failed to submit form", response);
+        console.error('Failed to submit form', response)
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error('Error submitting form:', error)
     }
-  };
+  }
 
   // Function to handle input changes
   const handleInputChange = (
@@ -46,13 +48,13 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     // Update form data state with new value
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
-    }));
-  };
+      [name]: value
+    }))
+  }
   return (
     <>
       <div className="container d-flex flex-column flex-md-row mp-contact font-montserrat ">
@@ -63,14 +65,14 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
               style={{ objectFit: 'cover' }}
               alt="form"
               fill
-            ></Image>
+            />
             <div className="position-relative ">
               <div className="container">
                 <h1 className="p-4 pt-5 mt-5  mt-md-0 fs-3 position relative text-center text-md-start">
-                  Contact us for{' '}
+                  {t.contact.contacttitleform}{' '}
                   <strong>
-                    Fast, Easy and <br />
-                    Secure Funding Solutions
+                    {t.contact.contacttitlestrong} <br />
+                    {t.contact.contacttitlebreak}
                   </strong>
                 </h1>
                 <div className="line-contact m-4"></div>
@@ -85,7 +87,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       width={30}
                       height={30}
                       src="/images/sff-contact-phone.svg"
-                    ></Image>
+                      fill
+                    />
                     <div className="lh-sm ">
                       <h2 className="fs-4 fw-600 text-dark-blue mt-1">
                         <a className="remove-link-styles" href="tel:8888755506">
@@ -103,7 +106,8 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       width={28}
                       height={28}
                       src="/images/sff-contact-mail.svg"
-                    ></Image>
+                      fill
+                    />
                     <div className="">
                       <h2 className="fs-4 mt-3 fw-600 text-dark-blue">
                         <a
@@ -146,7 +150,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  placeholder="Full Name"
+                  placeholder={t.contact.formname}
                 ></input>
               </div>
               <div className="col">
@@ -158,7 +162,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  placeholder="Your E-Mail"
+                  placeholder={t.contact.formemail}
                 ></input>
               </div>
             </div>
@@ -172,7 +176,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   value={formData.company}
                   onChange={handleInputChange}
                   required
-                  placeholder="Company Name"
+                  placeholder={t.contact.formcompany}
                 ></input>
               </div>
               <div className="col">
@@ -184,7 +188,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  placeholder="Phone"
+                  placeholder={t.contact.formphone}
                 ></input>
               </div>
             </div>
@@ -197,7 +201,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                 onChange={handleInputChange}
                 required
                 rows={3}
-                placeholder="Description"
+                placeholder={t.contact.formmessage}
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
@@ -213,21 +217,21 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{' '}
+                    {t.contact.formcheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>Privacy Policy</strong>
+                      <strong>{t.contact.formbreak}</strong>
                     </Link>
                   </label>
                 </div>
               </div>
 
-              <button type="submit" className="btn fw-600">
-                SEND
+              <button type="submit" className="btn fw-600 me-1 ">
+                {t.contact.formbutton}
               </button>
             </div>
           </form>
