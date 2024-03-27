@@ -13,11 +13,11 @@ export default function Benefits() {
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
           <h1 className="fw-600 fs-2 text-center  flex-column align-items-center gap-3">
-            {t.instapay.benefitstitle}
+            {t.fespay.benefitstitle}
           </h1>
         </div>
         <div className="row mt-5">
-          {t.instapay.Benefits.map(
+          {t.fespay.Benefits.map(
             ({ tittle, descripcion, icon }: ICard, key: number) => (
               <div key={key} className="col-12 col-md-6">
                 <div className="text-left p-5 d-flex align-items-center gap-2">
@@ -32,7 +32,7 @@ export default function Benefits() {
           )}
         </div>
         <div className="row">
-          {t.instapay.Benefitstwo.map(
+          {t.fespay.Benefitstwo.map(
             ({ tittle, descripcion, icon }: ICard, key: number) => (
               <div key={key} className="col-12 col-md-6">
                 <div className="text-left p-5 d-flex align-items-center gap-2">

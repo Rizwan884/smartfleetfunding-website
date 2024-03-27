@@ -2,13 +2,13 @@ import { useI18nProvider } from '@/context/I18nProvider'
 import { Container, Row } from 'react-bootstrap'
 export default function Steps() {
   const { t } = useI18nProvider()
-  const steps = t.instapay.steps
+  const steps = t.fespay.steps
 
   return (
     <>
       <section className="py-5 bg-white-shadow font-montserrat">
         <Container>
-          <h1 className="fw-bold fs-2 mb-0 mx-4">{t.instapay.stepstittle}</h1>
+          <h1 className="fw-bold fs-2 mb-0 mx-4">{t.fespay.stepstittle}</h1>
           <div className="line mt-0 mb-6 mx-4 mt-1 w-3"></div>
           <Row className="d-flex flex-column m-5 m-3rem">
             {steps.map((step, index) => (

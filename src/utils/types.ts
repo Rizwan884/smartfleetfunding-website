@@ -259,7 +259,7 @@ export type IJSON = {
     pagetittle: string
     pagestrong: string
   }
-  instapay: {
+  fespay: {
     pagetittle: string
     pagestrong: string
     welcometittle: string

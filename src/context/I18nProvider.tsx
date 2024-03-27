@@ -82,7 +82,7 @@ const I18nContext = createContext<II18nContext>({
       pagetittle: '',
       pagestrong: ''
     },
-    instapay: {
+    fespay: {
       pagetittle: '',
       pagestrong: '',
       welcometittle: '',
