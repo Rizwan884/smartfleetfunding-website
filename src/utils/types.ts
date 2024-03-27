@@ -228,7 +228,16 @@ interface KnowSection {
   strong: string
 }
 
-//
+export interface BlogInfo {
+  id: number
+  title: string
+  description: string
+  content: string
+  imageSrc: string
+  desktopSrc:string
+  date: string
+  type: string
+}
 
 export type IJSON = {
   navbar: Navbar
@@ -348,5 +357,9 @@ export type IJSON = {
     formcheck: string
     formbreak: string
     formbutton: string
+  }
+
+  blogs: {
+    bloginfo: BlogInfo[]
   }
 }

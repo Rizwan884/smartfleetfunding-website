@@ -169,6 +169,9 @@ const I18nContext = createContext<II18nContext>({
       formcheck: '',
       formbreak: '',
       formbutton: ''
+    },
+    blogs: {
+      bloginfo: []
     }
   }
 })

@@ -3,20 +3,12 @@ import { Button, Carousel, Col, Row } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
 import { useMediaQuery } from 'react-responsive'
 import Pagination from "react-bootstrap/Pagination";
+import { useI18nProvider } from '@/context/I18nProvider';
+import { BlogInfo } from '@/utils/types';
 
-type BlogItem = {
-  id?: number;
-  title?: string | JSX.Element;
-  description?: string;
-  type?: string;
-  date?: string;
-  more?: string;
-  content?: string;
-  imageSrc?: string;
-  desktopSrc?: string;
-};
+
 type IProps = {
-  blogs: BlogItem[]
+  blogs: BlogInfo[]
 }
 export default function Blog({ blogs }: IProps) {
   const isMobile = useMediaQuery({ maxWidth: 767 });
