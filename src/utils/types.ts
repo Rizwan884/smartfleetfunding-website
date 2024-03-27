@@ -48,11 +48,11 @@ interface SectionVideo {
   strong: string
 }
 
-interface Footer {
+export interface Footer {
   home: string
   services: string
   fullfact: string
-  instapay: string
+  fespay: string
   freightbroke: string
   fuelcard: string
   faq: string
@@ -90,7 +90,7 @@ interface CarruzelItem {
   strong: string
 }
 
-interface HelpCard {
+export interface HelpCard {
   icon: string
   strong: string
   descripcion: string
@@ -202,7 +202,7 @@ interface HelpYouItem {
   details: HelpYouDetail[]
 }
 
-interface HelpYouDetail {
+export interface HelpYouDetail {
   icon: string
   text: string
 }
@@ -269,7 +269,7 @@ export type IJSON = {
     pagetittle: string
     pagestrong: string
   }
-  instapay: {
+  fespay: {
     pagetittle: string
     pagestrong: string
     welcometittle: string
@@ -329,7 +329,6 @@ export type IJSON = {
     formbreak: string
     formbutton: string
   }
-
   faqs: {
     accordionInstaItems: AccordionInstaItem[]
     faqtitle: string
@@ -343,7 +342,6 @@ export type IJSON = {
     cardstwo: Card[]
     knowsection: KnowSection[]
   }
-
   contact: {
     titleform: string
     contacttitle: string

@@ -2,10 +2,11 @@
 
 import Banners from '@/components/banner'
 import Benefits from '@/components/benefits'
-import FormInstapay from '@/components/form-instapay'
+import FormInstapay from '@/components/form-fespay'
 import SectionAccordion from '@/components/section-accordion'
 import Steps from '@/components/steps'
 import Welcome from '@/components/welcome'
+import { useI18nProvider } from '@/context/I18nProvider'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 import { useI18nProvider } from '@/context/I18nProvider'
@@ -14,17 +15,17 @@ export default function Instapay() {
   const { t } = useI18nProvider()
   const title = (
     <p>
-      {t.instapay.pagetittle}{' '} 
-      <strong className="fw-bold">{t.instapay.pagestrong}</strong>
+      {t.fespay.pagetittle}{' '}
+      <strong className="fw-bold">{t.fespay.pagestrong}</strong>
     </p>
   )
   const titleMobile = (
     <p>
-      {t.instapay.pagetittle}{' '} 
-      <strong className="fw-bold">{t.instapay.pagestrong}</strong>
+      {t.fespay.pagetittle}{' '}
+      <strong className="fw-bold">{t.fespay.pagestrong}</strong>
     </p>
   )
-  const accordionInstaItems = t.instapay.accordionItems
+  const accordionInstaItems = t.fespay.accordionItems
 
   return (
     <>
@@ -33,8 +34,8 @@ export default function Instapay() {
         hideIcons={true}
         title={title}
         titleMobile={titleMobile}
-        backgroundImage="/images/sff-instapay.webp"
-        mobileBackgroundImage="images/sff-instapay-mobile.webp"
+        backgroundImage="/images/sff-fespay.webp"
+        mobileBackgroundImage="/images/sff-fespay-mobile.webp"
       />
       <Welcome />
       <Steps />
@@ -42,7 +43,7 @@ export default function Instapay() {
       <FormInstapay />
       <SectionAccordion
         items={accordionInstaItems}
-        headTitle={t.instapay.accordiontittle}
+        headTitle={t.fespay.accordiontittle}
       />
       <Footer />
     </>

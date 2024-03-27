@@ -104,7 +104,9 @@
           },
           {
             "heading": "Para empezar -",
-            "items": ["· Sin problemas para los transportistas con corredores asociados."]
+            "items": [
+              "· Sin problemas para los transportistas con corredores asociados."
+            ]
           }
         ],
         "icon": "/images/sff-point-front.svg",
@@ -157,7 +159,7 @@
         "home": "INICIO",
         "services": "SERVICIOS",
         "fullfact": "Full Fact",
-        "instapay": "Instapay",
+        "fespay": "FesPay",
         "freightbroke": " Freight Broke",
         "fuelcard": "Fuel Card",
         "faq": "FAQ",
@@ -392,25 +394,24 @@
     "pagetittle": "Full",
     "pagestrong": "Factoring Solution"
   },
-  "instapay": {
+  "fespay": {
     "pagetittle": "Pago rápido,",
     "pagestrong": "fácil y seguro",
-    "welcometittle": "BIENVENIDO A INSTAPAY",
-    "welcomedescripcion": "Pagos acelerados para conductores En Smart Fleet Funding, entendemos que cada milla cuenta. Por eso hemos introducido Instapay, un programa exclusivo diseñado pensando en conductores como usted. Instapay le asegura un pago más rápido, proporcionándole la flexibilidad financiera que necesita para un viaje más tranquilo.",
+    "welcometittle": "BIENVENIDO A FESPAY",
+    "welcomedescripcion": "Pagos acelerados para conductores En Smart Fleet Funding, entendemos que cada milla cuenta. Por eso hemos introducido FesPay, un programa exclusivo diseñado pensando en conductores como usted. FesPay le asegura un pago más rápido, proporcionándole la flexibilidad financiera que necesita para un viaje más tranquilo.",
     "stepstittle": "Cómo funciona",
     "steps": [
       {
         "title": "Proceso de pago rápido",
-        "text": "Con Instapay, recibirá el dinero que tanto le ha costado ganar en tan sólo 12 horas laborables. Se acabaron las esperas, los retrasos, los contratos y las comisiones ocultas."
+        "text": "Con FesPay, recibirá el dinero que tanto le ha costado ganar en tan sólo 12 horas laborables. Se acabaron las esperas, los retrasos, los contratos y las comisiones ocultas."
       },
       {
         "title": "Verificación simplificada",
         "text": "La asociación entre Smart Fleet Funding y un selecto grupo de agentes de carga se traduce en un proceso sin complicaciones. Sólo tiene que presentar sus facturas y nosotros nos encargamos del resto. Así de sencillo."
       },
       {
-        
         "title": "Rápido y seguro",
-        "text": "Instapay no sólo es rápido, sino también seguro. Sus fondos se depositan directamente en su cuenta bancaria, lo que garantiza una transacción segura y sin problemas."
+        "text": "FesPay no sólo es rápido, sino también seguro. Sus fondos se depositan directamente en su cuenta bancaria, lo que garantiza una transacción segura y sin problemas."
       }
     ],
     "Benefits": [
@@ -421,14 +422,14 @@
       },
       {
         "tittle": "Sin retenciones",
-        "descripcion": "Adelantamos el 100% menos la comisión de Instapay.",
+        "descripcion": "Adelantamos el 100% menos la comisión de FesPay.",
         "icon": "/images/sff-bff-hand.svg"
       }
     ],
     "Benefitstwo": [
       {
         "tittle": "Acceso en cualquier momento y lugar",
-        "descripcion": "Instapay le da la libertad de acceder a sus fondos desde dondequiera que le lleve su viaje.",
+        "descripcion": "FesPay le da la libertad de acceder a sus fondos desde dondequiera que le lleve su viaje.",
         "icon": "/images/sff-bff-check.svg"
       },
       {
@@ -440,7 +441,7 @@
     "benefitstitle": "Ventajas para los conductores",
     "form": [
       {
-        "title": " Póngase en contacto con nosotros hoy mismo y le ayudaremos a realizar pagos más rápidos y seguros con Instapay.",
+        "title": " Póngase en contacto con nosotros hoy mismo y le ayudaremos a realizar pagos más rápidos y seguros con FesPay.",
         "name": "Nombre Completo",
         "email": "Tu e-mail",
         "company": "Empresa",
@@ -452,12 +453,12 @@
         "button": "ENVIAR"
       }
     ],
-    "accordiontittle":"Lista de preguntas que pueden surgir",
+    "accordiontittle": "Lista de preguntas que pueden surgir",
     "accordionItems": [
       {
-        "title": "¿Cuáles son las condiciones de Instapay?",
+        "title": "¿Cuáles son las condiciones de FesPay?",
         "descripcion": [
-          "La FB para la que transporta debe ser miembro de nuestra Red Instapay.",
+          "La FB para la que transporta debe ser miembro de nuestra Red FesPay.",
           "La carga debe completarse y el papeleo debe enviarse a instapay@smartfleetfunding.com en lugar de al agente de carga."
         ],
         "eventKey": 1
@@ -465,7 +466,7 @@
       {
         "title": "¿Hay comisiones ocultas?",
         "descripcion": [
-          " En absoluto. Instapay opera con una estructura transparente de tarifa plana, asegurando que usted sabe exactamente qué esperar."
+          " En absoluto. FesPay opera con una estructura transparente de tarifa plana, asegurando que usted sabe exactamente qué esperar."
         ],
         "eventKey": 2
       },
@@ -484,7 +485,7 @@
         "eventKey": 4
       },
       {
-        "title": "¿Tengo que cambiar de compañía para beneficiarme con Instapay?",
+        "title": "¿Tengo que cambiar de compañía para beneficiarme con FesPay?",
         "descripcion": [
           "Requerir carta de liberación para el agente de carga particular que participa en el programa instapay."
         ],
@@ -515,7 +516,7 @@
       },
       {
         "icon": "/images/sff-cash-price-fuel.svg",
-        "strong": "PRECIO EN EFECTIVO en el surtidor cada vez que pase por caja en más de 14.000 paradas de camiones y centros de servicio de Canadá y EE.UU." 
+        "strong": "PRECIO EN EFECTIVO en el surtidor cada vez que pase por caja en más de 14.000 paradas de camiones y centros de servicio de Canadá y EE.UU."
       },
       {
         "icon": "/images/sff-fuel.svg",
@@ -563,27 +564,26 @@
     "fuelcardsectiondescription": "*El precio en efectivo puede variar según la ubicación del comerciante. WEX, Inc. no garantiza el precio en efectivo y no se hace responsable de las variaciones. Consulte los detalles completos del programa.",
     "formtitle": "¡Empiece a ahorrar con la tarjeta de combustible Smart Fleet Funding!",
     "formselectsoptions": [
-      
-        {
-          "label": "Estoy pensando en solicitar la Fuel Card",
-          "value": "1"
-        },
-        {
-          "label": "Deseo más información sobre la tarjeta de carburante",
-          "value": "2"
-        },
-        {
-          "label": "Tengo preguntas sobre la Fuel Card",
-          "value": "3"
-        },
-        {
-          "label": "Ya soy titular de una Fuel Card y necesito ayuda",
-          "value": "4"
-        },
-        {
-          "label": "Quiero conocer otros servicios ofrecidos",
-          "value": "5"
-        } 
+      {
+        "label": "Estoy pensando en solicitar la Fuel Card",
+        "value": "1"
+      },
+      {
+        "label": "Deseo más información sobre la tarjeta de carburante",
+        "value": "2"
+      },
+      {
+        "label": "Tengo preguntas sobre la Fuel Card",
+        "value": "3"
+      },
+      {
+        "label": "Ya soy titular de una Fuel Card y necesito ayuda",
+        "value": "4"
+      },
+      {
+        "label": "Quiero conocer otros servicios ofrecidos",
+        "value": "5"
+      }
     ],
     "formfullname": "Nombre Completo",
     "formemail": "Tu email",
@@ -593,7 +593,6 @@
     "formcheck": "Acepte Nuestra",
     "formbreak": " política de privacidad",
     "formbutton": "ENVIAR"
-
   },
   "freightbroker": {
     "pagetitle": "Freight",
@@ -618,21 +617,21 @@
       }
     ],
     "needstwo": [
-        {
-          "title": "Acceda a",
-          "descripcion": " al capital inmediato",
-          "icon": "/images/sff-fb-check.svg"
-        },
-        {
-          "title": "Acelerar las cuentas",
-          "descripcion": " ciclo de cobro",
-          "icon": "/images/sff-fb-check.svg"
-        },
-        {
-          "title": "Fortalezca",
-          "descripcion": " asociaciones",
-          "icon": "/images/sff-fb-check.svg"
-        }
+      {
+        "title": "Acceda a",
+        "descripcion": " al capital inmediato",
+        "icon": "/images/sff-fb-check.svg"
+      },
+      {
+        "title": "Acelerar las cuentas",
+        "descripcion": " ciclo de cobro",
+        "icon": "/images/sff-fb-check.svg"
+      },
+      {
+        "title": "Fortalezca",
+        "descripcion": " asociaciones",
+        "icon": "/images/sff-fb-check.svg"
+      }
     ],
     "needsbutton": "Hablemos",
     "needsbuttontwo": "Programar una reunión",
@@ -644,7 +643,7 @@
     "programs": [
       {
         "title": "Tiempo adicional para centrarse en su actividad principal.",
-        "items":[
+        "items": [
           "Minimizar o incluso eliminar la dedicación de su empresa a las Cuentas por Cobrar y Cuentas por Pagar.",
           "Disminuir el número de llamadas de seguimiento para cobrar y las llamadas entrantes de transportistas y empresas de factoring sobre sus pagos."
         ],
@@ -652,88 +651,85 @@
       },
       {
         "title": "Acceso a costes reducidos de capital y explotación.",
-        "items":[
-        ],
+        "items": [],
         "icon": "/images/sff-fb-arrow-right.svg"
       },
       {
         "title": "Posicione su empresa al mismo nivel que los mayores brokers de Norteamérica ofreciendo Pagos Rápidos.",
-        "items":[
-        ],
+        "items": [],
         "icon": "/images/sff-fb-arrow-right.svg"
       },
       {
         "title": "Más transportistas deseando trabajar para usted.",
-        "items":[
-        ],
+        "items": [],
         "icon": "/images/sff-fb-arrow-right.svg"
       }
     ],
     "provide": [
       {
         "title": "Para ti",
-      "items": [
-        "Acceso instantáneo a sus beneficios (Factura del cliente menos Factura del transportista.)",
-        "Tranquilidad al agilizar su PA a los transportistas.",
-        "Pago rápido a sus transportistas (12 horas laborables.)",
-        "Es hora de que se centre en hacer crecer su negocio dejando que nosotros nos encarguemos de sus cuentas por cobrar."
-      ],
-      "icon": "/images/sff-fb-arrow-right-blue.svg"
+        "items": [
+          "Acceso instantáneo a sus beneficios (Factura del cliente menos Factura del transportista.)",
+          "Tranquilidad al agilizar su PA a los transportistas.",
+          "Pago rápido a sus transportistas (12 horas laborables.)",
+          "Es hora de que se centre en hacer crecer su negocio dejando que nosotros nos encarguemos de sus cuentas por cobrar."
+        ],
+        "icon": "/images/sff-fb-arrow-right-blue.svg"
       },
       {
         "title": "Para sus transportistas",
-      "items": [
-        "Acceso a capital inmediato para sus necesidades de tesorería.",
-        "Eficacia al eliminarles la carga del cobro de facturas y el seguimiento.",
-        "Acceso a descuentos y programas de pago en proveedores clave porque trabajan con usted."
-      ],
-      "icon": "/images/sff-fb-arrow-right-blue.svg"
+        "items": [
+          "Acceso a capital inmediato para sus necesidades de tesorería.",
+          "Eficacia al eliminarles la carga del cobro de facturas y el seguimiento.",
+          "Acceso a descuentos y programas de pago en proveedores clave porque trabajan con usted."
+        ],
+        "icon": "/images/sff-fb-arrow-right-blue.svg"
       }
     ],
     "providetitle": "Lo que ofrecemos",
     "helpyou": {
       "title": "Cómo le ayudamos",
-    "image": "/images/sff-fb-rule.svg",
-    "items": [
-      {
-        "title": "Atracción y retención",
-        "details": [
-          {
-            "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Ser más atractivos para los transportistas."
-          },
-          {
-            "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Los transportistas no se preocuparán por su liquidez para operar."
-          },
-          {
-            "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Los transportistas no tendrán que hacer llamadas de cobro."
-          }
-        ]
-      },
-      {
-        "title": "Gestiona necesidades AR/AP",
-        "details": [
-          {
-            "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Recibir llamadas de cobro de transportistas y otros cobradores de deudas."
-          },
-          {
-            "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Realización de llamadas de cobro a clientes."
-          },
-          {
-            "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Gestión de la documentación AR/AP."
-          },
-          {
-            "icon": "/images/sff-fb-arrow-right.svg",
-            "text": "Manténgase al tanto de la tesorería de la empresa."
-          }
-        ]
-      }
-    ]
+      "image": "/images/sff-fb-rule.svg",
+      "items": [
+        {
+          "title": "Atracción y retención",
+          "details": [
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Ser más atractivos para los transportistas."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Los transportistas no se preocuparán por su liquidez para operar."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Los transportistas no tendrán que hacer llamadas de cobro."
+            }
+          ]
+        },
+        {
+          "title": "Gestiona necesidades AR/AP",
+          "details": [
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Recibir llamadas de cobro de transportistas y otros cobradores de deudas."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Realización de llamadas de cobro a clientes."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Gestión de la documentación AR/AP."
+            },
+            {
+              "icon": "/images/sff-fb-arrow-right.svg",
+              "text": "Manténgase al tanto de la tesorería de la empresa."
+            }
+          ]
+        }
+      ]
     },
     "formfullname": "Nombre Completo",
     "formemail": "Tu email",
@@ -918,7 +914,7 @@
       {
         "title": "Quiénes somos",
         "descripcion": "Con más de 30 años de experiencia en el mercado del factoring, Smart Fleet Funding ha sido un actor clave en la prestación de apoyo y financiación a diversas industrias, con un enfoque particular en el transporte.",
-        "strong": "Tenemos un historial probado de éxito en la gestión del programa Instapay (FES Pay) para los principales agentes de carga de Norteamérica. En la actualidad, prestamos servicio a clientes de toda Norteamérica."
+        "strong": "Tenemos un historial probado de éxito en la gestión del programa InstaPay (FES Pay) para los principales agentes de carga de Norteamérica. En la actualidad, prestamos servicio a clientes de toda Norteamérica."
       },
       {
         "title": "Nuestro compromiso",

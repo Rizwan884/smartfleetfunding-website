@@ -52,9 +52,7 @@
         "sections": [
           {
             "heading": "Premium factoring -",
-            "items": [
-              "· Same day funding."
-            ]
+            "items": ["· Same day funding."]
           },
           {
             "heading": "We Address Your Challenges -",
@@ -72,9 +70,7 @@
           },
           {
             "heading": "Connect with Our Advisors -",
-            "items": [
-              "· You call! We answer!"
-            ]
+            "items": ["· You call! We answer!"]
           }
         ],
         "icon": "/images/sff-point-front.svg",
@@ -110,10 +106,7 @@
           },
           {
             "heading": " Getting Started -",
-            "items": [
-              "· Seamless for carriers with partnered",
-              "brokers."
-            ]
+            "items": ["· Seamless for carriers with partnered", "brokers."]
           }
         ],
         "icon": "/images/sff-point-front.svg",
@@ -171,7 +164,7 @@
         "home": "HOME",
         "services": "SERVICES",
         "fullfact": "Full Fact",
-        "instapay": "Instapay",
+        "fespay": "FesPay",
         "freightbroke": " Freight Broke",
         "fuelcard": "Fuel Card",
         "faq": "FAQ",
@@ -412,16 +405,16 @@
     "pagetittle": "Full",
     "pagestrong": "Factoring Solution"
   },
-  "instapay": {
+  "fespay": {
     "pagetittle": "Fast, Easy and",
     "pagestrong": "Secure Payment",
-    "welcometittle": "WELCOME TO INSTAPAY",
-    "welcomedescripcion": "Accelerated Payments for Drivers At Smart Fleet Funding, we understand that every mile counts. That's why we've introduced Instapay, a unique program designed with drivers like you in mind. Instapay ensures faster payment, giving you the financial flexibility you need for a smoother ride.",
+    "welcometittle": "WELCOME TO FESPAY",
+    "welcomedescripcion": "Accelerated Payments for Drivers At Smart Fleet Funding, we understand that every mile counts. That's why we've introduced FesPay, a unique program designed with drivers like you in mind. FesPay ensures faster payment, giving you the financial flexibility you need for a smoother ride.",
     "stepstittle": "How it works",
     "steps": [
       {
         "title": "Swift payment process",
-        "text": "With Instapay, you will receive your hard-earned money in just 12 business hours. No more waiting, no more delays, no more contracts, no more hidden fees."
+        "text": "With FesPay, you will receive your hard-earned money in just 12 business hours. No more waiting, no more delays, no more contracts, no more hidden fees."
       },
       {
         "title": "Streamlined verification",
@@ -429,7 +422,7 @@
       },
       {
         "title": "Fast and secure",
-        "text": "Instapay is not only quick, but also secure. Your funds are deposited directly into your bank account, ensuring a safe and seamless transaction."
+        "text": "FesPay is not only quick, but also secure. Your funds are deposited directly into your bank account, ensuring a safe and seamless transaction."
       }
     ],
     "Benefits": [
@@ -440,14 +433,14 @@
       },
       {
         "tittle": "No holdbacks",
-        "descripcion": "We advance 100% minus the Instapay fee.",
+        "descripcion": "We advance 100% minus the FesPay fee.",
         "icon": "/images/sff-bff-hand.svg"
       }
     ],
     "Benefitstwo": [
       {
         "tittle": "Access anytime, Anywhere",
-        "descripcion": "Instapay gives you the freedom to access your funds from wherever your travels take you.",
+        "descripcion": "FesPay gives you the freedom to access your funds from wherever your travels take you.",
         "icon": "/images/sff-bff-check.svg"
       },
       {
@@ -459,7 +452,7 @@
     "benefitstitle": "Benefits for drivers",
     "form": [
       {
-        "title": " Contact us today and let us get you on the road to faster, more secure payments with Instapay.",
+        "title": " Contact us today and let us get you on the road to faster, more secure payments with FesPay.",
         "name": "Full Name",
         "email": "Your E-mail",
         "company": "Company Name",
@@ -474,9 +467,9 @@
     "accordiontittle": "List of questions that may arise",
     "accordionItems": [
       {
-        "title": "What are the conditions for Instapay?",
+        "title": "What are the conditions for FesPay?",
         "descripcion": [
-          "The FB you are transporting for must be a member of our Instapay Network.",
+          "The FB you are transporting for must be a member of our FesPay Network.",
           "The load should be completed and the paperwork sent to instapay@smartfleetfunding.com instead of the freight broker."
         ],
         "eventKey": 1
@@ -484,7 +477,7 @@
       {
         "title": "Are there any hidden fees?",
         "descripcion": [
-          " Absolutely not. Instapay operates on a transparent flat fee structure, ensuring that you know exactly what to expect."
+          " Absolutely not. FesPay operates on a transparent flat fee structure, ensuring that you know exactly what to expect."
         ],
         "eventKey": 2
       },
@@ -503,7 +496,7 @@
         "eventKey": 4
       },
       {
-        "title": "Do I need to switch companies in order to benefit from Instapay?",
+        "title": "Do I need to switch companies in order to benefit from FesPay?",
         "descripcion": [
           "Require letter of release for the particular freight forwarder participating in the instapay program."
         ],
@@ -932,7 +925,7 @@
       {
         "title": "Who we are",
         "descripcion": "With over 30 years of experience in the factoring market, Smart Fleet Funding has been a key player in providing support and financing to various industries, with a particular focus on transportation.",
-        "strong": "We have a proven track record of success in managing the Instapay (FES Pay) program for leading freight agents in North America. Currently, we serve clients throughout North America."
+        "strong": "We have a proven track record of success in managing the InstaPay (FES Pay) program for leading freight agents in North America. Currently, we serve clients throughout North America."
       },
       {
         "title": "Our commitment",
