@@ -53,123 +53,49 @@ export default function Cards() {
       ) : (
         <Container className="card-container">
           <Row>
-            <Col xs={12} md={4} className="card-column">
-              <div className="flip-container">
-                <div className="card">
-                  <div className="front font-montserrat fw-600">
-                    <div className="card-icon">
-                      <Image
-                        className="icons"
-                        src="/images/sff-clock-front.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="d-flex flex-column align-items-end align-items-md-center">
-                      <div className="card-text">FAST</div>
-                      <div className="line-front"></div>
-                    </div>
-                    <div className="card-text-bottom  fw-400">
-                      Our tailored factoring <br /> solutions.
-                    </div>
-                  </div>
-                  <div className="back font-montserrat fw-600">
-                    <div className="card-icon-back">
-                      <Image
-                        className="icons"
-                        src="/images/sff-clock-back.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="card-text-back ">FAST</div>
-                    <div className="line-back"></div>
-                    <div className="card-text-bottom-back fw-400">
-                      Our tailored factoring solutions swiftly optimize your
-                      cash flow,{' '}
-                      <strong>
-                        ensuring rapid growth in your business{"'"}s
-                        profitability.
-                      </strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col xs={12} md={4} className="card-column">
-              <div className="flip-container">
-                <div className="card">
-                  <div className="front font-montserrat fw-600">
-                    <div className="card-icon">
-                      <Image
-                        className="icons2"
-                        src="/images/sff-easy-front.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="card-text">EASY</div>
-                    <div className="line-front"></div>
-                    <div className="card-text-bottom fw-400">
-                      We simplify the accounts <br /> payable.
+          {t.home.cards.map(
+              (
+                {
+                  title,
+                  shortDescription,
+                  regular,
+                  strong,
+                  icon,
+                  iconback
+                }: ICard,
+                key: number
+              ) => (
+                <Col xs={12} md={4} className="card-column" key={key}>
+                  <div className="flip-container">
+                    <div className="card">
+                      <div className="front font-montserrat fw-600">
+                        <div className="card-icon">
+                          <Image className="icons" src={icon} alt="" />
+                        </div>
+                        <div className="d-flex flex-column align-items-end align-items-md-center">
+                          <div className="card-text">{title}</div>
+                          <div className="line-front"></div>
+                        </div>
+                        <div className="card-text-bottom  fw-400">
+                          {shortDescription}
+                        </div>
+                      </div>
+                      <div className="back font-montserrat fw-600">
+                        <div className="card-icon-back">
+                          <Image className="icons" src={iconback} alt="" />
+                        </div>
+                        <div className="card-text-back ">{title}</div>
+                        <div className="line-back"></div>
+                        <div className="card-text-bottom-back fw-400">
+                          {regular}
+                          <strong>{strong}</strong>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div className="back font-montserrat fw-600">
-                    <div className="card-icon-back">
-                      <Image
-                        className="icons2"
-                        src="/images/sff-easy-back.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="card-text-back ">EASY</div>
-                    <div className="line-back"></div>
-                    <div className="card-text-bottom-back fw-400">
-                      We simplify the Accounts Payable and Receivable process,{' '}
-                      <strong>
-                        making it a breeze for you to focus on business growth.
-                      </strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-            <Col xs={12} md={4} className="card-column">
-              <div className="flip-container">
-                <div className="card">
-                  <div className="front font-montserrat fw-600">
-                    <div className="card-icon">
-                      <Image
-                        className="icons2"
-                        src="/images/sff-shield-front.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="card-text ">SECURE</div>
-                    <div className="line-front"></div>
-                    <div className="card-text-bottom fw-400">
-                      The carries and Freight <br /> companies
-                    </div>
-                  </div>
-                  <div className="back font-montserrat fw-600">
-                    <div className="card-icon-back">
-                      <Image
-                        className="icons2"
-                        src="/images/sff-shield-back.svg"
-                        alt=""
-                      />
-                    </div>
-                    <div className="card-text-back ">SECURE</div>
-                    <div className="line-back"></div>
-                    <div className="card-text-bottom-back fw-400">
-                      The carriers and freight companies receive payment
-                      securely in as little as 12 hours,
-                      <strong>
-                        {' '}
-                        cultivating robust and trusting partnerships.
-                      </strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
+                </Col>
+              )
+            )}
           </Row>
         </Container>
       )}

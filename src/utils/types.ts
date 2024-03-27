@@ -247,6 +247,7 @@ export type IJSON = {
   }
 
   home: {
+    cardstitle: string
     cards: HomeCard[]
     carinfo: HomeCarInfo[]
     headercardinfo: HeaderCardInfo[]
