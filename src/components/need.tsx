@@ -81,6 +81,7 @@ export default function Needs() {
               className="contact_slide fw-bold fs-4 me-5 my-4 d-inline-block"
               variant="btn btn-custom"
             >
+              <Image className='me-2' src='/images/sff-message-button-freight-broker.svg'/>
               {t.freightbroker.needsbutton}
             </Button>
             <Button
@@ -88,6 +89,7 @@ export default function Needs() {
               className="contact_slide fw-bold fs-4 my-4 d-inline-block"
               variant="btn btn-custom"
             >
+               <Image className='me-2 mb-1' src='/images/sff-user-button-freight-broker.svg'/>
               {t.freightbroker.needsbuttontwo}
             </Button>
           </div>
