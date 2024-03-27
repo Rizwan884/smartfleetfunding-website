@@ -1,39 +1,41 @@
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link'
+import { useState } from 'react'
 
+import { useI18nProvider } from '@/context/I18nProvider'
 export default function FormInstapay() {
+  const { t } = useI18nProvider()
   const [formData, setFormData] = useState<{ [key: string]: string }>({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    freightBroker: "",
-    comments: "",
-  });
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    freightBroker: '',
+    comments: ''
+  })
 
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
+      const response = await fetch('/api/submitForm', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData),
-      });
+        body: JSON.stringify(formData)
+      })
 
       if (response.ok) {
-        console.log("Form submitted successfully");
-        console.log("response status: " + response.status);
+        console.log('Form submitted successfully')
+        console.log('response status: ' + response.status)
       } else {
-        console.error("Failed to submit form", response);
+        console.error('Failed to submit form', response)
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error('Error submitting form:', error)
     }
-  };
+  }
 
   // Function to handle input changes
   const handleInputChange = (
@@ -41,20 +43,19 @@ export default function FormInstapay() {
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     // Update form data state with new value
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
-    }));
-  };
+      [name]: value
+    }))
+  }
   return (
     <>
       <div className=" mt-6 font-montserrat fi-img">
         <div className="pt-5 px-5">
           <h1 className="fw-600 fs-2 text-center text-md-start fst-italic text-dark-blue w-100 w-md-65">
-            Contact us today and let{"'"}s get you on the road to faster, more
-            secure payments with Instapay.
+            {t.instapay.form[0].title}
           </h1>
         </div>
         <div className="d-flex">
@@ -75,25 +76,25 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
-                    id="name"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="fullname"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    placeholder="Full Name"
+                    placeholder={t.instapay.form[0].name}
                   ></input>
                 </div>
                 <div className="col">
                   <input
                     type="email"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="email"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="fullemail"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    placeholder="Your E-Mail"
+                    placeholder={t.instapay.form[0].email}
                   ></input>
                 </div>
               </div>
@@ -101,25 +102,25 @@ export default function FormInstapay() {
                 <div className="col">
                   <input
                     type="text"
-                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent text-dark-blue"
-                    id="company"
+                    className="form-control mb-3 mb-md-1 px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="fullcompany"
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
                     required
-                    placeholder="Company Name"
+                    placeholder={t.instapay.form[0].company}
                   ></input>
                 </div>
                 <div className="col">
                   <input
                     type="number"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="phone"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="fullphone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    placeholder="Phone"
+                    placeholder={t.instapay.form[0].phone}
                   ></input>
                 </div>
               </div>
@@ -127,26 +128,26 @@ export default function FormInstapay() {
                 <div className="col-12 col-md-6">
                   <input
                     type="text"
-                    className="form-control px-3 bg-grey-transparent text-dark-blue"
-                    id="freightBroker"
-                    name="freightBroker"
+                    className="form-control px-3 bg-grey-transparent-instapay text-dark-blue"
+                    id="freight"
+                    name="freight"
                     value={formData.freightBroker}
                     onChange={handleInputChange}
                     required
-                    placeholder="Freight broker"
+                    placeholder={t.instapay.form[0].broker}
                   ></input>
                 </div>
               </div>
               <div className="mb-3 ">
                 <textarea
-                  className="form-control bg-grey-transparent text-dark-blue"
+                  className="form-control bg-grey-transparent-instapay text-dark-blue"
                   id="comments"
                   name="comments"
                   value={formData.comments}
                   onChange={handleInputChange}
                   required
                   rows={3}
-                  placeholder="Comments"
+                  placeholder={t.instapay.form[0].comments}
                 ></textarea>
               </div>
               <div className=" col mb-3 form-check d-flex justify-content-between">
@@ -162,21 +163,21 @@ export default function FormInstapay() {
                       className="text-dark-blue"
                       htmlFor="flexCheckDefault"
                     >
-                      Accept Our{' '}
+                      {t.instapay.form[0].check}
                       <Link
                         href="/privacy"
                         target="_blank"
                         className="text-decoration-none text-dark-blue"
                         passHref={true}
                       >
-                        <strong>Privacy Policy</strong>
+                        <strong>{t.instapay.form[0].strong}</strong>
                       </Link>
                     </label>
                   </div>
                 </div>
 
                 <button type="submit" className="btn fw-600">
-                  SEND
+                  {t.instapay.form[0].button}
                 </button>
               </div>
             </form>

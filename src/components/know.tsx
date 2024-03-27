@@ -1,101 +1,81 @@
+import { useI18nProvider } from '@/context/I18nProvider'
 import { Card } from 'react-bootstrap'
 export default function Know() {
+  const { t } = useI18nProvider()
   return (
     <>
       <div className="container px-5 px-md-auto mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-md-3 align-item-center"></div>
           <h1 className="d-md-block d-none fw-regular fs-2 text-center flex  align-items-center gap-3">
-            Know more about <strong>Smart Fleet Funding</strong>
+            {t.about.knowtitle} <strong>{t.about.knowstrong}</strong>
           </h1>
           <h1 className="d-md-none  fw-regular fs-2 text-center flex  align-items-center gap-3">
-            Know more about{' '}
+            {t.about.knowtitle}{' '}
             <strong>
               {' '}
               <br />
-              Smart Fleet Funding
+              {t.about.knowstrong}
             </strong>
           </h1>
         </div>
       </div>
       <div className="card-container font-montserrat mt-5 mb-5 h-100 flex-column w-100">
         <div className="row px-0 mx-0 px-md-auto mx-md-auto mb-3 justify-content-center gap-3 gap-md-3">
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                INNOVATION
-                <br />
-                <p className="mt-1">
-                  <strong className="fs-5 pt-3">FES - Pay</strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                EXPERIENCE
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-5">Over 30 Years</strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                GLOBAL
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-6">
-                    North America (Canada, USA, México)
-                  </strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          {t.about.cards.map((card, index) => (
+            <Card
+              key={index}
+              className="mx-3 w-18rem bg-white text-white h-100 al-left"
+            >
+              <Card.Body className="text-start">
+                <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
+                  {card.title}
+                  <br />
+                  <p className="mt-1">
+                    <strong className="fs-5 pt-3">{card.text}</strong>
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          ))}
         </div>
         <div className="row px-0 mx-0 px-md-auto mx-md-auto justify-content-center gap-3 gap-md-3 ">
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                EMPOWERMENT
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-5">Helping Businesses Thrive</strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                COMMITMENT
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-5">Transparency</strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-          <Card className="mx-3 w-18rem bg-white text-white h-100 al-left">
-            <Card.Body className="text-start">
-              <Card.Text className="fs-6 lh-sm mt-4 ms-auto text-dark-blue">
-                TECHNOLOGY
-                <br />{' '}
-                <p className="mt-1">
-                  <strong className="fs-6">
-                    Integrations with major players in the industries we serve
-                  </strong>
-                </p>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+          {t.about.cardstwo.map((card, index) => (
+            <Card
+              key={index}
+              className="mx-3 w-18rem bg-white text-white h-100 al-left"
+            >
+              <Card.Body className="text-start">
+                <Card.Text className="fs-6 lh-sm mt-2 ms-auto text-dark-blue">
+                  {card.title}
+                  <br />
+                  <p className="mt-1">
+                    <strong className="fs-5">{card.text}</strong>
+                  </p>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          ))}
         </div>
       </div>
       <div className="container px-5 px-md-auto pt-6 pb-6 font-montserrat">
-        <div className="row line-programs pb-5">
+        {t.about.knowsection.map((know, index) => (
+          <div
+            key={index}
+            className={`row pt-5 pb-5 ${index !== t.about.knowsection.length - 1 ? 'line-programs' : ''}`}
+          >
+            <div className="col-md-4">
+              {' '}
+              <h1 className="fw-bold fs-3 mb-0  w-75">{know.title}</h1>
+              <div className="line-program mt-0 mb-3 mt-1 w-3"></div>
+            </div>
+            <div className="col-md-8">
+              {know.descripcion}
+              <strong>{know.strong}</strong>
+            </div>
+          </div>
+        ))}
+        {/* <div className="row line-programs pb-5">
           <div className="col-md-4">
             {' '}
             <h1 className="fw-bold fs-3 mb-0   w-75">Who We Are</h1>
@@ -170,7 +150,7 @@ export default function Know() {
               on the path to success.
             </strong>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )

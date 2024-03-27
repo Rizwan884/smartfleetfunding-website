@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Accordion } from 'react-bootstrap'
 type AccordionItem = {
   title?: string
-  description?: string | JSX.Element
+  descripcion?: string | string[]
   icon?: string | StaticImport
   eventKey: number
 }
@@ -51,7 +51,15 @@ export default function SectionAccordion({
               <div id="title-mobile">{item.title}</div>
             </Accordion.Header>
             <Accordion.Body className="text-start">
-              {item.description}
+              {Array.isArray(item.descripcion) ? (
+                <ul>
+                  {item.descripcion.map((line, index) => (
+                    <li key={index}>{line}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p>{item.descripcion}</p>
+              )}
             </Accordion.Body>
           </Accordion.Item>
         ))}

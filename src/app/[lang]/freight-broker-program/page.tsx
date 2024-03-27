@@ -6,21 +6,25 @@ import HelpYou from '@/components/help-you'
 import Needs from '@/components/need'
 import Programs from '@/components/program'
 import Provides from '@/components/provide'
+import { useI18nProvider } from '@/context/I18nProvider'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 
 export default function Freight() {
+  const { t } = useI18nProvider()
   const title = (
     <p className="font-montserrat">
-      Freight <strong className="fw-bold">Broker Program</strong>
+      {t.freightbroker.pagetitle}{' '}
+      <strong className="fw-bold">{t.freightbroker.titlestrong}</strong>
     </p>
   )
   const titleMobile = (
     <p className="font-montserrat text-dark-blue">
-      Freight <strong className="fw-bold">Broker Program</strong>
+      {t.freightbroker.pagetitle}{' '}
+      <strong className="fw-bold">{t.freightbroker.titlestrong}</strong>
     </p>
   )
-  const titleForm = 'Drive Profits, Enhance Operations Get Started!'
+  const titleForm = t.freightbroker.titleform
 
   return (
     <>

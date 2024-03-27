@@ -1,44 +1,46 @@
-import Link from "next/link";
-import React, { useState } from "react";
-import Image from "next/image"
+import Image from 'next/image'
+import Link from 'next/link'
+import React, { useState } from 'react'
 
+import { useI18nProvider } from '@/context/I18nProvider'
 type IProps = {
   backgroundImage?: string
   titleForm?: string | undefined
 }
 
 export default function SectionForm({ backgroundImage, titleForm }: IProps) {
+  const { t } = useI18nProvider()
   const [formData, setFormData] = useState<{ [key: string]: string }>({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    message: "",
-  });
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    message: ''
+  })
 
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+    event.preventDefault()
 
     try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
+      const response = await fetch('/api/submitForm', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData),
-      });
+        body: JSON.stringify(formData)
+      })
 
       if (response.ok) {
-        console.log("Form submitted successfully");
-        console.log("response status: " + response.status);
+        console.log('Form submitted successfully')
+        console.log('response status: ' + response.status)
       } else {
-        console.error("Failed to submit form", response);
+        console.error('Failed to submit form', response)
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error('Error submitting form:', error)
     }
-  };
+  }
 
   // Function to handle input changes
   const handleInputChange = (
@@ -46,13 +48,13 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     // Update form data state with new value
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
-    }));
-  };
+      [name]: value
+    }))
+  }
   return (
     <>
       <div className="d-flex flex-column-reverse flex-md-row mt-6">
@@ -81,7 +83,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  placeholder="Full Name"
+                  placeholder={t.fullcard.form[0].name}
                 ></input>
               </div>
               <div className="col">
@@ -93,7 +95,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  placeholder="Your E-Mail"
+                  placeholder={t.fullcard.form[0].email}
                 ></input>
               </div>
             </div>
@@ -107,7 +109,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   value={formData.company}
                   onChange={handleInputChange}
                   required
-                  placeholder="Company Name"
+                  placeholder={t.fullcard.form[0].company}
                 ></input>
               </div>
               <div className="col">
@@ -119,7 +121,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  placeholder="Phone"
+                  placeholder={t.fullcard.form[0].phone}
                 ></input>
               </div>
             </div>
@@ -132,7 +134,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 onChange={handleInputChange}
                 required
                 rows={3}
-                placeholder="Description"
+                placeholder={t.fullcard.form[0].descripcion}
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
@@ -148,21 +150,21 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    Accept Our{" "}
+                    {t.fullcard.form[0].check}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>Privacy Policy</strong>
+                      <strong>{t.fullcard.form[0].strong}</strong>
                     </Link>
                   </label>
                 </div>
               </div>
 
               <button type="submit" className="btn fw-600">
-                SEND
+                {t.fullcard.form[0].button}
               </button>
             </div>
           </form>
@@ -177,6 +179,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 }}
                 src={backgroundImage || '/images/sff-form.webp'}
                 alt="form"
+                fill
               />
             </div>
           </div>
