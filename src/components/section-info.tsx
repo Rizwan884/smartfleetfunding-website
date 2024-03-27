@@ -29,7 +29,7 @@ export default function ImgInfo() {
             }}
           ></div>
           {t.home.sectioninfo.map(
-            ({ title, descripcion, button }: ICard, key: number) => (
+            ({ title, descripcion }: ICard, key: number) => (
               <div key={key} className="  font-montserrat pt-2 mx-5 mb-5">
                 <h1 className="text-start fw-bold fs-4">
                   {title}
@@ -61,7 +61,7 @@ export default function ImgInfo() {
         >
           {t.home.sectioninfo.map(
             (
-              { title, descripcion, button, linebreak, breaktext }: ICard,
+              { title, descripcion, linebreak, breaktext }: ICard,
               key: number
             ) => (
               <div

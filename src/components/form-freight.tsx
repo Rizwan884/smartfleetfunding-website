@@ -31,12 +31,16 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
       })
 
       if (response.ok) {
+        // eslint-disable-next-line no-console
         console.log('Form submitted successfully')
+        // eslint-disable-next-line no-console
         console.log('response status: ' + response.status)
       } else {
+        // eslint-disable-next-line no-console
         console.error('Failed to submit form', response)
       }
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('Error submitting form:', error)
     }
   }

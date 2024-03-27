@@ -1,4 +1,5 @@
 import { useI18nProvider } from '@/context/I18nProvider'
+import { HelpCard } from '@/utils/types'
 import { useEffect, useState } from 'react'
 import { Card, Carousel, Col, Container, Row } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
@@ -12,16 +13,18 @@ export default function Help() {
   const [helpcards, setHelpCards] = useState<ICard[]>([])
   const [helpcardstwo, setHelpCardsTwo] = useState<ICard[]>([])
   useEffect(() => {
-    const helpCardsData: ICard[] = t.fullcard.helpcards.map((card: any) => ({
-      icon: card.icon,
-      strong: card.strong,
-      descripcion: card.descripcion
-    }))
+    const helpCardsData: ICard[] = t.fullcard.helpcards.map(
+      (card: HelpCard) => ({
+        icon: card.icon,
+        strong: card.strong,
+        descripcion: card.descripcion
+      })
+    )
     setHelpCards(helpCardsData)
   }, [t])
   useEffect(() => {
     const helpCardsDataTwo: ICard[] = t.fullcard.helpcardstwo.map(
-      (card: any) => ({
+      (card: ICard) => ({
         icon: card.icon,
         strong: card.strong,
         descripcion: card.descripcion

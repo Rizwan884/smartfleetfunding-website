@@ -39,7 +39,6 @@ export default function Footer() {
                   faq,
                   aboutus,
                   contact,
-                  curious,
                   fuelcard
                 }: ICard,
                 key: number
@@ -205,7 +204,6 @@ export default function Footer() {
                         faq,
                         aboutus,
                         contact,
-                        curious,
                         fuelcard
                       }: ICard,
                       key: number

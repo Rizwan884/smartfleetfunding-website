@@ -90,7 +90,7 @@ interface CarruzelItem {
   strong: string
 }
 
-interface HelpCard {
+export interface HelpCard {
   icon: string
   strong: string
   descripcion: string
@@ -202,7 +202,7 @@ interface HelpYouItem {
   details: HelpYouDetail[]
 }
 
-interface HelpYouDetail {
+export interface HelpYouDetail {
   icon: string
   text: string
 }
