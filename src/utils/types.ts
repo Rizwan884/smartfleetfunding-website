@@ -48,7 +48,7 @@ interface SectionVideo {
   strong: string
 }
 
-export interface Footer {
+export interface IFooter {
   home: string
   services: string
   fullfact: string
@@ -228,7 +228,16 @@ interface KnowSection {
   strong: string
 }
 
-//
+export interface BlogInfo {
+  id: number
+  title: string
+  description: string
+  content: string
+  imageSrc: string
+  desktopSrc: string
+  date: string
+  type: string
+}
 
 export type IJSON = {
   navbar: Navbar
@@ -238,11 +247,12 @@ export type IJSON = {
   }
 
   home: {
+    cardstitle: string
     cards: HomeCard[]
     carinfo: HomeCarInfo[]
     headercardinfo: HeaderCardInfo[]
     sectionvideo: SectionVideo[]
-    footer: Footer[]
+    footer: IFooter[]
     sectioninfo: SectionInfo[]
     slider: Slider[]
   }
@@ -346,5 +356,9 @@ export type IJSON = {
     formcheck: string
     formbreak: string
     formbutton: string
+  }
+
+  blogs: {
+    bloginfo: BlogInfo[]
   }
 }

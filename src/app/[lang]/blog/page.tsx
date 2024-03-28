@@ -1,38 +1,12 @@
 'use client'
+import { useI18nProvider } from '@/context/I18nProvider'
 import Blog from '../../../components/blog-page'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 
 export default function BlogPage() {
-  const blogs = [
-    {
-      id: 1,
-      title: 'Cómo mejorar la productividad en el trabajo desde casa',
-      description:
-        'Consejos y trucos para ser más productivo mientras trabajas desde casa.',
-      content:
-        'Consejos y trucos para ser más productivo mientras trabajas desde casa. y mucho más',
-      imageSrc: 'images/blog1.jpg'
-    },
-    {
-      id: 2,
-      title: 'Los beneficios de practicar mindfulness',
-      description:
-        'Descubre cómo el mindfulness puede mejorar tu bienestar general.',
-      content:
-        'Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.',
-      imageSrc: 'images/blog2.jpg'
-    },
-    {
-      id: 3,
-      title: 'Los beneficios de practicar mindfulness',
-      description:
-        'Descubre cómo el mindfulness puede mejorar tu bienestar general.',
-      content:
-        'Descubre cómo el mindfulness puede mejorar tu bienestar general. y de todo tu hogar.',
-      imageSrc: 'images/blog2.jpg'
-    }
-  ]
+  const { t } = useI18nProvider()
+  const blogs = t.blogs.bloginfo
   return (
     <>
       <Navbar />

@@ -67,7 +67,8 @@ const I18nContext = createContext<II18nContext>({
       ],
       slider: [
         { title: '', strong: '', button: '', image: '', imagemobile: '' }
-      ]
+      ],
+      cardstitle: ''
     },
     fullcard: {
       header: [],
@@ -169,6 +170,9 @@ const I18nContext = createContext<II18nContext>({
       formcheck: '',
       formbreak: '',
       formbutton: ''
+    },
+    blogs: {
+      bloginfo: []
     }
   }
 })

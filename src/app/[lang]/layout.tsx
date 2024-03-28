@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Smart Fleet Funding: Freight Factoring to carriers in North America',
-  icons: 'images/sff-icon.svg',
+  icons: '/images/sff-icon.svg',
   description:
     'Smart Fleet Funding helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
   keywords: [
