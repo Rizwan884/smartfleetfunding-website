@@ -1,8 +1,8 @@
-"use client";
-import Navbar from "../../../components/navbar";
-import Footer from "../../../components/footer";
-import Blog from "../../../components/blog-page";
-import { useI18nProvider } from "@/context/I18nProvider";
+'use client'
+import { useI18nProvider } from '@/context/I18nProvider'
+import Blog from '../../../components/blog-page'
+import Footer from '../../../components/footer'
+import Navbar from '../../../components/navbar'
 
 export default function BlogPage() {
   const { t } = useI18nProvider()
@@ -13,5 +13,5 @@ export default function BlogPage() {
       <Blog blogs={blogs} />
       <Footer />
     </>
-  );
+  )
 }

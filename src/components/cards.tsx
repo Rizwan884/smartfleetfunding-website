@@ -53,7 +53,7 @@ export default function Cards() {
       ) : (
         <Container className="card-container">
           <Row>
-          {t.home.cards.map(
+            {t.home.cards.map(
               (
                 {
                   title,

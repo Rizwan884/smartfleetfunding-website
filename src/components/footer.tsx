@@ -1,5 +1,5 @@
 import { useI18nProvider } from '@/context/I18nProvider'
-import { Footer } from '@/utils/types'
+import { IFooter } from '@/utils/types'
 import Link from 'next/link'
 import { Button, Container, Nav, NavDropdown, Navbar } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
@@ -30,7 +30,7 @@ export default function Footer() {
                   aboutus,
                   contact,
                   fuelcard
-                }: Footer,
+                }: IFooter,
                 key: number
               ) => (
                 <Nav key={key} className="d-flex flex-column gap-1 p-1">
@@ -193,7 +193,7 @@ export default function Footer() {
                         aboutus,
                         contact,
                         fuelcard
-                      }: Footer,
+                      }: IFooter,
                       key: number
                     ) => (
                       <Nav key={key}>

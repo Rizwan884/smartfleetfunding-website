@@ -1,28 +1,26 @@
+import { BlogInfo } from '@/utils/types'
 import { useState } from 'react'
-import { Button, Carousel, Col, Row } from 'react-bootstrap'
+import { Button, Col, Row } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
+import Pagination from 'react-bootstrap/Pagination'
 import { useMediaQuery } from 'react-responsive'
-import Pagination from "react-bootstrap/Pagination";
-import { useI18nProvider } from '@/context/I18nProvider';
-import { BlogInfo } from '@/utils/types';
-
 
 type IProps = {
   blogs: BlogInfo[]
 }
 export default function Blog({ blogs }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   const [selectedBlogIndex, setSelectedBlogIndex] = useState<number | null>(
     null
-  );
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const blogsPerPage = 6;
-  const indexOfLastBlog = currentPage * blogsPerPage;
-  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
-  const currentBlogs = blogs.slice(indexOfFirstBlog, indexOfLastBlog);
+  )
+  const [currentPage, setCurrentPage] = useState<number>(1)
+  const blogsPerPage = 6
+  const indexOfLastBlog = currentPage * blogsPerPage
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage
+  const currentBlogs = blogs.slice(indexOfFirstBlog, indexOfLastBlog)
   const handleBlogClick = (index: number) => {
-    setSelectedBlogIndex(index);
-  };
+    setSelectedBlogIndex(index)
+  }
   /*-------------------Botones Next, Prev and Back---------------------*/
   const handleBackButtonClick = () => {
     setSelectedBlogIndex(null)
@@ -30,27 +28,27 @@ export default function Blog({ blogs }: IProps) {
 
   const handlePreviousPostClick = () => {
     if (selectedBlogIndex !== null && selectedBlogIndex > 0) {
-      setSelectedBlogIndex(selectedBlogIndex - 1);
+      setSelectedBlogIndex(selectedBlogIndex - 1)
     }
-  };
+  }
   const handleNextPostClick = () => {
     if (selectedBlogIndex !== null && selectedBlogIndex < blogs.length - 1) {
-      setSelectedBlogIndex(selectedBlogIndex + 1);
+      setSelectedBlogIndex(selectedBlogIndex + 1)
     }
-  };
+  }
   /*-------------------------Pagination-------------------------*/
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber)
   const handlePreviousPageClick = () => {
     if (currentPage > 1) {
-      paginate(currentPage - 1);
+      paginate(currentPage - 1)
     }
-  };
+  }
 
   const handleNextPageClick = () => {
     if (currentPage < Math.ceil(blogs.length / blogsPerPage)) {
-      paginate(currentPage + 1);
+      paginate(currentPage + 1)
     }
-  };
+  }
 
   return (
     <>
@@ -70,13 +68,13 @@ export default function Blog({ blogs }: IProps) {
             {blogs[selectedBlogIndex].desktopSrc && (
               <div
                 className="banner-image"
-                style={{ marginTop: isMobile ? "-71px" : "-20px" }}
+                style={{ marginTop: isMobile ? '-71px' : '-20px' }}
               >
                 <Image
                   src={blogs[selectedBlogIndex].desktopSrc}
                   style={{
-                    width: "100%",
-                    marginBottom: "20px",
+                    width: '100%',
+                    marginBottom: '20px'
                   }}
                   className="card-img-top d-flex"
                   alt="..."
@@ -123,7 +121,7 @@ export default function Blog({ blogs }: IProps) {
               {blogs[selectedBlogIndex].title}
             </h1>
             {blogs[selectedBlogIndex].content
-              .split("\n")
+              .split('\n')
               .map((paragraph, index) => (
                 <p key={index} className="ms-2 me-2 fs-6">
                   {paragraph}
@@ -180,7 +178,7 @@ export default function Blog({ blogs }: IProps) {
                   <Col key={index} md={4} className="mb-5 pb-3 px-5">
                     <div
                       className="card"
-                      style={{ border: "10px" }}
+                      style={{ border: '10px' }}
                       onClick={() => handleBlogClick(index + indexOfFirstBlog)}
                     >
                       <div className="d-flex flex-column me-5 ">
@@ -190,9 +188,9 @@ export default function Blog({ blogs }: IProps) {
                             variant="btn w-auto ms-auto h-auto btn-custom"
                             className="green-card fs-6 fw-600 text-dark-blue font-montserrat position-absolute start-0"
                             style={{
-                              top: "-5%",
-                              marginBottom: "-1rem",
-                              zIndex: 1,
+                              top: '-5%',
+                              marginBottom: '-1rem',
+                              zIndex: 1
                             }}
                           >
                             {blog.type}
@@ -203,9 +201,9 @@ export default function Blog({ blogs }: IProps) {
                         <Image
                           src={blog.imageSrc}
                           style={{
-                            width: "100%",
-                            marginTop: "-21px",
-                            marginBottom: "20px",
+                            width: '100%',
+                            marginTop: '-21px',
+                            marginBottom: '20px'
                           }}
                           className="card-img-top"
                           alt="..."
@@ -275,9 +273,9 @@ export default function Blog({ blogs }: IProps) {
                             variant="btn w-auto ms-auto h-auto btn-custom"
                             className=" green-card fs-6 fw-600 text-dark-blue font-montserrat position-absolute start-0"
                             style={{
-                              top: "-5%",
-                              marginBottom: "-1rem",
-                              zIndex: 1,
+                              top: '-5%',
+                              marginBottom: '-1rem',
+                              zIndex: 1
                             }}
                           >
                             {blog.type}
@@ -289,9 +287,9 @@ export default function Blog({ blogs }: IProps) {
                         <Image
                           src={blog.imageSrc}
                           style={{
-                            width: "100%",
-                            marginTop: "-21px",
-                            marginBottom: "20px",
+                            width: '100%',
+                            marginTop: '-21px',
+                            marginBottom: '20px'
                           }}
                           className="card-img-top"
                           alt="..."
