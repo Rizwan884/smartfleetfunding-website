@@ -48,11 +48,11 @@ interface SectionVideo {
   strong: string
 }
 
-interface Footer {
+export interface IFooter {
   home: string
   services: string
   fullfact: string
-  instapay: string
+  fespay: string
   freightbroke: string
   fuelcard: string
   faq: string
@@ -90,7 +90,7 @@ interface CarruzelItem {
   strong: string
 }
 
-interface HelpCard {
+export interface HelpCard {
   icon: string
   strong: string
   descripcion: string
@@ -202,7 +202,7 @@ interface HelpYouItem {
   details: HelpYouDetail[]
 }
 
-interface HelpYouDetail {
+export interface HelpYouDetail {
   icon: string
   text: string
 }
@@ -228,7 +228,16 @@ interface KnowSection {
   strong: string
 }
 
-//
+export interface BlogInfo {
+  id: number
+  title: string
+  description: string
+  content: string
+  imageSrc: string
+  desktopSrc: string
+  date: string
+  type: string
+}
 
 export type IJSON = {
   navbar: Navbar
@@ -238,11 +247,12 @@ export type IJSON = {
   }
 
   home: {
+    cardstitle: string
     cards: HomeCard[]
     carinfo: HomeCarInfo[]
     headercardinfo: HeaderCardInfo[]
     sectionvideo: SectionVideo[]
-    footer: Footer[]
+    footer: IFooter[]
     sectioninfo: SectionInfo[]
     slider: Slider[]
   }
@@ -259,7 +269,7 @@ export type IJSON = {
     pagetittle: string
     pagestrong: string
   }
-  instapay: {
+  fespay: {
     pagetittle: string
     pagestrong: string
     welcometittle: string
@@ -319,7 +329,6 @@ export type IJSON = {
     formbreak: string
     formbutton: string
   }
-
   faqs: {
     accordionInstaItems: AccordionInstaItem[]
     faqtitle: string
@@ -333,7 +342,6 @@ export type IJSON = {
     cardstwo: Card[]
     knowsection: KnowSection[]
   }
-
   contact: {
     titleform: string
     contacttitle: string
@@ -348,5 +356,9 @@ export type IJSON = {
     formcheck: string
     formbreak: string
     formbutton: string
+  }
+
+  blogs: {
+    bloginfo: BlogInfo[]
   }
 }

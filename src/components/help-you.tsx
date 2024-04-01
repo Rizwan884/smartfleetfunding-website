@@ -1,4 +1,5 @@
 import { useI18nProvider } from '@/context/I18nProvider'
+import { HelpYouDetail } from '@/utils/types'
 import Image from 'next/image'
 import { Container, Row } from 'react-bootstrap'
 import Dropdown from 'react-bootstrap/Dropdown'
@@ -64,7 +65,7 @@ export default function HelpYou() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  {section.details.map((detail: any, idx: number) => (
+                  {section.details.map((detail: HelpYouDetail, idx: number) => (
                     <Dropdown.Item key={idx} href="#/action-1">
                       <div
                         className={`d-flex mb-4 lh-sm align-items-center gap-2 ${idx !== section.details.length - 1 ? 'line-programs' : ''}`}

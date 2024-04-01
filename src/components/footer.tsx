@@ -1,21 +1,11 @@
 import { useI18nProvider } from '@/context/I18nProvider'
+import { IFooter } from '@/utils/types'
 import Link from 'next/link'
 import { Button, Container, Nav, NavDropdown, Navbar } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
 import { useMediaQuery } from 'react-responsive'
 import ScrollToTopButton from '../components/scroolTop'
-type ICard = {
-  home: string
-  services: string
-  fullfact: string
-  instapay: string
-  freightbroke: string
-  fuelcard: string
-  faq: string
-  aboutus: string
-  contact: string
-  curious: string
-}
+
 export default function Footer() {
   const isMobile = useMediaQuery({ maxWidth: 767 })
   const { t } = useI18nProvider()
@@ -34,14 +24,13 @@ export default function Footer() {
                   home,
                   services,
                   fullfact,
-                  instapay,
+                  fespay,
                   freightbroke,
                   faq,
                   aboutus,
                   contact,
-                  curious,
                   fuelcard
-                }: ICard,
+                }: IFooter,
                 key: number
               ) => (
                 <Nav key={key} className="d-flex flex-column gap-1 p-1">
@@ -67,9 +56,7 @@ export default function Footer() {
                     <NavDropdown.Item href="/full-fact">
                       {fullfact}
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/instapay">
-                      {instapay}
-                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/fespay">{fespay}</NavDropdown.Item>
                     <NavDropdown.Item href="/freight-broker-program">
                       {fuelcard}
                     </NavDropdown.Item>
@@ -200,14 +187,13 @@ export default function Footer() {
                         home,
                         services,
                         fullfact,
-                        instapay,
+                        fespay,
                         freightbroke,
                         faq,
                         aboutus,
                         contact,
-                        curious,
                         fuelcard
-                      }: ICard,
+                      }: IFooter,
                       key: number
                     ) => (
                       <Nav key={key}>
@@ -232,8 +218,8 @@ export default function Footer() {
                           <NavDropdown.Item href="/full-fact">
                             {fullfact}
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="/instapay">
-                            {instapay}
+                          <NavDropdown.Item href="/fespay">
+                            {fespay}
                           </NavDropdown.Item>
                           <NavDropdown.Item href="#">
                             {fuelcard}

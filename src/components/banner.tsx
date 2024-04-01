@@ -27,7 +27,7 @@ export default function Banners({
         }}
       >
         <Image
-          src={` ${isMobile ? mobileBackgroundImage : backgroundImage}`}
+          src={`${isMobile ? mobileBackgroundImage : backgroundImage}`}
           fluid
           alt="banner"
         />

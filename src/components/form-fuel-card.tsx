@@ -21,7 +21,6 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    console.log(formData)
     try {
       const response = await fetch('/api/submitForm', {
         method: 'POST',
@@ -32,12 +31,16 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
       })
 
       if (response.ok) {
+        // eslint-disable-next-line no-console
         console.log('Form submitted successfully')
+        // eslint-disable-next-line no-console
         console.log('response status: ' + response.status)
       } else {
+        // eslint-disable-next-line no-console
         console.error('Failed to submit form', response)
       }
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error('Error submitting form:', error)
     }
   }
@@ -213,7 +216,8 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 }}
                 src={backgroundImage || '/images/sff-fuel-card-form.webp'}
                 alt="form"
-                fill
+                width={1920}
+                height={1080}
               />
             </div>
           </div>
