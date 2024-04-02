@@ -21,7 +21,11 @@ export default function Benefits() {
             ({ tittle, descripcion, icon }: ICard, key: number) => (
               <div key={key} className="col-12 col-md-6">
                 <div className="text-left p-5 d-flex align-items-center gap-2">
-                  <Image className="img-style" alt="icon" src={icon}></Image>
+                  <Image
+                    className={`img-style img-style${key + 1}`}
+                    alt="icon"
+                    src={icon}
+                  ></Image>
                   <div className="lh-sm">
                     <h2 className="fs-3 fw-600 text-green ">{tittle}</h2>
                     <div className="fs-5 fw-400">{descripcion}</div>

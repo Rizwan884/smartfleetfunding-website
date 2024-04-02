@@ -9,6 +9,7 @@ type IProps = {
 }
 
 export default function FormFreight({ backgroundImage, titleForm }: IProps) {
+  const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
     name: '',
     email: '',
@@ -31,6 +32,14 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
       })
 
       if (response.ok) {
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          message: ''
+        })
+        setCheckboxChecked(false)
         // eslint-disable-next-line no-console
         console.log('Form submitted successfully')
         // eslint-disable-next-line no-console
@@ -43,6 +52,11 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
       // eslint-disable-next-line no-console
       console.error('Error submitting form:', error)
     }
+  }
+
+  //function to handle checkbox field
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckboxChecked(event.target.checked)
   }
 
   // Function to handle input changes
@@ -149,6 +163,8 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                     type="checkbox"
                     value=""
                     id="flexCheckDefault"
+                    checked={checkboxChecked}
+                    onChange={handleCheckboxChange}
                   />
                   <label
                     className="form-check-label"

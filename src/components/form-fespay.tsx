@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useI18nProvider } from '@/context/I18nProvider'
 export default function FormInstapay() {
   const { t } = useI18nProvider()
+  const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
     name: '',
     email: '',
@@ -27,6 +28,14 @@ export default function FormInstapay() {
       })
 
       if (response.ok) {
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          message: ''
+        })
+        setCheckboxChecked(false)
         // eslint-disable-next-line no-console
         console.log('Form submitted successfully')
         // eslint-disable-next-line no-console
@@ -40,7 +49,10 @@ export default function FormInstapay() {
       console.error('Error submitting form:', error)
     }
   }
-
+  //function to handle checkbox field
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckboxChecked(event.target.checked)
+  }
   // Function to handle input changes
   const handleInputChange = (
     event:
@@ -162,6 +174,8 @@ export default function FormInstapay() {
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
+                      checked={checkboxChecked}
+                      onChange={handleCheckboxChange}
                     />
                     <label
                       className="text-dark-blue"
@@ -180,7 +194,7 @@ export default function FormInstapay() {
                   </div>
                 </div>
 
-                <button type="submit" className="btn fw-600">
+                <button type="submit" className="btn bg-green fw-600">
                   {t.fespay.form[0].button}
                 </button>
               </div>
