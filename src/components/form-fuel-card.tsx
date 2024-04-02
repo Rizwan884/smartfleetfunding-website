@@ -18,10 +18,15 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
     phone: '',
     message: ''
   })
-
+  const [error, setError] = useState<string>('')
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    if (!checkboxChecked) {
+      setError('Please check the box before submitting')
+      return
+    }
+
     try {
       const response = await fetch('/api/submitForm', {
         method: 'POST',
@@ -56,6 +61,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   //function to handle checkbox field
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCheckboxChecked(event.target.checked)
+    setError('') // Clear error message when checkbox is checked
   }
   // Function to handle input changes
   const handleInputChange = (
@@ -206,6 +212,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     </Link>
                   </label>
                 </div>
+                {error && <div className="text-danger">{error}</div>}
               </div>
 
               {formData.option === '0' ? (
