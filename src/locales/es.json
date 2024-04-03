@@ -287,6 +287,7 @@
         "company": "Empresa",
         "phone": "Telefono",
         "descripcion": "Descripcion",
+        "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
         "check": "Acepte nuestra ",
         "strong": "política de privacidad",
         "button": "ENVIAR"
@@ -448,6 +449,7 @@
         "phone": "Telefono",
         "broker": "Freight broker",
         "comments": "Comentarios",
+        "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
         "check": "Acepte nuestra ",
         "strong": "política de privacidad",
         "button": "ENVIAR"
@@ -590,6 +592,7 @@
     "formcompany": "Empresa",
     "formphone": "Telefono",
     "formmessage": "Descripcion",
+    "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
     "formcheck": "Acepte Nuestra",
     "formbreak": " política de privacidad",
     "formbutton": "ENVIAR"
@@ -736,6 +739,7 @@
     "formcompany": "Empresa",
     "formphone": "Telefono",
     "formmessage": "¿Cómo podemos ayudarle?",
+    "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
     "formcheck": "Acepte Nuestra",
     "formbreak": " política de privacidad",
     "formbutton": "ENVIAR"
@@ -944,6 +948,7 @@
     "formcompany": "Empresa",
     "formphone": "Telefono",
     "formmessage": "Descripcion",
+    "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
     "formcheck": "Acepte Nuestra",
     "formbreak": " política de privacidad",
     "formbutton": "ENVIAR"

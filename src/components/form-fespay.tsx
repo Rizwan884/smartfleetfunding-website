@@ -18,7 +18,7 @@ export default function FormInstapay() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (!checkboxChecked) {
-      setError('Please check the box before submitting')
+      setError(t.fespay.form[0].checkboxError)
       return
     }
     try {
@@ -36,7 +36,8 @@ export default function FormInstapay() {
           email: '',
           company: '',
           phone: '',
-          message: ''
+          freightBroker: '',
+          comments: ''
         })
         setCheckboxChecked(false)
         // eslint-disable-next-line no-console
@@ -150,7 +151,7 @@ export default function FormInstapay() {
                     type="text"
                     className="form-control px-3 bg-grey-transparent-fespay text-dark-blue"
                     id="freight"
-                    name="freight"
+                    name="freightBroker"
                     value={formData.freightBroker}
                     onChange={handleInputChange}
                     required

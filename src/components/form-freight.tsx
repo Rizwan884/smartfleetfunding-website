@@ -22,7 +22,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (!checkboxChecked) {
-      setError('Please check the box before submitting')
+      setError(t.freightbroker.checkboxError)
       return
     }
 

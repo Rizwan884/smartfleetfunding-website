@@ -23,7 +23,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (!checkboxChecked) {
-      setError('Please check the box before submitting')
+      setError(t.fuelcard.checkboxError)
       return
     }
 
@@ -38,6 +38,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
 
       if (response.ok) {
         setFormData({
+          option: '0',
           name: '',
           email: '',
           company: '',
@@ -110,6 +111,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   id="option"
                   name="option"
                   className="form-select  bg-grey-transparent text-white"
+                  onChange={handleInputChange}
                 >
                   {t.fuelcard.formselectsoptions.map((option, index) => (
                     <option
@@ -217,7 +219,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
 
               {formData.option === '0' ? (
                 <button type="submit" className="btn fw-600" disabled>
-                  SEND
+                  {t.fuelcard.formbutton}
                 </button>
               ) : (
                 <button type="submit" className="btn fw-600">

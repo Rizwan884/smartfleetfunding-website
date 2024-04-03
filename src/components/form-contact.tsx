@@ -23,7 +23,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (!checkboxChecked) {
-      setError('Please check the box before submitting')
+      setError(t.contact.checkboxError)
       return
     }
 

@@ -298,6 +298,7 @@
         "company": "Company Name",
         "phone": "Phone",
         "descripcion": "Description",
+        "checkboxError": "Please check the box before submitting",
         "check": "Accept our ",
         "strong": " Privacy policy",
         "button": "SEND"
@@ -459,6 +460,7 @@
         "phone": "Phone",
         "broker": "Freight broker",
         "comments": "Comments",
+        "checkboxError": "Please check the box before submitting",
         "check": "Accept our ",
         "strong": " Privacy policy",
         "button": "SEND"
@@ -601,6 +603,7 @@
     "formcompany": "Company Name",
     "formphone": "Phone",
     "formmessage": "Description",
+    "checkboxError": "Please check the box before submitting",
     "formcheck": "Acept Our",
     "formbreak": " Privacy Policy",
     "formbutton": "SEND"
@@ -747,6 +750,7 @@
     "formcompany": "Company",
     "formphone": "Phone",
     "formmessage": "How can we help you?",
+    "checkboxError": "Please check the box before submitting",
     "formcheck": "Accept Our",
     "formbreak": " Privacy Policy",
     "formbutton": "SEND"
@@ -955,6 +959,7 @@
     "formcompany": "Company",
     "formphone": "Phone",
     "formmessage": "Description",
+    "checkboxError": "Please check the box before submitting",
     "formcheck": "Accept Our",
     "formbreak": " privacy policy",
     "formbutton": "SEND"

@@ -102,6 +102,7 @@ interface FormItem {
   company: string
   phone: string
   descripcion: string
+  checkboxError: string
   check: string
   strong: string
   button: string
@@ -141,6 +142,7 @@ interface InstapayForm {
   phone: string
   broker: string
   comments: string
+  checkboxError: string
   check: string
   strong: string
   button: string
@@ -298,6 +300,7 @@ export type IJSON = {
     formcompany: string
     formphone: string
     formmessage: string
+    checkboxError: string
     formcheck: string
     formbreak: string
     formbutton: string
@@ -325,6 +328,7 @@ export type IJSON = {
     formcompany: string
     formphone: string
     formmessage: string
+    checkboxError: string
     formcheck: string
     formbreak: string
     formbutton: string
@@ -353,6 +357,7 @@ export type IJSON = {
     formcompany: string
     formphone: string
     formmessage: string
+    checkboxError: string
     formcheck: string
     formbreak: string
     formbutton: string
