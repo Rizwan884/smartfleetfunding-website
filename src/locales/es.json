@@ -566,25 +566,26 @@
     "fuelcardsectiondescription": "*El precio en efectivo puede variar según la ubicación del comerciante. WEX, Inc. no garantiza el precio en efectivo y no se hace responsable de las variaciones. Consulte los detalles completos del programa.",
     "formtitle": "¡Empiece a ahorrar con la tarjeta de combustible Smart Fleet Funding!",
     "formselectsoptions": [
+      { "label": "Selecciona una opción", "value": "0" },
       {
         "label": "Estoy pensando en solicitar la Fuel Card",
-        "value": "1"
+        "value": "Estoy pensando en solicitar la Fuel Card"
       },
       {
         "label": "Deseo más información sobre la tarjeta de carburante",
-        "value": "2"
+        "value": "Deseo más información sobre la tarjeta de carburante"
       },
       {
         "label": "Tengo preguntas sobre la Fuel Card",
-        "value": "3"
+        "value": "Tengo preguntas sobre la Fuel Card"
       },
       {
         "label": "Ya soy titular de una Fuel Card y necesito ayuda",
-        "value": "4"
+        "value": "Ya soy titular de una Fuel Card y necesito ayuda"
       },
       {
         "label": "Quiero conocer otros servicios ofrecidos",
-        "value": "5"
+        "value": "Quiero conocer otros servicios ofrecidos"
       }
     ],
     "formfullname": "Nombre Completo",

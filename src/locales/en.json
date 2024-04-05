@@ -577,25 +577,26 @@
     "fuelcardsectiondescription": "*Cash price may vary by merchant location. WEX, Inc. makes no guarantee of cash price and is not responsible for variations. See complete program details.",
     "formtitle": "Start saving with the Smart Fleet Funding fuel card!",
     "formselectsoptions": [
+      { "label": "Select a option", "value": "0" },
       {
         "label": "I am considering applying for the Fuel Card",
-        "value": "1"
+        "value": "I am considering applying for the Fuel Card"
       },
       {
         "label": "I'd like more information about the fuel card",
-        "value": "2"
+        "value": "I'd like more information about the fuel card"
       },
       {
         "label": "I have questions about the Fuel Card",
-        "value": "3"
+        "value": "I have questions about the Fuel Card"
       },
       {
         "label": "I'm already a Fuel Card holder and I need assistance.",
-        "value": "4"
+        "value": "I'm already a Fuel Card holder and I need assistance."
       },
       {
         "label": "I want to learn about other services offered",
-        "value": "5"
+        "value": "I want to learn about other services offered"
       }
     ],
     "formfullname": "Full Name",

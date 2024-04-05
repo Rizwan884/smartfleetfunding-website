@@ -12,6 +12,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
   const { t } = useI18nProvider()
   const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
+    formName: 'Contact',
     name: '',
     email: '',
     company: '',

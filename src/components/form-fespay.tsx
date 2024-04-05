@@ -6,6 +6,7 @@ export default function FormInstapay() {
   const { t } = useI18nProvider()
   const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
+    formName: 'FesPay',
     name: '',
     email: '',
     company: '',
@@ -150,7 +151,7 @@ export default function FormInstapay() {
                   <input
                     type="text"
                     className="form-control px-3 bg-grey-transparent-fespay text-dark-blue"
-                    id="freight"
+                    id="freightBroker"
                     name="freightBroker"
                     value={formData.freightBroker}
                     onChange={handleInputChange}

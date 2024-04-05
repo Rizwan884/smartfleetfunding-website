@@ -11,6 +11,7 @@ type IProps = {
 export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
   const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
+    formName: 'Fuel Card',
     option: '0',
     name: '',
     email: '',

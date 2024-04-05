@@ -11,6 +11,7 @@ type IProps = {
 export default function FormFreight({ backgroundImage, titleForm }: IProps) {
   const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
+    formName: 'Freight Broker',
     name: '',
     email: '',
     company: '',
