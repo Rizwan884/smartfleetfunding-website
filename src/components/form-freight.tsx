@@ -9,17 +9,23 @@ type IProps = {
 }
 
 export default function FormFreight({ backgroundImage, titleForm }: IProps) {
+  const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
+    formName: 'Freight Broker',
     name: '',
     email: '',
     company: '',
     phone: '',
     message: ''
   })
-
+  const [error, setError] = useState<string>('')
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    if (!checkboxChecked) {
+      setError(t.freightbroker.checkboxError)
+      return
+    }
 
     try {
       const response = await fetch('/api/submitForm', {
@@ -31,8 +37,14 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
       })
 
       if (response.ok) {
-        // eslint-disable-next-line no-console
-        console.log('Form submitted successfully')
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          message: ''
+        })
+        setCheckboxChecked(false)
         // eslint-disable-next-line no-console
         console.log('response status: ' + response.status)
       } else {
@@ -43,6 +55,12 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
       // eslint-disable-next-line no-console
       console.error('Error submitting form:', error)
     }
+  }
+
+  //function to handle checkbox field
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckboxChecked(event.target.checked)
+    setError('') // Clear error message when checkbox is checked
   }
 
   // Function to handle input changes
@@ -149,6 +167,8 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                     type="checkbox"
                     value=""
                     id="flexCheckDefault"
+                    checked={checkboxChecked}
+                    onChange={handleCheckboxChange}
                   />
                   <label
                     className="form-check-label"
@@ -165,6 +185,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                     </Link>
                   </label>
                 </div>
+                {error && <div className="text-danger">{error}</div>}
               </div>
 
               <button type="submit" className="btn fw-600">

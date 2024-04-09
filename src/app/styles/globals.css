@@ -46,6 +46,9 @@ body {
 .bg-green {
   background-color: var(--green);
 }
+.bg-green:hover {
+  background-color: var(--green);
+}
 .bg-white-gray {
   background-color: var(--white-gray);
 }
@@ -592,15 +595,14 @@ span:hover {
 }
 
 .green-card {
-  background-color: #04D667;
+  background-color: #04d667;
 }
 .green-card:hover {
-  background-color: #04D667;
+  background-color: #04d667;
 }
 
-
 .text-gre {
-  color: #04D667 ;
+  color: #04d667;
 }
 
 /*-------------------------Cards-info------------------------------*/
@@ -1071,6 +1073,18 @@ input[type='radio']:checked ~ label {
 .line-programs {
   border-bottom: 1px solid #b3b3b26e;
 }
+.testimonial-img1 {
+  margin-top: -127px;
+}
+.testimonial-img2 {
+  margin-top: -34px;
+}
+.testimonial-img3 {
+  margin-top: -34px;
+}
+.testimonial-img4 {
+  margin-top: -34px;
+}
 
 /*----------Needs---------------*/
 .bg-button {
@@ -1155,17 +1169,16 @@ input[type='radio']:checked ~ label {
 }
 .pagination .page-link {
   border: none;
- color:var(--dark-blue);
- background-color: transparent;
-
+  color: var(--dark-blue);
+  background-color: transparent;
 }
-.page-link.active, .active > .page-link {
-  color:var(--green);
+.page-link.active,
+.active > .page-link {
+  color: var(--green);
 }
-.page-link:focus{
+.page-link:focus {
   box-shadow: none;
 }
-
 
 /*----------------Modal------------*/
 .modal-content {

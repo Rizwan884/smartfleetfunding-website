@@ -9,7 +9,9 @@ type IProps = {
 }
 
 export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
+  const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
+    formName: 'Fuel Card',
     option: '0',
     name: '',
     email: '',
@@ -17,10 +19,15 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
     phone: '',
     message: ''
   })
-
+  const [error, setError] = useState<string>('')
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    if (!checkboxChecked) {
+      setError(t.fuelcard.checkboxError)
+      return
+    }
+
     try {
       const response = await fetch('/api/submitForm', {
         method: 'POST',
@@ -31,6 +38,15 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
       })
 
       if (response.ok) {
+        setFormData({
+          option: '0',
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          message: ''
+        })
+        setCheckboxChecked(false)
         // eslint-disable-next-line no-console
         console.log('Form submitted successfully')
         // eslint-disable-next-line no-console
@@ -44,7 +60,11 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
       console.error('Error submitting form:', error)
     }
   }
-
+  //function to handle checkbox field
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckboxChecked(event.target.checked)
+    setError('') // Clear error message when checkbox is checked
+  }
   // Function to handle input changes
   const handleInputChange = (
     event: React.ChangeEvent<
@@ -92,6 +112,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   id="option"
                   name="option"
                   className="form-select  bg-grey-transparent text-white"
+                  onChange={handleInputChange}
                 >
                   {t.fuelcard.formselectsoptions.map((option, index) => (
                     <option
@@ -176,6 +197,8 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     type="checkbox"
                     value=""
                     id="flexCheckDefault"
+                    checked={checkboxChecked}
+                    onChange={handleCheckboxChange}
                   />
                   <label
                     className="form-check-label"
@@ -192,11 +215,12 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     </Link>
                   </label>
                 </div>
+                {error && <div className="text-danger">{error}</div>}
               </div>
 
               {formData.option === '0' ? (
                 <button type="submit" className="btn fw-600" disabled>
-                  SEND
+                  {t.fuelcard.formbutton}
                 </button>
               ) : (
                 <button type="submit" className="btn fw-600">
