@@ -67,7 +67,7 @@ export default function Cards() {
             </Col>
             <Col className="card-column mt-3">
               <Card.Body>
-                <a href="/instapay" className="text-decoration-none">
+                <a href="/fespay" className="text-decoration-none">
                   <ListGroup className="rounded-3">
                     <ListGroup.Item
                       className=" body-list-mobile bd-box "
@@ -101,7 +101,7 @@ export default function Cards() {
             </Col>
             <Col className="card-column mt-3">
               <Card.Body>
-                <a href="/" className="text-decoration-none">
+                <a href="/fuel-card" className="text-decoration-none">
                   <ListGroup className="rounded-3">
                     <ListGroup.Item
                       className=" body-list-mobile bd-box "
