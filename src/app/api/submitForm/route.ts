@@ -5,6 +5,7 @@ export async function POST(req: Request) {
   const jsonData = JSON.parse(data)
   const body = JSON.stringify({ ...jsonData })
   const host = req.headers.get('host')
+
   if (body === '{}')
     return NextResponse.json({
       success: false,
@@ -14,11 +15,11 @@ export async function POST(req: Request) {
   if (
     host !== 'smartfleetfunding.com' &&
     host !== 'www.smartfleetfunding.com' &&
-    host !== 'localhost:3001'
+    host !== 'localhost:3000'
   )
     return NextResponse.json({
       success: false,
-      message: 'unauthorized',
+      message: 'Unauthorized',
       code: 401
     })
 
@@ -41,5 +42,5 @@ export async function POST(req: Request) {
     // eslint-disable-next-line no-console
     console.error('Failed to submit form', response)
   }
-  return NextResponse.json({ success: true })
+  return NextResponse.json({ success: true, message: 'Form sent', code: 200 })
 }
