@@ -15,6 +15,7 @@ export default function FormInstapay() {
     comments: ''
   })
   const [error, setError] = useState<string>('')
+  const [formSubmitted, setFormSubmitted] = useState<boolean>(false)
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -41,6 +42,7 @@ export default function FormInstapay() {
           comments: ''
         })
         setCheckboxChecked(false)
+        setFormSubmitted(true)
         // eslint-disable-next-line no-console
         console.log('response status: ' + response.status)
       } else {
@@ -203,6 +205,13 @@ export default function FormInstapay() {
                   {t.fespay.form[0].button}
                 </button>
               </div>
+              {formSubmitted && (
+                <strong>
+                  <div className="text-green">
+                    {t.fespay.form[0].formSubmitted}
+                  </div>
+                </strong>
+              )}
             </form>
           </div>
         </div>

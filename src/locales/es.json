@@ -290,7 +290,8 @@
         "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
         "check": "Acepte nuestra ",
         "strong": "política de privacidad",
-        "button": "ENVIAR"
+        "button": "ENVIAR",
+        "formSubmitted": "¡Formulario enviado con éxito!"
       }
     ],
     "testimonials": [
@@ -452,7 +453,8 @@
         "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
         "check": "Acepte nuestra ",
         "strong": "política de privacidad",
-        "button": "ENVIAR"
+        "button": "ENVIAR",
+        "formSubmitted": "¡Formulario enviado con éxito!"
       }
     ],
     "accordiontittle": "Lista de preguntas que pueden surgir",
@@ -596,7 +598,8 @@
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
     "formcheck": "Acepte Nuestra",
     "formbreak": " política de privacidad",
-    "formbutton": "ENVIAR"
+    "formbutton": "ENVIAR",
+    "formSubmitted": "¡Formulario enviado con éxito!"
   },
   "freightbroker": {
     "pagetitle": "Freight",
@@ -743,7 +746,8 @@
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
     "formcheck": "Acepte Nuestra",
     "formbreak": " política de privacidad",
-    "formbutton": "ENVIAR"
+    "formbutton": "ENVIAR",
+    "formSubmitted": "¡Formulario enviado con éxito!"
   },
   "faqs": {
     "accordionInstaItems": [
@@ -952,7 +956,8 @@
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
     "formcheck": "Acepte Nuestra",
     "formbreak": " política de privacidad",
-    "formbutton": "ENVIAR"
+    "formbutton": "ENVIAR",
+    "formSubmitted": "¡Formulario enviado con éxito!"
   },
   "blogs": {
     "bloginfo": [

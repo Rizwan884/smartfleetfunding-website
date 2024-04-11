@@ -301,7 +301,8 @@
         "checkboxError": "Please check the box before submitting",
         "check": "Accept our ",
         "strong": " Privacy policy",
-        "button": "SEND"
+        "button": "SEND",
+        "formSubmitted": "Form submitted successfully!"
       }
     ],
     "testimonials": [
@@ -463,7 +464,8 @@
         "checkboxError": "Please check the box before submitting",
         "check": "Accept our ",
         "strong": " Privacy policy",
-        "button": "SEND"
+        "button": "SEND",
+        "formSubmitted": "Form submitted successfully!"
       }
     ],
     "accordiontittle": "List of questions that may arise",
@@ -607,7 +609,8 @@
     "checkboxError": "Please check the box before submitting",
     "formcheck": "Accept Our",
     "formbreak": " Privacy Policy",
-    "formbutton": "SEND"
+    "formbutton": "SEND",
+    "formSubmitted": "Form submitted successfully!"
   },
   "freightbroker": {
     "pagetitle": "Freight",
@@ -754,7 +757,8 @@
     "checkboxError": "Please check the box before submitting",
     "formcheck": "Accept Our",
     "formbreak": " Privacy Policy",
-    "formbutton": "SEND"
+    "formbutton": "SEND",
+    "formSubmitted": "Form submitted successfully!"
   },
   "faqs": {
     "accordionInstaItems": [
@@ -963,7 +967,8 @@
     "checkboxError": "Please check the box before submitting",
     "formcheck": "Accept Our",
     "formbreak": " privacy policy",
-    "formbutton": "SEND"
+    "formbutton": "SEND",
+    "formSubmitted": "Form submitted successfully!"
   },
   "blogs": {
     "bloginfo": [

@@ -20,6 +20,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
     message: ''
   })
   const [error, setError] = useState<string>('')
+  const [formSubmitted, setFormSubmitted] = useState<boolean>(false)
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -47,6 +48,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
           message: ''
         })
         setCheckboxChecked(false)
+        setFormSubmitted(true)
         // eslint-disable-next-line no-console
         console.log('Form submitted successfully')
         // eslint-disable-next-line no-console
@@ -228,6 +230,11 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 </button>
               )}
             </div>
+            {formSubmitted && (
+              <strong>
+                <div className="text-green">{t.fuelcard.formSubmitted}</div>
+              </strong>
+            )}
           </form>
         </div>
         <div className="md-w-50 w-100">

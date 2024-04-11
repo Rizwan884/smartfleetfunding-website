@@ -115,7 +115,8 @@ const I18nContext = createContext<II18nContext>({
       formcheck: '',
       formbreak: '',
       formbutton: '',
-      checkboxError: ''
+      checkboxError: '',
+      formSubmitted: ''
     },
     freightbroker: {
       pagetitle: '',
@@ -143,7 +144,8 @@ const I18nContext = createContext<II18nContext>({
       formcheck: '',
       formbreak: '',
       formbutton: '',
-      checkboxError: ''
+      checkboxError: '',
+      formSubmitted: ''
     },
     faqs: {
       accordionInstaItems: [],
@@ -172,7 +174,8 @@ const I18nContext = createContext<II18nContext>({
       formcheck: '',
       formbreak: '',
       formbutton: '',
-      checkboxError: ''
+      checkboxError: '',
+      formSubmitted: ''
     },
     blogs: {
       bloginfo: []

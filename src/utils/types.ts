@@ -106,6 +106,7 @@ interface FormItem {
   check: string
   strong: string
   button: string
+  formSubmitted: string
 }
 
 interface Testimonial {
@@ -146,6 +147,7 @@ interface InstapayForm {
   check: string
   strong: string
   button: string
+  formSubmitted: string
 }
 
 interface InstapayAccordionItem {
@@ -304,6 +306,7 @@ export type IJSON = {
     formcheck: string
     formbreak: string
     formbutton: string
+    formSubmitted: string
   }
   freightbroker: {
     pagetitle: string
@@ -332,6 +335,7 @@ export type IJSON = {
     formcheck: string
     formbreak: string
     formbutton: string
+    formSubmitted: string
   }
   faqs: {
     accordionInstaItems: AccordionInstaItem[]
@@ -361,6 +365,7 @@ export type IJSON = {
     formcheck: string
     formbreak: string
     formbutton: string
+    formSubmitted: string
   }
 
   blogs: {

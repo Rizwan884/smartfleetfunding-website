@@ -19,6 +19,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
     message: ''
   })
   const [error, setError] = useState<string>('')
+  const [formSubmitted, setFormSubmitted] = useState<boolean>(false)
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -45,6 +46,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
           message: ''
         })
         setCheckboxChecked(false)
+        setFormSubmitted(true)
         // eslint-disable-next-line no-console
         console.log('response status: ' + response.status)
       } else {
@@ -192,6 +194,13 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                 {t.freightbroker.formbutton}
               </button>
             </div>
+            {formSubmitted && (
+              <strong>
+                <div className="text-green">
+                  {t.freightbroker.formSubmitted}
+                </div>
+              </strong>
+            )}
           </form>
         </div>
         <div className="md-w-50 w-100">
