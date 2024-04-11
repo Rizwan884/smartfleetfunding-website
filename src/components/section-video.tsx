@@ -39,7 +39,7 @@ export default function SectionVideo() {
             <a href="#" onClick={openModal} className="position-relative">
               <Image
                 className="rounded-5"
-                src="/images/sff-video-banner.webp"
+                src="/images/sff-banner-video.webp"
                 alt="Previsualización"
                 width={370}
                 height={300}
