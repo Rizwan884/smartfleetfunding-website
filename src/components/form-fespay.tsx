@@ -4,7 +4,9 @@ import { useState } from 'react'
 import { useI18nProvider } from '@/context/I18nProvider'
 export default function FormInstapay() {
   const { t } = useI18nProvider()
+  const [checkboxChecked, setCheckboxChecked] = useState(false)
   const [formData, setFormData] = useState<{ [key: string]: string }>({
+    formName: 'FesPay',
     name: '',
     email: '',
     company: '',
@@ -12,11 +14,14 @@ export default function FormInstapay() {
     freightBroker: '',
     comments: ''
   })
-
+  const [error, setError] = useState<string>('')
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-
+    if (!checkboxChecked) {
+      setError(t.fespay.form[0].checkboxError)
+      return
+    }
     try {
       const response = await fetch('/api/submitForm', {
         method: 'POST',
@@ -27,8 +32,15 @@ export default function FormInstapay() {
       })
 
       if (response.ok) {
-        // eslint-disable-next-line no-console
-        console.log('Form submitted successfully')
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          freightBroker: '',
+          comments: ''
+        })
+        setCheckboxChecked(false)
         // eslint-disable-next-line no-console
         console.log('response status: ' + response.status)
       } else {
@@ -40,7 +52,11 @@ export default function FormInstapay() {
       console.error('Error submitting form:', error)
     }
   }
-
+  //function to handle checkbox field
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCheckboxChecked(event.target.checked)
+    setError('') // Clear error message when checkbox is checked
+  }
   // Function to handle input changes
   const handleInputChange = (
     event:
@@ -133,8 +149,8 @@ export default function FormInstapay() {
                   <input
                     type="text"
                     className="form-control px-3 bg-grey-transparent-fespay text-dark-blue"
-                    id="freight"
-                    name="freight"
+                    id="freightBroker"
+                    name="freightBroker"
                     value={formData.freightBroker}
                     onChange={handleInputChange}
                     required
@@ -162,6 +178,8 @@ export default function FormInstapay() {
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
+                      checked={checkboxChecked}
+                      onChange={handleCheckboxChange}
                     />
                     <label
                       className="text-dark-blue"
@@ -178,9 +196,10 @@ export default function FormInstapay() {
                       </Link>
                     </label>
                   </div>
+                  {error && <div className="text-danger">{error}</div>}
                 </div>
 
-                <button type="submit" className="btn fw-600">
+                <button type="submit" className="btn bg-green fw-600">
                   {t.fespay.form[0].button}
                 </button>
               </div>
