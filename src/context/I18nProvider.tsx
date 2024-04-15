@@ -35,6 +35,7 @@ const I18nContext = createContext<II18nContext>({
       carinfo: [
         {
           title: '',
+          href: '',
           sections: [{ heading: '', items: [] }],
           icon: '',
           iconback: ''
@@ -59,6 +60,7 @@ const I18nContext = createContext<II18nContext>({
       sectioninfo: [
         {
           title: '',
+          titlebreak: '',
           descripcion: '',
           linebreak: '',
           breaktext: '',

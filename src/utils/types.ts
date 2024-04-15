@@ -32,6 +32,7 @@ interface HomeSection {
 
 interface HomeCarInfo {
   title: string
+  href: string
   sections: HomeSection[]
   icon: string
   iconback: string
@@ -63,6 +64,7 @@ export interface IFooter {
 
 interface SectionInfo {
   title: string
+  titlebreak: string
   descripcion: string
   linebreak: string
   breaktext: string

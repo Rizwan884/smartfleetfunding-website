@@ -8,6 +8,7 @@ const Image = {
 }
 type ICard = {
   title: string
+  titlebreak: string
   descripcion: string
   linebreak: string
   breaktext: string
@@ -61,7 +62,7 @@ export default function ImgInfo() {
         >
           {t.home.sectioninfo.map(
             (
-              { title, descripcion, linebreak, breaktext }: ICard,
+              { title, titlebreak, descripcion, linebreak, breaktext }: ICard,
               key: number
             ) => (
               <div
@@ -69,7 +70,7 @@ export default function ImgInfo() {
                 className=" info-container font-montserrat pt-6 mx-5"
               >
                 <h1 className="text-end fw-bold fs-3">
-                  {title}
+                  {title} <br /> {titlebreak}
                   <div className="ms-auto line"></div>
                 </h1>
                 <div className="card-text-bottom fw-400">

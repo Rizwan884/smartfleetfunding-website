@@ -11,6 +11,7 @@ type ICard = {
   }[]
   icon: string
   iconback: string
+  href: string
 }
 
 export default function Cards() {
@@ -150,14 +151,17 @@ export default function Cards() {
             style={{ minHeight: '600px', maxHeight: '600px' }}
           >
             {t.home.carinfo.map(
-              ({ title, sections, icon, iconback }: ICard, key: number) => (
+              (
+                { title, sections, icon, iconback, href }: ICard,
+                key: number
+              ) => (
                 <Col
                   key={key}
                   className="card-column "
                   style={{ width: '300px' }}
                 >
                   <Card.Body style={{ fontSize: '15px', overflowY: 'auto' }}>
-                    <a href="/full-fact" className="text-decoration-none">
+                    <a href={href} className="text-decoration-none">
                       <ListGroup>
                         <ListGroup.Item className="body-list bd-box card-hb">
                           <div className="icon-cards" style={{ height: 70 }}>

@@ -49,6 +49,7 @@
     "carinfo": [
       {
         "title": "Full Fact",
+        "href": "/full-fact",
         "sections": [
           {
             "heading": "Premium factoring -",
@@ -78,6 +79,7 @@
       },
       {
         "title": "FES Pay/InstaPay",
+        "href": "/fespay",
         "sections": [
           {
             "heading": "Fast, Easy and Secure Payment -",
@@ -114,6 +116,7 @@
       },
       {
         "title": "Smart Fuel Card",
+        "href": "/fuel-card",
         "sections": [
           {
             "heading": "Smart Fuel card -",
@@ -175,7 +178,8 @@
     ],
     "sectioninfo": [
       {
-        "title": "Interested in learning more?\n Give us a call today.",
+        "title": "Interested in learning more?",
+        "titlebreak": "Give us a call today.",
         "descripcion": "We are here to answer all your questions and",
         "linebreak": "and help you find the best solutions for your",
         "breaktext": "trucking business.",

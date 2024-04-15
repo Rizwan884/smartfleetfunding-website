@@ -49,6 +49,7 @@
     "carinfo": [
       {
         "title": "Full Fact",
+        "href": "/full-fact",
         "sections": [
           {
             "heading": "Cobro de primas -",
@@ -78,6 +79,7 @@
       },
       {
         "title": "FES Pay/InstaPay",
+        "href": "/fespay",
         "sections": [
           {
             "heading": "Pago rápido, fácil y seguro -",
@@ -114,9 +116,10 @@
       },
       {
         "title": "Smart Fuel Card",
+        "href": "/fuel-card",
         "sections": [
           {
-            "heading": "Smart Fuel Card -",
+            "heading": "Tarjeta inteligente de combustible -",
             "items": [
               "· Tarjetas de combustible con descuento para las principales paradas de camiones.",
               "· Ahorro sustancial de combustible",
@@ -128,7 +131,7 @@
             ]
           },
           {
-            "heading": "Smart Fuel Advance -",
+            "heading": "Avance inteligente del combustible -",
             "items": [
               "·Junto con el factoring de facturas de transporte, proporciona hasta el 50% del valor de la carga para gastos de combustible.",
               "·Verificación necesaria para la reserva y recogida de la carga.",
@@ -170,7 +173,8 @@
     ],
     "sectioninfo": [
       {
-        "title": "¿Quiere saber más? Llámenos hoy mismo.",
+        "title": "¿Quiere saber más?",
+        "titlebreak": "Llámenos hoy mismo.",
         "descripcion": "Estamos aquí para responder a todas sus preguntas",
         "linebreak": "y ayudarle a encontrar las mejores soluciones para su",
         "breaktext": "negocio de transporte por carretera.",
