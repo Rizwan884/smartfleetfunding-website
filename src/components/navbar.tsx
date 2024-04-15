@@ -71,7 +71,7 @@ export default function SFFNavbar() {
                     className="text-start text-dark"
                     href="/fespay"
                   >
-                    Fespay
+                    FES Pay
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className="text-start text-dark"

@@ -157,38 +157,42 @@ export default function Cards() {
                   style={{ width: '300px' }}
                 >
                   <Card.Body style={{ fontSize: '15px', overflowY: 'auto' }}>
-                    <ListGroup>
-                      <ListGroup.Item className="body-list bd-box card-hb">
-                        <div className="icon-cards" style={{ height: 70 }}>
-                          <Image
-                            style={{ width: '62px' }}
-                            src={iconback}
-                            alt=""
-                          />
-                        </div>
-                        <Card.Title className="cards-title">{title}</Card.Title>
-                        <div className="cards-size">
-                          {sections.map((section, index) => (
-                            <div key={index}>
-                              <p className="mb-0 fw-600 text-green">
-                                <Image src={icon} alt="" /> {section.heading}
-                              </p>
-                              {section.items.map((item, itemIndex) => (
-                                <li
-                                  key={itemIndex}
-                                  className="list-group fw-400 text-dark-blue"
-                                >
-                                  {item}
-                                </li>
-                              ))}
-                              {index !== sections.length - 1 && (
-                                <div className="cards-line"></div>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      </ListGroup.Item>
-                    </ListGroup>
+                    <a href="/full-fact" className="text-decoration-none">
+                      <ListGroup>
+                        <ListGroup.Item className="body-list bd-box card-hb">
+                          <div className="icon-cards" style={{ height: 70 }}>
+                            <Image
+                              style={{ width: '62px' }}
+                              src={iconback}
+                              alt=""
+                            />
+                          </div>
+                          <Card.Title className="cards-title">
+                            {title}
+                          </Card.Title>
+                          <div className="cards-size">
+                            {sections.map((section, index) => (
+                              <div key={index}>
+                                <p className="mb-0 fw-600 text-green">
+                                  <Image src={icon} alt="" /> {section.heading}
+                                </p>
+                                {section.items.map((item, itemIndex) => (
+                                  <li
+                                    key={itemIndex}
+                                    className="list-group fw-400 text-dark-blue"
+                                  >
+                                    {item}
+                                  </li>
+                                ))}
+                                {index !== sections.length - 1 && (
+                                  <div className="cards-line"></div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </ListGroup.Item>
+                      </ListGroup>
+                    </a>
                   </Card.Body>
                 </Col>
               )
