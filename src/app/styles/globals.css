@@ -809,7 +809,15 @@ span:hover {
 }
 /*---------------Help-----------*/
 #help .card-text {
-  font-size: 18px;
+  font-size: 15px;
+}
+
+#card-descripcion {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .help-line {
   margin-left: 40%;

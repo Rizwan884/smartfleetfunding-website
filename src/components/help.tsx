@@ -118,7 +118,7 @@ export default function Help() {
                 style={{
                   border: '10px',
                   paddingBottom: '20px',
-                  height: '152px'
+                  height: '165px'
                 }}
               >
                 <Image
@@ -132,7 +132,7 @@ export default function Help() {
                   alt=""
                 />
                 <div className="card-body">
-                  <p className="card-text">
+                  <p className="card-text fs-6" id="card-descripcion">
                     <strong>{card.strong}</strong>
                     <br />
                     {card.descripcion}
