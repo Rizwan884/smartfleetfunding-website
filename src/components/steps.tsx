@@ -17,8 +17,10 @@ export default function Steps() {
                   {index + 1}{' '}
                 </div>
                 <div className="lh-sm step-content fs-5">
-                  <h3 className="fw-bold">{step.title}</h3>
-                  <p className="fs-5">{step.text}</p>
+                  <h3 className="fw-bold" id="step-title">
+                    {step.title}
+                  </h3>
+                  <p className="fs-6">{step.text}</p>
                 </div>
               </div>
             ))}

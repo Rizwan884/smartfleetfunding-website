@@ -463,7 +463,7 @@
         "title": "¿Cuáles son las condiciones de FesPay?",
         "descripcion": [
           "La FB para la que transporta debe ser miembro de nuestra Red FesPay.",
-          "La carga debe completarse y el papeleo debe enviarse a instapay@smartfleetfunding.com en lugar de al agente de carga."
+          "La carga debe completarse y el papeleo debe enviarse a fespay@smartfleetfunding.com en lugar de al agente de carga."
         ],
         "eventKey": 1
       },
@@ -477,7 +477,7 @@
       {
         "title": "¿Qué documentos debo presentar?",
         "descripcion": [
-          "Presentar factura, confirmación del transportista, BOL propiedad firmado y accesorialls o lumper recibos."
+          "Presentar factura, confirmación BOL propiedad firmada y Presentar factura, confirmación de tarifa Traffix y BOL/POD debidamente firmado"
         ],
         "eventKey": 3
       },
