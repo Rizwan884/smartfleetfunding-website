@@ -160,7 +160,7 @@
         "services": "SERVICIOS",
         "fullfact": "Full Fact",
         "fespay": "FesPay",
-        "freightbroke": " Freight Broke",
+        "freightbroke": " Freight Broker",
         "fuelcard": "Fuel Card",
         "faq": "FAQ",
         "aboutus": "NOSOTROS",
@@ -375,7 +375,7 @@
       },
       {
         "title": "¿Cuánto tarda en procesarse el pago de las facturas?",
-        "descripcion": "¿Cuánto tarda en procesarse el pago de las facturas?",
+        "descripcion": "Nuestro objetivo es la financiación en el mismo día, lo que significa que procesamos y pagamos sus facturas el mismo día de su recepción. Sin embargo, dependiendo de la confirmación de la factura y de la revisión del crédito, puede tardar hasta 24 horas o más.",
         "icon": "/images/sff-acr-dollar.svg",
         "eventKey": 2
       },
