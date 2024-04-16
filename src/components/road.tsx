@@ -6,7 +6,7 @@ export default function Road() {
     <>
       <div className="d-md-none">
         <div className="text-left  p-5">
-          <div className=" w-100 mx-auto">
+          <div className="fuel-card-road w-100 mx-auto">
             <Image
               alt="img"
               width={350}

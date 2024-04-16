@@ -35,7 +35,7 @@ export default function SectionVideo() {
               </div>
             )
           )}
-          <div className="col-5 embed-responsive embed-responsive-16by9  m-4 p-4 rounded-3">
+          <div className="col-12 md-col-5 embed-responsive embed-responsive-16by9 p-4 text-center  m-md-4 p-md-4 rounded-3">
             <a href="#" onClick={openModal} className="position-relative">
               <Image
                 className="rounded-5"
