@@ -17,7 +17,7 @@ type ICard = {
   imagemobile: string
 }
 export default function Slider() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   const { t } = useI18nProvider()
   return (
     <>

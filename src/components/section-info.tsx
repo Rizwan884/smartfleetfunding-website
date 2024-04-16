@@ -16,7 +16,7 @@ type ICard = {
 }
 export default function ImgInfo() {
   const { t } = useI18nProvider()
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   return (
     <>
       {isMobile ? (

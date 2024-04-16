@@ -9,7 +9,7 @@ type IProps = {
   blogs: BlogInfo[]
 }
 export default function Blog({ blogs }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   const [selectedBlogIndex, setSelectedBlogIndex] = useState<number | null>(
     null
   )

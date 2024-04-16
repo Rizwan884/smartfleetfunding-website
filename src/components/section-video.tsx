@@ -9,7 +9,7 @@ type ICard = {
   strong: string
 }
 export default function SectionVideo() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   const [showModal, setShowModal] = useState(false)
   const { t } = useI18nProvider()
   const openModal = () => setShowModal(true)

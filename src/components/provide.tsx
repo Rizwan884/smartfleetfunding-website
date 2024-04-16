@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Carousel, Col, Container, Row } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
 export default function Provides() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   const { t } = useI18nProvider()
   return (
     <>

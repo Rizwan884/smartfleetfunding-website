@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import ScrollToTopButton from '../components/scroolTop'
 
 export default function Footer() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   const { t } = useI18nProvider()
   return (
     <>

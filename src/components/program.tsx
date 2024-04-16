@@ -4,7 +4,7 @@ import { Container, Row } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
 export default function Programs() {
   const { t } = useI18nProvider()
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   return (
     <>
       {isMobile ? (
