@@ -12,6 +12,7 @@ type ICard = {
   title: string
   strong: string
   button: string
+  href: string
   image: string
   imagemobile: string
 }
@@ -23,7 +24,10 @@ export default function Slider() {
       {isMobile ? (
         <Carousel className="font-montserrat" controls={false}>
           {t.home.slider.map(
-            ({ title, strong, button, imagemobile }: ICard, key: number) => (
+            (
+              { title, strong, button, imagemobile, href }: ICard,
+              key: number
+            ) => (
               <Carousel.Item key={key}>
                 <div
                   style={{
@@ -38,7 +42,7 @@ export default function Slider() {
                     </h1>
                     <div className="mt-5">
                       <Button
-                        href="tel:+18302097589"
+                        href={href}
                         className="contact_slide fw-bold  my-4 h-25 d-inline-block"
                         variant="btn btn-custom"
                       >
@@ -54,7 +58,7 @@ export default function Slider() {
       ) : (
         <Carousel className="font-montserrat" controls={false}>
           {t.home.slider.map(
-            ({ title, strong, button, image }: ICard, key: number) => (
+            ({ title, strong, button, image, href }: ICard, key: number) => (
               <Carousel.Item key={key}>
                 <div
                   style={{
@@ -68,7 +72,7 @@ export default function Slider() {
                       <strong>{strong}</strong>
                     </h1>
                     <Button
-                      href="tel:+18302097589"
+                      href={href}
                       className="contact_slide fw-bold  my-4 h-25 d-inline-block"
                       variant="btn btn-custom"
                     >

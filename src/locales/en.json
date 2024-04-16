@@ -190,6 +190,7 @@
       {
         "title": "Maximize your company's potential",
         "strong": "with Smart Fleet Funding",
+        "href": "tel:+18308097589",
         "button": "GET STARTED",
         "image": "/images/sff-truck.webp",
         "imagemobile": "/images/sff-truck-mobile.webp"
@@ -197,6 +198,7 @@
       {
         "title": "Your success,",
         "strong": "Our story",
+        "href": "mailto:nluna@smartfleetfunding.com",
         "button": " Take the first step",
         "image": "/images/sff-truck-logistic.webp",
         "imagemobile": "/images/sff-truck-logistic-mobile.webp"
@@ -204,6 +206,7 @@
       {
         "title": "Let’s navigate the road ahead together.​",
         "strong": "Drive your Carrier business to new heights",
+        "href" : "mailto:nluna@smartfleetfunding.com",
         "button": "CASH NOW",
         "image": "/images/sff-succes-story.webp",
         "imagemobile": "/images/sff-succes-story-mobile.webp"

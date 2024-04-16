@@ -75,6 +75,7 @@ interface Slider {
   title: string
   strong: string
   button: string
+  href: string
   image: string
   imagemobile: string
 }
