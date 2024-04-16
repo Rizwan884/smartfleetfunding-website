@@ -57,10 +57,12 @@ export default function Footer() {
                       {fullfact}
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/fespay">{fespay}</NavDropdown.Item>
-                    <NavDropdown.Item href="/freight-broker-program">
+                    <NavDropdown.Item href="/fuel-card">
                       {fuelcard}
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#">{freightbroke}</NavDropdown.Item>
+                    <NavDropdown.Item href="freight-broker-program">
+                      {freightbroke}
+                    </NavDropdown.Item>
                   </NavDropdown>
                   <hr className="w-93 m-0 mx-auto" />
                   <Nav.Link className="text-green fw-600" href="/faqs">
@@ -221,7 +223,7 @@ export default function Footer() {
                           <NavDropdown.Item href="/fespay">
                             {fespay}
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="#">
+                          <NavDropdown.Item href="/fuel-card">
                             {fuelcard}
                           </NavDropdown.Item>
                           <NavDropdown.Item href="/freight-broker-program">
