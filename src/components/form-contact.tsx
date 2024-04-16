@@ -132,7 +132,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                       <h2 className="fs-4 mt-3 fw-600 text-dark-blue">
                         <a
                           className="remove-link-styles"
-                          href="mailto:ifo@smartfleetfunding.com"
+                          href="mailto:info@smartfleetfunding.com"
                         >
                           info@smartfleetfunding.com
                         </a>
