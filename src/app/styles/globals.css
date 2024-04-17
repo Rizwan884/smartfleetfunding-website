@@ -485,6 +485,7 @@ span:hover {
 .card-icon,
 .card-text {
   font-size: 35px;
+  
   backface-visibility: hidden;
 }
 .card-icon-back,
@@ -1106,16 +1107,16 @@ input[type='radio']:checked ~ label {
   border-bottom: 1px solid #b3b3b26e;
 }
 .testimonial-img1 {
-  margin-top: -127px;
+  margin-top: -110px;
 }
 .testimonial-img2 {
-  margin-top: -34px;
+  margin-top: -10px;
 }
 .testimonial-img3 {
-  margin-top: -34px;
+  margin-top: -10px;
 }
 .testimonial-img4 {
-  margin-top: -34px;
+  margin-top: -10px;
 }
 
 /*----------Needs---------------*/

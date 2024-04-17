@@ -73,7 +73,7 @@ export default function Cards() {
                           <Image className="icons" src={icon} alt="" />
                         </div>
                         <div className="d-flex flex-column align-items-end align-items-md-center">
-                          <div className="card-text">{title}</div>
+                          <div className="card-text fw-bold">{title}</div>
                           <div className="line-front"></div>
                         </div>
                         <div className="card-text-bottom  fw-400">

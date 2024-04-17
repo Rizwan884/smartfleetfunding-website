@@ -16,14 +16,13 @@ export default function Banners({
   mobileBackgroundImage,
   hideIcons = false
 }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: 650 })
   return (
     <>
       <div
         style={{
           height: 'auto',
           maxWidth: '100%',
-          width: '100%',
           position: 'relative'
         }}
       >

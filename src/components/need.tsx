@@ -14,7 +14,7 @@ export default function Needs() {
       <div className="container mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
-          <h1 className="fw-600 fs-2 text-center  text-dark-blue flex  align-items-center gap-3">
+          <h1 className="fw-bold fs-2 text-center  text-dark-blue flex  align-items-center gap-3">
             {t.freightbroker.needstitle}
           </h1>
         </div>

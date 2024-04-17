@@ -199,7 +199,7 @@
         "title": "Your success,",
         "strong": "Our story",
         "href": "mailto:sales@smartfleetfunding.com",
-        "button": " Take the first step",
+        "button": " TAKE THE FIRST STEP",
         "image": "/images/sff-truck-logistic.webp",
         "imagemobile": "/images/sff-truck-logistic-mobile.webp"
       },
@@ -393,7 +393,7 @@
       },
       {
         "title": "How long does it take for invoice payment to be processed?",
-        "descripcion": "Our aim is same-day funding, which means we process and payout your invoices on the day of receipt. However, depending on invoice confirmation and credit review, it may take up to 24 hours or longer",
+        "descripcion": "Our aim is same-day funding, which means we process and payout your invoices on the day of receipt. However, depending on invoice confirmation and credit review, it may take up to 24 hours or longer.",
         "icon": "/images/sff-acr-dollar.svg",
         "eventKey": 2
       },
@@ -495,7 +495,7 @@
       {
         "title": "What documents do I need to submit?",
         "descripcion": [
-          "Submit invoice, confirmation BOL property signed  and Submit Invoice, Traffix Rate Confirmation and BOL/POD dully signed"
+          "Submit invoice, confirmation BOL property signed  and Submit Invoice, Traffix Rate Confirmation and BOL/POD dully signed."
         ],
         "eventKey": 3
       },
@@ -965,7 +965,7 @@
     "contacttitle": "We're here to help. Let's talk",
     "contacttitleform": "Contact us for",
     "contacttitlestrong": "Fast, easy, and secure",
-    "contacttitlebreak": "funding solutions",
+    "contacttitlebreak": "funding solutions.",
     "formname": "Full Name",
     "formemail": "Your E-mail",
     "formcompany": "Company",

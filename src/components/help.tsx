@@ -39,7 +39,7 @@ export default function Help() {
           {t.fullcard.helptittle}
         </h2>
         <div className="line help-line"></div>
-        <Container id="help" className="mt-sm-1 mb-sm-2 mt-5 mb-6">
+        <Container id="help" className="mt-sm-1 mb-sm-2 mt-5 ">
           <div className="d-none d-md-block">
             <Row className="mt-5">
               {helpcards.map((card, index) => (
@@ -124,7 +124,7 @@ export default function Help() {
                 <Image
                   src={card.icon}
                   style={{
-                    width: '15%',
+                    width: '50px',
                     marginTop: '-30px',
                     marginBottom: '20px'
                   }}
