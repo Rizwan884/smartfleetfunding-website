@@ -535,6 +535,11 @@ span:hover {
   border-radius: 15px;
   box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.2);
 }
+.card-image-mobile {
+  width: 15%;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
 /*-------------------------Cards Mobile----------------------------*/
 .mobile-card {
   width: 300px;

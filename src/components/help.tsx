@@ -32,6 +32,7 @@ export default function Help() {
     )
     setHelpCardsTwo(helpCardsDataTwo)
   }, [t])
+  const allHelpCards: ICard[] = [...helpcards, ...helpcardstwo]
   return (
     <>
       <Container className="font-montserrat container mt-5">
@@ -111,7 +112,7 @@ export default function Help() {
           touch={true}
           className="pb-5 pt-5"
         >
-          {helpcards.map((card, index) => (
+          {allHelpCards.map((card, index) => (
             <Carousel.Item key={index} className="p-2 pt-5">
               <div
                 className="cards-mobile mx-3"
