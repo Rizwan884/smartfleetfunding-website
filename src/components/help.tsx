@@ -110,7 +110,7 @@ export default function Help() {
           indicators
           interval={null}
           touch={true}
-          className="pb-5 pt-5"
+          className="pb-5 pt-3"
         >
           {allHelpCards.map((card, index) => (
             <Carousel.Item key={index} className="p-2 pt-5">

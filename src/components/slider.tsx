@@ -40,10 +40,10 @@ export default function Slider() {
                       {title} <br />
                       <strong>{strong}</strong>
                     </h1>
-                    <div className="mt-5">
+                    <div className="mt-4">
                       <Button
                         href={href}
-                        className="contact_slide fw-bold  my-4 h-25 d-inline-block"
+                        className="contact_slide fw-bold h-25 d-inline-block"
                         variant="btn btn-custom"
                       >
                         {button}
