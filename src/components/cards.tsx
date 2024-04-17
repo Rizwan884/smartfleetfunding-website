@@ -12,20 +12,20 @@ type ICard = {
   iconback: string
 }
 export default function Cards() {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: 769 })
   const { t } = useI18nProvider()
   return (
     <>
       {isMobile ? (
         <Carousel
           id="carousel-mobile"
-          className="font-montserrat card-container "
+          className="font-montserrat card-container"
           controls={true}
         >
           {t.home.cards.map(
             ({ title, regular, strong, icon }: ICard, key: number) => (
               <Carousel.Item key={key}>
-                <Col xs={12} md={4} className="card-column" key={key}>
+                <Col xs={12} lg={4} className="card-column" key={key}>
                   <div className="mobile-card">
                     <div className="card w-100 h-75">
                       <div className="front-mobile font-montserrat fw-600">

@@ -15,7 +15,7 @@ type ICard = {
 }
 
 export default function Cards() {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: 784 })
   const { t } = useI18nProvider()
   return (
     <>

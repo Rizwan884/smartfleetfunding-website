@@ -9,7 +9,7 @@ type ICard = {
   strong: string
 }
 export default function SectionVideo() {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: 770 })
   const [showModal, setShowModal] = useState(false)
   const { t } = useI18nProvider()
   const openModal = () => setShowModal(true)
@@ -35,7 +35,7 @@ export default function SectionVideo() {
               </div>
             )
           )}
-          <div className="col-12 md-col-5 embed-responsive embed-responsive-16by9 p-4 text-center  m-md-4 p-md-4 rounded-3">
+          <div className="col-12 md-col-5 embed-responsive embed-responsive-16by9 p-4 text-center  m-md-3 p-md-4 rounded-3">
             <a href="#" onClick={openModal} className="position-relative">
               <Image
                 className="rounded-5"

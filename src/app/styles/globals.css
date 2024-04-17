@@ -288,7 +288,7 @@ span:hover {
   background: var(--green) !important;
   border-radius: 4px;
 }
-#form-instapay .btn {
+#form-fespay .btn {
   background: var(--green) !important;
   border-radius: 4px;
 }
@@ -852,7 +852,7 @@ span:hover {
   color: var(--white);
   font-size: 11px;
 }
-#form-instapay #freight::placeholder,
+#form-fespay #freight::placeholder,
 #comments::placeholder,
 #fullphone::placeholder,
 #fullcompany::placeholder,
