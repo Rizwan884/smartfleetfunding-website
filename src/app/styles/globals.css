@@ -478,7 +478,7 @@ span:hover {
 
 .icons {
   width: 54px;
-  margin-bottom: 10px;
+  margin-bottom: -5px;
 }
 .icons2 {
   width: 40px;
@@ -510,6 +510,15 @@ span:hover {
   margin-top: 20px;
   text-align: left;
   margin: 15px;
+  backface-visibility: hidden;
+  line-height: 20px;
+}
+.card-text-bottom-back-mobile {
+  font-size: 15px;
+  margin-top: 20px;
+  text-align: left;
+  margin: 15px;
+  margin-left: 30px;
   backface-visibility: hidden;
   line-height: 20px;
 }
@@ -706,6 +715,7 @@ span:hover {
 .contact_slide {
   background: #02dd68;
   color: #051630;
+  font-size: 0.9rem;
 }
 .contact_slide:hover {
   background: #02dd68;
