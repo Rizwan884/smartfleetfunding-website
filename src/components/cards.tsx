@@ -38,7 +38,7 @@ export default function Cards() {
                             <div className="line-front"></div>
                           </div>
                         </div>
-                        <div className="card-text-bottom-back-mobile fw-400 mt-3">
+                        <div className="card-text-bottom-back ms-4 fw-400 mt-3">
                           {regular}
                           <strong>{strong}</strong>
                         </div>

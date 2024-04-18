@@ -40,7 +40,7 @@ export default function SFFNavbar() {
             />
           </Navbar.Brand>
           <div className="d-flex align-items-center gap-3">
-            <div id="button-language" className="d-flex d-md-none gap-2">
+            <div id="button-language" className="d-flex d-lg-none gap-2">
               <LanguageSwitcher />
             </div>
             <Navbar.Toggle
@@ -123,7 +123,9 @@ export default function SFFNavbar() {
               >
                 {t.navbar.contact}
               </Nav.Link>
-              <LanguageSwitcher />
+              <div id="button-language" className="d-none d-lg-block gap-2">
+                <LanguageSwitcher />
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
