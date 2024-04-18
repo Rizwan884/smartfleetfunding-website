@@ -30,14 +30,19 @@ export default function ImgInfo() {
             }}
           ></div>
           {t.home.sectioninfo.map(
-            ({ title, descripcion }: ICard, key: number) => (
+            (
+              { title, titlebreak, linebreak, breaktext, descripcion }: ICard,
+              key: number
+            ) => (
               <div key={key} className="  font-montserrat pt-2 mx-5 mb-5">
                 <h1 className="text-start fw-bold fs-4">
-                  {title}
+                  {title} <br /> {titlebreak}
                   <div className="line"></div>
                 </h1>
                 <div className="lh-sm card-text-bottom fw-400">
-                  {descripcion}
+                  {descripcion} <br />
+                  {linebreak} <br />
+                  {breaktext}
                 </div>
 
                 <Button
