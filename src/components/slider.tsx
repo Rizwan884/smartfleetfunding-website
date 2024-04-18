@@ -4,8 +4,6 @@ import { useMediaQuery } from 'react-responsive'
 // Interface for describing custom styles
 const carouselImage = {
   backgroundSize: 'cover',
-  // objectFit: 'cover',
-  // backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center center',
   height: '400px',
   position: 'relative' as const

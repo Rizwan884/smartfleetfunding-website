@@ -23,7 +23,7 @@
     "cards": [
       {
         "title": "RAPIDO",
-        "shortDescription": "Nuestras soluciones de factoring a medida.",
+        "shortDescription": "Nuestras soluciones de factoring a medida...",
         "regular": "Nuestras soluciones de factoring a medida optimizan rápidamente su tesorería, ",
         "strong": "garantizando un rápido crecimiento de la rentabilidad de su empresa.",
         "icon": "/images/sff-clock-front.svg",
@@ -31,7 +31,7 @@
       },
       {
         "title": "FACIL",
-        "shortDescription": "Simplificamos las cuentas por pagar.",
+        "shortDescription": "Simplificamos las cuentas por pagar...",
         "regular": "Simplificamos el proceso de cuentas a pagar y a cobrar, ",
         "strong": "para que pueda centrarse en el crecimiento de su negocio.",
         "icon": "/images/sff-easy-front.svg",
@@ -39,7 +39,7 @@
       },
       {
         "title": "SEGURO",
-        "shortDescription": "Las empresas de transporte y carga",
+        "shortDescription": "Las empresas de transporte y carga...",
         "regular": "Los transportistas y las empresas de transporte reciben el pago de forma segura en tan sólo 12 horas laborables, ",
         "strong": "cultivar asociaciones sólidas y de confianza.",
         "icon": "/images/sff-shield-front.svg",
@@ -247,7 +247,7 @@
       {
         "icon": "/images/sff-hp-1.svg",
         "strong": "Siempre a tu lado:",
-        "descripcion": "usted llama, nosotros respondemos"
+        "descripcion": "usted llama, nosotros respondemos."
       },
       {
         "icon": "/images/sff-hp-2.svg",
@@ -484,7 +484,7 @@
       {
         "title": "¿Qué documentos debo presentar?",
         "descripcion": [
-          "Presentar factura, confirmación BOL propiedad firmada y Presentar factura, confirmación de tarifa Traffix y BOL/POD debidamente firmado"
+          "Presentar factura, confirmación BOL propiedad firmada y Presentar factura, confirmación de tarifa Traffix y BOL/POD debidamente firmado."
         ],
         "eventKey": 3
       },
@@ -505,7 +505,7 @@
       {
         "title": "¿Tendría un límite de crédito?",
         "descripcion": [
-          "No, con el agente de carga participante no hay límites de crédito"
+          "No, con el agente de carga participante no hay límites de crédito."
         ],
         "eventKey": 6
       }

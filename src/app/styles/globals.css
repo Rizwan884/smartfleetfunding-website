@@ -180,7 +180,7 @@ body {
   margin-top: -14px !important;
 }
 .mt-40 {
-  margin-top: -40px;
+  margin-top: -20px;
 }
 .mt-50 {
   margin-top: -50px;
@@ -310,6 +310,9 @@ span:hover {
   }
 }
 /*-------------------------*/
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 var(--gray-transparent);
+}
 @media (max-width: 767px) {
   .dropdown-menu {
     width: 100%;
