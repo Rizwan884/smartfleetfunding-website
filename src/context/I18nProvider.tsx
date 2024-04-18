@@ -42,7 +42,7 @@ const I18nContext = createContext<II18nContext>({
         }
       ],
       headerCardInfo: [{ header: '', descripcion: '' }],
-      sectionVideo: [{ title: '', descripcion: '', strong: '' }],
+      SectionVideo: [{ title: '', descripcion: '', strong: '' }],
       footer: [
         {
           home: '',

@@ -43,7 +43,7 @@ interface headerCardInfo {
   descripcion: string
 }
 
-interface sectionVideo {
+interface SectionVideo {
   title: string
   descripcion: string
   strong: string
@@ -258,7 +258,7 @@ export type IJSON = {
     cards: HomeCard[]
     cardsInfo: HomecardsInfo[]
     headerCardInfo: headerCardInfo[]
-    sectionVideo: sectionVideo[]
+    SectionVideo: SectionVideo[]
     footer: IFooter[]
     sectionInfo: sectionInfo[]
     slider: Slider[]

@@ -1,5 +1,6 @@
 'use client'
 
+import SectionVideo from '@/components/section-video'
 import CardsSections from '../../components/cards_sections'
 import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
@@ -10,7 +11,7 @@ export default function Home() {
       <Navbar />
       <Slider />
       <CardsSections />
-      <sectionVideo />
+      <SectionVideo />
       <Footer />
     </>
   )

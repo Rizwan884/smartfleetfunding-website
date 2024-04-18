@@ -8,7 +8,7 @@ type ICard = {
   descripcion: string
   strong: string
 }
-export default function sectionVideo() {
+export default function SectionVideo() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const isMobile = useMediaQuery({ maxWidth: 770 })
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -21,7 +21,7 @@ export default function sectionVideo() {
     <>
       {isMobile ? (
         <div className="font-montserrat bg-white-rgb pb-5">
-          {t.home.sectionVideo.map(
+          {t.home.SectionVideo.map(
             ({ title, descripcion, strong }: ICard, key: number) => (
               <div key={key} className="">
                 <div className="text-left mt-5 p-5">
@@ -77,7 +77,7 @@ export default function sectionVideo() {
         </div>
       ) : (
         <div className="font-montserrat row m-2">
-          {t.home.sectionVideo.map(
+          {t.home.SectionVideo.map(
             ({ title, descripcion, strong }: ICard, key: number) => (
               <div key={key} className="col-6">
                 <div className="text-left m-5 p-5">
