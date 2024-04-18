@@ -68,7 +68,14 @@ const I18nContext = createContext<II18nContext>({
         }
       ],
       slider: [
-        { title: '', strong: '', button: '', image: '', imageMobile: '' }
+        {
+          title: '',
+          strong: '',
+          button: '',
+          image: '',
+          imageMobile: '',
+          href: ''
+        }
       ],
       cardsTitle: ''
     },

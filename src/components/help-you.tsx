@@ -5,6 +5,7 @@ import { Container, Row } from 'react-bootstrap'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 export default function helpYou() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = useI18nProvider()
 
   return (

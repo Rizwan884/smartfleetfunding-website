@@ -9,8 +9,11 @@ type ICard = {
   strong: string
 }
 export default function sectionVideo() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const isMobile = useMediaQuery({ maxWidth: 770 })
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [showModal, setShowModal] = useState(false)
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = useI18nProvider()
   const openModal = () => setShowModal(true)
   const closeModal = () => setShowModal(false)
