@@ -520,7 +520,7 @@
         "descripcion": "Ayuda a sus clientes a controlar el gasto en combustible en el volátil mercado actual del combustible con descuentos negociados, avisos proactivos, gestión del combustible y herramientas avanzadas de generación de informes. Como cliente de Smart Fleet Funding al utilizar nuestra Fuel Card en lugar de su tarjeta de crédito o débito, obtendrá increíbles ahorros en sus compras de combustible y mantenimiento con:"
       }
     ],
-    "cardsFuel": [
+    "CardsFuel": [
       {
         "icon": "/images/sff-transaction-fuel.svg",
         "strong": "Bajas comisiones por transacción en sus compras de combustible y mantenimiento en Canadá y EE.UU."
@@ -701,7 +701,7 @@
       }
     ],
     "provideTitle": "Lo que ofrecemos",
-    "helpYou": {
+    "HelpYou": {
       "title": "Cómo le ayudamos",
       "image": "/images/sff-fb-rule.svg",
       "items": [

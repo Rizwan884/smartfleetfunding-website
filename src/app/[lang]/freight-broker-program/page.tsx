@@ -2,6 +2,7 @@
 
 import Banners from '@/components/banner'
 import FormFreight from '@/components/form-freight'
+import HelpYou from '@/components/help-you'
 import Needs from '@/components/need'
 import Programs from '@/components/program'
 import Provides from '@/components/provide'
@@ -38,7 +39,7 @@ export default function Freight() {
       <Needs />
       <Programs />
       <Provides />
-      <helpYou />
+      <HelpYou />
       <FormFreight titleForm={titleForm} />
       <Footer />
     </>

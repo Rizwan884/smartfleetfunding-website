@@ -1,6 +1,8 @@
 'use client'
 import Banners from '@/components/banner'
+import CardsFuel from '@/components/cards-fuel'
 import FormFuelCard from '@/components/form-fuel-card'
+import FuelCardSections from '@/components/fuel-card-section'
 import Road from '@/components/road'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Footer from '../../../components/footer'
@@ -34,8 +36,8 @@ export default function fuelCard() {
         mobileBackgroundImage="/images/sff-fuel-card-mobile.webp"
       />
       <Road />
-      <cardsFuel />
-      <fuelCardSections />
+      <CardsFuel />
+      <FuelCardSections />
       <FormFuelCard titleForm={titleForm} />
       <Footer />
     </>

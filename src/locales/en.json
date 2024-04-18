@@ -531,7 +531,7 @@
         "descripcion": "It helps your customers control fuel spending in today's volatile fuel market with negotiated discounts, proactive notices, fuel management, and advanced reporting tools, As a Smart Fleet Funding customer when you use our Fuel Card instead of your credit or debit card, you will get incredible savings on your fuel and maintenance purchases with:"
       }
     ],
-    "cardsFuel": [
+    "CardsFuel": [
       {
         "icon": "/images/sff-transaction-fuel.svg",
         "strong": "Low transaction fees on your fuel and maintenance purchases in Canada and the U.S."
@@ -712,7 +712,7 @@
       }
     ],
     "provideTitle": "What we provide",
-    "helpYou": {
+    "HelpYou": {
       "title": "How we help you",
       "image": "/images/sff-fb-rule.svg",
       "items": [

@@ -198,18 +198,18 @@ interface Provide {
   icon: string
 }
 
-interface helpYou {
+interface HelpYou {
   title: string
   image: string
-  items: helpYouItem[]
+  items: HelpYouItem[]
 }
 
-interface helpYouItem {
+interface HelpYouItem {
   title: string
-  details: helpYouDetail[]
+  details: HelpYouDetail[]
 }
 
-export interface helpYouDetail {
+export interface HelpYouDetail {
   icon: string
   text: string
 }
@@ -294,7 +294,7 @@ export type IJSON = {
     pageTitle: string
     pagetitleStrong: string
     road: RoadCard[]
-    cardsFuel: FuelCardItem[]
+    CardsFuel: FuelCardItem[]
     fuelCardSection: fuelCardSection[]
     fuelCardSectionTitle: string
     fuelCardSectionDescription: string
@@ -328,7 +328,7 @@ export type IJSON = {
     programs: Program[]
     provide: Provide[]
     provideTitle: string
-    helpYou: helpYou
+    HelpYou: HelpYou
     formFullName: string
     formEmail: string
     formCompany: string
