@@ -6,7 +6,7 @@ import Navbar from '../../../components/navbar'
 
 export default function BlogPage() {
   const { t } = useI18nProvider()
-  const blogs = t.blogs.bloginfo
+  const blogs = t.blogs.blogInfo
   return (
     <>
       <Navbar />

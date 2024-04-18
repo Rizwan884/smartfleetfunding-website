@@ -91,10 +91,10 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
             <div className="position-relative ">
               <div className="container">
                 <h1 className="p-4 pt-5 mt-5  mt-md-0 fs-3 position relative text-center text-md-start">
-                  {t.contact.contacttitleform}{' '}
+                  {t.contact.contactTitleForm}{' '}
                   <strong>
-                    {t.contact.contacttitlestrong} <br />
-                    {t.contact.contacttitlebreak}
+                    {t.contact.contactTitleStrong} <br />
+                    {t.contact.contacttitleBreak}
                   </strong>
                 </h1>
                 <div className="line-contact m-4"></div>
@@ -170,7 +170,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.contact.formname}
+                  placeholder={t.contact.formName}
                 ></input>
               </div>
               <div className="col">
@@ -182,7 +182,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.contact.formemail}
+                  placeholder={t.contact.formEmail}
                 ></input>
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   value={formData.company}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.contact.formcompany}
+                  placeholder={t.contact.formCompany}
                 ></input>
               </div>
               <div className="col">
@@ -208,7 +208,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.contact.formphone}
+                  placeholder={t.contact.formPhone}
                 ></input>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                 onChange={handleInputChange}
                 required
                 rows={3}
-                placeholder={t.contact.formmessage}
+                placeholder={t.contact.formMessage}
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
@@ -239,14 +239,14 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    {t.contact.formcheck}
+                    {t.contact.formCheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>{t.contact.formbreak}</strong>
+                      <strong>{t.contact.formBreak}</strong>
                     </Link>
                   </label>
                 </div>
@@ -254,7 +254,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
               </div>
 
               <button type="submit" className="btn fw-600 me-1 ">
-                {t.contact.formbutton}
+                {t.contact.formButton}
               </button>
             </div>
             {formSubmitted && (

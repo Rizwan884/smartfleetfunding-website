@@ -11,7 +11,7 @@ export default function Provides() {
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
           <h1 className="fw-bold fs-2 text-center  flex  align-items-center gap-3">
-            {t.freightbroker.providetitle}
+            {t.freightbroker.provideTitle}
           </h1>
         </div>
       </div>

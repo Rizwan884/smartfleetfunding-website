@@ -116,7 +116,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   className="form-select  bg-grey-transparent text-white"
                   onChange={handleInputChange}
                 >
-                  {t.fuelcard.formselectsoptions.map((option, index) => (
+                  {t.fuelcard.formSelectsOptions.map((option, index) => (
                     <option
                       key={index}
                       className="bg-dark-blue text-white"
@@ -136,7 +136,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.fuelcard.formfullname}
+                  placeholder={t.fuelcard.formFullName}
                 ></input>
               </div>
               <div className="col">
@@ -148,7 +148,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.fuelcard.formemail}
+                  placeholder={t.fuelcard.formEmail}
                 ></input>
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   value={formData.company}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.fuelcard.formcompany}
+                  placeholder={t.fuelcard.formCompany}
                 ></input>
               </div>
               <div className="col">
@@ -174,7 +174,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.fuelcard.formphone}
+                  placeholder={t.fuelcard.formPhone}
                 ></input>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                 onChange={handleInputChange}
                 required
                 rows={3}
-                placeholder={t.fuelcard.formmessage}
+                placeholder={t.fuelcard.formMessage}
               ></textarea>
             </div>
 
@@ -206,14 +206,14 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    {t.fuelcard.formcheck}
+                    {t.fuelcard.formCheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>{t.fuelcard.formbreak}</strong>
+                      <strong>{t.fuelcard.formBreak}</strong>
                     </Link>
                   </label>
                 </div>
@@ -222,11 +222,11 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
 
               {formData.option === '0' ? (
                 <button type="submit" className="btn fw-600" disabled>
-                  {t.fuelcard.formbutton}
+                  {t.fuelcard.formButton}
                 </button>
               ) : (
                 <button type="submit" className="btn fw-600">
-                  {t.fuelcard.formbutton}
+                  {t.fuelcard.formButton}
                 </button>
               )}
             </div>

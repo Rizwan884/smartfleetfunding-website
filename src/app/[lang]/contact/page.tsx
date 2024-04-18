@@ -8,7 +8,7 @@ import Navbar from '../../../components/navbar'
 
 export default function AboutUs() {
   const { t } = useI18nProvider()
-  const titleForm = t.contact.titleform
+  const titleForm = t.contact.titleForm
   return (
     <>
       <Navbar />

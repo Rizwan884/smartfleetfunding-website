@@ -9,13 +9,13 @@ export default function AboutUs() {
   const { t } = useI18nProvider()
   const title = (
     <p className="font-montserrat">
-      {t.about.pagetitle}{' '}
+      {t.about.pageTitle}{' '}
       <strong className="fw-bold">{t.about.pagestrong}</strong>
     </p>
   )
   const titleMobile = (
     <p className="text-dark-blue">
-      {t.about.pagetitle}{' '}
+      {t.about.pageTitle}{' '}
       <strong className="fw-bold">{t.about.pagestrong}</strong>
     </p>
   )

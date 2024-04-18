@@ -14,13 +14,13 @@ export default function Instapay() {
   const { t } = useI18nProvider()
   const title = (
     <p>
-      {t.fespay.pagetittle}{' '}
+      {t.fespay.pageTitle}{' '}
       <strong className="fw-bold">{t.fespay.pagestrong}</strong>
     </p>
   )
   const titleMobile = (
     <p>
-      {t.fespay.pagetittle}{' '}
+      {t.fespay.pageTitle}{' '}
       <strong className="fw-bold">{t.fespay.pagestrong}</strong>
     </p>
   )
@@ -42,7 +42,7 @@ export default function Instapay() {
       <FormInstapay />
       <SectionAccordion
         items={accordionInstaItems}
-        headTitle={t.fespay.accordiontittle}
+        headTitle={t.fespay.accordionTitle}
       />
       <Footer />
     </>

@@ -10,7 +10,7 @@ type ICard = {
     items: string[]
   }[]
   icon: string
-  iconback: string
+  iconBack: string
   href: string
 }
 
@@ -22,8 +22,8 @@ export default function Cards() {
       {isMobile ? (
         <div className="font-montserrat">
           <h2 className="fs-5 fw-bold text-center">
-            {t.home.headercardinfo[0].header}{' '}
-            {t.home.headercardinfo[0].descripcion}
+            {t.home.headerCardInfo[0].header}{' '}
+            {t.home.headerCardInfo[0].descripcion}
           </h2>
           <div className="d-flex justify-content-center ">
             <div className="line"></div>
@@ -142,17 +142,17 @@ export default function Cards() {
       ) : (
         <Container className="font-montserrat">
           <h2 className=" fw-bold text-left">
-            {t.home.headercardinfo[0].header} <br />
-            {t.home.headercardinfo[0].descripcion}
+            {t.home.headerCardInfo[0].header} <br />
+            {t.home.headerCardInfo[0].descripcion}
           </h2>
           <div className="line"></div>
           <Row
             className="pt-5"
             style={{ minHeight: '600px', maxHeight: '600px' }}
           >
-            {t.home.carinfo.map(
+            {t.home.cardsInfo.map(
               (
-                { title, sections, icon, iconback, href }: ICard,
+                { title, sections, icon, iconBack, href }: ICard,
                 key: number
               ) => (
                 <Col
@@ -167,7 +167,7 @@ export default function Cards() {
                           <div className="icon-cards" style={{ height: 70 }}>
                             <Image
                               style={{ width: '62px' }}
-                              src={iconback}
+                              src={iconBack}
                               alt=""
                             />
                           </div>

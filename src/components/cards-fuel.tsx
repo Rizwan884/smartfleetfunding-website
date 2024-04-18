@@ -6,7 +6,7 @@ type ICard = {
   strong: string
   icon: string
 }
-export default function CardsFuel() {
+export default function cardsFuel() {
   const { t } = useI18nProvider()
   const isMobile = useMediaQuery({ maxWidth: 768 })
   return (
@@ -14,7 +14,7 @@ export default function CardsFuel() {
       {isMobile ? (
         <div className="card-container font-montserrat mt-1 h-100 flex-column w-100">
           <div className="row mx-0 px-0 px-md-auto mx-md-auto mb-3 w-75 justify-content-center gap-3 gap-md-auto">
-            {t.fuelcard.cardsfuel.map(
+            {t.fuelcard.cardsFuel.map(
               ({ strong, icon }: ICard, key: number) => (
                 <Card
                   key={key}
@@ -38,7 +38,7 @@ export default function CardsFuel() {
       ) : (
         <div className="card-container font-montserrat mt-1 h-100 flex-column w-100">
           <div className="row mx-0 px-0 px-md-auto mx-md-auto mb-3 w-65 justify-content-center gap-3 gap-md-auto">
-            {t.fuelcard.cardsfuel.map(
+            {t.fuelcard.cardsFuel.map(
               ({ strong, icon }: ICard, key: number) => (
                 <Card
                   key={key}

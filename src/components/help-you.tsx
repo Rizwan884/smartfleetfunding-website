@@ -1,17 +1,17 @@
 import { useI18nProvider } from '@/context/I18nProvider'
-import { HelpYouDetail } from '@/utils/types'
+import { helpYouDetail } from '@/utils/types'
 import Image from 'next/image'
 import { Container, Row } from 'react-bootstrap'
 import Dropdown from 'react-bootstrap/Dropdown'
 
-export default function HelpYou() {
+export default function helpYou() {
   const { t } = useI18nProvider()
 
   return (
     <>
       <Container className="mt-6 pt-5 font-montserrat">
         <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">
-          {t.freightbroker.helpyou.title}
+          {t.freightbroker.helpYou.title}
         </h1>
         <div className="line mt-0 mx-4 mt-1 w-3"></div>
         <div className="container d-flex flex-column pt-5">
@@ -20,12 +20,12 @@ export default function HelpYou() {
               alt="img"
               width={200}
               height={270}
-              src={t.freightbroker.helpyou.image}
+              src={t.freightbroker.helpYou.image}
             ></Image>
           </Row>
         </div>
         <div className="row pb-5">
-          {t.freightbroker.helpyou.items.map((section, index) => (
+          {t.freightbroker.helpYou.items.map((section, index) => (
             <div key={index} className="col-6 d-flex justify-content-end h-100">
               <div className="card w-20rem me-5 d-md-block d-none">
                 <div className="card-body">
@@ -65,7 +65,7 @@ export default function HelpYou() {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  {section.details.map((detail: HelpYouDetail, idx: number) => (
+                  {section.details.map((detail: helpYouDetail, idx: number) => (
                     <Dropdown.Item key={idx} href="#/action-1">
                       <div
                         className={`d-flex mb-4 lh-sm align-items-center gap-2 ${idx !== section.details.length - 1 ? 'line-programs' : ''}`}

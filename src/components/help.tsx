@@ -10,40 +10,40 @@ type ICard = {
 }
 export default function Help() {
   const { t } = useI18nProvider()
-  const [helpcards, setHelpCards] = useState<ICard[]>([])
-  const [helpcardstwo, setHelpCardsTwo] = useState<ICard[]>([])
+  const [helpCards, sethelpCards] = useState<ICard[]>([])
+  const [helpcardsTwo, sethelpcardsTwo] = useState<ICard[]>([])
   useEffect(() => {
-    const helpCardsData: ICard[] = t.fullcard.helpcards.map(
+    const helpCardsData: ICard[] = t.fullcard.helpCards.map(
       (card: HelpCard) => ({
         icon: card.icon,
         strong: card.strong,
         descripcion: card.descripcion
       })
     )
-    setHelpCards(helpCardsData)
+    sethelpCards(helpCardsData)
   }, [t])
   useEffect(() => {
-    const helpCardsDataTwo: ICard[] = t.fullcard.helpcardstwo.map(
+    const helpCardsDataTwo: ICard[] = t.fullcard.helpcardsTwo.map(
       (card: ICard) => ({
         icon: card.icon,
         strong: card.strong,
         descripcion: card.descripcion
       })
     )
-    setHelpCardsTwo(helpCardsDataTwo)
+    sethelpcardsTwo(helpCardsDataTwo)
   }, [t])
-  const allHelpCards: ICard[] = [...helpcards, ...helpcardstwo]
+  const allhelpCards: ICard[] = [...helpCards, ...helpcardsTwo]
   return (
     <>
       <Container className="font-montserrat container mt-5">
         <h2 className="fw-bold fs-2 text-center pt-5 flex-column align-items-center gap-3">
-          {t.fullcard.helptittle}
+          {t.fullcard.helpTitle}
         </h2>
         <div className="line help-line"></div>
         <Container id="help" className="mt-sm-1 mb-sm-2 mt-5 ">
           <div className="d-none d-md-block">
             <Row className="mt-5">
-              {helpcards.map((card, index) => (
+              {helpCards.map((card, index) => (
                 <Col
                   key={index}
                   className="col-4 mt-3 mb-3 d-flex justify-content-center"
@@ -74,7 +74,7 @@ export default function Help() {
               className="mt-5"
               style={{ justifyContent: 'center', marginBottom: '13%' }}
             >
-              {helpcardstwo.map((card, index) => (
+              {helpcardsTwo.map((card, index) => (
                 <Col
                   key={index}
                   className=" col-4 d-flex justify-content-center"
@@ -112,7 +112,7 @@ export default function Help() {
           touch={true}
           className="pb-5 pt-3"
         >
-          {allHelpCards.map((card, index) => (
+          {allhelpCards.map((card, index) => (
             <Carousel.Item key={index} className="p-2 pt-5">
               <div
                 className="cards-mobile mx-3"

@@ -11,7 +11,7 @@ export default function Programs() {
         <section className="py-5 bg-white-shadow font-montserrat">
           <Container>
             <h1 className="fw-bold  fs-3 mb-0 mx-4 w-100">
-              {t.freightbroker.programtitle}
+              {t.freightbroker.programTitle}
             </h1>
             <br />
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
@@ -40,8 +40,8 @@ export default function Programs() {
         <section className="py-5 bg-white-shadow font-montserrat">
           <Container>
             <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">
-              {t.freightbroker.programtitleweb} <br />
-              {t.freightbroker.programtitlewebbreak}
+              {t.freightbroker.programTitleWeb} <br />
+              {t.freightbroker.programTitleWebBreak}
             </h1>
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
             <br />

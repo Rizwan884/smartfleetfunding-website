@@ -14,7 +14,7 @@ type ICard = {
   button: string
   href: string
   image: string
-  imagemobile: string
+  imageMobile: string
 }
 export default function Slider() {
   const isMobile = useMediaQuery({ maxWidth: 768 })
@@ -25,14 +25,14 @@ export default function Slider() {
         <Carousel className="font-montserrat" controls={false}>
           {t.home.slider.map(
             (
-              { title, strong, button, imagemobile, href }: ICard,
+              { title, strong, button, imageMobile, href }: ICard,
               key: number
             ) => (
               <Carousel.Item key={key}>
                 <div
                   style={{
                     ...carouselImage,
-                    backgroundImage: `url("${imagemobile}")`
+                    backgroundImage: `url("${imageMobile}")`
                   }}
                 >
                   <div className="slider-container-mobile mx-4">

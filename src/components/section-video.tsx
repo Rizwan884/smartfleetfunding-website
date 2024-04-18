@@ -8,7 +8,7 @@ type ICard = {
   descripcion: string
   strong: string
 }
-export default function SectionVideo() {
+export default function sectionVideo() {
   const isMobile = useMediaQuery({ maxWidth: 770 })
   const [showModal, setShowModal] = useState(false)
   const { t } = useI18nProvider()
@@ -18,7 +18,7 @@ export default function SectionVideo() {
     <>
       {isMobile ? (
         <div className="font-montserrat bg-white-rgb pb-5">
-          {t.home.sectionvideo.map(
+          {t.home.sectionVideo.map(
             ({ title, descripcion, strong }: ICard, key: number) => (
               <div key={key} className="">
                 <div className="text-left mt-5 p-5">
@@ -74,7 +74,7 @@ export default function SectionVideo() {
         </div>
       ) : (
         <div className="font-montserrat row m-2">
-          {t.home.sectionvideo.map(
+          {t.home.sectionVideo.map(
             ({ title, descripcion, strong }: ICard, key: number) => (
               <div key={key} className="col-6">
                 <div className="text-left m-5 p-5">

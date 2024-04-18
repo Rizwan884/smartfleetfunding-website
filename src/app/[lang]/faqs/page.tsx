@@ -21,7 +21,7 @@ export default function Faqs() {
       <Search onSearch={handleSearch} />
       <FaqAccordion
         items={accordionInstaItems}
-        headTitle={t.faqs.faqtitle}
+        headTitle={t.faqs.faqTitle}
         showIcons
         width={16}
         height={28}

@@ -3,7 +3,6 @@
 import CardsSections from '../../components/cards_sections'
 import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
-import SectionVideo from '../../components/section-video'
 import Slider from '../../components/slider'
 export default function Home() {
   return (
@@ -11,7 +10,7 @@ export default function Home() {
       <Navbar />
       <Slider />
       <CardsSections />
-      <SectionVideo />
+      <sectionVideo />
       <Footer />
     </>
   )

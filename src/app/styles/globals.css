@@ -277,7 +277,6 @@ span:hover {
 
 .dropdown-item:active {
   color: var(--green) !important;
-  /* background: none; */
 }
 .dropdown-item:hover {
   color: var(--green) !important;
@@ -375,16 +374,15 @@ span:hover {
 }
 .gray-section {
   flex: 1;
-  background-color: #dddddd; /* Color gris de fondo */
+  background-color: #dddddd;
   padding: 100px;
 }
 
 .white-section {
   flex: 1;
-  background-color: #ffffff; /* Color blanco de fondo */
+  background-color: #ffffff;
   padding: 100px;
-  /* max-height: 936px;
-  min-height: 936px; */
+
 }
 
 @media (max-width: 450px) {
@@ -418,13 +416,13 @@ span:hover {
 .card-column {
   display: flex;
   justify-content: space-evenly;
-  /* margin-left: 40px; */
+ 
 }
 .flip-container {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  /* border: 1px solid #ccc; */
+
   perspective: 1000px;
 }
 
@@ -552,9 +550,7 @@ span:hover {
   width: 300px;
   height: 300px;
 }
-/* #carousel-mobile .carousel-indicators [data-bs-target] {
-  background-color: red !important;
-} */
+
 
 #carousel-mobile .carousel-indicators [data-bs-target] {
   background-color: rgba(217, 217, 217, 1);
@@ -569,7 +565,7 @@ span:hover {
 }
 #carousel-mobile .carousel-indicators li {
   border-radius: 50% !important;
-  background-color: red !important; /* Color verde */
+  background-color: red !important;
 }
 
 .front-mobile {
@@ -605,7 +601,6 @@ span:hover {
   color: #02da68;
   font-weight: bold;
   font-size: 20px;
-  /* margin: 10px; */
   line-height: 20px;
 }
 .bd-box-mobile {
@@ -678,7 +673,6 @@ span:hover {
 /*----------------------------Hover----------------------------*/
 .card-hb {
   color: white;
-  /* transition: background-color 0.4s ease-in-out; */
 }
 .icon-cards {
   display: none;
@@ -815,7 +809,6 @@ span:hover {
     justify-content: center;
     margin: auto;
     padding-top: 20px;
-    /* top: 95%; */
   }
   #idea-carrusel .carousel-indicators [data-bs-target] {
     background-color: var(--white-gray);
@@ -1148,10 +1141,6 @@ input[type='radio']:checked ~ label {
     height: auto;
     padding: 30px 10px;
     width: 100%;
-  }
-  .contact_slide:nth-child(1) {
-    /* margin-top: 10px; */
-    /* margin-left: 35px; */
   }
 }
 

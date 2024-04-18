@@ -8,14 +8,14 @@ export default function Know() {
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-md-3 align-item-center"></div>
           <h1 className="d-md-block d-none fw-regular fs-2 text-center flex  align-items-center gap-3">
-            {t.about.knowtitle} <strong>{t.about.knowstrong}</strong>
+            {t.about.knowTitle} <strong>{t.about.knowStrong}</strong>
           </h1>
           <h1 className="d-md-none  fw-regular fs-2 text-center flex  align-items-center gap-3">
-            {t.about.knowtitle}{' '}
+            {t.about.knowTitle}{' '}
             <strong>
               {' '}
               <br />
-              {t.about.knowstrong}
+              {t.about.knowStrong}
             </strong>
           </h1>
         </div>
@@ -40,7 +40,7 @@ export default function Know() {
           ))}
         </div>
         <div className="row px-0 mx-0 px-md-auto mx-md-auto justify-content-center gap-3 gap-md-3 ">
-          {t.about.cardstwo.map((card, index) => (
+          {t.about.cardsTwo.map((card, index) => (
             <Card
               key={index}
               className="mx-3 w-18rem bg-white text-white h-100 al-left"
@@ -59,10 +59,10 @@ export default function Know() {
         </div>
       </div>
       <div className="container px-5 px-md-auto pt-6 pb-6 font-montserrat">
-        {t.about.knowsection.map((know, index) => (
+        {t.about.knowSection.map((know, index) => (
           <div
             key={index}
-            className={`row pt-5 pb-5 ${index !== t.about.knowsection.length - 1 ? 'line-programs' : ''}`}
+            className={`row pt-5 pb-5 ${index !== t.about.knowSection.length - 1 ? 'line-programs' : ''}`}
           >
             <div className="col-md-4">
               {' '}

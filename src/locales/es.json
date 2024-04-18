@@ -19,7 +19,7 @@
     ]
   },
   "home": {
-    "cardstitle": "PAGO FES",
+    "cardsTitle": "PAGO FES",
     "cards": [
       {
         "title": "RAPIDO",
@@ -27,7 +27,7 @@
         "regular": "Nuestras soluciones de factoring a medida optimizan rápidamente su tesorería, ",
         "strong": "garantizando un rápido crecimiento de la rentabilidad de su empresa.",
         "icon": "/images/sff-clock-front.svg",
-        "iconback": "/images/sff-clock-back.svg"
+        "iconBack": "/images/sff-clock-back.svg"
       },
       {
         "title": "FACIL",
@@ -35,7 +35,7 @@
         "regular": "Simplificamos el proceso de cuentas a pagar y a cobrar, ",
         "strong": "para que pueda centrarse en el crecimiento de su negocio.",
         "icon": "/images/sff-easy-front.svg",
-        "iconback": "/images/sff-easy-back.svg"
+        "iconBack": "/images/sff-easy-back.svg"
       },
       {
         "title": "SEGURO",
@@ -43,10 +43,10 @@
         "regular": "Los transportistas y las empresas de transporte reciben el pago de forma segura en tan sólo 12 horas laborables, ",
         "strong": "cultivar asociaciones sólidas y de confianza.",
         "icon": "/images/sff-shield-front.svg",
-        "iconback": "/images/sff-shield-back.svg"
+        "iconBack": "/images/sff-shield-back.svg"
       }
     ],
-    "carinfo": [
+    "cardsInfo": [
       {
         "title": "Full Fact",
         "href": "/full-fact",
@@ -75,7 +75,7 @@
           }
         ],
         "icon": "/images/sff-point-front.svg",
-        "iconback": "/images/sff-factura.svg"
+        "iconBack": "/images/sff-factura.svg"
       },
       {
         "title": "FES Pay/InstaPay",
@@ -112,7 +112,7 @@
           }
         ],
         "icon": "/images/sff-point-front.svg",
-        "iconback": "/images/sff-cash.svg"
+        "iconBack": "/images/sff-cash.svg"
       },
       {
         "title": "Smart Fuel Card",
@@ -141,16 +141,16 @@
           }
         ],
         "icon": "/images/sff-point-front.svg",
-        "iconback": "/images/sff-gas.svg"
+        "iconBack": "/images/sff-gas.svg"
       }
     ],
-    "headercardinfo": [
+    "headerCardInfo": [
       {
         "header": "Libere el dinero de sus",
         "descripcion": "facturas pendientes"
       }
     ],
-    "sectionvideo": [
+    "sectionVideo": [
       {
         "title": "¡Explore el poder del factoring con Smart Fleet Funding!",
         "descripcion": "Vea este conciso vídeo para comprender cómo sus facturas pueden convertirse en efectivo inmediato, permitiéndole centrarse en lo que mejor sabe hacer: entregar mercancías.",
@@ -171,13 +171,13 @@
         "curious": "¿TIENE CURIOSIDAD POR SABER MÁS?"
       }
     ],
-    "sectioninfo": [
+    "sectionInfo": [
       {
         "title": "¿Quiere saber más?",
-        "titlebreak": "Llámenos hoy mismo.",
+        "titleBreak": "Llámenos hoy mismo.",
         "descripcion": "Estamos aquí para responder a todas sus preguntas",
-        "linebreak": "y ayudarle a encontrar las mejores soluciones para su",
-        "breaktext": "negocio de transporte por carretera.",
+        "lineBreak": "y ayudarle a encontrar las mejores soluciones para su",
+        "breakText": "negocio de transporte por carretera.",
         "button": "Hablemos"
       }
     ],
@@ -188,7 +188,7 @@
         "href": "tel:+18308097589",
         "button": "COMENZAR",
         "image": "/images/sff-truck.webp",
-        "imagemobile": "/images/sff-truck-mobile.webp"
+        "imageMobile": "/images/sff-truck-mobile.webp"
       },
       {
         "title": "Tu éxito,",
@@ -196,7 +196,7 @@
         "href": "mailto:sales@smartfleetfunding.com",
         "button": " Dé el primer paso",
         "image": "/images/sff-truck-logistic.webp",
-        "imagemobile": "/images/sff-truck-logistic-mobile.webp"
+        "imageMobile": "/images/sff-truck-logistic-mobile.webp"
       },
       {
         "title": "Naveguemos juntos por el camino que tenemos por delante.",
@@ -204,7 +204,7 @@
         "href": "mailto:sales@smartfleetfunding.com",
         "button": "EFECTIVO AHORA",
         "image": "/images/sff-succes-story.webp",
-        "imagemobile": "/images/sff-succes-story-mobile.webp"
+        "imageMobile": "/images/sff-succes-story-mobile.webp"
       }
     ]
   },
@@ -242,8 +242,8 @@
         "strong": " me cobra mi factor y todos estos costes ocultos.”"
       }
     ],
-    "helptittle": "Nosotros le ayudamos",
-    "helpcards": [
+    "helpTitle": "Nosotros le ayudamos",
+    "helpCards": [
       {
         "icon": "/images/sff-hp-1.svg",
         "strong": "Siempre a tu lado:",
@@ -275,7 +275,7 @@
         "descripcion": "Supervise todas las cargas de su cartera. Si hay algún problema que requiera su atención, le informamos rápidamente."
       }
     ],
-    "helpcardstwo": [
+    "helpcardsTwo": [
       {
         "icon": "/images/sff-hp-7.svg",
         "strong": "Decisiones informadas sobre sus clientes potenciales:",
@@ -399,16 +399,16 @@
         "eventKey": 4
       }
     ],
-    "titleform": "¡Empecemos!",
-    "pagetittle": "Full",
+    "titleForm": "¡Empecemos!",
+    "pageTitle": "Full",
     "pagestrong": "Factoring Solution"
   },
   "fespay": {
-    "pagetittle": "Pago rápido,",
+    "pageTitle": "Pago rápido,",
     "pagestrong": "fácil y seguro",
-    "welcometittle": "BIENVENIDO A FES Pay",
-    "welcomedescripcion": "Pagos acelerados para conductores En Smart Fleet Funding, entendemos que cada milla cuenta. Por eso hemos introducido FES Pay, un programa exclusivo diseñado pensando en conductores como usted. FES Pay le asegura un pago más rápido, proporcionándole la flexibilidad financiera que necesita para un viaje más tranquilo.",
-    "stepstittle": "Cómo funciona",
+    "welcomeTitle": "BIENVENIDO A FES Pay",
+    "welcomeDescription": "Pagos acelerados para conductores En Smart Fleet Funding, entendemos que cada milla cuenta. Por eso hemos introducido FES Pay, un programa exclusivo diseñado pensando en conductores como usted. FES Pay le asegura un pago más rápido, proporcionándole la flexibilidad financiera que necesita para un viaje más tranquilo.",
+    "stepsTitle": "Cómo funciona",
     "steps": [
       {
         "title": "Proceso de pago rápido",
@@ -435,7 +435,7 @@
         "icon": "/images/sff-bff-hand.svg"
       }
     ],
-    "Benefitstwo": [
+    "BenefitsTwo": [
       {
         "tittle": "Acceso en cualquier momento y lugar",
         "descripcion": "FES Pay le da la libertad de acceder a sus fondos desde dondequiera que le lleve su viaje.",
@@ -447,7 +447,7 @@
         "icon": "/images/sff-bff-earphones.svg"
       }
     ],
-    "benefitstitle": "Ventajas para los conductores",
+    "benefitsTitle": "Ventajas para los conductores",
     "form": [
       {
         "title": " Póngase en contacto con nosotros hoy mismo y le ayudaremos a realizar pagos más rápidos y seguros con FES Pay.",
@@ -464,7 +464,7 @@
         "formSubmitted": "¡Formulario enviado con éxito!"
       }
     ],
-    "accordiontittle": "Lista de preguntas que pueden surgir",
+    "accordionTitle": "Lista de preguntas que pueden surgir",
     "accordionItems": [
       {
         "title": "¿Cuáles son las condiciones de FES Pay?",
@@ -512,15 +512,15 @@
     ]
   },
   "fuelcard": {
-    "pagetittle": "Over The Road",
-    "pagetittlestrong": "Fuel Card",
+    "pageTitle": "Over The Road",
+    "pagetitleStrong": "Fuel Card",
     "road": [
       {
         "title": "La tarjeta Smart Fleet Funding Over The Road Fuel Card es un programa de repostaje de flotas ofrecido exclusivamente a los clientes de Smart Fleet Funding.",
         "descripcion": "Ayuda a sus clientes a controlar el gasto en combustible en el volátil mercado actual del combustible con descuentos negociados, avisos proactivos, gestión del combustible y herramientas avanzadas de generación de informes. Como cliente de Smart Fleet Funding al utilizar nuestra Fuel Card en lugar de su tarjeta de crédito o débito, obtendrá increíbles ahorros en sus compras de combustible y mantenimiento con:"
       }
     ],
-    "cardsfuel": [
+    "cardsFuel": [
       {
         "icon": "/images/sff-transaction-fuel.svg",
         "strong": "Bajas comisiones por transacción en sus compras de combustible y mantenimiento en Canadá y EE.UU."
@@ -534,7 +534,7 @@
         "strong": "Importantes descuentos en combustible en TA/Petro y en más de 1.200 establecimientos independientes y de pequeñas cadenas."
       }
     ],
-    "fuelcardsection": [
+    "fuelCardSection": [
       {
         "title": "Conveniencia",
         "descripcion": [
@@ -571,10 +571,10 @@
         "eventKey": 5
       }
     ],
-    "fuelcardsectiontitle": "La tarjeta Smart Fleet Funding Over The Road Fuel Card también le ofrece grandes ventajas para que pueda dejar de preocuparse y empezar a centrarse en hacer crecer su negocio.",
-    "fuelcardsectiondescription": "*El precio en efectivo puede variar según la ubicación del comerciante. WEX, Inc. no garantiza el precio en efectivo y no se hace responsable de las variaciones. Consulte los detalles completos del programa.",
-    "formtitle": "¡Empiece a ahorrar con la tarjeta de combustible Smart Fleet Funding!",
-    "formselectsoptions": [
+    "fuelCardSectionTitle": "La tarjeta Smart Fleet Funding Over The Road Fuel Card también le ofrece grandes ventajas para que pueda dejar de preocuparse y empezar a centrarse en hacer crecer su negocio.",
+    "fuelCardSectionDescription": "*El precio en efectivo puede variar según la ubicación del comerciante. WEX, Inc. no garantiza el precio en efectivo y no se hace responsable de las variaciones. Consulte los detalles completos del programa.",
+    "formTitle": "¡Empiece a ahorrar con la tarjeta de combustible Smart Fleet Funding!",
+    "formSelectsOptions": [
       { "label": "Selecciona una opción", "value": "0" },
       {
         "label": "Estoy pensando en solicitar la Fuel Card",
@@ -597,22 +597,22 @@
         "value": "Quiero conocer otros servicios ofrecidos"
       }
     ],
-    "formfullname": "Nombre Completo",
-    "formemail": "Tu email",
-    "formcompany": "Empresa",
-    "formphone": "Telefono",
-    "formmessage": "Descripcion",
+    "formFullName": "Nombre Completo",
+    "formEmail": "Tu email",
+    "formCompany": "Empresa",
+    "formPhone": "Telefono",
+    "formMessage": "Descripcion",
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
-    "formcheck": "Acepte Nuestra",
-    "formbreak": " política de privacidad",
-    "formbutton": "ENVIAR",
+    "formCheck": "Acepte Nuestra",
+    "formBreak": " política de privacidad",
+    "formButton": "ENVIAR",
     "formSubmitted": "¡Formulario enviado con éxito!"
   },
   "freightbroker": {
-    "pagetitle": "Freight",
-    "titlestrong": "Broker Program",
-    "titleform": "Impulse los beneficios, mejore las operaciones ¡Comience!",
-    "needstitle": "Lo que necesita",
+    "pageTitle": "Freight",
+    "titleStrong": "Broker Program",
+    "titleForm": "Impulse los beneficios, mejore las operaciones ¡Comience!",
+    "needsTitle": "Lo que necesita",
     "needs": [
       {
         "title": "Optimización",
@@ -630,7 +630,7 @@
         "icon": "/images/sff-fb-check.svg"
       }
     ],
-    "needstwo": [
+    "needsTwo": [
       {
         "title": "Acceda a",
         "descripcion": " al capital inmediato",
@@ -647,13 +647,13 @@
         "icon": "/images/sff-fb-check.svg"
       }
     ],
-    "needsbutton": "Hablemos",
-    "needsbuttontwo": "Programar una reunión",
-    "needsfinaltext": "¿Y si tuvieras más tiempo libre para",
-    "needsfinaltextstrong": "conseguir más clientes y transportistas?",
-    "programtitle": "Sus resultados al unirse a nuestro programa de agentes de carga",
-    "programtitleweb": "Sus resultados al unirse a nuestro",
-    "programtitlewebbreak": " programa de agentes de carga",
+    "needsButton": "Hablemos",
+    "needsButtontwo": "Programar una reunión",
+    "needsFinalText": "¿Y si tuvieras más tiempo libre para",
+    "needsFinalTextStrong": "conseguir más clientes y transportistas?",
+    "programTitle": "Sus resultados al unirse a nuestro programa de agentes de carga",
+    "programTitleWeb": "Sus resultados al unirse a nuestro",
+    "programTitleWebBreak": " programa de agentes de carga",
     "programs": [
       {
         "title": "Tiempo adicional para centrarse en su actividad principal.",
@@ -700,8 +700,8 @@
         "icon": "/images/sff-fb-arrow-right-blue.svg"
       }
     ],
-    "providetitle": "Lo que ofrecemos",
-    "helpyou": {
+    "provideTitle": "Lo que ofrecemos",
+    "helpYou": {
       "title": "Cómo le ayudamos",
       "image": "/images/sff-fb-rule.svg",
       "items": [
@@ -745,15 +745,15 @@
         }
       ]
     },
-    "formfullname": "Nombre Completo",
-    "formemail": "Tu email",
-    "formcompany": "Empresa",
-    "formphone": "Telefono",
-    "formmessage": "¿Cómo podemos ayudarle?",
+    "formFullName": "Nombre Completo",
+    "formEmail": "Tu email",
+    "formCompany": "Empresa",
+    "formPhone": "Telefono",
+    "formMessage": "¿Cómo podemos ayudarle?",
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
-    "formcheck": "Acepte Nuestra",
-    "formbreak": " política de privacidad",
-    "formbutton": "ENVIAR",
+    "formCheck": "Acepte Nuestra",
+    "formBreak": " política de privacidad",
+    "formButton": "ENVIAR",
     "formSubmitted": "¡Formulario enviado con éxito!"
   },
   "faqs": {
@@ -885,13 +885,13 @@
         "eventKey": 15
       }
     ],
-    "faqtitle": "Algunas preguntas"
+    "faqTitle": "Algunas preguntas"
   },
   "about": {
-    "pagetitle": "Sobre",
+    "pageTitle": "Sobre",
     "pagestrong": "Nosotros",
-    "knowtitle": "Más información sobre",
-    "knowstrong": "Smart Fleet Funding",
+    "knowTitle": "Más información sobre",
+    "knowStrong": "Smart Fleet Funding",
     "cards": [
       {
         "title": "INNOVACIÓN",
@@ -909,7 +909,7 @@
         "icon": "/images/global-icon.svg"
       }
     ],
-    "cardstwo": [
+    "cardsTwo": [
       {
         "title": "EMPODERAMIENTO",
         "text": "Ayudando a las empresas a prosperar",
@@ -926,7 +926,7 @@
         "icon": "/images/technology-icon.svg"
       }
     ],
-    "knowsection": [
+    "knowSection": [
       {
         "title": "Quiénes somos",
         "descripcion": "Con más de 30 años de experiencia en el mercado del factoring, Smart Fleet Funding ha sido un actor clave en la prestación de apoyo y financiación a diversas industrias, con un enfoque particular en el transporte.",
@@ -950,24 +950,24 @@
     ]
   },
   "contact": {
-    "titleform": "¡Empecemos!",
-    "contacttitle": "Estamos aquí para ayudarle. Hablemos",
-    "contacttitleform": "Póngase en contacto con nosotros",
-    "contacttitlestrong": "Soluciones de financiación ",
-    "contacttitlebreak": "rápidas, fáciles y seguras.",
-    "formname": "Nombre completo",
-    "formemail": "Tu email",
-    "formcompany": "Empresa",
-    "formphone": "Telefono",
-    "formmessage": "Descripcion",
+    "titleForm": "¡Empecemos!",
+    "contactTitle": "Estamos aquí para ayudarle. Hablemos",
+    "contactTitleForm": "Póngase en contacto con nosotros",
+    "contactTitleStrong": "Soluciones de financiación ",
+    "contacttitleBreak": "rápidas, fáciles y seguras.",
+    "formName": "Nombre completo",
+    "formEmail": "Tu email",
+    "formCompany": "Empresa",
+    "formPhone": "Telefono",
+    "formMessage": "Descripcion",
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
-    "formcheck": "Acepte Nuestra",
-    "formbreak": " política de privacidad",
-    "formbutton": "ENVIAR",
+    "formCheck": "Acepte Nuestra",
+    "formBreak": " política de privacidad",
+    "formButton": "ENVIAR",
     "formSubmitted": "¡Formulario enviado con éxito!"
   },
   "blogs": {
-    "bloginfo": [
+    "blogInfo": [
       {
         "id": 1,
         "title": "Navegando hacia el éxito financiero: Guía del agente para la financiación inteligente de flotas",

@@ -9,7 +9,7 @@ type ICard = {
   regular: string
   strong: string
   icon: string
-  iconback: string
+  iconBack: string
 }
 export default function Cards() {
   const isMobile = useMediaQuery({ maxWidth: 769 })
@@ -61,7 +61,7 @@ export default function Cards() {
                   regular,
                   strong,
                   icon,
-                  iconback
+                  iconBack
                 }: ICard,
                 key: number
               ) => (
@@ -82,7 +82,7 @@ export default function Cards() {
                       </div>
                       <div className="back font-montserrat fw-600">
                         <div className="card-icon-back">
-                          <Image className="icons" src={iconback} alt="" />
+                          <Image className="icons" src={iconBack} alt="" />
                         </div>
                         <div className="card-text-back ">{title}</div>
                         <div className="line-back"></div>

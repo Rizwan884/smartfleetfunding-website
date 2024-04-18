@@ -8,10 +8,10 @@ const Image = {
 }
 type ICard = {
   title: string
-  titlebreak: string
+  titleBreak: string
   descripcion: string
-  linebreak: string
-  breaktext: string
+  lineBreak: string
+  breakText: string
   button: string
 }
 export default function ImgInfo() {
@@ -29,20 +29,20 @@ export default function ImgInfo() {
               marginTop: '40px'
             }}
           ></div>
-          {t.home.sectioninfo.map(
+          {t.home.sectionInfo.map(
             (
-              { title, titlebreak, linebreak, breaktext, descripcion }: ICard,
+              { title, titleBreak, lineBreak, breakText, descripcion }: ICard,
               key: number
             ) => (
               <div key={key} className="  font-montserrat pt-2 mx-5 mb-5">
                 <h1 className="text-start fw-bold fs-4">
-                  {title} <br /> {titlebreak}
+                  {title} <br /> {titleBreak}
                   <div className="line"></div>
                 </h1>
                 <div className="lh-sm card-text-bottom fw-400">
                   {descripcion} <br />
-                  {linebreak} <br />
-                  {breaktext}
+                  {lineBreak} <br />
+                  {breakText}
                 </div>
 
                 <Button
@@ -50,7 +50,7 @@ export default function ImgInfo() {
                   className="contact_slide fw-bold px-4 my-4 h-25 d-inline-block"
                   variant="btn btn-custom"
                 >
-                  {t.home.sectioninfo[0].button}
+                  {t.home.sectionInfo[0].button}
                 </Button>
               </div>
             )
@@ -65,9 +65,9 @@ export default function ImgInfo() {
             marginTop: '40px'
           }}
         >
-          {t.home.sectioninfo.map(
+          {t.home.sectionInfo.map(
             (
-              { title, titlebreak, descripcion, linebreak, breaktext }: ICard,
+              { title, titleBreak, descripcion, lineBreak, breakText }: ICard,
               key: number
             ) => (
               <div
@@ -75,13 +75,13 @@ export default function ImgInfo() {
                 className=" info-container font-montserrat pt-6 mx-5"
               >
                 <h1 className="text-end fw-bold fs-3">
-                  {title} <br /> {titlebreak}
+                  {title} <br /> {titleBreak}
                   <div className="ms-auto line"></div>
                 </h1>
                 <div className="card-text-bottom fw-400">
                   {descripcion} <br />
-                  {linebreak} <br />
-                  {breaktext}
+                  {lineBreak} <br />
+                  {breakText}
                 </div>
 
                 <Button
@@ -89,7 +89,7 @@ export default function ImgInfo() {
                   className="contact_slide fw-bold  my-4 h-25 d-inline-block"
                   variant="btn btn-custom"
                 >
-                  {t.home.sectioninfo[0].button}
+                  {t.home.sectionInfo[0].button}
                 </Button>
               </div>
             )

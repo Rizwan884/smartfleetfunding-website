@@ -2,7 +2,6 @@
 
 import Banners from '@/components/banner'
 import FormFreight from '@/components/form-freight'
-import HelpYou from '@/components/help-you'
 import Needs from '@/components/need'
 import Programs from '@/components/program'
 import Provides from '@/components/provide'
@@ -14,17 +13,17 @@ export default function Freight() {
   const { t } = useI18nProvider()
   const title = (
     <p className="font-montserrat">
-      {t.freightbroker.pagetitle}{' '}
-      <strong className="fw-bold">{t.freightbroker.titlestrong}</strong>
+      {t.freightbroker.pageTitle}{' '}
+      <strong className="fw-bold">{t.freightbroker.titleStrong}</strong>
     </p>
   )
   const titleMobile = (
     <p className="font-montserrat text-dark-blue">
-      {t.freightbroker.pagetitle}{' '}
-      <strong className="fw-bold">{t.freightbroker.titlestrong}</strong>
+      {t.freightbroker.pageTitle}{' '}
+      <strong className="fw-bold">{t.freightbroker.titleStrong}</strong>
     </p>
   )
-  const titleForm = t.freightbroker.titleform
+  const titleForm = t.freightbroker.titleForm
 
   return (
     <>
@@ -39,7 +38,7 @@ export default function Freight() {
       <Needs />
       <Programs />
       <Provides />
-      <HelpYou />
+      <helpYou />
       <FormFreight titleForm={titleForm} />
       <Footer />
     </>
