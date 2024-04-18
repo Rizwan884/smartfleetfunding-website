@@ -30,7 +30,7 @@ export default function SectionVideo() {
                     <div className="line"></div>
                   </div>
 
-                  <div className="lh-sm card-text-bottom fs-6 mx-auto text-center mt-5 fw-500">
+                  <div className="lh-sm card-text-video fs-6 mx-auto text-center mt-5 fw-500">
                     {descripcion}
                     <strong className="text-gray-dark">{strong}</strong>
                   </div>
@@ -83,7 +83,7 @@ export default function SectionVideo() {
                 <div className="text-left m-5 p-5">
                   <h2 className="fs-3 fw-bold ">{title}</h2>
                   <div className="line"></div>
-                  <div className="card-text-bottom fs-5  fw-400">
+                  <div className="card-text-video  fs-5  fw-400">
                     {descripcion}
                     <strong className="text-gray-dark">{strong}</strong>
                   </div>

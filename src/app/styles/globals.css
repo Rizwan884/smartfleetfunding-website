@@ -503,6 +503,14 @@ span:hover {
 .card-text-bottom {
   font-size: 19px;
   line-height: 20px;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-top: 20px;
+  backface-visibility: hidden;
+}
+.card-text-video {
+  font-size: 19px;
+  line-height: 20px;
   margin-top: 20px;
   backface-visibility: hidden;
 }
