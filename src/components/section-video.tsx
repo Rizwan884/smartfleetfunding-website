@@ -10,7 +10,7 @@ type ICard = {
 }
 export default function SectionVideo() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const isMobile = useMediaQuery({ maxWidth: 770 })
+  const isMobile = useMediaQuery({ maxWidth: 1025 })
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [showModal, setShowModal] = useState(false)
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -41,10 +41,10 @@ export default function SectionVideo() {
           <div className="col-12 md-col-5 embed-responsive embed-responsive-16by9 p-4 text-center p-md-4 rounded-3">
             <a href="#" onClick={openModal} className="position-relative">
               <Image
-                className="rounded-5"
+                className="rounded-5 w-75"
                 src="/images/sff-banner-video.webp"
                 alt="Previsualización"
-                width={370}
+                width={340}
                 height={300}
               />
               <div className="position-absolute top-50 start-50 translate-middle">
