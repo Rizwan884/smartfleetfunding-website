@@ -56,7 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <ReCaptchaProvider
-      reCaptchaKey="6LcFjngpAAAAADl83-kyPjhdeSwnUKV37e_RFBMF"
+      reCaptchaKey="6LduTr0pAAAAAGe99haSZO2u-x-zHCBic61DyjX2"
       language="en"
     >
       <I18nProvider lang={lang}>
