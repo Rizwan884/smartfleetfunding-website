@@ -71,13 +71,6 @@ export default function HelpYou() {
                       <div
                         className={`d-flex mb-4 lh-sm align-items-center gap-2 ${idx !== section.details.length - 1 ? 'line-programs' : ''}`}
                       >
-                        {/* <Image
-                          width={20}
-                          height={20}
-                          className="mt-14"
-                          src={detail.icon}
-                          alt="testimonial-img"
-                        /> */}
                         <div>
                           <p
                             className="ms-2 mt-3 fs-7 fw-30 text-start"
