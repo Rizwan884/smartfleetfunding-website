@@ -207,7 +207,7 @@ export default function FormInstapay() {
               </div>
               {formSubmitted && (
                 <strong>
-                  <div className="text-green">
+                  <div className="text-dark-blue">
                     {t.fespay.form[0].formSubmitted}
                   </div>
                 </strong>

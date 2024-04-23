@@ -1,5 +1,6 @@
 import { I18nProvider } from '@/context/I18nProvider'
 import type { Metadata } from 'next'
+import { ReCaptchaProvider } from 'next-recaptcha-v3'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
 
@@ -54,10 +55,15 @@ export default function RootLayout({
   params: { lang: string }
 }) {
   return (
-    <I18nProvider lang={lang}>
-      <html lang={lang}>
-        <body className={inter.className}>{children}</body>
-      </html>
-    </I18nProvider>
+    <ReCaptchaProvider
+      reCaptchaKey="6LduTr0pAAAAAGe99haSZO2u-x-zHCBic61DyjX2"
+      language="en"
+    >
+      <I18nProvider lang={lang}>
+        <html lang={lang}>
+          <body className={inter.className}>{children}</body>
+        </html>
+      </I18nProvider>
+    </ReCaptchaProvider>
   )
 }
