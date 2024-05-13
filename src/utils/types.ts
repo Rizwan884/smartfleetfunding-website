@@ -244,6 +244,7 @@ export interface blogInfo {
   desktopSrc: string
   date: string
   type: string
+  readMore: string
 }
 
 export type IJSON = {

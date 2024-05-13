@@ -230,9 +230,11 @@ export default function Blog({ blogs }: IProps) {
                             {blog.description}
                           </p>
                         )}
-                        <p className=" text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
-                          Leer mas...
-                        </p>
+                        {blog.readMore && (
+                          <p className="text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
+                            {blog.readMore}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </Col>
@@ -316,10 +318,11 @@ export default function Blog({ blogs }: IProps) {
                             {blog.description}
                           </p>
                         )}
-
-                        <p className=" text-start fw-light fs-6 mt-1 m-2 text-dark-blue font-montserrat">
-                          Leer mas...
-                        </p>
+                        {blog.readMore && (
+                          <p className="text-start fw-light fs-6 mt-1 m-2 text-dark-blue font-montserrat">
+                            {blog.readMore}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </Col>
