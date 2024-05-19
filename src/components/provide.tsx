@@ -1,9 +1,10 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Image from 'next/image'
 import { Carousel, Col, Container, Row } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
 export default function Provides() {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>

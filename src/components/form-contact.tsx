@@ -48,8 +48,6 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
         })
         setCheckboxChecked(false)
         setFormSubmitted(true)
-        // eslint-disable-next-line no-console
-        console.log('response status: ' + response.status)
       } else {
         // eslint-disable-next-line no-console
         console.error('Failed to submit form', response)

@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { Button, Carousel } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
@@ -17,7 +18,7 @@ type ICard = {
   imageMobile: string
 }
 export default function Slider() {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>

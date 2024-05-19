@@ -1,3 +1,4 @@
+import { MAX_WIDTH_MD } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Image from 'next/image'
 import { useState } from 'react'
@@ -10,7 +11,7 @@ type ICard = {
 }
 export default function SectionVideo() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const isMobile = useMediaQuery({ maxWidth: 1025 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH_MD })
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [showModal, setShowModal] = useState(false)
   // eslint-disable-next-line react-hooks/rules-of-hooks
