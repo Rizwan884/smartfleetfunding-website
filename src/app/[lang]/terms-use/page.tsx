@@ -14,7 +14,7 @@ export default function Terms() {
           <h3 className="mt-4 fw-600">DEFINITIONS</h3>
           <strong className="me-1">User:</strong> Any individual or entity using
           the Website or Services. <br />
-          <strong className="me-1">Services:</strong> Smart Fleet Funding's
+          <strong className="me-1">Services:</strong> Smart Fleet Funding{"'"}s
           factoring services, invoice factoring and financing, and the fuel card
           program are all included in the Fullfact, FES Pay, and Freight Broker
           Program.
@@ -25,8 +25,8 @@ export default function Terms() {
           to enter into this agreement.
           <h3 className="mt-4 fw-600">USE OF SERVICES </h3>
           <strong>Eligibility:</strong> These Services are available to
-          businesses in North America that meet Smart Fleet Funding's credit and
-          underwriting criteria. <br />
+          businesses in North America that meet Smart Fleet Funding{"'"}s credit
+          and underwriting criteria. <br />
           <strong className="me-1">User Responsibilities:</strong> You agree to:
           <ul className="mt-1">
             <li>

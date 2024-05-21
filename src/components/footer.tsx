@@ -276,7 +276,7 @@ export default function Footer() {
                 className="text-decoration-none text-green"
                 passHref={true}
               >
-                <strong>Terms Of Use</strong>
+                <strong>Terms Of Use</strong>
               </Link>
             </div>
           </div>
