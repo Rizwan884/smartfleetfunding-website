@@ -258,7 +258,7 @@ export default function Footer() {
               </Container>
             </Navbar>
           </Container>
-          <div className="text-center py-4">
+          <div className="text-center py-5">
             <div>
               {' '}
               <Image
@@ -276,7 +276,7 @@ export default function Footer() {
                 className="text-decoration-none text-green"
                 passHref={true}
               >
-                <p>Terms Of Use</p>
+                <strong>Terms Of Use</strong>
               </Link>
             </div>
           </div>
