@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { IFooter } from '@/utils/types'
 import Link from 'next/link'
@@ -7,7 +8,7 @@ import { useMediaQuery } from 'react-responsive'
 import ScrollToTopButton from '../components/scroolTop'
 
 export default function Footer() {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>

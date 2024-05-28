@@ -50,12 +50,10 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
         setCheckboxChecked(false)
         setFormSubmitted(true)
       } else {
-        // eslint-disable-next-line no-console
-        console.error('Failed to submit form', response)
+        alert('Failed to submit form' + response)
       }
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error('Error submitting form:', error)
+      alert('Error submitting form:' + error)
     }
   }
   //function to handle checkbox field

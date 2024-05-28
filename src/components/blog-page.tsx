@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { blogInfo } from '@/utils/types'
 import { useState } from 'react'
 import { Button, Col, Row } from 'react-bootstrap'
@@ -9,7 +10,7 @@ type IProps = {
   blogs: blogInfo[]
 }
 export default function Blog({ blogs }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const [selectedBlogIndex, setSelectedBlogIndex] = useState<number | null>(
     null
   )

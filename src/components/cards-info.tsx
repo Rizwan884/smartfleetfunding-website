@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { Card, Col, Container, ListGroup, Row } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
@@ -15,7 +16,7 @@ type ICard = {
 }
 
 export default function Cards() {
-  const isMobile = useMediaQuery({ maxWidth: 784 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>

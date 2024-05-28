@@ -1,3 +1,4 @@
+import { MAX_WIDTH_MD, MAX_WIDTH_SM } from '@/constants/const'
 import Image from 'react-bootstrap/Image'
 import { useMediaQuery } from 'react-responsive'
 
@@ -16,8 +17,8 @@ export default function Banners({
   mobileBackgroundImage,
   hideIcons = false
 }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 650 })
-  const showIcons = useMediaQuery({ minWidth: 1025 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH_SM })
+  const showIcons = useMediaQuery({ minWidth: MAX_WIDTH_MD })
 
   return (
     <>

@@ -47,14 +47,11 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
         })
         setCheckboxChecked(false)
         setFormSubmitted(true)
-        // eslint-disable-next-line no-console
       } else {
-        // eslint-disable-next-line no-console
-        console.error('Failed to submit form', response)
+        alert('Failed to submit form' + response)
       }
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error('Error submitting form:', error)
+      alert('Error submitting form:' + error)
     }
   }
 
