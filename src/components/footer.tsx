@@ -260,32 +260,29 @@ export default function Footer() {
             </Navbar>
           </Container>
           <div className="text-center py-5">
-            <div>
-              {' '}
-              <Image
-                src="/images/sff-logo-footer.svg"
-                width="174"
-                height="54"
-                className="d-inline-block align-top"
-                alt="SFF Logo"
-              />
-            </div>
-            <div className="mt-2 fs-6">
-              <Link
-                href="/terms-use"
-                target="_blank"
-                className="text-decoration-none text-green"
-                passHref={true}
-              >
-                <strong>Terms Of Use</strong>
-              </Link>
-            </div>
+            <Image
+              src="/images/sff-logo-footer.svg"
+              width="174"
+              height="54"
+              className="d-inline-block align-top"
+              alt="SFF Logo"
+            />
           </div>
           <div></div>
           <div className=" font-montserrat d-flex position-relative justify-content-between align-items-center text-left py-3 px-5 bg-green">
             <p style={{ margin: 0 }}>
               &copy;2024 Smart Funding Team All Rights Reserved
             </p>
+            <div className="mt-2 mx-5 fs-6">
+              <Link
+                href="/terms-use"
+                target="_blank"
+                className="text-decoration-none text-white"
+                passHref={true}
+              >
+                Terms Of Use
+              </Link>
+            </div>
             <div
               className="d-flex position-absolute"
               style={{ right: '66px', top: '-11px' }}
