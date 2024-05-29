@@ -10,7 +10,7 @@ export default function Privacy() {
           governs the privacy terms of our Website, located at
           https://smartfleetfunding.com, sub-domains, and any associated
           web-based and mobile applications (collectively, {'"Website"'}), as
-          owned and operated by Smart Fleet Funding Inc. Any capitalized terms
+          owned and operated by Smart Fleet Funding Corp. Any capitalized terms
           not defined in our Privacy Policy, have the meaning as specified in
           our Terms of Service.
           <br />
@@ -63,7 +63,7 @@ export default function Privacy() {
             </li>
           </ul>
           <h3 className="mt-4 fw-600">Your Privacy</h3>
-          Smart Fleet Funding Inc. follows all legal requirements to protect
+          Smart Fleet Funding Corp. follows all legal requirements to protect
           your privacy. Our Privacy Policy is a legal statement that explains
           how we may collect information from you, how we may share your
           information, and how you can limit our sharing of your information. We
@@ -74,7 +74,7 @@ export default function Privacy() {
           registration info sent when developing your account, might be used to
           suggest products to you based on past acquisitions. We might use your
           Personal Data to offer access to services on the Website and monitor
-          your use of such services. Smart Fleet Funding Inc. may also utilize
+          your use of such services. Smart Fleet Funding Corp. may also utilize
           your Personal Data and various other personally non-identifiable info
           gathered through the Website to assist us with improving the material
           and functionality of the Website, to comprehend our users much better,
@@ -157,14 +157,14 @@ export default function Privacy() {
           Under the Child{"'"}s Online Privacy Security Act, no Website operator
           can require, as a condition to involvement in an activity, that a
           child younger than 13 years of age divulge more details than is
-          reasonably required. Smart Fleet Funding Inc. abides by this demand.
-          Smart Fleet Funding Inc. just collects information willingly offered;
+          reasonably required. Smart Fleet Funding Corp. abides by this demand.
+          Smart Fleet Funding Corp. just collects information willingly offered;
           no information is gathered passively. children under 13 can submit
           only their email address when sending us an email in our{' '}
           {'Contact Us'}
-          area. Smart Fleet Funding Inc. makes use of the email address to
+          area. Smart Fleet Funding Corp. makes use of the email address to
           respond to a one-time demand from a child under 13 and afterwards
-          deletes the email address. In case Smart Fleet Funding Inc. collects
+          deletes the email address. In case Smart Fleet Funding Corp. collects
           and maintains personal information relating to a child under 13, the
           parent may send out an email to us to review, alter and/or erase such
           info as well as to decline to enable any additional collection or use
@@ -213,7 +213,7 @@ export default function Privacy() {
               Legal Terms; (d) necessary to protect us from legal action or
               claims from third parties including you and/or other Members;
               and/or (e) necessary to protect the legal rights, personal/real
-              property, or personal safety of Smart Fleet Funding Inc., our
+              property, or personal safety of Smart Fleet Funding Corp., our
               Users, employees, and affiliates.
             </li>
           </ul>

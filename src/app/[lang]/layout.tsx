@@ -7,12 +7,13 @@ import '../styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Smart Fleet Funding: Freight Factoring to carriers in North America',
+  title:
+    'Smart Fleet Funding Corp.: Freight Factoring to carriers in North America',
   icons: '/images/sff-icon.svg',
   description:
-    'Smart Fleet Funding helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
+    'Smart Fleet Funding Corp. helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
   keywords: [
-    'Smart Fleet Funding',
+    'Smart Fleet Funding Corp.',
     'freight factoring',
     'North America',
     'Freight cash flow',
@@ -30,11 +31,11 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      'Smart Fleet Funding: Freight Factoring to carriers in North America',
+      'Smart Fleet Funding Corp.: Freight Factoring to carriers in North America',
     description:
-      'Smart Fleet Funding helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
+      'Smart Fleet Funding Corp. helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
     url: 'https://www.smartfleetfunding.com',
-    siteName: 'Smart Fleet Funding',
+    siteName: 'Smart Fleet Funding Corp.',
     images: [
       {
         url: '/images/sff-opengraph.png',

@@ -100,7 +100,7 @@ export default function Know() {
             <div className="line-program mt-0 mb-3 mt-1 w-3"></div>
           </div>
           <div className="col-md-8">
-            At Smart Fleet Funding, we{"'"}ve designed a system that simplifies
+            At Smart Fleet Funding Corp., we{"'"}ve designed a system that simplifies
             the process of getting paid. Our mission is to remove the
             complexities and delays associated with unpaid invoices, turning
             them into immediate cash with a simple click.{' '}
@@ -134,12 +134,12 @@ export default function Know() {
           <div className="col-md-4 ">
             {' '}
             <h1 className="fw-bold fs-3 mb-0 w-75">
-              Why Choose Smart Fleet Funding
+              Why Choose Smart Fleet Funding Corp.
             </h1>
             <div className="line-program mt-0  mb-3 mt-1 w-3"></div>
           </div>
           <div className="col-md-8">
-            Choosing Smart Fleet Funding means choosing a partner invested in
+            Choosing Smart Fleet Funding Corp. means choosing a partner invested in
             your success. We specialize in tailoring funding solutions for
             trucking companies, enabling them to get paid faster and offering
             significant discounts to boost profitability.{' '}
