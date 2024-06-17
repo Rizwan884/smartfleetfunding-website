@@ -259,16 +259,30 @@ export default function Footer() {
               </Container>
             </Navbar>
           </Container>
-          <div className="text-center py-5">
-            <Image
-              src="/images/sff-logo-footer.svg"
-              width="174"
-              height="54"
-              className="d-inline-block align-top"
-              alt="SFF Logo"
-            />
+          <div className="flex text-center">
+            <div className=" py-5">
+              <Image
+                src="/images/sff-logo-footer.svg"
+                width="174"
+                height="54"
+                className="d-inline-block align-top"
+                alt="SFF Logo"
+              />
+              <div className="mt-2">
+                <Link
+                  href="/privacy"
+                  target="_blank"
+                  className="text-decoration-none text-green"
+                  passHref={true}
+                >
+                  <strong>{t.fullcard.form[0].strong}</strong>
+                </Link>
+              </div>
+            </div>
+
+            <div> </div>
           </div>
-          <div></div>
+
           <div className=" font-montserrat d-flex position-relative justify-content-between align-items-center text-left py-3 px-5 bg-green">
             <p style={{ margin: 0 }}>
               &copy;2024 Smart Funding Team All Rights Reserved
