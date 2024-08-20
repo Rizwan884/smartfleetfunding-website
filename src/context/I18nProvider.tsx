@@ -15,7 +15,8 @@ const I18nContext = createContext<II18nContext>({
       services: '',
       faq: '',
       aboutUs: '',
-      contact: ''
+      contact: '',
+      login: ''
     },
     languages: {
       current: { title: '', locale: '' },
