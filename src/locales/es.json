@@ -4,7 +4,8 @@
     "services": "SERVICIOS",
     "faq": "PREGUNTAS FRECUENTES",
     "aboutUs": "NOSOTROS",
-    "contact": "CONTACTO"
+    "contact": "CONTACTO",
+    "login": "INICIAR SESIÓN"
   },
   "languages": {
     "current": {

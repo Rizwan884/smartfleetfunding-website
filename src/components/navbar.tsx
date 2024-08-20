@@ -1,6 +1,7 @@
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Link from 'next/link'
+import { Button } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import Nav from 'react-bootstrap/Nav'
@@ -123,6 +124,13 @@ export default function SFFNavbar() {
               >
                 {t.navbar.contact}
               </Nav.Link>
+              <Button
+                href="https://smartfleetfundingus.profitstars.com/"
+                className="contact_slide fw-bold h-25 d-inline-block"
+                variant="btn btn-custom"
+              >
+                {t.navbar.login}
+              </Button>
               <div id="button-language" className="d-none d-lg-block gap-2">
                 <LanguageSwitcher />
               </div>

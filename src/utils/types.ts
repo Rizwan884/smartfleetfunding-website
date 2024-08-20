@@ -4,6 +4,7 @@ interface Navbar {
   faq: string
   aboutUs: string
   contact: string
+  login: string
 }
 
 interface CurrentLanguage {

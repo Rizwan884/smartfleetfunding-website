@@ -4,7 +4,9 @@
     "services": "SERVICES",
     "faq": "FAQ",
     "aboutUs": "ABOUT US",
-    "contact": "CONTACT"
+    "contact": "CONTACT",
+    "login": "LOGIN"
+
   },
   "languages": {
     "current": {
