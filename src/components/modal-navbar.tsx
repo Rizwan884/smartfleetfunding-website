@@ -35,11 +35,7 @@ export default function LoginModal({
           </div>
         </div>
       </Modal.Body>
-      <Modal.Footer className="bg-white">
-        <Button variant="danger" onClick={handleClose}>
-          Cerrar
-        </Button>
-      </Modal.Footer>
+      <Modal.Footer className="bg-white"></Modal.Footer>
     </Modal>
   )
 }
