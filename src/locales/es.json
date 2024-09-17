@@ -298,6 +298,7 @@
         "email": "Tu e-mail",
         "company": "Empresa",
         "phone": "Telefono",
+        "code" : "MC# o USDOT#",
         "descripcion": "Descripcion",
         "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
         "check": "Acepte nuestra ",

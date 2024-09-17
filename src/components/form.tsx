@@ -157,7 +157,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   value={formData.code}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.fuelcard.formCode}
+                  placeholder={t.fullcard.form[0].code}
                 ></input>
               </div>
             </div>

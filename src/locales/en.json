@@ -311,6 +311,7 @@
         "email": "Your E-mail",
         "company": "Company Name",
         "phone": "Phone",
+        "code" : "MC# or USDOT#",
         "descripcion": "Description",
         "checkboxError": "Please check the box before submitting",
         "check": "Accept our ",
