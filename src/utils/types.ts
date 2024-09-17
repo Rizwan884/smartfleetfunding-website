@@ -6,6 +6,10 @@ interface Navbar {
   contact: string
   login: string
 }
+interface ModalNavbar {
+  titleUs: string
+  titleCn: string
+}
 
 interface CurrentLanguage {
   title: string
@@ -144,6 +148,7 @@ interface InstapayForm {
   name: string
   email: string
   company: string
+  code: string
   phone: string
   broker: string
   comments: string
@@ -250,6 +255,7 @@ export interface blogInfo {
 
 export type IJSON = {
   navbar: Navbar
+  modalNavbar: ModalNavbar
   languages: {
     current: CurrentLanguage
     available: AvailableLanguage[]
@@ -305,6 +311,7 @@ export type IJSON = {
     formFullName: string
     formEmail: string
     formCompany: string
+    formCode: string
     formPhone: string
     formMessage: string
     checkboxError: string
@@ -334,6 +341,7 @@ export type IJSON = {
     formFullName: string
     formEmail: string
     formCompany: string
+    formCode: string
     formPhone: string
     formMessage: string
     checkboxError: string
@@ -364,6 +372,7 @@ export type IJSON = {
     formName: string
     formEmail: string
     formCompany: string
+    formCode: string
     formPhone: string
     formMessage: string
     checkboxError: string

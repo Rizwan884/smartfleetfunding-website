@@ -12,6 +12,7 @@ export default function FormInstapay() {
     company: '',
     phone: '',
     freightBroker: '',
+    code: '',
     comments: ''
   })
   const [error, setError] = useState<string>('')
@@ -39,6 +40,7 @@ export default function FormInstapay() {
           company: '',
           phone: '',
           freightBroker: '',
+          code: '',
           comments: ''
         })
         setCheckboxChecked(false)
@@ -153,6 +155,18 @@ export default function FormInstapay() {
                     onChange={handleInputChange}
                     required
                     placeholder={t.fespay.form[0].broker}
+                  ></input>
+                </div>
+                <div className="col">
+                  <input
+                    type="text"
+                    className="form-control px-3 bg-grey-transparent-fespay text-dark-blue"
+                    id="fullcode"
+                    name="fullcode"
+                    value={formData.code}
+                    onChange={handleInputChange}
+                    required
+                    placeholder={t.fespay.form[0].code}
                   ></input>
                 </div>
               </div>

@@ -7,6 +7,10 @@
     "contact": "CONTACTO",
     "login": "INICIAR SESIÓN"
   },
+  "modalNavbar": {
+  "titleCn":"Cliente Canada",
+  "titleUs": "Cliente US"
+},
   "languages": {
     "current": {
       "title": "ESP",
@@ -457,6 +461,7 @@
         "company": "Empresa",
         "phone": "Telefono",
         "broker": "Freight broker",
+        "code": "MC# o USDOT#",
         "comments": "Comentarios",
         "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
         "check": "Acepte nuestra ",
@@ -601,6 +606,7 @@
     "formFullName": "Nombre Completo",
     "formEmail": "Tu email",
     "formCompany": "Empresa",
+    "formCode": "MC# o USDOT#",
     "formPhone": "Telefono",
     "formMessage": "Descripcion",
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
@@ -749,6 +755,7 @@
     "formFullName": "Nombre Completo",
     "formEmail": "Tu email",
     "formCompany": "Empresa",
+    "formCode": "MC# o USDOT#",
     "formPhone": "Telefono",
     "formMessage": "¿Cómo podemos ayudarle?",
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
@@ -959,6 +966,7 @@
     "formName": "Nombre completo",
     "formEmail": "Tu email",
     "formCompany": "Empresa",
+    "formCode": "MC# o USDOT#",
     "formPhone": "Telefono",
     "formMessage": "Descripcion",
     "checkboxError": "Por favor marque la casilla antes de enviar el formulario",

@@ -194,6 +194,11 @@ body {
 }
 
 /*-------------------------NavBar-------------------------------*/
+.nv-modal{
+  display: flex;
+  justify-content: space-around;
+;
+}
 .nv-image {
   @media (max-width: 767px) {
     .dropdown-menu {
@@ -862,6 +867,7 @@ span:hover {
 #form #message::placeholder,
 #phone::placeholder,
 #company::placeholder,
+#code::placeholder,
 #email::placeholder,
 #name::placeholder {
   color: var(--white);
@@ -871,6 +877,7 @@ span:hover {
 #comments::placeholder,
 #fullphone::placeholder,
 #fullcompany::placeholder,
+#fullcode::placeholder,
 #fullemail::placeholder,
 #fullname::placeholder {
   color: var(--gray-dark);

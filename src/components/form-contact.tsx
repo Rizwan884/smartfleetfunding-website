@@ -16,6 +16,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
     name: '',
     email: '',
     company: '',
+    code: '',
     phone: '',
     message: ''
   })
@@ -43,6 +44,7 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
           name: '',
           email: '',
           company: '',
+          code: '',
           phone: '',
           message: ''
         })
@@ -205,6 +207,20 @@ export default function FormContact({ backgroundImage, titleForm }: IProps) {
                   onChange={handleInputChange}
                   required
                   placeholder={t.contact.formPhone}
+                ></input>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control px-3 bg-grey-transparent text-white"
+                  id="code"
+                  name="code"
+                  value={formData.code}
+                  onChange={handleInputChange}
+                  required
+                  placeholder={t.contact.formCode}
                 ></input>
               </div>
             </div>

@@ -18,6 +18,10 @@ const I18nContext = createContext<II18nContext>({
       contact: '',
       login: ''
     },
+    modalNavbar: {
+      titleUs: '',
+      titleCn: ''
+    },
     languages: {
       current: { title: '', locale: '' },
       available: []
@@ -120,6 +124,7 @@ const I18nContext = createContext<II18nContext>({
       formFullName: '',
       formEmail: '',
       formCompany: '',
+      formCode: '',
       formPhone: '',
       formMessage: '',
       formCheck: '',
@@ -149,6 +154,7 @@ const I18nContext = createContext<II18nContext>({
       formFullName: '',
       formEmail: '',
       formCompany: '',
+      formCode: '',
       formPhone: '',
       formMessage: '',
       formCheck: '',
@@ -179,6 +185,7 @@ const I18nContext = createContext<II18nContext>({
       formName: '',
       formEmail: '',
       formCompany: '',
+      formCode: '',
       formPhone: '',
       formMessage: '',
       formCheck: '',

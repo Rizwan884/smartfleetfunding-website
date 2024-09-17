@@ -8,6 +8,11 @@
     "login": "LOGIN"
 
   },
+"modalNavbar": {
+  "titleCn":"Client Canada",
+  "titleUs": "Client US"
+},
+
   "languages": {
     "current": {
       "title": "ENG",
@@ -469,6 +474,7 @@
         "company": "Company Name",
         "phone": "Phone",
         "broker": "Freight broker",
+        "code": "MC# or USDOT#",
         "comments": "Comments",
         "checkboxError": "Please check the box before submitting",
         "check": "Accept our ",
@@ -613,6 +619,7 @@
     "formFullName": "Full Name",
     "formEmail": "Your E-mail",
     "formCompany": "Company Name",
+    "formCode": "MC# or USDOT#",
     "formPhone": "Phone",
     "formMessage": "Description",
     "checkboxError": "Please check the box before submitting",
@@ -761,6 +768,7 @@
     "formFullName": "Full Name",
     "formEmail": "E-mail address",
     "formCompany": "Company",
+    "formCode": "MC# or USDOT#",
     "formPhone": "Phone",
     "formMessage": "How can we help you?",
     "checkboxError": "Please check the box before submitting",
@@ -971,6 +979,7 @@
     "formName": "Full Name",
     "formEmail": "Your E-mail",
     "formCompany": "Company",
+    "formCode": "MC# or USDOT#",
     "formPhone": "Phone",
     "formMessage": "Description",
     "checkboxError": "Please check the box before submitting",

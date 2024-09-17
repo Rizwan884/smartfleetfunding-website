@@ -1,15 +1,19 @@
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Link from 'next/link'
+import { useState } from 'react'
 import { Button } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Navbar from 'react-bootstrap/Navbar'
+import LoginModal from './modal-navbar'
 
 export default function SFFNavbar() {
   const { t } = useI18nProvider()
+
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <>
@@ -125,7 +129,7 @@ export default function SFFNavbar() {
                 {t.navbar.contact}
               </Nav.Link>
               <Button
-                href="https://smartfleetfundingus.profitstars.com/"
+                onClick={() => setShowModal(!showModal)}
                 className="contact_slide fw-bold h-25 d-inline-block"
                 variant="btn btn-custom"
               >
@@ -138,6 +142,10 @@ export default function SFFNavbar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <LoginModal
+        show={showModal}
+        handleClose={() => setShowModal(!showModal)}
+      />
     </>
   )
 }

@@ -17,6 +17,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
     email: '',
     company: '',
     phone: '',
+    code: '',
     message: ''
   })
   const [error, setError] = useState<string>('')
@@ -45,6 +46,7 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
           email: '',
           company: '',
           phone: '',
+          code: '',
           message: ''
         })
         setCheckboxChecked(false)
@@ -169,6 +171,20 @@ export default function FormFuelCard({ backgroundImage, titleForm }: IProps) {
                   onChange={handleInputChange}
                   required
                   placeholder={t.fuelcard.formPhone}
+                ></input>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control px-3 bg-grey-transparent text-white"
+                  id="code"
+                  name="code"
+                  value={formData.code}
+                  onChange={handleInputChange}
+                  required
+                  placeholder={t.fuelcard.formCode}
                 ></input>
               </div>
             </div>
