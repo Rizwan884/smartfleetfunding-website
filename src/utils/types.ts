@@ -109,6 +109,7 @@ interface FormItem {
   email: string
   company: string
   phone: string
+  cpde: string
   descripcion: string
   checkboxError: string
   check: string

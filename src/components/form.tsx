@@ -17,6 +17,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
     email: '',
     company: '',
     phone: '',
+    code: '',
     message: ''
   })
   const [error, setError] = useState<string>('')
@@ -44,6 +45,7 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
           email: '',
           company: '',
           phone: '',
+          code: '',
           message: ''
         })
         setCheckboxChecked(false)
@@ -142,6 +144,20 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                   onChange={handleInputChange}
                   required
                   placeholder={t.fullcard.form[0].phone}
+                ></input>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control px-3 bg-grey-transparent text-white"
+                  id="code"
+                  name="code"
+                  value={formData.code}
+                  onChange={handleInputChange}
+                  required
+                  placeholder={t.fuelcard.formCode}
                 ></input>
               </div>
             </div>
