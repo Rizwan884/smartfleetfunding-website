@@ -12,7 +12,7 @@ export default function Home() {
       <head>
         <meta
           name="google-site-verification"
-          content="rakFQL2ifWxbIOmUvCc7aHUjsN1R252vfJX9sEF2dKY"
+          content="MsyEhkoBnveZlNPz4jE2EUqD35lD5VuqOoe-7QNrZPw"
         />
         <script
           async
