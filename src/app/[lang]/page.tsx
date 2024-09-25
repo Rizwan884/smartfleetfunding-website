@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/inline-script-id */
 'use client'
 
 import SectionVideo from '@/components/section-video'
 import Trustpilot from '@/components/trustpilot'
+import Script from 'next/script'
 import CardsSections from '../../components/cards_sections'
 import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
@@ -14,11 +16,11 @@ export default function Home() {
           name="google-site-verification"
           content="MsyEhkoBnveZlNPz4jE2EUqD35lD5VuqOoe-7QNrZPw"
         />
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
-        ></script>
-        <script
+        ></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];

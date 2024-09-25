@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/inline-script-id */
 'use client'
 
 import Banners from '@/components/banner'
@@ -7,6 +8,7 @@ import SectionAccordion from '@/components/section-accordion'
 import Steps from '@/components/steps'
 import Welcome from '@/components/welcome'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Script from 'next/script'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 
@@ -29,11 +31,11 @@ export default function Instapay() {
   return (
     <>
       <head>
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
-        ></script>
-        <script
+        ></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
     window.dataLayer = window.dataLayer || [];

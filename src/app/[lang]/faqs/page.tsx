@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/inline-script-id */
 'use client'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Script from 'next/script'
 import { useState } from 'react'
 import FaqAccordion from '../../../components/faq-accordion'
 import Footer from '../../../components/footer'
@@ -18,11 +20,11 @@ export default function Faqs() {
   return (
     <>
       <head>
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
-        ></script>
-        <script
+        ></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
     window.dataLayer = window.dataLayer || [];

@@ -1,13 +1,16 @@
+/* eslint-disable @next/next/inline-script-id */
+import Script from 'next/script'
+
 export default function Privacy() {
   return (
     <>
       {' '}
       <head>
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
-        ></script>
-        <script
+        ></Script>
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
     window.dataLayer = window.dataLayer || [];
