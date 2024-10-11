@@ -19,18 +19,11 @@ export default function SFFNavbar() {
     <>
       <div className="font-montserrat text-left p-2 px-5 bg-green">
         <Link
-          href="tel:+18888755506"
+          href="https://wa.me/18888755506"
           target="_blank"
           className="text-white ms-2"
         >
-          Toll-Free: +1 (888) 875-5506{' '}
-        </Link>
-        <Link
-          href="https://wa.me/18302097589"
-          target="_blank"
-          className="text-white ms-2"
-        >
-          WhatsApp: +1 (830) 209-7589{' '}
+          Toll-Free: +1 (830) 209-7589{' '}
         </Link>
       </div>
       <Navbar expand="lg" className="font-montserrat nv-image">

@@ -1,10 +1,5 @@
 import { useEffect } from 'react'
 
-type ICard = {
-  title: string
-  descripcion: string
-  strong: string
-}
 export default function Trustpilot() {
   useEffect(() => {
     const script = document.createElement('script')
