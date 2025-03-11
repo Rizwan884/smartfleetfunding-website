@@ -63,10 +63,7 @@ export default function RootLayout({
     >
       <I18nProvider lang={lang}>
         <html lang={lang}>
-        <Script
-        type="text/javascript"
-        id="hs-script-loader"
-        async defer src="//js-na1.hs-scripts.com/49277082.js">
+        <Script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/49277082.js">
         </Script>
           <body className={inter.className}>{children}
           </body>
