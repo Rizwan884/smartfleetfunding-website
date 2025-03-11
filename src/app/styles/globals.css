@@ -1233,3 +1233,9 @@ input[type='radio']:checked ~ label {
 .modal-content {
   background-color: var(--dark-blue) !important;
 }
+
+
+/*-----------------HubSpot-----------------*/
+.widget-align-right{
+  margin-bottom: 50px !important;
+}

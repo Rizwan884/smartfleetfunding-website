@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { ReCaptchaProvider } from 'next-recaptcha-v3'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -62,7 +63,13 @@ export default function RootLayout({
     >
       <I18nProvider lang={lang}>
         <html lang={lang}>
-          <body className={inter.className}>{children}</body>
+        <Script
+        type="text/javascript"
+        id="hs-script-loader"
+        async defer src="//js-na1.hs-scripts.com/49277082.js">
+        </Script>
+          <body className={inter.className}>{children}
+          </body>
         </html>
       </I18nProvider>
     </ReCaptchaProvider>
