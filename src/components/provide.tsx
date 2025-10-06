@@ -1,17 +1,18 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Image from 'next/image'
 import { Carousel, Col, Container, Row } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
 export default function Provides() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>
       <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
-          <h1 className="fw-600 fs-2 text-center  flex  align-items-center gap-3">
-            {t.freightbroker.providetitle}
+          <h1 className="fw-bold fs-2 text-center  flex  align-items-center gap-3">
+            {t.freightbroker.provideTitle}
           </h1>
         </div>
       </div>

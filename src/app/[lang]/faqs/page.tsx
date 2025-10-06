@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/inline-script-id */
 'use client'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Script from 'next/script'
 import { useState } from 'react'
 import FaqAccordion from '../../../components/faq-accordion'
 import Footer from '../../../components/footer'
@@ -17,11 +19,27 @@ export default function Faqs() {
 
   return (
     <>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
+        ></Script>
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0XVT3QM87R');
+  `
+          }}
+        />
+      </head>
       <Navbar />
       <Search onSearch={handleSearch} />
       <FaqAccordion
         items={accordionInstaItems}
-        headTitle={t.faqs.faqtitle}
+        headTitle={t.faqs.faqTitle}
         showIcons
         width={16}
         height={28}

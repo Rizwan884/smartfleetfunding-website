@@ -15,7 +15,12 @@ const I18nContext = createContext<II18nContext>({
       services: '',
       faq: '',
       aboutUs: '',
-      contact: ''
+      contact: '',
+      login: ''
+    },
+    modalNavbar: {
+      titleUs: '',
+      titleCn: ''
     },
     languages: {
       current: { title: '', locale: '' },
@@ -29,19 +34,20 @@ const I18nContext = createContext<II18nContext>({
           regular: '',
           strong: '',
           icon: '',
-          iconback: ''
+          iconBack: ''
         }
       ],
-      carinfo: [
+      cardsInfo: [
         {
           title: '',
+          href: '',
           sections: [{ heading: '', items: [] }],
           icon: '',
-          iconback: ''
+          iconBack: ''
         }
       ],
-      headercardinfo: [{ header: '', descripcion: '' }],
-      sectionvideo: [{ title: '', descripcion: '', strong: '' }],
+      headerCardInfo: [{ header: '', descripcion: '' }],
+      SectionVideo: [{ title: '', descripcion: '', strong: '' }],
       footer: [
         {
           home: '',
@@ -56,126 +62,140 @@ const I18nContext = createContext<II18nContext>({
           curious: ''
         }
       ],
-      sectioninfo: [
+      sectionInfo: [
         {
           title: '',
+          titleBreak: '',
           descripcion: '',
-          linebreak: '',
-          breaktext: '',
+          lineBreak: '',
+          breakText: '',
           button: ''
         }
       ],
       slider: [
-        { title: '', strong: '', button: '', image: '', imagemobile: '' }
+        {
+          title: '',
+          strong: '',
+          button: '',
+          image: '',
+          imageMobile: '',
+          href: ''
+        }
       ],
-      cardstitle: ''
+      cardsTitle: ''
     },
     fullcard: {
       header: [],
       carruzel: [],
-      helptittle: '',
-      helpcards: [],
-      helpcardstwo: [],
+      helpTitle: '',
+      helpCards: [],
+      helpcardsTwo: [],
       form: [],
       testimonials: [],
       accordionItems: [],
-      titleform: '',
-      pagetittle: '',
+      titleForm: '',
+      pageTitle: '',
       pagestrong: ''
     },
     fespay: {
-      pagetittle: '',
+      pageTitle: '',
       pagestrong: '',
-      welcometittle: '',
-      welcomedescripcion: '',
-      stepstittle: '',
+      welcomeTitle: '',
+      welcomeDescription: '',
+      stepsTitle: '',
       steps: [],
       Benefits: [],
-      Benefitstwo: [],
-      benefitstitle: '',
+      BenefitsTwo: [],
+      benefitsTitle: '',
       form: [],
-      accordiontittle: '',
+      accordionTitle: '',
       accordionItems: []
     },
     fuelcard: {
-      pagetittle: '',
-      pagetittlestrong: '',
+      pageTitle: '',
+      pagetitleStrong: '',
       road: [],
-      cardsfuel: [],
-      fuelcardsection: [],
-      fuelcardsectiontitle: '',
-      fuelcardsectiondescription: '',
-      formtitle: '',
-      formselectsoptions: [],
-      formfullname: '',
-      formemail: '',
-      formcompany: '',
-      formphone: '',
-      formmessage: '',
-      formcheck: '',
-      formbreak: '',
-      formbutton: '',
-      checkboxError: ''
+      CardsFuel: [],
+      fuelCardSection: [],
+      fuelCardSectionTitle: '',
+      fuelCardSectionDescription: '',
+      formTitle: '',
+      formSelectsOptions: [],
+      formFullName: '',
+      formEmail: '',
+      formCompany: '',
+      formCode: '',
+      formPhone: '',
+      formMessage: '',
+      formCheck: '',
+      formBreak: '',
+      formButton: '',
+      checkboxError: '',
+      formSubmitted: ''
     },
     freightbroker: {
-      pagetitle: '',
-      titlestrong: '',
-      titleform: '',
-      needstitle: '',
+      pageTitle: '',
+      titleStrong: '',
+      titleForm: '',
+      needsTitle: '',
       needs: [],
-      needstwo: [],
-      needsbutton: '',
-      needsbuttontwo: '',
-      needsfinaltext: '',
-      needsfinaltextstrong: '',
-      programtitle: '',
-      programtitleweb: '',
-      programtitlewebbreak: '',
+      needsTwo: [],
+      needsButton: '',
+      needsButtontwo: '',
+      needsFinalText: '',
+      needsFinalTextStrong: '',
+      programTitle: '',
+      programTitleWeb: '',
+      programTitleWebBreak: '',
       programs: [],
       provide: [],
-      providetitle: '',
-      helpyou: { title: '', image: '', items: [] },
-      formfullname: '',
-      formemail: '',
-      formcompany: '',
-      formphone: '',
-      formmessage: '',
-      formcheck: '',
-      formbreak: '',
-      formbutton: '',
-      checkboxError: ''
+      provideTitle: '',
+      HelpYou: { title: '', image: '', items: [] },
+      formFullName: '',
+      formEmail: '',
+      formCompany: '',
+      formCode: '',
+      formPhone: '',
+      formMessage: '',
+      formCheck: '',
+      formBreak: '',
+      formButton: '',
+      checkboxError: '',
+      formSubmitted: ''
     },
     faqs: {
       accordionInstaItems: [],
-      faqtitle: ''
+      faqTitle: ''
     },
     about: {
-      pagetitle: '',
+      pageTitle: '',
       pagestrong: '',
-      knowtitle: '',
-      knowstrong: '',
+      knowTitle: '',
+      knowStrong: '',
       cards: [],
-      cardstwo: [],
-      knowsection: []
+      cardsTwo: [],
+      knowSection: []
     },
     contact: {
-      titleform: '',
-      contacttitle: '',
-      contacttitleform: '',
-      contacttitlestrong: '',
-      contacttitlebreak: '',
-      formname: '',
-      formemail: '',
-      formcompany: '',
-      formphone: '',
-      formmessage: '',
-      formcheck: '',
-      formbreak: '',
-      formbutton: '',
-      checkboxError: ''
+      titleForm: '',
+      contactTitle: '',
+      contactTitleForm: '',
+      contactTitleStrong: '',
+      contacttitleBreak: '',
+      formName: '',
+      formEmail: '',
+      formCompany: '',
+      formCode: '',
+      formPhone: '',
+      formMessage: '',
+      formCheck: '',
+      formBreak: '',
+      formButton: '',
+      checkboxError: '',
+      formSubmitted: ''
     },
     blogs: {
-      bloginfo: []
+      blogInfo: []
     }
   }
 })

@@ -1,11 +1,13 @@
+/* eslint-disable @next/next/inline-script-id */
 'use client'
 import Banners from '@/components/banner'
 import CardsFuel from '@/components/cards-fuel'
 import FormFuelCard from '@/components/form-fuel-card'
+import FuelCardSections from '@/components/fuel-card-section'
 import Road from '@/components/road'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Script from 'next/script'
 import Footer from '../../../components/footer'
-import FuelCardSections from '../../../components/fuel-card-section'
 import Navbar from '../../../components/navbar'
 
 export default function fuelCard() {
@@ -13,20 +15,36 @@ export default function fuelCard() {
   const { t } = useI18nProvider()
   const title = (
     <p className="font-montserrat">
-      {t.fuelcard.pagetittle}{' '}
-      <strong className="fw-bold">{t.fuelcard.pagetittlestrong}</strong>
+      {t.fuelcard.pageTitle}{' '}
+      <strong className="fw-bold">{t.fuelcard.pagetitleStrong}</strong>
     </p>
   )
   const titleMobile = (
     <p className="font-montserrat text-dark-blue">
-      {t.fuelcard.pagetittle} <br />
-      <strong className="fw-bold">{t.fuelcard.pagetittlestrong}</strong>
+      {t.fuelcard.pageTitle} <br />
+      <strong className="fw-bold">{t.fuelcard.pagetitleStrong}</strong>
     </p>
   )
-  const titleForm = t.fuelcard.formtitle
+  const titleForm = t.fuelcard.formTitle
 
   return (
     <>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
+        ></Script>
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0XVT3QM87R');
+  `
+          }}
+        />
+      </head>
       <Navbar />
       <Banners
         hideIcons

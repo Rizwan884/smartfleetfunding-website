@@ -1,4 +1,5 @@
-import { BlogInfo } from '@/utils/types'
+import { MAX_WIDTH } from '@/constants/const'
+import { blogInfo } from '@/utils/types'
 import { useState } from 'react'
 import { Button, Col, Row } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
@@ -6,10 +7,10 @@ import Pagination from 'react-bootstrap/Pagination'
 import { useMediaQuery } from 'react-responsive'
 
 type IProps = {
-  blogs: BlogInfo[]
+  blogs: blogInfo[]
 }
 export default function Blog({ blogs }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const [selectedBlogIndex, setSelectedBlogIndex] = useState<number | null>(
     null
   )
@@ -230,9 +231,11 @@ export default function Blog({ blogs }: IProps) {
                             {blog.description}
                           </p>
                         )}
-                        <p className=" text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
-                          Leer mas...
-                        </p>
+                        {blog.readMore && (
+                          <p className="text-start fw-light fs-6 mt-1 text-dark-blue font-montserrat">
+                            {blog.readMore}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </Col>
@@ -316,10 +319,11 @@ export default function Blog({ blogs }: IProps) {
                             {blog.description}
                           </p>
                         )}
-
-                        <p className=" text-start fw-light fs-6 mt-1 m-2 text-dark-blue font-montserrat">
-                          Leer mas...
-                        </p>
+                        {blog.readMore && (
+                          <p className="text-start fw-light fs-6 mt-1 m-2 text-dark-blue font-montserrat">
+                            {blog.readMore}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </Col>

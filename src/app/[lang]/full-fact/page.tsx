@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/inline-script-id */
 'use client'
 
 import Banners from '@/components/banner'
 import Help from '@/components/help'
 import Ideas from '@/components/ideas'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Script from 'next/script'
 import Footer from '../../../components/footer'
 import SectionForm from '../../../components/form'
 import Navbar from '../../../components/navbar'
@@ -15,23 +17,39 @@ export default function fullFact() {
   const { t } = useI18nProvider()
   const title = (
     <p className="font-montserrat">
-      {t.fullcard.pagetittle}{' '}
+      {t.fullcard.pageTitle}{' '}
       <strong className="fw-bold">{t.fullcard.pagestrong}</strong>
     </p>
   )
   const titleMobile = (
     <p className="font-montserrat text-dark-blue">
-      {t.fullcard.pagetittle}{' '}
+      {t.fullcard.pageTitle}{' '}
       <strong className="fw-600">{t.fullcard.pagestrong}</strong>
     </p>
   )
 
-  const titleForm = t.fullcard.titleform
+  const titleForm = t.fullcard.titleForm
 
   const accordionItems = t.fullcard.accordionItems
 
   return (
     <>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
+        ></Script>
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0XVT3QM87R');
+  `
+          }}
+        />
+      </head>
       <Navbar />
       <Banners
         title={title}

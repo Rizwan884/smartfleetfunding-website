@@ -14,8 +14,8 @@ export default function Needs() {
       <div className="container mt-7 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <div className="line width-bf fw-600 mb-2 ms-3 align-item-center"></div>
-          <h1 className="fw-600 fs-2 text-center  text-dark-blue flex  align-items-center gap-3">
-            {t.freightbroker.needstitle}
+          <h1 className="fw-bold fs-2 text-center  text-dark-blue flex  align-items-center gap-3">
+            {t.freightbroker.needsTitle}
           </h1>
         </div>
       </div>
@@ -37,7 +37,7 @@ export default function Needs() {
               </Card>
             )
           )}
-          {t.freightbroker.needstwo.map(
+          {t.freightbroker.needsTwo.map(
             ({ title, descripcion, icon }: NeedsItems, key: number) => (
               <Card
                 key={key}
@@ -55,7 +55,7 @@ export default function Needs() {
           )}
         </div>
         <div className="row mx-0 px-0 px-md-auto mx-md-auto justify-content-center gap-3 gap-md-auto">
-          {t.freightbroker.needstwo.map(
+          {t.freightbroker.needsTwo.map(
             ({ title, descripcion, icon }: NeedsItems, key: number) => (
               <Card
                 key={key}
@@ -88,10 +88,11 @@ export default function Needs() {
                 className="me-2"
                 src="/images/sff-message-button-freight-broker.svg"
               />
-              {t.freightbroker.needsbutton}
+              {t.freightbroker.needsButton}
             </Button>
             <Button
               href="https://outlook.office365.com/owa/calendar/WebPageSales@smartfleetfunding.com/bookings/ "
+              target="_blank"
               className="contact_slide fw-bold fs-4 my-4 d-inline-block"
               variant="btn btn-custom"
             >
@@ -102,7 +103,7 @@ export default function Needs() {
                 className="me-2 mb-1"
                 src="/images/sff-user-button-freight-broker.svg"
               />
-              {t.freightbroker.needsbuttontwo}
+              {t.freightbroker.needsButtontwo}
             </Button>
           </div>
         </div>
@@ -110,9 +111,9 @@ export default function Needs() {
       <div className="container mt-7 pb-5 font-montserrat">
         <div className="d-flex flex-column align-items-center">
           <h1 className="f-500 pb-5 fs-2rem  text-center align-items-center gap-3  text-dark-blue">
-            {t.freightbroker.needsfinaltext} <br />
+            {t.freightbroker.needsFinalText} <br />
             <strong className="text-dark-blue f-bold">
-              {t.freightbroker.needsfinaltextstrong}
+              {t.freightbroker.needsFinalTextStrong}
             </strong>
           </h1>
         </div>

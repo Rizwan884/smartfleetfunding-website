@@ -1,3 +1,4 @@
+import { MAX_WIDTH_MD } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Image from 'next/image'
 import { useState } from 'react'
@@ -9,8 +10,11 @@ type ICard = {
   strong: string
 }
 export default function SectionVideo() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH_MD })
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [showModal, setShowModal] = useState(false)
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = useI18nProvider()
   const openModal = () => setShowModal(true)
   const closeModal = () => setShowModal(false)
@@ -18,7 +22,7 @@ export default function SectionVideo() {
     <>
       {isMobile ? (
         <div className="font-montserrat bg-white-rgb pb-5">
-          {t.home.sectionvideo.map(
+          {t.home.SectionVideo.map(
             ({ title, descripcion, strong }: ICard, key: number) => (
               <div key={key} className="">
                 <div className="text-left mt-5 p-5">
@@ -27,7 +31,7 @@ export default function SectionVideo() {
                     <div className="line"></div>
                   </div>
 
-                  <div className="lh-sm card-text-bottom fs-6 mx-auto text-center mt-5 fw-500">
+                  <div className="lh-sm card-text-video fs-6 mx-auto text-center mt-5 fw-500">
                     {descripcion}
                     <strong className="text-gray-dark">{strong}</strong>
                   </div>
@@ -35,13 +39,13 @@ export default function SectionVideo() {
               </div>
             )
           )}
-          <div className="col-5 embed-responsive embed-responsive-16by9  m-4 p-4 rounded-3">
+          <div className="col-12 md-col-5 embed-responsive embed-responsive-16by9 p-4 text-center p-md-4 rounded-3">
             <a href="#" onClick={openModal} className="position-relative">
               <Image
-                className="rounded-5"
-                src="/images/sff-video-banner.webp"
+                className="rounded-5 w-75"
+                src="/images/sff-banner-video.webp"
                 alt="Previsualización"
-                width={370}
+                width={340}
                 height={300}
               />
               <div className="position-absolute top-50 start-50 translate-middle">
@@ -74,13 +78,13 @@ export default function SectionVideo() {
         </div>
       ) : (
         <div className="font-montserrat row m-2">
-          {t.home.sectionvideo.map(
+          {t.home.SectionVideo.map(
             ({ title, descripcion, strong }: ICard, key: number) => (
               <div key={key} className="col-6">
                 <div className="text-left m-5 p-5">
                   <h2 className="fs-3 fw-bold ">{title}</h2>
                   <div className="line"></div>
-                  <div className="card-text-bottom fs-5  fw-400">
+                  <div className="card-text-video  fs-5  fw-400">
                     {descripcion}
                     <strong className="text-gray-dark">{strong}</strong>
                   </div>

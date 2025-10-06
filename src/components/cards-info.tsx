@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { Card, Col, Container, ListGroup, Row } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
@@ -10,19 +11,20 @@ type ICard = {
     items: string[]
   }[]
   icon: string
-  iconback: string
+  iconBack: string
+  href: string
 }
 
 export default function Cards() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>
       {isMobile ? (
         <div className="font-montserrat">
           <h2 className="fs-5 fw-bold text-center">
-            {t.home.headercardinfo[0].header}{' '}
-            {t.home.headercardinfo[0].descripcion}
+            {t.home.headerCardInfo[0].header}{' '}
+            {t.home.headerCardInfo[0].descripcion}
           </h2>
           <div className="d-flex justify-content-center ">
             <div className="line"></div>
@@ -67,7 +69,7 @@ export default function Cards() {
             </Col>
             <Col className="card-column mt-3">
               <Card.Body>
-                <a href="/instapay" className="text-decoration-none">
+                <a href="/fespay" className="text-decoration-none">
                   <ListGroup className="rounded-3">
                     <ListGroup.Item
                       className=" body-list-mobile bd-box "
@@ -101,7 +103,7 @@ export default function Cards() {
             </Col>
             <Col className="card-column mt-3">
               <Card.Body>
-                <a href="/" className="text-decoration-none">
+                <a href="/fuel-card" className="text-decoration-none">
                   <ListGroup className="rounded-3">
                     <ListGroup.Item
                       className=" body-list-mobile bd-box "
@@ -141,54 +143,61 @@ export default function Cards() {
       ) : (
         <Container className="font-montserrat">
           <h2 className=" fw-bold text-left">
-            {t.home.headercardinfo[0].header} <br />
-            {t.home.headercardinfo[0].descripcion}
+            {t.home.headerCardInfo[0].header} <br />
+            {t.home.headerCardInfo[0].descripcion}
           </h2>
           <div className="line"></div>
           <Row
             className="pt-5"
             style={{ minHeight: '600px', maxHeight: '600px' }}
           >
-            {t.home.carinfo.map(
-              ({ title, sections, icon, iconback }: ICard, key: number) => (
+            {t.home.cardsInfo.map(
+              (
+                { title, sections, icon, iconBack, href }: ICard,
+                key: number
+              ) => (
                 <Col
                   key={key}
                   className="card-column "
                   style={{ width: '300px' }}
                 >
                   <Card.Body style={{ fontSize: '15px', overflowY: 'auto' }}>
-                    <ListGroup>
-                      <ListGroup.Item className="body-list bd-box card-hb">
-                        <div className="icon-cards" style={{ height: 70 }}>
-                          <Image
-                            style={{ width: '62px' }}
-                            src={iconback}
-                            alt=""
-                          />
-                        </div>
-                        <Card.Title className="cards-title">{title}</Card.Title>
-                        <div className="cards-size">
-                          {sections.map((section, index) => (
-                            <div key={index}>
-                              <p className="mb-0 fw-600 text-green">
-                                <Image src={icon} alt="" /> {section.heading}
-                              </p>
-                              {section.items.map((item, itemIndex) => (
-                                <li
-                                  key={itemIndex}
-                                  className="list-group fw-400 text-dark-blue"
-                                >
-                                  {item}
-                                </li>
-                              ))}
-                              {index !== sections.length - 1 && (
-                                <div className="cards-line"></div>
-                              )}
-                            </div>
-                          ))}
-                        </div>
-                      </ListGroup.Item>
-                    </ListGroup>
+                    <a href={href} className="text-decoration-none">
+                      <ListGroup>
+                        <ListGroup.Item className="body-list bd-box card-hb">
+                          <div className="icon-cards" style={{ height: 70 }}>
+                            <Image
+                              style={{ width: '62px' }}
+                              src={iconBack}
+                              alt=""
+                            />
+                          </div>
+                          <Card.Title className="cards-title">
+                            {title}
+                          </Card.Title>
+                          <div className="cards-size">
+                            {sections.map((section, index) => (
+                              <div key={index}>
+                                <p className="mb-0 fw-600 text-green">
+                                  <Image src={icon} alt="" /> {section.heading}
+                                </p>
+                                {section.items.map((item, itemIndex) => (
+                                  <li
+                                    key={itemIndex}
+                                    className="list-group fw-400 text-dark-blue"
+                                  >
+                                    {item}
+                                  </li>
+                                ))}
+                                {index !== sections.length - 1 && (
+                                  <div className="cards-line"></div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </ListGroup.Item>
+                      </ListGroup>
+                    </a>
                   </Card.Body>
                 </Col>
               )

@@ -38,3 +38,5 @@ package-lock.json
 yarn.lock
 
 
+nginx.cof
+ssl-renovation.md

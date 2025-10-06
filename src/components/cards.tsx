@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { Carousel, Col, Container, Row } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
@@ -9,23 +10,23 @@ type ICard = {
   regular: string
   strong: string
   icon: string
-  iconback: string
+  iconBack: string
 }
 export default function Cards() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>
       {isMobile ? (
         <Carousel
           id="carousel-mobile"
-          className="font-montserrat card-container "
+          className="font-montserrat card-container"
           controls={true}
         >
           {t.home.cards.map(
             ({ title, regular, strong, icon }: ICard, key: number) => (
               <Carousel.Item key={key}>
-                <Col xs={12} md={4} className="card-column" key={key}>
+                <Col xs={12} lg={4} className="card-column" key={key}>
                   <div className="mobile-card">
                     <div className="card w-100 h-75">
                       <div className="front-mobile font-montserrat fw-600">
@@ -38,7 +39,7 @@ export default function Cards() {
                             <div className="line-front"></div>
                           </div>
                         </div>
-                        <div className="card-text-bottom-back fw-400 mt-3">
+                        <div className="card-text-bottom-back ms-4 fw-400 mt-3">
                           {regular}
                           <strong>{strong}</strong>
                         </div>
@@ -61,7 +62,7 @@ export default function Cards() {
                   regular,
                   strong,
                   icon,
-                  iconback
+                  iconBack
                 }: ICard,
                 key: number
               ) => (
@@ -73,7 +74,7 @@ export default function Cards() {
                           <Image className="icons" src={icon} alt="" />
                         </div>
                         <div className="d-flex flex-column align-items-end align-items-md-center">
-                          <div className="card-text">{title}</div>
+                          <div className="card-text fw-bold">{title}</div>
                           <div className="line-front"></div>
                         </div>
                         <div className="card-text-bottom  fw-400">
@@ -82,7 +83,7 @@ export default function Cards() {
                       </div>
                       <div className="back font-montserrat fw-600">
                         <div className="card-icon-back">
-                          <Image className="icons" src={iconback} alt="" />
+                          <Image className="icons" src={iconBack} alt="" />
                         </div>
                         <div className="card-text-back ">{title}</div>
                         <div className="line-back"></div>

@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { IFooter } from '@/utils/types'
 import Link from 'next/link'
@@ -7,7 +8,7 @@ import { useMediaQuery } from 'react-responsive'
 import ScrollToTopButton from '../components/scroolTop'
 
 export default function Footer() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>
@@ -57,10 +58,12 @@ export default function Footer() {
                       {fullfact}
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/fespay">{fespay}</NavDropdown.Item>
-                    <NavDropdown.Item href="/freight-broker-program">
+                    <NavDropdown.Item href="/fuel-card">
                       {fuelcard}
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#">{freightbroke}</NavDropdown.Item>
+                    <NavDropdown.Item href="freight-broker-program">
+                      {freightbroke}
+                    </NavDropdown.Item>
                   </NavDropdown>
                   <hr className="w-93 m-0 mx-auto" />
                   <Nav.Link className="text-green fw-600" href="/faqs">
@@ -221,7 +224,7 @@ export default function Footer() {
                           <NavDropdown.Item href="/fespay">
                             {fespay}
                           </NavDropdown.Item>
-                          <NavDropdown.Item href="#">
+                          <NavDropdown.Item href="/fuel-card">
                             {fuelcard}
                           </NavDropdown.Item>
                           <NavDropdown.Item href="/freight-broker-program">
@@ -256,19 +259,44 @@ export default function Footer() {
               </Container>
             </Navbar>
           </Container>
-          <div className="text-center py-5">
-            <Image
-              src="/images/sff-logo-footer.svg"
-              width="174"
-              height="54"
-              className="d-inline-block align-top"
-              alt="SFF Logo"
-            />
+          <div className="flex text-center">
+            <div className=" py-5">
+              <Image
+                src="/images/sff-logo-footer.svg"
+                width="174"
+                height="54"
+                className="d-inline-block align-top"
+                alt="SFF Logo"
+              />
+              <div className="mt-2">
+                <Link
+                  href="/privacy"
+                  target="_blank"
+                  className="text-decoration-none text-green"
+                  passHref={true}
+                >
+                  <strong>{t.fullcard.form[0].strong}</strong>
+                </Link>
+              </div>
+            </div>
+
+            <div> </div>
           </div>
+
           <div className=" font-montserrat d-flex position-relative justify-content-between align-items-center text-left py-3 px-5 bg-green">
             <p style={{ margin: 0 }}>
               &copy;2024 Smart Funding Team All Rights Reserved
             </p>
+            <div className="mt-2 mx-5 fs-6">
+              <Link
+                href="/terms-use"
+                target="_blank"
+                className="text-decoration-none text-white"
+                passHref={true}
+              >
+                Terms Of Use
+              </Link>
+            </div>
             <div
               className="d-flex position-absolute"
               style={{ right: '66px', top: '-11px' }}

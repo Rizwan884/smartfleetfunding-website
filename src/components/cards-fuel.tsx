@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { Card } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
@@ -8,13 +9,13 @@ type ICard = {
 }
 export default function CardsFuel() {
   const { t } = useI18nProvider()
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   return (
     <>
       {isMobile ? (
         <div className="card-container font-montserrat mt-1 h-100 flex-column w-100">
           <div className="row mx-0 px-0 px-md-auto mx-md-auto mb-3 w-75 justify-content-center gap-3 gap-md-auto">
-            {t.fuelcard.cardsfuel.map(
+            {t.fuelcard.CardsFuel.map(
               ({ strong, icon }: ICard, key: number) => (
                 <Card
                   key={key}
@@ -38,7 +39,7 @@ export default function CardsFuel() {
       ) : (
         <div className="card-container font-montserrat mt-1 h-100 flex-column w-100">
           <div className="row mx-0 px-0 px-md-auto mx-md-auto mb-3 w-65 justify-content-center gap-3 gap-md-auto">
-            {t.fuelcard.cardsfuel.map(
+            {t.fuelcard.CardsFuel.map(
               ({ strong, icon }: ICard, key: number) => (
                 <Card
                   key={key}

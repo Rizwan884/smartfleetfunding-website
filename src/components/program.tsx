@@ -1,17 +1,18 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Image from 'next/image'
 import { Container, Row } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
 export default function Programs() {
   const { t } = useI18nProvider()
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   return (
     <>
       {isMobile ? (
         <section className="py-5 bg-white-shadow font-montserrat">
           <Container>
             <h1 className="fw-bold  fs-3 mb-0 mx-4 w-100">
-              {t.freightbroker.programtitle}
+              {t.freightbroker.programTitle}
             </h1>
             <br />
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
@@ -40,8 +41,8 @@ export default function Programs() {
         <section className="py-5 bg-white-shadow font-montserrat">
           <Container>
             <h1 className="fw-bold fs-2 mb-0 mx-4 w-75">
-              {t.freightbroker.programtitleweb} <br />
-              {t.freightbroker.programtitlewebbreak}
+              {t.freightbroker.programTitleWeb} <br />
+              {t.freightbroker.programTitleWebBreak}
             </h1>
             <div className="line-program mt-0 mx-4 mt-1 w-3"></div>
             <br />

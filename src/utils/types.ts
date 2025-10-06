@@ -4,6 +4,11 @@ interface Navbar {
   faq: string
   aboutUs: string
   contact: string
+  login: string
+}
+interface ModalNavbar {
+  titleUs: string
+  titleCn: string
 }
 
 interface CurrentLanguage {
@@ -22,7 +27,7 @@ interface HomeCard {
   regular: string
   strong: string
   icon: string
-  iconback: string
+  iconBack: string
 }
 
 interface HomeSection {
@@ -30,14 +35,15 @@ interface HomeSection {
   items: string[]
 }
 
-interface HomeCarInfo {
+interface HomecardsInfo {
   title: string
+  href: string
   sections: HomeSection[]
   icon: string
-  iconback: string
+  iconBack: string
 }
 
-interface HeaderCardInfo {
+interface headerCardInfo {
   header: string
   descripcion: string
 }
@@ -61,11 +67,12 @@ export interface IFooter {
   curious: string
 }
 
-interface SectionInfo {
+interface sectionInfo {
   title: string
+  titleBreak: string
   descripcion: string
-  linebreak: string
-  breaktext: string
+  lineBreak: string
+  breakText: string
   button: string
 }
 
@@ -73,8 +80,9 @@ interface Slider {
   title: string
   strong: string
   button: string
+  href: string
   image: string
-  imagemobile: string
+  imageMobile: string
 }
 
 interface FullCardHeader {
@@ -101,11 +109,13 @@ interface FormItem {
   email: string
   company: string
   phone: string
+  code: string
   descripcion: string
   checkboxError: string
   check: string
   strong: string
   button: string
+  formSubmitted: string
 }
 
 interface Testimonial {
@@ -139,6 +149,7 @@ interface InstapayForm {
   name: string
   email: string
   company: string
+  code: string
   phone: string
   broker: string
   comments: string
@@ -146,6 +157,7 @@ interface InstapayForm {
   check: string
   strong: string
   button: string
+  formSubmitted: string
 }
 
 interface InstapayAccordionItem {
@@ -164,7 +176,7 @@ interface FuelCardItem {
   strong: string
 }
 
-interface FuelCardSection {
+interface fuelCardSection {
   title: string
   descripcion: string[]
   eventKey: number
@@ -224,13 +236,13 @@ interface Card {
   icon: string
 }
 
-interface KnowSection {
+interface knowSection {
   title: string
   descripcion: string
   strong: string
 }
 
-export interface BlogInfo {
+export interface blogInfo {
   id: number
   title: string
   description: string
@@ -239,131 +251,139 @@ export interface BlogInfo {
   desktopSrc: string
   date: string
   type: string
+  readMore: string
 }
 
 export type IJSON = {
   navbar: Navbar
+  modalNavbar: ModalNavbar
   languages: {
     current: CurrentLanguage
     available: AvailableLanguage[]
   }
 
   home: {
-    cardstitle: string
+    cardsTitle: string
     cards: HomeCard[]
-    carinfo: HomeCarInfo[]
-    headercardinfo: HeaderCardInfo[]
-    sectionvideo: SectionVideo[]
+    cardsInfo: HomecardsInfo[]
+    headerCardInfo: headerCardInfo[]
+    SectionVideo: SectionVideo[]
     footer: IFooter[]
-    sectioninfo: SectionInfo[]
+    sectionInfo: sectionInfo[]
     slider: Slider[]
   }
   fullcard: {
     header: FullCardHeader[]
     carruzel: CarruzelItem[]
-    helptittle: string
-    helpcards: HelpCard[]
-    helpcardstwo: HelpCard[]
+    helpTitle: string
+    helpCards: HelpCard[]
+    helpcardsTwo: HelpCard[]
     form: FormItem[]
     testimonials: Testimonial[]
     accordionItems: AccordionItem[]
-    titleform: string
-    pagetittle: string
+    titleForm: string
+    pageTitle: string
     pagestrong: string
   }
   fespay: {
-    pagetittle: string
+    pageTitle: string
     pagestrong: string
-    welcometittle: string
-    welcomedescripcion: string
-    stepstittle: string
+    welcomeTitle: string
+    welcomeDescription: string
+    stepsTitle: string
     steps: InstapayStep[]
     Benefits: InstapayBenefit[]
-    Benefitstwo: InstapayBenefit[]
-    benefitstitle: string
+    BenefitsTwo: InstapayBenefit[]
+    benefitsTitle: string
     form: InstapayForm[]
-    accordiontittle: string
+    accordionTitle: string
     accordionItems: InstapayAccordionItem[]
   }
   fuelcard: {
-    pagetittle: string
-    pagetittlestrong: string
+    pageTitle: string
+    pagetitleStrong: string
     road: RoadCard[]
-    cardsfuel: FuelCardItem[]
-    fuelcardsection: FuelCardSection[]
-    fuelcardsectiontitle: string
-    fuelcardsectiondescription: string
-    formtitle: string
-    formselectsoptions: FuelCardSelectOption[]
-    formfullname: string
-    formemail: string
-    formcompany: string
-    formphone: string
-    formmessage: string
+    CardsFuel: FuelCardItem[]
+    fuelCardSection: fuelCardSection[]
+    fuelCardSectionTitle: string
+    fuelCardSectionDescription: string
+    formTitle: string
+    formSelectsOptions: FuelCardSelectOption[]
+    formFullName: string
+    formEmail: string
+    formCompany: string
+    formCode: string
+    formPhone: string
+    formMessage: string
     checkboxError: string
-    formcheck: string
-    formbreak: string
-    formbutton: string
+    formCheck: string
+    formBreak: string
+    formButton: string
+    formSubmitted: string
   }
   freightbroker: {
-    pagetitle: string
-    titlestrong: string
-    titleform: string
-    needstitle: string
+    pageTitle: string
+    titleStrong: string
+    titleForm: string
+    needsTitle: string
     needs: Need[]
-    needstwo: Need[]
-    needsbutton: string
-    needsbuttontwo: string
-    needsfinaltext: string
-    needsfinaltextstrong: string
-    programtitle: string
-    programtitleweb: string
-    programtitlewebbreak: string
+    needsTwo: Need[]
+    needsButton: string
+    needsButtontwo: string
+    needsFinalText: string
+    needsFinalTextStrong: string
+    programTitle: string
+    programTitleWeb: string
+    programTitleWebBreak: string
     programs: Program[]
     provide: Provide[]
-    providetitle: string
-    helpyou: HelpYou
-    formfullname: string
-    formemail: string
-    formcompany: string
-    formphone: string
-    formmessage: string
+    provideTitle: string
+    HelpYou: HelpYou
+    formFullName: string
+    formEmail: string
+    formCompany: string
+    formCode: string
+    formPhone: string
+    formMessage: string
     checkboxError: string
-    formcheck: string
-    formbreak: string
-    formbutton: string
+    formCheck: string
+    formBreak: string
+    formButton: string
+    formSubmitted: string
   }
   faqs: {
     accordionInstaItems: AccordionInstaItem[]
-    faqtitle: string
+    faqTitle: string
   }
   about: {
-    pagetitle: string
+    pageTitle: string
     pagestrong: string
-    knowtitle: string
-    knowstrong: string
+    knowTitle: string
+    knowStrong: string
     cards: Card[]
-    cardstwo: Card[]
-    knowsection: KnowSection[]
+    cardsTwo: Card[]
+    knowSection: knowSection[]
   }
   contact: {
-    titleform: string
-    contacttitle: string
-    contacttitleform: string
-    contacttitlestrong: string
-    contacttitlebreak: string
-    formname: string
-    formemail: string
-    formcompany: string
-    formphone: string
-    formmessage: string
+    titleForm: string
+    contactTitle: string
+    contactTitleForm: string
+    contactTitleStrong: string
+    contacttitleBreak: string
+    formName: string
+    formEmail: string
+    formCompany: string
+    formCode: string
+    formPhone: string
+    formMessage: string
     checkboxError: string
-    formcheck: string
-    formbreak: string
-    formbutton: string
+    formCheck: string
+    formBreak: string
+    formButton: string
+    formSubmitted: string
   }
 
   blogs: {
-    bloginfo: BlogInfo[]
+    blogInfo: blogInfo[]
   }
 }

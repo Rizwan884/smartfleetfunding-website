@@ -180,7 +180,7 @@ body {
   margin-top: -14px !important;
 }
 .mt-40 {
-  margin-top: -40px;
+  margin-top: -20px;
 }
 .mt-50 {
   margin-top: -50px;
@@ -194,6 +194,11 @@ body {
 }
 
 /*-------------------------NavBar-------------------------------*/
+.nv-modal{
+  display: flex;
+  justify-content: space-around;
+;
+}
 .nv-image {
   @media (max-width: 767px) {
     .dropdown-menu {
@@ -233,6 +238,9 @@ img {
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   -o-transform: rotate(270deg);
+}
+.navbar-toggler {
+  border: none !important;
 }
 .collapsed span {
   transform: rotate(180deg);
@@ -274,7 +282,6 @@ span:hover {
 
 .dropdown-item:active {
   color: var(--green) !important;
-  /* background: none; */
 }
 .dropdown-item:hover {
   color: var(--green) !important;
@@ -288,7 +295,7 @@ span:hover {
   background: var(--green) !important;
   border-radius: 4px;
 }
-#form-instapay .btn {
+#form-fespay .btn {
   background: var(--green) !important;
   border-radius: 4px;
 }
@@ -307,6 +314,9 @@ span:hover {
   }
 }
 /*-------------------------*/
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 var(--gray-transparent);
+}
 @media (max-width: 767px) {
   .dropdown-menu {
     width: 100%;
@@ -369,16 +379,21 @@ span:hover {
 }
 .gray-section {
   flex: 1;
-  background-color: #dddddd; /* Color gris de fondo */
+  background-color: #dddddd;
   padding: 100px;
 }
 
 .white-section {
   flex: 1;
-  background-color: #ffffff; /* Color blanco de fondo */
+  background-color: #ffffff;
   padding: 100px;
-  /* max-height: 936px;
-  min-height: 936px; */
+
+}
+
+@media (max-width: 450px) {
+  .white-section {
+    padding: 60px;
+  }
 }
 
 /*-------------------------Sections Mobile------------------*/
@@ -406,13 +421,13 @@ span:hover {
 .card-column {
   display: flex;
   justify-content: space-evenly;
-  /* margin-left: 40px; */
+ 
 }
 .flip-container {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  /* border: 1px solid #ccc; */
+
   perspective: 1000px;
 }
 
@@ -469,7 +484,7 @@ span:hover {
 
 .icons {
   width: 54px;
-  margin-bottom: 10px;
+  margin-bottom: -5px;
 }
 .icons2 {
   width: 40px;
@@ -479,6 +494,7 @@ span:hover {
 .card-icon,
 .card-text {
   font-size: 35px;
+  
   backface-visibility: hidden;
 }
 .card-icon-back,
@@ -492,6 +508,14 @@ span:hover {
 .card-text-bottom {
   font-size: 19px;
   line-height: 20px;
+  margin-left: 11px;
+  margin-right: 11px;
+  margin-top: 20px;
+  backface-visibility: hidden;
+}
+.card-text-video {
+  font-size: 19px;
+  line-height: 20px;
   margin-top: 20px;
   backface-visibility: hidden;
 }
@@ -503,6 +527,7 @@ span:hover {
   backface-visibility: hidden;
   line-height: 20px;
 }
+
 .line-front {
   width: 60px;
   height: 3px;
@@ -528,14 +553,17 @@ span:hover {
   border-radius: 15px;
   box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.2);
 }
+.card-image-mobile {
+  width: 15%;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
 /*-------------------------Cards Mobile----------------------------*/
 .mobile-card {
   width: 300px;
   height: 300px;
 }
-/* #carousel-mobile .carousel-indicators [data-bs-target] {
-  background-color: red !important;
-} */
+
 
 #carousel-mobile .carousel-indicators [data-bs-target] {
   background-color: rgba(217, 217, 217, 1);
@@ -550,7 +578,7 @@ span:hover {
 }
 #carousel-mobile .carousel-indicators li {
   border-radius: 50% !important;
-  background-color: red !important; /* Color verde */
+  background-color: red !important;
 }
 
 .front-mobile {
@@ -586,7 +614,6 @@ span:hover {
   color: #02da68;
   font-weight: bold;
   font-size: 20px;
-  /* margin: 10px; */
   line-height: 20px;
 }
 .bd-box-mobile {
@@ -659,7 +686,6 @@ span:hover {
 /*----------------------------Hover----------------------------*/
 .card-hb {
   color: white;
-  /* transition: background-color 0.4s ease-in-out; */
 }
 .icon-cards {
   display: none;
@@ -691,6 +717,7 @@ span:hover {
 .contact_slide {
   background: #02dd68;
   color: #051630;
+  font-size: 0.9rem;
 }
 .contact_slide:hover {
   background: #02dd68;
@@ -795,7 +822,6 @@ span:hover {
     justify-content: center;
     margin: auto;
     padding-top: 20px;
-    top: 95%;
   }
   #idea-carrusel .carousel-indicators [data-bs-target] {
     background-color: var(--white-gray);
@@ -810,6 +836,14 @@ span:hover {
 /*---------------Help-----------*/
 #help .card-text {
   font-size: 18px;
+}
+
+#card-descripcion {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .help-line {
   margin-left: 40%;
@@ -833,15 +867,17 @@ span:hover {
 #form #message::placeholder,
 #phone::placeholder,
 #company::placeholder,
+#code::placeholder,
 #email::placeholder,
 #name::placeholder {
   color: var(--white);
   font-size: 11px;
 }
-#form-instapay #freight::placeholder,
+#form-fespay #freight::placeholder,
 #comments::placeholder,
 #fullphone::placeholder,
 #fullcompany::placeholder,
+#fullcode::placeholder,
 #fullemail::placeholder,
 #fullname::placeholder {
   color: var(--gray-dark);
@@ -854,6 +890,21 @@ span:hover {
 #form-fuel-card,
 .form-select {
   --bs-form-select-bg-img: url(../../../public/images/sff-arrow-down-fuel.svg) !important;
+}
+.fuel-card-road img {
+  padding-right: 50px;
+  padding-top: 25px;
+}
+
+@media (min-width: 507px) {
+  .fuel-card-road {
+    display: flex;
+    justify-content: center;
+  }
+  .fuel-card-road img {
+    padding-right: 0px;
+    padding-top: 0px;
+  }
 }
 /*-----------Testimonial---------*/
 #testimonial .carousel-item .card {
@@ -982,11 +1033,13 @@ input[type='radio']:checked ~ label {
   }
 }
 /*----------steps----------*/
+#step-title {
+  font-size: calc(1.1rem + 0.6vw);
+}
 .step-container {
   display: flex;
   margin-bottom: 20px;
   border-left: 2px solid var(--dark-blue);
-  padding-right: 20px;
   padding-left: 0px;
   margin-top: -25px;
   padding-bottom: 30px;
@@ -1074,16 +1127,16 @@ input[type='radio']:checked ~ label {
   border-bottom: 1px solid #b3b3b26e;
 }
 .testimonial-img1 {
-  margin-top: -127px;
+  margin-top: -110px;
 }
 .testimonial-img2 {
-  margin-top: -34px;
+  margin-top: -10px;
 }
 .testimonial-img3 {
-  margin-top: -34px;
+  margin-top: -10px;
 }
 .testimonial-img4 {
-  margin-top: -34px;
+  margin-top: -10px;
 }
 
 /*----------Needs---------------*/
@@ -1102,10 +1155,6 @@ input[type='radio']:checked ~ label {
     height: auto;
     padding: 30px 10px;
     width: 100%;
-  }
-  .contact_slide:nth-child(1) {
-    margin-top: 10px;
-    margin-left: 35px;
   }
 }
 
@@ -1183,4 +1232,10 @@ input[type='radio']:checked ~ label {
 /*----------------Modal------------*/
 .modal-content {
   background-color: var(--dark-blue) !important;
+}
+
+
+/*-----------------HubSpot-----------------*/
+.widget-align-right{
+  margin-bottom: 50px !important;
 }

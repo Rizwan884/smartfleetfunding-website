@@ -8,7 +8,7 @@ export default function Contact() {
           <div className="d-flex flex-column mt-5 ps-3 ps-md-5">
             <div className="line width-bf fw-600 mb-2 ms-1 align-item-center"></div>
             <h1 className="fw-600 fsm-4 fs-2 text-left  flex  align-items-left gap-3">
-              {t.contact.contacttitle}
+              {t.contact.contactTitle}
             </h1>
           </div>
         </div>

@@ -1,16 +1,34 @@
+/* eslint-disable @next/next/inline-script-id */
 'use client'
 
 import Contact from '@/components/contact'
 import FormContact from '@/components/form-contact'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Script from 'next/script'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 
 export default function AboutUs() {
   const { t } = useI18nProvider()
-  const titleForm = t.contact.titleform
+  const titleForm = t.contact.titleForm
   return (
     <>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
+        ></Script>
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0XVT3QM87R');
+  `
+          }}
+        />
+      </head>
       <Navbar />
       <Contact />
       <FormContact

@@ -1,3 +1,4 @@
+import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { Button, Carousel } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
@@ -12,23 +13,27 @@ type ICard = {
   title: string
   strong: string
   button: string
+  href: string
   image: string
-  imagemobile: string
+  imageMobile: string
 }
 export default function Slider() {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH })
   const { t } = useI18nProvider()
   return (
     <>
       {isMobile ? (
         <Carousel className="font-montserrat" controls={false}>
           {t.home.slider.map(
-            ({ title, strong, button, imagemobile }: ICard, key: number) => (
+            (
+              { title, strong, button, imageMobile, href }: ICard,
+              key: number
+            ) => (
               <Carousel.Item key={key}>
                 <div
                   style={{
                     ...carouselImage,
-                    backgroundImage: `url("${imagemobile}")`
+                    backgroundImage: `url("${imageMobile}")`
                   }}
                 >
                   <div className="slider-container-mobile mx-4">
@@ -36,10 +41,10 @@ export default function Slider() {
                       {title} <br />
                       <strong>{strong}</strong>
                     </h1>
-                    <div className="mt-5">
+                    <div className="mt-4">
                       <Button
-                        href="tel:+18302097589"
-                        className="contact_slide fw-bold  my-4 h-25 d-inline-block"
+                        href={href}
+                        className="contact_slide fw-bold h-25 d-inline-block"
                         variant="btn btn-custom"
                       >
                         {button}
@@ -54,7 +59,7 @@ export default function Slider() {
       ) : (
         <Carousel className="font-montserrat" controls={false}>
           {t.home.slider.map(
-            ({ title, strong, button, image }: ICard, key: number) => (
+            ({ title, strong, button, image, href }: ICard, key: number) => (
               <Carousel.Item key={key}>
                 <div
                   style={{
@@ -68,7 +73,7 @@ export default function Slider() {
                       <strong>{strong}</strong>
                     </h1>
                     <Button
-                      href="tel:+18302097589"
+                      href={href}
                       className="contact_slide fw-bold  my-4 h-25 d-inline-block"
                       variant="btn btn-custom"
                     >

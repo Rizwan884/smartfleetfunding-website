@@ -1,23 +1,29 @@
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Link from 'next/link'
+import { useState } from 'react'
+import { Button } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Navbar from 'react-bootstrap/Navbar'
+import LoginModal from './modal-navbar'
 
 export default function SFFNavbar() {
   const { t } = useI18nProvider()
 
+  const [showModal, setShowModal] = useState(false)
+
   return (
     <>
       <div className="font-montserrat text-left p-2 px-5 bg-green">
-        <Link href="tel:+18888755506" className="text-white ms-2">
-          Toll-Free: +1 (888) 875-5506{' '}
-        </Link>
-        <Link href="https://wa.me/18302097589" className="text-white ms-2">
-          WhatsApp: +1 (830) 209-7589{' '}
+        <Link
+          href="https://wa.me/18888755506"
+          target="_blank"
+          className="text-white ms-2"
+        >
+          Toll-Free: +1 (830) 209-7589{' '}
         </Link>
       </div>
       <Navbar expand="lg" className="font-montserrat nv-image">
@@ -32,7 +38,7 @@ export default function SFFNavbar() {
             />
           </Navbar.Brand>
           <div className="d-flex align-items-center gap-3">
-            <div id="button-language" className="d-flex d-md-none gap-2">
+            <div id="button-language" className="d-flex d-lg-none gap-2">
               <LanguageSwitcher />
             </div>
             <Navbar.Toggle
@@ -71,7 +77,7 @@ export default function SFFNavbar() {
                     className="text-start text-dark"
                     href="/fespay"
                   >
-                    Fespay
+                    FES Pay
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className="text-start text-dark"
@@ -115,11 +121,24 @@ export default function SFFNavbar() {
               >
                 {t.navbar.contact}
               </Nav.Link>
-              <LanguageSwitcher />
+              <Button
+                onClick={() => setShowModal(!showModal)}
+                className="contact_slide fw-bold h-25 d-inline-block"
+                variant="btn btn-custom"
+              >
+                {t.navbar.login}
+              </Button>
+              <div id="button-language" className="d-none d-lg-block gap-2">
+                <LanguageSwitcher />
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <LoginModal
+        show={showModal}
+        handleClose={() => setShowModal(!showModal)}
+      />
     </>
   )
 }

@@ -1,17 +1,20 @@
 import { I18nProvider } from '@/context/I18nProvider'
 import type { Metadata } from 'next'
+import { ReCaptchaProvider } from 'next-recaptcha-v3'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import '../styles/globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Smart Fleet Funding: Freight Factoring to carriers in North America',
+  title:
+    'Smart Fleet Funding Corp.: Freight Factoring to carriers in North America',
   icons: '/images/sff-icon.svg',
   description:
-    'Smart Fleet Funding helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
+    'Smart Fleet Funding Corp. helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
   keywords: [
-    'Smart Fleet Funding',
+    'Smart Fleet Funding Corp.',
     'freight factoring',
     'North America',
     'Freight cash flow',
@@ -29,11 +32,11 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      'Smart Fleet Funding: Freight Factoring to carriers in North America',
+      'Smart Fleet Funding Corp.: Freight Factoring to carriers in North America',
     description:
-      'Smart Fleet Funding helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
+      'Smart Fleet Funding Corp. helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
     url: 'https://www.smartfleetfunding.com',
-    siteName: 'Smart Fleet Funding',
+    siteName: 'Smart Fleet Funding Corp.',
     images: [
       {
         url: '/images/sff-opengraph.png',
@@ -54,10 +57,22 @@ export default function RootLayout({
   params: { lang: string }
 }) {
   return (
-    <I18nProvider lang={lang}>
-      <html lang={lang}>
-        <body className={inter.className}>{children}</body>
-      </html>
-    </I18nProvider>
+    <ReCaptchaProvider
+      reCaptchaKey="6LduTr0pAAAAAGe99haSZO2u-x-zHCBic61DyjX2"
+      language="en"
+    >
+      <I18nProvider lang={lang}>
+        <html lang={lang}>
+          <Script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js-na1.hs-scripts.com/49277082.js"
+          />
+          <body className={inter.className}>{children}</body>
+        </html>
+      </I18nProvider>
+    </ReCaptchaProvider>
   )
 }

@@ -16,9 +16,11 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
     email: '',
     company: '',
     phone: '',
+    code: '',
     message: ''
   })
   const [error, setError] = useState<string>('')
+  const [formSubmitted, setFormSubmitted] = useState<boolean>(false)
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -42,18 +44,16 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
           email: '',
           company: '',
           phone: '',
+          code: '',
           message: ''
         })
         setCheckboxChecked(false)
-        // eslint-disable-next-line no-console
-        console.log('response status: ' + response.status)
+        setFormSubmitted(true)
       } else {
-        // eslint-disable-next-line no-console
-        console.error('Failed to submit form', response)
+        alert('Failed to submit form' + response)
       }
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error('Error submitting form:', error)
+      alert('Error submitting form:' + error)
     }
   }
 
@@ -105,7 +105,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.freightbroker.formfullname}
+                  placeholder={t.freightbroker.formFullName}
                 ></input>
               </div>
               <div className="col">
@@ -117,7 +117,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   value={formData.company}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.freightbroker.formcompany}
+                  placeholder={t.freightbroker.formCompany}
                 ></input>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.freightbroker.formemail}
+                  placeholder={t.freightbroker.formEmail}
                 ></input>
               </div>
               <div className="col">
@@ -143,7 +143,21 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  placeholder={t.freightbroker.formphone}
+                  placeholder={t.freightbroker.formPhone}
+                ></input>
+              </div>
+            </div>
+            <div className="mb-3">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control px-3 bg-grey-transparent text-white"
+                  id="code"
+                  name="code"
+                  value={formData.code}
+                  onChange={handleInputChange}
+                  required
+                  placeholder={t.freightbroker.formCode}
                 ></input>
               </div>
             </div>
@@ -156,7 +170,7 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                 onChange={handleInputChange}
                 required
                 rows={3}
-                placeholder={t.freightbroker.formmessage}
+                placeholder={t.freightbroker.formMessage}
               ></textarea>
             </div>
             <div className="mb-3 form-check d-flex justify-content-between">
@@ -174,14 +188,14 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
                     className="form-check-label"
                     htmlFor="flexCheckDefault"
                   >
-                    {t.freightbroker.formcheck}
+                    {t.freightbroker.formCheck}
                     <Link
                       href="/privacy"
                       target="_blank"
                       className="text-decoration-none text-green"
                       passHref={true}
                     >
-                      <strong>{t.freightbroker.formbreak}</strong>
+                      <strong>{t.freightbroker.formBreak}</strong>
                     </Link>
                   </label>
                 </div>
@@ -189,9 +203,16 @@ export default function FormFreight({ backgroundImage, titleForm }: IProps) {
               </div>
 
               <button type="submit" className="btn fw-600">
-                {t.freightbroker.formbutton}
+                {t.freightbroker.formButton}
               </button>
             </div>
+            {formSubmitted && (
+              <strong>
+                <div className="text-green">
+                  {t.freightbroker.formSubmitted}
+                </div>
+              </strong>
+            )}
           </form>
         </div>
         <div className="md-w-50 w-100">

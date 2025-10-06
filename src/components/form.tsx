@@ -17,9 +17,11 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
     email: '',
     company: '',
     phone: '',
+    code: '',
     message: ''
   })
   const [error, setError] = useState<string>('')
+  const [formSubmitted, setFormSubmitted] = useState<boolean>(false)
   // Function to handle form submission
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -43,18 +45,16 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
           email: '',
           company: '',
           phone: '',
+          code: '',
           message: ''
         })
         setCheckboxChecked(false)
-        // eslint-disable-next-line no-console
-        console.log('response status: ' + response.status)
+        setFormSubmitted(true)
       } else {
-        // eslint-disable-next-line no-console
-        console.error('Failed to submit form', response)
+        alert('Failed to submit form' + response)
       }
     } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error('Error submitting form:', error)
+      alert('Error submitting form:' + error)
     }
   }
 
@@ -148,6 +148,20 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
               </div>
             </div>
             <div className="mb-3">
+              <div className="col">
+                <input
+                  type="text"
+                  className="form-control px-3 bg-grey-transparent text-white"
+                  id="code"
+                  name="code"
+                  value={formData.code}
+                  onChange={handleInputChange}
+                  required
+                  placeholder={t.fullcard.form[0].code}
+                ></input>
+              </div>
+            </div>
+            <div className="mb-3">
               <textarea
                 className="form-control bg-grey-transparent text-white"
                 id="message"
@@ -192,6 +206,13 @@ export default function SectionForm({ backgroundImage, titleForm }: IProps) {
                 {t.fullcard.form[0].button}
               </button>
             </div>
+            {formSubmitted && (
+              <strong>
+                <div className="text-green">
+                  {t.fullcard.form[0].formSubmitted}
+                </div>
+              </strong>
+            )}
           </form>
         </div>
         <div className="md-w-50 w-100">

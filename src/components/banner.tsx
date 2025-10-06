@@ -1,3 +1,4 @@
+import { MAX_WIDTH_MD, MAX_WIDTH_SM } from '@/constants/const'
 import Image from 'react-bootstrap/Image'
 import { useMediaQuery } from 'react-responsive'
 
@@ -16,7 +17,9 @@ export default function Banners({
   mobileBackgroundImage,
   hideIcons = false
 }: IProps) {
-  const isMobile = useMediaQuery({ maxWidth: 650 })
+  const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH_SM })
+  const showIcons = useMediaQuery({ minWidth: MAX_WIDTH_MD })
+
   return (
     <>
       <div
@@ -36,35 +39,30 @@ export default function Banners({
             <div className="mt-4 line"></div>
             {title && (
               <div className="w-100">
-                <h1 className="text-start fw-light fs-1  text-white font-montserrat">
+                <h1 className="text-start fw-light fs-1 text-white font-montserrat">
                   {titleMobile}
                 </h1>
               </div>
             )}
           </div>
         ) : (
-          <div className=" banner-container mx-4">
-            {hideIcons ? (
-              <div style={{ height: 88, width: 497 }}> </div>
-            ) : (
+          <div className="banner-container mx-4">
+            {showIcons && !hideIcons ? (
               <div className="d-flex gap-3">
                 <div>
                   <Image alt="icons" src="/images/sff-ff-food.svg"></Image>
                 </div>
                 <div>
-                  {' '}
                   <Image alt="icons" src="/images/sff-ff-tea.svg"></Image>
                 </div>
                 <div>
-                  {' '}
                   <Image alt="icons" src="/images/sff-ff-gift.svg"></Image>
                 </div>
                 <div>
-                  {' '}
                   <Image alt="icons" src="/images/sff-ff-gasoline.svg"></Image>
                 </div>
               </div>
-            )}
+            ) : null}
 
             <div className="mt-4 line"></div>
             {title && (
