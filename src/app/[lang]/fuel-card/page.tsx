@@ -6,7 +6,6 @@ import FormFuelCard from '@/components/form-fuel-card'
 import FuelCardSections from '@/components/fuel-card-section'
 import Road from '@/components/road'
 import { useI18nProvider } from '@/context/I18nProvider'
-import Script from 'next/script'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 

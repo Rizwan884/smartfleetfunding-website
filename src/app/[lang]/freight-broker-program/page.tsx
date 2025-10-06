@@ -7,7 +7,6 @@ import Needs from '@/components/need'
 import Programs from '@/components/program'
 import Provides from '@/components/provide'
 import { useI18nProvider } from '@/context/I18nProvider'
-import Script from 'next/script'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 
