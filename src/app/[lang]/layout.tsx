@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: 'Smart Fleet Funding Corp.',
     images: [
       {
-        url: '/images/sff-opengraph.png',
+        url: 'https://www.smartfleetfunding.com/images/sff-opengraph.png',
         width: 800,
         height: 600
       }
