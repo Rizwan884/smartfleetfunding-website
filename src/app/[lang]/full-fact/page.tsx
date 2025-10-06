@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/inline-script-id */
 'use client'
 
 import Banners from '@/components/banner'
@@ -12,8 +11,7 @@ import Navbar from '../../../components/navbar'
 import SectionAccordion from '../../../components/section-accordion'
 import TestimonialCarousel from '../../../components/testimonial'
 
-export default function fullFact() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function FullFact() {
   const { t } = useI18nProvider()
   const title = (
     <p className="font-montserrat">
@@ -34,22 +32,6 @@ export default function fullFact() {
 
   return (
     <>
-      <head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
-        ></Script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0XVT3QM87R');
-  `
-          }}
-        />
-      </head>
       <Navbar />
       <Banners
         title={title}

@@ -1,26 +1,6 @@
-/* eslint-disable @next/next/inline-script-id */
-import Script from 'next/script'
-
 export default function Terms() {
   return (
     <>
-      {' '}
-      <head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
-        ></Script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-0XVT3QM87R');
-      `
-          }}
-        />
-      </head>
       <div className="font-montserrat">
         <div className="container">
           <h1 className="text-center">Terms of Use</h1>

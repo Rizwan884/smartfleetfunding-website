@@ -68,10 +68,10 @@ export default function Slider() {
                   }}
                 >
                   <div className="slider-container slider-container mx-4">
-                    <h1 className="text-start fs-3">
+                    <h2 className="text-start fs-3">
                       {title} <br />
                       <strong>{strong}</strong>
-                    </h1>
+                    </h2>
                     <Button
                       href={href}
                       className="contact_slide fw-bold  my-4 h-25 d-inline-block"

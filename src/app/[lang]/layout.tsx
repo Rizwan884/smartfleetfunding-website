@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     ],
     locale: 'en_US',
     type: 'website'
+  },
+  verification: {
+    google: 'Z8V9RZTsx5JzvzxM5QE4Fwm-XMCSVGxdKUtTNMG4_0I'
   }
 }
 
@@ -70,6 +73,74 @@ export default function RootLayout({
             defer
             src="//js-na1.hs-scripts.com/49277082.js"
           />
+          <Script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
+          />
+          <Script
+            id="gtag-js"
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0XVT3QM87R');
+          `
+            }}
+          />
+          <Script id="schema" type="application/ld+json">
+            {`{
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.smartfleetfunding.com/#organization",
+                    "name": "Smart Fleet Funding Corp.",
+                    "url": "https://www.smartfleetfunding.com/",
+                    "logo": "https://www.smartfleetfunding.com/logo.png",
+                    "contactPoint": {
+                      "@type": "ContactPoint",
+                      "telephone": "+1-830-209-7589",
+                      "contactType": "Customer Service",
+                      "areaServed": "US",
+                      "availableLanguage": "English"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/SmartFleetFunding/",
+                      "https://www.instagram.com/smartfleetfunding/",
+                      "https://www.linkedin.com/company/smart-fleet-funding/"
+                    ]
+                  },
+                  {
+                    "@type": "Service",
+                    "@id": "https://www.smartfleetfunding.com/full-fact",
+                    "serviceType": "Freight Invoice Factoring",
+                    "provider": {
+                      "@id": "https://www.smartfleetfunding.com/#organization"
+                    },
+                    "areaServed": "US",
+                    "audience": {
+                      "@type": "Audience",
+                      "audienceType": "Transportation and Trucking Companies"
+                    },
+                    "description": "Smart Fleet Funding offers freight invoice factoring services to help transportation companies maintain cash flow by converting unpaid invoices into immediate working capital.",
+                    "offers": {
+                      "@type": "Offer",
+                      "url": "https://www.smartfleetfunding.com/full-fact",
+                      "priceCurrency": "USD",
+                      "eligibleRegion": "US",
+                      "price": "Varies based on agreement",
+                      "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "priceCurrency": "USD",
+                        "price": "Varies",
+                        "priceType": "Fee per invoice"
+                      }
+                    }
+                  }
+                ]
+              }`}
+          </Script>
           <body className={inter.className}>{children}</body>
         </html>
       </I18nProvider>

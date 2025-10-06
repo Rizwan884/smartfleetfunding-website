@@ -11,7 +11,6 @@ export default function Road() {
               alt="img"
               width={350}
               height={350}
-              objectFit="cover"
               src="/images/sff-road-fuel-card-small.webp"
             />
           </div>
@@ -42,7 +41,6 @@ export default function Road() {
             alt="img"
             width={500}
             height={400}
-            objectFit="cover"
             src="/images/sff-road-fuel-card.webp"
           />
         </div>

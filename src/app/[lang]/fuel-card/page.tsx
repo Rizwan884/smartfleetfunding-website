@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/inline-script-id */
 'use client'
+
 import Banners from '@/components/banner'
 import CardsFuel from '@/components/cards-fuel'
 import FormFuelCard from '@/components/form-fuel-card'
@@ -10,8 +10,7 @@ import Script from 'next/script'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
 
-export default function fuelCard() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+export default function FuelCard() {
   const { t } = useI18nProvider()
   const title = (
     <p className="font-montserrat">
@@ -29,22 +28,6 @@ export default function fuelCard() {
 
   return (
     <>
-      <head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-0XVT3QM87R"
-        ></Script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0XVT3QM87R');
-  `
-          }}
-        />
-      </head>
       <Navbar />
       <Banners
         hideIcons

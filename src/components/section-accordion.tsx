@@ -1,6 +1,7 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import { Accordion } from 'react-bootstrap'
+
 type AccordionItem = {
   title?: string
   descripcion?: string | string[]
