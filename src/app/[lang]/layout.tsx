@@ -31,10 +31,9 @@ export const metadata: Metadata = {
     'same day funding for freight invoices with factoring'
   ],
   openGraph: {
-    title:
-      'Smart Fleet Funding Corp.: Freight Factoring to carriers in North America',
+    title: '#1 Factoring Solutions in North America: Smart Fleet Funding',
     description:
-      'Smart Fleet Funding Corp. helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
+      'Optimize your cash flow with fast, easy, and secure factoring solutions in North America. Get paid in 12 hours with no contracts and 24/7 support. Call now!',
     url: 'https://www.smartfleetfunding.com',
     siteName: 'Smart Fleet Funding Corp.',
     images: [
