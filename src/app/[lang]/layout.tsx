@@ -8,11 +8,10 @@ import '../styles/globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title:
-    'Smart Fleet Funding Corp.: Freight Factoring to carriers in North America',
+  title: '#1 Factoring Solutions in North America: Smart Fleet Funding',
   icons: '/images/sff-icon.svg',
   description:
-    'Smart Fleet Funding Corp. helps carriers with cash flow to improve small, medium and large Logistics and Transportation companies.',
+    'Optimize your cash flow with fast, easy, and secure factoring solutions in North America. Get paid in 12 hours with no contracts and 24/7 support. Call now!',
   keywords: [
     'Smart Fleet Funding Corp.',
     'freight factoring',
