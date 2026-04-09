@@ -83,7 +83,7 @@
         "iconBack": "/images/sff-factura.svg"
       },
       {
-        "title": "FES Pay/InstaPay",
+        "title": "FesPay",
         "href": "/fespay",
         "sections": [
           {
@@ -167,7 +167,7 @@
         "home": "INICIO",
         "services": "SERVICIOS",
         "fullfact": "Full Fact",
-        "fespay": "FES Pay",
+        "fespay": "FesPay",
         "freightbroke": " Freight Broker",
         "fuelcard": "Fuel Card",
         "faq": "FAQ",
@@ -412,13 +412,13 @@
   "fespay": {
     "pageTitle": "Pago rápido,",
     "pagestrong": "fácil y seguro",
-    "welcomeTitle": "BIENVENIDO A FES Pay",
-    "welcomeDescription": "Pagos acelerados para conductores En Smart Fleet Funding Corp., entendemos que cada milla cuenta. Por eso hemos introducido FES Pay, un programa exclusivo diseñado pensando en conductores como usted. FES Pay le asegura un pago más rápido, proporcionándole la flexibilidad financiera que necesita para un viaje más tranquilo.",
+    "welcomeTitle": "BIENVENIDO A FesPay",
+    "welcomeDescription": "Pagos acelerados para conductores En Smart Fleet Funding Corp., entendemos que cada milla cuenta. Por eso hemos introducido FesPay, un programa exclusivo diseñado pensando en conductores como usted. FesPay le asegura un pago más rápido, proporcionándole la flexibilidad financiera que necesita para un viaje más tranquilo.",
     "stepsTitle": "Cómo funciona",
     "steps": [
       {
         "title": "Proceso de pago rápido",
-        "text": "Con FES Pay, recibirá el dinero que tanto le ha costado ganar en tan sólo 12 horas laborables. Se acabaron las esperas, los retrasos, los contratos y las comisiones ocultas."
+        "text": "Con FesPay, recibirá el dinero que tanto le ha costado ganar en tan sólo 12 horas laborables. Se acabaron las esperas, los retrasos, los contratos y las comisiones ocultas."
       },
       {
         "title": "Verificación simplificada",
@@ -426,7 +426,7 @@
       },
       {
         "title": "Rápido y seguro",
-        "text": "FES Pay no sólo es rápido, sino también seguro. Sus fondos se depositan directamente en su cuenta bancaria, lo que garantiza una transacción segura y sin problemas."
+        "text": "FesPay no sólo es rápido, sino también seguro. Sus fondos se depositan directamente en su cuenta bancaria, lo que garantiza una transacción segura y sin problemas."
       }
     ],
     "Benefits": [
@@ -437,14 +437,14 @@
       },
       {
         "tittle": "Sin retenciones",
-        "descripcion": "Adelantamos el 100% menos la comisión de FES Pay.",
+        "descripcion": "Adelantamos el 100% menos la comisión de FesPay.",
         "icon": "/images/sff-bff-hand.svg"
       }
     ],
     "BenefitsTwo": [
       {
         "tittle": "Acceso en cualquier momento y lugar",
-        "descripcion": "FES Pay le da la libertad de acceder a sus fondos desde dondequiera que le lleve su viaje.",
+        "descripcion": "FesPay le da la libertad de acceder a sus fondos desde dondequiera que le lleve su viaje.",
         "icon": "/images/sff-bff-check.svg"
       },
       {
@@ -456,7 +456,7 @@
     "benefitsTitle": "Ventajas para los conductores",
     "form": [
       {
-        "title": " Póngase en contacto con nosotros hoy mismo y le ayudaremos a realizar pagos más rápidos y seguros con FES Pay.",
+        "title": " Póngase en contacto con nosotros hoy mismo y le ayudaremos a realizar pagos más rápidos y seguros con FesPay.",
         "name": "Nombre Completo",
         "email": "Tu e-mail",
         "company": "Empresa",
@@ -474,9 +474,9 @@
     "accordionTitle": "Lista de preguntas que pueden surgir",
     "accordionItems": [
       {
-        "title": "¿Cuáles son las condiciones de FES Pay?",
+        "title": "¿Cuáles son las condiciones de FesPay?",
         "descripcion": [
-          "La FB para la que transporta debe ser miembro de nuestra Red FES Pay.",
+          "La FB para la que transporta debe ser miembro de nuestra Red FesPay.",
           "La carga debe completarse y el papeleo debe enviarse a fespay@smartfleetfunding.com en lugar de al agente de carga."
         ],
         "eventKey": 1
@@ -484,7 +484,7 @@
       {
         "title": "¿Hay comisiones ocultas?",
         "descripcion": [
-          " En absoluto. FES Pay opera con una estructura transparente de tarifa plana, asegurando que usted sabe exactamente qué esperar."
+          " En absoluto. FesPay opera con una estructura transparente de tarifa plana, asegurando que usted sabe exactamente qué esperar."
         ],
         "eventKey": 2
       },
@@ -503,7 +503,7 @@
         "eventKey": 4
       },
       {
-        "title": "¿Tengo que cambiar de compañía para beneficiarme con FES Pay?",
+        "title": "¿Tengo que cambiar de compañía para beneficiarme con FesPay?",
         "descripcion": [
           "Requerir carta de liberación para el agente de carga particular que participa en el programa instapay."
         ],
@@ -939,7 +939,7 @@
       {
         "title": "Quiénes somos",
         "descripcion": "Con más de 30 años de experiencia en el mercado del factoring, Smart Fleet Funding Corp. ha sido un actor clave en la prestación de apoyo y financiación a diversas industrias, con un enfoque particular en el transporte.",
-        "strong": "Tenemos un historial probado de éxito en la gestión del programa InstaPay (FES Pay) para los principales agentes de carga de Norteamérica. En la actualidad, prestamos servicio a clientes de toda Norteamérica."
+        "strong": "Tenemos un historial probado de éxito en la gestión del programa InstaPay (FesPay) para los principales agentes de carga de Norteamérica. En la actualidad, prestamos servicio a clientes de toda Norteamérica."
       },
       {
         "title": "Nuestro compromiso",
