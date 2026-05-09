@@ -39,33 +39,7 @@ export default function Footer() {
                     {home}
                   </Nav.Link>
                   <hr className="w-93 m-0 mx-auto" />
-                  <NavDropdown
-                    title={
-                      <>
-                        <div className="d-flex justify-content-between align-items-center w-full">
-                          <span className="text-green fw-600">{services}</span>
-                          <Image
-                            alt="down"
-                            src="/images/sff-arrow-down-green.svg"
-                            className="w-13 h-10"
-                          />
-                        </div>
-                      </>
-                    }
-                    id="basic-nav-dropdown"
-                  >
-                    <NavDropdown.Item href="/full-fact">
-                      {fullfact}
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/fespay">{fespay}</NavDropdown.Item>
-                    <NavDropdown.Item href="/fuel-card">
-                      {fuelcard}
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="freight-broker-program">
-                      {freightbroke}
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                  <hr className="w-93 m-0 mx-auto" />
+
                   <Nav.Link className="text-green fw-600" href="/faqs">
                     {faq}
                   </Nav.Link>
@@ -74,9 +48,9 @@ export default function Footer() {
                     {aboutus}
                   </Nav.Link>
                   <hr className="w-93 m-0 mx-auto" />
-                  {/* <Nav.Link className="text-green fw-600" href="#blog">
-                  BLOG
-                </Nav.Link> */}
+                  <Nav.Link className="text-green fw-600" href="/blog">
+                    BLOG
+                  </Nav.Link>
                   <hr className="w-93 m-0 mx-auto" />
                   <Nav.Link className="text-green fw-600" href="/contact">
                     {contact}
@@ -203,43 +177,16 @@ export default function Footer() {
                         <Nav.Link className="text-green fw-500" href="/">
                           {home}
                         </Nav.Link>
-                        <NavDropdown
-                          title={
-                            <>
-                              <span className="text-green fw-500 mx-1">
-                                {services}
-                              </span>
-                              <Image
-                                alt="down"
-                                src="/images/sff-arrow-down-green.svg"
-                                style={{ width: '13px', height: '10px' }}
-                              />
-                            </>
-                          }
-                          id="basic-nav-dropdown"
-                        >
-                          <NavDropdown.Item href="/full-fact">
-                            {fullfact}
-                          </NavDropdown.Item>
-                          <NavDropdown.Item href="/fespay">
-                            {fespay}
-                          </NavDropdown.Item>
-                          <NavDropdown.Item href="/fuel-card">
-                            {fuelcard}
-                          </NavDropdown.Item>
-                          <NavDropdown.Item href="/freight-broker-program">
-                            {freightbroke}
-                          </NavDropdown.Item>
-                        </NavDropdown>
+
                         <Nav.Link className="text-green fw-500" href="/faqs">
                           {faq}
                         </Nav.Link>
                         <Nav.Link className="text-green fw-500" href="/about">
                           {aboutus}
                         </Nav.Link>
-                        {/* <Nav.Link className="text-green fw-500" href="#blog">
-                  BLOG
-                </Nav.Link> */}
+                        <Nav.Link className="text-green fw-500" href="/blog">
+                          BLOG
+                        </Nav.Link>
                         <Nav.Link className="text-green fw-500" href="/contact">
                           {contact}
                         </Nav.Link>

@@ -24,7 +24,7 @@
     ]
   },
   "home": {
-    "cardsTitle": "PAGO FES",
+    "cardsTitle": "¿Por qué elegirnos?",
     "cards": [
       {
         "title": "RAPIDO",
@@ -51,104 +51,7 @@
         "iconBack": "/images/sff-shield-back.svg"
       }
     ],
-    "cardsInfo": [
-      {
-        "title": "Full Fact",
-        "href": "/full-fact",
-        "sections": [
-          {
-            "heading": "Cobro de primas -",
-            "items": ["· Financiación inmediata."]
-          },
-          {
-            "heading": "Abordamos su reto -",
-            "items": [
-              "· Desde problemas de comunicación",
-              "a tarifas confusas, le tenemos cubierto."
-            ]
-          },
-          {
-            "heading": "Cómo le ayudamos -",
-            "items": [
-              "· Pagos accesibles, transparentes y rápidos",
-              "en todo momento para que las operaciones se desarrollen sin contratiempos."
-            ]
-          },
-          {
-            "heading": "Conecte con nuestros asesores -",
-            "items": ["· Usted llama. Nosotros respondemos."]
-          }
-        ],
-        "icon": "/images/sff-point-front.svg",
-        "iconBack": "/images/sff-factura.svg"
-      },
-      {
-        "title": "FesPay",
-        "href": "/fespay",
-        "sections": [
-          {
-            "heading": "Pago rápido, fácil y seguro -",
-            "items": [
-              "· Garantiza el pago en 12 horas hábiles a través de una alianza de intermediarios de confianza."
-            ]
-          },
-          {
-            "heading": "Beneficios -",
-            "items": [
-              "· Optimización del flujo de caja.",
-              "· Efectivo elevado Anticipado.",
-              "· No necesita originales.",
-              "· Acceso a la cuenta 24/7.",
-              "· Equipo AR experto.",
-              "· Sin contrato."
-            ]
-          },
-          {
-            "heading": "Soporte -",
-            "items": [
-              "· Ejecutivo de cuentas dedicado e informacion disponible 24/7"
-            ]
-          },
-          {
-            "heading": "Para empezar -",
-            "items": [
-              "· Sin problemas para los transportistas con corredores asociados."
-            ]
-          }
-        ],
-        "icon": "/images/sff-point-front.svg",
-        "iconBack": "/images/sff-cash.svg"
-      },
-      {
-        "title": "Smart Fuel Card",
-        "href": "/fuel-card",
-        "sections": [
-          {
-            "heading": "Tarjeta inteligente de combustible -",
-            "items": [
-              "· Tarjetas de combustible con descuento para las principales paradas de camiones.",
-              "· Ahorro sustancial de combustible",
-              "en EE.UU. y Canada.",
-              "· Ventaja competitiva para las",
-              "empresas de transporte.",
-              "· Ahorro mensual potencial*",
-              " (*varía según el tamaño de la flota y el uso de combustible)."
-            ]
-          },
-          {
-            "heading": "Avance inteligente del combustible -",
-            "items": [
-              "·Junto con el factoring de facturas de transporte, proporciona hasta el 50% del valor de la carga para gastos de combustible.",
-              "·Verificación necesaria para la reserva y recogida de la carga.",
-              "·Fondos vía depósito directo o cargados con fuel card",
-              "·Anticipo adicional tras la entrega"
-            ]
-          }
-        ],
-        "icon": "/images/sff-point-front.svg",
-        "iconBack": "/images/sff-gas.svg"
-      }
-    ],
+    "cardsInfo": [],
     "headerCardInfo": [
       {
         "header": "Libere el dinero de sus",
@@ -167,9 +70,9 @@
         "home": "INICIO",
         "services": "SERVICIOS",
         "fullfact": "Full Fact",
-        "fespay": "FesPay",
-        "freightbroke": " Freight Broker",
-        "fuelcard": "Fuel Card",
+        "fespay": "",
+        "freightbroke": " Corredor de carga",
+        "fuelcard": "",
         "faq": "FAQ",
         "aboutus": "NOSOTROS",
         "contact": "CONTACTO",
@@ -406,8 +309,8 @@
       }
     ],
     "titleForm": "¡Empecemos!",
-    "pageTitle": "Full",
-    "pagestrong": "Factoring Solution"
+    "pageTitle": "Por qué Smart",
+    "pagestrong": "Fleet"
   },
   "fespay": {
     "pageTitle": "Pago rápido,",

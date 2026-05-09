@@ -21,15 +21,7 @@ export default function ImgInfo() {
   return (
     <>
       {isMobile ? (
-        <div>
-          <div
-            className=""
-            style={{
-              ...Image,
-              backgroundImage: 'url("/images/sff-truck-driver-vertical.webp")',
-              marginTop: '40px'
-            }}
-          ></div>
+        <div className="py-4">
           {t.home.sectionInfo.map(
             (
               { title, titleBreak, lineBreak, breakText, descripcion }: ICard,
@@ -58,14 +50,7 @@ export default function ImgInfo() {
           )}
         </div>
       ) : (
-        <div
-          style={{
-            ...Image,
-            backgroundImage: 'url("/images/sff-truck-driver.webp")',
-            marginRight: '80px',
-            marginTop: '40px'
-          }}
-        >
+        <div className="py-5 bg-white">
           {t.home.sectionInfo.map(
             (
               { title, titleBreak, descripcion, lineBreak, breakText }: ICard,
@@ -73,25 +58,28 @@ export default function ImgInfo() {
             ) => (
               <div
                 key={key}
-                className=" info-container font-montserrat pt-6 mx-5"
+                className="container font-montserrat pt-6 mx-auto"
               >
-                <h1 className="text-end fw-bold fs-3">
-                  {title} <br /> {titleBreak}
-                  <div className="ms-auto line"></div>
-                </h1>
-                <div className="card-text-bottom fw-400">
-                  {descripcion} <br />
-                  {lineBreak} <br />
-                  {breakText}
+                <div className="row align-items-center">
+                  <div className="col-lg-8">
+                    <h1 className="text-start fw-bold fs-3 mb-4">
+                      {title} <br /> {titleBreak}
+                      <div className="line mt-2"></div>
+                    </h1>
+                    <div className="card-text-bottom fw-400 fs-5 mb-4">
+                      {descripcion} <br />
+                      {lineBreak} <br />
+                      {breakText}
+                    </div>
+                    <Button
+                      href="tel:+18888755506"
+                      className="contact_slide fw-bold px-5 py-3 d-inline-block"
+                      variant="btn btn-custom"
+                    >
+                      {t.home.sectionInfo[0].button}
+                    </Button>
+                  </div>
                 </div>
-
-                <Button
-                  href="tel:+18888755506"
-                  className="contact_slide fw-bold  my-4 h-25 d-inline-block"
-                  variant="btn btn-custom"
-                >
-                  {t.home.sectionInfo[0].button}
-                </Button>
               </div>
             )
           )}

@@ -10,9 +10,6 @@ export default function CardsSections() {
         <div className="fs-3 mb-4 text-center fw-bold">{t.home.cardsTitle}</div>
       </div>
       <Cards />
-      <div className="white-section">
-        <CardsInfo />
-      </div>
       <ImgInfo />
     </>
   )

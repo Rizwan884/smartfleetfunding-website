@@ -16,15 +16,23 @@ export default function SFFNavbar() {
   const [showModal, setShowModal] = useState(false)
 
   return (
-    <>
-      <div className="font-montserrat text-left p-2 px-5 bg-green">
-        <Link
-          href="https://wa.me/18888755506"
-          target="_blank"
-          className="text-white ms-2"
-        >
-          Toll-Free: +1 (830) 209-7589{' '}
-        </Link>
+    <header className="sticky-top" style={{ zIndex: 1020 }}>
+      <div className="font-montserrat d-flex justify-content-end align-items-center p-2 px-5 bg-green">
+        <div className="d-flex align-items-center gap-3">
+          <a
+            href="tel:+18302097589"
+            className="text-white fw-bold text-decoration-none"
+          >
+            +1 (830) 209-7589
+          </a>
+          <a
+            href="#form"
+            className="btn btn-sm btn-light fw-bold rounded-pill px-3"
+            style={{ fontSize: '0.8rem' }}
+          >
+            Get Started
+          </a>
+        </div>
       </div>
       <Navbar expand="lg" className="font-montserrat nv-image">
         <Container>
@@ -52,48 +60,7 @@ export default function SFFNavbar() {
                 {t.navbar.home}
               </Nav.Link>
               <hr className="text-dark m-0" />
-              <NavDropdown
-                className="px-3 py-4 nav-item-nav"
-                title={
-                  <>
-                    <span className="text-dark-blue ">{t.navbar.services}</span>{' '}
-                    <Image
-                      src="/images/sff-arrow-down.svg"
-                      alt="Dropdown Icon"
-                      className="w-13 h-10"
-                    />
-                  </>
-                }
-                id="basic-nav-dropdown"
-              >
-                <div className="d-flex flex-column align-items-start gap-2 ">
-                  <NavDropdown.Item
-                    className="text-start text-dark"
-                    href="/full-fact"
-                  >
-                    Full Fact
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className="text-start text-dark"
-                    href="/fespay"
-                  >
-                    FES Pay
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className="text-start text-dark"
-                    href="/fuel-card"
-                  >
-                    Fuel Card
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    className="text-start text-dark"
-                    href="/freight-broker-program"
-                  >
-                    Freight Broker
-                  </NavDropdown.Item>
-                </div>
-              </NavDropdown>
-              <hr className="text-dark m-0" />
+
               <Nav.Link
                 className="text-dark-blue px-3 py-4 fw-600 "
                 href="/faqs"
@@ -101,26 +68,6 @@ export default function SFFNavbar() {
                 {t.navbar.faq}
               </Nav.Link>
               <hr className="text-dark m-0" />
-              <Nav.Link
-                className="text-dark-blue px-3 py-4 fw-600 "
-                href="/about"
-              >
-                {t.navbar.aboutUs}
-              </Nav.Link>
-              <hr className="text-dark m-0" />
-              <Nav.Link
-                className="text-dark-blue px-3 py-4 fw-600 "
-                href="/blog"
-              >
-                BLOG
-              </Nav.Link>
-              <hr className="text-dark m-0" />
-              <Nav.Link
-                className="text-dark-blue px-3 py-4 fw-600 "
-                href="/contact"
-              >
-                {t.navbar.contact}
-              </Nav.Link>
               <Button
                 onClick={() => setShowModal(!showModal)}
                 className="contact_slide fw-bold h-25 d-inline-block"
@@ -139,6 +86,6 @@ export default function SFFNavbar() {
         show={showModal}
         handleClose={() => setShowModal(!showModal)}
       />
-    </>
+    </header>
   )
 }
