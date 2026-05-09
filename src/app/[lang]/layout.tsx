@@ -50,13 +50,15 @@ export const metadata: Metadata = {
   }
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { lang }
+  params
 }: {
   children: React.ReactNode
-  params: { lang: string }
+  params: Promise<{ lang: string }>
 }) {
+  const { lang } = await params
+
   return (
     <ReCaptchaProvider
       reCaptchaKey="6LduTr0pAAAAAGe99haSZO2u-x-zHCBic61DyjX2"
