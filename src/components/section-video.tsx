@@ -1,6 +1,5 @@
 import { MAX_WIDTH_MD } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
-import Image from 'next/image'
 import { useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import { useMediaQuery } from 'react-responsive'
@@ -40,7 +39,12 @@ export default function SectionVideo() {
             )
           )}
           <div className="col-12 md-col-5 embed-responsive embed-responsive-16by9 p-4 text-center p-md-4 rounded-3">
-            <a href="#" onClick={openModal} className="position-relative d-block bg-dark-blue rounded-5" style={{ minHeight: '300px' }}>
+            <a
+              href="#"
+              onClick={openModal}
+              className="position-relative d-block bg-dark-blue rounded-5"
+              style={{ minHeight: '300px' }}
+            >
               <div className="position-absolute top-50 start-50 translate-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +90,12 @@ export default function SectionVideo() {
             )
           )}
           <div className="col-5 align-self-center m-4 p-4 rounded-3">
-            <a href="#" onClick={openModal} className="position-relative d-block bg-dark-blue rounded-5" style={{ minHeight: '300px' }}>
+            <a
+              href="#"
+              onClick={openModal}
+              className="position-relative d-block bg-dark-blue rounded-5"
+              style={{ minHeight: '300px' }}
+            >
               <div className="position-absolute top-50 start-50 translate-middle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,5 @@
 import { useI18nProvider } from '@/context/I18nProvider'
 import Cards from './cards'
-import CardsInfo from './cards-info'
 import ImgInfo from './section-info'
 export default function CardsSections() {
   const { t } = useI18nProvider()

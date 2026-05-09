@@ -56,10 +56,7 @@ export default function ImgInfo() {
               { title, titleBreak, descripcion, lineBreak, breakText }: ICard,
               key: number
             ) => (
-              <div
-                key={key}
-                className="container font-montserrat pt-6 mx-auto"
-              >
+              <div key={key} className="container font-montserrat pt-6 mx-auto">
                 <div className="row align-items-center">
                   <div className="col-lg-8">
                     <h1 className="text-start fw-bold fs-3 mb-4">

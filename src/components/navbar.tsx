@@ -1,12 +1,10 @@
 import LanguageSwitcher from '@/components/LanguageSwitcher'
 import { useI18nProvider } from '@/context/I18nProvider'
-import Link from 'next/link'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
 import Container from 'react-bootstrap/Container'
 import Image from 'react-bootstrap/Image'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import Navbar from 'react-bootstrap/Navbar'
 import LoginModal from './modal-navbar'
 

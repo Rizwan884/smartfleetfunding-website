@@ -30,14 +30,20 @@ export default function HeroForm() {
         }}
       >
         <div className="mb-4 bg-light rounded-circle p-3 d-inline-block">
-          <Image src="/images/sff-bff-check.svg" width={50} height={50} alt="success" />
+          <Image
+            src="/images/sff-bff-check.svg"
+            width={50}
+            height={50}
+            alt="success"
+          />
         </div>
         <h2 className="fw-bold text-dark-blue mb-3">Thank You!</h2>
         <p className="text-muted fs-5 px-3">
-          We received your information. A member of our team will contact you within one business day.
+          We received your information. A member of our team will contact you
+          within one business day.
         </p>
-        <Button 
-          variant="link" 
+        <Button
+          variant="link"
           className="text-green text-decoration-none fw-bold mt-3"
           onClick={() => setSubmitted(false)}
         >
@@ -59,14 +65,20 @@ export default function HeroForm() {
       }}
     >
       <div className="mb-4">
-        <h2 className="fw-bold mb-1 fs-3 text-dark-blue">
-          Get Started
-        </h2>
-        <div className="line-contact mb-3" style={{ width: '50px', height: '3px', backgroundColor: '#02dd68' }}></div>
-        <p className="text-muted small">Fill out the form below and our team will get back to you shortly.</p>
+        <h2 className="fw-bold mb-1 fs-3 text-dark-blue">Get Started</h2>
+        <div
+          className="line-contact mb-3"
+          style={{ width: '50px', height: '3px', backgroundColor: '#02dd68' }}
+        ></div>
+        <p className="text-muted small">
+          Fill out the form below and our team will get back to you shortly.
+        </p>
       </div>
-      
-      <Form onSubmit={handleSubmit} className="flex-grow-1 d-flex flex-column justify-content-between">
+
+      <Form
+        onSubmit={handleSubmit}
+        className="flex-grow-1 d-flex flex-column justify-content-between"
+      >
         <div>
           <Form.Group className="mb-3 position-relative">
             <Form.Control
@@ -127,7 +139,7 @@ export default function HeroForm() {
           <Button
             type="submit"
             className="w-100 btn fw-bold bg-green text-dark-blue py-3 border-0 rounded-3 shadow-sm"
-            style={{ 
+            style={{
               fontSize: '1.1rem',
               transition: 'all 0.3s ease'
             }}
@@ -135,15 +147,17 @@ export default function HeroForm() {
             Get Started
           </Button>
           <div className="d-flex align-items-center justify-content-center mt-3 opacity-75">
-             <Image src="/images/sff-shield-front.svg" width={16} height={16} className="me-2" alt="secure" />
-             <span style={{ fontSize: '0.8rem' }}>Secure & Confidential</span>
+            <Image
+              src="/images/sff-shield-front.svg"
+              width={16}
+              height={16}
+              className="me-2"
+              alt="secure"
+            />
+            <span style={{ fontSize: '0.8rem' }}>Secure & Confidential</span>
           </div>
         </div>
       </Form>
     </div>
   )
 }
-
-
-
-

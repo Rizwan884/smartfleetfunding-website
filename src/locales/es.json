@@ -8,9 +8,9 @@
     "login": "INICIAR SESIÓN"
   },
   "modalNavbar": {
-  "titleCn":"Cliente Canada",
-  "titleUs": "Cliente US"
-},
+    "titleCn": "Cliente Canada",
+    "titleUs": "Cliente US"
+  },
   "languages": {
     "current": {
       "title": "ESP",
@@ -201,7 +201,7 @@
         "email": "Tu e-mail",
         "company": "Empresa",
         "phone": "Telefono",
-        "code" : "MC# o USDOT#",
+        "code": "MC# o USDOT#",
         "descripcion": "Descripcion",
         "checkboxError": "Por favor marque la casilla antes de enviar el formulario",
         "check": "Acepte nuestra ",

@@ -6,12 +6,11 @@
     "aboutUs": "ABOUT US",
     "contact": "CONTACT",
     "login": "LOGIN"
-
   },
-"modalNavbar": {
-  "titleCn":"Client Canada",
-  "titleUs": "Client US"
-},
+  "modalNavbar": {
+    "titleCn": "Client Canada",
+    "titleUs": "Client US"
+  },
 
   "languages": {
     "current": {
@@ -209,7 +208,7 @@
         "email": "Your E-mail",
         "company": "Company Name",
         "phone": "Phone",
-        "code" : "MC# or USDOT#",
+        "code": "MC# or USDOT#",
         "descripcion": "Description",
         "checkboxError": "Please check the box before submitting",
         "check": "Accept our ",
