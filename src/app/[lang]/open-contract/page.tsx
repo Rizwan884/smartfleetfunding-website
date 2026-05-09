@@ -217,7 +217,7 @@ export default function OpenContract() {
               <p className="lead text-muted lh-base mb-0">
                 Smart Fleet Funding has served carriers across the United States
                 and Canada for over 30 years. We were selected by{' '}
-                <strong>Traffix</strong> — one of North America's leading
+                <strong>Traffix</strong> — one of North America&apos;s leading
                 freight brokerages — to power their carrier QuickPay program.
               </p>
             </Col>

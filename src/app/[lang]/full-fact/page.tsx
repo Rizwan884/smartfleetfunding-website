@@ -4,6 +4,7 @@ import Help from '@/components/help'
 import HeroForm from '@/components/hero-form'
 import Ideas from '@/components/ideas'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Link from 'next/link'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import Footer from '../../../components/footer'
 import SectionForm from '../../../components/form'
@@ -177,13 +178,13 @@ export default function FullFact() {
             Get Started
           </a>
           <div>
-            <a
+            <Link
               href="/faq"
               className="text-white opacity-75 text-decoration-none small"
             >
               Have questions?{' '}
               <span className="text-decoration-underline">See our FAQ</span>
-            </a>
+            </Link>
           </div>
         </Container>
       </div>

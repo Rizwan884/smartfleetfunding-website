@@ -1,5 +1,6 @@
 import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
+import Link from 'next/link'
 import { Card, Col, Container, ListGroup, Row } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
 import { useMediaQuery } from 'react-responsive'
@@ -32,7 +33,7 @@ export default function Cards() {
           <Row className="pt-5">
             <Col className="card-column ">
               <Card.Body>
-                <a href="/full-fact" className="text-decoration-none">
+                <Link href="/full-fact" className="text-decoration-none">
                   <ListGroup className="rounded-3">
                     <ListGroup.Item
                       className=" body-list-mobile bd-box "
@@ -64,12 +65,12 @@ export default function Cards() {
                       </div>
                     </ListGroup.Item>
                   </ListGroup>
-                </a>
+                </Link>
               </Card.Body>
             </Col>
             <Col className="card-column mt-3">
               <Card.Body>
-                <a href="/fespay" className="text-decoration-none">
+                <Link href="/fespay" className="text-decoration-none">
                   <ListGroup className="rounded-3">
                     <ListGroup.Item
                       className=" body-list-mobile bd-box "
@@ -98,12 +99,12 @@ export default function Cards() {
                       </div>
                     </ListGroup.Item>
                   </ListGroup>
-                </a>
+                </Link>
               </Card.Body>
             </Col>
             <Col className="card-column mt-3">
               <Card.Body>
-                <a href="/fuel-card" className="text-decoration-none">
+                <Link href="/fuel-card" className="text-decoration-none">
                   <ListGroup className="rounded-3">
                     <ListGroup.Item
                       className=" body-list-mobile bd-box "
@@ -135,7 +136,7 @@ export default function Cards() {
                       </div>
                     </ListGroup.Item>
                   </ListGroup>
-                </a>
+                </Link>
               </Card.Body>
             </Col>
           </Row>
@@ -162,7 +163,7 @@ export default function Cards() {
                   style={{ width: '300px' }}
                 >
                   <Card.Body style={{ fontSize: '15px', overflowY: 'auto' }}>
-                    <a href={href} className="text-decoration-none">
+                    <Link href={href} className="text-decoration-none">
                       <ListGroup>
                         <ListGroup.Item className="body-list bd-box card-hb">
                           <div className="icon-cards" style={{ height: 70 }}>
@@ -197,7 +198,7 @@ export default function Cards() {
                           </div>
                         </ListGroup.Item>
                       </ListGroup>
-                    </a>
+                    </Link>
                   </Card.Body>
                 </Col>
               )

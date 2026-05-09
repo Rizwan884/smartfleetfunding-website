@@ -20,20 +20,7 @@ export default function Footer() {
         >
           <Container className="py-3">
             {t.home.footer.map(
-              (
-                {
-                  home,
-                  services,
-                  fullfact,
-                  fespay,
-                  freightbroke,
-                  faq,
-                  aboutus,
-                  contact,
-                  fuelcard
-                }: IFooter,
-                key: number
-              ) => (
+              ({ home, faq, aboutus, contact }: IFooter, key: number) => (
                 <Nav key={key} className="d-flex flex-column gap-1 p-1">
                   <Nav.Link className="text-green fw-600" href="/">
                     {home}
@@ -159,20 +146,7 @@ export default function Footer() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   {t.home.footer.map(
-                    (
-                      {
-                        home,
-                        services,
-                        fullfact,
-                        fespay,
-                        freightbroke,
-                        faq,
-                        aboutus,
-                        contact,
-                        fuelcard
-                      }: IFooter,
-                      key: number
-                    ) => (
+                    ({ home, faq, aboutus, contact }: IFooter, key: number) => (
                       <Nav key={key}>
                         <Nav.Link className="text-green fw-500" href="/">
                           {home}

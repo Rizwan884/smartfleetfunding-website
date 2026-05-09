@@ -2,11 +2,6 @@ import { MAX_WIDTH } from '@/constants/const'
 import { useI18nProvider } from '@/context/I18nProvider'
 import { Button } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive'
-const Image = {
-  backgroundSize: 'cover',
-  backgroundPosition: 'center center',
-  height: '500px'
-}
 type ICard = {
   title: string
   titleBreak: string

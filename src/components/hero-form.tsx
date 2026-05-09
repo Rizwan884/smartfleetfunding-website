@@ -14,7 +14,6 @@ export default function HeroForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Simulate API call
-    console.log('Form submitted:', formData)
     setSubmitted(true)
   }
 
