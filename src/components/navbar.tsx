@@ -10,14 +10,15 @@ import LoginModal from './modal-navbar'
 
 export default function SFFNavbar({
   minimal = false,
-  showTopBar = !minimal
+  isOpenContract = false
 }: {
   minimal?: boolean
-  showTopBar?: boolean
+  isOpenContract?: boolean
 }) {
   const { t } = useI18nProvider()
 
   const [showModal, setShowModal] = useState(false)
+  const showTopBar = !minimal && !isOpenContract
 
   return (
     <header className="sticky-top" style={{ zIndex: 1020 }}>
@@ -52,47 +53,67 @@ export default function SFFNavbar({
               alt="SFF Logo"
             />
           </Navbar.Brand>
-          {!minimal && (
-            <div className="d-flex align-items-center gap-3">
-              <div id="button-language" className="d-flex d-lg-none gap-2">
-                <LanguageSwitcher />
-              </div>
-              <Navbar.Toggle
-                aria-controls="basic-navbar-nav"
-                className="navbar-toggle-icon"
-              />
+
+          {isOpenContract && (
+            <div className="ms-auto d-flex align-items-center gap-3">
+              <a
+                href="tel:+18302097589"
+                className="text-dark-blue fw-bold text-decoration-none d-none d-md-block"
+                style={{ fontSize: '1.1rem' }}
+              >
+                +1 (830) 209-7589
+              </a>
+              <a
+                href="#form"
+                className="btn btn-custom fw-bold rounded-pill px-4"
+                style={{ fontSize: '1.1rem' }}
+              >
+                Get Started
+              </a>
             </div>
           )}
-          {!minimal && (
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto fw-600 text-start align-items-md-center">
-                <Nav.Link
-                  className="text-dark-blue px-3 py-4 fw-600 "
-                  href="/full-fact"
-                >
-                  {t.navbar.whySmartFleet}
-                </Nav.Link>
-                <hr className="text-dark m-0" />
 
-                <Nav.Link
-                  className="text-dark-blue px-3 py-4 fw-600 "
-                  href="/faqs"
-                >
-                  {t.navbar.faq}
-                </Nav.Link>
-                <hr className="text-dark m-0" />
-                <Button
-                  onClick={() => setShowModal(!showModal)}
-                  className="contact_slide fw-bold h-25 d-inline-block"
-                  variant="btn btn-custom"
-                >
-                  {t.navbar.login}
-                </Button>
-                <div id="button-language" className="d-none d-lg-block gap-2">
+          {!minimal && !isOpenContract && (
+            <>
+              <div className="d-flex align-items-center gap-3">
+                <div id="button-language" className="d-flex d-lg-none gap-2">
                   <LanguageSwitcher />
                 </div>
-              </Nav>
-            </Navbar.Collapse>
+                <Navbar.Toggle
+                  aria-controls="basic-navbar-nav"
+                  className="navbar-toggle-icon"
+                />
+              </div>
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ms-auto fw-600 text-start align-items-md-center">
+                  <Nav.Link
+                    className="text-dark-blue px-3 py-4 fw-600 "
+                    href="/full-fact"
+                  >
+                    {t.navbar.whySmartFleet}
+                  </Nav.Link>
+                  <hr className="text-dark m-0" />
+
+                  <Nav.Link
+                    className="text-dark-blue px-3 py-4 fw-600 "
+                    href="/faqs"
+                  >
+                    {t.navbar.faq}
+                  </Nav.Link>
+                  <hr className="text-dark m-0" />
+                  <Button
+                    onClick={() => setShowModal(!showModal)}
+                    className="contact_slide fw-bold h-25 d-inline-block"
+                    variant="btn btn-custom"
+                  >
+                    {t.navbar.login}
+                  </Button>
+                  <div id="button-language" className="d-none d-lg-block gap-2">
+                    <LanguageSwitcher />
+                  </div>
+                </Nav>
+              </Navbar.Collapse>
+            </>
           )}
         </Container>
       </Navbar>
