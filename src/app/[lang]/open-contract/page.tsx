@@ -8,7 +8,7 @@ import Navbar from '../../../components/navbar'
 export default function OpenContract() {
   return (
     <>
-      <Navbar minimal={true} />
+      <Navbar minimal={true} showTopBar={true} />
       <div className="bg-dark-blue py-5 font-montserrat min-vh-75 d-flex align-items-center">
         <Container>
           <Row className="g-5 align-items-center">

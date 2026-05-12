@@ -8,14 +8,20 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import LoginModal from './modal-navbar'
 
-export default function SFFNavbar({ minimal = false }: { minimal?: boolean }) {
+export default function SFFNavbar({
+  minimal = false,
+  showTopBar = !minimal
+}: {
+  minimal?: boolean
+  showTopBar?: boolean
+}) {
   const { t } = useI18nProvider()
 
   const [showModal, setShowModal] = useState(false)
 
   return (
     <header className="sticky-top" style={{ zIndex: 1020 }}>
-      {!minimal && (
+      {showTopBar && (
         <div className="font-montserrat d-flex justify-content-end align-items-center p-2 px-5 bg-green">
           <div className="d-flex align-items-center gap-3">
             <a

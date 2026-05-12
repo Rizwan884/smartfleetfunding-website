@@ -145,16 +145,6 @@ export default function HeroForm() {
           >
             Get Started
           </Button>
-          <div className="d-flex align-items-center justify-content-center mt-3 opacity-75">
-            <Image
-              src="/images/sff-shield-front.svg"
-              width={16}
-              height={16}
-              className="me-2"
-              alt="secure"
-            />
-            <span style={{ fontSize: '0.8rem' }}>Secure & Confidential</span>
-          </div>
         </div>
       </Form>
     </div>

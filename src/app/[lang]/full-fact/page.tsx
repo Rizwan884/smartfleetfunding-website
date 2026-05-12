@@ -35,12 +35,6 @@ export default function FullFact() {
         <Container>
           <Row className="g-5 align-items-center">
             <Col lg={7}>
-              <div className="d-flex gap-3 mb-4 d-none d-md-flex">
-                <Image alt="icons" src="/images/sff-ff-food.svg" />
-                <Image alt="icons" src="/images/sff-ff-tea.svg" />
-                <Image alt="icons" src="/images/sff-ff-gift.svg" />
-                <Image alt="icons" src="/images/sff-ff-gasoline.svg" />
-              </div>
               <div
                 className="line bg-green mb-4"
                 style={{ width: '80px', height: '4px' }}
@@ -160,9 +154,141 @@ export default function FullFact() {
         </Container>
       </div>
 
-      <Ideas />
-      <Help />
-      <SectionForm titleForm={titleForm} />
+      {/* Differentiators Section */}
+      <div className="font-montserrat bg-white py-5 py-lg-5 border-top">
+        <Container>
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold text-dark-blue">
+              Built for clarity, fairness, and carrier control
+            </h2>
+            <div
+              className="mx-auto bg-green mt-3"
+              style={{ width: '80px', height: '4px' }}
+            ></div>
+          </div>
+
+          <Row className="g-4 mt-2">
+            {[
+              {
+                title: 'A true open contract',
+                desc: 'No termination fees, no penalties, no notice period',
+                icon: '/images/sff-hp-5.svg'
+              },
+              {
+                title: 'Clear money, upfront',
+                desc: 'No surprise fees, no confusing statements',
+                icon: '/images/sff-hp-2.svg'
+              },
+              {
+                title: 'Real communication',
+                desc: 'Phones and emails answered during business hours by real people',
+                icon: '/images/sff-hp-1.svg'
+              },
+              {
+                title: 'No reserves',
+                desc: 'You keep everything you earn, nothing is held back',
+                icon: '/images/sff-hp-3.svg'
+              },
+              {
+                title: 'No hostage tactics',
+                desc: 'Reserves and paperwork are never used as pressure',
+                icon: '/images/sff-hp-6.svg'
+              },
+              {
+                title: 'Dedicated account managers with real authority',
+                desc: 'One contact who can actually get things done',
+                icon: '/images/sff-hp-8.svg'
+              }
+            ].map((item, i) => (
+              <Col md={4} key={i}>
+                <div className="h-100 p-4 rounded-4 border border-light-subtle shadow-sm bg-white position-relative overflow-hidden">
+                  <div
+                    className="position-absolute top-0 start-0 h-100 bg-green opacity-10"
+                    style={{ width: '4px' }}
+                  ></div>
+                  <div className="mb-3">
+                    <Image
+                      src={item.icon}
+                      width={40}
+                      height={40}
+                      alt={item.title}
+                    />
+                  </div>
+                  <h3 className="fs-6 fw-bold text-dark-blue mb-2 lh-sm">
+                    {item.title}
+                  </h3>
+                  <p className="text-muted small mb-0 lh-sm">{item.desc}</p>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </div>
+
+      {/* Guarantee Section */}
+      <div className="font-montserrat bg-light py-5 py-lg-5 border-top">
+        <Container>
+          <div
+            className="bg-white p-4 p-lg-5 rounded-4 shadow-lg border border-light-subtle mx-auto"
+            style={{ maxWidth: '900px' }}
+          >
+            <h2 className="fs-3 fw-bold text-dark-blue mb-4">
+              Our guarantee is simple:{' '}
+              <span className="text-green">
+                if it is not working, you can leave.
+              </span>
+            </h2>
+            <Row className="g-4 mb-4">
+              {[
+                'No reserves',
+                'No termination fees',
+                'No lock-ins',
+                'No notice requirements',
+                'No retaliation'
+              ].map((bullet, i) => (
+                <Col md={6} lg={4} key={i}>
+                  <div className="d-flex align-items-center">
+                    <div
+                      className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                      style={{
+                        width: '28px',
+                        height: '28px',
+                        backgroundColor: 'rgba(2, 221, 104, 0.15)'
+                      }}
+                    >
+                      <svg
+                        className="text-green"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </div>
+                    <div className="fw-bold text-dark-blue lh-sm">{bullet}</div>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+            <div className="pt-3 border-top mb-3">
+              <p className="text-muted small mb-0">
+                We just require written notice by email and a $0 account balance
+                with no outstanding invoices.
+              </p>
+            </div>
+            <p className="text-dark-blue fw-bold mb-0">
+              Want to see how the relationship works? Ask us for our commitment
+              document.
+            </p>
+          </div>
+        </Container>
+      </div>
+
       <TestimonialCarousel />
       <div className="font-montserrat bg-dark-blue py-5 py-lg-5 text-center border-top">
         <Container>
@@ -179,7 +305,7 @@ export default function FullFact() {
           </a>
           <div>
             <Link
-              href="/faq"
+              href="/faqs"
               className="text-white opacity-75 text-decoration-none small"
             >
               Have questions?{' '}
