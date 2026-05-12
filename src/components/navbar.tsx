@@ -61,11 +61,11 @@ export default function SFFNavbar({
                 className="text-dark-blue fw-bold text-decoration-none d-none d-md-block"
                 style={{ fontSize: '1.1rem' }}
               >
-                +1 (830) 209-7589
+                <strong>+1 (830) 209-7589</strong>
               </a>
               <a
                 href="#form"
-                className="btn btn-custom fw-bold rounded-pill px-4"
+                className="btn bg-green text-dark-blue fw-bold rounded-pill px-4 shadow-sm"
                 style={{ fontSize: '1.1rem' }}
               >
                 Get Started
