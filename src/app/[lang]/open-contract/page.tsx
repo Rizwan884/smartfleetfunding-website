@@ -8,7 +8,7 @@ import Navbar from '../../../components/navbar'
 export default function OpenContract() {
   return (
     <>
-      <Navbar />
+      <Navbar minimal={true} />
       <div className="bg-dark-blue py-5 font-montserrat min-vh-75 d-flex align-items-center">
         <Container>
           <Row className="g-5 align-items-center">
@@ -225,22 +225,27 @@ export default function OpenContract() {
         </Container>
       </div>
 
-      <div className="font-montserrat bg-dark-blue py-5 py-lg-5 text-center border-top">
+      <div className="font-montserrat bg-white py-5 py-lg-5 text-center border-top">
         <Container>
-          <h2 className="display-4 fw-bold text-white mb-4">
-            Ready for factoring{' '}
-            <span className="text-green">without the lock-in?</span>
-          </h2>
-          <a
-            href="#form"
-            className="btn bg-green text-dark-blue fw-bold px-5 py-3 rounded-pill shadow-sm"
-            style={{ fontSize: '1.2rem' }}
-          >
-            Get Started
-          </a>
+          <div className="bg-light p-5 rounded-5 shadow-sm border border-light-subtle">
+            <h2 className="display-4 fw-bold text-dark-blue mb-3">
+              Ready for factoring{' '}
+              <span className="text-green">without the lock-in?</span>
+            </h2>
+            <p className="lead text-muted mb-4">
+              Open contracts. No reserves. No termination fees.
+            </p>
+            <a
+              href="#form"
+              className="btn bg-green text-dark-blue fw-bold px-5 py-3 rounded-pill shadow-sm"
+              style={{ fontSize: '1.2rem' }}
+            >
+              Get Started
+            </a>
+          </div>
         </Container>
       </div>
-      <Footer />
+      <Footer minimal={true} />
     </>
   )
 }

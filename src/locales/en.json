@@ -5,6 +5,7 @@
     "faq": "FAQ",
     "aboutUs": "ABOUT US",
     "contact": "CONTACT",
+    "whySmartFleet": "WHY SMART FLEET",
     "login": "LOGIN"
   },
   "modalNavbar": {
@@ -70,7 +71,7 @@
       {
         "home": "HOME",
         "services": "SERVICES",
-        "fullfact": "Full Fact",
+        "fullfact": "Why Smart Fleet",
         "fespay": "",
         "freightbroke": " Freight Broker",
         "fuelcard": "",

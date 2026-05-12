@@ -4,6 +4,7 @@ interface Navbar {
   faq: string
   aboutUs: string
   contact: string
+  whySmartFleet: string
   login: string
 }
 interface ModalNavbar {

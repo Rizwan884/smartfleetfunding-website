@@ -16,6 +16,7 @@ const I18nContext = createContext<II18nContext>({
       faq: '',
       aboutUs: '',
       contact: '',
+      whySmartFleet: '',
       login: ''
     },
     modalNavbar: {

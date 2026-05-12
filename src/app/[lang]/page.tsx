@@ -1,10 +1,10 @@
 'use client'
 
 import HeroForm from '@/components/hero-form'
-import SectionVideo from '@/components/section-video'
+
 import Trustpilot from '@/components/trustpilot'
 import { Col, Container, Image, Row } from 'react-bootstrap'
-import CardsSections from '../../components/cards_sections'
+
 import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
 
@@ -12,111 +12,20 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="font-montserrat bg-light py-5 py-lg-5">
+      <div className="bg-dark-blue py-5 font-montserrat min-vh-75 d-flex align-items-center">
         <Container>
-          <Row className="g-5 align-items-stretch">
-            <Col lg={7} className="d-flex flex-column">
-              {/* Main Headline */}
-              <div className="mb-4">
-                <h1
-                  className="fw-bold text-dark-blue mb-1 lh-1"
-                  style={{ fontSize: '2.5rem' }}
-                >
-                  Staying because it works —
-                </h1>
-                <h2 className="display-3 fw-bold text-green mt-0 lh-1">
-                  not because you are stuck.
-                </h2>
-              </div>
-
-              {/* Unified Guarantee Card */}
-              <div className="bg-white p-4 p-lg-5 rounded-4 shadow-lg border border-light-subtle flex-grow-1 d-flex flex-column justify-content-between">
-                <div>
-                  <h3 className="fs-4 fw-bold text-dark-blue mb-4">
-                    Our Simple Guarantee
-                  </h3>
-                  <Row className="g-4 mb-4">
-                    {[
-                      {
-                        title: 'Open Contract',
-                        desc: 'No lock-ins. Leave whenever you want.'
-                      },
-                      {
-                        title: 'No Reserves',
-                        desc: 'Your money is yours, immediately.'
-                      },
-                      {
-                        title: 'No Termination Fees',
-                        desc: 'Exit without any financial penalties.'
-                      },
-                      {
-                        title: 'Real Communication',
-                        desc: 'Talk to real people, not automated bots.'
-                      },
-                      {
-                        title: 'No Notice Required',
-                        desc: 'Move at your own pace.'
-                      },
-                      {
-                        title: 'US & CA Carriers',
-                        desc: 'Full North American support.'
-                      }
-                    ].map((item, i) => (
-                      <Col md={6} key={i}>
-                        <div className="d-flex align-items-start">
-                          <div
-                            className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                            style={{
-                              width: '32px',
-                              height: '32px',
-                              backgroundColor: 'rgba(2, 221, 104, 0.15)'
-                            }}
-                          >
-                            <svg
-                              className="text-green"
-                              width="18"
-                              height="18"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="4"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            >
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </div>
-                          <div>
-                            <div
-                              className="fw-bold text-dark-blue lh-1 mb-1"
-                              style={{ fontSize: '1rem' }}
-                            >
-                              {item.title}
-                            </div>
-                            <div className="small text-muted lh-sm">
-                              {item.desc}
-                            </div>
-                          </div>
-                        </div>
-                      </Col>
-                    ))}
-                  </Row>
-                </div>
-                <div className="pt-3 border-top mt-auto">
-                  <p className="small text-muted mb-2">
-                    * Written notice & $0 balance required. No retaliation,
-                    ever.
-                  </p>
-                  <p className="fw-bold text-dark-blue small mb-0">
-                    <span className="text-green">
-                      Ask us for our commitment document
-                    </span>{' '}
-                    to see how we work.
-                  </p>
-                </div>
-              </div>
+          <Row className="g-5 align-items-center">
+            <Col lg={7} className="text-white">
+              <h1 className="display-3 fw-bold mb-4 lh-1">
+                Factoring with a true{' '}
+                <span className="text-green">open contract</span>
+              </h1>
+              <p className="lead opacity-75 mb-0">
+                You stay because it works — not because a contract forces you
+                to.
+              </p>
             </Col>
-            <Col lg={5} className="d-flex">
+            <Col lg={5}>
               <HeroForm />
             </Col>
           </Row>
@@ -244,25 +153,28 @@ export default function Home() {
           </Row>
         </Container>
       </div>
-      <CardsSections />
-      <SectionVideo />
+
+
       <Trustpilot />
-      <div className="font-montserrat bg-dark-blue py-5 py-lg-5 text-center border-top">
+
+      <div className="font-montserrat bg-white py-5 py-lg-5 text-center border-top">
         <Container>
-          <h2 className="display-4 fw-bold text-white mb-3">
-            Staying should be a choice —{' '}
-            <span className="text-green">not a trap.</span>
-          </h2>
-          <p className="lead text-white opacity-75 mb-4">
-            Open contracts. No reserves. No termination fees.
-          </p>
-          <a
-            href="#form"
-            className="btn bg-green text-dark-blue fw-bold px-5 py-3 rounded-pill shadow-sm"
-            style={{ fontSize: '1.2rem' }}
-          >
-            Get Started
-          </a>
+          <div className="bg-light p-5 rounded-5 shadow-sm border border-light-subtle">
+            <h2 className="display-4 fw-bold text-dark-blue mb-3">
+              Staying should be a choice —{' '}
+              <span className="text-green">not a trap.</span>
+            </h2>
+            <p className="lead text-muted mb-4">
+              Open contracts. No reserves. No termination fees.
+            </p>
+            <a
+              href="#form"
+              className="btn bg-green text-dark-blue fw-bold px-5 py-3 rounded-pill shadow-sm"
+              style={{ fontSize: '1.2rem' }}
+            >
+              Get Started
+            </a>
+          </div>
         </Container>
       </div>
       <Footer />

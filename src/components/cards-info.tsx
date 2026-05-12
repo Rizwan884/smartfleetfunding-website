@@ -52,7 +52,7 @@ export default function Cards() {
                         </div>
                         <div>
                           <Card.Title className="cards-title-mobile mx-auto ">
-                            Full Fact
+                            Why Smart Fleet
                           </Card.Title>
                         </div>
                         <div className="ms-auto">
