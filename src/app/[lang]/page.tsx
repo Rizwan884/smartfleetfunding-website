@@ -154,7 +154,6 @@ export default function Home() {
         </Container>
       </div>
 
-
       <Trustpilot />
 
       <div className="font-montserrat bg-white py-5 py-lg-5 text-center border-top">

@@ -14,37 +14,35 @@ export default function Footer({ minimal = false }: { minimal?: boolean }) {
     <>
       <ScrollToTopButton />
       {isMobile ? (
-        <footer
-          id="footer"
-          className="font-montserrat bg-dark-blue text-light"
-        >
+        <footer id="footer" className="font-montserrat bg-dark-blue text-light">
           <Container className="py-3">
-            {!minimal && t.home.footer.map(
-              ({ home, faq, aboutus, contact }: IFooter, key: number) => (
-                <Nav key={key} className="d-flex flex-column gap-1 p-1">
-                  <Nav.Link className="text-green fw-600" href="/">
-                    {home}
-                  </Nav.Link>
-                  <hr className="w-93 m-0 mx-auto" />
+            {!minimal &&
+              t.home.footer.map(
+                ({ home, faq, aboutus, contact }: IFooter, key: number) => (
+                  <Nav key={key} className="d-flex flex-column gap-1 p-1">
+                    <Nav.Link className="text-green fw-600" href="/">
+                      {home}
+                    </Nav.Link>
+                    <hr className="w-93 m-0 mx-auto" />
 
-                  <Nav.Link className="text-green fw-600" href="/faqs">
-                    {faq}
-                  </Nav.Link>
-                  <hr className="w-93 m-0 mx-auto" />
-                  <Nav.Link className="text-green fw-600" href="/about">
-                    {aboutus}
-                  </Nav.Link>
-                  <hr className="w-93 m-0 mx-auto" />
-                  <Nav.Link className="text-green fw-600" href="/blog">
-                    BLOG
-                  </Nav.Link>
-                  <hr className="w-93 m-0 mx-auto" />
-                  <Nav.Link className="text-green fw-600" href="/contact">
-                    {contact}
-                  </Nav.Link>
-                </Nav>
-              )
-            )}
+                    <Nav.Link className="text-green fw-600" href="/faqs">
+                      {faq}
+                    </Nav.Link>
+                    <hr className="w-93 m-0 mx-auto" />
+                    <Nav.Link className="text-green fw-600" href="/about">
+                      {aboutus}
+                    </Nav.Link>
+                    <hr className="w-93 m-0 mx-auto" />
+                    <Nav.Link className="text-green fw-600" href="/blog">
+                      BLOG
+                    </Nav.Link>
+                    <hr className="w-93 m-0 mx-auto" />
+                    <Nav.Link className="text-green fw-600" href="/contact">
+                      {contact}
+                    </Nav.Link>
+                  </Nav>
+                )
+              )}
 
             <div className="d-flex justify-content-center">
               <div className="text-center d-flex justify-content-center align-items-center w-50">
@@ -139,7 +137,10 @@ export default function Footer({ minimal = false }: { minimal?: boolean }) {
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                     {t.home.footer.map(
-                      ({ home, faq, aboutus, contact }: IFooter, key: number) => (
+                      (
+                        { home, faq, aboutus, contact }: IFooter,
+                        key: number
+                      ) => (
                         <Nav key={key}>
                           <Nav.Link className="text-green fw-500" href="/">
                             {home}
@@ -154,7 +155,10 @@ export default function Footer({ minimal = false }: { minimal?: boolean }) {
                           <Nav.Link className="text-green fw-500" href="/blog">
                             BLOG
                           </Nav.Link>
-                          <Nav.Link className="text-green fw-500" href="/contact">
+                          <Nav.Link
+                            className="text-green fw-500"
+                            href="/contact"
+                          >
                             {contact}
                           </Nav.Link>
                         </Nav>
