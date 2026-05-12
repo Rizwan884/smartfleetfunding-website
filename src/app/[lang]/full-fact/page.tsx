@@ -1,13 +1,10 @@
 'use client'
 
-import Help from '@/components/help'
 import HeroForm from '@/components/hero-form'
-import Ideas from '@/components/ideas'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Link from 'next/link'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import Footer from '../../../components/footer'
-import SectionForm from '../../../components/form'
 import Navbar from '../../../components/navbar'
 import TestimonialCarousel from '../../../components/testimonial'
 
@@ -25,8 +22,6 @@ export default function FullFact() {
       <span className="text-green">{t.fullcard.pagestrong}</span>
     </div>
   )
-
-  const titleForm = t.fullcard.titleForm
 
   return (
     <>
