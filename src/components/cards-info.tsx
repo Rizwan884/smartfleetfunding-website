@@ -33,7 +33,7 @@ export default function Cards() {
           <Row className="pt-5">
             <Col className="card-column ">
               <Card.Body>
-                <Link href="/full-fact" className="text-decoration-none">
+                <Link href="/why-smart-fleet" className="text-decoration-none">
                   <ListGroup className="rounded-3">
                     <ListGroup.Item
                       className=" body-list-mobile bd-box "

@@ -113,7 +113,7 @@ export default async function RootLayout({
                   },
                   {
                     "@type": "Service",
-                    "@id": "https://www.smartfleetfunding.com/full-fact",
+                    "@id": "https://www.smartfleetfunding.com/why-smart-fleet",
                     "serviceType": "Freight Invoice Factoring",
                     "provider": {
                       "@id": "https://www.smartfleetfunding.com/#organization"
@@ -126,7 +126,7 @@ export default async function RootLayout({
                     "description": "Smart Fleet Funding offers freight invoice factoring services to help transportation companies maintain cash flow by converting unpaid invoices into immediate working capital.",
                     "offers": {
                       "@type": "Offer",
-                      "url": "https://www.smartfleetfunding.com/full-fact",
+                      "url": "https://www.smartfleetfunding.com/why-smart-fleet",
                       "priceCurrency": "USD",
                       "eligibleRegion": "US",
                       "price": "Varies based on agreement",

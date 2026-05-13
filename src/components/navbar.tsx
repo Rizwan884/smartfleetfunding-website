@@ -88,7 +88,7 @@ export default function SFFNavbar({
                 <Nav className="ms-auto fw-600 text-start align-items-md-center">
                   <Nav.Link
                     className="text-dark-blue px-3 py-4 fw-600 "
-                    href="/full-fact"
+                    href="/why-smart-fleet"
                   >
                     {t.navbar.whySmartFleet}
                   </Nav.Link>
