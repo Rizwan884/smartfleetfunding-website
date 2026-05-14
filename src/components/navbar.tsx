@@ -1,4 +1,3 @@
-
 import { useI18nProvider } from '@/context/I18nProvider'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
@@ -75,13 +74,10 @@ export default function SFFNavbar({
 
           {!minimal && !isOpenContract && (
             <>
-              <div className="d-flex align-items-center gap-3">
-
-                <Navbar.Toggle
-                  aria-controls="basic-navbar-nav"
-                  className="navbar-toggle-icon"
-                />
-              </div>
+              <Navbar.Toggle
+                aria-controls="basic-navbar-nav"
+                className="navbar-toggle-icon"
+              />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto fw-600 text-start align-items-md-center">
                   <Nav.Link
@@ -106,7 +102,6 @@ export default function SFFNavbar({
                   >
                     {t.navbar.login}
                   </Button>
-
                 </Nav>
               </Navbar.Collapse>
             </>
