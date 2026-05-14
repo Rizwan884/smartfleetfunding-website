@@ -1,4 +1,4 @@
-import LanguageSwitcher from '@/components/LanguageSwitcher'
+
 import { useI18nProvider } from '@/context/I18nProvider'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
@@ -76,9 +76,7 @@ export default function SFFNavbar({
           {!minimal && !isOpenContract && (
             <>
               <div className="d-flex align-items-center gap-3">
-                <div id="button-language" className="d-flex d-lg-none gap-2">
-                  <LanguageSwitcher />
-                </div>
+
                 <Navbar.Toggle
                   aria-controls="basic-navbar-nav"
                   className="navbar-toggle-icon"
@@ -108,9 +106,7 @@ export default function SFFNavbar({
                   >
                     {t.navbar.login}
                   </Button>
-                  <div id="button-language" className="d-none d-lg-block gap-2">
-                    <LanguageSwitcher />
-                  </div>
+
                 </Nav>
               </Navbar.Collapse>
             </>
