@@ -231,9 +231,11 @@ export default function FullFact() {
             <div className="row align-items-center">
               <Col lg={12}>
                 <div className="text-center mb-5">
-                  <h2 className="display-5 fw-bold text-dark-blue">
-                    If it is not working, you can leave —{' '}
-                    <span className="text-green">cleanly.</span>
+                  <h2 className="display-6 fw-bold text-dark-blue text-nowrap-desktop">
+                    Our guarantee is simple:{' '}
+                    <span className="text-green">
+                      if it is not working, you can leave!
+                    </span>
                   </h2>
                   <div
                     className="mx-auto bg-green mt-3"

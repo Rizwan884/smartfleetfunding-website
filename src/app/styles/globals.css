@@ -96,6 +96,11 @@ body {
     width: 10% !important;
   }
 }
+@media (min-width: 992px) {
+  .text-nowrap-desktop {
+    white-space: nowrap !important;
+  }
+}
 
 .h-280 {
   height: 280px !important;
