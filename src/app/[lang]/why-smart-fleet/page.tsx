@@ -30,19 +30,15 @@ export default function FullFact() {
         <Container>
           <Row className="g-5 align-items-center">
             <Col lg={7}>
-              <div
-                className="line bg-green mb-4"
-                style={{ width: '80px', height: '4px' }}
-              ></div>
               <div className="d-none d-md-block text-white">
-                <h1 className="display-4 fw-bold mb-4">{title}</h1>
+                <h1 className="display-3 fw-bold mb-4">{title}</h1>
                 <p className="fs-5 opacity-75 mb-0">
                   Smart Fleet Funding means staying because it works — not
                   because you are stuck.
                 </p>
               </div>
               <div className="d-md-none text-white">
-                <h1 className="fs-1 fw-bold mb-3">{titleMobile}</h1>
+                <h1 className="display-3 fw-bold mb-3">{titleMobile}</h1>
                 <p className="opacity-75 mb-0">
                   Smart Fleet Funding means staying because it works — not
                   because you are stuck.

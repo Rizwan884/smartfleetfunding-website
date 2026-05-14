@@ -37,9 +37,7 @@ export default function Home() {
             <div className="row align-items-center">
               <Col lg={12}>
                 <div className="text-center mb-5">
-                  <p className="text-green fw-bold text-uppercase mb-2">
-                    The Guarantee
-                  </p>
+
                   <h2 className="display-5 fw-bold text-dark-blue">
                     Our guarantee is simple:{' '}
                     <span className="text-green">
@@ -131,32 +129,32 @@ export default function Home() {
             {[
               {
                 title: 'A true open contract',
-                desc: 'No termination fees, no penalties, no notice period required. You stay because it works, not because you signed something that makes leaving painful.',
+                desc: 'No termination fees. No penalties. No notice period requirements. If you are not happy, you let us know — no pressure to stay.',
                 icon: '/images/sff-hp-5.svg'
               },
               {
                 title: 'Clear money, upfront',
-                desc: 'The rate you are quoted is the rate you get. No hidden fees, no confusing statements, no surprises on your remittance.',
+                desc: 'No surprise fees. No confusing statements. You know what you are paying and why.',
                 icon: '/images/sff-hp-2.svg'
               },
               {
                 title: 'Real communication',
-                desc: 'Phones and emails are answered during business hours by people who know your account and can actually help.',
+                desc: 'Phones and emails are answered during business hours. When something affects your account, you get straight answers from a real person.',
                 icon: '/images/sff-hp-1.svg'
               },
               {
                 title: 'No reserves',
-                desc: 'You keep everything you earn. Nothing is held back, nothing is withheld.',
+                desc: 'We do not hold back a portion of your money "just in case." What you earn is what you receive.',
                 icon: '/images/sff-hp-3.svg'
               },
               {
                 title: 'No hostage tactics',
-                desc: 'Your reserves and your paperwork are never used as leverage against you.',
+                desc: 'Reserves, paperwork, and processes are never used to force a carrier to stay.',
                 icon: '/images/sff-hp-6.svg'
               },
               {
                 title: 'Dedicated account managers with real authority',
-                desc: 'One point of contact who knows your account and can make decisions.',
+                desc: 'One point of contact who can pause issues, use judgment, and prevent problems — not just explain policy.',
                 icon: '/images/sff-hp-8.svg'
               }
             ].map((item, i) => (

@@ -151,9 +151,7 @@ export default function OpenContract() {
             <div className="row align-items-center">
               <Col lg={12}>
                 <div className="text-center mb-5">
-                  <p className="text-green fw-bold text-uppercase mb-2">
-                    The Guarantee
-                  </p>
+
                   <h2 className="display-5 fw-bold text-dark-blue">
                     Our guarantee is simple:{' '}
                     <span className="text-green">
