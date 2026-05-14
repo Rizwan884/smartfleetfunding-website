@@ -33,7 +33,7 @@ export default function OpenContract() {
         <Container>
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold text-dark-blue">
-              Here is what a true open contract looks like
+              Here&apos;s what a true open contract looks like
             </h2>
             <div
               className="mx-auto bg-green mt-3"
@@ -45,22 +45,22 @@ export default function OpenContract() {
             {[
               {
                 title: 'No fixed term',
-                desc: 'No 6 or 12 month minimums',
+                desc: 'No 6-month minimum. No 12-month commitment.',
                 icon: '/images/sff-hp-5.svg'
               },
               {
                 title: 'No notice period',
-                desc: 'No 30, 60, or 90 day notice required',
+                desc: 'You do not need to give 30, 60, or 90 days&apos; notice to leave.',
                 icon: '/images/sff-hp-4.svg'
               },
               {
                 title: 'No termination fees',
-                desc: 'No exit fees, no penalties',
+                desc: 'No exit fee. No buyout fee. No penalty of any kind.',
                 icon: '/images/sff-hp-2.svg'
               },
               {
                 title: 'No reserves',
-                desc: 'You keep everything you earn',
+                desc: 'We do not hold back a percentage of your money. What you earn is what you receive.',
                 icon: '/images/sff-hp-3.svg'
               }
             ].map((item, i) => (
@@ -106,17 +106,17 @@ export default function OpenContract() {
             {[
               {
                 title: 'Contracts that removed choice',
-                desc: 'We removed lock-ins entirely',
+                desc: 'you were locked in, and leaving was expensive or slow. We removed that entirely.',
                 icon: '/images/sff-hp-5.svg'
               },
               {
                 title: 'Cash being held hostage',
-                desc: 'We do not hold reserves, period',
+                desc: 'reserves were withheld with no clear release timeline. We do not hold reserves. Period.',
                 icon: '/images/sff-hp-3.svg'
               },
               {
                 title: 'Silence when it mattered',
-                desc: 'Our phones are answered by real people during business hours',
+                desc: 'you called and nobody answered. Our phones and emails are answered during business hours by real people.',
                 icon: '/images/sff-hp-1.svg'
               }
             ].map((item, i) => (
@@ -144,57 +144,75 @@ export default function OpenContract() {
           </Row>
         </Container>
       </div>
-      <div className="font-montserrat bg-light py-5 py-lg-5 border-top">
+      {/* Guarantee Section */}
+      <div className="font-montserrat bg-light py-5 py-lg-5 border-top border-bottom">
         <Container>
-          <div
-            className="bg-white p-4 p-lg-5 rounded-4 shadow-lg border border-light-subtle mx-auto"
-            style={{ maxWidth: '900px' }}
-          >
-            <h2 className="fs-3 fw-bold text-dark-blue mb-4">
-              Our guarantee is simple:{' '}
-              <span className="text-green">
-                if it is not working, you can leave.
-              </span>
-            </h2>
-            <Row className="g-4 mb-4">
-              {[
-                'No reserves',
-                'No termination fees',
-                'No lock-ins',
-                'No notice requirements',
-                'No retaliation'
-              ].map((bullet, i) => (
-                <Col md={6} lg={4} key={i}>
-                  <div className="d-flex align-items-center">
-                    <div
-                      className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      style={{
-                        width: '28px',
-                        height: '28px',
-                        backgroundColor: 'rgba(2, 221, 104, 0.15)'
-                      }}
-                    >
-                      <svg
-                        className="text-green"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </div>
-                    <div className="fw-bold text-dark-blue lh-sm">{bullet}</div>
-                  </div>
-                </Col>
-              ))}
-            </Row>
-            <div className="pt-3 border-top">
-              <p className="text-muted small mb-0">
+          <div className="bg-white p-4 p-lg-5 rounded-5 shadow-sm border border-light-subtle mx-auto">
+            <div className="row align-items-center">
+              <Col lg={12}>
+                <div className="text-center mb-5">
+                  <p className="text-green fw-bold text-uppercase mb-2">
+                    The Guarantee
+                  </p>
+                  <h2 className="display-5 fw-bold text-dark-blue">
+                    Our guarantee is simple:{' '}
+                    <span className="text-green">
+                      if it is not working, you can leave.
+                    </span>
+                  </h2>
+                  <div
+                    className="mx-auto bg-green mt-3"
+                    style={{ width: '80px', height: '4px' }}
+                  ></div>
+                </div>
+              </Col>
+              <Col lg={12}>
+                <Row className="g-4 mb-4 justify-content-center">
+                  {[
+                    'No reserves',
+                    'No termination fees',
+                    'No lock-ins',
+                    'No notice requirements',
+                    'No retaliation'
+                  ].map((bullet, i) => (
+                    <Col md={6} lg={4} key={i}>
+                      <div className="d-flex align-items-center p-3 rounded-4 bg-light border border-white h-100">
+                        <div
+                          className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0 shadow-sm"
+                          style={{
+                            width: '32px',
+                            height: '32px',
+                            backgroundColor: 'var(--green)'
+                          }}
+                        >
+                          <svg
+                            className="text-white"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                        </div>
+                        <div className="fw-bold text-dark-blue fs-5">
+                          {bullet}
+                        </div>
+                      </div>
+                    </Col>
+                  ))}
+                </Row>
+              </Col>
+            </div>
+            <div className="mt-4 pt-4 border-top text-center">
+              <p
+                className="text-muted mb-0 fs-5 mx-auto"
+                style={{ maxWidth: '800px' }}
+              >
                 We just require written notice by email and a $0 account balance
                 with no outstanding invoices.
               </p>
@@ -215,10 +233,10 @@ export default function OpenContract() {
                 style={{ width: '60px', height: '4px' }}
               ></div>
               <p className="lead text-muted lh-base mb-0">
-                Smart Fleet Funding has served carriers across the United States
-                and Canada for over 30 years. We were selected by{' '}
-                <strong>Traffix</strong> — one of North America&apos;s leading
-                freight brokerages — to power their carrier QuickPay program.
+                Smart Fleet Funding serves carriers across the United States and
+                Canada. We were selected by <strong>Traffix</strong> — one of
+                North America&apos;s leading freight brokerages — to power their
+                carrier QuickPay program.
               </p>
             </Col>
           </Row>
@@ -232,9 +250,7 @@ export default function OpenContract() {
               Ready for factoring{' '}
               <span className="text-green">without the lock-in?</span>
             </h2>
-            <p className="lead text-muted mb-4">
-              Open contracts. No reserves. No termination fees.
-            </p>
+
             <a
               href="#form"
               className="btn bg-green text-dark-blue fw-bold px-5 py-3 rounded-pill shadow-sm"
