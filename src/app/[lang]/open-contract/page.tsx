@@ -50,7 +50,7 @@ export default function OpenContract() {
               },
               {
                 title: 'No notice period',
-                desc: 'You do not need to give 30, 60, or 90 days&apos; notice to leave.',
+                desc: "You do not need to give 30, 60, or 90 days' notice to leave.",
                 icon: '/images/sff-hp-4.svg'
               },
               {
@@ -106,17 +106,17 @@ export default function OpenContract() {
             {[
               {
                 title: 'Contracts that removed choice',
-                desc: 'you were locked in, and leaving was expensive or slow. We removed that entirely.',
+                desc: 'You were locked in, and leaving was expensive or slow. We removed that entirely.',
                 icon: '/images/sff-hp-5.svg'
               },
               {
                 title: 'Cash being held hostage',
-                desc: 'reserves were withheld with no clear release timeline. We do not hold reserves. Period.',
+                desc: 'Reserves were withheld with no clear release timeline. We do not hold reserves. Period.',
                 icon: '/images/sff-hp-3.svg'
               },
               {
                 title: 'Silence when it mattered',
-                desc: 'you called and nobody answered. Our phones and emails are answered during business hours by real people.',
+                desc: 'You called and nobody answered. Our phones and emails are answered during business hours by real people.',
                 icon: '/images/sff-hp-1.svg'
               }
             ].map((item, i) => (

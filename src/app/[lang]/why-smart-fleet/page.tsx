@@ -1,12 +1,12 @@
 'use client'
 
 import HeroForm from '@/components/hero-form'
+import Trustpilot from '@/components/trustpilot'
 import { useI18nProvider } from '@/context/I18nProvider'
 import Link from 'next/link'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import Footer from '../../../components/footer'
 import Navbar from '../../../components/navbar'
-import TestimonialCarousel from '../../../components/testimonial'
 
 export default function FullFact() {
   const { t } = useI18nProvider()
@@ -300,7 +300,7 @@ export default function FullFact() {
         </Container>
       </div>
 
-      <TestimonialCarousel />
+      <Trustpilot />
       <div className="font-montserrat bg-dark-blue py-5 py-lg-5 text-center border-top">
         <Container>
           <h2 className="display-4 fw-bold text-white mb-4">
