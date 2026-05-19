@@ -1,55 +1,26 @@
-import Image from 'next/image'
+import { usePathname, useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 
 export default function HeroForm() {
+  const router = useRouter()
+  const pathname = usePathname()
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     mc: ''
   })
-  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Simulate API call
-    setSubmitted(true)
-  }
 
-  if (submitted) {
-    return (
-      <div
-        className="p-5 shadow-lg rounded-4 bg-white font-montserrat text-center d-flex flex-column align-items-center justify-content-center"
-        style={{
-          maxWidth: '600px',
-          minHeight: '400px',
-          border: '1px solid rgba(0, 0, 0, 0.05)',
-          boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)'
-        }}
-      >
-        <div className="mb-4 bg-light rounded-circle p-3 d-inline-block">
-          <Image
-            src="/images/sff-bff-check.svg"
-            width={50}
-            height={50}
-            alt="success"
-          />
-        </div>
-        <h2 className="fw-bold text-dark-blue mb-3">Thank You!</h2>
-        <p className="text-muted fs-5 px-3">
-          We received your information. A member of our team will contact you
-          within one business day.
-        </p>
-        <Button
-          variant="link"
-          className="text-green text-decoration-none fw-bold mt-3"
-          onClick={() => setSubmitted(false)}
-        >
-          Send another request
-        </Button>
-      </div>
-    )
+    // Redirect to corresponding thank you page
+    const baseRedirectPath = pathname.endsWith('/')
+      ? pathname.slice(0, -1)
+      : pathname
+    router.push(`${baseRedirectPath}/thank-you`)
   }
 
   return (
